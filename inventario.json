@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-28T08:16:05Z",
+  "updated": "2026-09-28T00:00:00-04:00",
   "productos": [
     {
       "id": "c1",
@@ -48,6 +48,54 @@
       "id": "c8",
       "stock": 0,
       "precio": 29.99,
+      "visible": true
+    },
+    {
+      "id": "c9",
+      "stock": 9,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "c10",
+      "stock": 14,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "c11",
+      "stock": 6,
+      "precio": 27.9,
+      "visible": true
+    },
+    {
+      "id": "c12",
+      "stock": 11,
+      "precio": 14.9,
+      "visible": true
+    },
+    {
+      "id": "c13",
+      "stock": 5,
+      "precio": 44.0,
+      "visible": true
+    },
+    {
+      "id": "c14",
+      "stock": 8,
+      "precio": 32.5,
+      "visible": true
+    },
+    {
+      "id": "c15",
+      "stock": 7,
+      "precio": 34.9,
+      "visible": true
+    },
+    {
+      "id": "c16",
+      "stock": 4,
+      "precio": 39.9,
       "visible": true
     }
   ]
