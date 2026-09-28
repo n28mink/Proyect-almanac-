@@ -261,27 +261,23 @@ legend{margin-bottom:9px;font-size:.76rem;font-weight:800;letter-spacing:.1em;te
   .cart-open{color:#8bc9a3;border-color:#8bc9a3}
 }
 
-/* ===== VIDA ===== */
-.leaf{position:absolute;font-style:normal;opacity:.55;animation:drift 9s ease-in-out infinite;pointer-events:none;filter:drop-shadow(0 6px 8px rgba(0,0,0,.25))}
-.l1{top:16%;left:7%;font-size:1.7rem}.l2{top:66%;left:13%;font-size:1.1rem;animation-delay:2.5s}.l3{top:28%;right:10%;font-size:1.35rem;animation-delay:5s}
-@keyframes drift{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-24px) rotate(12deg)}}
-.hero-in>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
-.hero-in>*:nth-child(2){animation-delay:.12s}.hero-in>*:nth-child(3){animation-delay:.24s}.hero-in>*:nth-child(4){animation-delay:.36s}
-@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
-.hero h1 em{background:linear-gradient(100deg,#e4d4ad 20%,#fffbe8 42%,#e4d4ad 64%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 5s linear infinite}
-@keyframes shine{to{background-position:220% center}}
-.marquee{overflow:hidden;background:var(--g);color:#fff}
-.marquee-track{display:inline-flex;white-space:nowrap;animation:mscroll 24s linear infinite;padding:11px 0;will-change:transform}
-.marquee-track span{padding:0 28px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
-@keyframes mscroll{to{transform:translateX(-50%)}}
-.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+/* ===== SWA: lujo = contención (inspirado en Swarovski) ===== */
+.hero-in>*{animation:rise .6s ease-out both}
+.hero-in>*:nth-child(2){animation-delay:.1s}.hero-in>*:nth-child(3){animation-delay:.2s}.hero-in>*:nth-child(4){animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}
 .rv.in{opacity:1;transform:none}
-.card{transition:transform .35s ease}
-.card:hover{transform:translateY(-5px)}
-.badge.pop{animation:pop .45s cubic-bezier(.2,1.6,.4,1)}
-@keyframes pop{0%{transform:scale(.4)}100%{transform:scale(1)}}
-.stock.low{animation:spulse 2.2s ease-in-out infinite}
-@keyframes spulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.visual img{transition:transform .6s cubic-bezier(.22,1,.36,1)!important}
+.card:hover img{transform:scale(1.04)!important}
+.visual:after{display:none}
+.btn{border-radius:0;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;transition:all .4s ease-in-out}
+.btn:not(.outline):hover{background:transparent;color:var(--g);box-shadow:inset 0 0 0 1px var(--g)}
+.btn.outline:hover{background:rgba(255,255,255,.1)}
+a{transition:color .3s ease,opacity .3s ease}
+.quick{transition:opacity .3s ease}
+.quick:hover{opacity:.55}
+@media(hover:hover){.arr{opacity:0;transition:opacity .25s ease-in-out}.gallery:hover .arr,.arr:focus-visible{opacity:.85}}
+#galleryImage{transition:opacity .25s ease-in-out}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -298,7 +294,7 @@ legend{margin-bottom:9px;font-size:.76rem;font-weight:800;letter-spacing:.1em;te
 
 <main>
   <section class="hero" id="inicio" aria-labelledby="heroTitle">
-    <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="leaf l1" aria-hidden="true">🍀</i><i class="leaf l2" aria-hidden="true">🍀</i><i class="leaf l3" aria-hidden="true">🍀</i>
+    <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i>
     <div class="container hero-in">
       <!-- DEMO: quita "· Colección de muestra" antes de publicar -->
       <p class="eyebrow">Catálogo <span data-year>2026</span> · Colección de muestra</p>
@@ -311,7 +307,6 @@ legend{margin-bottom:9px;font-size:.76rem;font-weight:800;letter-spacing:.1em;te
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>🍀 Nueva colección 2026</span><span>Precios en USD · tasa del día</span><span>Pedidos por WhatsApp</span><span>Delivery y retiro en tienda</span><span>🍀 Nueva colección 2026</span><span>Precios en USD · tasa del día</span><span>Pedidos por WhatsApp</span><span>Delivery y retiro en tienda</span></div></div>
 
   <section class="catalog rv" id="catalogo" aria-labelledby="catalogTitle">
     <div class="container">
@@ -976,7 +971,6 @@ function renderCart() {
   e.cartList.replaceChildren();
   state.cart.forEach(i => e.cartList.append(cartLine(i)));
   const count = state.cart.reduce((s, i) => s + i.cantidad, 0);
-  if (String(count) !== e.cartCount.textContent) { e.cartCount.classList.remove('pop'); void e.cartCount.offsetWidth; e.cartCount.classList.add('pop'); }
   text(e.cartCount, count);
   text(e.cartTotal, price(total()));
   e.cartEmpty.hidden = !!state.cart.length;
