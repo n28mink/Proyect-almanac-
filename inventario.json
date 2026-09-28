@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "updated": "2026-09-28T08:16:05Z",
+  "productos": [
+    {
+      "id": "c1",
+      "stock": 8,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "c2",
+      "stock": 5,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "c3",
+      "stock": 3,
+      "precio": 42.0,
+      "visible": true
+    },
+    {
+      "id": "c4",
+      "stock": 6,
+      "precio": 31.75,
+      "visible": true
+    },
+    {
+      "id": "c5",
+      "stock": 12,
+      "precio": 12.3,
+      "visible": true
+    },
+    {
+      "id": "c6",
+      "stock": 4,
+      "precio": 28.6,
+      "visible": true
+    },
+    {
+      "id": "c7",
+      "stock": 7,
+      "precio": 36.4,
+      "visible": true
+    },
+    {
+      "id": "c8",
+      "stock": 0,
+      "precio": 29.99,
+      "visible": true
+    }
+  ]
+}
