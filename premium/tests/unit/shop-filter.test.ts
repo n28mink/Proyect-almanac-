@@ -46,9 +46,8 @@ describe('filtros de tienda (estado en la URL)', () => {
 });
 
 describe('formato de moneda', () => {
-  it('formatea según idioma y moneda', () => {
+  it('formatea siempre en dólares según el idioma', () => {
     expect(formatMoney(2490, 'en')).toBe('$24.90');
     expect(formatMoney(2490, 'es')).toMatch(/24,90/);
-    expect(formatMoney(10000, 'en', 'EUR')).toContain('92.00');
   });
 });

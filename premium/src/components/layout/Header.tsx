@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Logo } from '@/components/brand/Logo';
 import { useFlyToCart } from '@/components/motion/fly-to-cart';
 import { TransitionLink } from '@/components/motion/TransitionLink';
-import { BagIcon, HeartIcon, MenuIcon, SearchIcon, UserIcon } from '@/components/ui/Icon';
+import { BagIcon, HeartIcon, MenuIcon, SearchIcon } from '@/components/ui/Icon';
 import { usePathname } from '@/i18n/navigation';
 import { cn } from '@/lib/cn';
 import { usePrefersReducedMotion } from '@/lib/hooks';
@@ -107,7 +107,7 @@ export function Header({ announcements, primary }: HeaderProps) {
 
   return (
     <header className="site-header" data-solid={solid} data-hidden={hidden} data-tone={tone} style={{ height: 'auto' }}>
-      <div className={cn('grid overflow-hidden bg-ink text-ivory transition-[grid-template-rows] duration-500 ease-[var(--ease-luxe)]', solid ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]')}>
+      <div className={cn('grid overflow-hidden bg-forest text-ivory transition-[grid-template-rows] duration-500 ease-[var(--ease-luxe)]', solid ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]')}>
         <div className="min-h-0">
           <div className="flex h-[var(--announcement-h)] items-center justify-center px-4">
             <Announcement messages={announcements} />
@@ -131,16 +131,13 @@ export function Header({ announcements, primary }: HeaderProps) {
         </div>
 
         <TransitionLink href="/" aria-label={t('home')} className="justify-self-center" variant="ivory">
-          <Logo />
+          <Logo stacked />
         </TransitionLink>
 
         <div ref={cartRef} className="flex items-center justify-end">
           <IconButton label={t('search')} onClick={() => openPanel('search')} aria-haspopup="dialog">
             <SearchIcon />
           </IconButton>
-          <TransitionLink href="/account" prefetch={false} aria-label={t('account')} className="relative hidden h-11 w-11 place-items-center transition-opacity hover:opacity-70 sm:grid">
-            <UserIcon />
-          </TransitionLink>
           <TransitionLink href="/wishlist" aria-label={t('wishlist', { count: wishCount })} className="relative grid h-11 w-11 place-items-center transition-opacity hover:opacity-70">
             <HeartIcon filled={wishCount > 0} />
             {wishCount > 0 && <span className="absolute right-0.5 top-1 grid min-h-[1.05rem] min-w-[1.05rem] place-items-center rounded-full bg-accent-decor px-1 text-[0.625rem] font-semibold leading-none text-ink">{wishCount}</span>}

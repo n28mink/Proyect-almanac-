@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useCart } from '@/stores/cart-store';
 
-/** Al volver de un pago confirmado (p. ej. tras Stripe), el carrito ya no debe conservar esas líneas. */
+/** El pedido ya quedó registrado: el carrito no debe conservar esas líneas (también al recargar esta página). */
 export function ClearCartOnMount() {
   useEffect(() => {
     useCart.getState().clear();

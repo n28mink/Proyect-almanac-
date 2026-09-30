@@ -60,8 +60,8 @@ export function FlyToCartProvider({ children }: { children: ReactNode }) {
       const inner = document.createElement('div');
       Object.assign(outer.style, { position: 'fixed', left: `${startX}px`, top: `${startY}px`, width: `${size}px`, height: `${size}px`, zIndex: '95', pointerEvents: 'none', willChange: 'transform' });
       Object.assign(inner.style, {
-        width: '100%', height: '100%', background: imageSrc ? `center / cover url("${imageSrc}")` : 'var(--color-champagne)',
-        boxShadow: '0 12px 30px -8px rgb(21 20 18 / .35)', willChange: 'transform, opacity',
+        width: '100%', height: '100%', background: imageSrc ? `center / cover url("${imageSrc}")` : 'var(--color-gold)',
+        boxShadow: '0 12px 30px -8px rgb(20 26 22 / .35)', willChange: 'transform, opacity',
       });
       outer.setAttribute('aria-hidden', 'true');
       outer.append(inner);

@@ -24,7 +24,7 @@ export async function Hero({ campaign, video, locale }: { campaign: CampaignBloc
       <div aria-hidden="true" className="absolute inset-0 -z-[5] bg-gradient-to-t from-ink/80 via-ink/25 to-ink/55" />
 
       <div className="container-x flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-24">
-        <p className="label-micro intro-rise mb-6 text-champagne" style={{ ['--i' as string]: 0 }}>{pick(campaign.eyebrow, locale)}</p>
+        <p className="label-micro intro-rise mb-6 text-gold-soft" style={{ ['--i' as string]: 0 }}>{pick(campaign.eyebrow, locale)}</p>
         <h1 className="font-display text-display-xl max-w-[14ch]">
           <StaggerText text={pick(campaign.title, locale)} intro />
         </h1>

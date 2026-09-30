@@ -59,22 +59,21 @@ Decisiones clave:
   (`generateStaticParams` × locales) con `revalidate`. Los filtros de la tienda son estado de URL en cliente sobre la
   lista ya renderizada, así la página base sigue siendo estática y cacheable.
 - **El servidor es la única autoridad de precios**: el carrito del cliente guarda solo `{variantId, qty}`;
-  `quote()` recalcula precios, descuentos, envío e impuestos desde el repositorio. El checkout nunca lee un precio del cliente.
-- **Repositorios intercambiables**: `StoreAdapter` (JSON en `.data/`, memoria si el FS es de solo lectura). Cambiar a
-  Postgres/Supabase = implementar la misma interfaz.
-- **Pagos por adaptador**: `PaymentProvider` (`mock` por defecto, `stripe` vía REST sin SDK). Ninguna llave sale del servidor.
-- **CSP escalonada** (Next exige render dinámico para nonces): rutas sensibles (checkout, cuenta, admin, auth)
+  `computeQuote()` recalcula precios y stock desde el repositorio (sin descuentos ni impuestos: el envío se acuerda por WhatsApp). El checkout nunca lee un precio del cliente.
+- **Repositorios intercambiables**: `DocumentStore` con dos adaptadores: Redis por REST (Upstash / Vercel KV, para producción en Vercel) y JSON en `.data/` (local/Docker, memoria si el FS es de solo lectura). Cambiar a Postgres = implementar la misma interfaz.
+- **Sin pago en línea**: Clover vende por WhatsApp en Venezuela. El checkout registra el pedido (`pending_payment`) y abre un mensaje de WhatsApp armado en servidor; el administrador confirma el pago (pago móvil, transferencia o efectivo) y solo entonces se descuenta el inventario. Stripe se retiró por ahora (recuperable del historial de git, commit `570561a`).
+- **Sin cuentas de cliente**: el único usuario es el administrador. Su panel vive en una ruta no enlazada (`NEXT_PUBLIC_ADMIN_PATH`, reescrita por `proxy.ts`); `/admin`, `/login`, `/register` y `/account` devuelven 404.
+- **CSP escalonada** (Next exige render dinámico para nonces): rutas sensibles (checkout y panel de administración, que deben ser `force-dynamic`)
   usan `script-src 'nonce-…' 'strict-dynamic'`; el resto usa una política estática estricta en todo lo demás para conservar ISR/CDN.
 - **i18n**: `next-intl`, prefijo de locale siempre (`/es`, `/en`), hreflang + `x-default`, textos localizados en el
-  contenido (`LocalizedString`), moneda por selector (formato con `Intl`).
+  contenido (`LocalizedString`), precios siempre en USD (formato con `Intl`).
 
 ## 3. Design system
 
 Fuente única: `src/styles/tokens.css` (`@theme` de Tailwind v4) + `src/config/motion.ts` (movimiento).
 
-- **Color**: marfil `#f6f1e9` (página) · porcelana `#fbf8f3` (superficie) · hueso `#ebe4d8` · tinta `#151412` (negro suave) ·
-  carbón `#2b2926` · grafito `#57524b` (texto secundario, 6.9:1 sobre marfil) · bronce `#7d5c3d` (texto de acento, 5.4:1) ·
-  champagne `#c4a878` (solo decoración y fondos oscuros: 2:1 sobre marfil, 8:1 sobre tinta). Sin dorado brillante.
+- **Color** (paleta original de Clover, ampliada a escala completa): marfil `#faf9f4` (página) · porcelana `#fffefa` · hueso verdoso `#edf4ef` · tinta `#141a16` · grafito `#4b524c` (texto secundario) · **verde Clover `#0b3f2b`** (marca, botones, acento sobre claro; 11:1 sobre marfil) · verde medio `#176b43` · **dorado champán `#b7985e`** (decoración y trébol; sobre fondos oscuros el texto usa `#d6c397`, ≥ 4.5:1) · Sin dorado brillante.
+- **Marca**: wordmark serif «Clover» con el trébol de cuatro hojas en línea como superíndice + subtítulo «Accesorios y Prendas» (`components/brand/Logo.tsx`); imagen OG y favicon derivados de la marca original.
 - **Tipografía**: Cormorant Garamond (display, variable, autoalojada) + Manrope (UI, variable, autoalojada).
   Escala fluida `display-xl → micro`, micro-etiquetas 11–12 px en mayúsculas con tracking .2em.
 - **Espacio y layout**: contenedores `narrow/content/wide/ultra`, gutter fluido, breakpoints
@@ -128,6 +127,6 @@ Semilla: las 104 piezas reales de Clover se curan (solo fotografía limpia, sin 
 
 Validación zod en servidor en cada acción · precios/stock/envío recalculados en servidor · sesiones JWT firmadas
 (`jose`, HS256) en cookie `HttpOnly; Secure; SameSite=Lax` · contraseñas con `scrypt` + sal · rate limiting
-(ventana deslizante en memoria, intercambiable por Redis) · comprobación de origen en mutaciones · roles (`customer`/`admin`) en
+(ventana deslizante en memoria, intercambiable por Redis) · comprobación de origen en mutaciones · rol `admin` comprobado en
 capa de datos y en layouts · CSP + HSTS + `X-Content-Type-Options` + `Referrer-Policy` + `Permissions-Policy` + COOP ·
-secretos solo en variables de entorno validadas · webhooks con firma HMAC y comparación en tiempo constante.
+secretos solo en variables de entorno validadas.

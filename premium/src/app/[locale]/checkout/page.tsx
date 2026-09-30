@@ -6,9 +6,9 @@ import { CheckoutForm } from '@/components/checkout/CheckoutForm';
 import { PageShell } from '@/components/ui/PageShell';
 import { routing } from '@/i18n/routing';
 import { buildMetadata } from '@/lib/seo';
-import { getSessionUser } from '@/server/auth/session';
-import { env } from '@/server/env';
-import { findById } from '@/server/repositories/users';
+
+/** Ruta con CSP de nonce: DEBE renderizarse por petición (una página prerenderizada no llevaría el nonce y el navegador bloquearía todo el JS). */
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -22,12 +22,9 @@ export default async function CheckoutPage({ params }: { params: Promise<{ local
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations('checkout');
-  const user = await getSessionUser();
-  const full = user ? await findById(user.id) : undefined;
-
   return (
     <PageShell eyebrow={t('eyebrow')} title={t('title')} text={t('text')}>
-      <CheckoutForm user={user} addresses={full?.addresses ?? []} providerLabel={env().PAYMENT_PROVIDER} />
+      <CheckoutForm />
     </PageShell>
   );
 }

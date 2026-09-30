@@ -156,7 +156,7 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
         </label>
         <div className="hidden items-center sm:flex" role="group" aria-label={t('view')}>
           {(['grid', 'list'] as const).map((v) => (
-            <button key={v} type="button" onClick={() => update({ view: v })} aria-pressed={params.view === v} aria-label={t(`view_${v}`)} className={cn('grid h-11 w-11 place-items-center border border-line-strong transition-colors', params.view === v ? 'bg-fg text-surface' : 'hover:bg-fg/5')}>
+            <button key={v} type="button" onClick={() => update({ view: v })} aria-pressed={params.view === v} aria-label={t(`view_${v}`)} className={cn('grid h-11 w-11 place-items-center border border-line-strong transition-colors', params.view === v ? 'bg-accent text-surface' : 'hover:bg-fg/5')}>
               {v === 'grid' ? <GridIcon width={18} height={18} /> : <ListIcon width={18} height={18} />}
             </button>
           ))}

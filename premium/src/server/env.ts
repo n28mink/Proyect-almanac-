@@ -5,9 +5,11 @@ const schema = z.object({
   AUTH_SECRET: z.string().optional(),
   ADMIN_EMAIL: z.email().optional(),
   ADMIN_PASSWORD: z.string().min(10).optional(),
-  PAYMENT_PROVIDER: z.enum(['mock', 'stripe']).default('mock'),
-  STRIPE_SECRET_KEY: z.string().optional(),
-  STRIPE_WEBHOOK_SECRET: z.string().optional(),
+  // Persistencia (Upstash Redis / Vercel KV vía REST). Sin ellas los datos viven en archivos locales o en memoria.
+  UPSTASH_REDIS_REST_URL: z.url().optional(),
+  UPSTASH_REDIS_REST_TOKEN: z.string().optional(),
+  KV_REST_API_URL: z.url().optional(),
+  KV_REST_API_TOKEN: z.string().optional(),
   DATA_DIR: z.string().default('.data'),
   RATE_LIMIT_ENABLED: z
     .enum(['true', 'false'])
@@ -28,9 +30,6 @@ export function env(): ServerEnv {
     throw new Error(`Variables de entorno inválidas: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
   }
   cached = parsed.data;
-  if (cached.PAYMENT_PROVIDER === 'stripe' && (!cached.STRIPE_SECRET_KEY || !cached.STRIPE_WEBHOOK_SECRET)) {
-    throw new Error('PAYMENT_PROVIDER=stripe requiere STRIPE_SECRET_KEY y STRIPE_WEBHOOK_SECRET.');
-  }
   return cached;
 }
 

@@ -1,6 +1,8 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
 
+const ADMIN = process.env.NEXT_PUBLIC_ADMIN_PATH || 'gestion';
+
 const errors = (page: Page) => {
   const list: string[] = [];
   page.on('pageerror', (e) => list.push(e.message));
@@ -10,27 +12,39 @@ const errors = (page: Page) => {
   return list;
 };
 
-test('home: 16 bloques, sin errores de consola, cabecera y CSP', async ({ page }) => {
+test('home: marca, cabeceras de seguridad y sin errores de consola', async ({ page }) => {
   const errs = errors(page);
   const res = await page.goto('/es', { waitUntil: 'networkidle' });
   const h = res!.headers();
   expect(h['content-security-policy']).toContain("frame-ancestors 'none'");
   expect(h['x-content-type-options']).toBe('nosniff');
   await expect(page.locator('h1')).toHaveCount(1);
-  await expect(page.locator('footer')).toBeVisible();
+  await expect(page.locator('header').getByText('Accesorios y Prendas')).toBeVisible();
+  await expect(page.locator('header a[aria-label]').first()).toBeVisible();
+  await expect(page.locator('footer')).toContainText('+58 412 131 8133');
   expect(errs).toEqual([]);
 });
 
 test('las 12 categorías existen como páginas reales', async ({ request }) => {
   for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'accessories', 'women', 'men', 'new-arrivals', 'gifts']) {
-    const r = await request.get(`/es/shop/${c}`);
-    expect(r.status(), c).toBe(200);
+    expect((await request.get(`/es/shop/${c}`)).status(), c).toBe(200);
   }
   expect((await request.get('/es/collections')).status()).toBe(200);
   expect((await request.get('/es/shop/nope')).status()).toBe(404);
 });
 
-test('compra: añadir a la bolsa → drawer → checkout → pedido (proveedor mock)', async ({ page }) => {
+test('sin cuentas de cliente ni enlaces al panel en el sitio público', async ({ page, request }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  const hrefs = await page.locator('a[href]').evaluateAll((els) => els.map((e) => e.getAttribute('href') ?? ''));
+  for (const h of hrefs) expect(h, h).not.toMatch(/\/(login|register|account|admin|gestion)(\/|$)/);
+  for (const p of ['/es/login', '/es/register', '/es/account', '/es/admin', '/en/admin/login', '/es/account/orders']) {
+    expect((await request.get(p)).status(), p).toBe(404);
+  }
+  const robots = await (await request.get('/robots.txt')).text();
+  expect(robots).not.toMatch(/admin|gestion/);
+});
+
+test('compra por WhatsApp: bolsa → pedido registrado → mensaje de WhatsApp (sin pago en línea)', async ({ page }) => {
   const errs = errors(page);
   await page.goto('/es/shop/rings', { waitUntil: 'networkidle' });
   await page.locator('a[href*="/product/"]').first().click();
@@ -39,18 +53,38 @@ test('compra: añadir a la bolsa → drawer → checkout → pedido (proveedor m
   await page.getByRole('button', { name: /Bolsa \(1\)/ }).click();
   const drawer = page.getByRole('dialog');
   await expect(drawer).toBeVisible();
-  await drawer.getByRole('link', { name: /pago|checkout|finalizar/i }).click();
+  await expect(drawer.getByText('Se acuerda por WhatsApp')).toBeVisible();
+  await expect(drawer.getByPlaceholder(/promocional/i)).toHaveCount(0);
+  await drawer.getByRole('link', { name: /pedido/i }).click();
   await page.waitForURL(/\/checkout/);
-  await page.getByLabel('Correo electrónico').fill('cliente@example.com');
-  await page.getByLabel('Nombre completo').fill('Cliente Prueba');
-  await page.locator('#line1').fill('Calle 1 #2-3');
-  await page.getByLabel('Ciudad').fill('Bogotá');
-  await page.getByRole('button', { name: /pagar|confirmar|realizar/i }).last().click();
+  await expect(page.locator('#country')).toHaveCount(0);
+  await expect(page.locator('#email')).toHaveCount(0);
+  await page.locator('#fullName').fill('Ana Pérez');
+  await page.locator('#phone').fill('0412 555 1234');
+  await page.locator('#line1').fill('Av. Principal, casa 3');
+  await page.locator('#city').fill('Turmero');
+  await page.getByRole('button', { name: 'Hacer pedido' }).click();
   await page.waitForURL(/checkout\/success/, { timeout: 20_000 });
+  const wa = page.getByRole('link', { name: /Enviar pedido por WhatsApp/ });
+  const href = (await wa.getAttribute('href'))!;
+  expect(href).toMatch(/^https:\/\/wa\.me\/584121318133\?text=/);
+  const text = decodeURIComponent(href.split('text=')[1]!);
+  for (const part of ['CLV-', 'Ana Pérez', '0412 555 1234', 'Turmero', 'Total']) expect(text).toContain(part);
+  await expect(wa).toHaveAttribute('target', '_blank');
   expect(errs).toEqual([]);
 });
 
-test('tienda: búsqueda y filtros en la URL', async ({ page }) => {
+test('checkout en carga directa hidrata con la CSP de nonce (sin scripts bloqueados)', async ({ page, context }) => {
+  const errs = errors(page);
+  await context.addInitScript(() => localStorage.setItem('clover-cart-v2', JSON.stringify({ state: { lines: [{ productId: 'an04', variantId: 'an04-1', quantity: 1 }] }, version: 0 })));
+  const res = await page.goto('/es/checkout', { waitUntil: 'networkidle' });
+  expect(res!.headers()['content-security-policy']).toContain("'nonce-");
+  await expect(page.locator('#fullName')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Hacer pedido' })).toBeEnabled();
+  expect(errs.filter((e) => /Content Security Policy/.test(e))).toEqual([]);
+});
+
+test('tienda: orden por precio en la URL', async ({ page }) => {
   await page.goto('/es/shop?sort=price-desc&view=list', { waitUntil: 'networkidle' });
   const prices = await page.locator('[data-price]').evaluateAll((els) => els.map((e) => Number(e.getAttribute('data-price'))));
   for (let i = 1; i < prices.length; i++) expect(prices[i]).toBeLessThanOrEqual(prices[i - 1]!);
@@ -71,19 +105,31 @@ test('EN: contenido localizado, hreflang y JSON-LD de producto', async ({ page }
 test('SEO: sitemap y robots', async ({ request }) => {
   const s = await (await request.get('/sitemap.xml')).text();
   expect(s).toContain('/es/shop');
-  expect((await (await request.get('/robots.txt')).text())).toContain('Disallow: /');
+  expect(s).not.toMatch(/admin|gestion|login|account/);
+  expect(await (await request.get('/robots.txt')).text()).toContain('Disallow: /');
 });
 
-test('seguridad: rutas privadas redirigen y el webhook rechaza firmas inválidas', async ({ page, request }) => {
-  await page.goto('/es/account');
-  await expect(page).toHaveURL(/\/login/);
-  await page.goto('/es/admin');
-  await expect(page).toHaveURL(/\/login|\/es$|not-found|404/);
-  const r = await request.post('/api/webhooks/stripe', { data: '{}', headers: { 'stripe-signature': 't=1,v1=bad' } });
-  expect([400, 401, 404, 503]).toContain(r.status());
+test('legal: privacidad, términos, envíos y cookies con los textos de Clover', async ({ request }) => {
+  for (const s of ['privacy', 'terms', 'shipping', 'cookies']) expect((await request.get(`/es/legal/${s}`)).status(), s).toBe(200);
+  expect(await (await request.get('/es/legal/terms')).text()).toContain('pago móvil');
 });
 
-for (const path of ['/es', '/es/shop', '/es/login']) {
+test('panel de administración: solo en su ruta oculta, con login de administrador', async ({ page, request }) => {
+  const errs = errors(page);
+  // El panel sin sesión lleva al login del panel (misma ruta oculta) y el login no revela nada del sitio público.
+  await page.goto(`/es/${ADMIN}`);
+  await expect(page).toHaveURL(new RegExp(`/es/${ADMIN}/login`));
+  await expect(page.getByRole('heading', { name: /Acceso al panel/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Entrar' })).toBeVisible(); // catálogo de mensajes del cliente completo
+  expect(errs).toEqual([]);
+  const bad = await request.get(`/es/${ADMIN}/orders`, { maxRedirects: 0 });
+  expect([302, 307, 308]).toContain(bad.status());
+  const headers = (await request.get(`/es/${ADMIN}/login`)).headers();
+  expect(headers['x-robots-tag']).toContain('noindex');
+  expect(headers['cache-control']).toContain('no-store');
+});
+
+for (const path of ['/es', '/es/shop', '/es/checkout']) {
   test(`a11y (axe, WCAG A/AA) ${path}`, async ({ page }) => {
     await page.goto(path, { waitUntil: 'networkidle' });
     await page.waitForTimeout(800);
@@ -92,10 +138,45 @@ for (const path of ['/es', '/es/shop', '/es/login']) {
   });
 }
 
-test('@mobile sin desbordamiento horizontal en home, tienda y producto', async ({ page }) => {
+test('@mobile sin desbordamiento horizontal en home, tienda y categoría', async ({ page }) => {
   for (const p of ['/es', '/es/shop', '/es/shop/watches']) {
     await page.goto(p, { waitUntil: 'networkidle' });
     const over = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(over, p).toBeLessThanOrEqual(0);
   }
+});
+
+test('admin: iniciar sesión y confirmar el pago de un pedido registrado por un cliente', async ({ page, browser, baseURL }) => {
+  test.setTimeout(90_000);
+  test.skip(!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD, 'Requiere ADMIN_EMAIL y ADMIN_PASSWORD (los mismos del servidor).');
+  // 1) Un cliente hace un pedido de 1 unidad.
+  const ctx = await browser.newContext({ baseURL: baseURL! });
+  const shop = await ctx.newPage();
+  await shop.goto('/es/shop/rings', { waitUntil: 'networkidle' });
+  await shop.locator('a[href*="/product/"]').first().click();
+  await shop.waitForURL(/\/product\//);
+  await shop.getByRole('button', { name: /Añadir a la bolsa/ }).first().click();
+  await shop.goto('/es/checkout', { waitUntil: 'networkidle' });
+  await shop.locator('#fullName').fill('Cliente Admin Test');
+  await shop.locator('#phone').fill('0414 111 2222');
+  await shop.locator('#line1').fill('Calle 1, casa 2');
+  await shop.locator('#city').fill('Maracay');
+  await shop.getByRole('button', { name: 'Hacer pedido' }).click();
+  await shop.waitForURL(/checkout\/success/);
+  const number = (await shop.locator('main').innerText()).match(/CLV-\d+-\d+/)![0];
+  await ctx.close();
+
+  // 2) El administrador entra por la ruta oculta y confirma el pago.
+  await page.goto(`/es/${ADMIN}`);
+  await page.locator('#email').fill(process.env.ADMIN_EMAIL!);
+  await page.locator('#password').fill(process.env.ADMIN_PASSWORD!);
+  await page.getByRole('button', { name: 'Entrar' }).click();
+  await page.waitForURL(new RegExp(`/es/${ADMIN}$`));
+  await page.goto(`/es/${ADMIN}/orders`);
+  const row = page.locator('li', { hasText: number });
+  await expect(row).toContainText('Cliente Admin Test');
+  await row.getByRole('combobox').selectOption('paid');
+  await row.getByRole('button', { name: 'Guardar' }).click();
+  await page.reload();
+  await expect(page.locator('li', { hasText: number }).getByRole('combobox')).toHaveValue('paid');
 });

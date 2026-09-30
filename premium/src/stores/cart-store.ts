@@ -12,14 +12,10 @@ export interface CartLine {
 
 interface CartState {
   lines: CartLine[];
-  promoCode: string;
-  shippingMethod: 'standard' | 'express' | 'pickup';
   add: (line: CartLine) => void;
   setQuantity: (variantId: string, quantity: number) => void;
   remove: (variantId: string) => void;
   clear: () => void;
-  setPromo: (code: string) => void;
-  setShipping: (m: CartState['shippingMethod']) => void;
   count: () => number;
 }
 
@@ -29,8 +25,6 @@ export const useCart = create<CartState>()(
   persist(
     (set, get) => ({
       lines: [],
-      promoCode: '',
-      shippingMethod: 'standard',
       add: (line) =>
         set((s) => {
           const existing = s.lines.find((l) => l.variantId === line.variantId);
@@ -44,11 +38,9 @@ export const useCart = create<CartState>()(
           lines: quantity <= 0 ? s.lines.filter((l) => l.variantId !== variantId) : s.lines.map((l) => (l.variantId === variantId ? { ...l, quantity: Math.min(MAX_PER_LINE, quantity) } : l)),
         })),
       remove: (variantId) => set((s) => ({ lines: s.lines.filter((l) => l.variantId !== variantId) })),
-      clear: () => set({ lines: [], promoCode: '' }),
-      setPromo: (promoCode) => set({ promoCode }),
-      setShipping: (shippingMethod) => set({ shippingMethod }),
+      clear: () => set({ lines: [] }),
       count: () => get().lines.reduce((n, l) => n + l.quantity, 0),
     }),
-    { name: 'clover-cart-v1', storage: createJSONStorage(() => localStorage), skipHydration: true, partialize: (s) => ({ lines: s.lines, promoCode: s.promoCode, shippingMethod: s.shippingMethod }) },
+    { name: 'clover-cart-v2', storage: createJSONStorage(() => localStorage), skipHydration: true, partialize: (s) => ({ lines: s.lines }) },
   ),
 );

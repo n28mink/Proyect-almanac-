@@ -5,21 +5,23 @@
 
 @theme {
   /* ── Paleta base ─────────────────────────────────────────────── */
-  --color-ivory: #f6f1e9;
-  --color-porcelain: #fbf8f3;
-  --color-bone: #ebe4d8;
-  --color-sand: #d8cebf;
-  --color-ink: #151412;
-  --color-charcoal: #2b2926;
-  --color-graphite: #57524b;
-  --color-smoke: #6e675d;
-  --color-bronze: #7d5c3d;
-  --color-bronze-deep: #5f4429;
-  --color-champagne: #c4a878;
-  --color-champagne-soft: #dcc9a3;
-  --color-evergreen: #17261f;
-  --color-danger: #9b3a2f;
-  --color-success: #3f6a4f;
+  /* Paleta original de Clover (verde de marca + dorado champán sobre marfil), llevada a escala completa. */
+  --color-ivory: #faf9f4;
+  --color-porcelain: #fffefa;
+  --color-bone: #edf4ef;
+  --color-sand: #d9ded9;
+  --color-ink: #141a16;
+  --color-charcoal: #232b25;
+  --color-graphite: #4b524c;
+  --color-smoke: #5a625b;
+  --color-forest: #0b3f2b;
+  --color-forest-deep: #062d20;
+  --color-forest-mid: #176b43;
+  --color-gold: #b7985e;
+  --color-gold-soft: #d6c397;
+  --color-evergreen: #0b3f2b;
+  --color-danger: #a33131;
+  --color-success: #176b43;
 
   /* ── Breakpoints: mobile → tablet → laptop → desktop → ultrawide ── */
   --breakpoint-*: initial;
@@ -66,9 +68,9 @@
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 8px;
-  --shadow-soft: 0 1px 2px rgb(21 20 18 / 0.04), 0 14px 34px -14px rgb(21 20 18 / 0.14);
-  --shadow-lift: 0 2px 4px rgb(21 20 18 / 0.05), 0 26px 60px -18px rgb(21 20 18 / 0.26);
-  --shadow-drawer: -24px 0 60px -30px rgb(21 20 18 / 0.35);
+  --shadow-soft: 0 1px 2px rgb(20 26 22 / 0.04), 0 14px 34px -14px rgb(20 26 22 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(20 26 22 / 0.05), 0 26px 60px -18px rgb(20 26 22 / 0.26);
+  --shadow-drawer: -24px 0 60px -30px rgb(20 26 22 / 0.35);
 
   /* ── Curvas (espejo de src/config/motion.ts) ─────────────────── */
   --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
@@ -104,10 +106,10 @@
   --fg: var(--color-ink);
   --fg-muted: var(--color-graphite);
   --fg-subtle: var(--color-smoke);
-  --line: rgb(21 20 18 / 0.14);
-  --line-strong: rgb(21 20 18 / 0.32);
-  --accent: var(--color-bronze);
-  --accent-decor: var(--color-champagne);
+  --line: rgb(20 26 22 / 0.14);
+  --line-strong: rgb(20 26 22 / 0.32);
+  --accent: var(--color-forest);
+  --accent-decor: var(--color-gold);
 
   /* Movimiento (espejo de src/config/motion.ts; verificado por test) */
   --dur-instant: 120ms;
@@ -138,29 +140,29 @@
 /* Tono oscuro: secciones/superficies en tinta. */
 [data-tone='ink'] {
   --surface: var(--color-ink);
-  --surface-raised: #1d1b19;
-  --surface-sunken: #100f0e;
-  --fg: #f4efe6;
-  --fg-muted: #b8b0a3;
-  --fg-subtle: #8c857b;
-  --line: rgb(244 239 230 / 0.16);
-  --line-strong: rgb(244 239 230 / 0.36);
-  --accent: var(--color-champagne);
-  --accent-decor: var(--color-champagne);
+  --surface-raised: #1b241e;
+  --surface-sunken: #0e1511;
+  --fg: #f2f3ee;
+  --fg-muted: #b9c1bb;
+  --fg-subtle: #97a39b;
+  --line: rgb(242 243 238 / 0.16);
+  --line-strong: rgb(242 243 238 / 0.36);
+  --accent: var(--color-gold-soft);
+  --accent-decor: var(--color-gold);
   color-scheme: dark;
 }
 
 /* Tono profundo de herencia (verde Clover) — uso muy puntual. */
 [data-tone='evergreen'] {
   --surface: var(--color-evergreen);
-  --surface-raised: #1e3128;
-  --surface-sunken: #111c16;
-  --fg: #f4efe6;
-  --fg-muted: #b9c4bb;
-  --fg-subtle: #8a9a8f;
-  --line: rgb(244 239 230 / 0.16);
-  --line-strong: rgb(244 239 230 / 0.36);
-  --accent: var(--color-champagne);
-  --accent-decor: var(--color-champagne);
+  --surface-raised: #123f2e;
+  --surface-sunken: #072a1d;
+  --fg: #f2f3ee;
+  --fg-muted: #c3d0c7;
+  --fg-subtle: #9fb2a6;
+  --line: rgb(242 243 238 / 0.16);
+  --line-strong: rgb(242 243 238 / 0.36);
+  --accent: var(--color-gold-soft);
+  --accent-decor: var(--color-gold);
   color-scheme: dark;
 }

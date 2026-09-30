@@ -29,9 +29,9 @@ export interface HomeCampaigns {
  */
 export const defaultCampaigns: HomeCampaigns = {
   announcements: [
-    L('Envío gratis en pedidos desde $80', 'Free shipping on orders over $80'),
-    L('Atención personal por WhatsApp', 'Personal service via WhatsApp'),
-    L('Nueva colección Lumière', 'New Lumière collection'),
+    L('Pedidos por WhatsApp · Atención personal', 'Orders via WhatsApp · Personal service'),
+    L('Entregas en Venezuela · Precios en USD', 'Delivery within Venezuela · Prices in USD'),
+    L('Pago móvil, transferencia o efectivo', 'Pago móvil, transfer or cash'),
   ],
   hero: {
     videoKey: 'hero.campaign',

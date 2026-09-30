@@ -1,19 +1,22 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { Logo } from '@/components/brand/Logo';
 import { TransitionLink } from '@/components/motion/TransitionLink';
+import type { Locale } from '@/i18n/routing';
 import { site } from '@/config/site';
-import { CurrencySwitcher, LocaleSwitcher } from './Switchers';
+import { greeting, whatsappDisplay, whatsappUrl } from '@/lib/whatsapp';
+import { LocaleSwitcher } from './Switchers';
 import type { NavData } from './nav-data';
 
 export async function Footer({ nav }: { nav: NavData }) {
   const t = await getTranslations('footer');
+  const locale = (await getLocale()) as Locale;
   const col = 'space-y-3 text-caption';
   const head = 'label-micro mb-5 text-fg-subtle';
   const link = 'nav-link w-fit text-fg-muted hover:text-fg';
-  const wa = `https://wa.me/${site.whatsapp}`;
+  const wa = whatsappUrl(greeting(locale));
 
   return (
-    <footer data-tone="ink" className="bg-surface text-fg">
+    <footer data-tone="evergreen" className="bg-surface text-fg">
       <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:py-24">
         <div className="max-w-sm">
           <Logo />
@@ -38,17 +41,17 @@ export async function Footer({ nav }: { nav: NavData }) {
             <li><TransitionLink href="/about" className={link}>{t('story')}</TransitionLink></li>
             <li><TransitionLink href="/journal" className={link}>{t('journal')}</TransitionLink></li>
             <li><TransitionLink href="/lookbook" className={link}>{t('lookbook')}</TransitionLink></li>
-            <li><TransitionLink href="/account" className={link}>{t('account')}</TransitionLink></li>
           </ul>
         </nav>
 
         <nav aria-label={t('help')} className={col}>
           <h2 className={head}>{t('help')}</h2>
           <ul className="space-y-3">
-            <li><a href={wa} target="_blank" rel="noopener noreferrer" className={link}>WhatsApp</a></li>
-            <li><TransitionLink href="/legal/shipping-returns" className={link}>{t('shipping')}</TransitionLink></li>
+            <li><a href={wa} target="_blank" rel="noopener noreferrer" className={link}>WhatsApp · {whatsappDisplay}</a></li>
+            <li><TransitionLink href="/legal/shipping" className={link}>{t('shipping')}</TransitionLink></li>
             <li><TransitionLink href="/legal/privacy" className={link}>{t('privacy')}</TransitionLink></li>
             <li><TransitionLink href="/legal/terms" className={link}>{t('terms')}</TransitionLink></li>
+            <li><TransitionLink href="/legal/cookies" className={link}>{t('cookies')}</TransitionLink></li>
           </ul>
         </nav>
       </div>
@@ -57,10 +60,9 @@ export async function Footer({ nav }: { nav: NavData }) {
         <p className="text-caption text-fg-subtle">© {new Date().getFullYear()} {site.legalName}. {t('rights')}</p>
         <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
           <LocaleSwitcher />
-          <CurrencySwitcher />
         </div>
       </div>
-      <p className="container-x pb-8 text-caption text-fg-subtle">{t('currencyNote')}</p>
+      <p className="container-x pb-8 text-caption text-fg-subtle">{t('pricesNote')}</p>
     </footer>
   );
 }
