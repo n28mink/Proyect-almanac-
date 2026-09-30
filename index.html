@@ -36,7 +36,7 @@
   --p:#fffefa;            /* papel */
   --iv:#faf9f4;           /* marfil */
   --ink:#171c18;
-  --mut:#636b65;
+  --mut:#4b524c;          /* contraste >= 7:1 sobre marfil (texto normal legible) */
   --line:#d9ded9;
   --gold:#b7985e;         /* dorado champagne */
   --lite:#edf4ef;
@@ -164,7 +164,6 @@ footer{padding:52px 0 28px;background:#062d20;color:#fff}
 .legal-body a{color:var(--g);font-weight:700}
 .footbrand{font:400 2.5rem var(--serif)}
 .small{color:#c6d2ca;font-size:.83rem;max-width:650px}
-.adminlink{color:#e4d4ad;font-size:.78rem}
 .footbottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:34px;padding-top:18px;border-top:1px solid #ffffff2f;color:#b9c7be;font-size:.78rem}
 
 /* ============ OVERLAYS (modales) ============ */
@@ -501,7 +500,6 @@ a{transition:color .3s ease,opacity .3s ease}
     <div class="footbottom">
       <span>© <span id="footerYear"></span> Clover · Accesorios &amp; Prendas. Todos los derechos reservados.</span>
       <span>Precios en USD · Pedidos por WhatsApp</span>
-      <a class="adminlink" href="#admin" id="adminLink">Acceso admin</a>
     </div>
   </div>
 </footer>
@@ -600,7 +598,7 @@ a{transition:color .3s ease,opacity .3s ease}
       <!-- Paso 1: clave -->
       <div id="pinGate">
         <h2 id="adminTitle">Acceso admin</h2>
-        <p class="small" style="color:var(--mut)">Ingresa tu clave de 4 dígitos para gestionar el inventario de la tienda.</p>
+        <p class="small" style="color:var(--mut)">Ingresa tu clave de 4 dígitos para gestionar el inventario de la tienda. Esta clave solo evita accesos casuales: la protección real es tu token de GitHub, que se pide más abajo y nunca sale de este dispositivo.</p>
         <div class="pinrow">
           <input id="pinInput" type="password" inputmode="numeric" maxlength="4" autocomplete="off" aria-label="Clave de 4 dígitos" placeholder="••••">
           <button class="btn" id="pinBtn" type="button">Entrar</button>
@@ -620,7 +618,8 @@ a{transition:color .3s ease,opacity .3s ease}
         <div id="tokenBox">
           <label class="legend" for="ghToken">Token de GitHub</label>
           <input id="ghToken" type="password" autocomplete="off" placeholder="Pégalo aquí una vez">
-          <p class="small" style="color:var(--mut)">Queda guardado solo en este teléfono y solo se usa para publicar. Créalo como token fino (fine-grained) con permiso <em>Contents: lectura y escritura</em> únicamente para este repositorio. Nunca lo compartas.</p>
+          <p class="small" style="color:var(--mut)">Se usa solo para publicar y se olvida solo al cerrar esta pestaña (no queda guardado para siempre). Créalo como token fino (fine-grained), con permiso <em>Contents: lectura y escritura</em> únicamente para este repositorio, y ponle una fecha de expiración corta. Nunca lo compartas.</p>
+          <button class="clear-cart" id="clearToken" type="button">Borrar token de este dispositivo</button>
         </div>
         <p id="adminStatus" aria-live="polite"></p>
         <h2 style="margin-top:26px">Métricas de visitas</h2>
@@ -649,7 +648,20 @@ a{transition:color .3s ease,opacity .3s ease}
 
 /* ================= CONFIG =================
    WhatsApp: solo dígitos con código de país, sin + ni espacios.
-   adminPin: clave del panel admin. Cámbiala por la tuya. */
+
+   adminPinHash: hash SHA-256 de la clave de 4 dígitos del panel admin (nunca
+   se guarda en texto plano). El valor de abajo corresponde a '1234': cámbialo
+   por el tuyo. Para generarlo, abre la consola del navegador (F12) en
+   cualquier página y ejecuta, reemplazando TU_CLAVE:
+     crypto.subtle.digest('SHA-256', new TextEncoder().encode('TU_CLAVE'))
+       .then(b => console.log(Array.from(new Uint8Array(b)).map(x => x.toString(16).padStart(2,'0')).join('')))
+   Copia el resultado aquí. Recuerda: esta clave solo evita que un visitante
+   casual entre al panel; quien publica cambios de verdad necesita además el
+   token de GitHub, que nunca viaja fuera de este dispositivo.
+
+   adminRoute: la "ruta secreta" para entrar al panel admin, ya que no hay
+   ningún enlace visible en la página. Se entra escribiendo en el navegador
+   tu-sitio.com/#<adminRoute>. Cámbiala por una tuya, difícil de adivinar. */
 const CONFIG = {
   nombre: 'Clover🍀 · Accesorios y Prendas',
   whatsapp: '584121318133',
@@ -657,7 +669,8 @@ const CONFIG = {
   metodosPago: ['Pago móvil', 'Transferencia', 'Efectivo'],
   anioCatalogo: 2026,
   maxCantidad: 20,
-  adminPin: '1234',
+  adminPinHash: '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4',
+  adminRoute: 'panel-clover-2026',
   versionCarrito: 3,
   /* ID de Google Analytics 4 (formato G-XXXXXXXXXX). Mientras siga siendo
      el valor demo de abajo, no se carga ningún rastreador y no se mide nada.
@@ -1629,7 +1642,7 @@ const DEMO_INV = PRODUCTOS.map(p => ({
 /* ================= ESTADO Y AYUDAS ================= */
 const KEY_CARRITO = 'clover-carrito-v3';
 const KEY_INV = 'clover-inventario-v1';   // ajustes del admin en este teléfono
-const KEY_TOKEN = 'clover-gh-token';      // token de GitHub (solo este teléfono)
+const KEY_TOKEN = 'clover-gh-token';      // token de GitHub (solo este teléfono, solo mientras esta pestaña siga abierta)
 
 const state = {
   cart: [], filter: 'Todas', query: '', page: 1,
@@ -1764,6 +1777,7 @@ function img(src, alt) {
   n.alt = alt;
   n.width = 900;
   n.height = 900;
+  n.loading = 'lazy';
   n.decoding = 'async';
   n.addEventListener('error', () => { n.onerror = null; n.src = imagenDemo('Imagen no disponible', '#304d3c', '#9a8d6f'); });
   return n;
@@ -2372,11 +2386,18 @@ function keys(ev) {
 }
 
 /* ================= ADMIN ================= */
+async function sha256Hex(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
 function leerToken() {
-  try { return localStorage.getItem(KEY_TOKEN) || ''; } catch (x) { return ''; }
+  try { return sessionStorage.getItem(KEY_TOKEN) || ''; } catch (x) { return ''; }
 }
 function guardarToken(v) {
-  try { localStorage.setItem(KEY_TOKEN, v); } catch (x) {}
+  try { sessionStorage.setItem(KEY_TOKEN, v); } catch (x) {}
+}
+function borrarToken() {
+  try { sessionStorage.removeItem(KEY_TOKEN); } catch (x) {}
 }
 
 function renderAdminRows() {
@@ -2447,7 +2468,7 @@ function abrirAdmin() {
   text(e.pinError, '');
   text(e.adminStatus, '');
   e.ghToken.value = leerToken();
-  openOverlay(e.adminOverlay, e.adminLink);
+  openOverlay(e.adminOverlay);
   setTimeout(() => e.pinInput.focus(), 120);
 }
 
@@ -2472,17 +2493,29 @@ async function publicarInventario() {
     // sha actual (si el archivo ya existe)
     let sha = null;
     const g = await fetch(api + '?ref=' + gh.branch, { headers: { 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + token } });
+    if (g.status === 401 || g.status === 403) {
+      text(e.adminStatus, 'Token inválido o sin permisos. Revisa que sea correcto y tenga acceso de Contents: lectura y escritura a este repositorio.');
+      return;
+    }
     if (g.ok) sha = (await g.json()).sha;
     const body = { message: 'Admin: actualiza inventario', branch: gh.branch, content: btoa(unescape(encodeURIComponent(contenido))) };
     if (sha) body.sha = sha;
     const r = await fetch(api, { method: 'PUT', headers: head, body: JSON.stringify(body) });
+    if (r.status === 409) {
+      text(e.adminStatus, 'Alguien más publicó cambios primero. Cierra el panel, vuelve a abrirlo para traer los datos más recientes y aplica tus cambios de nuevo.');
+      return;
+    }
+    if (r.status === 401 || r.status === 403) {
+      text(e.adminStatus, 'Token inválido o sin permisos para publicar. Revisa tu token de GitHub.');
+      return;
+    }
     if (!r.ok) throw new Error('GitHub respondió ' + r.status);
     guardarLocal(); // lo publicado también queda guardado local
     aplicarInventario(leerAdminForm());
     renderProducts(); renderAdminRows();
     text(e.adminStatus, '¡Publicado! La tienda se actualiza en 1–2 minutos.');
   } catch (err) {
-    text(e.adminStatus, 'No se pudo publicar. Revisa el token y tu conexión.');
+    text(e.adminStatus, 'No se pudo publicar. Revisa tu conexión a internet e intenta de nuevo.');
   }
 }
 
@@ -2553,16 +2586,31 @@ function bind() {
   };
 
   // Admin
-  e.adminLink.onclick = ev => { ev.preventDefault(); abrirAdmin(); };
-  e.closeAdmin.onclick = () => { closeOverlay(e.adminOverlay); if (location.hash === '#admin') history.replaceState(null, '', location.pathname); };
-  const tryPin = () => {
-    if (e.pinInput.value === CONFIG.adminPin) {
+  e.closeAdmin.onclick = () => { closeOverlay(e.adminOverlay); if (location.hash === '#' + CONFIG.adminRoute) history.replaceState(null, '', location.pathname); };
+  let pinIntentos = 0;
+  let pinBloqueadoHasta = 0;
+  const tryPin = async () => {
+    const restante = Math.ceil((pinBloqueadoHasta - Date.now()) / 1000);
+    if (restante > 0) {
+      text(e.pinError, 'Demasiados intentos. Espera ' + restante + ' s e intenta de nuevo.');
+      return;
+    }
+    const hash = await sha256Hex(e.pinInput.value);
+    if (hash === CONFIG.adminPinHash) {
+      pinIntentos = 0;
       e.pinGate.hidden = true;
       e.adminPanel.hidden = false;
       renderAdminRows();
       text(e.pinError, '');
     } else {
-      text(e.pinError, 'Clave incorrecta.');
+      pinIntentos++;
+      if (pinIntentos >= 5) {
+        pinBloqueadoHasta = Date.now() + 30000;
+        pinIntentos = 0;
+        text(e.pinError, 'Demasiados intentos fallidos. Espera 30 s.');
+      } else {
+        text(e.pinError, 'Clave incorrecta.');
+      }
       e.pinInput.select();
     }
   };
@@ -2576,6 +2624,12 @@ function bind() {
     toast('Inventario actualizado en este teléfono');
   };
   e.publishInv.onclick = publicarInventario;
+  e.clearToken.onclick = () => {
+    borrarToken();
+    e.ghToken.value = '';
+    text(e.adminStatus, 'Token borrado de este dispositivo.');
+    toast('Token de GitHub borrado');
+  };
   e.resetInv.onclick = async () => {
     // Doble toque en lugar del confirm() nativo: en algunos navegadores
     // moviles el dialogo no aparece y el boton parece no hacer nada.
@@ -2620,7 +2674,7 @@ function bind() {
     if (Math.abs(d) > 45) { state.img += d < 0 ? 1 : -1; gallery(); }
   }, { passive: true });
 
-  window.addEventListener('hashchange', () => { if (location.hash === '#admin') abrirAdmin(); });
+  window.addEventListener('hashchange', () => { if (location.hash === '#' + CONFIG.adminRoute) abrirAdmin(); });
 }
 
 /* ================= INIT ================= */
@@ -2647,8 +2701,8 @@ function init() {
    'ppImage', 'ppCount', 'ppPrev', 'ppNext', 'ppCat', 'ppTitle', 'ppPrice', 'ppStock',
    'ppDescLong', 'ppSpecs', 'ppSizeGroup', 'ppSizes', 'ppColorGroup', 'ppColors',
    'ppMinus', 'ppPlus', 'ppQty', 'ppAdd', 'ppRelated',
-   'adminOverlay', 'closeAdmin', 'adminLink', 'pinGate', 'pinInput', 'pinBtn', 'pinError',
-   'adminPanel', 'adminRows', 'saveLocal', 'publishInv', 'resetInv', 'ghToken', 'adminStatus',
+   'adminOverlay', 'closeAdmin', 'pinGate', 'pinInput', 'pinBtn', 'pinError',
+   'adminPanel', 'adminRows', 'saveLocal', 'publishInv', 'resetInv', 'ghToken', 'clearToken', 'adminStatus',
    'legalOverlay', 'legalTitle', 'legalDate', 'legalBody', 'closeLegal',
    'footWhats', 'footHorario', 'gaStatus',
    'toast'].forEach(id => e[id] = document.getElementById(id));
@@ -2699,7 +2753,7 @@ const ICONOS_PAGO = {
   bind();
   observeRv();
   cargarInventario(); // mezcla inventario publicado + ajustes locales
-  if (location.hash === '#admin') abrirAdmin();
+  if (location.hash === '#' + CONFIG.adminRoute) abrirAdmin();
 }
 init();
 </script>
