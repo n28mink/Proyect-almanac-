@@ -7,7 +7,7 @@ import { TransitionLink } from '@/components/motion/TransitionLink';
 import { CloseIcon } from '@/components/ui/Icon';
 import { Dialog } from '@/components/ui/Dialog';
 import { useUi } from '@/stores/ui-store';
-import { CurrencySwitcher, LocaleSwitcher } from './Switchers';
+import { LocaleSwitcher } from './Switchers';
 import type { NavData } from './nav-data';
 
 /** Menú editorial a pantalla completa: <dialog> nativo (foco atrapado, Escape, inert) + revelado por máscara. */
@@ -57,7 +57,6 @@ export function MenuOverlay({ nav }: { nav: NavData }) {
               <TransitionLink href="/journal" className="nav-link block w-fit">{t('journal')}</TransitionLink>
               <TransitionLink href="/lookbook" className="nav-link block w-fit">{t('lookbook')}</TransitionLink>
               <TransitionLink href="/about" className="nav-link block w-fit">{t('about')}</TransitionLink>
-              <TransitionLink href="/account" className="nav-link block w-fit">{t('account')}</TransitionLink>
             </div>
           </div>
 
@@ -72,7 +71,6 @@ export function MenuOverlay({ nav }: { nav: NavData }) {
 
         <div className="container-x menu-fade flex flex-wrap items-center justify-between gap-4 border-t border-line py-4">
           <LocaleSwitcher />
-          <CurrencySwitcher />
         </div>
       </div>
     </Dialog>

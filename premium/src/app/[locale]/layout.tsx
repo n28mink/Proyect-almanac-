@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 /** Namespaces que necesita el cliente (admin y legal se quedan en el servidor). */
-const CLIENT_NAMESPACES = ['common', 'header', 'search', 'cart', 'video', 'newsletter', 'product', 'shop', 'checkout', 'auth', 'account', 'wishlist'];
+const CLIENT_NAMESPACES = ['common', 'header', 'search', 'cart', 'brand', 'video', 'product', 'shop', 'checkout', 'auth', 'wishlist'];
 
 export default async function LocaleLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;

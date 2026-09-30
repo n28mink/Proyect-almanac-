@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, type ReactNode } from 'react';
-import { CloverMark } from '@/components/brand/Logo';
+import { Wordmark } from '@/components/brand/Logo';
 import { gsapEase, pageTransition } from '@/config/motion';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { gsap } from '@/lib/gsap';
@@ -139,9 +139,9 @@ export function PageTransitionProvider({ children }: { children: ReactNode }) {
     <Ctx.Provider value={api}>
       {children}
       <div ref={overlay} aria-hidden="true" className="pointer-events-none invisible fixed inset-0 opacity-0" style={{ zIndex: 'var(--z-transition)' }}>
-        <div ref={panel} data-tone="ink" className="absolute inset-0 grid place-items-center bg-ink text-champagne data-[tone=porcelain]:bg-porcelain data-[tone=porcelain]:text-bronze" style={{ clipPath: 'inset(100% 0% 0% 0%)' }}>
+        <div ref={panel} data-tone="ink" className="absolute inset-0 grid place-items-center bg-forest text-gold-soft data-[tone=porcelain]:bg-porcelain data-[tone=porcelain]:text-forest" style={{ clipPath: 'inset(100% 0% 0% 0%)' }}>
           <div ref={mark}>
-            <CloverMark className="h-14 w-14" />
+            <Wordmark className="text-[2.75rem] md:text-[3.5rem]" />
           </div>
         </div>
       </div>

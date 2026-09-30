@@ -41,7 +41,7 @@ export function QuickView({ p, open, onClose }: { p: CardData; open: boolean; on
               <legend className="label-micro mb-3 text-fg-subtle">{t('option')}</legend>
               <div className="flex flex-wrap gap-2">
                 {p.variants.map((v) => (
-                  <label key={v.id} className={cn('label-micro cursor-pointer border px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2', v.id === variantId ? 'border-fg bg-fg text-surface' : 'border-line-strong hover:border-fg', v.stock <= 0 && 'opacity-40')}>
+                  <label key={v.id} className={cn('label-micro cursor-pointer border px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2', v.id === variantId ? 'border-accent bg-accent text-surface' : 'border-line-strong hover:border-fg', v.stock <= 0 && 'opacity-40')}>
                     <input type="radio" name={`qv-${p.id}`} value={v.id} checked={v.id === variantId} onChange={() => setVariantId(v.id)} className="sr-only" />
                     {v.label}
                   </label>

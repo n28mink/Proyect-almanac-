@@ -4,13 +4,14 @@ import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { ClearCartOnMount } from '@/components/checkout/ClearCartOnMount';
-import { ButtonLink } from '@/components/ui/Button';
+import { ButtonLink, ExternalButtonLink } from '@/components/ui/Button';
 import { PageShell } from '@/components/ui/PageShell';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { formatMoney } from '@/lib/format';
 import { buildMetadata } from '@/lib/seo';
-import { getSessionUser } from '@/server/auth/session';
+import { orderMessage, whatsappDisplay, whatsappUrl } from '@/lib/whatsapp';
+import type { Locale } from '@/i18n/routing';
 import { getOrder } from '@/server/repositories/orders';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -29,13 +30,12 @@ export default async function SuccessPage({ params, searchParams }: { params: Pr
   const order = orderId ? await getOrder(orderId) : undefined;
   if (!order) notFound();
 
-  // Un pedido de cuenta solo lo ve su dueño (o un admin). Los pedidos de invitado se protegen con su id no adivinable.
-  const user = await getSessionUser();
-  if (order.userId && user?.id !== order.userId && user?.role !== 'admin') notFound();
+  // El pedido solo se muestra a quien conoce su id (UUID no adivinable); no hay cuentas de cliente.
+  const wa = whatsappUrl(orderMessage(order, locale as Locale));
 
   return (
-    <PageShell eyebrow={t('successEyebrow', { number: order.number })} title={t('successTitle')} text={t('successText', { email: order.email })} narrow>
-      {order.status === 'paid' && <ClearCartOnMount />}
+    <PageShell eyebrow={t('successEyebrow', { number: order.number })} title={t('successTitle')} text={t('successText')} narrow>
+      <ClearCartOnMount />
       <ul className="divide-y divide-line border-y border-line">
         {order.lines.map((l) => (
           <li key={l.variantId} className="flex items-center gap-4 py-4">
@@ -49,10 +49,11 @@ export default async function SuccessPage({ params, searchParams }: { params: Pr
         <div className="flex justify-between"><dt className="text-fg-muted">{t('status')}</dt><dd>{t(`orderStatus.${order.status}`)}</dd></div>
         <div className="flex justify-between border-t border-line pt-3"><dt className="label-micro">{t('total')}</dt><dd className="font-display text-heading">{formatMoney(order.total, locale)}</dd></div>
       </dl>
-      <div className="mt-10 flex flex-wrap gap-4">
-        <ButtonLink href="/shop" transition="curtain">{t('continueShopping')}</ButtonLink>
-        {user && <ButtonLink href="/account/orders" variant="outline">{t('viewOrders')}</ButtonLink>}
+      <div className="mt-10 flex flex-wrap items-center gap-4">
+        <ExternalButtonLink href={wa} size="lg">{t('sendWhatsapp')}</ExternalButtonLink>
+        <ButtonLink href="/shop" variant="outline" size="lg" transition="curtain">{t('continueShopping')}</ButtonLink>
       </div>
+      <p className="mt-6 text-caption text-fg-muted">{t('whatsappHint', { number: whatsappDisplay, order: order.number })}</p>
     </PageShell>
   );
 }

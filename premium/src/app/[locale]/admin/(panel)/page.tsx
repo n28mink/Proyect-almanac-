@@ -6,22 +6,22 @@ import { routing } from '@/i18n/routing';
 import { formatMoney } from '@/lib/format';
 import { getCatalog } from '@/server/repositories/catalog';
 import { listOrders } from '@/server/repositories/orders';
-import { listUsers } from '@/server/repositories/users';
 
 export default async function AdminDashboard({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations('admin');
-  const [orders, users, catalog] = await Promise.all([listOrders(), listUsers(), getCatalog()]);
-  const paid = orders.filter((o) => ['paid', 'processing', 'shipped', 'delivered'].includes(o.status));
+  const [orders, catalog] = await Promise.all([listOrders(), getCatalog()]);
+  const pending = orders.filter((o) => o.status === 'pending_payment');
+  const paid = orders.filter((o) => o.status === 'paid' || o.status === 'delivered');
   const revenue = paid.reduce((s, o) => s + o.total, 0);
   const low = catalog.flatMap((p) => p.variants.filter((v) => v.stock <= 3).map((v) => ({ p, v }))).slice(0, 12);
 
   const kpis = [
     { label: t('kpi.orders'), value: String(orders.length) },
+    { label: t('kpi.pending'), value: String(pending.length) },
     { label: t('kpi.revenue'), value: formatMoney(revenue, locale) },
-    { label: t('kpi.customers'), value: String(users.filter((u) => u.role === 'customer').length) },
     { label: t('kpi.products'), value: String(catalog.length) },
   ];
 

@@ -13,13 +13,11 @@ interface QuoteState {
 }
 
 /**
- * Valoración del carrito hecha por el servidor (precios, stock, promo, envío). El cliente nunca calcula importes.
+ * Valoración del carrito hecha por el servidor (precios y stock). El cliente nunca calcula importes.
  * Debounce corto y descarte de respuestas obsoletas.
  */
-export function useCartQuote(enabled = true, country = 'VE'): QuoteState {
+export function useCartQuote(enabled = true): QuoteState {
   const lines = useCart((s) => s.lines);
-  const promoCode = useCart((s) => s.promoCode);
-  const shippingMethod = useCart((s) => s.shippingMethod);
   const [quote, setQuote] = useState<Quote | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -37,7 +35,7 @@ export function useCartQuote(enabled = true, country = 'VE'): QuoteState {
     const id = ++seq.current;
     setLoading(true);
     const timer = setTimeout(async () => {
-      const res = await quoteCartAction({ lines, promoCode: promoCode || undefined, shippingMethod, country });
+      const res = await quoteCartAction({ lines });
       if (id !== seq.current) return;
       setLoading(false);
       if (res.ok) {
@@ -46,7 +44,7 @@ export function useCartQuote(enabled = true, country = 'VE'): QuoteState {
       } else setError(true);
     }, 180);
     return () => clearTimeout(timer);
-  }, [enabled, lines, promoCode, shippingMethod, country, tick]);
+  }, [enabled, lines, tick]);
 
   const refresh = useCallback(() => setTick((t) => t + 1), []);
   return { quote, loading, error, refresh };

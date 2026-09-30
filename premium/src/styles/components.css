@@ -11,7 +11,7 @@ dialog.dlg {
   inset: auto;
 }
 dialog.dlg::backdrop {
-  background: rgb(21 20 18 / 0.52);
+  background: rgb(20 26 22 / 0.52);
   opacity: 0;
   transition: opacity 0.4s var(--ease-luxe);
 }
@@ -147,6 +147,7 @@ dialog.dlg[data-visible='true'] .menu-fade {
   inset: 0 0 auto 0;
   z-index: var(--z-header);
   color: var(--header-fg, var(--fg));
+  --logo-fg: var(--color-forest);
   transition:
     transform 0.55s var(--ease-expo),
     background-color 0.45s var(--ease-luxe),
@@ -163,6 +164,7 @@ dialog.dlg[data-visible='true'] .menu-fade {
 }
 .site-header[data-tone='light']:not([data-solid='true']) {
   --header-fg: #f7f2e9;
+  --logo-fg: #f1e6c8;
 }
 .site-header[data-hidden='true'] {
   transform: translate3d(0, -100%, 0);

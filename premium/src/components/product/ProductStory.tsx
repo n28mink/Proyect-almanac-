@@ -55,7 +55,7 @@ export async function ProductStory({ p, video }: { p: ProductView; video: VideoA
           <h2 className="font-display text-heading">{t('careShipping')}</h2>
           <div className="grid gap-8 text-fg-muted sm:grid-cols-2">
             <p>{t('shippingLong')}</p>
-            <p>{t('returnsLong')}</p>
+            <p>{t('payLong')}</p>
           </div>
         </div>
       </section>

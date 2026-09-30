@@ -3,7 +3,10 @@ import path from 'node:path';
 import { env } from '../env';
 
 /**
- * Almacén de documentos JSON (adaptador por defecto). Escritura atómica (tmp + rename) y exclusión mutua por documento.
+ * Almacén de documentos. Dos adaptadores con la misma interfaz:
+ *  - Upstash Redis / Vercel KV (REST): se activa con UPSTASH_REDIS_REST_URL + _TOKEN (o KV_REST_API_URL + _TOKEN).
+ *    Es lo que hace que precios, inventario y pedidos persistan en Vercel (sistema de archivos de solo lectura).
+ *  - Archivos JSON locales (por defecto). Escritura atómica (tmp + rename) y exclusión mutua por documento.
  * Si el sistema de archivos es de solo lectura (p. ej. Vercel) cae a memoria — en ese caso sustituir por una base de
  * datos real implementando la misma interfaz `DocumentStore`.
  */
@@ -58,5 +61,51 @@ class JsonFileStore implements DocumentStore {
   }
 }
 
+/**
+ * Redis por REST (sin SDK). Cada documento es una clave `clover:<nombre>` con su JSON. `update` hace lectura–
+ * modificación–escritura con exclusión mutua dentro del proceso; entre instancias serverless la última escritura gana,
+ * suficiente para el volumen de una tienda pequeña (un solo administrador, pedidos espaciados).
+ */
+class RedisRestStore implements DocumentStore {
+  private locks = new Map<string, Promise<unknown>>();
+  constructor(private url: string, private token: string) {}
+
+  private async cmd<R>(...args: string[]): Promise<R> {
+    const res = await fetch(this.url, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${this.token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(args),
+      cache: 'no-store',
+    });
+    if (!res.ok) throw new Error(`Redis REST ${res.status}`);
+    const json = (await res.json()) as { result?: R; error?: string };
+    if (json.error) throw new Error(json.error);
+    return json.result as R;
+  }
+
+  async read<T>(name: string, fallback: T): Promise<T> {
+    const raw = await this.cmd<string | null>('GET', `clover:${name}`);
+    return raw ? (JSON.parse(raw) as T) : structuredClone(fallback);
+  }
+
+  async update<T>(name: string, fallback: T, mutate: (current: T) => T | Promise<T>): Promise<T> {
+    const previous = this.locks.get(name) ?? Promise.resolve();
+    const run = previous.then(async () => {
+      const next = await mutate(await this.read<T>(name, fallback));
+      await this.cmd('SET', `clover:${name}`, JSON.stringify(next));
+      return next;
+    });
+    this.locks.set(name, run.catch(() => undefined));
+    return run;
+  }
+}
+
+function createStore(): DocumentStore {
+  const e = env();
+  const url = e.UPSTASH_REDIS_REST_URL ?? e.KV_REST_API_URL;
+  const token = e.UPSTASH_REDIS_REST_TOKEN ?? e.KV_REST_API_TOKEN;
+  return url && token ? new RedisRestStore(url, token) : new JsonFileStore();
+}
+
 const globalStore = globalThis as unknown as { __cloverStore?: DocumentStore };
-export const store: DocumentStore = (globalStore.__cloverStore ??= new JsonFileStore());
+export const store: DocumentStore = (globalStore.__cloverStore ??= createStore());

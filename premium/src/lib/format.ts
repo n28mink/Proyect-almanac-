@@ -1,17 +1,15 @@
-import { currencies, localeFormats } from '@/config/site';
-import type { CurrencyCode } from '@/domain/commerce';
+import { localeFormats } from '@/config/site';
 import type { Locale } from '@/i18n/routing';
 
-/** Céntimos USD → texto localizado en la moneda de visualización. Solo visualización: se cobra en USD. */
-export function formatMoney(cents: number, locale: Locale, currency: CurrencyCode = 'USD'): string {
-  const { rate } = currencies[currency];
+/** Céntimos USD → texto localizado. Todos los precios de Clover son en dólares. */
+export function formatMoney(cents: number, locale: Locale): string {
   return new Intl.NumberFormat(localeFormats[locale].intl, {
     style: 'currency',
-    currency,
+    currency: 'USD',
     currencyDisplay: 'narrowSymbol',
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
-  }).format((cents / 100) * rate);
+  }).format(cents / 100);
 }
 
 export function formatDate(iso: string, locale: Locale): string {

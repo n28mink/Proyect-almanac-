@@ -66,7 +66,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
       </nav>
 
       <div data-header-tone="dark">
-        <ProductDetail p={view} locale={locale} />
+        <ProductDetail p={view} />
       </div>
 
       <ProductStory p={view} video={video} />

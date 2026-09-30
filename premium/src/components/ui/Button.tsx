@@ -7,8 +7,8 @@ type Variant = 'solid' | 'outline' | 'ghost' | 'link';
 type Size = 'sm' | 'md' | 'lg';
 
 const variants: Record<Variant, string> = {
-  solid: 'bg-fg text-surface border border-fg hover:bg-transparent hover:text-fg',
-  outline: 'border border-line-strong text-fg hover:bg-fg hover:text-surface hover:border-fg',
+  solid: 'bg-accent text-surface border border-accent hover:bg-transparent hover:text-accent',
+  outline: 'border border-line-strong text-fg hover:bg-accent hover:text-surface hover:border-accent',
   ghost: 'text-fg hover:bg-fg/5 border border-transparent',
   link: 'link-underline text-fg border-0 px-0 !min-h-0 !h-auto py-1',
 };
@@ -52,5 +52,14 @@ export function ButtonLink({ href, children, variant, size, className, transitio
     <TransitionLink href={href} variant={transition} className={buttonClass(variant, size, className)} {...rest}>
       {children}
     </TransitionLink>
+  );
+}
+
+/** Enlace externo con aspecto de botón (WhatsApp): abre en pestaña nueva, sin referrer ni opener. */
+export function ExternalButtonLink({ href, children, variant, size, className, ...rest }: Omit<ButtonLinkProps, 'transition'>) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={buttonClass(variant, size, className)} {...rest}>
+      {children}
+    </a>
   );
 }

@@ -1,13 +1,13 @@
 /**
  * Content-Security-Policy escalonada.
  *
- * - Rutas sensibles (checkout, cuenta, admin, auth): render dinámico + nonce + `strict-dynamic`.
+ * - Rutas sensibles (checkout y panel de administración): render dinámico + nonce + `strict-dynamic`.
  * - Resto (catálogo estático/ISR): Next inyecta scripts inline sin nonce en páginas prerenderizadas, por lo que
  *   se permite `'unsafe-inline'` SOLO en script-src y se cierra todo lo demás (objetos, base, frames, formularios).
  *   Es el compromiso documentado para conservar caché de CDN.
  */
 
-const SENSITIVE = /^\/(es|en)\/(checkout|account|admin|login|register)(\/|$)/;
+const SENSITIVE = /^\/(es|en)\/(checkout|admin)(\/|$)/;
 
 export function isSensitivePath(pathname: string): boolean {
   return SENSITIVE.test(pathname);

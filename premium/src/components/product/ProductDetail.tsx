@@ -6,17 +6,15 @@ import { Product3D } from '@/components/three/Product3D';
 import { Button } from '@/components/ui/Button';
 import { CheckIcon, MinusIcon, PlusIcon, ReturnIcon, TruckIcon } from '@/components/ui/Icon';
 import { Price } from '@/components/ui/Price';
-import { site } from '@/config/site';
 import type { ProductView } from '@/lib/card-data';
 import { cn } from '@/lib/cn';
 import { useInView } from '@/lib/hooks';
-import { formatMoney } from '@/lib/format';
 import { ProductGallery } from './ProductGallery';
 import { useAddToBag } from './use-add-to-bag';
 import { WishlistButton } from './WishlistButton';
 
 /** Ficha: galería + panel de compra fijo (sticky) en escritorio, barra de compra fija en móvil. */
-export function ProductDetail({ p, locale }: { p: ProductView; locale: 'es' | 'en' }) {
+export function ProductDetail({ p }: { p: ProductView }) {
   const t = useTranslations('product');
   const addToBag = useAddToBag();
   const [index, setIndex] = useState(0);
@@ -51,7 +49,7 @@ export function ProductDetail({ p, locale }: { p: ProductView; locale: 'es' | 'e
         {p.model3d && (
           <div role="tablist" aria-label={t('viewMode')} className="mb-4 flex gap-2">
             {(['photos', '3d'] as const).map((m) => (
-              <button key={m} role="tab" type="button" aria-selected={view === m} onClick={() => setView(m)} className={cn('label-micro border px-4 py-2.5 transition-colors', view === m ? 'border-fg bg-fg text-surface' : 'border-line-strong hover:border-fg')}>
+              <button key={m} role="tab" type="button" aria-selected={view === m} onClick={() => setView(m)} className={cn('label-micro border px-4 py-2.5 transition-colors', view === m ? 'border-accent bg-accent text-surface' : 'border-line-strong hover:border-fg')}>
                 {m === 'photos' ? t('photos') : t('view3dTab')}
               </button>
             ))}
@@ -78,7 +76,7 @@ export function ProductDetail({ p, locale }: { p: ProductView; locale: 'es' | 'e
             <legend className="label-micro mb-3 text-fg-subtle">{t('option')}: <span className="text-fg">{variant.label}</span></legend>
             <div className="flex flex-wrap gap-2">
               {p.variants.map((v) => (
-                <label key={v.id} className={cn('label-micro cursor-pointer border px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2', v.id === variantId ? 'border-fg bg-fg text-surface' : 'border-line-strong hover:border-fg', v.stock <= 0 && 'opacity-40 line-through')}>
+                <label key={v.id} className={cn('label-micro cursor-pointer border px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2', v.id === variantId ? 'border-accent bg-accent text-surface' : 'border-line-strong hover:border-fg', v.stock <= 0 && 'opacity-40 line-through')}>
                   <input type="radio" name="variant" value={v.id} checked={v.id === variantId} onChange={() => pickVariant(v.id)} className="sr-only" />
                   {v.label}
                 </label>
@@ -87,7 +85,7 @@ export function ProductDetail({ p, locale }: { p: ProductView; locale: 'es' | 'e
           </fieldset>
         )}
 
-        <p className={cn('mt-6 flex items-center gap-2 text-caption', soldOut ? 'text-danger' : low ? 'text-bronze' : 'text-success')} role="status">
+        <p className={cn('mt-6 flex items-center gap-2 text-caption', soldOut ? 'text-danger' : low ? 'text-forest' : 'text-success')} role="status">
           <CheckIcon width={16} height={16} />
           {soldOut ? t('soldOut') : low ? t('lowStock', { count: variant.stock }) : t('inStock')}
         </p>
@@ -105,8 +103,8 @@ export function ProductDetail({ p, locale }: { p: ProductView; locale: 'es' | 'e
         </div>
 
         <ul className="mt-8 space-y-3 border-t border-line pt-6 text-caption text-fg-muted">
-          <li className="flex items-start gap-3"><TruckIcon width={20} height={20} className="mt-0.5 shrink-0" />{t('shippingNote', { amount: formatMoney(site.freeShippingThreshold, locale) })}</li>
-          <li className="flex items-start gap-3"><ReturnIcon width={20} height={20} className="mt-0.5 shrink-0" />{t('returnsNote')}</li>
+          <li className="flex items-start gap-3"><TruckIcon width={20} height={20} className="mt-0.5 shrink-0" />{t('shippingNote')}</li>
+          <li className="flex items-start gap-3"><ReturnIcon width={20} height={20} className="mt-0.5 shrink-0" />{t('paymentNote')}</li>
         </ul>
 
         {p.highlights.length > 0 && (

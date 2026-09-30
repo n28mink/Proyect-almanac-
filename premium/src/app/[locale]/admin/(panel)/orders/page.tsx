@@ -19,12 +19,16 @@ export default async function AdminOrders({ params }: { params: Promise<{ locale
   return (
     <div>
       <h1 className="font-display text-display-m">{t('tabs.orders')}</h1>
+      <p className="mt-3 max-w-2xl text-caption text-fg-muted">{t('ordersHint')}</p>
       {orders.length === 0 ? <p className="mt-8 text-fg-muted">{t('noOrders')}</p> : (
         <ul className="mt-8 divide-y divide-line border-y border-line">
           {orders.map((o) => (
             <li key={o.id} className="grid items-center gap-4 py-5 lg:grid-cols-[1fr_2fr_auto_auto]">
-              <div><p className="font-display text-lead">{o.number}</p><p className="text-caption text-fg-muted">{formatDate(o.createdAt, locale)} · {o.email}</p></div>
-              <p className="text-caption text-fg-muted">{o.lines.map((l) => `${pick(l.name, locale)} ×${l.quantity}`).join(' · ')}</p>
+              <div><p className="font-display text-lead">{o.number}</p><p className="text-caption text-fg-muted">{formatDate(o.createdAt, locale)} · {o.contact.fullName} · {o.contact.phone}</p></div>
+              <div className="text-caption text-fg-muted">
+                <p>{o.lines.map((l) => `${pick(l.name, locale)} ×${l.quantity}`).join(' · ')}</p>
+                <p className="mt-1">{[o.shippingAddress.line1, o.shippingAddress.city, o.shippingAddress.region].filter(Boolean).join(', ')}{o.notes ? ` · ${o.notes}` : ''}</p>
+              </div>
               <p className="tabular">{formatMoney(o.total, locale)}</p>
               <form action={updateOrderStatusAction} className="flex items-center gap-2">
                 <input type="hidden" name="id" value={o.id} />

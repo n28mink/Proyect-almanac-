@@ -1,10 +1,6 @@
 import { z } from 'zod';
 import { cents } from './catalog';
 
-export const currencyCodes = ['USD', 'EUR', 'GBP', 'MXN'] as const;
-export const currencySchema = z.enum(currencyCodes);
-export type CurrencyCode = z.infer<typeof currencySchema>;
-
 /** Línea que envía el cliente: SOLO identificadores y cantidad. Los precios jamás viajan desde el cliente. */
 export const cartLineInputSchema = z.object({
   productId: z.string().min(1).max(64),
@@ -15,9 +11,6 @@ export type CartLineInput = z.infer<typeof cartLineInputSchema>;
 
 export const cartInputSchema = z.object({
   lines: z.array(cartLineInputSchema).max(40),
-  promoCode: z.string().trim().max(32).optional(),
-  shippingMethod: z.enum(['standard', 'express', 'pickup']).default('standard'),
-  country: z.string().length(2).default('VE'),
 });
 export type CartInput = z.infer<typeof cartInputSchema>;
 
@@ -38,43 +31,18 @@ export interface QuotedLine {
   adjusted: boolean;
 }
 
+/** Valoración del servidor. El costo de envío no se suma: se acuerda por WhatsApp según la zona. */
 export interface Quote {
   lines: QuotedLine[];
   subtotal: number;
-  discount: number;
-  shipping: number;
-  tax: number;
   total: number;
   currency: 'USD';
-  freeShippingThreshold: number;
-  /** Cuánto falta para envío gratis (0 si ya aplica). */
-  freeShippingRemaining: number;
-  promo?: { code: string; label: { es: string; en: string } };
   /** Códigos de aviso para la UI (i18n en cliente). */
-  warnings: Array<'promo_invalid' | 'promo_min_subtotal' | 'stock_adjusted' | 'item_unavailable'>;
+  warnings: Array<'stock_adjusted' | 'item_unavailable'>;
 }
 
-export const addressSchema = z.object({
-  id: z.string(),
-  label: z.string().trim().max(40).optional(),
-  fullName: z.string().trim().min(2).max(80),
-  line1: z.string().trim().min(3).max(120),
-  line2: z.string().trim().max(120).optional(),
-  city: z.string().trim().min(2).max(80),
-  region: z.string().trim().max(80).optional(),
-  postalCode: z.string().trim().max(20).optional(),
-  country: z.string().length(2),
-  phone: z.string().trim().max(30).optional(),
-  isDefault: z.boolean().default(false),
-});
-export type Address = z.infer<typeof addressSchema>;
-
-/** Entrada de formulario de dirección (sin id). */
-export const addressInputSchema = addressSchema.omit({ id: true, isDefault: true }).extend({
-  isDefault: z.coerce.boolean().optional(),
-});
-
-export const orderStatusSchema = z.enum(['pending_payment', 'paid', 'processing', 'shipped', 'delivered', 'cancelled', 'refunded']);
+/** pending_payment: pedido recibido, se coordina el pago por WhatsApp · paid: pago confirmado (descuenta inventario). */
+export const orderStatusSchema = z.enum(['pending_payment', 'paid', 'delivered', 'cancelled']);
 export type OrderStatus = z.infer<typeof orderStatusSchema>;
 
 export const orderLineSchema = z.object({
@@ -91,30 +59,30 @@ export const orderLineSchema = z.object({
 export const orderSchema = z.object({
   id: z.string(),
   number: z.string(),
-  userId: z.string().nullable(),
-  email: z.email(),
+  contact: z.object({
+    fullName: z.string().trim().min(2).max(80),
+    phone: z.string().trim().min(7).max(30),
+  }),
   status: orderStatusSchema,
   lines: z.array(orderLineSchema).min(1),
   subtotal: cents,
-  discount: cents,
-  shipping: cents,
-  tax: cents,
   total: cents,
   currency: z.literal('USD'),
-  promoCode: z.string().optional(),
-  shippingMethod: z.enum(['standard', 'express', 'pickup']),
-  shippingAddress: addressSchema.omit({ id: true, isDefault: true, label: true }).nullable(),
-  payment: z.object({
-    provider: z.string(),
-    reference: z.string().optional(),
-    paidAt: z.string().optional(),
+  /** Entrega en Venezuela, coordinada por WhatsApp (el costo se acuerda según la zona). */
+  shippingAddress: z.object({
+    line1: z.string().trim().min(3).max(160),
+    city: z.string().trim().min(2).max(80),
+    region: z.string().trim().max(80).optional(),
   }),
+  notes: z.string().trim().max(300).optional(),
+  paidAt: z.string().optional(),
   createdAt: z.string(),
   updatedAt: z.string(),
 });
 export type Order = z.infer<typeof orderSchema>;
 
-export const roleSchema = z.enum(['customer', 'admin']);
+/** Los clientes NO tienen cuenta: piden por WhatsApp. Solo existe el rol de administración (precios e inventario). */
+export const roleSchema = z.literal('admin');
 export type Role = z.infer<typeof roleSchema>;
 
 export const userSchema = z.object({
@@ -123,24 +91,9 @@ export const userSchema = z.object({
   name: z.string().min(1).max(80),
   role: roleSchema,
   passwordHash: z.string(),
-  locale: z.enum(['es', 'en']).default('es'),
   createdAt: z.string(),
-  addresses: z.array(addressSchema).default([]),
-  wishlist: z.array(z.string()).default([]),
 });
 export type User = z.infer<typeof userSchema>;
 
 /** Usuario sin datos sensibles: lo único que llega a componentes cliente. */
-export type PublicUser = Pick<User, 'id' | 'email' | 'name' | 'role' | 'locale'>;
-
-export const promotionSchema = z.object({
-  code: z.string(),
-  kind: z.enum(['percent', 'fixed', 'free_shipping']),
-  /** percent: 1–100 · fixed: céntimos · free_shipping: ignorado. */
-  value: z.number().nonnegative(),
-  minSubtotal: cents.default(0),
-  label: z.object({ es: z.string(), en: z.string() }),
-  expiresAt: z.string().optional(),
-  active: z.boolean().default(true),
-});
-export type Promotion = z.infer<typeof promotionSchema>;
+export type PublicUser = Pick<User, 'id' | 'email' | 'name' | 'role'>;

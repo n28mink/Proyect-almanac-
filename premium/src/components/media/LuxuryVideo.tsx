@@ -92,7 +92,9 @@ export function LuxuryVideo({
   const sources = isDesktop || !video.sources.mobile ? video.sources.desktop : video.sources.mobile;
   const ratio = aspectRatio ?? `${posterDesktop.width} / ${posterDesktop.height}`;
   const label = pick(video.label, locale);
-  const showButton = showToggle && (shouldMount || !motionAllowed);
+  // Sin botón sobre los vídeos que se reproducen solos; solo se ofrece ▶ cuando el movimiento está desactivado
+  // (prefers-reduced-motion / ahorro de datos) o el vídeo se reproduce a petición.
+  const showButton = showToggle && !motionAllowed;
 
   return (
     <div ref={wrapRef} className={cn('relative isolate overflow-hidden', className)} style={{ aspectRatio: ratio, backgroundColor: posterDesktop.tone }}>

@@ -1,8 +1,10 @@
 {
+  "brand": {
+    "subtitle": "Accesorios y Prendas"
+  },
   "common": {
     "skip": "Saltar al contenido principal",
     "language": "Idioma",
-    "currency": "Moneda",
     "removeFavorite": "Quitar {name} de favoritos",
     "addFavorite": "Añadir {name} a favoritos",
     "favoriteAdded": "{name} añadido a favoritos",
@@ -16,7 +18,6 @@
     "primaryNav": "Navegación principal",
     "home": "Clover — inicio",
     "search": "Buscar",
-    "account": "Cuenta",
     "wishlist": "Favoritos ({count})",
     "cart": "Bolsa ({count})",
     "menuLabel": "Menú del sitio",
@@ -43,14 +44,8 @@
     "error": "No pudimos actualizar tu bolsa.",
     "retry": "Reintentar",
     "loading": "Cargando tu bolsa",
-    "promoLabel": "Código promocional",
-    "promoPlaceholder": "Código promocional",
-    "apply": "Aplicar",
-    "promoInvalid": "Ese código no es válido.",
-    "promoMin": "Tu bolsa no alcanza el mínimo para este código.",
-    "checkout": "Finalizar compra",
+    "checkout": "Hacer mi pedido",
     "updating": "Actualizando…",
-    "secureNote": "Los precios y la disponibilidad los confirmamos nosotros al pagar.",
     "added": "Añadido a tu bolsa",
     "addedNamed": "{name} añadido a tu bolsa",
     "stockAdjusted": "Solo hay {count} disponibles — cantidad ajustada.",
@@ -58,38 +53,23 @@
     "decrease": "Disminuir cantidad",
     "increase": "Aumentar cantidad",
     "remove": "Quitar",
-    "freeShippingDone": "Tienes envío gratis.",
-    "freeShippingLeft": "Suma esto para el envío gratis: ",
-    "freeShippingProgress": "Avance hacia el envío gratis",
     "subtotal": "Subtotal",
-    "discount": "Descuento",
-    "shipping": "Envío",
-    "free": "Gratis",
-    "tax": "Impuestos",
-    "total": "Total"
+    "shipping": "Entrega",
+    "total": "Total",
+    "shippingByWhatsapp": "Se acuerda por WhatsApp",
+    "whatsappNote": "No pagas nada aquí: confirmamos disponibilidad, entrega y pago por WhatsApp."
   },
   "video": {
     "pause": "Pausar vídeo",
     "play": "Reproducir vídeo"
   },
-  "newsletter": {
-    "thanks": "Gracias. Ya estás en la lista.",
-    "emailLabel": "Correo electrónico",
-    "placeholder": "Tu correo",
-    "sending": "Enviando…",
-    "submit": "Suscribirme",
-    "invalid": "Ingresa un correo válido.",
-    "rate": "Demasiados intentos. Inténtalo en unos minutos.",
-    "privacy": "Nuevas piezas e historias, nunca spam. Puedes darte de baja cuando quieras.",
-    "eyebrow": "Cartas de Clover",
-    "title": "Sé la primera en ver lo que llega",
-    "text": "Nuevas colecciones, reposiciones y pequeñas notas editoriales, directo a tu correo.",
-    "marquee1": "Detalles que brillan",
-    "marquee2": "Elegidas una a una",
-    "marquee3": "Clover"
-  },
   "product": {
-    "badge": { "new": "Nuevo", "bestseller": "Más vendido", "soldOut": "Agotado", "lowStock": "Quedan pocas" },
+    "badge": {
+      "new": "Nuevo",
+      "bestseller": "Más vendido",
+      "soldOut": "Agotado",
+      "lowStock": "Quedan pocas"
+    },
     "quickAdd": "Añadir rápido",
     "chooseOption": "Elegir opción",
     "quickViewLabel": "Vista rápida: {name}",
@@ -118,19 +98,19 @@
     "increase": "Aumentar cantidad",
     "inStock": "Disponible",
     "lowStock": "Quedan solo {count}",
-    "shippingNote": "Envío estándar gratis en pedidos desde {amount}.",
-    "returnsNote": "Devoluciones dentro de 7 días si la pieza está sin usar y en su empaque original.",
+    "shippingNote": "Entregas en Venezuela, coordinadas por WhatsApp; el costo se acuerda según tu zona.",
     "highlights": "Puntos destacados",
     "macroCaption": "Detalle en primer plano",
     "storyEyebrow": "La historia",
     "specs": "Especificaciones",
-    "careShipping": "Cuidado, envíos y devoluciones",
-    "shippingLong": "Enviamos a toda Venezuela y al exterior. La entrega estándar tarda de 3 a 6 días hábiles y la exprés de 1 a 2. También puedes retirar en tienda.",
-    "returnsLong": "Si una pieza no es para ti, escríbenos dentro de los 7 días posteriores a la entrega. Las piezas sin usar y en su empaque original pueden devolverse.",
+    "careShipping": "Entrega y pago",
+    "shippingLong": "Solo entregamos en Venezuela. Coordinamos las entregas por WhatsApp (Turmero y Maracay): tiempos y costo se acuerdan según tu zona antes de cerrar el pedido.",
     "home": "Inicio",
     "breadcrumb": "Ruta de navegación",
     "moreFrom": "Más de {name}",
-    "related": "También te puede gustar"
+    "related": "También te puede gustar",
+    "paymentNote": "Pago móvil, transferencia o efectivo, coordinados por WhatsApp.",
+    "payLong": "Aceptamos pago móvil, transferencia bancaria y efectivo, coordinados por WhatsApp al confirmar tu pedido."
   },
   "home": {
     "heroSecondary": "Ver el lookbook",
@@ -156,9 +136,18 @@
     "pieces": "{count, plural, one {# pieza} other {# piezas}}",
     "storyTitle": "Cinco historias para llevar",
     "pillars": {
-      "selection": { "title": "Selección cuidadosa", "text": "Miramos cada pieza en conjunto: forma, peso, acabado y cómo se mueve sobre la piel." },
-      "detail": { "title": "Atención al detalle", "text": "Texturas, cierres y engastes se revisan de cerca antes de que la pieza llegue a ti." },
-      "service": { "title": "Atención personal", "text": "Respondemos cada duda y seguimos tu pedido, por WhatsApp o en tienda." }
+      "selection": {
+        "title": "Selección cuidadosa",
+        "text": "Miramos cada pieza en conjunto: forma, peso, acabado y cómo se mueve sobre la piel."
+      },
+      "detail": {
+        "title": "Atención al detalle",
+        "text": "Líneas limpias y materiales honestos: piezas pensadas para el día a día y para los momentos que importan."
+      },
+      "service": {
+        "title": "Atención personal",
+        "text": "Respondemos cada duda y seguimos tu pedido por WhatsApp."
+      }
     },
     "lookbookEyebrow": "Lookbook",
     "lookbookTitle": "Puestas, se entienden mejor",
@@ -167,14 +156,25 @@
     "journalTitle": "Notas de estilo",
     "journalCta": "Leer el journal",
     "readMinutes": "{count} min de lectura",
-    "marquee": { "earrings": "Aretes", "necklaces": "Collares", "rings": "Anillos", "bracelets": "Pulseras", "watches": "Relojes" }
+    "marquee": {
+      "earrings": "Aretes",
+      "necklaces": "Collares",
+      "rings": "Anillos",
+      "bracelets": "Pulseras",
+      "watches": "Relojes"
+    }
   },
   "shop": {
     "search": "Buscar en la colección",
     "filters": "Filtros",
     "results": "{count, plural, =0 {Ninguna pieza} one {# pieza} other {# piezas}}",
     "sortBy": "Ordenar por",
-    "sort": { "featured": "Destacados", "newest": "Novedades", "price-asc": "Precio: menor a mayor", "price-desc": "Precio: mayor a menor" },
+    "sort": {
+      "featured": "Destacados",
+      "newest": "Novedades",
+      "price-asc": "Precio: menor a mayor",
+      "price-desc": "Precio: mayor a menor"
+    },
     "view": "Vista",
     "view_grid": "Vista en cuadrícula",
     "view_list": "Vista en lista",
@@ -194,8 +194,16 @@
     "material": "Material",
     "gender": "Para",
     "collection": "Colección",
-    "finish": { "gold": "Tono dorado", "silver": "Tono plateado", "rose": "Tono oro rosa", "mixed": "Dos tonos" },
-    "materialKeys": { "steel": "Acero inoxidable", "metal": "Metal con acabado en tono" },
+    "finish": {
+      "gold": "Tono dorado",
+      "silver": "Tono plateado",
+      "rose": "Tono oro rosa",
+      "mixed": "Dos tonos"
+    },
+    "materialKeys": {
+      "steel": "Acero inoxidable",
+      "metal": "Metal con acabado en tono"
+    },
     "allTitle": "La colección",
     "allText": "Aretes, collares, anillos, pulseras y relojes elegidos pieza por pieza.",
     "eyebrow": "Tienda",
@@ -225,147 +233,177 @@
     "story": "Nuestra historia",
     "journal": "Journal",
     "lookbook": "Lookbook",
-    "account": "Mi cuenta",
-    "shipping": "Envíos y devoluciones",
+    "shipping": "Envíos, pagos y devoluciones",
     "privacy": "Privacidad",
     "terms": "Términos",
     "rights": "Todos los derechos reservados.",
-    "currencyNote": "Los precios se muestran en USD. El selector de moneda es solo referencial; el cobro se realiza en USD."
+    "cookies": "Cookies",
+    "pricesNote": "Precios en USD · Pedidos por WhatsApp"
   },
   "seo": {
     "title": "Clover — Accesorios y piezas, elegidos uno a uno",
     "description": "Aretes, collares, anillos, pulseras y relojes elegidos pieza por pieza. Atención personal desde Valle Fresco, Turmero, Venezuela."
   },
   "checkout": {
-    "eyebrow": "Finalizar compra",
+    "eyebrow": "Tu pedido",
     "title": "Completa tu pedido",
-    "text": "Revisa tus datos. Los precios y la disponibilidad los confirmamos nosotros al crear el pedido.",
+    "text": "Déjanos tus datos y armamos tu pedido para confirmarlo por WhatsApp. No pagas nada en esta página.",
     "emptyTitle": "Tu bolsa está vacía",
-    "emptyText": "Añade algunas piezas antes de pagar.",
+    "emptyText": "Añade algunas piezas antes de hacer tu pedido.",
     "continueShopping": "Seguir comprando",
-    "contact": "Contacto",
-    "email": "Correo electrónico",
-    "guestNote": "Puedes comprar como invitada. Crea una cuenta después para seguir tus pedidos.",
-    "delivery": "Entrega",
-    "method": { "standard": "Envío estándar", "express": "Envío exprés", "pickup": "Retiro en tienda" },
-    "days": "{from}–{to} días hábiles",
-    "pickupWhen": "Listo en 24 horas",
-    "free": "Gratis",
-    "address": "Dirección de envío",
-    "fullName": "Nombre completo",
-    "line1": "Dirección",
-    "line2": "Apartamento, casa, referencia (opcional)",
+    "contact": "Tus datos",
+    "fullName": "Nombre y apellido",
+    "phone": "Teléfono (WhatsApp)",
+    "address": "Dirección de entrega",
+    "deliveryNote": "Solo entregamos en Venezuela. Coordinamos la entrega por WhatsApp (Turmero y Maracay); el costo y los tiempos se acuerdan según tu zona.",
+    "line1": "Dirección (calle, casa o edificio, referencia)",
     "city": "Ciudad",
-    "region": "Estado / región",
-    "postalCode": "Código postal",
-    "country": "País",
-    "phone": "Teléfono",
+    "region": "Estado",
+    "notes": "Nota para tu pedido (opcional)",
     "payment": "Pago",
-    "payStripe": "Te redirigiremos a nuestro proveedor de pagos seguro para ingresar los datos de tu tarjeta.",
-    "payMock": "Modo demo: no se toma ningún pago ni se cobra ninguna tarjeta. Conecta un proveedor de pagos para salir en vivo.",
+    "payNote": "Aceptamos pago móvil, transferencia bancaria y efectivo, coordinados por WhatsApp al confirmar tu pedido.",
     "summary": "Resumen del pedido",
     "errors": {
       "invalid": "Revisa tus datos e inténtalo de nuevo.",
       "empty": "Tu bolsa está vacía.",
       "cart_changed": "Algunos artículos cambiaron (stock o disponibilidad). Actualizamos tu resumen: revísalo, por favor.",
-      "address_required": "Añade una dirección de envío.",
-      "payment_failed": "No pudimos iniciar el pago. Inténtalo de nuevo.",
       "rate": "Demasiados intentos. Espera unos minutos."
     },
-    "placing": "Creando pedido…",
-    "placeOrder": "Realizar pedido",
-    "terms": "Al realizar tu pedido aceptas nuestros términos y condiciones.",
+    "placing": "Registrando pedido…",
+    "placeOrder": "Hacer pedido",
+    "terms": "Tu pedido queda registrado y lo confirmamos por WhatsApp. Al continuar aceptas nuestros términos.",
     "successEyebrow": "Pedido {number}",
-    "successTitle": "Gracias por tu pedido",
-    "successText": "Enviamos los detalles a {email}. Te contactaremos para coordinar la entrega.",
+    "successTitle": "¡Pedido recibido!",
+    "successText": "Falta un último paso: envíanos tu pedido por WhatsApp para confirmar disponibilidad, costo de entrega y pago.",
+    "sendWhatsapp": "Enviar pedido por WhatsApp",
+    "whatsappHint": "Si WhatsApp no se abre, escríbenos al {number} e indica el pedido {order}.",
     "status": "Estado",
-    "orderStatus": { "pending_payment": "Pendiente de pago", "paid": "Pagado", "processing": "En preparación", "shipped": "Enviado", "delivered": "Entregado", "cancelled": "Cancelado", "refunded": "Reembolsado" },
-    "total": "Total",
-    "viewOrders": "Ver mis pedidos"
+    "orderStatus": {
+      "pending_payment": "Pendiente de confirmación",
+      "paid": "Pagado",
+      "delivered": "Entregado",
+      "cancelled": "Cancelado"
+    },
+    "total": "Total"
   },
   "auth": {
-    "eyebrow": "Mi cuenta",
-    "loginTitle": "Iniciar sesión",
-    "loginText": "Accede a tus pedidos, direcciones y favoritos.",
-    "registerTitle": "Crea tu cuenta",
-    "registerText": "Guarda tus datos y sigue cada pedido.",
-    "name": "Nombre completo",
+    "eyebrow": "Administración",
+    "loginTitle": "Acceso al panel",
+    "loginText": "Solo para el equipo de Clover: precios, inventario y pedidos.",
     "email": "Correo electrónico",
     "password": "Contraseña",
-    "passwordHint": "Al menos 10 caracteres.",
     "errors": {
       "invalid": "Revisa tus datos.",
       "credentials": "Correo o contraseña incorrectos.",
-      "exists": "Ya existe una cuenta con este correo.",
       "rate": "Demasiados intentos. Espera un minuto."
     },
     "wait": "Un momento…",
-    "signIn": "Iniciar sesión",
-    "createAccount": "Crear cuenta",
-    "noAccount": "¿Nueva en Clover?",
-    "haveAccount": "¿Ya tienes cuenta?"
-  },
-  "account": {
-    "nav": "Secciones de la cuenta",
-    "tabs": { "overview": "Resumen", "orders": "Pedidos", "addresses": "Direcciones", "favorites": "Favoritos", "profile": "Perfil" },
-    "logout": "Cerrar sesión",
-    "hello": "Bienvenida",
-    "title": "Mi cuenta",
-    "intro": "Todo sobre tus pedidos, direcciones y favoritos en un solo lugar.",
-    "recentOrders": "Pedidos recientes",
-    "noOrders": "Aún no has realizado ningún pedido.",
-    "startShopping": "Empezar a comprar",
-    "status": { "pending_payment": "Pendiente de pago", "paid": "Pagado", "processing": "En preparación", "shipped": "Enviado", "delivered": "Entregado", "cancelled": "Cancelado", "refunded": "Reembolsado" },
-    "favoritesText": "Tus piezas guardadas viajan con tu cuenta.",
-    "addr": {
-      "label": "Etiqueta (p. ej. Casa)", "fullName": "Nombre completo", "line1": "Dirección", "line2": "Apartamento, casa, referencia", "city": "Ciudad",
-      "region": "Estado / región", "postalCode": "Código postal", "country": "País", "phone": "Teléfono", "makeDefault": "Usar como mi dirección principal",
-      "add": "Guardar dirección", "default": "Principal", "remove": "Eliminar", "none": "No tienes direcciones guardadas.", "newTitle": "Añadir una dirección"
-    },
-    "saving": "Guardando…",
-    "saved": "Guardado.",
-    "saveError": "No pudimos guardar. Revisa los campos.",
-    "profile": { "name": "Nombre", "email": "Correo", "language": "Idioma", "save": "Guardar cambios" }
+    "signIn": "Entrar"
   },
   "admin": {
     "eyebrow": "Administración",
     "nav": "Secciones del admin",
-    "tabs": { "dashboard": "Resumen", "products": "Productos", "orders": "Pedidos", "customers": "Clientes", "campaigns": "Campañas", "media": "Media" },
-    "kpi": { "orders": "Pedidos", "revenue": "Ingresos cobrados", "customers": "Clientes", "products": "Productos" },
+    "tabs": {
+      "dashboard": "Resumen",
+      "products": "Productos",
+      "orders": "Pedidos",
+      "campaigns": "Campañas",
+      "media": "Media"
+    },
+    "kpi": {
+      "orders": "Pedidos",
+      "pending": "Por confirmar",
+      "revenue": "Pedidos pagados (USD)",
+      "products": "Productos"
+    },
     "lowStock": "Stock bajo",
     "noLowStock": "Ninguna variante tiene poco stock.",
     "productsText": "Ajusta precio, stock por variante y visibilidad. Los cambios se publican en pocos minutos.",
     "price": "Precio",
     "stock": "Stock",
-    "flag": { "featured": "Destacado", "newArrival": "Novedad", "bestseller": "Más vendido", "hidden": "Oculto" },
+    "flag": {
+      "featured": "Destacado",
+      "newArrival": "Novedad",
+      "bestseller": "Más vendido",
+      "hidden": "Oculto"
+    },
     "save": "Guardar",
     "noOrders": "Aún no hay pedidos.",
     "status": "Estado del pedido",
-    "orderStatus": { "pending_payment": "Pendiente de pago", "paid": "Pagado", "processing": "En preparación", "shipped": "Enviado", "delivered": "Entregado", "cancelled": "Cancelado", "refunded": "Reembolsado" },
+    "orderStatus": {
+      "pending_payment": "Pendiente de confirmación",
+      "paid": "Pagado",
+      "delivered": "Entregado",
+      "cancelled": "Cancelado"
+    },
     "ordersCount": "{count, plural, one {# pedido} other {# pedidos}}",
     "campaignsText": "Cambia el vídeo y los textos de cada bloque de campaña de la home. Los vídeos salen del registro de media.",
-    "block": { "hero": "Hero", "jewelry": "Campaña de joyería", "watches": "Campaña de relojes", "fashion": "Editorial de moda", "story": "Cómo elegimos" },
+    "block": {
+      "hero": "Hero",
+      "jewelry": "Campaña de joyería",
+      "watches": "Campaña de relojes",
+      "fashion": "Editorial de moda",
+      "story": "Cómo elegimos"
+    },
     "video": "Vídeo",
     "title": "Título",
     "text": "Texto",
-    "mediaText": "Vídeos disponibles en el registro de media. Para usar metraje real, añade los archivos a /public/media/video y regístralos en src/content/media.ts."
+    "mediaText": "Vídeos disponibles en el registro de media. Para usar metraje real, añade los archivos a /public/media/video y regístralos en src/content/media.ts.",
+    "logout": "Salir",
+    "ordersHint": "Confirma el pago por WhatsApp y marca el pedido como «Pagado»: eso descuenta el inventario. Si cancelas un pedido pagado, el inventario se repone."
   },
-  "legal": { "updated": "Actualizado el {date}" },
-  "journal": { "title": "Journal", "text": "Notas sobre estilo, regalos y cuidado de tus piezas.", "eyebrow": "Editorial", "read": "{count} min de lectura", "back": "Volver al journal" },
-  "lookbook": { "title": "Lookbook", "text": "Una mirada de cerca a cómo se llevan las piezas.", "eyebrow": "Editorial", "shopLook": "Comprar" },
+  "legal": {
+    "updated": "Actualizado el {date}"
+  },
+  "journal": {
+    "title": "Journal",
+    "text": "Notas sobre estilo, regalos y cuidado de tus piezas.",
+    "eyebrow": "Editorial",
+    "read": "{count} min de lectura",
+    "back": "Volver al journal"
+  },
+  "lookbook": {
+    "title": "Lookbook",
+    "text": "Una mirada de cerca a cómo se llevan las piezas.",
+    "eyebrow": "Editorial",
+    "shopLook": "Comprar"
+  },
   "about": {
     "title": "La casa",
     "text": "Una tienda pequeña con ojo cuidadoso.",
     "eyebrow": "Sobre Clover",
     "p1": "Clover es una tienda en {area}, {locality}. Seleccionamos accesorios y piezas pensando en cómo se ven puestas.",
-    "p2": "No somos una tienda fría. Cada pedido lo atendemos de forma personal, por WhatsApp o en tienda, como se hacen las cosas en casa: te asesoramos y coordinamos contigo el pago y la entrega.",
+    "p2": "No somos una tienda fría. Cada pedido lo atendemos de forma personal, por WhatsApp, como se hacen las cosas en casa: te asesoramos y coordinamos contigo el pago y la entrega.",
     "p3": "El trébol de cuatro hojas de nuestra marca es un deseo: que cada pieza acompañe un buen día.",
     "cta": "Escríbenos por WhatsApp",
     "values": {
-      "one": { "title": "Elegido, no acumulado", "text": "Una colección más pequeña, mirada de cerca." },
-      "two": { "title": "Descripciones honestas", "text": "Decimos qué es cada pieza y cómo está terminada — nada más." },
-      "three": { "title": "Atención cercana", "text": "Personas reales responden, desde la primera duda hasta la entrega." }
+      "one": {
+        "title": "Elegido, no acumulado",
+        "text": "Una colección más pequeña, mirada de cerca."
+      },
+      "two": {
+        "title": "Descripciones honestas",
+        "text": "Decimos qué es cada pieza y cómo está terminada — nada más."
+      },
+      "three": {
+        "title": "Atención cercana",
+        "text": "Personas reales responden, desde la primera duda hasta la entrega."
+      }
     }
   },
-  "notFound": { "title": "No encontramos esta página", "text": "Puede que el enlace esté roto o que la página se haya movido.", "home": "Volver al inicio", "shop": "Explorar la colección" }
+  "notFound": {
+    "title": "No encontramos esta página",
+    "text": "Puede que el enlace esté roto o que la página se haya movido.",
+    "home": "Volver al inicio",
+    "shop": "Explorar la colección"
+  },
+  "contact": {
+    "eyebrow": "Pedidos por WhatsApp",
+    "title": "Escríbenos y te ayudamos a elegir",
+    "text": "Cada pedido lo atendemos de forma personal, como se atienden las cosas hechas en casa.",
+    "cta": "Escribir por WhatsApp",
+    "marquee1": "Detalles que brillan",
+    "marquee2": "Elegidas una a una",
+    "marquee3": "Clover"
+  }
 }

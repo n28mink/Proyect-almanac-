@@ -12,7 +12,7 @@ import { FeaturedCollection } from '@/components/home/FeaturedCollection';
 import { Hero } from '@/components/home/Hero';
 import { JournalTeaser } from '@/components/home/JournalTeaser';
 import { LookbookMosaic } from '@/components/home/LookbookMosaic';
-import { NewsletterBand } from '@/components/home/NewsletterBand';
+import { WhatsAppBand } from '@/components/home/WhatsAppBand';
 import { ProductRail } from '@/components/home/ProductRail';
 import { ScrollExpandVideo } from '@/components/home/ScrollExpandVideo';
 import { WatchShowcase } from '@/components/home/WatchShowcase';
@@ -115,7 +115,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       <JournalTeaser entries={journalEntries} covers={covers} locale={locale} />
 
-      <NewsletterBand />
+      <WhatsAppBand />
     </>
   );
 }
