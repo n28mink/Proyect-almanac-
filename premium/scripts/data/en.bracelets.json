@@ -1,0 +1,155 @@
+{
+  "pu01": {
+    "name": "Gold-tone openwork coral-style bangle",
+    "description": "Rigid gold-tone bangle with an openwork coral-style branch design.",
+    "story": "A rigid gold-tone bangle with an organic, coral-style branch openwork: a sculptural, eye-catching piece that becomes the center of every glance.",
+    "highlights": [
+      "Rigid bangle style",
+      "Openwork coral-style branch design",
+      "Gold tone",
+      "High-presence piece"
+    ]
+  },
+  "pu02": {
+    "name": "Rigid bangle with central knot",
+    "description": "Open rigid bangle with a central knot and ball ends.",
+    "story": "An open bangle with a knot at the center and ball-tipped ends: a clean, modern design that adjusts comfortably. A symbol of union to wear every day.",
+    "highlights": [
+      "Open rigid bangle style",
+      "Central knot with ball ends",
+      "Adjustable by opening",
+      "Available in gold tone and silver tone"
+    ],
+    "es": {
+      "highlights": [
+        "Tipo brazalete rígido abierto",
+        "Nudo central con extremos de bola",
+        "Diseño ajustable al abrirse",
+        "Disponible en tono dorado y plateado"
+      ]
+    }
+  },
+  "pu03": {
+    "name": "Silver-tone knot bangle",
+    "description": "Open rigid silver-tone bangle with a central knot and ball ends.",
+    "story": "The silver-tone version of the knot bangle: pure lines, a polished finish and a design that goes with everything. Minimalism with meaning.",
+    "highlights": [
+      "Open rigid bangle style",
+      "Central knot with ball ends",
+      "Silver tone",
+      "Adjustable by opening"
+    ]
+  },
+  "pu04": {
+    "name": "Gold-tone bead bracelet with heart charm",
+    "description": "Gold-tone bead bracelet with an engraved heart charm and lobster clasp.",
+    "story": "Gold-tone beads with an engraved heart charm: sweet and classic, with a lobster clasp and extender chain for a perfect fit.",
+    "highlights": [
+      "Gold-tone bead chain",
+      "Engraved heart charm",
+      "Lobster clasp with extender",
+      "Classic, feminine design"
+    ]
+  },
+  "pu05": {
+    "name": "Gold-tone bracelet with clear and turquoise stones",
+    "description": "Gold-tone herringbone bracelet with clear stones and one turquoise stone. Steel as stated on the visible label.",
+    "story": "A gold-tone herringbone chain with three set stones: two clear and one turquoise that adds the touch of color. Elegant with a vibrant accent. Steel as stated on the label visible on the piece.",
+    "highlights": [
+      "Gold-tone herringbone chain",
+      "Two clear stones and one turquoise stone, set",
+      "Lobster clasp with extender",
+      "Steel (as stated on the visible label)"
+    ]
+  },
+  "pu06": {
+    "name": "Gold-tone hearts bracelet",
+    "description": "Gold-tone bracelet made of linked puffed hearts.",
+    "story": "Softly rounded gold-tone hearts linked one after another: a romantic and playful bracelet you can spot from afar. For those who love gold without measure.",
+    "highlights": [
+      "Heart-shaped links",
+      "Soft volume in a gold tone",
+      "Lobster clasp with extender",
+      "Romantic, eye-catching design"
+    ]
+  },
+  "pu07": {
+    "name": "Braided gold-tone bracelet",
+    "description": "Gold-tone braided-chain bracelet with lobster clasp.",
+    "story": "A braided gold-tone chain with rich texture and warm shine: the elegant basic that pairs with your whole jewelry box. Simple on the outside, sophisticated in the details.",
+    "highlights": [
+      "Braided chain in a gold tone",
+      "Lobster clasp with extender",
+      "Rich, shiny texture",
+      "Versatile design"
+    ]
+  },
+  "pu08": {
+    "name": "Gold-tone bracelet with clover charms",
+    "description": "Double-chain gold-tone bracelet with three clover charms.",
+    "story": "A double gold-tone chain with three clover charms, two hollow and one solid: a design with movement and the symbol of good luck always with you.",
+    "highlights": [
+      "Double chain in a gold tone",
+      "Three clover charms",
+      "Lobster clasp with extender",
+      "Design with movement"
+    ]
+  },
+  "pu09": {
+    "name": "Gold-tone bracelet with green stone",
+    "description": "Braided gold-tone bracelet with a rectangular green stone surrounded by clear stones.",
+    "story": "A rectangular green stone framed by clear stones at the center of a braided gold-tone chain: the sophisticated pop of color that elevates any look.",
+    "highlights": [
+      "Rectangular green center stone",
+      "Frame of clear stones",
+      "Braided chain in a gold tone",
+      "Lobster clasp with extender"
+    ]
+  },
+  "pu10": {
+    "name": "Gold-tone bracelet with stars",
+    "description": "Gold-tone herringbone bracelet with three star charms, one set with clear stones.",
+    "story": "Three gold-tone stars on a herringbone chain, the central one covered in clear stones that catch the light: a celestial design full of sparkle.",
+    "highlights": [
+      "Herringbone chain in a gold tone",
+      "Three star charms",
+      "Central star with clear stones",
+      "Lobster clasp with extender"
+    ]
+  },
+  "pu11": {
+    "name": "Gold-tone double-chain bracelet with heart",
+    "description": "Double-chain gold-tone bracelet with a puffed heart charm.",
+    "story": "A double gold-tone chain combining thick and fine links, finished with a puffed heart: a design with very current texture and volume.",
+    "highlights": [
+      "Double chain in a gold tone",
+      "Puffed heart charm",
+      "Lobster clasp with extender",
+      "Contemporary style"
+    ]
+  },
+  "pu12": {
+    "name": "Silver-tone bracelet with crystal spheres",
+    "description": "Silver-tone herringbone bracelet with crystal-covered spheres.",
+    "story": "Crystal-covered spheres on a silver-tone herringbone chain: concentrated sparkle in an elegant, festive design. Perfect for the evening.",
+    "highlights": [
+      "Crystal-covered spheres",
+      "Herringbone chain in a silver tone",
+      "Lobster clasp with extender",
+      "Luminous design for special occasions"
+    ]
+  },
+  "pu13": {
+    "name": "Two-tone crystal spheres bracelet",
+    "description": "Herringbone bracelet with crystal-covered spheres, in a silver-tone or gold-tone version.",
+    "story": "The same luminous crystal-sphere design in two versions: silver tone or gold tone. Choose the tone that suits your jewelry box, or take the pair to mix.",
+    "highlights": [
+      "Crystal-covered spheres",
+      "Herringbone chain",
+      "Two versions: silver tone or gold tone"
+    ],
+    "esDrop": [
+      3
+    ]
+  }
+}

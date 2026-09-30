@@ -1,0 +1,74 @@
+{
+  "an01": {
+    "name": "Open gold-tone ring with two flowers",
+    "description": "Open ring in a gold tone with two small flowers at the ends.",
+    "story": "An open ring crowned by two small gold-tone flowers: delicate, adjustable and full of spring charm. It fits the finger comfortably.",
+    "highlights": ["Adjustable open design", "Two flowers at the ends", "Gold tone", "Delicate, feminine style"]
+  },
+  "an02": {
+    "name": "Wide textured gold-tone band ring",
+    "description": "Open wide-band ring in a gold tone with a textured surface.",
+    "story": "A wide gold-tone band with a textured surface that plays with the light: a ring with presence and an artisanal-style finish. Open for a comfortable fit.",
+    "highlights": ["Wide band", "Textured surface", "Adjustable open design", "Gold tone"]
+  },
+  "an03": {
+    "name": "Gold-tone starfish ring with pearl",
+    "description": "Open ring in a gold tone with a starfish, a white pearl and a clear stone.",
+    "story": "A gold-tone starfish accompanied by a white pearl and a clear stone on an open ring: all the charm of the sea on your hand. Original and very feminine.",
+    "highlights": ["Starfish motif", "White pearl and clear stone", "Adjustable open design", "Gold tone"]
+  },
+  "an04": {
+    "name": "Wide gold-tone ring with oval medallion",
+    "description": "Multi-band gold-tone ring with an oval medallion at the center.",
+    "story": "Multiple gold-tone bands holding a polished oval medallion: an architectural, modern ring with plenty of presence. For bold styles.",
+    "highlights": ["Multiple bands", "Central oval medallion", "Polished gold tone", "High-presence design"]
+  },
+  "an05": {
+    "name": "Gold-tone wavy bands ring",
+    "description": "Open ring in a gold tone with interlaced wavy bands.",
+    "story": "Wavy, organic gold-tone bands that interlace fluidly: a sculptural, artistic ring for those looking for something different.",
+    "highlights": ["Interlaced wavy bands", "Adjustable open design", "Gold tone", "Organic, artistic style"]
+  },
+  "an06": {
+    "name": "Silver-tone ring with leaf relief",
+    "description": "Wide-band silver-tone ring with an overlapping leaf relief.",
+    "story": "A silver-tone leaf in soft relief that wraps the finger: a natural, elegant design on a wide, flattering band. Fresh and contemporary.",
+    "highlights": ["Wide band", "Overlapping leaf relief", "Silver tone", "Nature-inspired"]
+  },
+  "an07": {
+    "name": "Open silver-tone shell ring with pearl",
+    "description": "Open silver-tone ring with a ridged shell at one end and a white pearl at the other.",
+    "story": "A ridged shell and a white pearl at the ends of an open silver-tone ring: the sea in miniature, for every day. Delicate and original.",
+    "highlights": ["Ridged shell at one end", "White pearl at the other end", "Adjustable open design", "Silver tone"]
+  },
+  "an08": {
+    "name": "Open silver-tone ring with oval ends",
+    "description": "Open silver-tone ring with a ribbed band and textured oval ends.",
+    "story": "A ribbed band with softly textured oval ends in a silver tone: a modern, tactile design that adjusts comfortably. Minimalism with detail.",
+    "highlights": ["Ribbed band", "Textured oval ends", "Adjustable open design", "Silver tone"]
+  },
+  "an09": {
+    "name": "Gold-tone ring with pearls and braided spiral",
+    "description": "Gold-tone ring with a braid-textured spiral and three white pearls.",
+    "story": "A braid-textured gold-tone spiral adorned with three white pearls: movement, shine and softness in a romantic, original ring.",
+    "highlights": ["Braid-textured spiral", "Three white pearls", "Gold tone", "Romantic design with movement"]
+  },
+  "an10": {
+    "name": "Gold-tone interlaced ovals ring",
+    "description": "Wide-band gold-tone ring with interlaced polished ovals.",
+    "story": "Polished gold-tone ovals that interlock like scales on a wide band: a ring with rich texture and warm shine. Eye-catching and sophisticated.",
+    "highlights": ["Wide band", "Interlaced polished ovals", "Gold tone", "High-presence design"]
+  },
+  "an11": {
+    "name": "Open braided gold-tone ring",
+    "description": "Open ring in a gold tone with a braided-effect band.",
+    "story": "A braided-effect gold-tone band on an open, adjustable ring: artisanal-style texture with a warm, luminous finish. A classic with character.",
+    "highlights": ["Braided-effect band", "Adjustable open design", "Gold tone", "Artisanal-style finish"]
+  },
+  "an12": {
+    "name": "Gold-tone hammered leaf ring",
+    "description": "Gold-tone ring with a large hammered leaf that wraps the finger.",
+    "story": "A large gold-tone leaf with a hammered surface that curves over the finger: a bold, sculptural botanical piece. For those who are not afraid to stand out.",
+    "highlights": ["Large leaf as the protagonist", "Hammered surface", "Gold tone", "Bold, sculptural design"]
+  }
+}

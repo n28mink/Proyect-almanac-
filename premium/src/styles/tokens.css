@@ -1,0 +1,166 @@
+/*
+ * DESIGN TOKENS — única fuente de verdad visual.
+ * Cambiar la identidad de marca = editar este archivo (+ src/config/motion.ts para movimiento).
+ */
+
+@theme {
+  /* ── Paleta base ─────────────────────────────────────────────── */
+  --color-ivory: #f6f1e9;
+  --color-porcelain: #fbf8f3;
+  --color-bone: #ebe4d8;
+  --color-sand: #d8cebf;
+  --color-ink: #151412;
+  --color-charcoal: #2b2926;
+  --color-graphite: #57524b;
+  --color-smoke: #6e675d;
+  --color-bronze: #7d5c3d;
+  --color-bronze-deep: #5f4429;
+  --color-champagne: #c4a878;
+  --color-champagne-soft: #dcc9a3;
+  --color-evergreen: #17261f;
+  --color-danger: #9b3a2f;
+  --color-success: #3f6a4f;
+
+  /* ── Breakpoints: mobile → tablet → laptop → desktop → ultrawide ── */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 160rem;
+
+  /* ── Contenedores ────────────────────────────────────────────── */
+  --container-narrow: 44rem;
+  --container-content: 80rem;
+  --container-wide: 96rem;
+  --container-ultra: 120rem;
+
+  /* ── Tipografía: escala fluida ───────────────────────────────── */
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.45;
+  --text-micro--letter-spacing: 0.22em;
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.5;
+  --text-body: 1rem;
+  --text-body--line-height: 1.7;
+  --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.3125rem);
+  --text-lead--line-height: 1.6;
+  --text-heading: clamp(1.5rem, 1.2rem + 1.1vw, 2.25rem);
+  --text-heading--line-height: 1.15;
+  --text-display-m: clamp(2rem, 1.35rem + 2.6vw, 3.5rem);
+  --text-display-m--line-height: 1.02;
+  --text-display-m--letter-spacing: -0.012em;
+  --text-display-l: clamp(2.6rem, 1.4rem + 4.6vw, 5.75rem);
+  --text-display-l--line-height: 0.98;
+  --text-display-l--letter-spacing: -0.018em;
+  --text-display-xl: clamp(3.4rem, 1.2rem + 9vw, 10rem);
+  --text-display-xl--line-height: 0.9;
+  --text-display-xl--letter-spacing: -0.022em;
+
+  --tracking-label: 0.22em;
+  --tracking-wide-label: 0.32em;
+
+  /* ── Forma y elevación ───────────────────────────────────────── */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-soft: 0 1px 2px rgb(21 20 18 / 0.04), 0 14px 34px -14px rgb(21 20 18 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(21 20 18 / 0.05), 0 26px 60px -18px rgb(21 20 18 / 0.26);
+  --shadow-drawer: -24px 0 60px -30px rgb(21 20 18 / 0.35);
+
+  /* ── Curvas (espejo de src/config/motion.ts) ─────────────────── */
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-curtain: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-in-out-luxe: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@theme inline {
+  /* Alias semánticos: cambian por contexto (`data-tone`), no por componente. */
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-decor: var(--accent-decor);
+
+  --font-display: var(--font-display-loaded), 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: var(--font-sans-loaded), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+
+  /* Semánticos — tono claro (por defecto) */
+  --surface: var(--color-ivory);
+  --surface-raised: var(--color-porcelain);
+  --surface-sunken: var(--color-bone);
+  --fg: var(--color-ink);
+  --fg-muted: var(--color-graphite);
+  --fg-subtle: var(--color-smoke);
+  --line: rgb(21 20 18 / 0.14);
+  --line-strong: rgb(21 20 18 / 0.32);
+  --accent: var(--color-bronze);
+  --accent-decor: var(--color-champagne);
+
+  /* Movimiento (espejo de src/config/motion.ts; verificado por test) */
+  --dur-instant: 120ms;
+  --dur-fast: 240ms;
+  --dur-base: 420ms;
+  --dur-slow: 700ms;
+  --dur-cinematic: 1100ms;
+
+  /* Capas */
+  --z-header: 40;
+  --z-drawer: 60;
+  --z-modal: 70;
+  --z-transition: 90;
+  --z-toast: 100;
+
+  /* Layout */
+  --gutter: clamp(1rem, 0.4rem + 3vw, 3rem);
+  --header-h: 4.25rem;
+  --announcement-h: 2.25rem;
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --header-h: 5rem;
+  }
+}
+
+/* Tono oscuro: secciones/superficies en tinta. */
+[data-tone='ink'] {
+  --surface: var(--color-ink);
+  --surface-raised: #1d1b19;
+  --surface-sunken: #100f0e;
+  --fg: #f4efe6;
+  --fg-muted: #b8b0a3;
+  --fg-subtle: #8c857b;
+  --line: rgb(244 239 230 / 0.16);
+  --line-strong: rgb(244 239 230 / 0.36);
+  --accent: var(--color-champagne);
+  --accent-decor: var(--color-champagne);
+  color-scheme: dark;
+}
+
+/* Tono profundo de herencia (verde Clover) — uso muy puntual. */
+[data-tone='evergreen'] {
+  --surface: var(--color-evergreen);
+  --surface-raised: #1e3128;
+  --surface-sunken: #111c16;
+  --fg: #f4efe6;
+  --fg-muted: #b9c4bb;
+  --fg-subtle: #8a9a8f;
+  --line: rgb(244 239 230 / 0.16);
+  --line-strong: rgb(244 239 230 / 0.36);
+  --accent: var(--color-champagne);
+  --accent-decor: var(--color-champagne);
+  color-scheme: dark;
+}
