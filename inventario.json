@@ -1,101 +1,629 @@
 {
   "version": 1,
-  "updated": "2026-09-28T00:00:00-04:00",
+  "updated": "2026-09-29T21:28:47.677641-04:00",
   "productos": [
     {
-      "id": "c1",
-      "stock": 8,
-      "precio": 18.5,
-      "visible": true
-    },
-    {
-      "id": "c2",
-      "stock": 5,
-      "precio": 24.9,
-      "visible": true
-    },
-    {
-      "id": "c3",
-      "stock": 3,
+      "id": "rw01",
+      "stock": 10,
       "precio": 42.0,
       "visible": true
     },
     {
-      "id": "c4",
-      "stock": 6,
-      "precio": 31.75,
+      "id": "rw02",
+      "stock": 10,
+      "precio": 42.0,
       "visible": true
     },
     {
-      "id": "c5",
-      "stock": 12,
-      "precio": 12.3,
+      "id": "rw03",
+      "stock": 10,
+      "precio": 42.0,
       "visible": true
     },
     {
-      "id": "c6",
-      "stock": 4,
-      "precio": 28.6,
+      "id": "rw04",
+      "stock": 10,
+      "precio": 42.0,
       "visible": true
     },
     {
-      "id": "c7",
-      "stock": 7,
-      "precio": 36.4,
+      "id": "rw05",
+      "stock": 10,
+      "precio": 42.0,
       "visible": true
     },
     {
-      "id": "c8",
-      "stock": 0,
-      "precio": 29.99,
+      "id": "rw06",
+      "stock": 10,
+      "precio": 42.0,
       "visible": true
     },
     {
-      "id": "c9",
-      "stock": 9,
-      "precio": 22.0,
-      "visible": true
-    },
-    {
-      "id": "c10",
-      "stock": 14,
-      "precio": 16.5,
-      "visible": true
-    },
-    {
-      "id": "c11",
-      "stock": 6,
-      "precio": 27.9,
-      "visible": true
-    },
-    {
-      "id": "c12",
-      "stock": 11,
-      "precio": 14.9,
-      "visible": true
-    },
-    {
-      "id": "c13",
-      "stock": 5,
+      "id": "st01",
+      "stock": 10,
       "precio": 44.0,
       "visible": true
     },
     {
-      "id": "c14",
-      "stock": 8,
-      "precio": 32.5,
+      "id": "ar01",
+      "stock": 10,
+      "precio": 18.5,
       "visible": true
     },
     {
-      "id": "c15",
-      "stock": 7,
-      "precio": 34.9,
+      "id": "ar02",
+      "stock": 10,
+      "precio": 18.5,
       "visible": true
     },
     {
-      "id": "c16",
-      "stock": 4,
-      "precio": 39.9,
+      "id": "ar03",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar04",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar05",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar06",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar07",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar08",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar09",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar10",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar11",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar12",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar13",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar14",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar15",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar16",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar17",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar18",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar19",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar20",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar21",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar22",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar23",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar24",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar25",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar26",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar27",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar28",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar29",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar30",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar31",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar32",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar33",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar34",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar35",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar36",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar37",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar38",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar39",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar40",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar41",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar42",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar43",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar44",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar45",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar46",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar47",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar48",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar49",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar50",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar51",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar52",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "ar53",
+      "stock": 10,
+      "precio": 18.5,
+      "visible": true
+    },
+    {
+      "id": "co01",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co02",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co03",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co04",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co05",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co06",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co07",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co08",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co09",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co10",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co11",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co12",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co13",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co14",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co15",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co16",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co17",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co18",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "co19",
+      "stock": 10,
+      "precio": 24.9,
+      "visible": true
+    },
+    {
+      "id": "pu01",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu02",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu03",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu04",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu05",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu06",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu07",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu08",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu09",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu10",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu11",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu12",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "pu13",
+      "stock": 10,
+      "precio": 22.0,
+      "visible": true
+    },
+    {
+      "id": "an01",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an02",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an03",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an04",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an05",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an06",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an07",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an08",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an09",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an10",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an11",
+      "stock": 10,
+      "precio": 16.5,
+      "visible": true
+    },
+    {
+      "id": "an12",
+      "stock": 10,
+      "precio": 16.5,
       "visible": true
     }
   ]
