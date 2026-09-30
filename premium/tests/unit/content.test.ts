@@ -67,7 +67,7 @@ describe('tokens de movimiento (TS ↔ CSS)', () => {
     for (const [k, v] of Object.entries(duration)) expect(css).toContain(`--dur-${k}: ${Math.round(v * 1000)}ms;`);
   });
   it('las curvas CSS coinciden con motion.ts', () => {
-    const map = { luxe: 'luxe', expo: 'expo', curtain: 'curtain', inOut: 'in-out-luxe' } as const;
+    const map = { luxe: 'luxe', expo: 'expo', curtain: 'curtain', inOut: 'in-out-luxe', out: 'out', drawer: 'drawer' } as const;
     for (const [k, name] of Object.entries(map)) expect(css).toContain(`--ease-${name}: ${cssEase(k as keyof typeof bezier)};`);
   });
   it('gsapEase es monótona, acotada y reproduce los extremos', () => {

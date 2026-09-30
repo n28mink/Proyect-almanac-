@@ -19,7 +19,7 @@ export default async function AdminLoginPage({ params }: { params: Promise<{ loc
   if ((await getSessionUser())?.role === 'admin') redirect({ href: `/${ADMIN_PATH}`, locale });
   const t = await getTranslations('auth');
   return (
-    <PageShell eyebrow={t('eyebrow')} title={t('loginTitle')} text={t('loginText')} narrow>
+    <PageShell title={t('loginTitle')} text={t('loginText')} narrow>
       <AdminLoginForm />
     </PageShell>
   );

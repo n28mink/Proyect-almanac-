@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { FadeReveal, ImageReveal, StaggerText } from '@/components/motion/Reveal';
 import { ButtonLink } from '@/components/ui/Button';
-import { Eyebrow, Section } from '@/components/ui/Section';
+import { Section } from '@/components/ui/Section';
 
 interface Img { src: string; blur?: string; alt: string }
 
@@ -20,7 +20,6 @@ export async function EditorialSplit({ imageA, imageB }: { imageA: Img; imageB: 
 
         <div className="flex flex-col justify-center gap-16 lg:py-24">
           <div>
-            <Eyebrow className="mb-6">{t('philosophyEyebrow')}</Eyebrow>
             <StaggerText as="p" text={t('philosophyQuote')} className="font-display text-display-m" />
           </div>
           <FadeReveal className="max-w-md space-y-5 text-lead text-fg-muted">

@@ -5,7 +5,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { FadeReveal, ImageReveal, StaggerText } from '@/components/motion/Reveal';
 import { TransitionLink } from '@/components/motion/TransitionLink';
-import { Eyebrow } from '@/components/ui/Section';
 import { collections } from '@/content/collections';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
@@ -31,7 +30,6 @@ export default async function CollectionsIndex({ params }: { params: Promise<{ l
   return (
     <div className="pt-[calc(var(--header-h)+var(--announcement-h))]" data-header-tone="dark">
       <header className="container-x pb-14 pt-16 md:pt-24">
-        <Eyebrow className="mb-5">{t('eyebrow')}</Eyebrow>
         <StaggerText as="h1" text={t('title')} className="font-display text-display-l" intro />
         <p className="mt-6 max-w-xl text-lead text-fg-muted">{t('text')}</p>
       </header>

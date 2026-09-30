@@ -82,16 +82,16 @@
 @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
   [data-reveal] {
     transition:
-      opacity var(--reveal-dur, 900ms) var(--ease-luxe) var(--reveal-delay, 0ms),
-      transform var(--reveal-dur, 900ms) var(--ease-luxe) var(--reveal-delay, 0ms),
-      clip-path var(--reveal-dur, 1000ms) var(--ease-expo) var(--reveal-delay, 0ms);
+      opacity var(--reveal-dur, 700ms) var(--ease-luxe) var(--reveal-delay, 0ms),
+      transform var(--reveal-dur, 700ms) var(--ease-luxe) var(--reveal-delay, 0ms),
+      clip-path var(--reveal-dur, 800ms) var(--ease-expo) var(--reveal-delay, 0ms);
   }
 
   [data-reveal]:not([data-in]) {
     opacity: 0;
   }
   [data-reveal='up']:not([data-in]) {
-    transform: translate3d(0, 1.75rem, 0);
+    transform: translate3d(0, 1.25rem, 0);
   }
   [data-reveal='left']:not([data-in]) {
     transform: translate3d(-2rem, 0, 0);
@@ -148,7 +148,7 @@
   }
   [data-split] .split-inner {
     display: inline-block;
-    transition: transform var(--reveal-dur, 1000ms) var(--ease-expo) calc(var(--reveal-delay, 0ms) + var(--i, 0) * 55ms);
+    transition: transform var(--reveal-dur, 800ms) var(--ease-expo) calc(var(--reveal-delay, 0ms) + var(--i, 0) * 55ms);
   }
   [data-split]:not([data-in]) .split-inner {
     transform: translate3d(0, 108%, 0);
@@ -160,11 +160,11 @@
   /* Entrada CSS pura para lo que está sobre el pliegue (LCP): no depende de hidratar. */
   .intro-rise {
     animation: intro-rise 1.1s var(--ease-expo) both;
-    animation-delay: calc(var(--i, 0) * 110ms + 180ms);
+    animation-delay: calc(var(--i, 0) * 70ms + 150ms);
   }
   .intro-fade {
     animation: intro-fade 1.4s var(--ease-luxe) both;
-    animation-delay: calc(var(--i, 0) * 110ms + 120ms);
+    animation-delay: calc(var(--i, 0) * 70ms + 100ms);
   }
   .split-intro .split-inner {
     animation: word-rise 1.15s var(--ease-expo) both;
@@ -180,7 +180,7 @@
   }
 
   .badge-pop {
-    animation: badge-pop 0.5s var(--ease-luxe);
+    animation: badge-pop 0.32s var(--ease-out);
   }
 }
 
@@ -207,7 +207,29 @@
   animation-play-state: paused;
 }
 
-/* Reduced motion global: ninguna animación decorativa; las transiciones de estado quedan instantáneas. */
+/* Reduced motion global: ninguna animación decorativa; las transiciones de estado quedan instantáneas.
+   Se activa por preferencia del sistema o con el interruptor «Reducir movimiento» del pie (html[data-motion]). */
+html[data-motion='reduced'] *,
+html[data-motion='reduced'] *::before,
+html[data-motion='reduced'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  animation-delay: 0ms !important;
+  transition-duration: 0.001ms !important;
+  transition-delay: 0ms !important;
+  scroll-behavior: auto !important;
+}
+html[data-motion='reduced'] [data-reveal],
+html[data-motion='reduced'] [data-image-reveal],
+html[data-motion='reduced'] [data-image-reveal] > *,
+html[data-motion='reduced'] [data-split] .split-inner {
+  opacity: 1 !important;
+  transform: none !important;
+  clip-path: none !important;
+}
+html[data-motion='reduced'] .marquee-track {
+  animation: none !important;
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

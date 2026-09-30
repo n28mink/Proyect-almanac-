@@ -28,7 +28,7 @@ function Announcement({ messages }: { messages: string[] }) {
     return () => clearInterval(id);
   }, [messages.length, reduced]);
   return (
-    <p key={i} className="label-micro intro-fade text-center" style={{ letterSpacing: '0.18em' }}>
+    <p key={i} className="intro-fade truncate text-center text-caption font-medium tracking-[0.02em]">
       {messages[i]}
     </p>
   );
@@ -36,7 +36,7 @@ function Announcement({ messages }: { messages: string[] }) {
 
 function IconButton({ label, children, badge, className, ...rest }: { label: string; children: React.ReactNode; badge?: number } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button type="button" aria-label={label} className={cn('relative grid h-11 w-11 place-items-center transition-opacity hover:opacity-70', className)} {...rest}>
+    <button type="button" aria-label={label} className={cn('relative grid h-11 w-11 place-items-center transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90', className)} {...rest}>
       {children}
       {badge !== undefined && badge > 0 && (
         <span data-cart-badge="" className="absolute right-0.5 top-1 grid min-h-[1.05rem] min-w-[1.05rem] place-items-center rounded-full bg-accent-decor px-1 text-[0.625rem] font-semibold leading-none text-ink">
@@ -107,7 +107,7 @@ export function Header({ announcements, primary }: HeaderProps) {
 
   return (
     <header className="site-header" data-solid={solid} data-hidden={hidden} data-tone={tone} style={{ height: 'auto' }}>
-      <div className={cn('grid overflow-hidden bg-forest text-ivory transition-[grid-template-rows] duration-500 ease-[var(--ease-luxe)]', solid ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]')}>
+      <div className={cn('grid overflow-hidden bg-forest text-ivory transition-[grid-template-rows] duration-300 ease-[var(--ease-out)]', solid ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]')}>
         <div className="min-h-0">
           <div className="flex h-[var(--announcement-h)] items-center justify-center px-4">
             <Announcement messages={announcements} />
@@ -117,7 +117,7 @@ export function Header({ announcements, primary }: HeaderProps) {
 
       <div className="container-x grid h-[var(--header-h)] grid-cols-[1fr_auto_1fr] items-center">
         <div className="flex items-center gap-1 lg:gap-7">
-          <button type="button" onClick={() => openPanel('menu')} aria-haspopup="dialog" className="label-micro -ml-2 flex h-11 items-center gap-3 px-2 transition-opacity hover:opacity-70">
+          <button type="button" onClick={() => openPanel('menu')} aria-haspopup="dialog" aria-label={t('menu')} className="label-micro -ml-2 flex h-11 min-w-11 items-center justify-center gap-3 px-2 transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90">
             <MenuIcon />
             <span className="hidden sm:inline">{t('menu')}</span>
           </button>
@@ -138,7 +138,7 @@ export function Header({ announcements, primary }: HeaderProps) {
           <IconButton label={t('search')} onClick={() => openPanel('search')} aria-haspopup="dialog">
             <SearchIcon />
           </IconButton>
-          <TransitionLink href="/wishlist" aria-label={t('wishlist', { count: wishCount })} className="relative grid h-11 w-11 place-items-center transition-opacity hover:opacity-70">
+          <TransitionLink href="/wishlist" aria-label={t('wishlist', { count: wishCount })} className="relative grid h-11 w-11 place-items-center transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90">
             <HeartIcon filled={wishCount > 0} />
             {wishCount > 0 && <span className="absolute right-0.5 top-1 grid min-h-[1.05rem] min-w-[1.05rem] place-items-center rounded-full bg-accent-decor px-1 text-[0.625rem] font-semibold leading-none text-ink">{wishCount}</span>}
           </TransitionLink>

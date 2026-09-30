@@ -21,7 +21,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
           lang={l}
           aria-pressed={l === locale}
           onClick={() => l !== locale && router.replace(pathname, { locale: l, scroll: false })}
-          className={cn('label-micro nav-link py-2', l === locale ? 'text-fg' : 'text-fg-subtle hover:text-fg')}
+          className={cn('label-micro nav-link inline-flex min-h-11 items-center px-1', l === locale ? 'text-fg' : 'text-fg-subtle hover:text-fg')}
           aria-current={l === locale ? 'true' : undefined}
         >
           {localeFormats[l].label}

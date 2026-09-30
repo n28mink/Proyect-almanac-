@@ -20,7 +20,7 @@ export default async function WishlistPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   const t = await getTranslations('wishlist');
   return (
-    <PageShell eyebrow={t('eyebrow')} title={t('title')} text={t('text')}>
+    <PageShell title={t('title')} text={t('text')}>
       <WishlistGrid />
     </PageShell>
   );

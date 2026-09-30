@@ -36,7 +36,7 @@ export default async function JournalEntryPage({ params }: { params: Promise<{ l
   const cover = baseCatalog().find((p) => p.id === e.coverProductId)!.images[0]!;
 
   return (
-    <PageShell eyebrow={`${formatDate(e.date, locale)} · ${t('read', { count: e.readMinutes })}`} title={pick(e.title, locale)} narrow>
+    <PageShell eyebrow={`${formatDate(e.date, locale)}, ${t('read', { count: e.readMinutes })}`} title={pick(e.title, locale)} narrow>
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'Article', headline: pick(e.title, locale), datePublished: e.date, image: `${site.url}${cover.src}`, inLanguage: locale, author: { '@type': 'Organization', name: site.name } }} />
       <div className="relative mb-12 aspect-[16/10] overflow-hidden bg-surface-sunken"><Image src={cover.src} alt="" fill sizes="(min-width: 1024px) 56rem, 100vw" priority placeholder="blur" blurDataURL={cover.blur} className="object-cover" /></div>
       <article className="max-w-2xl space-y-8 text-lead text-fg-muted">

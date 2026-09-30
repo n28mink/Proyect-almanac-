@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { hasLocale } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { ShopPage } from '@/components/shop/ShopPage';
 import { collections, getCollection } from '@/content/collections';
@@ -28,7 +28,6 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
   const c = getCollection(slug);
   if (!c) notFound();
   setRequestLocale(locale);
-  const t = await getTranslations('collections');
   const products = (await getCatalog()).filter((p) => p.collection === slug);
-  return <ShopPage locale={locale} products={products} title={pick(c.name, locale)} blurb={pick(c.description, locale)} eyebrow={`${t('eyebrowOne')} · ${pick(c.tagline, locale)}`} />;
+  return <ShopPage locale={locale} products={products} title={pick(c.name, locale)} blurb={pick(c.description, locale)} eyebrow={pick(c.tagline, locale)} />;
 }

@@ -37,7 +37,7 @@ export function Logo({ className, subtitle = true, stacked = false }: { classNam
     <span className={cn('inline-flex', stacked ? 'mt-1 flex-col items-center gap-1.5' : 'items-baseline gap-3', className)}>
       <Wordmark className={stacked ? 'text-[1.85rem] md:text-[2.15rem]' : 'text-[2rem]'} />
       {subtitle && (
-        <span className={cn('uppercase text-current opacity-75', stacked ? 'text-[0.5625rem] tracking-[0.3em] md:text-[0.625rem]' : 'text-[0.6875rem] tracking-[0.24em]')}>{t('subtitle')}</span>
+        <span className={cn('uppercase text-current opacity-75', stacked ? 'text-[0.625rem] tracking-[0.26em] md:text-[0.6875rem]' : 'text-[0.6875rem] tracking-[0.24em]')}>{t('subtitle')}</span>
       )}
     </span>
   );

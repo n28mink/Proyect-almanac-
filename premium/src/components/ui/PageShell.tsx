@@ -22,9 +22,9 @@ export function PageShell({ eyebrow, title, text, children, className, narrow = 
 export function Field({ label, id, error, children }: { label: string; id: string; error?: string; children: ReactNode }) {
   return (
     <div className="space-y-2">
-      <label htmlFor={id} className="label-micro block text-fg-subtle">{label}</label>
+      <label htmlFor={id} className="block text-caption font-medium text-fg-muted">{label}</label>
       {children}
-      {error && <p role="alert" className="text-caption text-danger">{error}</p>}
+      {error && <p id={`${id}-error`} role="alert" className="text-caption text-danger">{error}</p>}
     </div>
   );
 }

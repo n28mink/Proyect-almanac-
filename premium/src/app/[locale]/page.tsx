@@ -85,7 +85,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <CategoryNav locale={locale} />
 
       <div className="bg-surface py-14 text-fg md:py-20" data-header-tone="dark" aria-hidden="true">
-        <KineticMarquee items={marqueeItems.map((w) => <span key={w} className="font-display text-display-m italic text-fg/80 whitespace-nowrap">{w}</span>)} duration={52} />
+        <KineticMarquee items={marqueeItems.map((w) => <span key={w} className="font-display text-display-m text-fg/80 whitespace-nowrap">{w}</span>)} duration={52} />
       </div>
 
       <EditorialSplit imageA={{ src: splitA.src, blur: splitA.blur, alt: pick(splitA.alt, locale) }} imageB={{ src: splitB.src, blur: splitB.blur, alt: pick(splitB.alt, locale) }} />
@@ -99,7 +99,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </ScrollExpandVideo>
       )}
 
-      <ProductRail products={newArrivals} eyebrow={t('newEyebrow')} title={t('newTitle')} href="/shop/new-arrivals" />
+      <ProductRail products={newArrivals} title={t('newTitle')} href="/shop/new-arrivals" />
 
       <WatchShowcase campaign={campaigns.watches} video={getVideo(campaigns.watches.videoKey)} watch={watch} locale={locale} />
 
@@ -107,7 +107,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       <FashionEditorial campaign={campaigns.fashion} video={getVideo(campaigns.fashion.videoKey)} locale={locale} />
 
-      <CollectionsStory tiles={tiles} title={t('storyTitle')} eyebrow={t('storyEyebrow')} allLabel={t('allCollections')} />
+      <CollectionsStory tiles={tiles} title={t('storyTitle')} allLabel={t('allCollections')} />
 
       <Craftsmanship campaign={campaigns.story} video={getVideo(campaigns.story.videoKey)} locale={locale} />
 

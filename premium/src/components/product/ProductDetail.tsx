@@ -10,6 +10,7 @@ import type { ProductView } from '@/lib/card-data';
 import { cn } from '@/lib/cn';
 import { useInView } from '@/lib/hooks';
 import { ProductGallery } from './ProductGallery';
+import { AddLabel, useAddedFlash } from './AddLabel';
 import { useAddToBag } from './use-add-to-bag';
 import { WishlistButton } from './WishlistButton';
 
@@ -17,6 +18,7 @@ import { WishlistButton } from './WishlistButton';
 export function ProductDetail({ p }: { p: ProductView }) {
   const t = useTranslations('product');
   const addToBag = useAddToBag();
+  const [added, flash] = useAddedFlash();
   const [index, setIndex] = useState(0);
   const [variantId, setVariantId] = useState((p.variants.find((v) => v.stock > 0) ?? p.variants[0]!).id);
   const [qty, setQty] = useState(1);
@@ -38,8 +40,10 @@ export function ProductDetail({ p }: { p: ProductView }) {
     setView('photos');
   };
 
-  const add = () =>
+  const add = () => {
     addToBag({ productId: p.id, variantId, quantity: qty, name: p.name, imageSrc: p.images[variant.imageIndex]?.src ?? p.images[0]!.src, source: gallery.current });
+    flash();
+  };
 
   const img0 = p.images[0]!;
 
@@ -63,7 +67,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
       </div>
 
       <div className="lg:sticky lg:top-[calc(var(--header-h)+var(--announcement-h)+1rem)] lg:self-start">
-        <p className="label-micro text-accent">{p.categoryLabel}{p.collection ? ` · ${p.collection.name}` : ''}</p>
+        <p className="label-micro text-accent">{p.categoryLabel}{p.collection ? `, ${p.collection.name}` : ''}</p>
         <h1 className="mt-4 font-display text-display-m">{p.name}</h1>
         <div className="mt-5 flex items-baseline gap-4">
           <Price cents={p.price} className="font-display text-heading" />
@@ -97,7 +101,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
             <button type="button" onClick={() => setQty((q) => Math.min(max, q + 1))} disabled={qty >= max} aria-label={t('increase')} className="grid h-14 w-12 place-items-center hover:bg-fg/5 disabled:opacity-30"><PlusIcon width={16} height={16} /></button>
           </div>
           <Button size="lg" className="min-w-0 flex-1" disabled={soldOut} onClick={add}>
-            {soldOut ? t('soldOut') : t('addToBag')}
+            {soldOut ? t('soldOut') : <AddLabel added={added} idle={t('addToBag')} done={t('added')} />}
           </Button>
           <WishlistButton productId={p.id} name={p.name} className="h-14 w-14 border border-line-strong" />
         </div>
@@ -109,7 +113,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
 
         {p.highlights.length > 0 && (
           <details className="group mt-6 border-t border-line pt-4" open>
-            <summary className="label-micro flex cursor-pointer list-none items-center justify-between py-2">{t('highlights')}<PlusIcon width={16} height={16} className="transition-transform group-open:rotate-45" /></summary>
+            <summary className="label-micro flex min-h-11 cursor-pointer list-none items-center justify-between">{t('highlights')}<PlusIcon width={16} height={16} className="transition-transform group-open:rotate-45" /></summary>
             <ul className="mt-3 space-y-2 text-fg-muted">
               {p.highlights.map((h) => <li key={h} className="flex gap-3"><span aria-hidden="true" className="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-accent-decor" />{h}</li>)}
             </ul>
@@ -124,7 +128,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
             <p className="truncate font-display text-lead leading-tight">{p.name}</p>
             <Price cents={p.price} className="text-caption text-fg-muted" />
           </div>
-          <Button disabled={soldOut} onClick={add}>{soldOut ? t('soldOut') : t('addToBag')}</Button>
+          <Button disabled={soldOut} onClick={add}>{soldOut ? t('soldOut') : <AddLabel added={added} idle={t('addToBag')} done={t('added')} />}</Button>
         </div>
       )}
     </div>

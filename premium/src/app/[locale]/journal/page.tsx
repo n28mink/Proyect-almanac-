@@ -27,7 +27,7 @@ export default async function JournalIndex({ params }: { params: Promise<{ local
   const t = await getTranslations('journal');
   const catalog = baseCatalog();
   return (
-    <PageShell eyebrow={t('eyebrow')} title={t('title')} text={t('text')}>
+    <PageShell title={t('title')} text={t('text')}>
       <ul className="grid gap-x-8 gap-y-16 md:grid-cols-3">
         {journal.map((e, i) => {
           const img = catalog.find((p) => p.id === e.coverProductId)!.images[0]!;
@@ -35,7 +35,7 @@ export default async function JournalIndex({ params }: { params: Promise<{ local
             <FadeReveal as="li" key={e.slug} delay={i * 100}>
               <TransitionLink href={`/journal/${e.slug}`} variant="ivory" className="group block">
                 <div className="relative aspect-[4/5] overflow-hidden bg-surface-sunken"><Image src={img.src} alt="" fill sizes="(min-width: 768px) 30vw, 100vw" placeholder="blur" blurDataURL={img.blur} className="object-cover transition-transform duration-[1600ms] ease-[var(--ease-expo)] group-hover:scale-[1.04]" /></div>
-                <p className="label-micro mt-5 text-fg-subtle">{formatDate(e.date, locale)} · {t('read', { count: e.readMinutes })}</p>
+                <p className="label-micro mt-5 text-fg-subtle">{formatDate(e.date, locale)}, {t('read', { count: e.readMinutes })}</p>
                 <h2 className="mt-2 font-display text-heading group-hover:text-accent">{pick(e.title, locale)}</h2>
                 <p className="mt-2 text-fg-muted">{pick(e.excerpt, locale)}</p>
               </TransitionLink>

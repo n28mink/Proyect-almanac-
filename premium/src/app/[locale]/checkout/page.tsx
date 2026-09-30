@@ -23,7 +23,7 @@ export default async function CheckoutPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   const t = await getTranslations('checkout');
   return (
-    <PageShell eyebrow={t('eyebrow')} title={t('title')} text={t('text')}>
+    <PageShell title={t('title')} text={t('text')}>
       <CheckoutForm />
     </PageShell>
   );

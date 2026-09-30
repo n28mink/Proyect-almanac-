@@ -36,7 +36,7 @@ export default async function Lookbook({ params }: { params: Promise<{ locale: s
   const spans = ['md:col-span-7', 'md:col-span-5', 'md:col-span-4', 'md:col-span-4', 'md:col-span-4', 'md:col-span-6', 'md:col-span-6', 'md:col-span-5', 'md:col-span-7', 'md:col-span-4', 'md:col-span-4', 'md:col-span-4'];
 
   return (
-    <PageShell eyebrow={t('eyebrow')} title={t('title')} text={t('text')}>
+    <PageShell title={t('title')} text={t('text')}>
       {video && <div className="mb-16"><LuxuryVideo video={video} priority aspectRatio="21 / 9" className="w-full" /></div>}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-6">
         {looks.map((p, i) => {

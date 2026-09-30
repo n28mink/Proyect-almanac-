@@ -10,18 +10,18 @@ const variants: Record<Variant, string> = {
   solid: 'bg-accent text-surface border border-accent hover:bg-transparent hover:text-accent',
   outline: 'border border-line-strong text-fg hover:bg-accent hover:text-surface hover:border-accent',
   ghost: 'text-fg hover:bg-fg/5 border border-transparent',
-  link: 'link-underline text-fg border-0 px-0 !min-h-0 !h-auto py-1',
+  link: 'link-underline hit-area text-fg border-0 px-0 !min-h-0 !h-auto py-1',
 };
 
 const sizes: Record<Size, string> = {
-  sm: 'h-10 px-5',
+  sm: 'h-11 px-5',
   md: 'h-12 px-7',
   lg: 'h-14 px-9',
 };
 
 export function buttonClass(variant: Variant = 'solid', size: Size = 'md', className?: string) {
   return cn(
-    'label-micro inline-flex select-none items-center justify-center gap-3 whitespace-nowrap transition-[background-color,color,border-color,opacity] duration-300 ease-[var(--ease-luxe)] disabled:pointer-events-none disabled:opacity-40',
+    'label-micro inline-flex select-none items-center justify-center gap-3 whitespace-nowrap transition-[background-color,color,border-color,opacity,scale] duration-200 ease-[var(--ease-out)] active:scale-[0.97] disabled:pointer-events-none disabled:opacity-40',
     variants[variant],
     variant !== 'link' && sizes[size],
     className,

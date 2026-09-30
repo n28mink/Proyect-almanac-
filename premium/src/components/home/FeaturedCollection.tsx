@@ -22,7 +22,7 @@ export async function FeaturedCollection({ collection, cover, products, locale }
           </ParallaxMedia>
         </ImageReveal>
         <div>
-          <SectionHeading eyebrow={t('featuredEyebrow')} title={pick(collection.name, locale)} text={pick(collection.description, locale)} />
+          <SectionHeading title={pick(collection.name, locale)} text={pick(collection.description, locale)} />
           <FadeReveal delay={200} className="mt-10">
             <ButtonLink href={`/collections/${collection.slug}`} variant="outline" transition="clip">{t('discoverCollection')}</ButtonLink>
           </FadeReveal>

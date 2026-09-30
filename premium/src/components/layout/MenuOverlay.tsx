@@ -22,7 +22,7 @@ export function MenuOverlay({ nav }: { nav: NavData }) {
       <div data-tone="ink" className="grid h-full grid-rows-[auto_1fr_auto] bg-surface text-fg">
         <div className="container-x flex h-[var(--header-h)] items-center justify-between">
           <Logo />
-          <button type="button" onClick={close} aria-label={t('close')} className="-mr-2 grid h-11 w-11 place-items-center transition-opacity hover:opacity-70">
+          <button type="button" onClick={close} aria-label={t('close')} className="-mr-2 grid h-11 w-11 place-items-center transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90">
             <CloseIcon />
           </button>
         </div>
@@ -62,7 +62,7 @@ export function MenuOverlay({ nav }: { nav: NavData }) {
 
           <TransitionLink href={nav.featured.href} variant="clip" className="menu-fade group hidden lg:block">
             <div className="relative aspect-[4/5] overflow-hidden bg-surface-sunken">
-              <Image src={nav.featured.image} alt="" fill sizes="26vw" placeholder={nav.featured.blur ? 'blur' : 'empty'} blurDataURL={nav.featured.blur} className="object-cover transition-transform duration-[1400ms] ease-[var(--ease-expo)] group-hover:scale-[1.04]" />
+              <Image src={nav.featured.image} alt="" fill sizes="26vw" placeholder={nav.featured.blur ? 'blur' : 'empty'} blurDataURL={nav.featured.blur} className="object-cover transition-transform duration-500 ease-[var(--ease-expo)] group-hover:scale-[1.04]" />
             </div>
             <p className="label-micro mt-4 text-fg-subtle">{t('featured')}</p>
             <p className="font-display text-heading">{nav.featured.label}</p>

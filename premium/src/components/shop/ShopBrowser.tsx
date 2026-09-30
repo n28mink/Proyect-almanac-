@@ -34,7 +34,7 @@ function Group({ title, children }: { title: string; children: React.ReactNode }
 
 function CheckRow({ id, label, count, checked, onChange }: { id: string; label: string; count: number; checked: boolean; onChange: () => void }) {
   return (
-    <label htmlFor={id} className="flex cursor-pointer items-center gap-3 text-caption">
+    <label htmlFor={id} className="flex min-h-11 cursor-pointer items-center gap-3 text-caption">
       <input id={id} type="checkbox" checked={checked} onChange={onChange} className="checkbox" />
       <span className="flex-1">{label}</span>
       <span className="tabular text-fg-subtle">{count}</span>
@@ -55,7 +55,7 @@ function FilterPanel({ params, facets, labels, update }: { params: ShopParams; f
   return (
     <div>
       <Group title={t('availability')}>
-        <label className="flex cursor-pointer items-center gap-3 text-caption">
+        <label className="flex min-h-11 cursor-pointer items-center gap-3 text-caption">
           <input type="checkbox" className="checkbox" checked={params.inStock} onChange={(e) => update({ inStock: e.target.checked })} />
           {t('inStockOnly')}
         </label>

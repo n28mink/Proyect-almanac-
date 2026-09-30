@@ -84,6 +84,66 @@ test('checkout en carga directa hidrata con la CSP de nonce (sin scripts bloquea
   expect(errs.filter((e) => /Content Security Policy/.test(e))).toEqual([]);
 });
 
+test('movimiento: el interruptor del pie detiene el movimiento y se recuerda', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(600);
+  expect(await page.locator('video').count()).toBeGreaterThan(0);
+  const toggle = page.getByRole('button', { name: 'Reducir movimiento' });
+  await toggle.scrollIntoViewIfNeeded();
+  await toggle.click();
+  await expect(page.locator('html')).toHaveAttribute('data-motion', 'reduced');
+  await expect(page.getByRole('button', { name: 'Activar movimiento' })).toHaveAttribute('aria-pressed', 'true');
+  await page.reload({ waitUntil: 'networkidle' });
+  await expect(page.locator('html')).toHaveAttribute('data-motion', 'reduced');
+  // Sin movimiento no se monta ningún <video> (queda el póster con su botón de reproducir).
+  await expect(page.locator('video')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Activar movimiento' }).click();
+  await expect(page.locator('html')).not.toHaveAttribute('data-motion', /.+/);
+});
+
+test('teclado: activar un enlace con Enter navega al instante, sin cortina de transición', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  const link = page.locator('header nav a', { hasText: 'Relojes' }).first();
+  await link.focus();
+  await page.keyboard.press('Enter');
+  await page.waitForURL(/\/es\/shop\/watches/, { timeout: 4000 });
+  // La cortina (overlay de transición) no llegó a mostrarse.
+  const shown = await page.evaluate(() => [...document.querySelectorAll('div[aria-hidden="true"].fixed')].some((e) => getComputedStyle(e).visibility === 'visible' && Number(getComputedStyle(e).opacity) > 0));
+  expect(shown).toBe(false);
+  await expect(page.locator('#main')).toBeFocused();
+});
+
+test('bolsa: quitar una pieza se puede deshacer', async ({ page }) => {
+  await page.goto('/es/shop/rings', { waitUntil: 'networkidle' });
+  await page.locator('a[href*="/product/"]').first().click();
+  await page.waitForURL(/\/product\//);
+  const add = page.getByRole('button', { name: /Añadir a la bolsa/ }).first();
+  await add.click();
+  await expect(page.getByRole('button', { name: 'Añadido' }).first()).toBeVisible(); // el botón cambia de estado
+  await page.getByRole('button', { name: /Bolsa \(1\)/ }).click();
+  const drawer = page.getByRole('dialog');
+  await drawer.getByRole('button', { name: 'Quitar' }).click();
+  await expect(drawer.getByText('Tu bolsa está vacía')).toBeVisible();
+  await drawer.getByRole('button', { name: 'Deshacer' }).click();
+  await expect(drawer.getByRole('button', { name: 'Quitar' })).toBeVisible();
+});
+
+test('checkout: errores junto al campo y foco en el primero que falla', async ({ page, context }) => {
+  await context.addInitScript(() => localStorage.setItem('clover-cart-v2', JSON.stringify({ state: { lines: [{ productId: 'an04', variantId: 'an04-1', quantity: 1 }] }, version: 0 })));
+  await page.goto('/es/checkout', { waitUntil: 'networkidle' });
+  await expect(page.getByRole('button', { name: 'Hacer pedido' })).toBeEnabled();
+  await page.getByRole('button', { name: 'Hacer pedido' }).click();
+  await expect(page.locator('#fullName-error')).toContainText('nombre y apellido');
+  await expect(page.locator('#fullName')).toBeFocused();
+  await expect(page.locator('#fullName')).toHaveAttribute('aria-invalid', 'true');
+  await expect(page.locator('#phone')).toHaveAttribute('placeholder', /…$/);
+  await page.locator('#fullName').fill('Ana Pérez');
+  await page.locator('#phone').fill('12');
+  await page.getByRole('button', { name: 'Hacer pedido' }).click();
+  await expect(page.locator('#phone')).toBeFocused();
+  await expect(page.locator('#phone-error')).toContainText('teléfono válido');
+});
+
 test('tienda: orden por precio en la URL', async ({ page }) => {
   await page.goto('/es/shop?sort=price-desc&view=list', { waitUntil: 'networkidle' });
   const prices = await page.locator('[data-price]').evaluateAll((els) => els.map((e) => Number(e.getAttribute('data-price'))));
@@ -100,6 +160,15 @@ test('EN: contenido localizado, hreflang y JSON-LD de producto', async ({ page }
   expect(types).toEqual(expect.arrayContaining(['Product', 'BreadcrumbList']));
   await expect(page.locator('link[rel="alternate"][hreflang="es"]')).toHaveCount(1);
   await expect(page.locator('link[rel="canonical"]')).toHaveCount(1);
+});
+
+test('búsqueda sin resultados ofrece categorías para seguir explorando', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  await page.getByRole('button', { name: 'Buscar' }).click();
+  await page.getByRole('searchbox').fill('zzzzqq');
+  const dlg = page.getByRole('dialog', { name: /Buscar/ });
+  await expect(dlg.getByText(/Sin resultados/)).toBeVisible();
+  await expect(dlg.getByRole('link').first()).toBeVisible();
 });
 
 test('SEO: sitemap y robots', async ({ request }) => {
@@ -137,6 +206,20 @@ for (const path of ['/es', '/es/shop', '/es/checkout']) {
     expect(r.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
   });
 }
+
+test('@mobile accesibilidad (axe) y objetivos táctiles en la cabecera', async ({ page }) => {
+  for (const path of ['/es', '/es/shop/rings']) {
+    await page.goto(path, { waitUntil: 'load' });
+    await page.waitForTimeout(1500);
+    const r = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).exclude('[data-decorative]').analyze();
+    expect(r.violations.map((v) => `${path} ${v.id}: ${v.nodes.length}`)).toEqual([]);
+  }
+  // El botón de menú tiene nombre accesible aunque su texto se oculte en móvil y mide ≥ 44 px.
+  const menu = page.getByRole('button', { name: 'Menú' });
+  const box = (await menu.boundingBox())!;
+  expect(box.height).toBeGreaterThanOrEqual(44);
+  expect(box.width).toBeGreaterThanOrEqual(44);
+});
 
 test('@mobile sin desbordamiento horizontal en home, tienda y categoría', async ({ page }) => {
   for (const p of ['/es', '/es/shop', '/es/shop/watches']) {

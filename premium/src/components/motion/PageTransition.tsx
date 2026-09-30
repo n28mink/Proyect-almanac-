@@ -18,6 +18,8 @@ export interface NavigateOptions {
   direction?: 1 | -1;
   /** Mueve el foco al contenido principal (navegación por teclado). */
   focusMain?: boolean;
+  /** Sin cortina: navegación inmediata. Las acciones iniciadas con teclado nunca se animan. */
+  instant?: boolean;
 }
 
 interface Api {
@@ -57,7 +59,7 @@ function shapes(v: TransitionVariant, o: NavigateOptions) {
 /**
  * Transiciones de página reutilizables (App Router no puede animar la salida de la ruta vieja).
  * Máquina: idle → covering (cortina sube) → router.push → navigating (espera a que la ruta nueva monte) → revealing → idle.
- * Presupuesto: ~380 ms cubrir + ~520 ms revelar. Con reduced-motion la navegación es inmediata.
+ * Presupuesto: ~380 ms cubrir + ~520 ms revelar (la salida es más rápida que la entrada). Con reduced-motion o al activar el enlace con el teclado la navegación es inmediata.
  */
 export function PageTransitionProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
@@ -83,8 +85,10 @@ export function PageTransitionProvider({ children }: { children: ReactNode }) {
   const navigate = useCallback<Api['navigate']>(
     (href, options = {}) => {
       const target = pathnameOf(href);
-      if (reduced || state.current !== 'idle' || !overlay.current || !panel.current || target === pathRef.current) {
+      if (options.instant || reduced || state.current !== 'idle' || !overlay.current || !panel.current || target === pathRef.current) {
+        closePanel();
         router.push(href);
+        if (options.focusMain) window.setTimeout(() => document.getElementById('main')?.focus({ preventScroll: true }), 60);
         return;
       }
       const el = overlay.current;
