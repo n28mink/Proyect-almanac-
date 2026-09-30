@@ -6,12 +6,12 @@ import { Section, SectionHeading } from '@/components/ui/Section';
 import type { CardData } from '@/lib/card-data';
 
 /** Carril horizontal de producto (snap táctil, sin scroll-hijack). Para novedades. */
-export async function ProductRail({ products, eyebrow, title, href }: { products: CardData[]; eyebrow: string; title: string; href: string }) {
+export async function ProductRail({ products, title, href }: { products: CardData[]; title: string; href: string }) {
   const t = await getTranslations('home');
   return (
     <Section headerTone="dark" className="!overflow-hidden">
       <div className="container-x mb-12 flex flex-wrap items-end justify-between gap-6">
-        <SectionHeading eyebrow={eyebrow} title={title} size="m" />
+        <SectionHeading title={title} size="m" />
         <TransitionLink href={href} className="label-micro link-underline">{t('viewAll')}</TransitionLink>
       </div>
       <ul className="snap-row" data-lenis-prevent-wheel="">

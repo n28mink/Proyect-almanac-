@@ -3,7 +3,6 @@ import { getTranslations } from 'next-intl/server';
 import { LuxuryVideo } from '@/components/media/LuxuryVideo';
 import { ParallaxMedia } from '@/components/motion/ParallaxMedia';
 import { FadeReveal, ImageReveal, StaggerText } from '@/components/motion/Reveal';
-import { Eyebrow } from '@/components/ui/Section';
 import type { VideoAsset } from '@/content/media';
 import type { ProductView } from '@/lib/card-data';
 
@@ -32,7 +31,6 @@ export async function ProductStory({ p, video }: { p: ProductView; video: VideoA
           </ImageReveal>
         )}
         <div>
-          <Eyebrow className="mb-6">{t('storyEyebrow')}</Eyebrow>
           <StaggerText as="h2" text={p.name} className="font-display text-display-m" />
           <FadeReveal delay={120}><p className="mt-8 text-lead text-fg-muted">{p.story}</p></FadeReveal>
         </div>

@@ -10,7 +10,7 @@ export async function BestSellers({ products }: { products: CardData[] }) {
   return (
     <Section tone="sunken" headerTone="dark">
       <div className="container-x mb-14 flex flex-wrap items-end justify-between gap-6">
-        <SectionHeading eyebrow={t('bestEyebrow')} title={t('bestTitle')} size="m" />
+        <SectionHeading title={t('bestTitle')} size="m" />
         <TransitionLink href="/shop?sort=featured" className="label-micro link-underline">{t('viewAll')}</TransitionLink>
       </div>
       <ul className="container-x grid grid-cols-2 gap-x-4 gap-y-12 lg:grid-cols-4 lg:gap-x-8">

@@ -40,7 +40,7 @@ export function Dialog({ open, onClose, side = 'center', label, className, child
     const timer = window.setTimeout(() => {
       if (d.open) d.close();
       setMounted(false);
-    }, 380);
+    }, 320);
     return () => clearTimeout(timer);
   }, [open]);
 

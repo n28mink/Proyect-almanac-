@@ -28,7 +28,7 @@ export function QuickView({ p, open, onClose }: { p: CardData; open: boolean; on
           <Image src={variant.imageSrc} alt={p.image.alt} fill sizes="(min-width: 768px) 34rem, 100vw" className="object-cover" placeholder={p.image.blur ? 'blur' : 'empty'} blurDataURL={p.image.blur} />
         </div>
         <div className="relative flex flex-col p-6 md:p-10">
-          <button type="button" onClick={onClose} aria-label={t('close')} className="absolute right-3 top-3 grid h-11 w-11 place-items-center transition-opacity hover:opacity-70">
+          <button type="button" onClick={onClose} aria-label={t('close')} className="absolute right-3 top-3 grid h-11 w-11 place-items-center transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90">
             <CloseIcon />
           </button>
           <p className="label-micro text-accent">{p.categoryLabel}</p>

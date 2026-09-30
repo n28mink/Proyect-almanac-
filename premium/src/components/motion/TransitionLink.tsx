@@ -27,8 +27,9 @@ export function TransitionLink({ href, variant, direction, onClick, target, ...r
       variant,
       direction,
       origin: { x: e.clientX, y: e.clientY },
-      // detail === 0: activación por teclado → mover el foco al contenido principal.
+      // detail === 0: activación por teclado → sin animación y con el foco en el contenido principal.
       focusMain: e.detail === 0,
+      instant: e.detail === 0,
     });
   };
 

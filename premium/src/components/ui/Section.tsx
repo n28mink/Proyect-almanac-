@@ -3,7 +3,7 @@ import { StaggerText } from '@/components/motion/Reveal';
 import { cn } from '@/lib/cn';
 
 export function Eyebrow({ children, className }: { children: ReactNode; className?: string }) {
-  return <p className={cn('label-micro text-accent', className)}>{children}</p>;
+  return <p className={cn('text-caption font-medium text-accent', className)}>{children}</p>;
 }
 
 interface SectionHeadingProps {

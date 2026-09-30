@@ -9,6 +9,7 @@ import { Price } from '@/components/ui/Price';
 import { cn } from '@/lib/cn';
 import type { CardData, CardImage } from '@/lib/card-data';
 import { QuickView } from './QuickView';
+import { AddLabel, useAddedFlash } from './AddLabel';
 import { useAddToBag } from './use-add-to-bag';
 import { WishlistButton } from './WishlistButton';
 
@@ -60,6 +61,7 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
   const [everHovered, setEverHovered] = useState(false);
   const [quick, setQuick] = useState(false);
   const addToBag = useAddToBag();
+  const [added, flash] = useAddedFlash();
   const single = p.variants.length === 1;
   const soldOut = !p.inStock;
 
@@ -108,11 +110,18 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
             <button
               type="button"
               disabled={soldOut}
-              onClick={() => (single ? addToBag({ productId: p.id, variantId: p.defaultVariantId, name: p.name, imageSrc: p.image.src, source: media.current }) : setQuick(true))}
-              className="label-micro flex h-11 flex-1 items-center justify-center gap-2 bg-ivory/95 text-ink backdrop-blur-sm transition-colors hover:bg-ink hover:text-ivory disabled:opacity-50"
+              onClick={() => {
+                if (!single) return setQuick(true);
+                addToBag({ productId: p.id, variantId: p.defaultVariantId, name: p.name, imageSrc: p.image.src, source: media.current });
+                flash();
+              }}
+              className="label-micro flex h-11 flex-1 items-center justify-center gap-2 bg-ivory/95 text-ink backdrop-blur-sm transition-[background-color,color,scale] duration-200 ease-[var(--ease-out)] hover:bg-ink hover:text-ivory active:scale-[0.97] disabled:opacity-50"
             >
-              <PlusIcon width={16} height={16} />
-              {single ? t('quickAdd') : t('chooseOption')}
+              {single ? (
+                <AddLabel added={added} idle={<><PlusIcon width={16} height={16} />{t('quickAdd')}</>} done={t('added')} />
+              ) : (
+                <><PlusIcon width={16} height={16} />{t('chooseOption')}</>
+              )}
             </button>
             <button type="button" onClick={() => setQuick(true)} aria-label={t('quickViewLabel', { name: p.name })} className="grid h-11 w-11 place-items-center bg-ivory/95 text-ink backdrop-blur-sm transition-colors hover:bg-ink hover:text-ivory">
               <EyeIcon width={18} height={18} />
@@ -122,14 +131,14 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
       </div>
 
       <div className={cn('pt-4', layout === 'list' && 'pt-0')}>
-        <p className="label-micro text-fg-subtle">{p.categoryLabel}</p>
+        <p className="text-caption text-fg-subtle">{p.categoryLabel}</p>
         <h3 className="mt-1.5 min-h-[2.6em] font-display text-[1.3rem] leading-[1.2]">
           <TransitionLink href={`/product/${p.slug}`} variant="clip" className="hover:text-accent">{p.name}</TransitionLink>
         </h3>
         <Price cents={p.price} className="mt-1 block text-caption text-fg-muted" />
         {layout === 'list' && <p className="mt-3 hidden max-w-prose text-fg-muted sm:block">{p.description}</p>}
         {layout === 'grid' && (
-          <button type="button" disabled={soldOut} onClick={() => (single ? addToBag({ productId: p.id, variantId: p.defaultVariantId, name: p.name, imageSrc: p.image.src, source: media.current }) : setQuick(true))} className="label-micro link-underline mt-3 w-fit md:hidden">
+          <button type="button" disabled={soldOut} onClick={() => (single ? addToBag({ productId: p.id, variantId: p.defaultVariantId, name: p.name, imageSrc: p.image.src, source: media.current }) : setQuick(true))} className="label-micro link-underline hit-area mt-3 w-fit md:hidden">
             {single ? t('quickAdd') : t('chooseOption')}
           </button>
         )}

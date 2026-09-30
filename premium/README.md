@@ -2,7 +2,7 @@
 
 Next.js 16 (App Router, RSC, Turbopack) · React 19 · TypeScript estricto · Tailwind v4 · GSAP + Lenis · React Three Fiber (solo el visor 3D, bajo demanda) · next-intl (ES/EN) · zustand · zod.
 Identidad de Clover: verde de marca `#0b3f2b`, dorado champán `#b7985e` y marfil, con el wordmark «Clover🍀» y el subtítulo «Accesorios y Prendas»; titulares en Cormorant Garamond, texto en Manrope (autoalojadas, licencia OFL). Venta solo en Venezuela, pedidos por WhatsApp (sin pago en línea ni cuentas de cliente).
-Diseño y decisiones: `docs/00-arquitectura.md` (incluye el análisis de las 10 referencias y sus licencias: solo se tomaron ideas y patrones, **no** se copió código, marcas ni activos) · contenido: `docs/01-guia-de-contenido.md` · lanzamiento: `docs/02-produccion.md`.
+Diseño y decisiones: `docs/00-arquitectura.md` · guías de diseño aplicadas: `docs/03-guias-aplicadas.md` (incluye el análisis de las 10 referencias y sus licencias: solo se tomaron ideas y patrones, **no** se copió código, marcas ni activos) · contenido: `docs/01-guia-de-contenido.md` · lanzamiento: `docs/02-produccion.md`.
 
 ## B) Instalación
 ```bash

@@ -21,5 +21,5 @@ export default async function AllProducts({ params }: { params: Promise<{ locale
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations('shop');
-  return <ShopPage locale={locale} products={await getCatalog()} title={t('allTitle')} blurb={t('allText')} eyebrow={t('eyebrow')} />;
+  return <ShopPage locale={locale} products={await getCatalog()} title={t('allTitle')} blurb={t('allText')} />;
 }

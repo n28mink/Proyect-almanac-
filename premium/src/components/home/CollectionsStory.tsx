@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useRef } from 'react';
 import { TransitionLink } from '@/components/motion/TransitionLink';
-import { Eyebrow } from '@/components/ui/Section';
 import { gsap, useGSAP } from '@/lib/gsap';
 import { useIsDesktop, usePrefersReducedMotion } from '@/lib/hooks';
 import { cn } from '@/lib/cn';
@@ -23,7 +22,7 @@ export interface CollectionTile {
  * Storytelling de colecciones. En escritorio: sección fijada con scroll horizontal sutil (ScrollTrigger + pin).
  * En móvil/tablet o con reduced-motion: carril con snap nativo (sin secuestrar el scroll).
  */
-export function CollectionsStory({ tiles, title, eyebrow, allLabel }: { tiles: CollectionTile[]; title: string; eyebrow: string; allLabel: string }) {
+export function CollectionsStory({ tiles, title, allLabel }: { tiles: CollectionTile[]; title: string; allLabel: string }) {
   const root = useRef<HTMLElement>(null);
   const track = useRef<HTMLUListElement>(null);
   const desktop = useIsDesktop();
@@ -47,7 +46,6 @@ export function CollectionsStory({ tiles, title, eyebrow, allLabel }: { tiles: C
     <section ref={root} data-tone="ink" data-header-tone="light" className="relative overflow-hidden bg-surface py-20 text-fg lg:flex lg:min-h-[100svh] lg:flex-col lg:justify-center lg:py-0">
       <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-4 lg:mb-14">
         <div>
-          <Eyebrow className="mb-4">{eyebrow}</Eyebrow>
           <h2 className="font-display text-display-l">{title}</h2>
         </div>
         <TransitionLink href="/collections" className="label-micro link-underline">{allLabel}</TransitionLink>
@@ -58,7 +56,7 @@ export function CollectionsStory({ tiles, title, eyebrow, allLabel }: { tiles: C
           <li key={c.slug} className={cn(pinned ? 'w-[34rem] shrink-0 xl:w-[38rem]' : 'w-[78vw] max-w-[24rem] sm:w-[52vw]')}>
             <TransitionLink href={`/collections/${c.slug}`} variant="mask" className="group block">
               <div className="relative aspect-[4/5] overflow-hidden bg-surface-sunken">
-                <Image src={c.image.src} alt="" fill sizes="(min-width: 1280px) 38rem, 80vw" placeholder="blur" blurDataURL={c.image.blur} className="object-cover transition-transform duration-[1600ms] ease-[var(--ease-expo)] group-hover:scale-[1.04]" />
+                <Image src={c.image.src} alt="" fill sizes="(min-width: 1280px) 38rem, 80vw" placeholder="blur" blurDataURL={c.image.blur} className="object-cover transition-transform duration-500 ease-[var(--ease-expo)] group-hover:scale-[1.04]" />
                 <span className="label-micro absolute left-5 top-5 text-ivory mix-blend-difference">{String(i + 1).padStart(2, '0')}</span>
               </div>
               <div className="mt-5 flex items-end justify-between gap-6">

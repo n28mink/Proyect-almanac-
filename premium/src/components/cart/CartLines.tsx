@@ -37,15 +37,15 @@ export function CartLines({ quote, compact = false }: { quote: Quote; compact?: 
             {l.adjusted && <p className="mt-1 text-caption text-danger" role="status">{t('stockAdjusted', { count: l.available })}</p>}
             <div className="mt-auto flex items-center justify-between pt-3">
               <div className="flex items-center border border-line-strong" role="group" aria-label={t('quantity')}>
-                <button type="button" onClick={() => setQuantity(l.variantId, l.quantity - 1)} aria-label={t('decrease')} className="grid h-9 w-9 place-items-center transition-colors hover:bg-fg/5">
+                <button type="button" onClick={() => setQuantity(l.variantId, l.quantity - 1)} aria-label={t('decrease')} className="grid h-11 w-11 place-items-center transition-colors hover:bg-fg/5 active:bg-fg/10">
                   <MinusIcon width={16} height={16} />
                 </button>
                 <span className="tabular min-w-8 text-center text-caption" aria-live="polite">{l.quantity}</span>
-                <button type="button" onClick={() => setQuantity(l.variantId, l.quantity + 1)} disabled={l.quantity >= Math.min(MAX_PER_LINE, l.available)} aria-label={t('increase')} className="grid h-9 w-9 place-items-center transition-colors hover:bg-fg/5 disabled:opacity-30">
+                <button type="button" onClick={() => setQuantity(l.variantId, l.quantity + 1)} disabled={l.quantity >= Math.min(MAX_PER_LINE, l.available)} aria-label={t('increase')} className="grid h-11 w-11 place-items-center transition-colors hover:bg-fg/5 active:bg-fg/10 disabled:opacity-30">
                   <PlusIcon width={16} height={16} />
                 </button>
               </div>
-              <button type="button" onClick={() => remove(l.variantId)} className="label-micro text-fg-subtle underline-offset-4 transition-colors hover:text-fg hover:underline">
+              <button type="button" onClick={() => remove(l.variantId)} className="label-micro -mr-2 inline-flex min-h-11 items-center px-2 text-fg-subtle underline-offset-4 transition-colors hover:text-fg hover:underline">
                 {t('remove')}
               </button>
             </div>

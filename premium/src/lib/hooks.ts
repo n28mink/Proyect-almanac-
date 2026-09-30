@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { reveal } from '@/config/motion';
+import { useMotionReducedByUser } from './motion-pref';
 
 function mediaQueryStore(query: string) {
   return {
@@ -19,7 +20,12 @@ export function useMediaQuery(query: string, serverValue = false): boolean {
   return useSyncExternalStore(store.subscribe, store.get, () => serverValue);
 }
 
-export const usePrefersReducedMotion = () => useMediaQuery('(prefers-reduced-motion: reduce)');
+/** Movimiento reducido: por preferencia del sistema o por el interruptor del pie de página. */
+export function usePrefersReducedMotion(): boolean {
+  const system = useMediaQuery('(prefers-reduced-motion: reduce)');
+  const user = useMotionReducedByUser();
+  return system || user;
+}
 /** Dispositivo con puntero preciso y hover real (ratón/trackpad). */
 export const useFinePointer = () => useMediaQuery('(hover: hover) and (pointer: fine)');
 export const useIsDesktop = () => useMediaQuery('(min-width: 1024px)');

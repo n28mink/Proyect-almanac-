@@ -25,7 +25,10 @@ export function generateStaticParams() {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: [{ color: '#f6f1e9' }],
+  // El teclado del móvil reduce el área útil (100dvh y barras fijas reaccionan como en iOS). Sin bloqueo de zoom.
+  interactiveWidget: 'resizes-content',
+  // Verde de marca: coincide con la barra de anuncios que hay arriba del todo al abrir la página.
+  themeColor: '#0b3f2b',
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

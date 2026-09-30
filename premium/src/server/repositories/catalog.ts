@@ -1,3 +1,4 @@
+import { cache } from 'react';
 import raw from '@/content/catalog.generated.json';
 import { catalogSchema, isInStock, type Product } from '@/domain/catalog';
 import { store } from '../store/json-store';
@@ -20,9 +21,8 @@ export function baseCatalog(): Product[] {
   return base;
 }
 
-export async function getOverrides(): Promise<OverrideMap> {
-  return store.read<OverrideMap>('overrides', {});
-}
+/** `cache` de React: una sola lectura del almacén por render/petición aunque layout, página y componentes la pidan. */
+export const getOverrides = cache(async (): Promise<OverrideMap> => store.read<OverrideMap>('overrides', {}));
 
 export function applyOverride(product: Product, o: ProductOverride | undefined): Product | null {
   if (!o) return product;
@@ -40,12 +40,12 @@ export function applyOverride(product: Product, o: ProductOverride | undefined):
 }
 
 /** Catálogo vivo: base + overrides del admin. */
-export async function getCatalog(): Promise<Product[]> {
+export const getCatalog = cache(async (): Promise<Product[]> => {
   const overrides = await getOverrides();
   return baseCatalog()
     .map((p) => applyOverride(p, overrides[p.id]))
     .filter((p): p is Product => p !== null);
-}
+});
 
 export async function getProductBySlug(slug: string): Promise<Product | undefined> {
   return (await getCatalog()).find((p) => p.slug === slug);

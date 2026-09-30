@@ -30,7 +30,7 @@ export default async function About({ params }: { params: Promise<{ locale: stri
   const values = ['one', 'two', 'three'] as const;
 
   return (
-    <PageShell eyebrow={t('eyebrow')} title={t('title')} text={t('text')}>
+    <PageShell title={t('title')} text={t('text')}>
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-24">
         <ImageReveal className="relative aspect-[4/5] w-full"><Image src={img.src} alt="" fill sizes="(min-width: 1024px) 45vw, 100vw" priority placeholder="blur" blurDataURL={img.blur} className="object-cover" /></ImageReveal>
         <FadeReveal className="space-y-6 text-lead text-fg-muted">

@@ -22,7 +22,7 @@ export async function LookbookMosaic({ tiles }: { tiles: LookTile[] }) {
   return (
     <Section tone="sunken" headerTone="dark">
       <div className="container-x mb-14 flex flex-wrap items-end justify-between gap-6">
-        <SectionHeading eyebrow={t('lookbookEyebrow')} title={t('lookbookTitle')} size="m" />
+        <SectionHeading title={t('lookbookTitle')} size="m" />
         <TransitionLink href="/lookbook" className="label-micro link-underline">{t('lookbookCta')}</TransitionLink>
       </div>
       <div className="container-x grid grid-cols-2 gap-3 md:grid-cols-12 md:gap-6">

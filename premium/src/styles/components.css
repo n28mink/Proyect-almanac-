@@ -13,7 +13,10 @@ dialog.dlg {
 dialog.dlg::backdrop {
   background: rgb(20 26 22 / 0.52);
   opacity: 0;
-  transition: opacity 0.4s var(--ease-luxe);
+  transition: opacity 0.22s var(--ease-out);
+}
+dialog.dlg[data-visible='true']::backdrop {
+  transition-duration: 0.32s;
 }
 dialog.dlg[data-visible='true']::backdrop {
   opacity: 1;
@@ -24,7 +27,7 @@ dialog.dlg[data-side='right'] {
   height: 100dvh;
   width: min(30rem, 100vw);
   transform: translate3d(100%, 0, 0);
-  transition: transform 0.55s var(--ease-expo);
+  transition: transform 0.28s var(--ease-out);
   box-shadow: var(--shadow-drawer);
 }
 dialog.dlg[data-side='left'] {
@@ -32,28 +35,28 @@ dialog.dlg[data-side='left'] {
   height: 100dvh;
   width: min(30rem, 100vw);
   transform: translate3d(-100%, 0, 0);
-  transition: transform 0.55s var(--ease-expo);
+  transition: transform 0.28s var(--ease-out);
 }
 dialog.dlg[data-side='bottom'] {
   inset: auto 0 0 0;
   width: 100vw;
   max-height: 90dvh;
   transform: translate3d(0, 100%, 0);
-  transition: transform 0.5s var(--ease-expo);
+  transition: transform 0.28s var(--ease-out);
 }
 dialog.dlg[data-side='top'] {
   inset: 0 0 auto 0;
   width: 100vw;
   max-height: 100dvh;
   transform: translate3d(0, -100%, 0);
-  transition: transform 0.55s var(--ease-expo);
+  transition: transform 0.28s var(--ease-out);
 }
 dialog.dlg[data-side='full'] {
   inset: 0;
   width: 100vw;
   height: 100dvh;
   clip-path: inset(0 0 100% 0);
-  transition: clip-path 0.7s var(--ease-expo);
+  transition: clip-path 0.3s var(--ease-out);
 }
 dialog.dlg[data-side='center'] {
   inset: 0;
@@ -61,23 +64,35 @@ dialog.dlg[data-side='center'] {
   width: min(68rem, 94vw);
   max-height: 92dvh;
   opacity: 0;
-  transform: translate3d(0, 1.25rem, 0) scale(0.985);
+  transform: translate3d(0, 0.75rem, 0) scale(0.97);
   transition:
-    opacity 0.4s var(--ease-luxe),
-    transform 0.55s var(--ease-expo);
+    opacity 0.18s var(--ease-out),
+    transform 0.22s var(--ease-out);
 }
 dialog.dlg[data-visible='true'][data-side='right'],
 dialog.dlg[data-visible='true'][data-side='left'],
 dialog.dlg[data-visible='true'][data-side='bottom'],
 dialog.dlg[data-visible='true'][data-side='top'] {
   transform: none;
+  /* Entra con calma, sale rápido: la transición que manda es la del estado de destino. */
+  transition-duration: 0.45s;
+  transition-timing-function: var(--ease-drawer);
 }
 dialog.dlg[data-visible='true'][data-side='full'] {
   clip-path: inset(0 0 0 0);
+  transition-duration: 0.5s;
+  transition-timing-function: var(--ease-expo);
 }
 dialog.dlg[data-visible='true'][data-side='center'] {
   opacity: 1;
   transform: none;
+  transition-duration: 0.26s, 0.32s;
+}
+
+/* El scroll de paneles no se encadena con la página de detrás. */
+dialog.dlg,
+dialog.dlg [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }
 
 /* Bloqueo de scroll con un diálogo abierto. */
@@ -93,14 +108,14 @@ html:has(dialog.dlg[open]) {
 .menu-item > * {
   display: inline-block;
   transform: translate3d(0, 110%, 0);
-  transition: transform 0.9s var(--ease-expo) calc(var(--i, 0) * 60ms + 120ms);
+  transition: transform 0.55s var(--ease-expo) calc(var(--i, 0) * 40ms + 80ms);
 }
 dialog.dlg[data-visible='true'] .menu-item > * {
   transform: none;
 }
 .menu-fade {
   opacity: 0;
-  transition: opacity 0.7s var(--ease-luxe) 0.45s;
+  transition: opacity 0.4s var(--ease-out) 0.25s;
 }
 dialog.dlg[data-visible='true'] .menu-fade {
   opacity: 1;
@@ -114,11 +129,23 @@ dialog.dlg[data-visible='true'] .menu-fade {
   background-position: 0 100%;
   background-repeat: no-repeat;
   padding-bottom: 0.3rem;
-  transition: background-size 0.5s var(--ease-expo);
+  transition: background-size 0.25s var(--ease-out);
 }
-.link-underline:hover {
-  background-size: 0% 1px;
-  background-position: 100% 100%;
+/* Zona táctil de 44 px sin alterar el flujo. */
+.link-underline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: max(100%, 2.75rem);
+  height: max(100%, 2.75rem);
+  transform: translate(-50%, -50%);
+}
+@media (hover: hover) and (pointer: fine) {
+  .link-underline:hover {
+    background-size: 0% 1px;
+    background-position: 100% 100%;
+  }
 }
 .nav-link {
   position: relative;
@@ -133,12 +160,17 @@ dialog.dlg[data-visible='true'] .menu-fade {
   background: currentColor;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.5s var(--ease-expo);
+  transition: transform 0.25s var(--ease-out);
 }
-.nav-link:hover::after,
 .nav-link[aria-current='page']::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+@media (hover: hover) and (pointer: fine) {
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 /* ── Cabecera ────────────────────────────────────────────────────────────── */
@@ -149,10 +181,10 @@ dialog.dlg[data-visible='true'] .menu-fade {
   color: var(--header-fg, var(--fg));
   --logo-fg: var(--color-forest);
   transition:
-    transform 0.55s var(--ease-expo),
-    background-color 0.45s var(--ease-luxe),
-    color 0.45s var(--ease-luxe),
-    border-color 0.45s var(--ease-luxe);
+    transform 0.32s var(--ease-out),
+    background-color 0.3s var(--ease-out),
+    color 0.3s var(--ease-out),
+    border-color 0.3s var(--ease-out);
   border-bottom: 1px solid transparent;
 }
 .site-header[data-solid='true'] {
@@ -185,8 +217,10 @@ dialog.dlg[data-visible='true'] .menu-fade {
 .field::placeholder {
   color: var(--fg-subtle);
 }
-.field:hover {
-  border-color: var(--fg-muted);
+@media (hover: hover) and (pointer: fine) {
+  .field:hover {
+    border-color: var(--fg-muted);
+  }
 }
 .field:focus-visible {
   outline: 2px solid var(--accent);
@@ -255,8 +289,8 @@ input[type='range'].range::-moz-range-thumb {
 /* ── Tarjeta de producto ─────────────────────────────────────────────────── */
 .card-media img {
   transition:
-    transform 1.4s var(--ease-expo),
-    opacity 0.7s var(--ease-luxe);
+    transform 0.5s var(--ease-out),
+    opacity 0.3s var(--ease-out);
 }
 .card-media [data-hover-layer] {
   opacity: 0;
@@ -273,8 +307,8 @@ input[type='range'].range::-moz-range-thumb {
     opacity: 0;
     transform: translate3d(0, 0.5rem, 0);
     transition:
-      opacity 0.45s var(--ease-luxe),
-      transform 0.6s var(--ease-expo);
+      opacity 0.22s var(--ease-out),
+      transform 0.28s var(--ease-out);
   }
   .product-card:hover .card-actions,
   .product-card:focus-within .card-actions {
@@ -313,4 +347,20 @@ input[type='range'].range::-moz-range-thumb {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* ── Etiqueta que cambia de estado (p. ej. «Añadir» → «Añadido») ─────────────
+   La nueva etiqueta entra con fundido + desenfoque leve: el ojo lee un solo objeto que se transforma. */
+.morph-label {
+  transition:
+    opacity 0.18s var(--ease-out),
+    filter 0.18s var(--ease-out),
+    transform 0.18s var(--ease-out);
+}
+@starting-style {
+  .morph-label {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(0.2rem);
+  }
 }

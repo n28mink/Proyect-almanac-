@@ -32,7 +32,7 @@
     "label": "Buscar en la colección",
     "placeholder": "Busca piezas, materiales, tonos…",
     "popular": "Explorar",
-    "empty": "Sin resultados para “{query}”. Prueba con otra palabra.",
+    "empty": "Sin resultados para “{query}”. Prueba con otra palabra o explora estas categorías.",
     "close": "Cerrar búsqueda"
   },
   "cart": {
@@ -49,6 +49,8 @@
     "added": "Añadido a tu bolsa",
     "addedNamed": "{name} añadido a tu bolsa",
     "stockAdjusted": "Solo hay {count} disponibles — cantidad ajustada.",
+    "removed": "Quitaste una pieza de tu bolsa.",
+    "undo": "Deshacer",
     "quantity": "Cantidad",
     "decrease": "Disminuir cantidad",
     "increase": "Aumentar cantidad",
@@ -75,6 +77,7 @@
     "quickViewLabel": "Vista rápida: {name}",
     "option": "Opción",
     "soldOut": "Agotado",
+    "added": "Añadido",
     "addToBag": "Añadir a la bolsa",
     "fullDetails": "Ver ficha completa",
     "close": "Cerrar",
@@ -165,7 +168,7 @@
     }
   },
   "shop": {
-    "search": "Buscar en la colección",
+    "search": "Buscar piezas…",
     "filters": "Filtros",
     "results": "{count, plural, =0 {Ninguna pieza} one {# pieza} other {# piezas}}",
     "sortBy": "Ordenar por",
@@ -237,8 +240,10 @@
     "privacy": "Privacidad",
     "terms": "Términos",
     "rights": "Todos los derechos reservados.",
+    "motionReduce": "Reducir movimiento",
+    "motionRestore": "Activar movimiento",
     "cookies": "Cookies",
-    "pricesNote": "Precios en USD · Pedidos por WhatsApp"
+    "pricesNote": "Precios en USD. Pedidos por WhatsApp."
   },
   "seo": {
     "title": "Clover — Accesorios y piezas, elegidos uno a uno",
@@ -284,7 +289,21 @@
       "delivered": "Entregado",
       "cancelled": "Cancelado"
     },
-    "total": "Total"
+    "total": "Total",
+    "fieldErrors": {
+      "fullName": "Escribe tu nombre y apellido.",
+      "phone": "Escribe un teléfono válido, por ejemplo 0412 555 1234.",
+      "line1": "Indica la dirección de entrega.",
+      "city": "Indica tu ciudad."
+    },
+    "ph": {
+      "fullName": "Ej. Ana Pérez…",
+      "phone": "Ej. 0412 555 1234…",
+      "line1": "Ej. Av. Principal, casa 3…",
+      "city": "Ej. Turmero…",
+      "region": "Ej. Aragua…",
+      "notes": "Ej. Llamar antes de llegar…"
+    }
   },
   "auth": {
     "eyebrow": "Administración",
@@ -401,9 +420,6 @@
     "eyebrow": "Pedidos por WhatsApp",
     "title": "Escríbenos y te ayudamos a elegir",
     "text": "Cada pedido lo atendemos de forma personal, como se atienden las cosas hechas en casa.",
-    "cta": "Escribir por WhatsApp",
-    "marquee1": "Detalles que brillan",
-    "marquee2": "Elegidas una a una",
-    "marquee3": "Clover"
+    "cta": "Escribir por WhatsApp"
   }
 }

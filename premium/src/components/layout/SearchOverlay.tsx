@@ -59,6 +59,18 @@ export function SearchOverlay({ suggestions }: { suggestions: NavLink[] }) {
     router.push(`/shop?q=${encodeURIComponent(term)}`);
   };
 
+  const chips = (
+    <ul className="flex flex-wrap gap-3">
+      {suggestions.map((s) => (
+        <li key={s.href}>
+          <TransitionLink href={s.href} className="inline-flex min-h-11 items-center border border-line-strong px-4 text-caption font-medium transition-colors hover:bg-accent hover:text-surface active:bg-accent active:text-surface">
+            {s.label}
+          </TransitionLink>
+        </li>
+      ))}
+    </ul>
+  );
+
   return (
     <Dialog open={open} onClose={close} side="top" label={t('label')} lazyContent>
       <div className="container-x pb-8 pt-4">
@@ -76,7 +88,7 @@ export function SearchOverlay({ suggestions }: { suggestions: NavLink[] }) {
             aria-label={t('label')}
             className="font-display text-display-m min-w-0 flex-1 bg-transparent py-4 outline-none placeholder:text-fg-subtle"
           />
-          <button type="button" onClick={close} aria-label={t('close')} className="grid h-11 w-11 place-items-center transition-opacity hover:opacity-70">
+          <button type="button" onClick={close} aria-label={t('close')} className="grid h-11 w-11 place-items-center transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90">
             <CloseIcon />
           </button>
         </form>
@@ -84,16 +96,8 @@ export function SearchOverlay({ suggestions }: { suggestions: NavLink[] }) {
         <div data-lenis-prevent="" className="mt-6 max-h-[60dvh] overflow-y-auto" aria-live="polite">
           {q.trim().length < 2 ? (
             <div>
-              <p className="label-micro mb-4 text-fg-subtle">{t('popular')}</p>
-              <ul className="flex flex-wrap gap-3">
-                {suggestions.map((s) => (
-                  <li key={s.href}>
-                    <TransitionLink href={s.href} className="label-micro inline-block border border-line-strong px-4 py-3 transition-colors hover:bg-fg hover:text-surface">
-                      {s.label}
-                    </TransitionLink>
-                  </li>
-                ))}
-              </ul>
+              <p className="mb-4 text-caption font-medium text-fg-muted">{t('popular')}</p>
+              {chips}
             </div>
           ) : loading && hits.length === 0 ? (
             <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-hidden="true">
@@ -102,7 +106,10 @@ export function SearchOverlay({ suggestions }: { suggestions: NavLink[] }) {
               ))}
             </ul>
           ) : hits.length === 0 ? (
-            <p className="py-6 text-fg-muted">{t('empty', { query: q })}</p>
+            <div>
+              <p className="mb-4 text-fg-muted">{t('empty', { query: q })}</p>
+              {chips}
+            </div>
           ) : (
             <ul className="grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-4">
               {hits.map((h) => (

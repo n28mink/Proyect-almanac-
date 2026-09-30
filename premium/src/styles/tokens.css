@@ -40,7 +40,7 @@
   --container-ultra: 120rem;
 
   /* ── Tipografía: escala fluida ───────────────────────────────── */
-  --text-micro: 0.6875rem;
+  --text-micro: 0.75rem;
   --text-micro--line-height: 1.45;
   --text-micro--letter-spacing: 0.22em;
   --text-caption: 0.8125rem;
@@ -77,6 +77,8 @@
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-curtain: cubic-bezier(0.76, 0, 0.24, 1);
   --ease-in-out-luxe: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 @theme inline {

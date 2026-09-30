@@ -4,7 +4,6 @@ import localFont from 'next/font/local';
 export const displayFont = localFont({
   src: [
     { path: '../assets/fonts/cormorant-garamond-latin-wght-normal.woff2', style: 'normal', weight: '300 700' },
-    { path: '../assets/fonts/cormorant-garamond-latin-wght-italic.woff2', style: 'italic', weight: '300 700' },
   ],
   variable: '--font-display-loaded',
   display: 'swap',

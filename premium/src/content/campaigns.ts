@@ -29,8 +29,8 @@ export interface HomeCampaigns {
  */
 export const defaultCampaigns: HomeCampaigns = {
   announcements: [
-    L('Pedidos por WhatsApp · Atención personal', 'Orders via WhatsApp · Personal service'),
-    L('Entregas en Venezuela · Precios en USD', 'Delivery within Venezuela · Prices in USD'),
+    L('Pedidos por WhatsApp, con atención personal', 'Orders via WhatsApp, with personal service'),
+    L('Entregas en Venezuela, precios en USD', 'Delivery within Venezuela, prices in USD'),
     L('Pago móvil, transferencia o efectivo', 'Pago móvil, transfer or cash'),
   ],
   hero: {
@@ -42,14 +42,14 @@ export const defaultCampaigns: HomeCampaigns = {
   },
   jewelry: {
     videoKey: 'campaign.jewelry',
-    eyebrow: L('Campaña · Joyería', 'Campaign · Jewelry'),
+    eyebrow: L('Joyería', 'Jewelry'),
     title: L('La luz también se lleva puesta.', 'Light is worn, too.'),
     text: L('Anillos, aretes y perlas pensados para atrapar el brillo del día.', 'Rings, earrings and pearls designed to catch the glow of the day.'),
     cta: { label: L('Ver joyería', 'Shop jewelry'), href: '/shop/jewelry' },
   },
   watches: {
     videoKey: 'campaign.watches',
-    eyebrow: L('Campaña · Relojes', 'Campaign · Watches'),
+    eyebrow: L('Relojes', 'Watches'),
     title: L('Tiempo con carácter.', 'Time with character.'),
     text: L('Cajas redondas, cuadradas y rectangulares. Elige la esfera que va contigo.', 'Round, square and rectangular cases. Choose the dial that goes with you.'),
     cta: { label: L('Ver relojes', 'Shop watches'), href: '/shop/watches' },

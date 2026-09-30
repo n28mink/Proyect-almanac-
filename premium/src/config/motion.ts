@@ -20,6 +20,10 @@ export const bezier = {
   expo: [0.16, 1, 0.3, 1],
   curtain: [0.76, 0, 0.24, 1],
   inOut: [0.65, 0, 0.35, 1],
+  /** Salida/respuesta de interfaz: arranca al instante (nunca ease-in en UI). */
+  out: [0.23, 1, 0.32, 1],
+  /** Cajones y hojas: curva tipo iOS. */
+  drawer: [0.32, 0.72, 0, 1],
 } as const;
 
 export type EaseKey = keyof typeof bezier;

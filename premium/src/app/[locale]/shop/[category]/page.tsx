@@ -38,7 +38,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(locale, [{ name: t('breadcrumbShop'), path: '/shop' }, { name: pick(cat.name, locale), path: `/shop/${cat.slug}` }])} />
-      <ShopPage locale={locale} products={products} title={pick(cat.name, locale)} blurb={pick(cat.blurb, locale)} eyebrow={t('eyebrow')} />
+      <ShopPage locale={locale} products={products} title={pick(cat.name, locale)} blurb={pick(cat.blurb, locale)} />
     </>
   );
 }
