@@ -1,0 +1,33 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next
+.next
+out
+build
+next-env.d.ts
+*.tsbuildinfo
+
+# runtime data (users, orders, overrides) — never commit
+.data
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# tests
+coverage
+playwright-report
+test-results
+
+# misc
+.DS_Store
+npm-debug.log*
+*.pem
+test-results
+playwright-report
+coverage

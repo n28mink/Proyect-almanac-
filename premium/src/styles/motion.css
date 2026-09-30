@@ -1,0 +1,222 @@
+/*
+ * PRIMITIVAS DE MOVIMIENTO EN CSS
+ *
+ * Los estados iniciales "ocultos" solo existen cuando hay JavaScript (`scripting: enabled`) y el usuario no pidió
+ * reducir movimiento. Sin JS o con reduced-motion el contenido es visible desde el primer pintado.
+ * Los componentes React solo alternan `data-in` (IntersectionObserver); toda la animación es transform/opacity/clip-path.
+ */
+
+@keyframes reveal-failsafe {
+  to {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+  }
+}
+
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1.6rem, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes word-rise {
+  from {
+    transform: translate3d(0, 108%, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes intro-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes marquee-x {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes badge-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    transition:
+      opacity var(--reveal-dur, 900ms) var(--ease-luxe) var(--reveal-delay, 0ms),
+      transform var(--reveal-dur, 900ms) var(--ease-luxe) var(--reveal-delay, 0ms),
+      clip-path var(--reveal-dur, 1000ms) var(--ease-expo) var(--reveal-delay, 0ms);
+  }
+
+  [data-reveal]:not([data-in]) {
+    opacity: 0;
+  }
+  [data-reveal='up']:not([data-in]) {
+    transform: translate3d(0, 1.75rem, 0);
+  }
+  [data-reveal='left']:not([data-in]) {
+    transform: translate3d(-2rem, 0, 0);
+  }
+  [data-reveal='right']:not([data-in]) {
+    transform: translate3d(2rem, 0, 0);
+  }
+  [data-reveal='scale']:not([data-in]) {
+    transform: scale(0.96);
+  }
+  [data-reveal='mask']:not([data-in]) {
+    opacity: 1;
+    clip-path: inset(0 0 100% 0);
+  }
+  [data-reveal='mask'][data-in] {
+    clip-path: inset(0 0 0 0);
+  }
+
+  /* Red de seguridad: si la hidratación tarda demasiado, el contenido aparece igualmente. */
+  html:not([data-ready]) [data-reveal]:not([data-in]) {
+    animation: reveal-failsafe 0.01s linear 3.5s forwards;
+  }
+
+  /* Imagen: el contenedor recorta y la imagen "aterriza" con escala. */
+  [data-image-reveal] {
+    overflow: hidden;
+  }
+  [data-image-reveal] > * {
+    transition: transform var(--reveal-dur, 1400ms) var(--ease-expo) var(--reveal-delay, 0ms);
+  }
+  [data-image-reveal]:not([data-in]) > * {
+    transform: scale(1.18);
+  }
+  [data-image-reveal]:not([data-in]) {
+    clip-path: inset(12% 0 0 0);
+    opacity: 0;
+  }
+  [data-image-reveal] {
+    transition:
+      clip-path var(--reveal-dur, 1200ms) var(--ease-expo) var(--reveal-delay, 0ms),
+      opacity 600ms var(--ease-luxe) var(--reveal-delay, 0ms);
+  }
+  html:not([data-ready]) [data-image-reveal]:not([data-in]) {
+    animation: reveal-failsafe 0.01s linear 3.5s forwards;
+  }
+
+  /* Texto por palabras/líneas: cada palabra sube desde una máscara. */
+  [data-split] .split-word {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+  [data-split] .split-inner {
+    display: inline-block;
+    transition: transform var(--reveal-dur, 1000ms) var(--ease-expo) calc(var(--reveal-delay, 0ms) + var(--i, 0) * 55ms);
+  }
+  [data-split]:not([data-in]) .split-inner {
+    transform: translate3d(0, 108%, 0);
+  }
+  html:not([data-ready]) [data-split]:not([data-in]) .split-inner {
+    animation: reveal-failsafe 0.01s linear 3.5s forwards;
+  }
+
+  /* Entrada CSS pura para lo que está sobre el pliegue (LCP): no depende de hidratar. */
+  .intro-rise {
+    animation: intro-rise 1.1s var(--ease-expo) both;
+    animation-delay: calc(var(--i, 0) * 110ms + 180ms);
+  }
+  .intro-fade {
+    animation: intro-fade 1.4s var(--ease-luxe) both;
+    animation-delay: calc(var(--i, 0) * 110ms + 120ms);
+  }
+  .split-intro .split-inner {
+    animation: word-rise 1.15s var(--ease-expo) both;
+    animation-delay: calc(var(--reveal-delay, 0ms) + var(--i, 0) * 70ms + 220ms);
+    transition: none;
+  }
+  .split-intro[data-split] .split-inner {
+    transform: none;
+  }
+
+  .intro-kenburns {
+    animation: kenburns 2.4s var(--ease-expo) both;
+  }
+
+  .badge-pop {
+    animation: badge-pop 0.5s var(--ease-luxe);
+  }
+}
+
+/* Pistas de carga con dimensiones reservadas (sin layout shift). */
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-sunken) 30%, var(--surface-raised) 50%, var(--surface-sunken) 70%);
+  background-size: 300% 100%;
+  animation: skeleton 1.6s linear infinite;
+}
+
+/* Marquesina CSS (base; GSAP la acelera con la velocidad de scroll). */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .marquee-track[data-css-loop] {
+    animation: marquee-x var(--marquee-dur, 42s) linear infinite;
+  }
+}
+[data-paused='true'] .marquee-track,
+.marquee-track[data-paused='true'] {
+  animation-play-state: paused;
+}
+
+/* Reduced motion global: ninguna animación decorativa; las transiciones de estado quedan instantáneas. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}

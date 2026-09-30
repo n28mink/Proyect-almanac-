@@ -1,0 +1,314 @@
+/* ── Diálogos nativos (top layer). Animación por data-visible. ─────────────── */
+dialog.dlg {
+  padding: 0;
+  border: 0;
+  background: var(--surface);
+  color: var(--fg);
+  max-width: none;
+  max-height: none;
+  overflow: hidden;
+  margin: 0;
+  inset: auto;
+}
+dialog.dlg::backdrop {
+  background: rgb(21 20 18 / 0.52);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-luxe);
+}
+dialog.dlg[data-visible='true']::backdrop {
+  opacity: 1;
+}
+
+dialog.dlg[data-side='right'] {
+  inset: 0 0 0 auto;
+  height: 100dvh;
+  width: min(30rem, 100vw);
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.55s var(--ease-expo);
+  box-shadow: var(--shadow-drawer);
+}
+dialog.dlg[data-side='left'] {
+  inset: 0 auto 0 0;
+  height: 100dvh;
+  width: min(30rem, 100vw);
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.55s var(--ease-expo);
+}
+dialog.dlg[data-side='bottom'] {
+  inset: auto 0 0 0;
+  width: 100vw;
+  max-height: 90dvh;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.5s var(--ease-expo);
+}
+dialog.dlg[data-side='top'] {
+  inset: 0 0 auto 0;
+  width: 100vw;
+  max-height: 100dvh;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.55s var(--ease-expo);
+}
+dialog.dlg[data-side='full'] {
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.7s var(--ease-expo);
+}
+dialog.dlg[data-side='center'] {
+  inset: 0;
+  margin: auto;
+  width: min(68rem, 94vw);
+  max-height: 92dvh;
+  opacity: 0;
+  transform: translate3d(0, 1.25rem, 0) scale(0.985);
+  transition:
+    opacity 0.4s var(--ease-luxe),
+    transform 0.55s var(--ease-expo);
+}
+dialog.dlg[data-visible='true'][data-side='right'],
+dialog.dlg[data-visible='true'][data-side='left'],
+dialog.dlg[data-visible='true'][data-side='bottom'],
+dialog.dlg[data-visible='true'][data-side='top'] {
+  transform: none;
+}
+dialog.dlg[data-visible='true'][data-side='full'] {
+  clip-path: inset(0 0 0 0);
+}
+dialog.dlg[data-visible='true'][data-side='center'] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Bloqueo de scroll con un diálogo abierto. */
+html:has(dialog.dlg[open]) {
+  overflow: hidden;
+}
+
+/* Enlaces del menú a pantalla completa: suben desde una máscara con retardo escalonado. */
+.menu-item {
+  display: block;
+  overflow: hidden;
+}
+.menu-item > * {
+  display: inline-block;
+  transform: translate3d(0, 110%, 0);
+  transition: transform 0.9s var(--ease-expo) calc(var(--i, 0) * 60ms + 120ms);
+}
+dialog.dlg[data-visible='true'] .menu-item > * {
+  transform: none;
+}
+.menu-fade {
+  opacity: 0;
+  transition: opacity 0.7s var(--ease-luxe) 0.45s;
+}
+dialog.dlg[data-visible='true'] .menu-fade {
+  opacity: 1;
+}
+
+/* ── Enlaces ─────────────────────────────────────────────────────────────── */
+.link-underline {
+  position: relative;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 0.3rem;
+  transition: background-size 0.5s var(--ease-expo);
+}
+.link-underline:hover {
+  background-size: 0% 1px;
+  background-position: 100% 100%;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.35rem;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s var(--ease-expo);
+}
+.nav-link:hover::after,
+.nav-link[aria-current='page']::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ── Cabecera ────────────────────────────────────────────────────────────── */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: var(--z-header);
+  color: var(--header-fg, var(--fg));
+  transition:
+    transform 0.55s var(--ease-expo),
+    background-color 0.45s var(--ease-luxe),
+    color 0.45s var(--ease-luxe),
+    border-color 0.45s var(--ease-luxe);
+  border-bottom: 1px solid transparent;
+}
+.site-header[data-solid='true'] {
+  background: color-mix(in srgb, var(--color-ivory) 88%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom-color: var(--line);
+  --header-fg: var(--color-ink);
+}
+.site-header[data-tone='light']:not([data-solid='true']) {
+  --header-fg: #f7f2e9;
+}
+.site-header[data-hidden='true'] {
+  transform: translate3d(0, -100%, 0);
+}
+
+/* ── Formularios ─────────────────────────────────────────────────────────── */
+.field {
+  width: 100%;
+  min-height: 3rem;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  padding: 0.7rem 0.95rem;
+  color: var(--fg);
+  transition:
+    border-color 0.25s var(--ease-luxe),
+    background-color 0.25s var(--ease-luxe);
+}
+.field::placeholder {
+  color: var(--fg-subtle);
+}
+.field:hover {
+  border-color: var(--fg-muted);
+}
+.field:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+.field[aria-invalid='true'] {
+  border-color: var(--color-danger);
+}
+select.field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%2357524b' stroke-width='1.4'%3E%3Cpath d='m1 1.5 5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.95rem center;
+  padding-right: 2.5rem;
+}
+
+.checkbox {
+  appearance: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1px solid var(--line-strong);
+  display: inline-grid;
+  place-content: center;
+  flex: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.checkbox:checked {
+  background: var(--fg);
+  border-color: var(--fg);
+}
+.checkbox:checked::after {
+  content: '';
+  width: 0.5rem;
+  height: 0.28rem;
+  border: solid var(--surface);
+  border-width: 0 0 1.5px 1.5px;
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+/* Rango de precio */
+input[type='range'].range {
+  appearance: none;
+  height: 2px;
+  background: var(--line-strong);
+  width: 100%;
+}
+input[type='range'].range::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: var(--fg);
+  border: 2px solid var(--surface);
+  border-radius: 999px;
+  cursor: grab;
+}
+input[type='range'].range::-moz-range-thumb {
+  width: 1.1rem;
+  height: 1.1rem;
+  background: var(--fg);
+  border: 2px solid var(--surface);
+  border-radius: 999px;
+  cursor: grab;
+}
+
+/* ── Tarjeta de producto ─────────────────────────────────────────────────── */
+.card-media img {
+  transition:
+    transform 1.4s var(--ease-expo),
+    opacity 0.7s var(--ease-luxe);
+}
+.card-media [data-hover-layer] {
+  opacity: 0;
+}
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover .card-media [data-hover-layer],
+  .product-card:focus-within .card-media [data-hover-layer] {
+    opacity: 1;
+  }
+  .product-card:hover .card-media [data-base-layer] {
+    transform: scale(1.025);
+  }
+  .product-card .card-actions {
+    opacity: 0;
+    transform: translate3d(0, 0.5rem, 0);
+    transition:
+      opacity 0.45s var(--ease-luxe),
+      transform 0.6s var(--ease-expo);
+  }
+  .product-card:hover .card-actions,
+  .product-card:focus-within .card-actions {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (hover: none), (pointer: coarse) {
+  .product-card .card-actions {
+    opacity: 1;
+  }
+}
+
+/* Scroll horizontal con snap (móvil) */
+.snap-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gutter);
+  padding-inline: var(--gutter);
+  scrollbar-width: none;
+}
+.snap-row::-webkit-scrollbar {
+  display: none;
+}
+.snap-row > * {
+  scroll-snap-align: start;
+  flex: none;
+}
+
+.sr-only-focusable:not(:focus):not(:focus-within) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

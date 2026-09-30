@@ -1,0 +1,2657 @@
+[
+  {
+    "id": "rw01",
+    "nombre": "Reloj redondo en tono oro rosa con correa de malla",
+    "categoria": "Relojes",
+    "precio": 42,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Reloj de caja redonda en tono oro rosa con correa tipo malla y esfera blanca con números grandes. Elegante y cómodo para el uso diario.",
+    "descripcionLarga": "Su caja redonda en tono oro rosa y la correa de malla le dan un aire moderno y femenino. La esfera blanca con numeración visible facilita la lectura de la hora de un vistazo. Una pieza versátil que acompaña tanto looks casuales como de oficina.",
+    "detalles": [
+      "Caja redonda en tono oro rosa",
+      "Correa tipo malla ajustable",
+      "Esfera blanca con números grandes",
+      "Diseño clásico y versátil"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Oro rosa",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/rw01.jpg"
+    ]
+  },
+  {
+    "id": "rw02",
+    "nombre": "Reloj cuadrado en tono oro rosa con correa de eslabones",
+    "categoria": "Relojes",
+    "precio": 42,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Reloj de caja cuadrada en tono oro rosa con correa de eslabones. Disponible con esfera oscura o blanca, para elegir tu estilo.",
+    "descripcionLarga": "La caja cuadrada y la correa de eslabones le dan un carácter sofisticado. Se presenta en dos versiones de esfera: oscura, para un contraste dramático, o blanca, para un look clásico y luminoso. El mismo diseño, dos personalidades.",
+    "detalles": [
+      "Caja cuadrada en tono oro rosa",
+      "Correa de eslabones metálicos",
+      "Dos opciones de esfera: oscura o blanca",
+      "La segunda foto muestra la variante de esfera blanca"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Oro rosa",
+      "Blanco",
+      "Negro"
+    ],
+    "imagenes": [
+      "fotos/rw02.jpg",
+      "fotos/rw02-2.jpg"
+    ]
+  },
+  {
+    "id": "rw03",
+    "nombre": "Reloj dorado de caja rectangular, esfera en varios colores",
+    "categoria": "Relojes",
+    "precio": 42,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Reloj dorado de caja rectangular con correa de eslabones. Elige entre cinco colores de esfera: blanca, verde, azul, gris pizarra o negra.",
+    "descripcionLarga": "Un clásico reloj dorado de caja rectangular con correa de eslabones que nunca pasa de moda. Lo mejor: puedes elegir la esfera que más vaya contigo, desde el blanco sobrio hasta el azul o verde más llamativos. Cada foto corresponde a una variante disponible del mismo modelo.",
+    "detalles": [
+      "Caja rectangular en tono dorado",
+      "Correa de eslabones metálicos",
+      "Cinco colores de esfera: blanca, verde, azul, gris pizarra y negra",
+      "Las fotos 2 a 5 muestran cada variante de esfera"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco",
+      "Verde",
+      "Azul",
+      "Gris",
+      "Negro"
+    ],
+    "imagenes": [
+      "fotos/rw03.jpg",
+      "fotos/rw03-2.jpg",
+      "fotos/rw03-3.jpg",
+      "fotos/rw03-4.jpg",
+      "fotos/rw03-5.jpg"
+    ]
+  },
+  {
+    "id": "rw04",
+    "nombre": "Reloj redondo dorado con esfera blanca",
+    "categoria": "Relojes",
+    "precio": 42,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Reloj redondo en tono dorado con esfera blanca y numeración grande. Correa de eslabones dorados.",
+    "descripcionLarga": "De líneas clásicas y acabado brillante en tono dorado, este reloj redondo apuesta por lo esencial: esfera blanca limpia y números grandes de fácil lectura. Una pieza atemporal que combina con todo.",
+    "detalles": [
+      "Caja redonda en tono dorado",
+      "Esfera blanca con numeración grande",
+      "Correa de eslabones en tono dorado",
+      "Diseño clásico y versátil"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/rw04.jpg"
+    ]
+  },
+  {
+    "id": "rw05",
+    "nombre": "Reloj de caja cuadrada en dos tonos",
+    "categoria": "Relojes",
+    "precio": 42,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Reloj de caja cuadrada con ventanilla de fecha: versión plateada con esfera negra o versión dorada con esfera plateada.",
+    "descripcionLarga": "El mismo diseño cuadrado en dos combinaciones de color: la versión plateada con esfera negra, sobria y moderna, o la versión dorada con esfera plateada, cálida y luminosa. Ambas traen marcadores de barra y ventanilla de fecha. Escoge la que combine mejor con tus accesorios.",
+    "detalles": [
+      "Caja cuadrada con ventanilla de fecha",
+      "Dos versiones: plateada con esfera negra / dorada con esfera plateada",
+      "Marcadores de barra",
+      "Cada foto muestra una de las versiones disponibles"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Dorado",
+      "Negro",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/rw05.jpg",
+      "fotos/rw05-2.jpg"
+    ]
+  },
+  {
+    "id": "rw06",
+    "nombre": "Reloj digital deportivo",
+    "categoria": "Relojes",
+    "precio": 42,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Reloj digital deportivo en negro y plateado, con pantalla de hora, alarma y temporizador.",
+    "descripcionLarga": "De espíritu deportivo y caja octogonal, este reloj digital combina negro y plateado con una correa metálica de eslabones. La pantalla muestra la hora en grande y las funciones de alarma y temporizador están a la vista. Ideal para el día a día más activo.",
+    "detalles": [
+      "Pantalla digital con hora visible",
+      "Funciones de alarma y temporizador",
+      "Caja octogonal en negro y plateado",
+      "Correa metálica de eslabones"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Negro",
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/rw06.jpg"
+    ]
+  },
+  {
+    "id": "st01",
+    "nombre": "Set de joyería plateada con reloj (5 piezas)",
+    "categoria": "Sets",
+    "precio": 44,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Set completo en tono plateado: reloj de caja rectangular, pulsera, collar con dije, anillo y aretes. Con esfera blanca o verde.",
+    "descripcionLarga": "Todo lo que necesitas en un solo set: un elegante reloj plateado de caja rectangular acompañado de pulsera, collar con dije, anillo y aretes a juego. Disponible con esfera blanca o verde. El regalo perfecto, listo para estrenar.",
+    "detalles": [
+      "Incluye 5 piezas: reloj, pulsera, collar con dije, anillo y aretes",
+      "Tono plateado coordinado",
+      "Dos opciones de esfera del reloj: blanca o verde",
+      "El estuche exhibidor no está incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco",
+      "Verde"
+    ],
+    "imagenes": [
+      "fotos/st01.jpg",
+      "fotos/st01-2.jpg"
+    ]
+  },
+  {
+    "id": "ar01",
+    "nombre": "Aretes plateados redondos acanalados",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón plateados con relieve acanalado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Un diseño redondo y pulido con textura acanalada que atrapa la luz desde todos los ángulos. Cómodos de botón, son el básico plateado que eleva cualquier conjunto sin esfuerzo.",
+    "detalles": [
+      "Diseño de botón",
+      "Tono plateado con relieve acanalado",
+      "Par incluido",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar01.jpg"
+    ]
+  },
+  {
+    "id": "ar02",
+    "nombre": "Aretes dorados de doble gota",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón dorados con doble gota enlazada. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Dos gotas doradas enlazadas en un diseño fluido y femenino. Su acabado brillante los hace perfectos para ocasiones especiales o para darle un toque dorado al día a día.",
+    "detalles": [
+      "Diseño de botón",
+      "Doble gota enlazada en tono dorado",
+      "Par incluido",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar02.jpg"
+    ]
+  },
+  {
+    "id": "ar03",
+    "nombre": "Aretes dorados ovalados con piedra clara y marco trenzado",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón ovalados en tono dorado con piedra clara al centro y marco trenzado.",
+    "descripcionLarga": "Un óvalo dorado con marco de efecto trenzado que enmarca una piedra clara de aspecto nacarado. Elegancia clásica con un detalle artesanal que se nota.",
+    "detalles": [
+      "Diseño de botón ovalado",
+      "Marco con efecto trenzado",
+      "Piedra central clara",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar03.jpg"
+    ]
+  },
+  {
+    "id": "ar04",
+    "nombre": "Argollas plateadas de corazones",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas plateadas formadas por pequeños corazones enlazados.",
+    "descripcionLarga": "Una argolla diferente: cada eslabón es un pequeño corazón plateado. Románticas sin ser cursis, son el detalle dulce que combina con todo.",
+    "detalles": [
+      "Tipo argolla",
+      "Eslabones en forma de corazón",
+      "Tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar04.jpg"
+    ]
+  },
+  {
+    "id": "ar05",
+    "nombre": "Aretes de nudo en esmalte blanco y tono dorado",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón con nudo en esmalte blanco y borde en tono dorado.",
+    "descripcionLarga": "El clásico nudo en esmalte blanco con contorno dorado: minimalista, fresco y muy combinable. Un básico moderno que funciona de día y de noche.",
+    "detalles": [
+      "Diseño de botón",
+      "Nudo en esmalte blanco con borde dorado",
+      "Par incluido",
+      "Estilo minimalista"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar05.jpg"
+    ]
+  },
+  {
+    "id": "ar06",
+    "nombre": "Aretes dorados de óvalo con herradura abierta",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes dorados con óvalo superior y herradura abierta colgante.",
+    "descripcionLarga": "Un óvalo dorado del que cuelga una herradura abierta pulida. Movimiento y brillo en un diseño llamativo pero fácil de llevar.",
+    "detalles": [
+      "Óvalo superior con pieza colgante",
+      "Herradura abierta pulida en tono dorado",
+      "Par incluido",
+      "Diseño con movimiento"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar06.jpg"
+    ]
+  },
+  {
+    "id": "ar07",
+    "nombre": "Argollas pequeñas doradas con grabado",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas pequeñas en tono dorado con superficie grabada.",
+    "descripcionLarga": "Pequeñas, discretas y con textura grabada que les da carácter. Las argollas de todos los días que nunca fallan.",
+    "detalles": [
+      "Tipo argolla pequeña",
+      "Superficie con grabado",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar07.jpg"
+    ]
+  },
+  {
+    "id": "ar08",
+    "nombre": "Argollas doradas gruesas en forma de U",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas gruesas en tono dorado con forma de U alargada y acabado liso.",
+    "descripcionLarga": "Gruesas, lisas y con presencia: estas argollas en forma de U son el accesorio statement que completa cualquier look con un solo gesto.",
+    "detalles": [
+      "Tipo argolla gruesa",
+      "Forma de U alargada",
+      "Acabado liso pulido en tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar08.jpg"
+    ]
+  },
+  {
+    "id": "ar09",
+    "nombre": "Argollas plateadas con textura martillada",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas gruesas en tono plateado con textura martillada.",
+    "descripcionLarga": "La textura martillada juega con la luz y le da un aire artesanal a estas argollas gruesas plateadas. Modernas, con carácter y fáciles de combinar.",
+    "detalles": [
+      "Tipo argolla gruesa",
+      "Textura martillada",
+      "Tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar09.jpg"
+    ]
+  },
+  {
+    "id": "ar10",
+    "nombre": "Aretes dorados de forma orgánica",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes gruesos en tono dorado con forma orgánica irregular.",
+    "descripcionLarga": "De formas libres y orgánicas, estos aretes dorados gruesos tienen un aire escultórico muy actual. Para quienes buscan algo distinto a lo de siempre.",
+    "detalles": [
+      "Forma orgánica irregular",
+      "Acabado grueso en tono dorado",
+      "Par incluido",
+      "Estilo moderno escultórico"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar10.jpg"
+    ]
+  },
+  {
+    "id": "ar11",
+    "nombre": "Aretes flor dorada con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor dorada con perla blanca al centro.",
+    "descripcionLarga": "Una flor dorada de pétalos suaves con una perla blanca en el corazón. Delicados y femeninos, perfectos para un look romántico o para un evento de día.",
+    "detalles": [
+      "Diseño de botón en forma de flor",
+      "Tono dorado",
+      "Perla blanca central",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar11.jpg"
+    ]
+  },
+  {
+    "id": "ar12",
+    "nombre": "Aretes dorados de ondas en C",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes abiertos en tono dorado con forma de ondas en C y acabado espejo.",
+    "descripcionLarga": "Ondas abiertas en forma de C con acabado espejo que refleja la luz al moverse. Un diseño fluido y elegante con mucha personalidad.",
+    "detalles": [
+      "Diseño abierto de ondas en C",
+      "Acabado espejo en tono dorado",
+      "Par incluido",
+      "Estilo fluido y elegante"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar12.jpg"
+    ]
+  },
+  {
+    "id": "ar13",
+    "nombre": "Aretes dorados en forma de concha",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de concha marina en tono dorado. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Una concha marina dorada con todos sus detalles: el accesorio playero chic que también brilla en la ciudad. Acero inoxidable según el empaque del producto.",
+    "detalles": [
+      "Diseño de botón en forma de concha",
+      "Tono dorado",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar13.jpg"
+    ]
+  },
+  {
+    "id": "ar14",
+    "nombre": "Argollas plateadas en medialuna alargada",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas lisas en tono plateado con forma de medialuna alargada.",
+    "descripcionLarga": "Una vuelta de tuerca a la argolla clásica: forma de medialuna alargada y acabado liso plateado. Minimalistas con un giro moderno.",
+    "detalles": [
+      "Tipo argolla",
+      "Forma de medialuna alargada",
+      "Acabado liso en tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar14.jpg"
+    ]
+  },
+  {
+    "id": "ar15",
+    "nombre": "Aretes de botón plateados con piedra brillante",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón plateados con piedra redonda brillante al centro.",
+    "descripcionLarga": "El clásico botón con piedra brillante: discreto de día, luminoso de noche. Un básico plateado que no puede faltar en tu joyero.",
+    "detalles": [
+      "Diseño de botón",
+      "Piedra redonda brillante",
+      "Tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar15.jpg"
+    ]
+  },
+  {
+    "id": "ar16",
+    "nombre": "Aretes dorados en forma de estrella de mar",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de estrella de mar en tono dorado. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Una estrella de mar dorada con textura que evoca el fondo del mar. Divertidos y con estilo veraniego, perfectos para darle vida a tus looks. Acero inoxidable según el empaque del producto.",
+    "detalles": [
+      "Diseño de botón en forma de estrella de mar",
+      "Tono dorado",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar16.jpg"
+    ]
+  },
+  {
+    "id": "ar17",
+    "nombre": "Aretes dorados en forma de hoja",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de hoja o pétalo curvo en tono dorado. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Una hoja curva y pulida en tono dorado, de inspiración natural. Elegantes y ligeros a la vista, combinan con todo tu guardarropa. Acero inoxidable según el empaque del producto.",
+    "detalles": [
+      "Forma de hoja o pétalo curvo",
+      "Tono dorado pulido",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar17.jpg"
+    ]
+  },
+  {
+    "id": "ar18",
+    "nombre": "Argollas doradas anchas acanaladas",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas anchas en tono dorado con relieve acanalado.",
+    "descripcionLarga": "Anchas y con relieve acanalado que multiplica el brillo: estas argollas doradas son puro statement. Para días en que quieres que tus aretes hablen por ti.",
+    "detalles": [
+      "Tipo argolla ancha",
+      "Relieve acanalado",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar18.jpg"
+    ]
+  },
+  {
+    "id": "ar19",
+    "nombre": "Aretes de medialuna dorada texturizada con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de medialuna en tono dorado texturizado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Una medialuna dorada de superficie texturizada que abraza una perla blanca. La combinación de texturas lo hace un diseño rico en detalles y muy favorecedor. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Forma de medialuna texturizada",
+      "Perla blanca central",
+      "Tono dorado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar19.jpg"
+    ]
+  },
+  {
+    "id": "ar20",
+    "nombre": "Aretes dorados flor de 4 pétalos",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor de 4 pétalos en tono dorado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Cuatro pétalos dorados con líneas grabadas en un diseño de botón alegre y juvenil. Ligeros y versátiles, van con todo. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón",
+      "Flor de 4 pétalos con líneas grabadas",
+      "Tono dorado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar20.jpg"
+    ]
+  },
+  {
+    "id": "ar21",
+    "nombre": "Aretes plateados flor de 5 pétalos",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor de 5 pétalos en tono plateado con líneas grabadas.",
+    "descripcionLarga": "Cinco pétalos plateados con delicadas líneas grabadas: una flor minimalista que aporta frescura a cualquier conjunto. Sencillos, bonitos y muy llevables.",
+    "detalles": [
+      "Diseño de botón",
+      "Flor de 5 pétalos con líneas grabadas",
+      "Tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar21.jpg"
+    ]
+  },
+  {
+    "id": "ar22",
+    "nombre": "Aretes plateados de nudo circular",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón plateados con diseño de nudo circular pulido. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Un nudo circular pulido en tono plateado: el minimalismo en su mejor forma. Elegantes sin esfuerzo, para usar todos los días. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón",
+      "Nudo circular pulido",
+      "Tono plateado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar22.jpg"
+    ]
+  },
+  {
+    "id": "ar23",
+    "nombre": "Aretes dorados rectangulares con líneas grabadas",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón rectangulares en tono dorado con líneas horizontales grabadas. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Rectángulos dorados con líneas horizontales grabadas que crean un juego de luces sutil. Geométricos y modernos, perfectos para un estilo pulido. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón rectangular",
+      "Líneas horizontales grabadas",
+      "Tono dorado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar23.jpg"
+    ]
+  },
+  {
+    "id": "ar24",
+    "nombre": "Aretes dorados redondos con relieve y perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón redondos en tono dorado con relieve geométrico y perla central. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Un botón redondo dorado con relieve geométrico que enmarca una perla blanca: textura y suavidad en una sola pieza. Sofisticados sin excesos. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón redondo",
+      "Relieve geométrico en tono dorado",
+      "Perla blanca central",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar24.jpg"
+    ]
+  },
+  {
+    "id": "ar25",
+    "nombre": "Aretes dorados triangulares martillados con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón triangulares en tono dorado martillado con perla en la base. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Triángulos dorados de superficie martillada con una perla blanca en la base: geometría con un toque suave. Originales y elegantes a la vez. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón triangular",
+      "Superficie martillada en tono dorado",
+      "Perla blanca en la base",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar25.jpg"
+    ]
+  },
+  {
+    "id": "ar26",
+    "nombre": "Aretes dorados ovalados huecos",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes ovalados huecos en tono dorado pulido. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Óvalos huecos de gran presencia pero visualmente ligeros, en dorado pulido. El clásico arete llamativo que estiliza el rostro. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño ovalado hueco",
+      "Acabado pulido en tono dorado",
+      "Par incluido",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar26.jpg"
+    ]
+  },
+  {
+    "id": "ar27",
+    "nombre": "Aretes dorados redondos con espiral grabada",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón redondos en tono dorado con espiral grabada.",
+    "descripcionLarga": "Una espiral grabada recorre estos botones redondos dorados, creando un efecto hipnótico y artesanal. Un diseño con movimiento propio que no pasa desapercibido.",
+    "detalles": [
+      "Diseño de botón redondo",
+      "Espiral grabada",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar27.jpg"
+    ]
+  },
+  {
+    "id": "ar28",
+    "nombre": "Argollas doradas cuadradas martilladas",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas cuadradas en tono dorado con textura martillada.",
+    "descripcionLarga": "La argolla se reinventa en forma cuadrada con textura martillada: un diseño dorado moderno y con actitud para quienes marcan su propio estilo.",
+    "detalles": [
+      "Tipo argolla cuadrada",
+      "Textura martillada",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar28.jpg"
+    ]
+  },
+  {
+    "id": "ar29",
+    "nombre": "Aretes dorados gota marmolada",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de gota dorada con interior marmolado blanco.",
+    "descripcionLarga": "Una gota dorada cuyo interior blanco de efecto marmolado aporta contraste y originalidad. Delicados con un punto artístico que los hace únicos.",
+    "detalles": [
+      "Diseño de botón en forma de gota",
+      "Interior blanco de efecto marmolado",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar29.jpg"
+    ]
+  },
+  {
+    "id": "ar30",
+    "nombre": "Aretes dorados flor con piedra turquesa",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor dorada de 5 pétalos con piedra turquesa al centro.",
+    "descripcionLarga": "Una flor dorada de cinco pétalos con una piedra turquesa en el centro: el toque de color perfecto para iluminar el rostro. Alegres y llenos de vida.",
+    "detalles": [
+      "Diseño de botón en forma de flor",
+      "Piedra central turquesa",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Turquesa"
+    ],
+    "imagenes": [
+      "fotos/ar30.jpg"
+    ]
+  },
+  {
+    "id": "ar31",
+    "nombre": "Aretes plateados rectangulares con borde de bolitas",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón rectangulares lisos en tono plateado con borde de bolitas. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Rectángulos plateados de superficie lisa enmarcados por un delicado borde de bolitas. Pulidos y elegantes, ideales para un look de oficina impecable. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón rectangular",
+      "Borde de bolitas",
+      "Tono plateado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar31.jpg"
+    ]
+  },
+  {
+    "id": "ar32",
+    "nombre": "Aretes dorados flor de pétalos alargados",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor dorada de 5 pétalos alargados con textura de líneas.",
+    "descripcionLarga": "Cinco pétalos alargados con textura de líneas horizontales forman esta flor dorada de aire moderno. Un diseño floral distinto, con mucha presencia.",
+    "detalles": [
+      "Diseño de botón en forma de flor",
+      "Pétalos alargados con textura de líneas",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar32.jpg"
+    ]
+  },
+  {
+    "id": "ar33",
+    "nombre": "Aretes plateados en forma de abanico",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de abanico o concha con estrías radiantes en tono plateado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Un abanico plateado de estrías radiantes que capturan la luz como una concha al sol. Delicados y con un aire marino muy chic. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón en forma de abanico",
+      "Estrías radiantes",
+      "Tono plateado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar33.jpg"
+    ]
+  },
+  {
+    "id": "ar34",
+    "nombre": "Argolla plateada con moño",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argolla plateada con detalle de moño.",
+    "descripcionLarga": "Una argolla plateada coronada por un pequeño moño: el detalle coqueto que transforma un básico en una pieza con encanto. Dulce y actual.",
+    "detalles": [
+      "Tipo argolla",
+      "Detalle de moño",
+      "Tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar34.jpg"
+    ]
+  },
+  {
+    "id": "ar35",
+    "nombre": "Aretes dorados flor tipo concha",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor redondeada tipo concha con estrías radiantes en tono dorado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Pétalos redondeados con estrías radiantes en tono dorado, como una flor marina. Cálidos y luminosos, aportan un brillo natural al rostro. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón en forma de flor",
+      "Estrías radiantes tipo concha",
+      "Tono dorado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar35.jpg"
+    ]
+  },
+  {
+    "id": "ar36",
+    "nombre": "Argollas doradas hexagonales estilo bambú",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas hexagonales en tono dorado con textura de segmentos estilo bambú.",
+    "descripcionLarga": "Hexágonos dorados con textura de segmentos estilo bambú: una argolla con geometría y carácter tropical. Modernas, distintas y muy combinables.",
+    "detalles": [
+      "Tipo argolla hexagonal",
+      "Textura de segmentos estilo bambú",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar36.jpg"
+    ]
+  },
+  {
+    "id": "ar37",
+    "nombre": "Aretes dorados abanico con perla colgante",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de abanico dorado con perla blanca colgante.",
+    "descripcionLarga": "Un abanico dorado del que cuelga una perla blanca: movimiento, brillo y elegancia en un solo diseño. Perfectos para ocasiones especiales o para elevar un look sencillo.",
+    "detalles": [
+      "Motivo de abanico en tono dorado",
+      "Perla blanca colgante",
+      "Par incluido",
+      "Diseño con movimiento"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar37.jpg"
+    ]
+  },
+  {
+    "id": "ar38",
+    "nombre": "Aretes plateados flor de 5 pétalos",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor plateada de 5 pétalos.",
+    "descripcionLarga": "Una flor plateada de cinco pétalos, sencilla y luminosa. El básico floral que combina con todo y nunca pasa de moda.",
+    "detalles": [
+      "Diseño de botón en forma de flor",
+      "Cinco pétalos",
+      "Tono plateado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar38.jpg"
+    ]
+  },
+  {
+    "id": "ar39",
+    "nombre": "Aretes dorados concha con perlas",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de concha dorada con perlas blancas.",
+    "descripcionLarga": "Conchas doradas adornadas con perlas blancas: el accesorio con alma de mar que aporta frescura y feminidad a cualquier conjunto.",
+    "detalles": [
+      "Forma de concha en tono dorado",
+      "Perlas blancas",
+      "Par incluido",
+      "Estilo marino chic"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar39.jpg"
+    ]
+  },
+  {
+    "id": "ar40",
+    "nombre": "Argollas plateadas anchas",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Argollas anchas en tono plateado con curva suave. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Anchas, lisas y con una curva suave muy favorecedora: la argolla plateada definitiva para un look pulido y contemporáneo. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Tipo argolla ancha",
+      "Curva suave",
+      "Tono plateado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar40.jpg"
+    ]
+  },
+  {
+    "id": "ar41",
+    "nombre": "Aretes dorados octogonales estilo aldaba",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes octogonales en tono dorado con parte superior acanalada, estilo aldaba.",
+    "descripcionLarga": "De inspiración en las aldabas clásicas, estos octógonos dorados con remate acanalado tienen un aire vintage muy actual. Con carácter y mucha presencia.",
+    "detalles": [
+      "Forma octogonal",
+      "Remate superior acanalado",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar41.jpg"
+    ]
+  },
+  {
+    "id": "ar42",
+    "nombre": "Aretes dorados redondos espiral con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón redondos en tono dorado con espiral y perla blanca al centro.",
+    "descripcionLarga": "Una espiral dorada que envuelve una perla blanca: diseño artesanal con un centro suave y luminoso. Originales y muy femeninos.",
+    "detalles": [
+      "Diseño de botón redondo",
+      "Espiral en tono dorado",
+      "Perla blanca central",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar42.jpg"
+    ]
+  },
+  {
+    "id": "ar43",
+    "nombre": "Aretes dorados triangulares",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón triangulares en tono dorado pulido.",
+    "descripcionLarga": "Triángulos dorados pulidos de líneas limpias: geometría pura para un estilo moderno y minimalista. Pequeños pero con mucha actitud.",
+    "detalles": [
+      "Diseño de botón triangular",
+      "Acabado pulido",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar43.jpg"
+    ]
+  },
+  {
+    "id": "ar44",
+    "nombre": "Aretes plateados gota",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de gota en tono plateado pulido. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Una gota plateada pulida de líneas puras: elegancia simple que estiliza y aporta luz al rostro. El básico que va con absolutamente todo. Acero inoxidable según el empaque.",
+    "detalles": [
+      "Forma de gota",
+      "Acabado pulido en tono plateado",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar44.jpg"
+    ]
+  },
+  {
+    "id": "ar45",
+    "nombre": "Aretes dorados circulares de espiral entrelazada",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes circulares en tono dorado con espiral entrelazada.",
+    "descripcionLarga": "Círculos dorados recorridos por una espiral entrelazada: un diseño con ritmo y textura artesanal que se mueve con gracia. Distintos y llenos de vida.",
+    "detalles": [
+      "Forma circular",
+      "Espiral entrelazada",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar45.jpg"
+    ]
+  },
+  {
+    "id": "ar46",
+    "nombre": "Aretes dorados flor con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de flor dorada de pétalos acanalados con perla blanca al centro.",
+    "descripcionLarga": "Pétalos dorados acanalados alrededor de una perla blanca: una flor clásica y luminosa que nunca falla. Femeninos y atemporales.",
+    "detalles": [
+      "Diseño en forma de flor",
+      "Pétalos acanalados en tono dorado",
+      "Perla blanca central",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar46.jpg"
+    ]
+  },
+  {
+    "id": "ar47",
+    "nombre": "Aretes plateados redondos abombados",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón redondos abombados en tono plateado pulido. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Botones redondos abombados en plateado espejo: simples, brillantes y perfectos para todos los días. El clásico que combina con todo tu joyero. Acero inoxidable según el empaque.",
+    "detalles": [
+      "Diseño de botón redondo abombado",
+      "Acabado espejo en tono plateado",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar47.jpg"
+    ]
+  },
+  {
+    "id": "ar48",
+    "nombre": "Aretes dorados cuadrados acanalados",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón cuadrados en tono dorado con relieve acanalado.",
+    "descripcionLarga": "Cuadrados dorados con relieve acanalado que juega con la luz: geometría con textura para un estilo moderno y definido.",
+    "detalles": [
+      "Diseño de botón cuadrado",
+      "Relieve acanalado",
+      "Tono dorado",
+      "Par incluido"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar48.jpg"
+    ]
+  },
+  {
+    "id": "ar49",
+    "nombre": "Aretes dorados en forma de corazón martillado",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de corazón en tono dorado con textura martillada. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Corazones dorados con textura martillada que les da un acabado artesanal y lleno de brillo. Románticos con carácter. Acero inoxidable según el empaque.",
+    "detalles": [
+      "Forma de corazón",
+      "Textura martillada en tono dorado",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar49.jpg"
+    ]
+  },
+  {
+    "id": "ar50",
+    "nombre": "Aretes plateados flor margarita",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes en forma de flor margarita en tono plateado. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Una margarita plateada de pétalos delicados: fresca, juvenil y siempre alegre. El toque floral perfecto para la primavera de todos los días. Acero inoxidable según el empaque.",
+    "detalles": [
+      "Forma de flor margarita",
+      "Tono plateado",
+      "Par incluido",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar50.jpg"
+    ]
+  },
+  {
+    "id": "ar51",
+    "nombre": "Aretes plateados cuadrados con relieve",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón cuadrados en tono plateado con relieve. Acero inoxidable según el empaque.",
+    "descripcionLarga": "Cuadrados plateados con relieve que aporta profundidad y brillo: un diseño geométrico elegante para un estilo contemporáneo. Acero inoxidable según el empaque.",
+    "detalles": [
+      "Diseño de botón cuadrado",
+      "Superficie con relieve",
+      "Tono plateado",
+      "Acero inoxidable (según empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/ar51.jpg"
+    ]
+  },
+  {
+    "id": "ar52",
+    "nombre": "Aretes dorados redondos acanalados con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón redondos acanalados en tono dorado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Un sol dorado acanalado con una perla blanca en el centro: radiante y elegante a partes iguales. Una pieza que ilumina cualquier look. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón redondo acanalado",
+      "Perla blanca central",
+      "Tono dorado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/ar52.jpg"
+    ]
+  },
+  {
+    "id": "ar53",
+    "nombre": "Aretes dorados flor de 4 pétalos",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de flor de 4 pétalos lisos en tono dorado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Cuatro pétalos dorados lisos y brillantes en un diseño de botón alegre y versátil. Sencillos, luminosos y fáciles de combinar. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": [
+      "Diseño de botón",
+      "Flor de 4 pétalos lisos",
+      "Tono dorado",
+      "Acero inoxidable (según tarjeta del empaque)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/ar53.jpg"
+    ]
+  },
+  {
+    "id": "co01",
+    "nombre": "Collar dorado con dije redondo de piedra clara",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con dije redondo de piedra clara en engaste liso.",
+    "descripcionLarga": "Un dije redondo de piedra clara enmarcado en dorado, sobre una delicada cadena del mismo tono. Minimalista y luminoso, es el collar de todos los días que combina con todo.",
+    "detalles": [
+      "Dije redondo de piedra clara",
+      "Engaste liso en tono dorado",
+      "Cadena delicada",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co01.jpg"
+    ]
+  },
+  {
+    "id": "co02",
+    "nombre": "Collar plateado con dije de corazón",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con cadena de bolitas y dije de corazón pulido.",
+    "descripcionLarga": "Un corazón plateado pulido sobre una fina cadena de bolitas: dulce, delicado y muy femenino. El detalle romántico perfecto para el día a día.",
+    "detalles": [
+      "Dije de corazón pulido",
+      "Cadena con bolitas",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co02.jpg"
+    ]
+  },
+  {
+    "id": "co03",
+    "nombre": "Collar dorado con dije de mariposa",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con cadena de bolitas y dije de mariposa con alas texturizadas.",
+    "descripcionLarga": "Una mariposa dorada de alas texturizadas que parece a punto de alzar el vuelo. Delicada y con simbolismo, es un collar lleno de encanto.",
+    "detalles": [
+      "Dije de mariposa con alas texturizadas",
+      "Cadena con bolitas",
+      "Tono dorado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/co03.jpg"
+    ]
+  },
+  {
+    "id": "co04",
+    "nombre": "Collar plateado con dije redondo de piedra clara",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije redondo de piedra clara en engaste liso.",
+    "descripcionLarga": "La versión plateada del clásico dije redondo: piedra clara enmarcada en un engaste liso sobre cadena delicada. Fresco, luminoso y atemporal.",
+    "detalles": [
+      "Dije redondo de piedra clara",
+      "Engaste liso en tono plateado",
+      "Cadena delicada",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co04.jpg"
+    ]
+  },
+  {
+    "id": "co05",
+    "nombre": "Collar dorado con mariposa esmaltada",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar de cadena dorada con mariposa de esmalte blanco.",
+    "descripcionLarga": "Una mariposa de esmalte blanco sobre cadena dorada: el contraste perfecto entre lo clásico y lo juvenil. Dulce, fresco y muy actual.",
+    "detalles": [
+      "Dije de mariposa en esmalte blanco",
+      "Cadena en tono dorado",
+      "Diseño juvenil y fresco",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co05.jpg"
+    ]
+  },
+  {
+    "id": "co06",
+    "nombre": "Collar plateado de capas con relicario de corazón",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado de doble capa con relicario en forma de corazón.",
+    "descripcionLarga": "Dos capas en una sola pieza: una cadena lisa y otra con un relicario de corazón grabado. El efecto layered sin complicaciones, con un dije lleno de significado.",
+    "detalles": [
+      "Diseño de doble capa",
+      "Relicario en forma de corazón",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co06.jpg"
+    ]
+  },
+  {
+    "id": "co07",
+    "nombre": "Collar plateado con dije de cruz",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije de cruz hueca de líneas limpias.",
+    "descripcionLarga": "Una cruz hueca de líneas puras en tono plateado: un símbolo de fe con un diseño moderno y minimalista que se lleva con orgullo todos los días.",
+    "detalles": [
+      "Dije de cruz hueca",
+      "Líneas limpias y modernas",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co07.jpg"
+    ]
+  },
+  {
+    "id": "co08",
+    "nombre": "Collar plateado con perlas",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con perlas blancas distribuidas al frente.",
+    "descripcionLarga": "Perlas blancas repartidas al frente de una fina cadena plateada: el clásico reinventado con un aire fresco y moderno. Elegancia natural para cualquier ocasión.",
+    "detalles": [
+      "Perlas blancas al frente",
+      "Cadena fina en tono plateado",
+      "Estilo clásico renovado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co08.jpg"
+    ]
+  },
+  {
+    "id": "co09",
+    "nombre": "Collar dorado con perlas",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con perlas blancas y cuentas doradas al frente.",
+    "descripcionLarga": "Perlas blancas intercaladas con cuentas doradas sobre una delicada cadena: cálido, femenino y luminoso. Un collar que se siente especial todos los días.",
+    "detalles": [
+      "Perlas blancas con cuentas doradas",
+      "Cadena delicada en tono dorado",
+      "Diseño femenino y luminoso",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co09.jpg"
+    ]
+  },
+  {
+    "id": "co10",
+    "nombre": "Collar plateado con luna y piedra brillante",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije de luna creciente que sostiene una piedra brillante.",
+    "descripcionLarga": "Una luna creciente plateada que acuna una piedra brillante como una estrella: un dije poético y delicado para las soñadoras. Mágico sin perder la elegancia.",
+    "detalles": [
+      "Dije de luna creciente",
+      "Piedra brillante al centro",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co10.jpg"
+    ]
+  },
+  {
+    "id": "co11",
+    "nombre": "Collar dorado con luna y piedra brillante",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con dije de luna creciente que sostiene una piedra brillante.",
+    "descripcionLarga": "La versión dorada de la luna creciente con su piedra brillante: cálida y luminosa como un atardecer. Un dije con encanto celestial para llevar siempre contigo.",
+    "detalles": [
+      "Dije de luna creciente",
+      "Piedra brillante al centro",
+      "Tono dorado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/co11.jpg"
+    ]
+  },
+  {
+    "id": "co12",
+    "nombre": "Collar plateado con corazones entrelazados",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije de dos corazones huecos entrelazados.",
+    "descripcionLarga": "Dos corazones huecos entrelazados en tono plateado: un símbolo de unión en un diseño delicado y moderno. El regalo con mensaje incluido.",
+    "detalles": [
+      "Dije de corazones entrelazados",
+      "Diseño hueco y delicado",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co12.jpg"
+    ]
+  },
+  {
+    "id": "co13",
+    "nombre": "Collar plateado con mariposa hueca",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije de mariposa hueca sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
+    "descripcionLarga": "Una mariposa hueca de líneas fluidas en tono plateado, sobre una cadena de eslabones con bolitas. Ligera a la vista y llena de movimiento. Acero inoxidable 304 según la imagen del producto.",
+    "detalles": [
+      "Dije de mariposa hueca",
+      "Cadena de eslabones con bolitas",
+      "Tono plateado",
+      "Acero inoxidable 304 (según imagen del producto)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co13.jpg"
+    ]
+  },
+  {
+    "id": "co14",
+    "nombre": "Collar plateado con dije de gota",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con pequeño dije en forma de gota pulida.",
+    "descripcionLarga": "Una pequeña gota pulida en tono plateado: el minimalismo en su forma más pura. Discreto, elegante y perfecto para llevar a diario.",
+    "detalles": [
+      "Dije en forma de gota pulida",
+      "Cadena fina",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co14.jpg"
+    ]
+  },
+  {
+    "id": "co15",
+    "nombre": "Collar dorado con mariposa hueca",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con dije de mariposa hueca sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
+    "descripcionLarga": "La versión dorada de la mariposa hueca: líneas fluidas y brillo cálido sobre una cadena de eslabones con bolitas. Un diseño ligero con mucha personalidad. Acero inoxidable 304 según la imagen del producto.",
+    "detalles": [
+      "Dije de mariposa hueca",
+      "Cadena de eslabones con bolitas",
+      "Tono dorado",
+      "Acero inoxidable 304 (según imagen del producto)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/co15.jpg"
+    ]
+  },
+  {
+    "id": "co16",
+    "nombre": "Collar plateado con nudo",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije de nudo entrelazado sobre cadena fina.",
+    "descripcionLarga": "Un nudo entrelazado en tono plateado: símbolo de unión en un diseño minimalista y moderno. Sencillo, significativo y muy llevable.",
+    "detalles": [
+      "Dije de nudo entrelazado",
+      "Cadena fina",
+      "Tono plateado",
+      "Cierre ajustable"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co16.jpg"
+    ]
+  },
+  {
+    "id": "co17",
+    "nombre": "Collar dorado con dije de flor",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
+    "descripcionLarga": "Una flor dorada de cinco pétalos sobre una cadena de eslabones con bolitas: dulce y luminosa, con un aire primaveral que alegra cualquier conjunto. Acero inoxidable 304 según la imagen del producto.",
+    "detalles": [
+      "Dije de flor de 5 pétalos",
+      "Cadena de eslabones con bolitas",
+      "Tono dorado",
+      "Acero inoxidable 304 (según imagen del producto)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/co17.jpg"
+    ]
+  },
+  {
+    "id": "co18",
+    "nombre": "Collar plateado con dije de flor",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar plateado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
+    "descripcionLarga": "La versión plateada de la flor de cinco pétalos: fresca y delicada sobre una cadena de eslabones con bolitas. Un clásico floral con acabado moderno. Acero inoxidable 304 según la imagen del producto.",
+    "detalles": [
+      "Dije de flor de 5 pétalos",
+      "Cadena de eslabones con bolitas",
+      "Tono plateado",
+      "Acero inoxidable 304 (según imagen del producto)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/co18.jpg"
+    ]
+  },
+  {
+    "id": "co19",
+    "nombre": "Collar dorado con dije de corazón",
+    "categoria": "Collares",
+    "precio": 24.9,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Collar dorado con dije de corazón inflado sobre cadena fina.",
+    "descripcionLarga": "Un corazón dorado de volumen suave sobre una fina cadena: el dije romántico por excelencia en un diseño actual y favorecedor. Para llevar el amor siempre cerca.",
+    "detalles": [
+      "Dije de corazón de volumen suave",
+      "Cadena fina en tono dorado",
+      "Tono dorado",
+      "La foto de referencia muestra dos unidades del mismo diseño"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/co19.jpg"
+    ]
+  },
+  {
+    "id": "pu01",
+    "nombre": "Pulsera dorada calada estilo coral",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera rígida dorada con diseño calado de ramas estilo coral.",
+    "descripcionLarga": "Un brazalete rígido dorado con calado de ramas orgánicas estilo coral: una pieza escultórica y llamativa que se convierte en el centro de todas las miradas.",
+    "detalles": [
+      "Tipo brazalete rígido",
+      "Diseño calado de ramas estilo coral",
+      "Tono dorado",
+      "Pieza de gran presencia"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/pu01.jpg"
+    ]
+  },
+  {
+    "id": "pu02",
+    "nombre": "Pulsera rígida con nudo central",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera rígida abierta con nudo central y extremos de bola.",
+    "descripcionLarga": "Un brazalete abierto con un nudo al centro y extremos rematados en bola: diseño limpio y moderno que se adapta con comodidad. Símbolo de unión para llevar todos los días.",
+    "detalles": [
+      "Tipo brazalete rígido abierto",
+      "Nudo central con extremos de bola",
+      "Diseño ajustable al abrirse",
+      "La foto muestra dos unidades: en tono dorado y plateado"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/pu02.jpg"
+    ]
+  },
+  {
+    "id": "pu03",
+    "nombre": "Pulsera plateada con nudo",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera rígida plateada abierta con nudo central y extremos de bola.",
+    "descripcionLarga": "La versión plateada del brazalete con nudo: líneas puras, acabado pulido y un diseño que combina con todo. Minimalismo con significado.",
+    "detalles": [
+      "Tipo brazalete rígido abierto",
+      "Nudo central con extremos de bola",
+      "Tono plateado",
+      "Diseño ajustable al abrirse"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/pu03.jpg"
+    ]
+  },
+  {
+    "id": "pu04",
+    "nombre": "Pulsera dorada de bolitas con dije de corazón",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada de bolitas con dije de corazón grabado y cierre de mosquetón.",
+    "descripcionLarga": "Bolitas doradas con un dije de corazón grabado: dulce y clásica, con cierre de mosquetón y cadena extensora para un ajuste perfecto.",
+    "detalles": [
+      "Cadena de bolitas en tono dorado",
+      "Dije de corazón grabado",
+      "Cierre de mosquetón con extensor",
+      "Diseño clásico y femenino"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/pu04.jpg"
+    ]
+  },
+  {
+    "id": "pu05",
+    "nombre": "Pulsera dorada con piedras claras y turquesa",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada tipo espiga con piedras claras y una piedra turquesa. Acero según la etiqueta visible.",
+    "descripcionLarga": "Una cadena tipo espiga dorada con tres piedras engastadas: dos claras y una turquesa que aporta el toque de color. Elegante con un punto vibrante. Acero según la etiqueta visible en la pieza.",
+    "detalles": [
+      "Cadena tipo espiga en tono dorado",
+      "Dos piedras claras y una turquesa engastadas",
+      "Cierre de mosquetón con extensor",
+      "Acero (según etiqueta visible)"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco",
+      "Turquesa"
+    ],
+    "imagenes": [
+      "fotos/pu05.jpg"
+    ]
+  },
+  {
+    "id": "pu06",
+    "nombre": "Pulsera dorada de corazones",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada formada por corazones inflados enlazados.",
+    "descripcionLarga": "Corazones dorados de volumen suave enlazados uno tras otro: una pulsera romántica y divertida que se nota desde lejos. Para las que aman el dorado sin medida.",
+    "detalles": [
+      "Eslabones en forma de corazón",
+      "Volumen suave en tono dorado",
+      "Cierre de mosquetón con extensor",
+      "Diseño romántico y llamativo"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/pu06.jpg"
+    ]
+  },
+  {
+    "id": "pu07",
+    "nombre": "Pulsera dorada trenzada",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada de cadena trenzada con cierre de mosquetón.",
+    "descripcionLarga": "Una cadena trenzada dorada de textura rica y brillo cálido: el básico elegante que combina con todo tu joyero. Sencilla por fuera, sofisticada en los detalles.",
+    "detalles": [
+      "Cadena trenzada en tono dorado",
+      "Cierre de mosquetón con extensor",
+      "Textura rica y brillante",
+      "Diseño versátil"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/pu07.jpg"
+    ]
+  },
+  {
+    "id": "pu08",
+    "nombre": "Pulsera dorada con dijes de trébol",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada de doble cadena con tres dijes de trébol.",
+    "descripcionLarga": "Doble cadena dorada con tres dijes de trébol, dos huecos y uno sólido: un diseño con movimiento y el símbolo de la buena suerte siempre contigo.",
+    "detalles": [
+      "Doble cadena en tono dorado",
+      "Tres dijes de trébol",
+      "Cierre de mosquetón con extensor",
+      "Diseño con movimiento"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/pu08.jpg"
+    ]
+  },
+  {
+    "id": "pu09",
+    "nombre": "Pulsera dorada con piedra verde",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada trenzada con piedra verde rectangular rodeada de piedras claras.",
+    "descripcionLarga": "Una piedra verde rectangular, enmarcada por piedras claras, como centro de una cadena trenzada dorada: el punto de color sofisticado que eleva cualquier look.",
+    "detalles": [
+      "Piedra central verde rectangular",
+      "Marco de piedras claras",
+      "Cadena trenzada en tono dorado",
+      "Cierre de mosquetón con extensor"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Verde",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/pu09.jpg"
+    ]
+  },
+  {
+    "id": "pu10",
+    "nombre": "Pulsera dorada con estrellas",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada tipo espiga con tres dijes de estrella, uno con piedras claras.",
+    "descripcionLarga": "Tres estrellas doradas sobre una cadena tipo espiga, con la central cubierta de piedras claras que capturan la luz: un diseño celestial lleno de brillo.",
+    "detalles": [
+      "Cadena tipo espiga en tono dorado",
+      "Tres dijes de estrella",
+      "Estrella central con piedras claras",
+      "Cierre de mosquetón con extensor"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/pu10.jpg"
+    ]
+  },
+  {
+    "id": "pu11",
+    "nombre": "Pulsera dorada doble cadena con corazón",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera dorada de doble cadena con dije de corazón inflado.",
+    "descripcionLarga": "Doble cadena dorada que combina eslabones gruesos y finos, rematada con un corazón inflado: un diseño con textura y volumen muy actual.",
+    "detalles": [
+      "Doble cadena en tono dorado",
+      "Dije de corazón inflado",
+      "Cierre de mosquetón con extensor",
+      "Diseño de estilo contemporáneo"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/pu11.jpg"
+    ]
+  },
+  {
+    "id": "pu12",
+    "nombre": "Pulsera plateada con esferas de cristal",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera plateada tipo espiga con esferas cubiertas de cristal.",
+    "descripcionLarga": "Esferas cubiertas de cristal sobre una cadena tipo espiga plateada: brillo concentrado en un diseño elegante y festivo. Perfecta para la noche.",
+    "detalles": [
+      "Esferas cubiertas de cristal",
+      "Cadena tipo espiga en tono plateado",
+      "Cierre de mosquetón con extensor",
+      "Diseño luminoso para ocasiones especiales"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/pu12.jpg"
+    ]
+  },
+  {
+    "id": "pu13",
+    "nombre": "Pulsera con esferas de cristal en dos tonos",
+    "categoria": "Pulseras",
+    "precio": 22,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Pulsera tipo espiga con esferas cubiertas de cristal, en versión plateada o dorada.",
+    "descripcionLarga": "El mismo diseño luminoso de esferas de cristal en dos versiones: plateada o dorada. Elige el tono que combine con tu joyero o llévate el par para mezclar.",
+    "detalles": [
+      "Esferas cubiertas de cristal",
+      "Cadena tipo espiga",
+      "Dos versiones: plateada o dorada",
+      "La foto muestra ambas versiones de color"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/pu13.jpg"
+    ]
+  },
+  {
+    "id": "an01",
+    "nombre": "Anillo dorado abierto con dos flores",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto en tono dorado con dos pequeñas flores en los extremos.",
+    "descripcionLarga": "Un anillo abierto coronado por dos pequeñas flores doradas: delicado, ajustable y lleno de encanto primaveral. Se adapta con comodidad al dedo.",
+    "detalles": [
+      "Diseño abierto ajustable",
+      "Dos flores en los extremos",
+      "Tono dorado",
+      "Estilo delicado y femenino"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an01.jpg"
+    ]
+  },
+  {
+    "id": "an02",
+    "nombre": "Anillo dorado de banda ancha texturizada",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto de banda ancha en tono dorado con superficie texturizada.",
+    "descripcionLarga": "Una banda ancha dorada con superficie texturizada que juega con la luz: un anillo con presencia y acabado artesanal. Abierto para un ajuste cómodo.",
+    "detalles": [
+      "Banda ancha",
+      "Superficie texturizada",
+      "Diseño abierto ajustable",
+      "Tono dorado"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an02.jpg"
+    ]
+  },
+  {
+    "id": "an03",
+    "nombre": "Anillo dorado estrella de mar con perla",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto en tono dorado con estrella de mar, perla blanca y piedra clara.",
+    "descripcionLarga": "Una estrella de mar dorada acompañada de una perla blanca y una piedra clara en un anillo abierto: todo el encanto del mar en tu mano. Original y muy femenino.",
+    "detalles": [
+      "Motivo de estrella de mar",
+      "Perla blanca y piedra clara",
+      "Diseño abierto ajustable",
+      "Tono dorado"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/an03.jpg"
+    ]
+  },
+  {
+    "id": "an04",
+    "nombre": "Anillo dorado de banda ancha con óvalo",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo dorado de múltiples bandas con medallón ovalado al centro.",
+    "descripcionLarga": "Múltiples bandas doradas que sostienen un medallón ovalado pulido: un anillo arquitectónico y moderno con mucha presencia. Para estilos audaces.",
+    "detalles": [
+      "Múltiples bandas",
+      "Medallón ovalado central",
+      "Tono dorado pulido",
+      "Diseño de gran presencia"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an04.jpg"
+    ]
+  },
+  {
+    "id": "an05",
+    "nombre": "Anillo dorado de bandas onduladas",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto en tono dorado con bandas onduladas entrelazadas.",
+    "descripcionLarga": "Bandas doradas de formas onduladas y orgánicas que se entrelazan con fluidez: un anillo escultórico y artístico para quienes buscan algo diferente.",
+    "detalles": [
+      "Bandas onduladas entrelazadas",
+      "Diseño abierto ajustable",
+      "Tono dorado",
+      "Estilo orgánico y artístico"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an05.jpg"
+    ]
+  },
+  {
+    "id": "an06",
+    "nombre": "Anillo plateado con relieve de hoja",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo plateado de banda ancha con relieve de hoja superpuesta.",
+    "descripcionLarga": "Una hoja plateada de relieve suave que envuelve el dedo: diseño natural y elegante en una banda ancha muy favorecedora. Fresco y contemporáneo.",
+    "detalles": [
+      "Banda ancha",
+      "Relieve de hoja superpuesta",
+      "Tono plateado",
+      "Inspiración natural"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/an06.jpg"
+    ]
+  },
+  {
+    "id": "an07",
+    "nombre": "Anillo plateado abierto de concha con perla",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto plateado con concha estriada en un extremo y perla blanca en el otro.",
+    "descripcionLarga": "Una concha estriada y una perla blanca en los extremos de un anillo abierto plateado: el mar en miniatura para llevar todos los días. Delicado y original.",
+    "detalles": [
+      "Concha estriada en un extremo",
+      "Perla blanca en el otro extremo",
+      "Diseño abierto ajustable",
+      "Tono plateado"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/an07.jpg"
+    ]
+  },
+  {
+    "id": "an08",
+    "nombre": "Anillo plateado abierto con extremos ovalados",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto plateado con banda acanalada y extremos ovalados texturizados.",
+    "descripcionLarga": "Banda acanalada con extremos ovalados de textura suave en tono plateado: un diseño moderno y táctil que se ajusta con comodidad. Minimalismo con detalle.",
+    "detalles": [
+      "Banda acanalada",
+      "Extremos ovalados texturizados",
+      "Diseño abierto ajustable",
+      "Tono plateado"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Plateado"
+    ],
+    "imagenes": [
+      "fotos/an08.jpg"
+    ]
+  },
+  {
+    "id": "an09",
+    "nombre": "Anillo dorado con perlas y espiral trenzada",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo dorado con espiral de textura trenzada y tres perlas blancas.",
+    "descripcionLarga": "Una espiral dorada de textura trenzada adornada con tres perlas blancas: movimiento, brillo y suavidad en un anillo romántico y original.",
+    "detalles": [
+      "Espiral de textura trenzada",
+      "Tres perlas blancas",
+      "Tono dorado",
+      "Diseño romántico con movimiento"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado",
+      "Blanco"
+    ],
+    "imagenes": [
+      "fotos/an09.jpg"
+    ]
+  },
+  {
+    "id": "an10",
+    "nombre": "Anillo dorado de óvalos entrelazados",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo dorado de banda ancha con óvalos pulidos entrelazados.",
+    "descripcionLarga": "Óvalos dorados pulidos que se entrelazan como escamas en una banda ancha: un anillo con textura rica y brillo cálido. Llamativo y sofisticado.",
+    "detalles": [
+      "Banda ancha",
+      "Óvalos pulidos entrelazados",
+      "Tono dorado",
+      "Diseño de gran presencia"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an10.jpg"
+    ]
+  },
+  {
+    "id": "an11",
+    "nombre": "Anillo dorado trenzado abierto",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo abierto en tono dorado con banda de efecto trenzado.",
+    "descripcionLarga": "Una banda dorada de efecto trenzado en un anillo abierto y ajustable: textura artesanal con un acabado cálido y luminoso. Clásico con carácter.",
+    "detalles": [
+      "Banda de efecto trenzado",
+      "Diseño abierto ajustable",
+      "Tono dorado",
+      "Acabado artesanal"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an11.jpg"
+    ]
+  },
+  {
+    "id": "an12",
+    "nombre": "Anillo dorado de hoja martillada",
+    "categoria": "Anillos",
+    "precio": 16.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Anillo dorado con gran hoja martillada que envuelve el dedo.",
+    "descripcionLarga": "Una gran hoja dorada de superficie martillada que se curva sobre el dedo: una pieza botánica audaz y escultórica. Para las que no temen destacar.",
+    "detalles": [
+      "Gran hoja como protagonista",
+      "Superficie martillada",
+      "Tono dorado",
+      "Diseño audaz y escultórico"
+    ],
+    "tallas": [
+      "Única"
+    ],
+    "colores": [
+      "Dorado"
+    ],
+    "imagenes": [
+      "fotos/an12.jpg"
+    ]
+  }
+]
