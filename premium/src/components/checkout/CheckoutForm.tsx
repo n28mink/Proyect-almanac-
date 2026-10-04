@@ -6,27 +6,32 @@ import { CartLines } from '@/components/cart/CartLines';
 import { TotalsTable } from '@/components/cart/CartSummary';
 import { Button, ButtonLink } from '@/components/ui/Button';
 import { Field } from '@/components/ui/PageShell';
+import { DEFAULT_PAYMENT_METHOD, paymentMethodLabel, type PaymentMethod } from '@/domain/commerce';
+import { pick } from '@/domain/i18n';
+import type { Locale } from '@/i18n/routing';
 import { useRouter } from '@/i18n/navigation';
 import { useCartQuote } from '@/lib/use-cart-quote';
 import { placeOrderAction } from '@/server/actions/shop';
 import { useCart } from '@/stores/cart-store';
+import { PaymentIcon, PaymentMethods } from './PaymentMethods';
 
 type FieldName = 'fullName' | 'phone' | 'line1' | 'city';
 const PHONE = /^[+\d][\d\s().-]{6,}$/;
 
 /**
- * Pedido para Venezuela, sin pago en línea. El servidor recalcula precios y stock al registrar el pedido; luego el
- * cliente lo envía por WhatsApp y el pago (pago móvil, transferencia o efectivo) se coordina ahí.
+ * Pedido para Venezuela, sin pago en línea. El cliente elige la forma de pago (pago móvil, transferencia o efectivo);
+ * el servidor recalcula precios y stock al registrar el pedido, y el pago se coordina por WhatsApp.
  */
 export function CheckoutForm() {
   const t = useTranslations('checkout');
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
   const router = useRouter();
   const lines = useCart((s) => s.lines);
   const clear = useCart((s) => s.clear);
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Partial<Record<FieldName, string>>>({});
   const [pending, start] = useTransition();
+  const [payment, setPayment] = useState<PaymentMethod>(DEFAULT_PAYMENT_METHOD);
   const { quote, loading, refresh } = useCartQuote(true);
 
   if (lines.length === 0) {
@@ -68,6 +73,7 @@ export function CheckoutForm() {
         region: String(fd.get('region') ?? '') || undefined,
       },
       notes: String(fd.get('notes') ?? '') || undefined,
+      paymentMethod: payment,
     };
     start(async () => {
       const res = await placeOrderAction(payload);
@@ -103,9 +109,8 @@ export function CheckoutForm() {
           </div>
         </section>
 
-        <section aria-labelledby="ck-pay">
-          <h2 id="ck-pay" className="mb-4 font-display text-heading">{t('payment')}</h2>
-          <p className="border border-line-strong p-4 text-fg-muted">{t('payNote')}</p>
+        <section>
+          <PaymentMethods value={payment} onChange={setPayment} />
         </section>
       </div>
 
@@ -114,8 +119,10 @@ export function CheckoutForm() {
           <h2 className="mb-2 font-display text-heading">{t('summary')}</h2>
           {quote ? (
             <>
-              <CartLines quote={quote} compact />
-              <div className="mt-4"><TotalsTable quote={quote} /></div>
+              <CartLines quote={quote} />
+              <div className="mt-4">
+                <TotalsTable quote={quote} payment={{ title: t('payment'), label: pick(paymentMethodLabel[payment], locale), icon: <PaymentIcon method={payment} width={18} height={18} /> }} />
+              </div>
             </>
           ) : (
             <div className="space-y-4 py-4" aria-busy="true">{lines.map((l) => <div key={l.variantId} className="skeleton h-20" />)}</div>

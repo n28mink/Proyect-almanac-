@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { cartInputSchema, orderSchema, type Order, type Quote } from '@/domain/commerce';
+import { cartInputSchema, orderSchema, paymentMethodSchema, type Order, type Quote } from '@/domain/commerce';
 import { getCatalog } from '../repositories/catalog';
 import { nextOrderNumber, saveOrder } from '../repositories/orders';
 import { computeQuote } from './pricing';
@@ -21,6 +21,7 @@ const checkoutSchema = z.object({
     region: z.string().trim().max(80).optional(),
   }),
   notes: z.string().trim().max(300).optional(),
+  paymentMethod: paymentMethodSchema,
 });
 
 export type PlaceOrderError = 'invalid' | 'empty' | 'cart_changed';
@@ -28,14 +29,14 @@ export type PlaceOrderError = 'invalid' | 'empty' | 'cart_changed';
 export type PlaceOrderResult = { ok: true; orderId: string } | { ok: false; error: PlaceOrderError };
 
 /**
- * Registra el pedido (estado «pendiente de pago»). No se cobra en línea: el pago se coordina por WhatsApp
- * (pago móvil, transferencia o efectivo). Todo importe sale de `computeQuote` sobre el catálogo vivo y el inventario
+ * Registra el pedido (estado «pendiente de pago») con la forma de pago elegida. No se cobra en línea: el pago
+ * (pago móvil, transferencia o efectivo) se coordina por WhatsApp. Todo importe sale de `computeQuote` sobre el catálogo vivo y el inventario
  * se descuenta cuando el administrador confirma el pago. Si lo que el cliente vio ya no coincide → `cart_changed`.
  */
 export async function placeOrder(payload: unknown): Promise<PlaceOrderResult> {
   const parsed = checkoutSchema.safeParse(payload);
   if (!parsed.success) return { ok: false, error: 'invalid' };
-  const { cart, fullName, phone: tel, address, notes } = parsed.data;
+  const { cart, fullName, phone: tel, address, notes, paymentMethod } = parsed.data;
 
   const quote = computeQuote(await getCatalog(), cart);
   if (quote.warnings.length > 0) return { ok: false, error: 'cart_changed' };
@@ -56,6 +57,7 @@ export async function placeOrder(payload: unknown): Promise<PlaceOrderResult> {
     currency: 'USD',
     shippingAddress: address,
     notes: notes || undefined,
+    paymentMethod,
     createdAt: now,
     updatedAt: now,
   });

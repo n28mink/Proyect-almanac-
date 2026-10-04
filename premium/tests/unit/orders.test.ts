@@ -19,7 +19,7 @@ beforeAll(async () => {
 });
 afterAll(() => fs.rmSync(path.join(process.cwd(), dir), { recursive: true, force: true }));
 
-const base = { fullName: 'Ana Pérez', phone: '0412 555 1234', address: { line1: 'Av. Principal, casa 3', city: 'Turmero', region: 'Aragua' } };
+const base = { fullName: 'Ana Pérez', phone: '0412 555 1234', address: { line1: 'Av. Principal, casa 3', city: 'Turmero', region: 'Aragua' }, paymentMethod: 'transferencia' };
 
 describe('pedido por WhatsApp (sin pago en línea)', () => {
   it('registra el pedido pendiente con importes del servidor y NO toca el inventario', async () => {
@@ -30,6 +30,7 @@ describe('pedido por WhatsApp (sin pago en línea)', () => {
     if (!res.ok) return;
     const order = (await getOrder(res.orderId))!;
     expect(order.status).toBe('pending_payment');
+    expect(order.paymentMethod).toBe('transferencia');
     expect(order.total).toBe(before.price * 2);
     expect(order.number).toMatch(/^CLV-\d{6}-\d+$/);
     const after = (await getCatalog()).find((p) => p.id === 'an02')!;
@@ -52,5 +53,24 @@ describe('pedido por WhatsApp (sin pago en línea)', () => {
     expect(await placeOrder({ ...base, cart: { lines: [] } })).toEqual({ ok: false, error: 'empty' });
     expect(await placeOrder({ ...base, cart: { lines: [{ ...line, variantId: 'fantasma' }] } })).toEqual({ ok: false, error: 'cart_changed' });
     expect(await placeOrder({ ...base, cart: { lines: [{ ...line, quantity: 999 }] } })).toEqual({ ok: false, error: 'invalid' });
+  });
+
+  it('exige una forma de pago conocida', async () => {
+    const line = { productId: 'an02', variantId: (await getCatalog()).find((p) => p.id === 'an02')!.variants[0]!.id, quantity: 1 };
+    expect(await placeOrder({ ...base, paymentMethod: undefined, cart: { lines: [line] } })).toEqual({ ok: false, error: 'invalid' });
+    expect(await placeOrder({ ...base, paymentMethod: 'tarjeta', cart: { lines: [line] } })).toEqual({ ok: false, error: 'invalid' });
+    const ok = await placeOrder({ ...base, paymentMethod: 'efectivo', cart: { lines: [line] } });
+    expect(ok.ok && (await getOrder(ok.orderId))!.paymentMethod).toBe('efectivo');
+  });
+
+  it('una camisa entra al pedido por talla, a 12 USD', async () => {
+    const shirt = (await getCatalog()).find((p) => p.id === 'cm04')!;
+    const m = shirt.variants.find((v) => v.options.size.es === 'M')!;
+    const res = await placeOrder({ ...base, cart: { lines: [{ productId: shirt.id, variantId: m.id, quantity: 2 }] } });
+    expect(res.ok).toBe(true);
+    if (!res.ok) return;
+    const order = (await getOrder(res.orderId))!;
+    expect(order.lines[0]!.variantLabel).toEqual({ es: 'Talla M', en: 'Size M' });
+    expect(order.total).toBe(2400);
   });
 });

@@ -2,6 +2,7 @@ import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
+import { variantLabel } from '@/domain/catalog';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { updateProductAction } from '@/server/actions/admin';
@@ -29,7 +30,7 @@ export default async function AdminProducts({ params }: { params: Promise<{ loca
               <label className="text-caption"><span className="label-micro block text-fg-subtle">{t('price')} (USD)</span><input name="price" type="number" step="0.01" min="0" defaultValue={(live.price / 100).toFixed(2)} className="field !min-h-10" /></label>
               <div className="flex flex-wrap gap-3">
                 {live.variants.map((v) => (
-                  <label key={v.id} className="text-caption"><span className="label-micro block max-w-[8rem] truncate text-fg-subtle" title={pick(v.options.color, locale)}>{t('stock')} · {pick(v.options.color, locale)}</span><input name={`stock:${v.id}`} type="number" min="0" step="1" defaultValue={v.stock} className="field !min-h-10 !w-24" /></label>
+                  <label key={v.id} className="text-caption"><span className="label-micro block max-w-[8rem] truncate text-fg-subtle" title={pick(variantLabel(v), locale)}>{t('stock')} · {pick(variantLabel(v), locale)}</span><input name={`stock:${v.id}`} type="number" min="0" step="1" defaultValue={v.stock} className="field !min-h-10 !w-24" /></label>
                 ))}
               </div>
               <div className="flex flex-wrap gap-x-5 gap-y-2 text-caption">

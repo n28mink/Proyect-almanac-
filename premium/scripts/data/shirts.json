@@ -1,0 +1,73 @@
+{
+  "_note": "Camisas Clover. Fotos maestras en assets-src/shirts/<id>.jpg (1000×1250, ya recortadas sobre el fondo salvia de la marca). detail = recorte cuadrado [left, top, lado] en px de la foto maestra. Precio y tallas confirmados por la tienda; el stock por talla es inicial y se edita en el panel.",
+  "price": 12,
+  "sizes": ["S", "M", "L", "XL"],
+  "stockPerSize": 5,
+  "items": [
+    {
+      "id": "cm01",
+      "name": { "es": "Camisa God's Child", "en": "God's Child T-shirt" },
+      "color": { "es": "Celeste", "en": "Light blue" },
+      "neck": "crew",
+      "tags": ["faith"],
+      "description": {
+        "es": "Camisa celeste de poli-algodón con el estampado «God's Child» y una cita de 2 Corintios.",
+        "en": "Light-blue poly-cotton T-shirt with a “God's Child” print and a verse from 2 Corinthians."
+      },
+      "alt": { "es": "Camisa celeste God's Child, usada con jeans", "en": "Light-blue God's Child T-shirt, worn with jeans" },
+      "detail": [330, 260, 380]
+    },
+    {
+      "id": "cm02",
+      "name": { "es": "Camisa Life is too short to care", "en": "Life Is Too Short to Care T-shirt" },
+      "color": { "es": "Marrón", "en": "Brown" },
+      "neck": "crew",
+      "tags": ["flower"],
+      "description": {
+        "es": "Camisa marrón de poli-algodón con una flor de hibisco en tonos coral y la frase «Life is too short to care».",
+        "en": "Brown poly-cotton T-shirt with a coral-toned hibiscus and the phrase “Life is too short to care”."
+      },
+      "alt": { "es": "Camisa marrón con flor de hibisco y la frase Life is too short to care", "en": "Brown T-shirt with a hibiscus and the phrase Life is too short to care" },
+      "detail": [150, 170, 580]
+    },
+    {
+      "id": "cm03",
+      "name": { "es": "Camisa Me encanta el sonido de nadie hablando", "en": "I Love the Sound of No One Talking T-shirt" },
+      "color": { "es": "Blanco", "en": "White" },
+      "neck": "v",
+      "tags": ["phrase"],
+      "description": {
+        "es": "Camisa blanca cuello en V, de poli-algodón, con la frase «Me encanta el sonido de nadie hablando».",
+        "en": "White V-neck poly-cotton T-shirt with the phrase “Me encanta el sonido de nadie hablando” (I love the sound of no one talking)."
+      },
+      "alt": { "es": "Camisa blanca cuello en V con la frase Me encanta el sonido de nadie hablando, en gancho", "en": "White V-neck T-shirt with a Spanish phrase, on a hanger" },
+      "detail": [130, 300, 640]
+    },
+    {
+      "id": "cm04",
+      "name": { "es": "Camisa Margaritas", "en": "Daisies T-shirt" },
+      "color": { "es": "Coral", "en": "Coral" },
+      "neck": "crew",
+      "tags": ["flower"],
+      "description": {
+        "es": "Camisa coral de poli-algodón con margaritas blancas repartidas por el frente.",
+        "en": "Coral poly-cotton T-shirt with white daisies scattered across the front."
+      },
+      "alt": { "es": "Camisa coral con margaritas blancas", "en": "Coral T-shirt with white daisies" },
+      "detail": [150, 150, 620]
+    },
+    {
+      "id": "cm05",
+      "name": { "es": "Camisa Llegué tarde", "en": "Llegué Tarde T-shirt" },
+      "color": { "es": "Blanco", "en": "White" },
+      "neck": "crew",
+      "tags": ["phrase", "pet"],
+      "description": {
+        "es": "Camisa blanca de poli-algodón con un bulldog francés de pañuelo y lentes, y la frase «Llegué tarde porque no quería venir».",
+        "en": "White poly-cotton T-shirt with a French bulldog in a headscarf and sunglasses, and the phrase “Llegué tarde porque no quería venir” (I arrived late because I didn't want to come)."
+      },
+      "alt": { "es": "Camisa blanca con bulldog francés y la frase Llegué tarde porque no quería venir", "en": "White T-shirt with a French bulldog and the phrase Llegué tarde porque no quería venir" },
+      "detail": [300, 330, 520]
+    }
+  ]
+}

@@ -65,7 +65,7 @@ export function applyFilters(products: CardData[], p: ShopParams): CardData[] {
     const dollars = x.price / 100;
     if (p.min !== undefined && dollars < p.min) return false;
     if (p.max !== undefined && dollars > p.max) return false;
-    if (p.finish.length && !p.finish.includes(x.finish)) return false;
+    if (p.finish.length && !(x.finish && p.finish.includes(x.finish))) return false;
     if (p.material.length && !p.material.includes(x.materialKey)) return false;
     if (p.audience.length && !p.audience.some((a) => x.audience.includes(a))) return false;
     if (p.collection.length && !(x.collection && p.collection.includes(x.collection))) return false;
@@ -108,7 +108,7 @@ export function computeFacets(products: CardData[]): Facets {
   const multi = <T extends { value: string; count: number }>(arr: T[]) => (arr.length >= 2 ? arr : []);
   return {
     price: new Set(prices).size > 1 ? { min, max } : null,
-    finish: multi(tally(products.map((p) => p.finish))),
+    finish: multi(tally(products.flatMap((p) => (p.finish ? [p.finish] : [])))),
     material: multi(tally(products.map((p) => p.materialKey))),
     audience: multi(tally(products.flatMap((p) => p.audience))),
     collection: multi(tally(products.flatMap((p) => (p.collection ? [p.collection] : [])))),

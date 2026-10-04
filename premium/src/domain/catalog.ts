@@ -1,10 +1,10 @@
 import { z } from 'zod';
-import { localizedSchema } from './i18n';
+import { localizedSchema, type Localized } from './i18n';
 
 /** Importes en céntimos enteros (moneda base USD). Nunca floats. */
 export const cents = z.number().int().nonnegative();
 
-export const categorySlugs = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'accessories'] as const;
+export const categorySlugs = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'accessories', 'shirts'] as const;
 export const categorySlugSchema = z.enum(categorySlugs);
 export type CategorySlug = z.infer<typeof categorySlugSchema>;
 
@@ -91,8 +91,10 @@ export const productSchema = z.object({
   currency: z.literal('USD'),
   material: localizedSchema,
   color: z.array(localizedSchema),
-  /** Familia cromática para filtros: gold | silver | rose | multi. */
-  finish: z.enum(['gold', 'silver', 'rose', 'mixed']),
+  /** Familia cromática del metal para filtros. Las prendas no la tienen. */
+  finish: z.enum(['gold', 'silver', 'rose', 'mixed']).optional(),
+  /** Se puede personalizar a pedido (la personalización se cotiza por WhatsApp, no entra en el carrito). */
+  customizable: z.boolean().optional(),
   sizes: z.array(localizedSchema),
   variants: z.array(variantSchema).min(1),
   images: z.array(imageAssetSchema).min(1),
@@ -127,6 +129,20 @@ export const collectionSchema = z.object({
   tone: z.enum(['light', 'ink', 'evergreen']).default('light'),
 });
 export type Collection = z.infer<typeof collectionSchema>;
+
+/** Valor de `options.size` de las piezas sin talla. */
+export const ONE_SIZE_ES = 'Talla única';
+
+/** La variante se elige por talla (camisas) y no por acabado o esfera. */
+export function isSized(product: Pick<Product, 'variants'>): boolean {
+  return product.variants.some((v) => v.options.size.es !== ONE_SIZE_ES);
+}
+
+/** Etiqueta de la variante para carrito, pedido y WhatsApp: «Talla M» en prendas, el acabado en joyería. */
+export function variantLabel(variant: Variant): Localized {
+  if (variant.options.size.es === ONE_SIZE_ES) return variant.options.color;
+  return { es: `Talla ${variant.options.size.es}`, en: `Size ${variant.options.size.en}` };
+}
 
 export function variantPrice(product: Product, variant: Variant): number {
   return variant.price ?? product.price;

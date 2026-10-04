@@ -322,22 +322,25 @@ input[type='range'].range::-moz-range-thumb {
   }
 }
 
-/* Scroll horizontal con snap (móvil) */
-.snap-row {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: var(--gutter);
-  padding-inline: var(--gutter);
-  scrollbar-width: none;
-}
-.snap-row::-webkit-scrollbar {
-  display: none;
-}
-.snap-row > * {
-  scroll-snap-align: start;
-  flex: none;
+/* Scroll horizontal con snap (móvil). En la capa `components` para que las utilidades (p. ej. `lg:grid`) lo puedan
+   sobrescribir: sin capa, esta regla ganaba y la rejilla de categorías de la home quedaba con altura 0 en escritorio. */
+@layer components {
+  .snap-row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    padding-inline: var(--gutter);
+    scrollbar-width: none;
+  }
+  .snap-row::-webkit-scrollbar {
+    display: none;
+  }
+  .snap-row > * {
+    scroll-snap-align: start;
+    flex: none;
+  }
 }
 
 .sr-only-focusable:not(:focus):not(:focus-within) {
@@ -362,5 +365,90 @@ input[type='range'].range::-moz-range-thumb {
     opacity: 0;
     filter: blur(2px);
     transform: translateY(0.2rem);
+  }
+}
+
+/* ── Forma de pago: tarjetas de opción ─────────────────────────────────────────
+   Radio nativo (teclado y lector de pantalla gratis); la tarjeta reacciona con :has(). El cambio de selección es
+   un cambio de estado frecuente: transiciones cortas (≤180 ms) con ease-out, sin rebote. */
+.pay-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 4.25rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--line-strong);
+  cursor: pointer;
+  transition:
+    border-color 0.18s var(--ease-out),
+    background-color 0.18s var(--ease-out),
+    scale 0.12s var(--ease-out);
+}
+.pay-option:active {
+  scale: 0.985;
+}
+.pay-option:has(:checked) {
+  border-color: var(--accent);
+  background-color: color-mix(in oklab, var(--accent) 6%, transparent);
+}
+.pay-option:has(:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .pay-option:not(:has(:checked)):hover {
+    border-color: var(--fg);
+  }
+}
+.pay-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  transition:
+    background-color 0.18s var(--ease-out),
+    border-color 0.18s var(--ease-out),
+    color 0.18s var(--ease-out);
+}
+.pay-option:has(:checked) .pay-icon {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+}
+.pay-check {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-left: auto;
+  border-radius: 999px;
+  background-color: var(--accent);
+  color: var(--surface);
+  opacity: 0;
+  scale: 0.6;
+  transition:
+    opacity 0.16s var(--ease-out),
+    scale 0.16s var(--ease-out);
+}
+.pay-option:has(:checked) .pay-check {
+  opacity: 1;
+  scale: 1;
+}
+@media (min-width: 640px) {
+  .pay-option {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 1.125rem;
+  }
+  .pay-check {
+    position: absolute;
+    top: 0.875rem;
+    right: 0.875rem;
   }
 }

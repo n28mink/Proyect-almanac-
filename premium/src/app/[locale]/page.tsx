@@ -53,7 +53,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const coverProduct = byId(lumiere.coverProductId);
   const cover = coverProduct.images[0]!;
 
-  const newArrivals = catalog.filter((p) => p.newArrival).slice(0, 10).map((p) => toCardData(p, locale));
+  // Las camisas son la línea más reciente: abren el carril de novedades.
+  const newArrivals = catalog.filter((p) => p.newArrival).sort((a, b) => Number(b.category === 'shirts') - Number(a.category === 'shirts')).slice(0, 10).map((p) => toCardData(p, locale));
   const bestsellers = catalog.filter((p) => p.bestseller).slice(0, 8).map((p) => toCardData(p, locale));
   const watch = byId('rw03');
 
@@ -69,7 +70,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const journalEntries = journal.slice(0, 3);
   const covers = Object.fromEntries(journalEntries.map((e) => { const img = byId(e.coverProductId).images[0]!; return [e.slug, { src: img.src, blur: img.blur }]; }));
-  const marqueeItems = (['earrings', 'necklaces', 'rings', 'bracelets', 'watches'] as const).map((k) => t(`marquee.${k}`));
+  const marqueeItems = (['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'shirts'] as const).map((k) => t(`marquee.${k}`));
 
   return (
     <>

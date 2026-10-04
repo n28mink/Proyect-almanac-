@@ -1,4 +1,4 @@
-import { variantPrice, type Product } from '@/domain/catalog';
+import { variantLabel, variantPrice, type Product } from '@/domain/catalog';
 import type { CartInput, Quote, QuotedLine } from '@/domain/commerce';
 
 /**
@@ -25,7 +25,7 @@ export function computeQuote(catalog: Product[], input: CartInput): Quote {
       variantId: variant.id,
       slug: product.slug,
       name: product.name,
-      variantLabel: variant.options.color,
+      variantLabel: variantLabel(variant),
       image: product.images[variant.imageIndex ?? 0]?.src ?? product.thumbnail,
       unitPrice,
       quantity,

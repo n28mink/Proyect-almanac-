@@ -2,7 +2,7 @@ import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
-import { orderStatusSchema } from '@/domain/commerce';
+import { orderStatusSchema, paymentMethodLabel } from '@/domain/commerce';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { formatDate, formatMoney } from '@/lib/format';
@@ -26,7 +26,8 @@ export default async function AdminOrders({ params }: { params: Promise<{ locale
             <li key={o.id} className="grid items-center gap-4 py-5 lg:grid-cols-[1fr_2fr_auto_auto]">
               <div><p className="font-display text-lead">{o.number}</p><p className="text-caption text-fg-muted">{formatDate(o.createdAt, locale)} · {o.contact.fullName} · {o.contact.phone}</p></div>
               <div className="text-caption text-fg-muted">
-                <p>{o.lines.map((l) => `${pick(l.name, locale)} ×${l.quantity}`).join(' · ')}</p>
+                <p>{o.lines.map((l) => `${pick(l.name, locale)} (${pick(l.variantLabel, locale)}) ×${l.quantity}`).join(' · ')}</p>
+                {o.paymentMethod && <p className="mt-1">{t('paymentMethod')}: <span className="text-fg">{pick(paymentMethodLabel[o.paymentMethod], locale)}</span></p>}
                 <p className="mt-1">{[o.shippingAddress.line1, o.shippingAddress.city, o.shippingAddress.region].filter(Boolean).join(', ')}{o.notes ? ` · ${o.notes}` : ''}</p>
               </div>
               <p className="tabular">{formatMoney(o.total, locale)}</p>

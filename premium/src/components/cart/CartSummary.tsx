@@ -1,11 +1,15 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import { useTranslations } from 'next-intl';
 import { Price } from '@/components/ui/Price';
 import type { Quote } from '@/domain/commerce';
 
-/** Totales valorados por el servidor. El envío no se suma: se acuerda por WhatsApp según la zona. */
-export function TotalsTable({ quote }: { quote: Quote }) {
+/**
+ * Totales valorados por el servidor. El envío no se suma: se acuerda por WhatsApp según la zona.
+ * En el checkout se añade la forma de pago elegida.
+ */
+export function TotalsTable({ quote, payment }: { quote: Quote; payment?: { title: string; label: string; icon: ReactNode } }) {
   const t = useTranslations('cart');
   const row = 'flex items-baseline justify-between gap-4 text-caption';
   return (
@@ -18,6 +22,15 @@ export function TotalsTable({ quote }: { quote: Quote }) {
         <dt className="text-fg-muted">{t('shipping')}</dt>
         <dd className="text-right text-fg-muted">{t('shippingByWhatsapp')}</dd>
       </div>
+      {payment && (
+        <div className={row} data-testid="summary-payment">
+          <dt className="text-fg-muted">{payment.title}</dt>
+          <dd className="flex items-center gap-2 text-right">
+            <span aria-hidden="true" className="text-accent">{payment.icon}</span>
+            <span key={payment.label} className="morph-label">{payment.label}</span>
+          </dd>
+        </div>
+      )}
       <div className="flex items-baseline justify-between gap-4 border-t border-line pt-3">
         <dt className="label-micro">{t('total')}</dt>
         <dd className="font-display text-heading"><Price cents={quote.total} /></dd>

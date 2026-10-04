@@ -46,7 +46,7 @@ src/
   server/                  actions/ services/ (pricing, checkout) repositories/ store/ auth/ payments/ security/
   stores/  lib/  i18n/  styles/ (tokens.css, motion.css, components.css)
 messages/                  es.json, en.json (mismas claves; test lo verifica)
-scripts/                   build-media (sharp), build-seed, render-clips (ffmpeg + Playwright)
+scripts/                   build-media y build-shirts (sharp), build-seed, render-clips (ffmpeg + Playwright)
 tests/unit  tests/e2e      vitest · Playwright + axe
 docs/  Dockerfile  playwright.config.ts  vitest.config.ts
 ```

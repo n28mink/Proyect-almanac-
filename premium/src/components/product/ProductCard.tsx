@@ -120,7 +120,7 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
               {single ? (
                 <AddLabel added={added} idle={<><PlusIcon width={16} height={16} />{t('quickAdd')}</>} done={t('added')} />
               ) : (
-                <><PlusIcon width={16} height={16} />{t('chooseOption')}</>
+                <><PlusIcon width={16} height={16} />{p.sized ? t('chooseSize') : t('chooseOption')}</>
               )}
             </button>
             <button type="button" onClick={() => setQuick(true)} aria-label={t('quickViewLabel', { name: p.name })} className="grid h-11 w-11 place-items-center bg-ivory/95 text-ink backdrop-blur-sm transition-colors hover:bg-ink hover:text-ivory">
@@ -139,7 +139,7 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
         {layout === 'list' && <p className="mt-3 hidden max-w-prose text-fg-muted sm:block">{p.description}</p>}
         {layout === 'grid' && (
           <button type="button" disabled={soldOut} onClick={() => (single ? addToBag({ productId: p.id, variantId: p.defaultVariantId, name: p.name, imageSrc: p.image.src, source: media.current }) : setQuick(true))} className="label-micro link-underline hit-area mt-3 w-fit md:hidden">
-            {single ? t('quickAdd') : t('chooseOption')}
+            {single ? t('quickAdd') : p.sized ? t('chooseSize') : t('chooseOption')}
           </button>
         )}
       </div>

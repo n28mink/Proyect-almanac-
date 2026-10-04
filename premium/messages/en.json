@@ -74,11 +74,14 @@
     },
     "quickAdd": "Quick add",
     "chooseOption": "Choose option",
+    "chooseSize": "Choose size",
     "quickViewLabel": "Quick view: {name}",
     "option": "Option",
+    "size": "Size",
     "soldOut": "Sold out",
     "added": "Added",
     "addToBag": "Add to bag",
+    "addShort": "Add",
     "fullDetails": "View full details",
     "close": "Close",
     "view3d": "View in 3D",
@@ -113,7 +116,11 @@
     "moreFrom": "More from {name}",
     "related": "You may also like",
     "paymentNote": "Pago móvil, transfer or cash, arranged on WhatsApp.",
-    "payLong": "We accept pago móvil, bank transfer and cash, arranged on WhatsApp when we confirm your order."
+    "payLong": "We accept pago móvil, bank transfer and cash, arranged on WhatsApp when we confirm your order.",
+    "customTitle": "Make it yours",
+    "customText": "Change the phrase, the image or bring your own design. We print by ink sublimation or DTF, depending on the shirt color.",
+    "customCta": "Get a customization quote",
+    "customHint": "Customization is quoted on WhatsApp: it opens with the shirt and your size already filled in."
   },
   "home": {
     "heroSecondary": "View the lookbook",
@@ -164,7 +171,8 @@
       "necklaces": "Necklaces",
       "rings": "Rings",
       "bracelets": "Bracelets",
-      "watches": "Watches"
+      "watches": "Watches",
+      "shirts": "T-shirts"
     }
   },
   "shop": {
@@ -205,10 +213,11 @@
     },
     "materialKeys": {
       "steel": "Stainless steel",
-      "metal": "Metal with tone finish"
+      "metal": "Metal with tone finish",
+      "textile": "Poly-cotton"
     },
     "allTitle": "The collection",
-    "allText": "Earrings, necklaces, rings, bracelets and watches chosen piece by piece.",
+    "allText": "Earrings, necklaces, rings, bracelets, watches and T-shirts, chosen piece by piece.",
     "eyebrow": "Shop",
     "breadcrumbShop": "Shop"
   },
@@ -265,8 +274,13 @@
     "city": "City",
     "region": "State",
     "notes": "Note for your order (optional)",
-    "payment": "Payment",
-    "payNote": "We accept pago móvil, bank transfer and cash, arranged on WhatsApp when we confirm your order.",
+    "payment": "Payment method",
+    "payIntro": "Choose how you would like to pay. Nothing is charged on this page: payment is arranged on WhatsApp when we confirm your order.",
+    "payChosen": {
+      "pago-movil": "You will pay with pago móvil (Venezuelan mobile payment). We send you the details on WhatsApp when we confirm your order.",
+      "transferencia": "You will pay by bank transfer. We send you the account details on WhatsApp when we confirm your order.",
+      "efectivo": "You will pay in cash. We agree on when and where on WhatsApp when we confirm your order."
+    },
     "summary": "Order summary",
     "errors": {
       "invalid": "Please check your details and try again.",
@@ -349,6 +363,7 @@
     "save": "Save",
     "noOrders": "No orders yet.",
     "status": "Order status",
+    "paymentMethod": "Payment method",
     "orderStatus": {
       "pending_payment": "Awaiting confirmation",
       "paid": "Paid",

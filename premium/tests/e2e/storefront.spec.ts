@@ -25,8 +25,8 @@ test('home: marca, cabeceras de seguridad y sin errores de consola', async ({ pa
   expect(errs).toEqual([]);
 });
 
-test('las 12 categorías existen como páginas reales', async ({ request }) => {
-  for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'accessories', 'women', 'men', 'new-arrivals', 'gifts']) {
+test('las categorías existen como páginas reales', async ({ request }) => {
+  for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'shirts', 'accessories', 'women', 'men', 'new-arrivals', 'gifts']) {
     expect((await request.get(`/es/shop/${c}`)).status(), c).toBe(200);
   }
   expect((await request.get('/es/collections')).status()).toBe(200);
@@ -69,8 +69,63 @@ test('compra por WhatsApp: bolsa → pedido registrado → mensaje de WhatsApp (
   const href = (await wa.getAttribute('href'))!;
   expect(href).toMatch(/^https:\/\/wa\.me\/584121318133\?text=/);
   const text = decodeURIComponent(href.split('text=')[1]!);
-  for (const part of ['CLV-', 'Ana Pérez', '0412 555 1234', 'Turmero', 'Total']) expect(text).toContain(part);
+  for (const part of ['CLV-', 'Ana Pérez', '0412 555 1234', 'Turmero', 'Total', 'Forma de pago: Pago móvil']) expect(text).toContain(part);
   await expect(wa).toHaveAttribute('target', '_blank');
+  expect(errs).toEqual([]);
+});
+
+test('forma de pago: iconos, preselección, texto de la elegida y resumen del pedido', async ({ page, context }) => {
+  const errs = errors(page);
+  await context.addInitScript(() => localStorage.setItem('clover-cart-v2', JSON.stringify({ state: { lines: [{ productId: 'cm04', variantId: 'cm04-l', quantity: 1 }] }, version: 0 })));
+  await page.goto('/es/checkout', { waitUntil: 'networkidle' });
+  const group = page.getByRole('group', { name: 'Forma de pago' });
+  await expect(group.getByRole('radio')).toHaveCount(3);
+  await expect(group.locator('.pay-icon svg')).toHaveCount(3);
+  await expect(group.getByRole('radio', { name: 'Pago móvil' })).toBeChecked();
+  await expect(page.locator('#pay-chosen')).toContainText('Pagarás con pago móvil');
+  const summary = page.getByRole('complementary', { name: 'Resumen del pedido' });
+  await expect(summary.getByTestId('summary-payment')).toContainText('Pago móvil');
+  await expect(summary).toContainText('Talla L');
+  const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).exclude('[data-decorative]').analyze();
+  expect(axe.violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
+
+  // Teclado: las flechas recorren las opciones del grupo.
+  await group.getByRole('radio', { name: 'Pago móvil' }).focus();
+  await page.keyboard.press('ArrowDown');
+  await expect(group.getByRole('radio', { name: 'Transferencia bancaria' })).toBeChecked();
+  await group.getByText('Efectivo', { exact: true }).click();
+  await expect(group.getByRole('radio', { name: 'Efectivo' })).toBeChecked();
+  await expect(page.locator('#pay-chosen')).toContainText('Pagarás en efectivo');
+  await expect(summary.getByTestId('summary-payment')).toContainText('Efectivo');
+
+  await page.locator('#fullName').fill('Ana Pérez');
+  await page.locator('#phone').fill('0412 555 1234');
+  await page.locator('#line1').fill('Calle 5, casa 2');
+  await page.locator('#city').fill('Maracay');
+  await page.getByRole('button', { name: 'Hacer pedido' }).click();
+  await page.waitForURL(/checkout\/success/, { timeout: 20_000 });
+  await expect(page.getByText('Efectivo', { exact: true })).toBeVisible();
+  await expect(page.getByText(/Talla L/)).toBeVisible();
+  const text = decodeURIComponent((await page.getByRole('link', { name: /Enviar pedido por WhatsApp/ }).getAttribute('href'))!.split('text=')[1]!);
+  for (const part of ['Camisa Margaritas (Talla L)', 'Forma de pago: Efectivo', '$12,00']) expect(text).toContain(part);
+  expect(errs).toEqual([]);
+});
+
+test('camisas: tallas S–XL a 12 USD y personalización cotizada por WhatsApp', async ({ page }) => {
+  const errs = errors(page);
+  await page.goto('/es/shop/shirts', { waitUntil: 'networkidle' });
+  await expect(page.locator('article.product-card')).toHaveCount(5);
+  await page.goto('/es/product/gods-child-t-shirt', { waitUntil: 'networkidle' });
+  await expect(page.locator('h1')).toHaveText("Camisa God's Child");
+  await expect(page.getByText('$12,00').first()).toBeVisible();
+  const sizes = page.getByRole('group', { name: /Talla/ });
+  await expect(sizes.getByRole('radio')).toHaveCount(4);
+  await sizes.getByText('XL', { exact: true }).click();
+  await expect(sizes.getByRole('radio', { name: 'XL' })).toBeChecked();
+  const quote = page.getByRole('link', { name: /Cotizar personalización/ });
+  const text = decodeURIComponent((await quote.getAttribute('href'))!.split('text=')[1]!);
+  expect(text).toContain("Camisa God's Child en talla XL");
+  await expect(page.getByText('Poli-algodón').first()).toBeVisible();
   expect(errs).toEqual([]);
 });
 
@@ -198,7 +253,7 @@ test('panel de administración: solo en su ruta oculta, con login de administrad
   expect(headers['cache-control']).toContain('no-store');
 });
 
-for (const path of ['/es', '/es/shop', '/es/checkout']) {
+for (const path of ['/es', '/es/shop', '/es/checkout', '/es/shop/shirts', '/es/product/daisies-t-shirt']) {
   test(`a11y (axe, WCAG A/AA) ${path}`, async ({ page }) => {
     await page.goto(path, { waitUntil: 'networkidle' });
     await page.waitForTimeout(800);
@@ -222,7 +277,7 @@ test('@mobile accesibilidad (axe) y objetivos táctiles en la cabecera', async (
 });
 
 test('@mobile sin desbordamiento horizontal en home, tienda y categoría', async ({ page }) => {
-  for (const p of ['/es', '/es/shop', '/es/shop/watches']) {
+  for (const p of ['/es', '/es/shop', '/es/shop/watches', '/es/product/daisies-t-shirt']) {
     await page.goto(p, { waitUntil: 'networkidle' });
     const over = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(over, p).toBeLessThanOrEqual(0);
@@ -256,8 +311,10 @@ test('admin: iniciar sesión y confirmar el pago de un pedido registrado por un 
   await page.getByRole('button', { name: 'Entrar' }).click();
   await page.waitForURL(new RegExp(`/es/${ADMIN}$`));
   await page.goto(`/es/${ADMIN}/orders`);
+  for (const tab of ['Resumen', 'Productos', 'Pedidos', 'Campañas', 'Media']) await expect(page.getByRole('navigation', { name: 'Secciones del admin' }).getByRole('link', { name: tab, exact: true })).toBeVisible();
   const row = page.locator('li', { hasText: number });
   await expect(row).toContainText('Cliente Admin Test');
+  await expect(row).toContainText('Forma de pago: Pago móvil');
   await row.getByRole('combobox').selectOption('paid');
   await row.getByRole('button', { name: 'Guardar' }).click();
   await page.reload();

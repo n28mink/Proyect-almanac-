@@ -64,4 +64,26 @@ describe('mensaje de pedido para WhatsApp', () => {
     expect(orderMessage(order, 'en')).toContain('Delivery to');
     expect(whatsappUrl('hola mundo')).toBe('https://wa.me/584121318133?text=hola%20mundo');
   });
+
+  it('incluye la forma de pago elegida y ajusta la pregunta final', async () => {
+    const { orderMessage } = await import('@/lib/whatsapp');
+    const order = {
+      id: 'x', number: 'CLV-1', contact: { fullName: 'Ana Pérez', phone: '0412 000 0000' }, status: 'pending_payment' as const,
+      lines: [{ productId: 'cm01', variantId: 'cm01-m', name: { es: 'Camisa', en: 'T-shirt' }, variantLabel: { es: 'Talla M', en: 'Size M' }, image: '/x.jpg', unitPrice: 1200, quantity: 1, lineTotal: 1200 }],
+      subtotal: 1200, total: 1200, currency: 'USD' as const, shippingAddress: { line1: 'Calle 1', city: 'Maracay' }, createdAt: '', updatedAt: '',
+    };
+    const movil = orderMessage({ ...order, paymentMethod: 'pago-movil' }, 'es');
+    expect(movil).toContain('Forma de pago: Pago móvil');
+    expect(movil).toContain('(Talla M)');
+    expect(movil).toContain('los datos para el pago');
+    expect(orderMessage({ ...order, paymentMethod: 'efectivo' }, 'es')).toContain('Forma de pago: Efectivo');
+    expect(orderMessage({ ...order, paymentMethod: 'transferencia' }, 'en')).toContain('Payment method: Bank transfer');
+    expect(orderMessage(order, 'es')).not.toContain('Forma de pago');
+  });
+
+  it('la consulta de personalización lleva la camisa y la talla', async () => {
+    const { customizeMessage } = await import('@/lib/whatsapp');
+    expect(customizeMessage('Camisa Margaritas', 'L', 'es')).toContain('Camisa Margaritas en talla L');
+    expect(customizeMessage('Daisies T-shirt', undefined, 'en')).not.toContain('size');
+  });
 });

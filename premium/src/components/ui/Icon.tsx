@@ -72,3 +72,19 @@ export const ListIcon = (p: P) => (
 export const EyeIcon = (p: P) => (
   <svg {...base(p)}><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" /><circle cx="12" cy="12" r="2.8" /></svg>
 );
+/** Pago móvil: teléfono con flechas de envío. */
+export const MobilePayIcon = (p: P) => (
+  <svg {...base(p)}><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.2" /><path d="M10.5 18.2h3M9.2 8.6h5.6l-1.7-1.7M14.8 12.2H9.2l1.7 1.7" /></svg>
+);
+/** Transferencia bancaria. */
+export const BankIcon = (p: P) => (
+  <svg {...base(p)}><path d="M3.5 9 12 4.2 20.5 9M4.5 9.5h15M6 9.5v7.5M10 9.5v7.5M14 9.5v7.5M18 9.5v7.5M3.5 19.8h17" /></svg>
+);
+/** Efectivo: billete. */
+export const CashIcon = (p: P) => (
+  <svg {...base(p)}><rect x="2.8" y="6.3" width="18.4" height="11.4" rx="1.6" /><circle cx="12" cy="12" r="2.6" /><path d="M6.2 9.4h.01M17.8 14.6h.01" strokeWidth={2.2} /></svg>
+);
+/** Conversación (WhatsApp). */
+export const ChatIcon = (p: P) => (
+  <svg {...base(p)}><path d="M20 11.6a7.6 7.6 0 0 1-11.2 6.7L4.4 19.6l1.4-4.1A7.6 7.6 0 1 1 20 11.6Z" /></svg>
+);

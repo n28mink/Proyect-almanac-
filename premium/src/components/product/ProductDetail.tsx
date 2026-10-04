@@ -1,14 +1,16 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Product3D } from '@/components/three/Product3D';
-import { Button } from '@/components/ui/Button';
-import { CheckIcon, MinusIcon, PlusIcon, ReturnIcon, TruckIcon } from '@/components/ui/Icon';
+import { Button, ExternalButtonLink } from '@/components/ui/Button';
+import { ChatIcon, CheckIcon, MinusIcon, PlusIcon, ReturnIcon, TruckIcon } from '@/components/ui/Icon';
 import { Price } from '@/components/ui/Price';
 import type { ProductView } from '@/lib/card-data';
 import { cn } from '@/lib/cn';
 import { useInView } from '@/lib/hooks';
+import { customizeMessage, whatsappUrl } from '@/lib/whatsapp';
+import type { Locale } from '@/i18n/routing';
 import { ProductGallery } from './ProductGallery';
 import { AddLabel, useAddedFlash } from './AddLabel';
 import { useAddToBag } from './use-add-to-bag';
@@ -17,6 +19,7 @@ import { WishlistButton } from './WishlistButton';
 /** Ficha: galería + panel de compra fijo (sticky) en escritorio, barra de compra fija en móvil. */
 export function ProductDetail({ p }: { p: ProductView }) {
   const t = useTranslations('product');
+  const locale = useLocale() as Locale;
   const addToBag = useAddToBag();
   const [added, flash] = useAddedFlash();
   const [index, setIndex] = useState(0);
@@ -77,10 +80,10 @@ export function ProductDetail({ p }: { p: ProductView }) {
 
         {p.variants.length > 1 && (
           <fieldset className="mt-8">
-            <legend className="label-micro mb-3 text-fg-subtle">{t('option')}: <span className="text-fg">{variant.label}</span></legend>
+            <legend className="label-micro mb-3 text-fg-subtle">{p.sized ? t('size') : t('option')}: <span className="text-fg">{variant.label}</span></legend>
             <div className="flex flex-wrap gap-2">
               {p.variants.map((v) => (
-                <label key={v.id} className={cn('label-micro cursor-pointer border px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2', v.id === variantId ? 'border-accent bg-accent text-surface' : 'border-line-strong hover:border-fg', v.stock <= 0 && 'opacity-40 line-through')}>
+                <label key={v.id} className={cn('label-micro cursor-pointer border px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2', p.sized && 'grid min-w-14 place-items-center', v.id === variantId ? 'border-accent bg-accent text-surface' : 'border-line-strong hover:border-fg', v.stock <= 0 && 'opacity-40 line-through')}>
                   <input type="radio" name="variant" value={v.id} checked={v.id === variantId} onChange={() => pickVariant(v.id)} className="sr-only" />
                   {v.label}
                 </label>
@@ -101,10 +104,22 @@ export function ProductDetail({ p }: { p: ProductView }) {
             <button type="button" onClick={() => setQty((q) => Math.min(max, q + 1))} disabled={qty >= max} aria-label={t('increase')} className="grid h-14 w-12 place-items-center hover:bg-fg/5 disabled:opacity-30"><PlusIcon width={16} height={16} /></button>
           </div>
           <Button size="lg" className="min-w-0 flex-1" disabled={soldOut} onClick={add}>
-            {soldOut ? t('soldOut') : <AddLabel added={added} idle={t('addToBag')} done={t('added')} />}
+            {/* En pantallas estrechas «Añadir a la bolsa» no cabe junto a cantidad y favoritos: versión corta. */}
+            {soldOut ? t('soldOut') : <AddLabel added={added} idle={<><span className="sm:hidden">{t('addShort')}</span><span className="hidden sm:inline">{t('addToBag')}</span></>} done={t('added')} />}
           </Button>
           <WishlistButton productId={p.id} name={p.name} className="h-14 w-14 border border-line-strong" />
         </div>
+
+        {p.customizable && (
+          <section aria-labelledby="custom-title" className="mt-8 border border-line-strong p-5">
+            <h2 id="custom-title" className="font-display text-lead">{t('customTitle')}</h2>
+            <p className="mt-2 text-caption text-fg-muted">{t('customText')}</p>
+            <ExternalButtonLink href={whatsappUrl(customizeMessage(p.name, p.sized ? variant.label : undefined, locale))} variant="outline" className="mt-4 w-full gap-2 sm:w-auto">
+              <ChatIcon width={18} height={18} />{t('customCta')}
+            </ExternalButtonLink>
+            <p className="mt-3 text-caption text-fg-subtle">{t('customHint')}</p>
+          </section>
+        )}
 
         <ul className="mt-8 space-y-3 border-t border-line pt-6 text-caption text-fg-muted">
           <li className="flex items-start gap-3"><TruckIcon width={20} height={20} className="mt-0.5 shrink-0" />{t('shippingNote')}</li>

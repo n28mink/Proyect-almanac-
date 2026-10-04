@@ -42,6 +42,18 @@ describe('catálogo', () => {
     }
     for (const c of categories) expect(catalog.some((p) => p.id === c.coverProductId), c.slug).toBe(true);
   });
+  it('camisas estandarizadas: 12 USD, tallas S–XL, poli-algodón, personalizables y sin acabado de metal', () => {
+    const shirts = catalog.filter((p) => p.category === 'shirts');
+    expect(shirts.map((p) => p.id)).toEqual(['cm01', 'cm02', 'cm03', 'cm04', 'cm05']);
+    for (const s of shirts) {
+      expect(s.price).toBe(1200);
+      expect(s.variants.map((v) => v.options.size.es)).toEqual(['S', 'M', 'L', 'XL']);
+      expect(s.material.es).toBe('Poli-algodón');
+      expect(s.customizable).toBe(true);
+      expect(s.finish).toBeUndefined();
+      expect(s.images.some((i) => i.role === 'detail')).toBe(true);
+    }
+  });
   it('los importes son céntimos enteros y el stock total coincide con las variantes', () => {
     for (const p of catalog) {
       expect(Number.isInteger(p.price)).toBe(true);
