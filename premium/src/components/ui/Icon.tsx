@@ -84,7 +84,10 @@ export const BankIcon = (p: P) => (
 export const CashIcon = (p: P) => (
   <svg {...base(p)}><rect x="2.8" y="6.3" width="18.4" height="11.4" rx="1.6" /><circle cx="12" cy="12" r="2.6" /><path d="M6.2 9.4h.01M17.8 14.6h.01" strokeWidth={2.2} /></svg>
 );
-/** Conversación (WhatsApp). */
-export const ChatIcon = (p: P) => (
-  <svg {...base(p)}><path d="M20 11.6a7.6 7.6 0 0 1-11.2 6.7L4.4 19.6l1.4-4.1A7.6 7.6 0 1 1 20 11.6Z" /></svg>
+/** WhatsApp: globo de conversación con auricular. */
+export const WhatsAppIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M20 11.6a7.6 7.6 0 0 1-11.2 6.7L4.4 19.6l1.4-4.1A7.6 7.6 0 1 1 20 11.6Z" />
+    <path d="M9.3 8.7c.2-.4.6-.4.9-.2l.9 1.4c.1.3 0 .5-.2.8l-.4.5c.5 1 1.3 1.8 2.3 2.3l.5-.4c.3-.2.5-.3.8-.2l1.4.9c.3.2.3.6.1.9-.5.8-1.5 1.2-2.4.9-2.3-.7-4-2.4-4.7-4.7-.2-.9 0-1.6.8-2Z" />
+  </svg>
 );

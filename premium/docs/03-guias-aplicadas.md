@@ -61,6 +61,11 @@ Se **rechazaron** (puerta de Emil): animar la apertura de la búsqueda con tecla
 - La variante se elige por **talla** (S, M, L, XL) con botones cuadrados de 56 px; la tarjeta dice «Elegir talla» y la bolsa, el pedido y WhatsApp dicen «Talla M».
 - «Camisas» entra en la navegación principal y en la rejilla de categorías de la home (la línea «Prendas» de la marca); las camisas abren el carril de novedades.
 
+### Contacto sin número visible
+
+- El número de teléfono ya no se muestra en ningún texto: el pie, la banda de la home, la confirmación del pedido y los textos legales llevan un **icono de WhatsApp que enlaza** (`wa.me`). Se anuncia como «WhatsApp» a los lectores de pantalla y mide ≥ 44 px de alto. Los textos legales usan la marca `{{whatsapp}}`, que la página sustituye por el enlace con icono.
+- La barra superior dice «Entregas en Venezuela, Maracay» y el pie «Pedidos por WhatsApp»: se retiró «precios en USD» de los textos fijos.
+
 ### Errores encontrados de paso
 
 - La **rejilla de categorías de la home no se veía en escritorio** (altura 0): la regla `.snap-row { display: flex }` estaba fuera de capa y ganaba a `lg:grid`. Ahora vive en `@layer components`.

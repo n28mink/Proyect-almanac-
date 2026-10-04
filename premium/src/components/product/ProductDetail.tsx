@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Product3D } from '@/components/three/Product3D';
 import { Button, ExternalButtonLink } from '@/components/ui/Button';
-import { ChatIcon, CheckIcon, MinusIcon, PlusIcon, ReturnIcon, TruckIcon } from '@/components/ui/Icon';
+import { CheckIcon, MinusIcon, PlusIcon, ReturnIcon, TruckIcon, WhatsAppIcon } from '@/components/ui/Icon';
 import { Price } from '@/components/ui/Price';
 import type { ProductView } from '@/lib/card-data';
 import { cn } from '@/lib/cn';
@@ -115,7 +115,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
             <h2 id="custom-title" className="font-display text-lead">{t('customTitle')}</h2>
             <p className="mt-2 text-caption text-fg-muted">{t('customText')}</p>
             <ExternalButtonLink href={whatsappUrl(customizeMessage(p.name, p.sized ? variant.label : undefined, locale))} variant="outline" className="mt-4 w-full gap-2 sm:w-auto">
-              <ChatIcon width={18} height={18} />{t('customCta')}
+              <WhatsAppIcon width={18} height={18} />{t('customCta')}
             </ExternalButtonLink>
             <p className="mt-3 text-caption text-fg-subtle">{t('customHint')}</p>
           </section>

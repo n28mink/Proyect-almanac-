@@ -30,7 +30,7 @@ export interface HomeCampaigns {
 export const defaultCampaigns: HomeCampaigns = {
   announcements: [
     L('Pedidos por WhatsApp, con atención personal', 'Orders via WhatsApp, with personal service'),
-    L('Entregas en Venezuela, precios en USD', 'Delivery within Venezuela, prices in USD'),
+    L('Entregas en Venezuela, Maracay', 'Delivery in Venezuela, Maracay'),
     L('Pago móvil, transferencia o efectivo', 'Pago móvil, transfer or cash'),
   ],
   hero: {

@@ -62,6 +62,22 @@ describe('catálogo', () => {
   });
 });
 
+describe('textos de contacto', () => {
+  it('la barra superior dice «Entregas en Venezuela, Maracay» y ningún texto fijo menciona precios en USD', () => {
+    expect(defaultCampaigns.announcements.some((a) => a.es === 'Entregas en Venezuela, Maracay')).toBe(true);
+    for (const a of defaultCampaigns.announcements) expect(`${a.es} ${a.en}`).not.toMatch(/USD/);
+    expect(es.footer.pricesNote).toBe('Pedidos por WhatsApp.');
+    expect(en.footer.pricesNote).not.toMatch(/USD/);
+  });
+  it('los textos legales no llevan el número: usan la marca que la página convierte en el icono de WhatsApp', async () => {
+    const { legalDocs, WA_TOKEN, plainLegal } = await import('@/content/legal');
+    const all = legalDocs.flatMap((d) => d.sections.flatMap((s) => [s.text.es, s.text.en]));
+    for (const t of all) expect(t).not.toMatch(/131\s?8133/);
+    expect(all.some((t) => t.includes(WA_TOKEN))).toBe(true);
+    expect(plainLegal(`escríbenos por ${WA_TOKEN}`)).toBe('escríbenos por WhatsApp');
+  });
+});
+
 describe('media registry', () => {
   it('las campañas de la home apuntan a vídeos con archivos reales', () => {
     for (const b of [defaultCampaigns.hero, defaultCampaigns.jewelry, defaultCampaigns.watches, defaultCampaigns.fashion, defaultCampaigns.story]) {

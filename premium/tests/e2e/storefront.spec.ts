@@ -21,8 +21,33 @@ test('home: marca, cabeceras de seguridad y sin errores de consola', async ({ pa
   await expect(page.locator('h1')).toHaveCount(1);
   await expect(page.locator('header').getByText('Accesorios y Prendas')).toBeVisible();
   await expect(page.locator('header a[aria-label]').first()).toBeVisible();
-  await expect(page.locator('footer')).toContainText('+58 412 131 8133');
+  // El número no se muestra: el pie lleva un enlace con icono de WhatsApp.
+  const wa = page.locator('footer a[href^="https://wa.me/584121318133"]');
+  await expect(wa).toBeVisible();
+  await expect(wa).toHaveAccessibleName('WhatsApp');
+  await expect(wa.locator('svg')).toBeVisible();
   expect(errs).toEqual([]);
+});
+
+test('el número de teléfono no se muestra en ningún sitio: solo el icono de WhatsApp que enlaza', async ({ page }) => {
+  for (const path of ['/es', '/en', '/es/shop/shirts', '/es/legal/privacy', '/es/legal/terms', '/en/legal/privacy']) {
+    await page.goto(path, { waitUntil: 'networkidle' });
+    const text = (await page.locator('body').innerText()).replace(/\s+/g, ' ');
+    expect(text, path).not.toMatch(/131\s?8133|\+?58\s?412/);
+  }
+  await page.goto('/es/legal/privacy', { waitUntil: 'networkidle' });
+  const link = page.locator('main a[href^="https://wa.me/584121318133"]');
+  await expect(link).toHaveAccessibleName('WhatsApp');
+  await expect(link.locator('svg')).toBeVisible();
+  await expect(page.locator('main')).not.toContainText('{{');
+});
+
+test('la barra superior y el pie no mencionan precios en USD', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  await expect(page.locator('footer')).not.toContainText('USD');
+  await expect(page.locator('footer')).toContainText('Pedidos por WhatsApp');
+  await expect(page.getByText('Entregas en Venezuela, Maracay')).toHaveCount(1);
+  await expect(page.getByText(/precios en USD/i)).toHaveCount(0);
 });
 
 test('las categorías existen como páginas reales', async ({ request }) => {
@@ -71,6 +96,9 @@ test('compra por WhatsApp: bolsa → pedido registrado → mensaje de WhatsApp (
   const text = decodeURIComponent(href.split('text=')[1]!);
   for (const part of ['CLV-', 'Ana Pérez', '0412 555 1234', 'Turmero', 'Total', 'Forma de pago: Pago móvil']) expect(text).toContain(part);
   await expect(wa).toHaveAttribute('target', '_blank');
+  // La ayuda para escribir por WhatsApp es un enlace con icono, sin el número.
+  await expect(page.getByRole('main').getByRole('link', { name: 'WhatsApp', exact: true })).toBeVisible();
+  expect(await page.locator('main').innerText()).not.toMatch(/131\s?8133/);
   expect(errs).toEqual([]);
 });
 

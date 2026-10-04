@@ -1,6 +1,5 @@
 import type { Localized } from '@/domain/i18n';
 import { L } from '@/domain/i18n';
-import { whatsappDisplay } from '@/lib/whatsapp';
 
 export interface LegalDoc {
   slug: 'privacy' | 'terms' | 'shipping' | 'cookies';
@@ -9,7 +8,12 @@ export interface LegalDoc {
   sections: Array<{ heading: Localized; text: Localized }>;
 }
 
-const WA = whatsappDisplay;
+/** Marca que la página de textos legales sustituye por el enlace a WhatsApp con icono (el número no se muestra). */
+export const WA_TOKEN = '{{whatsapp}}';
+const WA = WA_TOKEN;
+
+/** Texto sin marcas, para metadatos. */
+export const plainLegal = (text: string) => text.replaceAll(WA_TOKEN, 'WhatsApp');
 
 /**
  * Textos legales de Clover, tomados de los del catálogo original (Venezuela, pedidos por WhatsApp) y adaptados a la
@@ -22,7 +26,7 @@ export const legalDocs: LegalDoc[] = [
     title: L('Política de privacidad', 'Privacy policy'),
     updated: '2026-09-30',
     sections: [
-      { heading: L('1. Responsable', '1. Controller'), text: L(`Clover, Accesorios y Prendas, ubicada en Valle Fresco, Turmero, Maracay, Venezuela. Para cualquier asunto de privacidad escríbenos por WhatsApp al ${WA}.`, `Clover, Accessories & Apparel, based in Valle Fresco, Turmero, Maracay, Venezuela. For any privacy matter, message us on WhatsApp at ${WA}.`) },
+      { heading: L('1. Responsable', '1. Controller'), text: L(`Clover, Accesorios y Prendas, ubicada en Valle Fresco, Turmero, Maracay, Venezuela. Para cualquier asunto de privacidad escríbenos por ${WA}.`, `Clover, Accessories & Apparel, based in Valle Fresco, Turmero, Maracay, Venezuela. For any privacy matter, message us on ${WA}.`) },
       { heading: L('2. Qué datos recogemos', '2. What data we collect'), text: L('Datos de pedido: al hacer un pedido nos compartes tu nombre, teléfono y dirección de entrega; el pedido queda registrado en nuestro sistema y lo confirmamos por WhatsApp. Carrito y favoritos: se guardan únicamente en tu propio dispositivo (almacenamiento local del navegador) y puedes borrarlos cuando quieras.', 'Order data: when you place an order you share your name, phone and delivery address; the order is recorded in our system and we confirm it on WhatsApp. Cart and favorites: stored only on your own device (browser local storage) and you can delete them at any time.') },
       { heading: L('3. Para qué los usamos', '3. What we use it for'), text: L('Gestionar pedidos y entregas, coordinar pagos y responder tus consultas. No usamos tus datos para publicidad de terceros.', 'To manage orders and deliveries, arrange payment and answer your questions. We do not use your data for third-party advertising.') },
       { heading: L('4. Con quién los compartimos', '4. Who we share it with'), text: L('No vendemos ni alquilamos tus datos. Al escribirnos por WhatsApp, tus mensajes se rigen también por la política de privacidad de WhatsApp (Meta).', 'We do not sell or rent your data. When you message us on WhatsApp, your messages are also governed by WhatsApp’s (Meta) privacy policy.') },
@@ -41,7 +45,7 @@ export const legalDocs: LegalDoc[] = [
       { heading: L('3. Formas de pago', '3. Payment methods'), text: L('Aceptamos pago móvil, transferencia bancaria y efectivo, coordinados por WhatsApp al confirmar tu pedido. En esta página no se cobra nada.', 'We accept pago móvil, bank transfer and cash, arranged on WhatsApp when we confirm your order. Nothing is charged on this website.') },
       { heading: L('4. Pedidos y disponibilidad', '4. Orders and availability'), text: L('El stock publicado es referencial y está sujeto a disponibilidad. Tu pedido queda firme cuando confirmamos disponibilidad y pago. Si una pieza se agotó, te ofrecemos una alternativa o la devolución de lo abonado.', 'Published stock is indicative and subject to availability. Your order is firm once we confirm availability and payment. If a piece is sold out, we offer an alternative or a refund of what you paid.') },
       { heading: L('5. Uso del sitio', '5. Use of the site'), text: L('El contenido (textos, fotos y diseño) es propiedad de Clover y está protegido. No está permitido copiarlo para uso comercial sin autorización.', 'The content (text, photos and design) belongs to Clover and is protected. Copying it for commercial use without permission is not allowed.') },
-      { heading: L('6. Legislación aplicable', '6. Governing law'), text: L(`Estos términos se rigen por las leyes de la República Bolivariana de Venezuela. Para dudas o reclamos, escríbenos por WhatsApp al ${WA}.`, `These terms are governed by the laws of the Bolivarian Republic of Venezuela. For questions or claims, message us on WhatsApp at ${WA}.`) },
+      { heading: L('6. Legislación aplicable', '6. Governing law'), text: L(`Estos términos se rigen por las leyes de la República Bolivariana de Venezuela. Para dudas o reclamos, escríbenos por ${WA}.`, `These terms are governed by the laws of the Bolivarian Republic of Venezuela. For questions or claims, message us on ${WA}.`) },
     ],
   },
   {
