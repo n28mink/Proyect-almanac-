@@ -8,9 +8,6 @@ export function whatsappUrl(text?: string): string {
   return `https://wa.me/${site.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ''}`;
 }
 
-/** Número legible: +58 412 131 8133. */
-export const whatsappDisplay = `+${site.whatsapp.slice(0, 2)} ${site.whatsapp.slice(2, 5)} ${site.whatsapp.slice(5, 8)} ${site.whatsapp.slice(8)}`;
-
 export const greeting = (locale: Locale) => (locale === 'es' ? 'Hola, Clover🍀. Tengo una consulta.' : 'Hello, Clover🍀. I have a question.');
 
 /** Mensaje de pedido para WhatsApp. Lo arma el servidor a partir del pedido ya valorado, nunca del cliente. */

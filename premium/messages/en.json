@@ -252,7 +252,7 @@
     "motionReduce": "Reduce motion",
     "motionRestore": "Turn motion on",
     "cookies": "Cookies",
-    "pricesNote": "Prices in USD. Orders via WhatsApp."
+    "pricesNote": "Orders via WhatsApp."
   },
   "seo": {
     "title": "Clover — Accessories & Pieces, chosen one by one",
@@ -295,7 +295,7 @@
     "successTitle": "Order received!",
     "successText": "One last step: send us your order on WhatsApp so we can confirm availability, delivery cost and payment.",
     "sendWhatsapp": "Send order on WhatsApp",
-    "whatsappHint": "If WhatsApp does not open, message us at {number} and mention order {order}.",
+    "whatsappHint": "If the button does not open WhatsApp, message us on <wa>WhatsApp</wa> and mention order {order}.",
     "status": "Status",
     "orderStatus": {
       "pending_payment": "Awaiting confirmation",

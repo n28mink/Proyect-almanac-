@@ -12,7 +12,8 @@ import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { formatMoney } from '@/lib/format';
 import { buildMetadata } from '@/lib/seo';
-import { orderMessage, whatsappDisplay, whatsappUrl } from '@/lib/whatsapp';
+import { WhatsAppLink } from '@/components/ui/WhatsAppLink';
+import { orderMessage, whatsappUrl } from '@/lib/whatsapp';
 import type { Locale } from '@/i18n/routing';
 import { getOrder } from '@/server/repositories/orders';
 
@@ -61,7 +62,7 @@ export default async function SuccessPage({ params, searchParams }: { params: Pr
         <ExternalButtonLink href={wa} size="lg">{t('sendWhatsapp')}</ExternalButtonLink>
         <ButtonLink href="/shop" variant="outline" size="lg" transition="curtain">{t('continueShopping')}</ButtonLink>
       </div>
-      <p className="mt-6 text-caption text-fg-muted">{t('whatsappHint', { number: whatsappDisplay, order: order.number })}</p>
+      <p className="mt-6 text-caption text-fg-muted">{t.rich('whatsappHint', { order: order.number, wa: (chunks) => <WhatsAppLink href={wa} label={chunks as string} className="text-fg underline underline-offset-4" /> })}</p>
     </PageShell>
   );
 }

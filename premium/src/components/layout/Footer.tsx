@@ -3,7 +3,8 @@ import { Logo } from '@/components/brand/Logo';
 import { TransitionLink } from '@/components/motion/TransitionLink';
 import type { Locale } from '@/i18n/routing';
 import { site } from '@/config/site';
-import { greeting, whatsappDisplay, whatsappUrl } from '@/lib/whatsapp';
+import { WhatsAppLink } from '@/components/ui/WhatsAppLink';
+import { greeting, whatsappUrl } from '@/lib/whatsapp';
 import { MotionToggle } from './MotionToggle';
 import { LocaleSwitcher } from './Switchers';
 import type { NavData } from './nav-data';
@@ -48,7 +49,7 @@ export async function Footer({ nav }: { nav: NavData }) {
         <nav aria-label={t('help')} className={col}>
           <h2 className={head}>{t('help')}</h2>
           <ul>
-            <li><a href={wa} target="_blank" rel="noopener noreferrer" className={link}>WhatsApp {whatsappDisplay}</a></li>
+            <li><WhatsAppLink href={wa} className={link} /></li>
             <li><TransitionLink href="/legal/shipping" className={link}>{t('shipping')}</TransitionLink></li>
             <li><TransitionLink href="/legal/privacy" className={link}>{t('privacy')}</TransitionLink></li>
             <li><TransitionLink href="/legal/terms" className={link}>{t('terms')}</TransitionLink></li>

@@ -216,6 +216,7 @@ for (const p of source) {
 // Camisas (scripts/data/shirts.json): precio y tallas confirmados por la tienda; stock inicial editable en el panel.
 const shirts = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/shirts.json'), 'utf8'));
 const NECK = { crew: L('Redondo', 'Crew neck'), v: L('En V', 'V-neck') };
+const SHIRT_VIEWS = { back: L('vista de espalda', 'back view') };
 const SHIRT_STORY = L(
   'Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.',
   'Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote.',
@@ -224,9 +225,15 @@ for (const s of shirts.items) {
   const m = media.images[s.id];
   const dm = media.images[`${s.id}-detail`];
   if (!m || !dm) throw new Error(`Sin metadatos de imagen: ${s.id} (npm run media:shirts)`);
+  const img = (x, role, alt) => ({ src: x.src, width: x.width, height: x.height, blur: x.blur, tone: x.tone, focal: x.focal, role, alt });
+  // Galería: de frente, las vistas extra que existan (espalda) y el acercamiento al estampado.
   const images = [
-    { src: m.src, width: m.width, height: m.height, blur: m.blur, tone: m.tone, focal: m.focal, role: s.id === 'cm03' ? 'main' : 'lifestyle', alt: s.alt },
-    { src: dm.src, width: dm.width, height: dm.height, blur: dm.blur, tone: dm.tone, focal: dm.focal, role: 'detail', alt: L(`Detalle del estampado de la ${s.name.es}`, `Close-up of the ${s.name.en} print`) },
+    img(m, s.id === 'cm03' || media.images[`${s.id}-back`] ? 'main' : 'lifestyle', s.alt),
+    ...Object.entries(SHIRT_VIEWS).flatMap(([view, label]) => {
+      const v = media.images[`${s.id}-${view}`];
+      return v ? [img(v, 'main', L(`${s.name.es}, ${label.es}`, `${s.name.en}, ${label.en}`))] : [];
+    }),
+    img(dm, 'detail', L(`Detalle del estampado de la ${s.name.es}`, `Close-up of the ${s.name.en} print`)),
   ];
   const variants = shirts.sizes.map((size) => ({
     id: `${s.id}-${size.toLowerCase()}`,
@@ -266,6 +273,7 @@ for (const s of shirts.items) {
     images,
     videos: [],
     thumbnail: images[0].src,
+    // Al pasar el ratón: la segunda foto (espalda si existe; si no, el detalle).
     hoverMedia: { type: 'image', imageIndex: 1 },
     highlights: [
       L('Poli-algodón', 'Poly-cotton'),
