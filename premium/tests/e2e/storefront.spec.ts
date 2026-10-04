@@ -139,6 +139,25 @@ test('forma de pago: iconos, preselección, texto de la elegida y resumen del pe
   expect(errs).toEqual([]);
 });
 
+test('camisas: filtro por color en la URL, sin tocar las tallas', async ({ page }) => {
+  const errs = errors(page);
+  await page.goto('/es/shop/shirts', { waitUntil: 'networkidle' });
+  const group = page.getByRole('group', { name: 'Color de la prenda' }).first();
+  await expect(group.getByRole('checkbox')).toHaveCount(4);
+  // La casilla es controlada por la URL: se hace clic y se espera a que la URL cambie (check() exige el cambio al instante).
+  await group.getByRole('checkbox', { name: /Coral/ }).click();
+  await expect(page).toHaveURL(/color=coral/);
+  await expect(group.getByRole('checkbox', { name: /Coral/ })).toBeChecked();
+  await expect(page.locator('article.product-card')).toHaveCount(1);
+  await expect(page.getByRole('heading', { name: 'Camisa Margaritas' })).toBeVisible();
+  await page.getByRole('button', { name: /Quitar filtro Coral/ }).click();
+  await expect(page.locator('article.product-card')).toHaveCount(5);
+  // La joyería no ofrece esa faceta.
+  await page.goto('/es/shop/rings', { waitUntil: 'networkidle' });
+  await expect(page.getByRole('group', { name: 'Color de la prenda' })).toHaveCount(0);
+  expect(errs).toEqual([]);
+});
+
 test('camisas: tallas S–XL a 12 USD y personalización cotizada por WhatsApp', async ({ page }) => {
   const errs = errors(page);
   await page.goto('/es/shop/shirts', { waitUntil: 'networkidle' });
@@ -153,6 +172,9 @@ test('camisas: tallas S–XL a 12 USD y personalización cotizada por WhatsApp',
   const quote = page.getByRole('link', { name: /Cotizar personalización/ });
   const text = decodeURIComponent((await quote.getAttribute('href'))!.split('text=')[1]!);
   expect(text).toContain("Camisa God's Child en talla XL");
+  await expect(page.getByText('Los colores pueden variar un poco entre la pantalla y la prenda impresa.')).toBeVisible();
+  // Sin «Avísame»: las tallas se quedan como están.
+  await expect(page.getByText(/avísame/i)).toHaveCount(0);
   await expect(page.getByText('Poli-algodón').first()).toBeVisible();
   expect(errs).toEqual([]);
 });

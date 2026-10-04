@@ -35,3 +35,9 @@ Las camisas viven en `scripts/data/shirts.json` (precio único, tallas, stock in
 ## Formas de pago
 
 `src/domain/commerce.ts → paymentMethods`: pago móvil (preseleccionado), transferencia bancaria y efectivo. El cliente elige en el checkout (tarjetas con icono y, debajo, en texto, qué pasa con la elegida); la elección aparece en el resumen del pedido, en la confirmación, en el mensaje de WhatsApp y en el panel de pedidos. No se cobra en línea: los datos de pago se envían por WhatsApp.
+
+## Medidas, peso y cuidados
+
+`scripts/data/product-details.json` (hoy vacío) añade filas a las especificaciones de cada ficha al correr `npm run seed`: `size` (medidas), `weight` (peso) y `care` (cuidados; sustituye al texto genérico). Cada valor es un texto igual en los dos idiomas o `{ "es": "…", "en": "…" }`. Solo se llena con datos reales confirmados por la tienda: por pieza, medidas en mm y peso en g; por camisa, medidas por talla en cm y cuidados según el método de impresión (a confirmar con quien imprime). Si un id no existe en el catálogo, el seed falla con un mensaje claro.
+
+El aviso de variación de color entre pantalla y prenda impresa ya aparece en el bloque «Personalízala» de las camisas.

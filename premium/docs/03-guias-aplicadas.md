@@ -66,6 +66,14 @@ Se **rechazaron** (puerta de Emil): animar la apertura de la búsqueda con tecla
 - El número de teléfono ya no se muestra en ningún texto: el pie, la banda de la home, la confirmación del pedido y los textos legales llevan un **icono de WhatsApp que enlaza** (`wa.me`). Se anuncia como «WhatsApp» a los lectores de pantalla y mide ≥ 44 px de alto. Los textos legales usan la marca `{{whatsapp}}`, que la página sustituye por el enlace con icono.
 - La barra superior dice «Entregas en Venezuela, Maracay» y el pie «Pedidos por WhatsApp»: se retiró «precios en USD» de los textos fijos.
 
+### Filtro de color y campos de ficha (investigación de catálogo)
+
+- **Filtro «Color de la prenda»** en las camisas, con claves estables en la URL (`?color=coral`), de modo que el enlace no cambia al cambiar de idioma. La joyería no lo muestra (ya tiene «Tono»).
+- **Tallas sin cambios** por decisión de la tienda: sin ventana nueva en la tarjeta, sin tallas deshabilitadas y sin «Avísame».
+- **Campos de medidas, peso y cuidados** listos para llenar (`scripts/data/product-details.json`); se muestran solo cuando hay datos reales.
+- **Aviso de color** en «Personalízala»: los colores pueden variar entre la pantalla y la prenda impresa.
+- Descartado: poner las piezas de Clover sobre fotos de modelos ajenas. Probado con una foto; sobre fondo propio se nota lo falso y la escala sería inventada.
+
 ### Errores encontrados de paso
 
 - La **rejilla de categorías de la home no se veía en escritorio** (altura 0): la regla `.snap-row { display: flex }` estaba fuera de capa y ganaba a `lg:grid`. Ahora vive en `@layer components`.

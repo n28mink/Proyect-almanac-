@@ -33,6 +33,8 @@ export interface CardData {
   defaultVariantId: string;
   finish: Product['finish'];
   color: string[];
+  /** Color de la prenda (solo piezas sin acabado de metal): clave estable (sin acentos) + etiqueta localizada. */
+  garmentColors: Array<{ key: string; label: string }>;
   material: string;
   materialKey: 'steel' | 'metal' | 'textile';
   tags: string[];
@@ -42,6 +44,9 @@ export interface CardData {
   featured: boolean;
   order: number;
 }
+
+/** Clave estable de un color: minúsculas y sin acentos (la URL no cambia al cambiar de idioma). */
+const colorKey = (es: string) => es.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 /** Lo que se elige en la ficha: la talla en prendas, el acabado o la esfera en joyería. */
 const optionOf = (p: Product, v: Product['variants'][number]) => (isSized(p) ? v.options.size : v.options.color);
@@ -74,6 +79,7 @@ export function toCardData(p: Product, locale: Locale): CardData {
     defaultVariantId: (p.variants.find((v) => v.stock > 0) ?? p.variants[0]!).id,
     finish: p.finish,
     color: p.color.map((c) => pick(c, locale)),
+    garmentColors: p.finish ? [] : p.color.map((c) => ({ key: colorKey(c.es), label: pick(c, locale) })),
     material: pick(p.material, locale),
     materialKey: p.category === 'shirts' ? 'textile' : /steel/i.test(p.material.en) ? 'steel' : 'metal',
     tags: p.tags,
