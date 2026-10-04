@@ -20,7 +20,7 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow }: { lo
 
   const labels = {
     finish: { gold: t('finish.gold'), silver: t('finish.silver'), rose: t('finish.rose'), mixed: t('finish.mixed') },
-    material: { steel: t('materialKeys.steel'), metal: t('materialKeys.metal') },
+    material: { steel: t('materialKeys.steel'), metal: t('materialKeys.metal'), textile: t('materialKeys.textile') },
     audience: { women: pick(categories.find((c) => c.slug === 'women')!.name, locale), men: pick(categories.find((c) => c.slug === 'men')!.name, locale) },
     collection: Object.fromEntries(collections.map((c) => [c.slug, pick(c.name, locale)])),
   };

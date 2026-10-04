@@ -1,6 +1,6 @@
 import { getCategory } from '@/config/taxonomy';
 import { getVideo, type VideoAsset } from '@/content/media';
-import { isInStock, type Product } from '@/domain/catalog';
+import { isInStock, isSized, type Product } from '@/domain/catalog';
 import { pick } from '@/domain/i18n';
 import type { Locale } from '@/i18n/routing';
 
@@ -28,11 +28,13 @@ export interface CardData {
   badge?: 'new' | 'bestseller' | 'soldOut' | 'lowStock';
   inStock: boolean;
   variants: Array<{ id: string; label: string; stock: number; imageSrc: string }>;
+  /** La variante se elige por talla (camisas). */
+  sized: boolean;
   defaultVariantId: string;
   finish: Product['finish'];
   color: string[];
   material: string;
-  materialKey: 'steel' | 'metal';
+  materialKey: 'steel' | 'metal' | 'textile';
   tags: string[];
   audience: string[];
   collection?: string;
@@ -40,6 +42,9 @@ export interface CardData {
   featured: boolean;
   order: number;
 }
+
+/** Lo que se elige en la ficha: la talla en prendas, el acabado o la esfera en joyería. */
+const optionOf = (p: Product, v: Product['variants'][number]) => (isSized(p) ? v.options.size : v.options.color);
 
 const toImage = (img: Product['images'][number], locale: Locale): CardImage => ({
   src: img.src, width: img.width, height: img.height, blur: img.blur, alt: pick(img.alt, locale), focal: img.focal,
@@ -64,12 +69,13 @@ export function toCardData(p: Product, locale: Locale): CardData {
     description: pick(p.description, locale),
     badge,
     inStock: isInStock(p),
-    variants: p.variants.map((v) => ({ id: v.id, label: pick(v.options.color, locale), stock: v.stock, imageSrc: p.images[v.imageIndex ?? 0]?.src ?? p.thumbnail })),
+    variants: p.variants.map((v) => ({ id: v.id, label: pick(optionOf(p, v), locale), stock: v.stock, imageSrc: p.images[v.imageIndex ?? 0]?.src ?? p.thumbnail })),
+    sized: isSized(p),
     defaultVariantId: (p.variants.find((v) => v.stock > 0) ?? p.variants[0]!).id,
     finish: p.finish,
     color: p.color.map((c) => pick(c, locale)),
     material: pick(p.material, locale),
-    materialKey: /steel/i.test(p.material.en) ? 'steel' : 'metal',
+    materialKey: p.category === 'shirts' ? 'textile' : /steel/i.test(p.material.en) ? 'steel' : 'metal',
     tags: p.tags,
     audience: p.audience,
     collection: p.collection,
@@ -93,6 +99,8 @@ export interface ProductView {
   images: CardImage[];
   detailIndex: number;
   variants: Array<{ id: string; label: string; stock: number; imageIndex: number }>;
+  sized: boolean;
+  customizable: boolean;
   highlights: string[];
   specifications: Array<{ label: string; value: string }>;
   badge?: CardData['badge'];
@@ -116,7 +124,9 @@ export function toProductView(p: Product, locale: Locale, collectionName?: strin
     story: pick(p.story, locale),
     images,
     detailIndex: Math.max(0, p.images.findIndex((i) => i.role === 'detail')),
-    variants: p.variants.map((v) => ({ id: v.id, label: pick(v.options.color, locale), stock: v.stock, imageIndex: v.imageIndex ?? 0 })),
+    variants: p.variants.map((v) => ({ id: v.id, label: pick(optionOf(p, v), locale), stock: v.stock, imageIndex: v.imageIndex ?? 0 })),
+    sized: card.sized,
+    customizable: p.customizable ?? false,
     highlights: p.highlights.map((h) => pick(h, locale)),
     specifications: p.specifications.map((s) => ({ label: pick(s.label, locale), value: pick(s.value, locale) })),
     badge: card.badge,

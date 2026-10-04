@@ -11,7 +11,7 @@ import type { Locale } from '@/i18n/routing';
 import { MAX_PER_LINE, useCart } from '@/stores/cart-store';
 
 /** Líneas valoradas por el servidor con control de cantidad. Reutilizado por el drawer y el checkout. */
-export function CartLines({ quote, compact = false }: { quote: Quote; compact?: boolean }) {
+export function CartLines({ quote }: { quote: Quote }) {
   const t = useTranslations('cart');
   const locale = useLocale() as Locale;
   const setQuantity = useCart((s) => s.setQuantity);
@@ -30,7 +30,7 @@ export function CartLines({ quote, compact = false }: { quote: Quote; compact?: 
                 <TransitionLink href={`/product/${l.slug}`} className="block font-display text-lead leading-tight hover:text-accent">
                   {pick(l.name, locale)}
                 </TransitionLink>
-                {!compact && <p className="mt-1 text-caption text-fg-muted">{pick(l.variantLabel, locale)}</p>}
+                <p className="mt-1 text-caption text-fg-muted">{pick(l.variantLabel, locale)}</p>
               </div>
               <Price cents={l.lineTotal} className="text-caption" />
             </div>

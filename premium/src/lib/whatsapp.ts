@@ -1,5 +1,5 @@
 import { site } from '@/config/site';
-import type { Order } from '@/domain/commerce';
+import { paymentMethodLabel, type Order } from '@/domain/commerce';
 import { pick } from '@/domain/i18n';
 import type { Locale } from '@/i18n/routing';
 import { formatMoney } from './format';
@@ -29,8 +29,22 @@ export function orderMessage(order: Order, locale: Locale): string {
     where,
     `${es ? 'Nombre' : 'Name'}: ${order.contact.fullName}`,
     `${es ? 'Teléfono' : 'Phone'}: ${order.contact.phone}`,
+    ...(order.paymentMethod ? [`${es ? 'Forma de pago' : 'Payment method'}: ${pick(paymentMethodLabel[order.paymentMethod], locale)}`] : []),
     ...(order.notes ? [`${es ? 'Nota' : 'Note'}: ${order.notes}`] : []),
     '',
-    es ? '¿Me confirman disponibilidad, costo de entrega y cómo pagar?' : 'Could you confirm availability, delivery cost and how to pay?',
+    closing(order, es),
   ].join('\n');
+}
+
+function closing(order: Order, es: boolean): string {
+  if (order.paymentMethod === 'efectivo') return es ? '¿Me confirman disponibilidad, costo de entrega y cuándo pago?' : 'Could you confirm availability, delivery cost and when to pay?';
+  if (order.paymentMethod) return es ? '¿Me confirman disponibilidad, costo de entrega y los datos para el pago?' : 'Could you confirm availability, delivery cost and the payment details?';
+  return es ? '¿Me confirman disponibilidad, costo de entrega y cómo pagar?' : 'Could you confirm availability, delivery cost and how to pay?';
+}
+
+/** Consulta para personalizar una camisa: la personalización se cotiza por WhatsApp y no pasa por el carrito. */
+export function customizeMessage(name: string, size: string | undefined, locale: Locale): string {
+  return locale === 'es'
+    ? `Hola, Clover🍀. Quiero personalizar la ${name}${size ? ` en talla ${size}` : ''}. Mi idea es: `
+    : `Hello, Clover🍀. I'd like to customize the ${name}${size ? ` in size ${size}` : ''}. My idea is: `;
 }

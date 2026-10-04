@@ -23,7 +23,9 @@ const source = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/clover-s
 fs.mkdirSync(OUT, { recursive: true });
 
 const manifest = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8')) : {};
-manifest.images = {};
+// Las camisas tienen su propio paso (scripts/build-shirts.mjs): se conservan sus entradas.
+const shirtIds = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/shirts.json'), 'utf8')).items.map((s) => s.id);
+manifest.images = Object.fromEntries(Object.entries(manifest.images ?? {}).filter(([k]) => shirtIds.includes(k.replace(/-detail$/, ''))));
 
 /** Centroide de "atención" (gradiente de luminancia ponderado al centro) → punto focal 0–1. */
 async function focalPoint(buffer) {

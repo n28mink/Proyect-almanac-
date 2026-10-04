@@ -14309,5 +14309,1311 @@
     "en": "Gold-tone ring with a large hammered leaf that wraps the finger."
    }
   }
+ },
+ {
+  "id": "cm01",
+  "slug": "gods-child-t-shirt",
+  "name": {
+   "es": "Camisa God's Child",
+   "en": "God's Child T-shirt"
+  },
+  "description": {
+   "es": "Camisa celeste de poli-algodón con el estampado «God's Child» y una cita de 2 Corintios.",
+   "en": "Light-blue poly-cotton T-shirt with a “God's Child” print and a verse from 2 Corinthians."
+  },
+  "story": {
+   "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
+   "en": "Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote."
+  },
+  "category": "shirts",
+  "categories": [
+   "shirts",
+   "women",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "shirt",
+   "customizable",
+   "faith"
+  ],
+  "price": 1200,
+  "currency": "USD",
+  "material": {
+   "es": "Poli-algodón",
+   "en": "Poly-cotton"
+  },
+  "color": [
+   {
+    "es": "Celeste",
+    "en": "Light blue"
+   }
+  ],
+  "customizable": true,
+  "sizes": [
+   {
+    "es": "S",
+    "en": "S"
+   },
+   {
+    "es": "M",
+    "en": "M"
+   },
+   {
+    "es": "L",
+    "en": "L"
+   },
+   {
+    "es": "XL",
+    "en": "XL"
+   }
+  ],
+  "variants": [
+   {
+    "id": "cm01-s",
+    "sku": "CLV-CM01-S",
+    "options": {
+     "color": {
+      "es": "Celeste",
+      "en": "Light blue"
+     },
+     "size": {
+      "es": "S",
+      "en": "S"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm01-m",
+    "sku": "CLV-CM01-M",
+    "options": {
+     "color": {
+      "es": "Celeste",
+      "en": "Light blue"
+     },
+     "size": {
+      "es": "M",
+      "en": "M"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm01-l",
+    "sku": "CLV-CM01-L",
+    "options": {
+     "color": {
+      "es": "Celeste",
+      "en": "Light blue"
+     },
+     "size": {
+      "es": "L",
+      "en": "L"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm01-xl",
+    "sku": "CLV-CM01-XL",
+    "options": {
+     "color": {
+      "es": "Celeste",
+      "en": "Light blue"
+     },
+     "size": {
+      "es": "XL",
+      "en": "XL"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/cm01.jpg",
+    "width": 1000,
+    "height": 1250,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAARAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EACQQAAEDAgQHAAAAAAAAAAAAAAEAAgQDEhExcbEFEzJBQlFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A0s5xEYta/ll5DLx4490yOSY9O43G0Yn39UvE3NMdrXZOdsCU+OcI1IHOwbKRE8rOnqdk9vQNEIQf/9k=",
+    "tone": "#d3d7d3",
+    "focal": {
+     "x": 0.5,
+     "y": 0.45
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Camisa celeste God's Child, usada con jeans",
+     "en": "Light-blue God's Child T-shirt, worn with jeans"
+    }
+   },
+   {
+    "src": "/media/products/cm01-detail.jpg",
+    "width": 570,
+    "height": 570,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgEEAQUBAAAAAAAAAAAAAQIDAAQFERMSQVFhkbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEAAwAAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwDalVLnLmOdAwjAZN9j6+1a1WO3uJo4VK9Z5GHkmg5CXhyLNrewD+UvGOJy8hXR1qlwFT//2Q==",
+    "tone": "#b7bbc0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle del estampado de la Camisa God's Child",
+     "en": "Close-up of the God's Child T-shirt print"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/cm01.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Poli-algodón",
+    "en": "Poly-cotton"
+   },
+   {
+    "es": "Tallas S, M, L y XL",
+    "en": "Sizes S, M, L and XL"
+   },
+   {
+    "es": "Estampado por sublimación de tinta o DTF",
+    "en": "Printed by ink sublimation or DTF"
+   },
+   {
+    "es": "Personalizable a pedido; se cotiza por WhatsApp",
+    "en": "Customizable on request; quoted via WhatsApp"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Material",
+     "en": "Material"
+    },
+    "value": {
+     "es": "Poli-algodón",
+     "en": "Poly-cotton"
+    }
+   },
+   {
+    "label": {
+     "es": "Color",
+     "en": "Color"
+    },
+    "value": {
+     "es": "Celeste",
+     "en": "Light blue"
+    }
+   },
+   {
+    "label": {
+     "es": "Cuello",
+     "en": "Neckline"
+    },
+    "value": {
+     "es": "Redondo",
+     "en": "Crew neck"
+    }
+   },
+   {
+    "label": {
+     "es": "Tallas",
+     "en": "Sizes"
+    },
+    "value": {
+     "es": "S, M, L, XL",
+     "en": "S, M, L, XL"
+    }
+   },
+   {
+    "label": {
+     "es": "Estampado",
+     "en": "Print"
+    },
+    "value": {
+     "es": "Sublimación de tinta o DTF, según el color de la camisa",
+     "en": "Ink sublimation or DTF, depending on the shirt color"
+    }
+   },
+   {
+    "label": {
+     "es": "Personalización",
+     "en": "Customization"
+    },
+    "value": {
+     "es": "A pedido; se cotiza por WhatsApp",
+     "en": "On request; quoted via WhatsApp"
+    }
+   }
+  ],
+  "stock": 20,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Camisa God's Child | Clover",
+    "en": "God's Child T-shirt | Clover"
+   },
+   "description": {
+    "es": "Camisa celeste de poli-algodón con el estampado «God's Child» y una cita de 2 Corintios.",
+    "en": "Light-blue poly-cotton T-shirt with a “God's Child” print and a verse from 2 Corinthians."
+   }
+  }
+ },
+ {
+  "id": "cm02",
+  "slug": "life-is-too-short-to-care-t-shirt",
+  "name": {
+   "es": "Camisa Life is too short to care",
+   "en": "Life Is Too Short to Care T-shirt"
+  },
+  "description": {
+   "es": "Camisa marrón de poli-algodón con una flor de hibisco en tonos coral y la frase «Life is too short to care».",
+   "en": "Brown poly-cotton T-shirt with a coral-toned hibiscus and the phrase “Life is too short to care”."
+  },
+  "story": {
+   "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
+   "en": "Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote."
+  },
+  "category": "shirts",
+  "categories": [
+   "shirts",
+   "women",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "shirt",
+   "customizable",
+   "flower"
+  ],
+  "price": 1200,
+  "currency": "USD",
+  "material": {
+   "es": "Poli-algodón",
+   "en": "Poly-cotton"
+  },
+  "color": [
+   {
+    "es": "Marrón",
+    "en": "Brown"
+   }
+  ],
+  "customizable": true,
+  "sizes": [
+   {
+    "es": "S",
+    "en": "S"
+   },
+   {
+    "es": "M",
+    "en": "M"
+   },
+   {
+    "es": "L",
+    "en": "L"
+   },
+   {
+    "es": "XL",
+    "en": "XL"
+   }
+  ],
+  "variants": [
+   {
+    "id": "cm02-s",
+    "sku": "CLV-CM02-S",
+    "options": {
+     "color": {
+      "es": "Marrón",
+      "en": "Brown"
+     },
+     "size": {
+      "es": "S",
+      "en": "S"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm02-m",
+    "sku": "CLV-CM02-M",
+    "options": {
+     "color": {
+      "es": "Marrón",
+      "en": "Brown"
+     },
+     "size": {
+      "es": "M",
+      "en": "M"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm02-l",
+    "sku": "CLV-CM02-L",
+    "options": {
+     "color": {
+      "es": "Marrón",
+      "en": "Brown"
+     },
+     "size": {
+      "es": "L",
+      "en": "L"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm02-xl",
+    "sku": "CLV-CM02-XL",
+    "options": {
+     "color": {
+      "es": "Marrón",
+      "en": "Brown"
+     },
+     "size": {
+      "es": "XL",
+      "en": "XL"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/cm02.jpg",
+    "width": 1000,
+    "height": 1250,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAARAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACUQAAICAQMBCQAAAAAAAAAAAAECAAQDBRExFDM0QVFxcoGxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEREkMx/9oADAMBAAIRAxEAPwDQsV+tzZMjuygsQFPh8SLSbgoWrC7bpxsBz5GOs52r5cyhyrK5YGRUsxNjKVABIEJJ9KHWIH6730ep+pHT7V/aP2EI2bA0R//Z",
+    "tone": "#a38076",
+    "focal": {
+     "x": 0.5,
+     "y": 0.45
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Camisa marrón con flor de hibisco y la frase Life is too short to care",
+     "en": "Brown T-shirt with a hibiscus and the phrase Life is too short to care"
+    }
+   },
+   {
+    "src": "/media/products/cm02-detail.jpg",
+    "width": 870,
+    "height": 870,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAQQCAwEAAAAAAAAAAAABAgMABBEhEkEFMXFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwCglkjESTY4leQA0T9NTPKwLaGPDhlYHrBH2ni7EVpCzKSFABwd7/KLfyLNMZI1GDgEP3r3QK0ryH//2Q==",
+    "tone": "#c18e79",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle del estampado de la Camisa Life is too short to care",
+     "en": "Close-up of the Life Is Too Short to Care T-shirt print"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/cm02.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Poli-algodón",
+    "en": "Poly-cotton"
+   },
+   {
+    "es": "Tallas S, M, L y XL",
+    "en": "Sizes S, M, L and XL"
+   },
+   {
+    "es": "Estampado por sublimación de tinta o DTF",
+    "en": "Printed by ink sublimation or DTF"
+   },
+   {
+    "es": "Personalizable a pedido; se cotiza por WhatsApp",
+    "en": "Customizable on request; quoted via WhatsApp"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Material",
+     "en": "Material"
+    },
+    "value": {
+     "es": "Poli-algodón",
+     "en": "Poly-cotton"
+    }
+   },
+   {
+    "label": {
+     "es": "Color",
+     "en": "Color"
+    },
+    "value": {
+     "es": "Marrón",
+     "en": "Brown"
+    }
+   },
+   {
+    "label": {
+     "es": "Cuello",
+     "en": "Neckline"
+    },
+    "value": {
+     "es": "Redondo",
+     "en": "Crew neck"
+    }
+   },
+   {
+    "label": {
+     "es": "Tallas",
+     "en": "Sizes"
+    },
+    "value": {
+     "es": "S, M, L, XL",
+     "en": "S, M, L, XL"
+    }
+   },
+   {
+    "label": {
+     "es": "Estampado",
+     "en": "Print"
+    },
+    "value": {
+     "es": "Sublimación de tinta o DTF, según el color de la camisa",
+     "en": "Ink sublimation or DTF, depending on the shirt color"
+    }
+   },
+   {
+    "label": {
+     "es": "Personalización",
+     "en": "Customization"
+    },
+    "value": {
+     "es": "A pedido; se cotiza por WhatsApp",
+     "en": "On request; quoted via WhatsApp"
+    }
+   }
+  ],
+  "stock": 20,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Camisa Life is too short to care | Clover",
+    "en": "Life Is Too Short to Care T-shirt | Clover"
+   },
+   "description": {
+    "es": "Camisa marrón de poli-algodón con una flor de hibisco en tonos coral y la frase «Life is too short to care».",
+    "en": "Brown poly-cotton T-shirt with a coral-toned hibiscus and the phrase “Life is too short to care”."
+   }
+  }
+ },
+ {
+  "id": "cm03",
+  "slug": "i-love-the-sound-of-no-one-talking-t-shirt",
+  "name": {
+   "es": "Camisa Me encanta el sonido de nadie hablando",
+   "en": "I Love the Sound of No One Talking T-shirt"
+  },
+  "description": {
+   "es": "Camisa blanca cuello en V, de poli-algodón, con la frase «Me encanta el sonido de nadie hablando».",
+   "en": "White V-neck poly-cotton T-shirt with the phrase “Me encanta el sonido de nadie hablando” (I love the sound of no one talking)."
+  },
+  "story": {
+   "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
+   "en": "Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote."
+  },
+  "category": "shirts",
+  "categories": [
+   "shirts",
+   "women",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "shirt",
+   "customizable",
+   "phrase"
+  ],
+  "price": 1200,
+  "currency": "USD",
+  "material": {
+   "es": "Poli-algodón",
+   "en": "Poly-cotton"
+  },
+  "color": [
+   {
+    "es": "Blanco",
+    "en": "White"
+   }
+  ],
+  "customizable": true,
+  "sizes": [
+   {
+    "es": "S",
+    "en": "S"
+   },
+   {
+    "es": "M",
+    "en": "M"
+   },
+   {
+    "es": "L",
+    "en": "L"
+   },
+   {
+    "es": "XL",
+    "en": "XL"
+   }
+  ],
+  "variants": [
+   {
+    "id": "cm03-s",
+    "sku": "CLV-CM03-S",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "S",
+      "en": "S"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm03-m",
+    "sku": "CLV-CM03-M",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "M",
+      "en": "M"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm03-l",
+    "sku": "CLV-CM03-L",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "L",
+      "en": "L"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm03-xl",
+    "sku": "CLV-CM03-XL",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "XL",
+      "en": "XL"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/cm03.jpg",
+    "width": 1000,
+    "height": 1250,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAARAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EAB8QAAIBAwUBAAAAAAAAAAAAAAECAAMEEQUSISIxkf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A0V3eGl0pIGcYzu8Edb3AuEJAKlTgiQalTAZXVSxc8j3mO05VWhvAwWOPkCkeiBhCRH//2Q==",
+    "tone": "#caccca",
+    "focal": {
+     "x": 0.5,
+     "y": 0.45
+    },
+    "role": "main",
+    "alt": {
+     "es": "Camisa blanca cuello en V con la frase Me encanta el sonido de nadie hablando, en gancho",
+     "en": "White V-neck T-shirt with a Spanish phrase, on a hanger"
+    }
+   },
+   {
+    "src": "/media/products/cm03-detail.jpg",
+    "width": 960,
+    "height": 960,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAgEAABAwQCAwAAAAAAAAAAAAABAgMRAAQTIRIxIiNB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCpdO5yrKocJMA9CjbdU0PQ4QOjxNLfNoYcSlCfEiYO97omk5DAgfao/9k=",
+    "tone": "#aaa9ae",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle del estampado de la Camisa Me encanta el sonido de nadie hablando",
+     "en": "Close-up of the I Love the Sound of No One Talking T-shirt print"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/cm03.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Poli-algodón",
+    "en": "Poly-cotton"
+   },
+   {
+    "es": "Tallas S, M, L y XL",
+    "en": "Sizes S, M, L and XL"
+   },
+   {
+    "es": "Estampado por sublimación de tinta o DTF",
+    "en": "Printed by ink sublimation or DTF"
+   },
+   {
+    "es": "Personalizable a pedido; se cotiza por WhatsApp",
+    "en": "Customizable on request; quoted via WhatsApp"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Material",
+     "en": "Material"
+    },
+    "value": {
+     "es": "Poli-algodón",
+     "en": "Poly-cotton"
+    }
+   },
+   {
+    "label": {
+     "es": "Color",
+     "en": "Color"
+    },
+    "value": {
+     "es": "Blanco",
+     "en": "White"
+    }
+   },
+   {
+    "label": {
+     "es": "Cuello",
+     "en": "Neckline"
+    },
+    "value": {
+     "es": "En V",
+     "en": "V-neck"
+    }
+   },
+   {
+    "label": {
+     "es": "Tallas",
+     "en": "Sizes"
+    },
+    "value": {
+     "es": "S, M, L, XL",
+     "en": "S, M, L, XL"
+    }
+   },
+   {
+    "label": {
+     "es": "Estampado",
+     "en": "Print"
+    },
+    "value": {
+     "es": "Sublimación de tinta o DTF, según el color de la camisa",
+     "en": "Ink sublimation or DTF, depending on the shirt color"
+    }
+   },
+   {
+    "label": {
+     "es": "Personalización",
+     "en": "Customization"
+    },
+    "value": {
+     "es": "A pedido; se cotiza por WhatsApp",
+     "en": "On request; quoted via WhatsApp"
+    }
+   }
+  ],
+  "stock": 20,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Camisa Me encanta el sonido de nadie hablando | Clover",
+    "en": "I Love the Sound of No One Talking T-shirt | Clover"
+   },
+   "description": {
+    "es": "Camisa blanca cuello en V, de poli-algodón, con la frase «Me encanta el sonido de nadie hablando».",
+    "en": "White V-neck poly-cotton T-shirt with the phrase “Me encanta el sonido de nadie hablando” (I love the sound of no one talking)."
+   }
+  }
+ },
+ {
+  "id": "cm04",
+  "slug": "daisies-t-shirt",
+  "name": {
+   "es": "Camisa Margaritas",
+   "en": "Daisies T-shirt"
+  },
+  "description": {
+   "es": "Camisa coral de poli-algodón con margaritas blancas repartidas por el frente.",
+   "en": "Coral poly-cotton T-shirt with white daisies scattered across the front."
+  },
+  "story": {
+   "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
+   "en": "Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote."
+  },
+  "category": "shirts",
+  "categories": [
+   "shirts",
+   "women",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "shirt",
+   "customizable",
+   "flower"
+  ],
+  "price": 1200,
+  "currency": "USD",
+  "material": {
+   "es": "Poli-algodón",
+   "en": "Poly-cotton"
+  },
+  "color": [
+   {
+    "es": "Coral",
+    "en": "Coral"
+   }
+  ],
+  "customizable": true,
+  "sizes": [
+   {
+    "es": "S",
+    "en": "S"
+   },
+   {
+    "es": "M",
+    "en": "M"
+   },
+   {
+    "es": "L",
+    "en": "L"
+   },
+   {
+    "es": "XL",
+    "en": "XL"
+   }
+  ],
+  "variants": [
+   {
+    "id": "cm04-s",
+    "sku": "CLV-CM04-S",
+    "options": {
+     "color": {
+      "es": "Coral",
+      "en": "Coral"
+     },
+     "size": {
+      "es": "S",
+      "en": "S"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm04-m",
+    "sku": "CLV-CM04-M",
+    "options": {
+     "color": {
+      "es": "Coral",
+      "en": "Coral"
+     },
+     "size": {
+      "es": "M",
+      "en": "M"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm04-l",
+    "sku": "CLV-CM04-L",
+    "options": {
+     "color": {
+      "es": "Coral",
+      "en": "Coral"
+     },
+     "size": {
+      "es": "L",
+      "en": "L"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm04-xl",
+    "sku": "CLV-CM04-XL",
+    "options": {
+     "color": {
+      "es": "Coral",
+      "en": "Coral"
+     },
+     "size": {
+      "es": "XL",
+      "en": "XL"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/cm04.jpg",
+    "width": 1000,
+    "height": 1250,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAARAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EACMQAAEDAwQCAwAAAAAAAAAAAAMAAQIEBREhIjJBEzEUUXL/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/xAAbEQADAAIDAAAAAAAAAAAAAAAAAQIDMRIygf/aAAwDAQACEQMRAD8AYc5jcySZny+53T6S71VOPJhyMHjGT6a/WVq+7KiMn9Sjpr2m26g89CP5cpOPLygP1jPaPKfJo0stQ8SprZTcuAv0rOmQhVW2ArpPp//Z",
+    "tone": "#da8477",
+    "focal": {
+     "x": 0.5,
+     "y": 0.45
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Camisa coral con margaritas blancas",
+     "en": "Coral T-shirt with white daisies"
+    }
+   },
+   {
+    "src": "/media/products/cm04-detail.jpg",
+    "width": 930,
+    "height": 930,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAIBAAAgIBBAMBAAAAAAAAAAAAAQIDEgAEESGBMUFxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECAxEx/9oADAMBAAIRAxEAPwCe0sws/LbCzHjvABWFzeNX9ck/madUAkhQDapK/cKCWOLUEypdSvjvBrpbseR0/9k=",
+    "tone": "#df5242",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle del estampado de la Camisa Margaritas",
+     "en": "Close-up of the Daisies T-shirt print"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/cm04.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Poli-algodón",
+    "en": "Poly-cotton"
+   },
+   {
+    "es": "Tallas S, M, L y XL",
+    "en": "Sizes S, M, L and XL"
+   },
+   {
+    "es": "Estampado por sublimación de tinta o DTF",
+    "en": "Printed by ink sublimation or DTF"
+   },
+   {
+    "es": "Personalizable a pedido; se cotiza por WhatsApp",
+    "en": "Customizable on request; quoted via WhatsApp"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Material",
+     "en": "Material"
+    },
+    "value": {
+     "es": "Poli-algodón",
+     "en": "Poly-cotton"
+    }
+   },
+   {
+    "label": {
+     "es": "Color",
+     "en": "Color"
+    },
+    "value": {
+     "es": "Coral",
+     "en": "Coral"
+    }
+   },
+   {
+    "label": {
+     "es": "Cuello",
+     "en": "Neckline"
+    },
+    "value": {
+     "es": "Redondo",
+     "en": "Crew neck"
+    }
+   },
+   {
+    "label": {
+     "es": "Tallas",
+     "en": "Sizes"
+    },
+    "value": {
+     "es": "S, M, L, XL",
+     "en": "S, M, L, XL"
+    }
+   },
+   {
+    "label": {
+     "es": "Estampado",
+     "en": "Print"
+    },
+    "value": {
+     "es": "Sublimación de tinta o DTF, según el color de la camisa",
+     "en": "Ink sublimation or DTF, depending on the shirt color"
+    }
+   },
+   {
+    "label": {
+     "es": "Personalización",
+     "en": "Customization"
+    },
+    "value": {
+     "es": "A pedido; se cotiza por WhatsApp",
+     "en": "On request; quoted via WhatsApp"
+    }
+   }
+  ],
+  "stock": 20,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Camisa Margaritas | Clover",
+    "en": "Daisies T-shirt | Clover"
+   },
+   "description": {
+    "es": "Camisa coral de poli-algodón con margaritas blancas repartidas por el frente.",
+    "en": "Coral poly-cotton T-shirt with white daisies scattered across the front."
+   }
+  }
+ },
+ {
+  "id": "cm05",
+  "slug": "llegue-tarde-t-shirt",
+  "name": {
+   "es": "Camisa Llegué tarde",
+   "en": "Llegué Tarde T-shirt"
+  },
+  "description": {
+   "es": "Camisa blanca de poli-algodón con un bulldog francés de pañuelo y lentes, y la frase «Llegué tarde porque no quería venir».",
+   "en": "White poly-cotton T-shirt with a French bulldog in a headscarf and sunglasses, and the phrase “Llegué tarde porque no quería venir” (I arrived late because I didn't want to come)."
+  },
+  "story": {
+   "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
+   "en": "Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote."
+  },
+  "category": "shirts",
+  "categories": [
+   "shirts",
+   "women",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "shirt",
+   "customizable",
+   "phrase",
+   "pet"
+  ],
+  "price": 1200,
+  "currency": "USD",
+  "material": {
+   "es": "Poli-algodón",
+   "en": "Poly-cotton"
+  },
+  "color": [
+   {
+    "es": "Blanco",
+    "en": "White"
+   }
+  ],
+  "customizable": true,
+  "sizes": [
+   {
+    "es": "S",
+    "en": "S"
+   },
+   {
+    "es": "M",
+    "en": "M"
+   },
+   {
+    "es": "L",
+    "en": "L"
+   },
+   {
+    "es": "XL",
+    "en": "XL"
+   }
+  ],
+  "variants": [
+   {
+    "id": "cm05-s",
+    "sku": "CLV-CM05-S",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "S",
+      "en": "S"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm05-m",
+    "sku": "CLV-CM05-M",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "M",
+      "en": "M"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm05-l",
+    "sku": "CLV-CM05-L",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "L",
+      "en": "L"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   },
+   {
+    "id": "cm05-xl",
+    "sku": "CLV-CM05-XL",
+    "options": {
+     "color": {
+      "es": "Blanco",
+      "en": "White"
+     },
+     "size": {
+      "es": "XL",
+      "en": "XL"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 5
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/cm05.jpg",
+    "width": 1000,
+    "height": 1250,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAARAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAJRAAAAUDAwQDAAAAAAAAAAAAAAECAxEEBTESEyEUMjM1UXFy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAABACEx/9oADAMBAAIRAxEAPwBa4qbNKd8pTMyao0jZbqhD9OWiNJYjALuK3KpK2enNLsckrt+BWc10r+ycSlrlKcZKDBlSSr/jP6B9u9lU/khCAwcb/9k=",
+    "tone": "#b4aba7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.45
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Camisa blanca con bulldog francés y la frase Llegué tarde porque no quería venir",
+     "en": "White T-shirt with a French bulldog and the phrase Llegué tarde porque no quería venir"
+    }
+   },
+   {
+    "src": "/media/products/cm05-detail.jpg",
+    "width": 780,
+    "height": 780,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAHhAAAgIBBQEAAAAAAAAAAAAAAQIDEQQABRIhMUH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABgRAAIDAAAAAAAAAAAAAAAAAAARASEx/9oADAMBAAIRAxEAPwDeRkxYiqZQ5sHtR9BrSttylyEZk5cL6v3Qt3WM8o2Bt5Oq+dXq7dEMiAxozxmKlJB9r3R6Uoo//9k=",
+    "tone": "#8e8489",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle del estampado de la Camisa Llegué tarde",
+     "en": "Close-up of the Llegué Tarde T-shirt print"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/cm05.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Poli-algodón",
+    "en": "Poly-cotton"
+   },
+   {
+    "es": "Tallas S, M, L y XL",
+    "en": "Sizes S, M, L and XL"
+   },
+   {
+    "es": "Estampado por sublimación de tinta o DTF",
+    "en": "Printed by ink sublimation or DTF"
+   },
+   {
+    "es": "Personalizable a pedido; se cotiza por WhatsApp",
+    "en": "Customizable on request; quoted via WhatsApp"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Material",
+     "en": "Material"
+    },
+    "value": {
+     "es": "Poli-algodón",
+     "en": "Poly-cotton"
+    }
+   },
+   {
+    "label": {
+     "es": "Color",
+     "en": "Color"
+    },
+    "value": {
+     "es": "Blanco",
+     "en": "White"
+    }
+   },
+   {
+    "label": {
+     "es": "Cuello",
+     "en": "Neckline"
+    },
+    "value": {
+     "es": "Redondo",
+     "en": "Crew neck"
+    }
+   },
+   {
+    "label": {
+     "es": "Tallas",
+     "en": "Sizes"
+    },
+    "value": {
+     "es": "S, M, L, XL",
+     "en": "S, M, L, XL"
+    }
+   },
+   {
+    "label": {
+     "es": "Estampado",
+     "en": "Print"
+    },
+    "value": {
+     "es": "Sublimación de tinta o DTF, según el color de la camisa",
+     "en": "Ink sublimation or DTF, depending on the shirt color"
+    }
+   },
+   {
+    "label": {
+     "es": "Personalización",
+     "en": "Customization"
+    },
+    "value": {
+     "es": "A pedido; se cotiza por WhatsApp",
+     "en": "On request; quoted via WhatsApp"
+    }
+   }
+  ],
+  "stock": 20,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Camisa Llegué tarde | Clover",
+    "en": "Llegué Tarde T-shirt | Clover"
+   },
+   "description": {
+    "es": "Camisa blanca de poli-algodón con un bulldog francés de pañuelo y lentes, y la frase «Llegué tarde porque no quería venir».",
+    "en": "White poly-cotton T-shirt with a French bulldog in a headscarf and sunglasses, and the phrase “Llegué tarde porque no quería venir” (I arrived late because I didn't want to come)."
+   }
+  }
  }
 ]

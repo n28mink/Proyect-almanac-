@@ -25,6 +25,10 @@ describe('filtros de tienda (estado en la URL)', () => {
     const gold = applyFilters(cards, parseParams(new URLSearchParams('finish=gold')));
     expect(gold.length).toBeGreaterThan(0);
     expect(gold.every((c) => c.finish === 'gold')).toBe(true);
+    expect(gold.some((c) => c.categorySlug === 'shirts')).toBe(false);
+    const fabric = applyFilters(cards, parseParams(new URLSearchParams('material=textile')));
+    expect(fabric.length).toBe(5);
+    expect(computeFacets(cards.filter((c) => c.categorySlug === 'shirts')).finish).toHaveLength(0);
     expect(applyFilters(cards, parseParams(new URLSearchParams('q=zzzz'))).length).toBe(0);
     expect(applyFilters(cards, parseParams(new URLSearchParams('stock=1'))).every((c) => c.inStock)).toBe(true);
   });

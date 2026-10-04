@@ -213,6 +213,75 @@ for (const p of source) {
   });
 }
 
+// Camisas (scripts/data/shirts.json): precio y tallas confirmados por la tienda; stock inicial editable en el panel.
+const shirts = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/shirts.json'), 'utf8'));
+const NECK = { crew: L('Redondo', 'Crew neck'), v: L('En V', 'V-neck') };
+const SHIRT_STORY = L(
+  'Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.',
+  'Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote.',
+);
+for (const s of shirts.items) {
+  const m = media.images[s.id];
+  const dm = media.images[`${s.id}-detail`];
+  if (!m || !dm) throw new Error(`Sin metadatos de imagen: ${s.id} (npm run media:shirts)`);
+  const images = [
+    { src: m.src, width: m.width, height: m.height, blur: m.blur, tone: m.tone, focal: m.focal, role: s.id === 'cm03' ? 'main' : 'lifestyle', alt: s.alt },
+    { src: dm.src, width: dm.width, height: dm.height, blur: dm.blur, tone: dm.tone, focal: dm.focal, role: 'detail', alt: L(`Detalle del estampado de la ${s.name.es}`, `Close-up of the ${s.name.en} print`) },
+  ];
+  const variants = shirts.sizes.map((size) => ({
+    id: `${s.id}-${size.toLowerCase()}`,
+    sku: `CLV-${s.id.toUpperCase()}-${size}`,
+    options: { color: s.color, size: L(size, size) },
+    imageIndex: 0,
+    stock: shirts.stockPerSize,
+  }));
+  const specifications = [
+    { label: L('Material', 'Material'), value: L('Poli-algodón', 'Poly-cotton') },
+    { label: L('Color', 'Color'), value: s.color },
+    { label: L('Cuello', 'Neckline'), value: NECK[s.neck] },
+    { label: L('Tallas', 'Sizes'), value: L(shirts.sizes.join(', '), shirts.sizes.join(', ')) },
+    { label: L('Estampado', 'Print'), value: L('Sublimación de tinta o DTF, según el color de la camisa', 'Ink sublimation or DTF, depending on the shirt color') },
+    { label: L('Personalización', 'Customization'), value: L('A pedido; se cotiza por WhatsApp', 'On request; quoted via WhatsApp') },
+  ];
+  let slug = slugify(s.name.en.replace(/['’]/g, ''));
+  if (slugs.has(slug)) slug += `-${s.id}`;
+  slugs.add(slug);
+  catalog.push({
+    id: s.id,
+    slug,
+    name: s.name,
+    description: s.description,
+    story: SHIRT_STORY,
+    category: 'shirts',
+    categories: ['shirts', 'women', 'new-arrivals'],
+    audience: ['women'],
+    tags: ['shirt', 'customizable', ...s.tags],
+    price: cents(shirts.price),
+    currency: 'USD',
+    material: L('Poli-algodón', 'Poly-cotton'),
+    color: [s.color],
+    customizable: true,
+    sizes: shirts.sizes.map((size) => L(size, size)),
+    variants,
+    images,
+    videos: [],
+    thumbnail: images[0].src,
+    hoverMedia: { type: 'image', imageIndex: 1 },
+    highlights: [
+      L('Poli-algodón', 'Poly-cotton'),
+      L(`Tallas ${shirts.sizes.slice(0, -1).join(', ')} y ${shirts.sizes.at(-1)}`, `Sizes ${shirts.sizes.slice(0, -1).join(', ')} and ${shirts.sizes.at(-1)}`),
+      L('Estampado por sublimación de tinta o DTF', 'Printed by ink sublimation or DTF'),
+      L('Personalizable a pedido; se cotiza por WhatsApp', 'Customizable on request; quoted via WhatsApp'),
+    ],
+    specifications,
+    stock: variants.reduce((n, v) => n + v.stock, 0),
+    featured: false,
+    newArrival: true,
+    bestseller: false,
+    seo: { title: L(`${s.name.es} | Clover`, `${s.name.en} | Clover`), description: s.description },
+  });
+}
+
 fs.writeFileSync(path.join(root, 'src/content/catalog.generated.json'), JSON.stringify(catalog, null, 1) + '\n');
 fs.writeFileSync(path.join(root, 'docs/seed-excluded.json'), JSON.stringify(excluded, null, 2) + '\n');
 console.log(`✔ ${catalog.length} productos · ${excluded.length} excluidos (ver docs/seed-excluded.json)`);

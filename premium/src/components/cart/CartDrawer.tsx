@@ -62,7 +62,7 @@ export function CartDrawer() {
             <div data-lenis-prevent="" className="flex-1 overflow-y-auto px-6">
               {undoBanner}
               {quote ? (
-                <CartLines quote={quote} compact />
+                <CartLines quote={quote} />
               ) : (
                 <ul className="space-y-6 py-6" aria-busy="true" aria-label={t('loading')}>
                   {lines.map((l) => (

@@ -74,11 +74,14 @@
     },
     "quickAdd": "Añadir rápido",
     "chooseOption": "Elegir opción",
+    "chooseSize": "Elegir talla",
     "quickViewLabel": "Vista rápida: {name}",
     "option": "Opción",
+    "size": "Talla",
     "soldOut": "Agotado",
     "added": "Añadido",
     "addToBag": "Añadir a la bolsa",
+    "addShort": "Añadir",
     "fullDetails": "Ver ficha completa",
     "close": "Cerrar",
     "view3d": "Ver en 3D",
@@ -113,7 +116,11 @@
     "moreFrom": "Más de {name}",
     "related": "También te puede gustar",
     "paymentNote": "Pago móvil, transferencia o efectivo, coordinados por WhatsApp.",
-    "payLong": "Aceptamos pago móvil, transferencia bancaria y efectivo, coordinados por WhatsApp al confirmar tu pedido."
+    "payLong": "Aceptamos pago móvil, transferencia bancaria y efectivo, coordinados por WhatsApp al confirmar tu pedido.",
+    "customTitle": "Personalízala",
+    "customText": "Cambia la frase, la imagen o trae tu propio diseño. Estampamos con sublimación de tinta o DTF, según el color de la camisa.",
+    "customCta": "Cotizar personalización",
+    "customHint": "La personalización se cotiza por WhatsApp: se abre con la camisa y tu talla ya escritas."
   },
   "home": {
     "heroSecondary": "Ver el lookbook",
@@ -164,7 +171,8 @@
       "necklaces": "Collares",
       "rings": "Anillos",
       "bracelets": "Pulseras",
-      "watches": "Relojes"
+      "watches": "Relojes",
+      "shirts": "Camisas"
     }
   },
   "shop": {
@@ -205,10 +213,11 @@
     },
     "materialKeys": {
       "steel": "Acero inoxidable",
-      "metal": "Metal con acabado en tono"
+      "metal": "Metal con acabado en tono",
+      "textile": "Poli-algodón"
     },
     "allTitle": "La colección",
-    "allText": "Aretes, collares, anillos, pulseras y relojes elegidos pieza por pieza.",
+    "allText": "Aretes, collares, anillos, pulseras, relojes y camisas, elegidos pieza por pieza.",
     "eyebrow": "Tienda",
     "breadcrumbShop": "Tienda"
   },
@@ -265,8 +274,13 @@
     "city": "Ciudad",
     "region": "Estado",
     "notes": "Nota para tu pedido (opcional)",
-    "payment": "Pago",
-    "payNote": "Aceptamos pago móvil, transferencia bancaria y efectivo, coordinados por WhatsApp al confirmar tu pedido.",
+    "payment": "Forma de pago",
+    "payIntro": "Elige cómo prefieres pagar. No se cobra nada en esta página: el pago se coordina por WhatsApp al confirmar tu pedido.",
+    "payChosen": {
+      "pago-movil": "Pagarás con pago móvil. Te enviamos los datos por WhatsApp al confirmar tu pedido.",
+      "transferencia": "Pagarás con transferencia bancaria. Te enviamos los datos de la cuenta por WhatsApp al confirmar tu pedido.",
+      "efectivo": "Pagarás en efectivo. Acordamos por WhatsApp cuándo y dónde, al confirmar tu pedido."
+    },
     "summary": "Resumen del pedido",
     "errors": {
       "invalid": "Revisa tus datos e inténtalo de nuevo.",
@@ -349,6 +363,7 @@
     "save": "Guardar",
     "noOrders": "Aún no hay pedidos.",
     "status": "Estado del pedido",
+    "paymentMethod": "Forma de pago",
     "orderStatus": {
       "pending_payment": "Pendiente de confirmación",
       "paid": "Pagado",

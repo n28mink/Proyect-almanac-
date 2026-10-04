@@ -1,5 +1,17 @@
 import { z } from 'zod';
 import { cents } from './catalog';
+import { L, type Localized } from './i18n';
+
+/** Formas de pago (Venezuela). No se cobra en línea: el cliente elige y el pago se coordina por WhatsApp. */
+export const paymentMethods = ['pago-movil', 'transferencia', 'efectivo'] as const;
+export const paymentMethodSchema = z.enum(paymentMethods);
+export type PaymentMethod = z.infer<typeof paymentMethodSchema>;
+export const DEFAULT_PAYMENT_METHOD: PaymentMethod = 'pago-movil';
+export const paymentMethodLabel: Record<PaymentMethod, Localized> = {
+  'pago-movil': L('Pago móvil', 'Pago móvil'),
+  transferencia: L('Transferencia bancaria', 'Bank transfer'),
+  efectivo: L('Efectivo', 'Cash'),
+};
 
 /** Línea que envía el cliente: SOLO identificadores y cantidad. Los precios jamás viajan desde el cliente. */
 export const cartLineInputSchema = z.object({
@@ -75,6 +87,8 @@ export const orderSchema = z.object({
     region: z.string().trim().max(80).optional(),
   }),
   notes: z.string().trim().max(300).optional(),
+  /** Forma de pago elegida en el checkout (opcional solo por los pedidos anteriores a este campo). */
+  paymentMethod: paymentMethodSchema.optional(),
   paidAt: z.string().optional(),
   createdAt: z.string(),
   updatedAt: z.string(),

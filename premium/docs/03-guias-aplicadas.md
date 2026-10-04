@@ -44,6 +44,29 @@ Se **rechazaron** (puerta de Emil): animar la apertura de la búsqueda con tecla
 - El movimiento por scroll ya se limitaba a una firma (titulares por palabras + imágenes que se revelan), sin el «fade-and-slide-up» genérico en cada bloque; se mantiene.
 - Sin acento de una sola palabra en titulares, sin numeración 01/02/03, sin flechas «→».
 
+## Tercera pasada: formas de pago y camisas
+
+### Formas de pago (Emil + UI UX Pro Max)
+
+- **Radios nativos** dentro de un `fieldset` con `legend`: teclado (flechas), lector de pantalla y foco visible sin JavaScript extra. Cada opción es una tarjeta de ≥ 68 px de alto con icono propio (teléfono, banco, billete) en trazo de 1,4 px como el resto de la iconografía.
+- **Preselección**: pago móvil, la primera de la lista original de la tienda. Debajo del grupo, en texto, qué pasa con la elegida («Pagarás con… Te enviamos los datos por WhatsApp…»), anunciado con `aria-live`.
+- **Resumen del pedido**: nueva fila «Forma de pago» con el icono y el nombre; se repite en la confirmación, en el mensaje de WhatsApp y en el panel.
+- **Movimiento**: el cambio de selección es frecuente, así que es corto (160–180 ms, `ease-out`), sin rebote; el texto de la elegida y la fila del resumen cambian con el mismo fundido + desenfoque de 2 px del botón «Añadido» (`@starting-style`). `:active` a 0,985; hover solo con puntero fino.
+- En móvil las tarjetas son filas (icono, nombre, marca de selección); desde 640 px, tres columnas.
+
+### Camisas (frontend-design)
+
+- **Fotos estandarizadas**: las cinco camisas se recortaron (modelo local de segmentación + GrabCut para telas parecidas al fondo, como el marrón y el blanco) y se compusieron sobre un **fondo salvia de estudio** derivado de la paleta, con sombra de contacto suave; ninguna conserva el fondo original. Mismo formato 4:5 y el mismo tono para todas.
+- **Detalle del estampado** como segunda foto (también para el hover de la tarjeta), sin ampliar más de 1,5× para que no se vea blando.
+- La variante se elige por **talla** (S, M, L, XL) con botones cuadrados de 56 px; la tarjeta dice «Elegir talla» y la bolsa, el pedido y WhatsApp dicen «Talla M».
+- «Camisas» entra en la navegación principal y en la rejilla de categorías de la home (la línea «Prendas» de la marca); las camisas abren el carril de novedades.
+
+### Errores encontrados de paso
+
+- La **rejilla de categorías de la home no se veía en escritorio** (altura 0): la regla `.snap-row { display: flex }` estaba fuera de capa y ganaba a `lg:grid`. Ahora vive en `@layer components`.
+- Las **pestañas del panel** mostraban claves sin traducir (`admin.tabs./orders`). Corregido.
+- En móvil, «Añadir a la bolsa» no cabía junto a cantidad y favoritos en la ficha: ahora dice «Añadir» bajo 640 px (la barra fija inferior conserva el texto completo).
+
 ## Decisión consciente: vídeos sin botón de pausa
 
 Se pidió quitar el botón sobre los vídeos. Las guías (y WCAG 2.2.2) piden un mecanismo para pausar el movimiento automático de más de 5 s, así que **el control pasó al pie de página**: «Reducir movimiento» detiene vídeos, scroll suave, revelados, marquesinas y transiciones, y se recuerda entre visitas. Los clips están en silencio, son bucles cortos y se detienen solos fuera de pantalla.

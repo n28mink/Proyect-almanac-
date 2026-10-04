@@ -8,7 +8,7 @@ import { pick } from '@/domain/i18n';
 import type { Locale } from '@/i18n/routing';
 import { baseCatalog } from '@/server/repositories/catalog';
 
-const HOME_CATEGORIES = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'gifts'];
+const HOME_CATEGORIES = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'shirts'];
 
 /** Navegación por categoría: lienzos verticales; fila con snap en móvil, rejilla en escritorio. */
 export async function CategoryNav({ locale }: { locale: Locale }) {

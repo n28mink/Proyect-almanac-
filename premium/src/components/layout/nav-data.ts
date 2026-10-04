@@ -35,8 +35,8 @@ export function getNavData(locale: Locale): NavData {
   const collectionsLink: NavLink = { href: '/collections', label: pick(collectionsNav.name, locale) };
 
   return {
-    primary: [link('jewelry'), link('watches'), collectionsLink, link('gifts')],
-    menuMain: [link('new-arrivals'), link('jewelry'), link('watches'), collectionsLink, link('gifts')],
+    primary: [link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts')],
+    menuMain: [link('new-arrivals'), link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts')],
     menuTypes: ['necklaces', 'earrings', 'rings', 'bracelets', 'accessories'].filter(nonEmpty).map(link),
     menuAudience: ['women', 'men'].filter(nonEmpty).map(link),
     featured: {

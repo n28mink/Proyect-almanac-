@@ -1,6 +1,7 @@
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { variantLabel } from '@/domain/catalog';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { formatMoney } from '@/lib/format';
@@ -37,7 +38,7 @@ export default async function AdminDashboard({ params }: { params: Promise<{ loc
         <h2 className="mb-4 font-display text-heading">{t('lowStock')}</h2>
         {low.length === 0 ? <p className="text-fg-muted">{t('noLowStock')}</p> : (
           <ul className="divide-y divide-line border-y border-line">
-            {low.map(({ p, v }) => <li key={v.id} className="flex justify-between gap-4 py-3 text-caption"><span>{pick(p.name, locale)} · {pick(v.options.color, locale)}</span><span className="tabular text-danger">{v.stock}</span></li>)}
+            {low.map(({ p, v }) => <li key={v.id} className="flex justify-between gap-4 py-3 text-caption"><span>{pick(p.name, locale)} · {pick(variantLabel(v), locale)}</span><span className="tabular text-danger">{v.stock}</span></li>)}
           </ul>
         )}
       </section>

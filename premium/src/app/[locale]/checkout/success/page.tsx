@@ -6,6 +6,8 @@ import { notFound } from 'next/navigation';
 import { ClearCartOnMount } from '@/components/checkout/ClearCartOnMount';
 import { ButtonLink, ExternalButtonLink } from '@/components/ui/Button';
 import { PageShell } from '@/components/ui/PageShell';
+import { PaymentIcon } from '@/components/checkout/PaymentMethods';
+import { paymentMethodLabel } from '@/domain/commerce';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { formatMoney } from '@/lib/format';
@@ -40,13 +42,19 @@ export default async function SuccessPage({ params, searchParams }: { params: Pr
         {order.lines.map((l) => (
           <li key={l.variantId} className="flex items-center gap-4 py-4">
             <span className="relative h-20 w-16 shrink-0 overflow-hidden bg-surface-sunken"><Image src={l.image} alt="" fill sizes="64px" className="object-cover" /></span>
-            <span className="flex-1"><span className="block font-display text-lead">{pick(l.name, locale)}</span><span className="text-caption text-fg-muted">{l.quantity} × {formatMoney(l.unitPrice, locale)}</span></span>
+            <span className="flex-1"><span className="block font-display text-lead">{pick(l.name, locale)}</span><span className="text-caption text-fg-muted">{pick(l.variantLabel, locale)} · {l.quantity} × {formatMoney(l.unitPrice, locale)}</span></span>
             <span className="tabular">{formatMoney(l.lineTotal, locale)}</span>
           </li>
         ))}
       </ul>
       <dl className="mt-6 space-y-2 text-caption">
         <div className="flex justify-between"><dt className="text-fg-muted">{t('status')}</dt><dd>{t(`orderStatus.${order.status}`)}</dd></div>
+        {order.paymentMethod && (
+          <div className="flex justify-between gap-4">
+            <dt className="text-fg-muted">{t('payment')}</dt>
+            <dd className="flex items-center gap-2"><PaymentIcon method={order.paymentMethod} width={18} height={18} className="text-accent" />{pick(paymentMethodLabel[order.paymentMethod], locale)}</dd>
+          </div>
+        )}
         <div className="flex justify-between border-t border-line pt-3"><dt className="label-micro">{t('total')}</dt><dd className="font-display text-heading">{formatMoney(order.total, locale)}</dd></div>
       </dl>
       <div className="mt-10 flex flex-wrap items-center gap-4">
