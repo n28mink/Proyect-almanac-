@@ -120,7 +120,8 @@
     "customTitle": "Make it yours",
     "customText": "Change the phrase, the image or bring your own design. We print by ink sublimation or DTF, depending on the shirt color.",
     "customCta": "Get a customization quote",
-    "customHint": "Customization is quoted on WhatsApp: it opens with the shirt and your size already filled in."
+    "customHint": "Customization is quoted on WhatsApp: it opens with the shirt and your size already filled in.",
+    "customColorNote": "Colors may vary slightly between your screen and the printed garment."
   },
   "home": {
     "heroSecondary": "View the lookbook",
@@ -202,6 +203,7 @@
     "priceMin": "Minimum price",
     "priceMax": "Maximum price",
     "color": "Tone",
+    "garmentColor": "Garment color",
     "material": "Material",
     "gender": "For",
     "collection": "Collection",

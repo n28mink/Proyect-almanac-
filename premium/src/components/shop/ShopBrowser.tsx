@@ -18,6 +18,7 @@ import type { Locale } from '@/i18n/routing';
 
 interface Labels {
   finish: Record<string, string>;
+  color: Record<string, string>;
   material: Record<string, string>;
   audience: Record<string, string>;
   collection: Record<string, string>;
@@ -45,7 +46,7 @@ function CheckRow({ id, label, count, checked, onChange }: { id: string; label: 
 function FilterPanel({ params, facets, labels, update }: { params: ShopParams; facets: Facets; labels: Labels; update: (patch: Partial<ShopParams>) => void }) {
   const t = useTranslations('shop');
   const locale = useLocale() as Locale;
-  const toggle = (key: 'finish' | 'material' | 'audience' | 'collection', value: string) => {
+  const toggle = (key: 'finish' | 'color' | 'material' | 'audience' | 'collection', value: string) => {
     const cur = params[key];
     update({ [key]: cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value] } as Partial<ShopParams>);
   };
@@ -83,6 +84,11 @@ function FilterPanel({ params, facets, labels, update }: { params: ShopParams; f
       {facets.finish.length > 0 && (
         <Group title={t('color')}>
           {facets.finish.map((f) => <CheckRow key={f.value} id={`f-${f.value}`} label={labels.finish[f.value] ?? f.value} count={f.count} checked={params.finish.includes(f.value)} onChange={() => toggle('finish', f.value)} />)}
+        </Group>
+      )}
+      {facets.color.length > 0 && (
+        <Group title={t('garmentColor')}>
+          {facets.color.map((f) => <CheckRow key={f.value} id={`g-${f.value}`} label={labels.color[f.value] ?? f.value} count={f.count} checked={params.color.includes(f.value)} onChange={() => toggle('color', f.value)} />)}
         </Group>
       )}
       {facets.material.length > 0 && (
@@ -123,12 +129,13 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
     const qs = serializeParams({ ...params, ...patch });
     router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
   };
-  const clear = () => update({ q: '', min: undefined, max: undefined, finish: [], material: [], audience: [], collection: [], inStock: false });
+  const clear = () => update({ q: '', min: undefined, max: undefined, finish: [], color: [], material: [], audience: [], collection: [], inStock: false });
 
   const chips: Array<{ key: string; label: string; remove: () => void }> = [
     ...(params.q ? [{ key: 'q', label: `“${params.q}”`, remove: () => update({ q: '' }) }] : []),
     ...(params.min !== undefined || params.max !== undefined ? [{ key: 'price', label: `$${params.min ?? facets.price?.min ?? 0}–$${params.max ?? facets.price?.max ?? ''}`, remove: () => update({ min: undefined, max: undefined }) }] : []),
     ...params.finish.map((v) => ({ key: `f${v}`, label: labels.finish[v] ?? v, remove: () => update({ finish: params.finish.filter((x) => x !== v) }) })),
+    ...params.color.map((v) => ({ key: `g${v}`, label: labels.color[v] ?? v, remove: () => update({ color: params.color.filter((x) => x !== v) }) })),
     ...params.material.map((v) => ({ key: `m${v}`, label: labels.material[v] ?? v, remove: () => update({ material: params.material.filter((x) => x !== v) }) })),
     ...params.audience.map((v) => ({ key: `a${v}`, label: labels.audience[v] ?? v, remove: () => update({ audience: params.audience.filter((x) => x !== v) }) })),
     ...params.collection.map((v) => ({ key: `c${v}`, label: labels.collection[v] ?? v, remove: () => update({ collection: params.collection.filter((x) => x !== v) }) })),

@@ -36,6 +36,18 @@ describe('filtros de tienda (estado en la URL)', () => {
     const asc = applyFilters(cards, parseParams(new URLSearchParams('sort=price-asc')));
     for (let i = 1; i < asc.length; i++) expect(asc[i]!.price).toBeGreaterThanOrEqual(asc[i - 1]!.price);
   });
+  it('filtra camisas por color con claves estables (sin acentos) y ofrece la faceta solo donde hay colores de prenda', () => {
+    const shirts = cards.filter((c) => c.categorySlug === 'shirts');
+    const facet = computeFacets(shirts).color;
+    expect(facet.map((f) => f.value).sort()).toEqual(['blanco', 'celeste', 'coral', 'marron']);
+    expect(facet.find((f) => f.value === 'blanco')!.count).toBe(2);
+    const coral = applyFilters(cards, parseParams(new URLSearchParams('color=coral')));
+    expect(coral.map((c) => c.id)).toEqual(['cm04']);
+    expect(applyFilters(cards, parseParams(new URLSearchParams('color=blanco,celeste'))).map((c) => c.id).sort()).toEqual(['cm01', 'cm03', 'cm05']);
+    expect(serializeParams(parseParams(new URLSearchParams('color=coral')))).toBe('color=coral');
+    expect(computeFacets(cards.filter((c) => c.categorySlug === 'rings')).color).toHaveLength(0);
+    expect(activeCount(parseParams(new URLSearchParams('color=coral,blanco')))).toBe(2);
+  });
   it('oculta facetas sin opciones útiles', () => {
     const rings = cards;
     const f = computeFacets(rings);

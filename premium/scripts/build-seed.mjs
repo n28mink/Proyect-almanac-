@@ -21,6 +21,28 @@ for (const f of fs.readdirSync(path.join(root, 'scripts/data')).filter((n) => n.
 
 const L = (es, enText) => ({ es, en: enText });
 
+// Medidas, peso y cuidados reales por producto (scripts/data/product-details.json). Vacío hasta que la tienda los confirme.
+const { _note, ...details } = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/product-details.json'), 'utf8'));
+const usedDetails = new Set();
+const asL = (v) => (typeof v === 'string' ? L(v, v) : L(v.es, v.en));
+function withDetails(id, specs) {
+  const d = details[id];
+  if (!d) return specs;
+  usedDetails.add(id);
+  const careAt = specs.findIndex((s) => s.label.es === 'Cuidado');
+  const rows = [
+    ...(d.size ? [{ label: L('Medidas', 'Measurements'), value: asL(d.size) }] : []),
+    ...(d.weight ? [{ label: L('Peso', 'Weight'), value: asL(d.weight) }] : []),
+  ];
+  const out = [...specs];
+  const care = d.care ? { label: L('Cuidado', 'Care'), value: asL(d.care) } : null;
+  if (care && careAt >= 0) out[careAt] = care;
+  const at = out.findIndex((s) => s.label.es === 'Cuidado');
+  if (at >= 0) out.splice(at, 0, ...rows);
+  else out.push(...rows, ...(care ? [care] : []));
+  return out;
+}
+
 const CATEGORY = { rw: 'watches', st: 'accessories', an: 'rings', pu: 'bracelets', co: 'necklaces', ar: 'earrings' };
 
 const COLOR_EN = {
@@ -195,7 +217,7 @@ for (const p of source) {
     thumbnail: images[0].src,
     hoverMedia: hasVideo ? { type: 'video', key: `product.${p.id}` } : { type: 'image', imageIndex: detailIndex },
     highlights,
-    specifications: buildSpecs(p, t, finish, esHighlights),
+    specifications: withDetails(p.id, buildSpecs(p, t, finish, esHighlights)),
     stock: variants.reduce((s, v) => s + v.stock, 0),
     featured: FEATURED.includes(p.id),
     newArrival: isNew,
@@ -281,7 +303,7 @@ for (const s of shirts.items) {
       L('Estampado por sublimación de tinta o DTF', 'Printed by ink sublimation or DTF'),
       L('Personalizable a pedido; se cotiza por WhatsApp', 'Customizable on request; quoted via WhatsApp'),
     ],
-    specifications,
+    specifications: withDetails(s.id, specifications),
     stock: variants.reduce((n, v) => n + v.stock, 0),
     featured: false,
     newArrival: true,
@@ -289,6 +311,8 @@ for (const s of shirts.items) {
     seo: { title: L(`${s.name.es} | Clover`, `${s.name.en} | Clover`), description: s.description },
   });
 }
+
+for (const id of Object.keys(details)) if (!usedDetails.has(id)) throw new Error(`product-details.json: el id «${id}» no existe en el catálogo`);
 
 fs.writeFileSync(path.join(root, 'src/content/catalog.generated.json'), JSON.stringify(catalog, null, 1) + '\n');
 fs.writeFileSync(path.join(root, 'docs/seed-excluded.json'), JSON.stringify(excluded, null, 2) + '\n');

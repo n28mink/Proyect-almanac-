@@ -1,0 +1,3 @@
+{
+  "_note": "Datos extra de la ficha, por id de producto. Se añaden a las especificaciones al correr `npm run seed`. Claves: size (medidas), weight (peso), care (cuidados; sustituye al texto genérico). Cada valor es un texto igual en los dos idiomas o {\"es\": \"…\", \"en\": \"…\"}. Solo con datos reales confirmados por la tienda; nada se inventa. Ejemplo: \"an02\": { \"size\": \"Ø 18 mm, ancho 6 mm\", \"weight\": \"3,2 g\" } · camisa: \"cm04\": { \"size\": { \"es\": \"S: 48 × 66 cm · M: 51 × 69 cm\", \"en\": \"S: 48 × 66 cm · M: 51 × 69 cm\" } }"
+}

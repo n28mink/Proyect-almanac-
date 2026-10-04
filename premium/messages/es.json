@@ -120,7 +120,8 @@
     "customTitle": "Personalízala",
     "customText": "Cambia la frase, la imagen o trae tu propio diseño. Estampamos con sublimación de tinta o DTF, según el color de la camisa.",
     "customCta": "Cotizar personalización",
-    "customHint": "La personalización se cotiza por WhatsApp: se abre con la camisa y tu talla ya escritas."
+    "customHint": "La personalización se cotiza por WhatsApp: se abre con la camisa y tu talla ya escritas.",
+    "customColorNote": "Los colores pueden variar un poco entre la pantalla y la prenda impresa."
   },
   "home": {
     "heroSecondary": "Ver el lookbook",
@@ -202,6 +203,7 @@
     "priceMin": "Precio mínimo",
     "priceMax": "Precio máximo",
     "color": "Tono",
+    "garmentColor": "Color de la prenda",
     "material": "Material",
     "gender": "Para",
     "collection": "Colección",

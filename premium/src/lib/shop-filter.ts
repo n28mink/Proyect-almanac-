@@ -8,6 +8,8 @@ export interface ShopParams {
   min?: number;
   max?: number;
   finish: string[];
+  /** Color de la prenda (camisas). */
+  color: string[];
   material: string[];
   audience: string[];
   collection: string[];
@@ -30,6 +32,7 @@ export function parseParams(sp: URLSearchParams): ShopParams {
     min: num(sp.get('min')),
     max: num(sp.get('max')),
     finish: list(sp.get('finish')),
+    color: list(sp.get('color')),
     material: list(sp.get('material')),
     audience: list(sp.get('audience')),
     collection: list(sp.get('collection')),
@@ -45,6 +48,7 @@ export function serializeParams(p: ShopParams): string {
   if (p.min !== undefined) sp.set('min', String(p.min));
   if (p.max !== undefined) sp.set('max', String(p.max));
   if (p.finish.length) sp.set('finish', p.finish.join(','));
+  if (p.color.length) sp.set('color', p.color.join(','));
   if (p.material.length) sp.set('material', p.material.join(','));
   if (p.audience.length) sp.set('audience', p.audience.join(','));
   if (p.collection.length) sp.set('collection', p.collection.join(','));
@@ -66,6 +70,7 @@ export function applyFilters(products: CardData[], p: ShopParams): CardData[] {
     if (p.min !== undefined && dollars < p.min) return false;
     if (p.max !== undefined && dollars > p.max) return false;
     if (p.finish.length && !(x.finish && p.finish.includes(x.finish))) return false;
+    if (p.color.length && !x.garmentColors.some((c) => p.color.includes(c.key))) return false;
     if (p.material.length && !p.material.includes(x.materialKey)) return false;
     if (p.audience.length && !p.audience.some((a) => x.audience.includes(a))) return false;
     if (p.collection.length && !(x.collection && p.collection.includes(x.collection))) return false;
@@ -89,6 +94,7 @@ export function applyFilters(products: CardData[], p: ShopParams): CardData[] {
 export interface Facets {
   price: { min: number; max: number } | null;
   finish: Array<{ value: string; count: number }>;
+  color: Array<{ value: string; count: number }>;
   material: Array<{ value: string; count: number }>;
   audience: Array<{ value: string; count: number }>;
   collection: Array<{ value: string; count: number }>;
@@ -109,6 +115,7 @@ export function computeFacets(products: CardData[]): Facets {
   return {
     price: new Set(prices).size > 1 ? { min, max } : null,
     finish: multi(tally(products.flatMap((p) => (p.finish ? [p.finish] : [])))),
+    color: multi(tally(products.flatMap((p) => p.garmentColors.map((c) => c.key)))),
     material: multi(tally(products.map((p) => p.materialKey))),
     audience: multi(tally(products.flatMap((p) => p.audience))),
     collection: multi(tally(products.flatMap((p) => (p.collection ? [p.collection] : [])))),
@@ -116,5 +123,5 @@ export function computeFacets(products: CardData[]): Facets {
 }
 
 export function activeCount(p: ShopParams): number {
-  return (p.q ? 1 : 0) + (p.min !== undefined ? 1 : 0) + (p.max !== undefined ? 1 : 0) + p.finish.length + p.material.length + p.audience.length + p.collection.length + (p.inStock ? 1 : 0);
+  return (p.q ? 1 : 0) + (p.min !== undefined ? 1 : 0) + (p.max !== undefined ? 1 : 0) + p.finish.length + p.color.length + p.material.length + p.audience.length + p.collection.length + (p.inStock ? 1 : 0);
 }

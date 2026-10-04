@@ -118,6 +118,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
               <WhatsAppIcon width={18} height={18} />{t('customCta')}
             </ExternalButtonLink>
             <p className="mt-3 text-caption text-fg-subtle">{t('customHint')}</p>
+            <p className="mt-1 text-caption text-fg-subtle">{t('customColorNote')}</p>
           </section>
         )}
 
