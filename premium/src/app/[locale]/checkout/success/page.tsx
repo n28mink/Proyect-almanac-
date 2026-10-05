@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { AutoOpenWhatsApp } from '@/components/checkout/AutoOpenWhatsApp';
 import { ClearCartOnMount } from '@/components/checkout/ClearCartOnMount';
 import { ButtonLink, ExternalButtonLink } from '@/components/ui/Button';
 import { PageShell } from '@/components/ui/PageShell';
@@ -40,7 +39,6 @@ export default async function SuccessPage({ params, searchParams }: { params: Pr
   return (
     <PageShell eyebrow={t('successEyebrow', { number: order.number })} title={t('successTitle')} text={t('successText')} narrow>
       <ClearCartOnMount />
-      <AutoOpenWhatsApp href={wa} order={order.number} />
       <ul className="divide-y divide-line border-y border-line">
         {order.lines.map((l) => (
           <li key={l.variantId} className="flex items-center gap-4 py-4">

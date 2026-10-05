@@ -76,9 +76,9 @@ Se **rechazaron** (puerta de Emil): animar la apertura de la búsqueda con tecla
 
 ### Pedido sin toque extra
 
-- Al tocar «Hacer pedido» se registra el pedido (el servidor valida precios y stock, y arma el mensaje) y **WhatsApp se abre solo** con el mensaje ya escrito. La confirmación sigue ahí como respaldo, con el botón «Enviar pedido por WhatsApp».
-- Solo se abre solo mientras el toque del cliente siga «activo» (`navigator.userActivation`, unos 5 s en los navegadores): sin ese gesto, el celular no abre la app y se vería la página de wa.me con otro botón. En conexiones muy lentas, o al recargar o volver atrás, no redirige y queda el botón. Se recuerda por pedido para no abrir dos veces.
-- Prueba: la prueba de compra comprueba la petición a wa.me con el mensaje, y que al volver atrás no vuelve a redirigir. La prueba del panel cancela el pedido al terminar para reponer el inventario y poder repetirse.
+- Al tocar «Hacer pedido», el servidor registra el pedido y devuelve **ya el enlace de WhatsApp** con el mensaje armado con el pedido valorado. El navegador lo abre **en ese mismo momento**, sin pasar antes por otra página: el celular solo abre la app de WhatsApp mientras el toque del cliente sigue «activo» (`navigator.userActivation`, unos 5 s), y una página intermedia lo hacía llegar tarde.
+- Mientras tanto la dirección pasa a la de confirmación (`/checkout/success?order=…`) y, al volver a la pestaña, queda la confirmación con el botón «Enviar pedido por WhatsApp» como respaldo. Si no hay toque activo (o el navegador no lo expone), se va a la página de confirmación como antes.
+- Prueba: la de compra comprueba la petición a wa.me con el mensaje y que al volver atrás queda la confirmación con el botón. La del panel cancela el pedido al terminar para reponer el inventario y poder repetirse.
 
 ### Errores encontrados de paso
 

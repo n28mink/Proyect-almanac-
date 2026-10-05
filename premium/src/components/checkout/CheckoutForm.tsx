@@ -4,7 +4,8 @@ import { useState, useTransition } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { CartLines } from '@/components/cart/CartLines';
 import { TotalsTable } from '@/components/cart/CartSummary';
-import { Button, ButtonLink } from '@/components/ui/Button';
+import { Button, ButtonLink, ExternalButtonLink } from '@/components/ui/Button';
+import { WhatsAppIcon } from '@/components/ui/Icon';
 import { Field } from '@/components/ui/PageShell';
 import { DEFAULT_PAYMENT_METHOD, paymentMethodLabel, type PaymentMethod } from '@/domain/commerce';
 import { pick } from '@/domain/i18n';
@@ -32,7 +33,23 @@ export function CheckoutForm() {
   const [fieldErrors, setFieldErrors] = useState<Partial<Record<FieldName, string>>>({});
   const [pending, start] = useTransition();
   const [payment, setPayment] = useState<PaymentMethod>(DEFAULT_PAYMENT_METHOD);
+  /** Pedido ya registrado cuando WhatsApp se abre desde aquí: es lo que se ve al volver a la pestaña. */
+  const [placed, setPlaced] = useState<{ number: string; wa: string } | null>(null);
   const { quote, loading, refresh } = useCartQuote(true);
+
+  if (placed) {
+    return (
+      <div className="grid max-w-xl gap-6 py-6">
+        <p className="label-micro text-accent">{t('successEyebrow', { number: placed.number })}</p>
+        <h2 className="font-display text-display-m">{t('successTitle')}</h2>
+        <p className="text-fg-muted">{t('successText')}</p>
+        <div className="flex flex-wrap items-center gap-4">
+          <ExternalButtonLink href={placed.wa} size="lg" className="gap-2"><WhatsAppIcon width={20} height={20} />{t('sendWhatsapp')}</ExternalButtonLink>
+          <ButtonLink href="/shop" variant="outline" size="lg" transition="curtain">{t('continueShopping')}</ButtonLink>
+        </div>
+      </div>
+    );
+  }
 
   if (lines.length === 0) {
     return (
@@ -74,6 +91,7 @@ export function CheckoutForm() {
       },
       notes: String(fd.get('notes') ?? '') || undefined,
       paymentMethod: payment,
+      locale,
     };
     start(async () => {
       const res = await placeOrderAction(payload);
@@ -83,6 +101,14 @@ export function CheckoutForm() {
         return;
       }
       clear();
+      // El toque de «Hacer pedido» sigue activo unos segundos: es el único momento en que el celular deja abrir la app
+      // de WhatsApp sin otro toque. Se abre aquí mismo, sin pasar antes por otra página; al volver queda la confirmación.
+      if (navigator.userActivation?.isActive ?? true) {
+        setPlaced({ number: res.number, wa: res.whatsappUrl });
+        window.history.replaceState(null, '', `${window.location.pathname.replace(/\/$/, '')}/success?order=${res.orderId}`);
+        window.location.assign(res.whatsappUrl);
+        return;
+      }
       router.replace(`/checkout/success?order=${res.orderId}`);
     });
   };

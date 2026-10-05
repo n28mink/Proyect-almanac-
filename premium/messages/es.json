@@ -295,7 +295,7 @@
     "terms": "Tu pedido queda registrado y lo confirmamos por WhatsApp. Al continuar aceptas nuestros términos.",
     "successEyebrow": "Pedido {number}",
     "successTitle": "¡Pedido recibido!",
-    "successText": "Se abre WhatsApp con tu pedido ya escrito: solo tienes que enviarlo para confirmar disponibilidad, costo de entrega y pago. Si no se abrió solo, toca el botón.",
+    "successText": "Falta un último paso: envía tu pedido por WhatsApp para confirmar disponibilidad, costo de entrega y pago. Se abre con el mensaje ya escrito.",
     "sendWhatsapp": "Enviar pedido por WhatsApp",
     "whatsappHint": "Si el botón no abre WhatsApp, escríbenos por <wa>WhatsApp</wa> e indica el pedido {order}.",
     "status": "Estado",
