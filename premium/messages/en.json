@@ -295,7 +295,7 @@
     "terms": "Your order is saved and we confirm it on WhatsApp. By continuing you accept our terms.",
     "successEyebrow": "Order {number}",
     "successTitle": "Order received!",
-    "successText": "WhatsApp opens with your order already written: just send it so we can confirm availability, delivery cost and payment. If it did not open on its own, tap the button.",
+    "successText": "One last step: send your order on WhatsApp so we can confirm availability, delivery cost and payment. It opens with the message already written.",
     "sendWhatsapp": "Send order on WhatsApp",
     "whatsappHint": "If the button does not open WhatsApp, message us on <wa>WhatsApp</wa> and mention order {order}.",
     "status": "Status",

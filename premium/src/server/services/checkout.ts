@@ -27,6 +27,7 @@ const checkoutSchema = z.object({
 export type PlaceOrderError = 'invalid' | 'empty' | 'cart_changed';
 
 export type PlaceOrderResult = { ok: true; orderId: string } | { ok: false; error: PlaceOrderError };
+export type PlacedOrder = { ok: true; orderId: string; number: string; whatsappUrl: string };
 
 /**
  * Registra el pedido (estado «pendiente de pago») con la forma de pago elegida. No se cobra en línea: el pago
