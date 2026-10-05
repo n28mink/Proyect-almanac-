@@ -1,7 +1,16 @@
 import AxeBuilder from '@axe-core/playwright';
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type BrowserContext, type Page } from '@playwright/test';
 
 const ADMIN = process.env.NEXT_PUBLIC_ADMIN_PATH || 'gestion';
+
+/**
+ * La confirmación abre WhatsApp sola mientras el toque de «Hacer pedido» siga activo (el navegador lo mantiene ~5 s).
+ * Las pruebas fijan ese estado para no depender de la velocidad del servidor: activo para comprobar la apertura
+ * automática, inactivo para las que necesitan quedarse en la confirmación.
+ */
+const userActivation = (ctx: BrowserContext, isActive: boolean) =>
+  ctx.addInitScript((active) => Object.defineProperty(navigator, 'userActivation', { get: () => ({ isActive: active, hasBeenActive: active }) }), isActive);
+const noAutoWhatsApp = (ctx: BrowserContext) => userActivation(ctx, false);
 
 const errors = (page: Page) => {
   const list: string[] = [];
@@ -69,8 +78,11 @@ test('sin cuentas de cliente ni enlaces al panel en el sitio público', async ({
   expect(robots).not.toMatch(/admin|gestion/);
 });
 
-test('compra por WhatsApp: bolsa → pedido registrado → mensaje de WhatsApp (sin pago en línea)', async ({ page }) => {
+test('compra por WhatsApp: se registra el pedido y WhatsApp se abre solo con el mensaje escrito (sin pago en línea)', async ({ page, context }) => {
   const errs = errors(page);
+  await userActivation(context, true);
+  // wa.me responde algo mínimo para que la navegación se complete también en el entorno de pruebas.
+  await page.route('https://wa.me/**', (r) => r.fulfill({ contentType: 'text/html', body: '<h1>WhatsApp</h1>' }));
   await page.goto('/es/shop/rings', { waitUntil: 'networkidle' });
   await page.locator('a[href*="/product/"]').first().click();
   await page.waitForURL(/\/product\//);
@@ -88,14 +100,22 @@ test('compra por WhatsApp: bolsa → pedido registrado → mensaje de WhatsApp (
   await page.locator('#phone').fill('0412 555 1234');
   await page.locator('#line1').fill('Av. Principal, casa 3');
   await page.locator('#city').fill('Turmero');
+  const opened = page.waitForRequest(/https:\/\/wa\.me\/584121318133\?text=/, { timeout: 20_000 });
   await page.getByRole('button', { name: 'Hacer pedido' }).click();
-  await page.waitForURL(/checkout\/success/, { timeout: 20_000 });
-  const wa = page.getByRole('link', { name: /Enviar pedido por WhatsApp/ });
-  const href = (await wa.getAttribute('href'))!;
-  expect(href).toMatch(/^https:\/\/wa\.me\/584121318133\?text=/);
-  const text = decodeURIComponent(href.split('text=')[1]!);
+  // Sin tocar nada más, el navegador va a WhatsApp con el mensaje del pedido ya escrito.
+  const req = await opened;
+  const text = decodeURIComponent(req.url().split('text=')[1]!);
   for (const part of ['CLV-', 'Ana Pérez', '0412 555 1234', 'Turmero', 'Total', 'Forma de pago: Pago móvil']) expect(text).toContain(part);
+  await page.waitForURL(/wa\.me/);
+
+  // Al volver atrás queda la confirmación con el botón de respaldo y NO vuelve a redirigir.
+  await page.goBack();
+  await page.waitForURL(/checkout\/success/);
+  const wa = page.getByRole('link', { name: /Enviar pedido por WhatsApp/ });
+  await expect(wa).toHaveAttribute('href', /^https:\/\/wa\.me\/584121318133\?text=/);
   await expect(wa).toHaveAttribute('target', '_blank');
+  await page.waitForTimeout(1500);
+  expect(page.url()).toMatch(/checkout\/success/);
   // La ayuda para escribir por WhatsApp es un enlace con icono, sin el número.
   await expect(page.getByRole('main').getByRole('link', { name: 'WhatsApp', exact: true })).toBeVisible();
   expect(await page.locator('main').innerText()).not.toMatch(/131\s?8133/);
@@ -104,6 +124,7 @@ test('compra por WhatsApp: bolsa → pedido registrado → mensaje de WhatsApp (
 
 test('forma de pago: iconos, preselección, texto de la elegida y resumen del pedido', async ({ page, context }) => {
   const errs = errors(page);
+  await noAutoWhatsApp(context);
   await context.addInitScript(() => localStorage.setItem('clover-cart-v2', JSON.stringify({ state: { lines: [{ productId: 'cm04', variantId: 'cm04-l', quantity: 1 }] }, version: 0 })));
   await page.goto('/es/checkout', { waitUntil: 'networkidle' });
   const group = page.getByRole('group', { name: 'Forma de pago' });
@@ -339,6 +360,7 @@ test('admin: iniciar sesión y confirmar el pago de un pedido registrado por un 
   test.skip(!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD, 'Requiere ADMIN_EMAIL y ADMIN_PASSWORD (los mismos del servidor).');
   // 1) Un cliente hace un pedido de 1 unidad.
   const ctx = await browser.newContext({ baseURL: baseURL! });
+  await noAutoWhatsApp(ctx);
   const shop = await ctx.newPage();
   await shop.goto('/es/shop/rings', { waitUntil: 'networkidle' });
   await shop.locator('a[href*="/product/"]').first().click();
@@ -369,4 +391,11 @@ test('admin: iniciar sesión y confirmar el pago de un pedido registrado por un 
   await row.getByRole('button', { name: 'Guardar' }).click();
   await page.reload();
   await expect(page.locator('li', { hasText: number }).getByRole('combobox')).toHaveValue('paid');
+
+  // Se cancela al terminar: así el inventario se repone y la prueba se puede repetir sin agotar la pieza.
+  const done = page.locator('li', { hasText: number });
+  await done.getByRole('combobox').selectOption('cancelled');
+  await done.getByRole('button', { name: 'Guardar' }).click();
+  await page.reload();
+  await expect(page.locator('li', { hasText: number }).getByRole('combobox')).toHaveValue('cancelled');
 });

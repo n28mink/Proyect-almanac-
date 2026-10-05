@@ -74,6 +74,12 @@ Se **rechazaron** (puerta de Emil): animar la apertura de la búsqueda con tecla
 - **Aviso de color** en «Personalízala»: los colores pueden variar entre la pantalla y la prenda impresa.
 - Descartado: poner las piezas de Clover sobre fotos de modelos ajenas. Probado con una foto; sobre fondo propio se nota lo falso y la escala sería inventada.
 
+### Pedido sin toque extra
+
+- Al tocar «Hacer pedido» se registra el pedido (el servidor valida precios y stock, y arma el mensaje) y **WhatsApp se abre solo** con el mensaje ya escrito. La confirmación sigue ahí como respaldo, con el botón «Enviar pedido por WhatsApp».
+- Solo se abre solo mientras el toque del cliente siga «activo» (`navigator.userActivation`, unos 5 s en los navegadores): sin ese gesto, el celular no abre la app y se vería la página de wa.me con otro botón. En conexiones muy lentas, o al recargar o volver atrás, no redirige y queda el botón. Se recuerda por pedido para no abrir dos veces.
+- Prueba: la prueba de compra comprueba la petición a wa.me con el mensaje, y que al volver atrás no vuelve a redirigir. La prueba del panel cancela el pedido al terminar para reponer el inventario y poder repetirse.
+
 ### Errores encontrados de paso
 
 - La **rejilla de categorías de la home no se veía en escritorio** (altura 0): la regla `.snap-row { display: flex }` estaba fuera de capa y ganaba a `lg:grid`. Ahora vive en `@layer components`.
