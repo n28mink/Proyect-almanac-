@@ -56,6 +56,7 @@ interface ProductCardProps {
 
 export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 25vw, (min-width: 768px) 33vw, 50vw', layout = 'grid', className }: ProductCardProps) {
   const t = useTranslations('product');
+  const ts = useTranslations('shop');
   const media = useRef<HTMLDivElement>(null);
   const [hovered, setHovered] = useState(false);
   const [everHovered, setEverHovered] = useState(false);
@@ -97,9 +98,7 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
               <Image data-hover-layer="" src={p.hoverImage.src} alt="" fill sizes={sizes} className="object-cover" style={focalStyle(p.hoverImage)} aria-hidden="true" />
             )}
             {p.hoverVideo && everHovered && <HoverVideo video={p.hoverVideo} active={hovered} />}
-            {badgeText && (
-              <span className={cn('label-micro absolute left-3 top-3 px-2.5 py-1.5', p.badge === 'soldOut' ? 'bg-ink text-ivory' : 'bg-ivory/90 text-ink backdrop-blur-sm')}>{badgeText}</span>
-            )}
+            {badgeText && p.badge === 'soldOut' && <span className="label-micro absolute left-3 top-3 bg-ink px-2.5 py-1.5 text-ivory">{badgeText}</span>}
           </div>
         </TransitionLink>
 
@@ -131,7 +130,17 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
       </div>
 
       <div className={cn('pt-4', layout === 'list' && 'pt-0')}>
-        <p className="text-caption text-fg-subtle">{p.categoryLabel}</p>
+        <div className="flex min-h-[1.25rem] items-center justify-between gap-3">
+          {p.finish ? (
+            <p className="flex items-center gap-2 text-caption text-fg-subtle">
+              <span className="finish-dot" data-finish={p.finish} aria-hidden="true" />
+              {ts(`finish.${p.finish}`)}
+            </p>
+          ) : (
+            <p className="text-caption text-fg-subtle">{p.categoryLabel}</p>
+          )}
+          {badgeText && p.badge !== 'soldOut' && <p className="label-micro text-accent">{badgeText}</p>}
+        </div>
         <h3 className="mt-1.5 min-h-[2.6em] font-display text-[1.3rem] leading-[1.2]">
           <TransitionLink href={`/product/${p.slug}`} variant="clip" className="hover:text-accent">{p.name}</TransitionLink>
         </h3>

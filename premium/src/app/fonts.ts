@@ -17,3 +17,11 @@ export const sansFont = localFont({
   display: 'swap',
   adjustFontFallback: 'Arial',
 });
+
+/** Solo para el nombre de la marca: serif de alto contraste (Bodoni Moda, licencia OFL), en mayúsculas. */
+export const brandFont = localFont({
+  src: [{ path: '../assets/fonts/bodoni-moda-latin-wght-normal.woff2', style: 'normal', weight: '400 900' }],
+  variable: '--font-brand-loaded',
+  display: 'swap',
+  adjustFontFallback: 'Times New Roman',
+});

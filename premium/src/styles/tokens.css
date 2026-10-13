@@ -95,6 +95,7 @@
   --color-accent-decor: var(--accent-decor);
 
   --font-display: var(--font-display-loaded), 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-brand: var(--font-brand-loaded), 'Bodoni Moda', 'Didot', Georgia, 'Times New Roman', serif;
   --font-sans: var(--font-sans-loaded), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 

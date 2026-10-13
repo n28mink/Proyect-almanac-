@@ -3,6 +3,7 @@ import { hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { ShopPage } from '@/components/shop/ShopPage';
+import { collectionsNav } from '@/config/taxonomy';
 import { collections, getCollection } from '@/content/collections';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
@@ -29,5 +30,5 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
   if (!c) notFound();
   setRequestLocale(locale);
   const products = (await getCatalog()).filter((p) => p.collection === slug);
-  return <ShopPage locale={locale} products={products} title={pick(c.name, locale)} blurb={pick(c.description, locale)} eyebrow={pick(c.tagline, locale)} />;
+  return <ShopPage locale={locale} products={products} title={pick(c.name, locale)} blurb={pick(c.description, locale)} eyebrow={pick(c.tagline, locale)} parent={{ label: pick(collectionsNav.name, locale), href: '/collections' }} />;
 }

@@ -95,3 +95,8 @@ Se pidió quitar el botón sobre los vídeos. Las guías (y WCAG 2.2.2) piden un
 - **Carga diferida de GSAP/Lenis** (~55 KB gzip): desplazaría la descarga detrás de la hidratación, pero exige reescribir siete componentes de animación ya verificados; riesgo mayor que el beneficio.
 - **Probar en dispositivos reales** (iPhone/Android): las correcciones móviles se verificaron por CSS/emulación; Emil recomienda hardware real para darlas por cerradas.
 - **Regla de «Title Case» de Vercel**: no aplica al español (se usa mayúscula inicial de frase).
+
+## Cuarta pasada: marca, tamaño de los fotogramas y estructura de la tienda
+- **Marca**: «CLOVER» en Bodoni Moda 600 (serif de alto contraste, licencia OFL, autoalojada en `src/assets/fonts`) con el trébol dorado; subtítulo a plena opacidad. Sobre vídeo o foto, la cabecera lleva un velo oscuro y sombra de texto; con la cabecera sólida, verde de marca sobre marfil.
+- **Fotogramas**: en escritorio ningún bloque ocupa la pantalla entera. Hero ≈ 76 % de la altura (`clamp(34rem, 76svh, 44rem)`), vídeo de la sección de joyería ≈ 70 %, colecciones y editorial con altura propia. Móvil sin cambios.
+- **Tienda** (estructura tomada de una tienda de joyería de referencia): migas de pan, título con descripción corta y atajos redondos (tipos de pieza, o tonos/colores en cada categoría); barra con botón «Filtros» + recuento + búsqueda + orden; filtros en panel lateral (escritorio) u hoja inferior (móvil), de modo que la cuadrícula usa todo el ancho; tarjeta con punto del acabado, etiqueta («Más vendido», «Nuevo») en la misma línea y segunda foto al pasar el cursor.
