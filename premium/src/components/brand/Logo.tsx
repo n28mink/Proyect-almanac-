@@ -20,7 +20,7 @@ export function CloverGlyph({ className }: { className?: string }) {
 /** «CLOVER»: nombre en serif de alto contraste (Bodoni Moda) en mayúsculas + trébol dorado como superíndice (texto accesible: «Clover»). */
 export function Wordmark({ className }: { className?: string }) {
   return (
-    <span className={cn('inline-flex items-start font-brand font-semibold uppercase leading-none tracking-[0.07em] text-[var(--logo-fg,var(--accent))]', className)} translate="no">
+    <span className={cn('inline-flex items-start font-brand font-semibold uppercase [line-height:1] tracking-[0.07em] text-[var(--logo-fg,var(--accent))]', className)} translate="no">
       <span>Clover</span>
       <CloverGlyph className="ml-[0.1em] -mt-[0.04em] h-[0.6em] w-[0.48em] text-[var(--logo-glyph,var(--color-gold))]" />
     </span>
@@ -35,9 +35,9 @@ export function Logo({ className, subtitle = true, stacked = false }: { classNam
   const t = useTranslations('brand');
   return (
     <span className={cn('inline-flex', stacked ? 'mt-0.5 flex-col items-center gap-2' : 'items-baseline gap-3', className)}>
-      <Wordmark className={stacked ? 'text-[1.65rem] md:text-[2rem]' : 'text-[1.85rem]'} />
+      <Wordmark className={stacked ? 'text-[1.75rem] md:text-[2.1rem] lg:text-[2.75rem]' : 'text-[1.85rem]'} />
       {subtitle && (
-        <span className={cn('font-medium uppercase text-current', stacked ? 'text-[0.625rem] tracking-[0.3em] md:text-[0.6875rem]' : 'text-[0.6875rem] tracking-[0.26em]')}>{t('subtitle')}</span>
+        <span className={cn('whitespace-nowrap font-medium uppercase text-current', stacked ? 'text-[0.5625rem] tracking-[0.2em] sm:text-[0.625rem] sm:tracking-[0.28em] md:text-[0.6875rem] lg:text-[0.75rem] lg:tracking-[0.36em]' : 'text-[0.6875rem] tracking-[0.26em]')}>{t('subtitle')}</span>
       )}
     </span>
   );

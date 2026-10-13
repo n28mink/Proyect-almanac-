@@ -8,30 +8,13 @@ import { TransitionLink } from '@/components/motion/TransitionLink';
 import { BagIcon, HeartIcon, MenuIcon, SearchIcon } from '@/components/ui/Icon';
 import { usePathname } from '@/i18n/navigation';
 import { cn } from '@/lib/cn';
-import { usePrefersReducedMotion } from '@/lib/hooks';
 import { useCart } from '@/stores/cart-store';
 import { useUi } from '@/stores/ui-store';
 import { useWishlist } from '@/stores/wishlist-store';
 import type { NavLink } from './nav-data';
 
 interface HeaderProps {
-  announcements: string[];
   primary: NavLink[];
-}
-
-function Announcement({ messages }: { messages: string[] }) {
-  const [i, setI] = useState(0);
-  const reduced = usePrefersReducedMotion();
-  useEffect(() => {
-    if (reduced || messages.length < 2) return;
-    const id = setInterval(() => setI((n) => (n + 1) % messages.length), 5200);
-    return () => clearInterval(id);
-  }, [messages.length, reduced]);
-  return (
-    <p key={i} className="intro-fade truncate text-center text-caption font-medium tracking-[0.02em]">
-      {messages[i]}
-    </p>
-  );
 }
 
 function IconButton({ label, children, badge, className, ...rest }: { label: string; children: React.ReactNode; badge?: number } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
@@ -47,7 +30,7 @@ function IconButton({ label, children, badge, className, ...rest }: { label: str
   );
 }
 
-export function Header({ announcements, primary }: HeaderProps) {
+export function Header({ primary }: HeaderProps) {
   const t = useTranslations('header');
   const pathname = usePathname();
   const openPanel = useUi((s) => s.openPanel);
@@ -105,32 +88,24 @@ export function Header({ announcements, primary }: HeaderProps) {
     };
   }, [pathname]);
 
+  // Barras pegajosas (p. ej. filtros de la tienda) suben al borde cuando la cabecera se oculta al bajar.
+  useEffect(() => {
+    document.documentElement.toggleAttribute('data-header-hidden', hidden);
+  }, [hidden]);
+
+  const menuButton = (className: string, label: boolean) => (
+    <button type="button" onClick={() => openPanel('menu')} aria-haspopup="dialog" aria-label={t('menu')} className={cn('label-micro flex h-11 min-w-11 items-center justify-center gap-3 px-2 transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90', className)}>
+      <MenuIcon />
+      {label && <span className="hidden sm:inline lg:inline">{t('menu')}</span>}
+    </button>
+  );
+
   return (
     <header className="site-header" data-solid={solid} data-hidden={hidden} data-tone={tone} style={{ height: 'auto' }}>
-      <div className={cn('grid overflow-hidden bg-forest text-ivory transition-[grid-template-rows] duration-300 ease-[var(--ease-out)]', solid ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]')}>
-        <div className="min-h-0">
-          <div className="flex h-[var(--announcement-h)] items-center justify-center px-4">
-            <Announcement messages={announcements} />
-          </div>
-        </div>
-      </div>
+      <div className="container-x grid h-[var(--header-row-h)] grid-cols-[1fr_auto_1fr] items-center">
+        <div className="flex items-center">{menuButton('-ml-2 lg:hidden', true)}</div>
 
-      <div className="container-x grid h-[var(--header-h)] grid-cols-[1fr_auto_1fr] items-center">
-        <div className="flex items-center gap-1 lg:gap-7">
-          <button type="button" onClick={() => openPanel('menu')} aria-haspopup="dialog" aria-label={t('menu')} className="label-micro -ml-2 flex h-11 min-w-11 items-center justify-center gap-3 px-2 transition-[opacity,scale] duration-150 ease-[var(--ease-out)] hover:opacity-70 active:scale-90">
-            <MenuIcon />
-            <span className="hidden sm:inline">{t('menu')}</span>
-          </button>
-          <nav aria-label={t('primaryNav')} className="hidden items-center gap-7 lg:flex">
-            {primary.map((l) => (
-              <TransitionLink key={l.href} href={l.href} className="nav-link label-micro" aria-current={pathname === l.href ? 'page' : undefined}>
-                {l.label}
-              </TransitionLink>
-            ))}
-          </nav>
-        </div>
-
-        <TransitionLink href="/" aria-label={t('home')} className="justify-self-center" variant="ivory">
+        <TransitionLink href="/" aria-label={t('home')} className="flex justify-self-center" variant="ivory">
           <Logo stacked />
         </TransitionLink>
 
@@ -147,6 +122,16 @@ export function Header({ announcements, primary }: HeaderProps) {
           </IconButton>
         </div>
       </div>
+
+      {/* Escritorio: el menú y las secciones van en su propia fila, debajo de la marca. */}
+      <nav aria-label={t('primaryNav')} className="site-header-nav hidden h-[var(--header-nav-h)] items-center justify-center gap-10 lg:flex">
+        {menuButton('', true)}
+        {primary.map((l) => (
+          <TransitionLink key={l.href} href={l.href} className="nav-link label-micro" aria-current={pathname === l.href ? 'page' : undefined}>
+            {l.label}
+          </TransitionLink>
+        ))}
+      </nav>
     </header>
   );
 }

@@ -14,7 +14,7 @@ export async function ProductRail({ products, title, href }: { products: CardDat
         <SectionHeading title={title} size="m" />
         <TransitionLink href={href} className="label-micro link-underline">{t('viewAll')}</TransitionLink>
       </div>
-      <ul className="snap-row" data-lenis-prevent-wheel="">
+      <ul className="snap-row">
         {products.map((p, i) => (
           <li key={p.id} className="w-[64vw] max-w-[22rem] sm:w-[38vw] lg:w-[24vw]">
             <FadeReveal delay={i * 60}>

@@ -3,13 +3,17 @@ import { Logo } from '@/components/brand/Logo';
 import { TransitionLink } from '@/components/motion/TransitionLink';
 import type { Locale } from '@/i18n/routing';
 import { site } from '@/config/site';
+import { MobilePayIcon, TruckIcon, WhatsAppIcon } from '@/components/ui/Icon';
 import { WhatsAppLink } from '@/components/ui/WhatsAppLink';
 import { greeting, whatsappUrl } from '@/lib/whatsapp';
 import { MotionToggle } from './MotionToggle';
 import { LocaleSwitcher } from './Switchers';
 import type { NavData } from './nav-data';
 
-export async function Footer({ nav }: { nav: NavData }) {
+const NOTICE_ICONS = [WhatsAppIcon, TruckIcon, MobilePayIcon];
+
+/** `notices`: los tres avisos de la tienda (pedidos por WhatsApp, entregas, formas de pago), en el orden de las campañas. */
+export async function Footer({ nav, notices }: { nav: NavData; notices: string[] }) {
   const t = await getTranslations('footer');
   const locale = (await getLocale()) as Locale;
   const col = 'space-y-3 text-caption';
@@ -19,6 +23,17 @@ export async function Footer({ nav }: { nav: NavData }) {
 
   return (
     <footer data-tone="evergreen" className="bg-surface text-fg">
+      <ul className="container-x grid gap-5 border-b border-line py-8 md:grid-cols-3 md:gap-8">
+        {notices.slice(0, 3).map((n, i) => {
+          const Icon = NOTICE_ICONS[i] ?? TruckIcon;
+          return (
+            <li key={n} className="flex items-center gap-4 text-caption font-medium text-fg">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-line-strong text-accent"><Icon width={20} height={20} aria-hidden="true" /></span>
+              {n}
+            </li>
+          );
+        })}
+      </ul>
       <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:py-24">
         <div className="max-w-sm">
           <Logo />
