@@ -181,6 +181,7 @@ dialog.dlg[data-visible='true'] .menu-fade {
   color: var(--header-fg, var(--fg));
   --logo-fg: var(--color-forest);
   --logo-glyph: #8c6f2f;
+  --header-rule: var(--line);
   transition:
     transform 0.32s var(--ease-out),
     background-color 0.3s var(--ease-out),
@@ -199,16 +200,21 @@ dialog.dlg[data-visible='true'] .menu-fade {
   --header-fg: #fffaf0;
   --logo-fg: #fffaf0;
   --logo-glyph: #ecd9a6;
+  --header-rule: rgb(255 255 255 / 0.28);
   /* Sobre vídeo o foto: sombra suave para que nombre y menú se lean con cualquier fondo. */
   text-shadow: 0 1px 16px rgb(0 0 0 / 0.38);
 }
 .site-header[data-tone='light']:not([data-solid='true'])::before {
   content: '';
   position: absolute;
-  inset: 0 0 -3.5rem 0;
+  inset: 0 0 -3rem 0;
   z-index: -1;
   pointer-events: none;
   background: linear-gradient(to bottom, rgb(6 22 15 / 0.55), transparent);
+}
+.site-header-nav {
+  border-top: 1px solid var(--header-rule);
+  transition: border-color 0.3s var(--ease-out);
 }
 .site-header[data-hidden='true'] {
   transform: translate3d(0, -100%, 0);
@@ -485,4 +491,9 @@ input[type='range'].range::-moz-range-thumb {
 }
 .finish-dot[data-finish='mixed'] {
   background: linear-gradient(90deg, #dcc283 50%, #c4c9cd 50%);
+}
+
+/* Con la cabecera oculta (al bajar), las barras pegajosas suben hasta el borde. */
+html[data-header-hidden] {
+  --sticky-top: 0px;
 }

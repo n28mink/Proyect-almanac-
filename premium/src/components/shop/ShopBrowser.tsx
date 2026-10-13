@@ -153,7 +153,7 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
 
   return (
     <div className="container-x pb-24">
-      <div className="sticky top-[var(--header-h)] z-20 -mx-[var(--gutter)] mb-6 flex flex-wrap items-center gap-x-4 gap-y-3 border-y border-line bg-surface/95 px-[var(--gutter)] py-3 backdrop-blur-md">
+      <div className="sticky top-[var(--sticky-top)] z-20 transition-[top] duration-300 ease-[var(--ease-out)] -mx-[var(--gutter)] mb-6 flex flex-wrap items-center gap-x-4 gap-y-3 border-y border-line bg-surface/95 px-[var(--gutter)] py-3 backdrop-blur-md">
         <Button variant="outline" size="sm" onClick={() => setSheet(true)} aria-haspopup="dialog">
           <FilterIcon width={16} height={16} />
           {t('filters')}{count > 0 ? ` (${count})` : ''}
@@ -166,7 +166,7 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
         </div>
         <label className="ml-auto flex items-center gap-2 md:ml-0">
           <span className="label-micro hidden text-fg-subtle sm:inline">{t('sortBy')}</span>
-          <select value={params.sort} onChange={(e) => update({ sort: e.target.value as ShopParams['sort'] })} className="field !min-h-11 !w-auto text-caption" aria-label={t('sortBy')}>
+          <select value={params.sort} onChange={(e) => update({ sort: e.target.value as ShopParams['sort'] })} className="field !min-h-11 !w-auto !max-w-[8.75rem] text-caption md:!max-w-none" aria-label={t('sortBy')}>
             {sortOptions.map((s) => <option key={s} value={s}>{t(`sort.${s}`)}</option>)}
           </select>
         </label>

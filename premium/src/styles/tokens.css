@@ -130,13 +130,18 @@
 
   /* Layout */
   --gutter: clamp(1rem, 0.4rem + 3vw, 3rem);
-  --header-h: 4.25rem;
-  --announcement-h: 2.25rem;
+  /* Cabecera: fila de la marca (+ fila del menú en escritorio). Sin barra de avisos arriba. */
+  --header-row-h: 4.75rem;
+  --header-nav-h: 0rem;
+  --header-h: calc(var(--header-row-h) + var(--header-nav-h));
+  --announcement-h: 0px;
+  --sticky-top: var(--header-h);
 }
 
 @media (min-width: 64rem) {
   :root {
-    --header-h: 5rem;
+    --header-row-h: 5.75rem;
+    --header-nav-h: 3rem;
   }
 }
 

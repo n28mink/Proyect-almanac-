@@ -95,7 +95,7 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
 
         {/* Móvil/tablet: carrusel con snap */}
         <div className="relative lg:hidden">
-          <ul ref={scroller} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none" aria-label={t('gallery')} data-lenis-prevent-wheel="">
+          <ul ref={scroller} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none" aria-label={t('gallery')}>
             {images.map((img, i) => (
               <li key={img.src} className="relative aspect-[4/5] w-full shrink-0 snap-center bg-surface-sunken">
                 <Image src={img.src} alt={img.alt} fill sizes="100vw" priority={i === 0} placeholder={img.blur ? 'blur' : 'empty'} blurDataURL={img.blur} className="object-cover" style={focal(img)} onClick={() => setBox(true)} />

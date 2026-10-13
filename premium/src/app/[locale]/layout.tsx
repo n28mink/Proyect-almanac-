@@ -63,11 +63,11 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
             <a href="#main" className="sr-only-focusable fixed left-4 top-4 z-[120] bg-ink px-5 py-3 text-ivory">{t('skip')}</a>
-            <Header announcements={announcements} primary={nav.primary} />
+            <Header primary={nav.primary} />
             <main id="main" tabIndex={-1} className="outline-none">
               {children}
             </main>
-            <Footer nav={nav} />
+            <Footer nav={nav} notices={announcements} />
             <CartDrawer />
             <MenuOverlay nav={nav} />
             <SearchOverlay suggestions={[...nav.menuTypes, ...nav.menuAudience]} />

@@ -16,7 +16,6 @@ import { WhatsAppBand } from '@/components/home/WhatsAppBand';
 import { ProductRail } from '@/components/home/ProductRail';
 import { ScrollExpandVideo } from '@/components/home/ScrollExpandVideo';
 import { WatchShowcase } from '@/components/home/WatchShowcase';
-import { KineticMarquee } from '@/components/motion/KineticMarquee';
 import { StaggerText } from '@/components/motion/Reveal';
 import { ButtonLink } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Section';
@@ -70,7 +69,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const journalEntries = journal.slice(0, 3);
   const covers = Object.fromEntries(journalEntries.map((e) => { const img = byId(e.coverProductId).images[0]!; return [e.slug, { src: img.src, blur: img.blur }]; }));
-  const marqueeItems = (['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'shirts'] as const).map((k) => t(`marquee.${k}`));
 
   return (
     <>
@@ -84,10 +82,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       />
 
       <CategoryNav locale={locale} />
-
-      <div className="bg-surface py-14 text-fg md:py-20" data-header-tone="dark" aria-hidden="true">
-        <KineticMarquee items={marqueeItems.map((w) => <span key={w} className="font-display text-display-m text-fg/80 whitespace-nowrap">{w}</span>)} duration={52} />
-      </div>
 
       <EditorialSplit imageA={{ src: splitA.src, blur: splitA.blur, alt: pick(splitA.alt, locale) }} imageB={{ src: splitB.src, blur: splitB.blur, alt: pick(splitB.alt, locale) }} />
 
