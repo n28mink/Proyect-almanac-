@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { categories } from '@/config/taxonomy';
 import { bezier, cssEase, duration, gsapEase } from '@/config/motion';
 import { collections } from '@/content/collections';
@@ -75,6 +75,23 @@ describe('textos de contacto', () => {
     for (const t of all) expect(t).not.toMatch(/131\s?8133/);
     expect(all.some((t) => t.includes(WA_TOKEN))).toBe(true);
     expect(plainLegal(`escríbenos por ${WA_TOKEN}`)).toBe('escríbenos por WhatsApp');
+  });
+});
+
+describe('dirección pública (vista previa al compartir)', () => {
+  const load = async (env: Record<string, string | undefined>) => {
+    const keep = { a: process.env.NEXT_PUBLIC_SITE_URL, b: process.env.VERCEL_PROJECT_PRODUCTION_URL };
+    for (const [k, v] of Object.entries({ NEXT_PUBLIC_SITE_URL: undefined, VERCEL_PROJECT_PRODUCTION_URL: undefined, ...env })) { if (v === undefined) delete process.env[k]; else process.env[k] = v; }
+    vi.resetModules();
+    const { site } = await import('@/config/site');
+    if (keep.a === undefined) delete process.env.NEXT_PUBLIC_SITE_URL; else process.env.NEXT_PUBLIC_SITE_URL = keep.a;
+    if (keep.b === undefined) delete process.env.VERCEL_PROJECT_PRODUCTION_URL; else process.env.VERCEL_PROJECT_PRODUCTION_URL = keep.b;
+    return site.url;
+  };
+  it('usa la configurada, si no la de Vercel y solo al final localhost', async () => {
+    expect(await load({ NEXT_PUBLIC_SITE_URL: 'https://clover.example/', VERCEL_PROJECT_PRODUCTION_URL: 'x.vercel.app' })).toBe('https://clover.example');
+    expect(await load({ VERCEL_PROJECT_PRODUCTION_URL: 'proyect-almanac.vercel.app' })).toBe('https://proyect-almanac.vercel.app');
+    expect(await load({})).toBe('http://localhost:3000');
   });
 });
 
