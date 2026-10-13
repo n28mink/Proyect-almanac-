@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { ProductCard } from '@/components/product/ProductCard';
@@ -120,6 +120,15 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
   const pathname = usePathname();
   const sp = useSearchParams();
   const [sheet, setSheet] = useState(false);
+  // Panel lateral en escritorio, hoja inferior en móvil.
+  const [wide, setWide] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 64rem)');
+    const on = () => setWide(mq.matches);
+    on();
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
   const params = useMemo(() => parseParams(new URLSearchParams(sp.toString())), [sp]);
   const facets = useMemo(() => computeFacets(products), [products]);
   const results = useMemo(() => applyFilters(products, params), [products, params]);
@@ -144,18 +153,18 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
 
   return (
     <div className="container-x pb-24">
-      <div className="sticky top-[var(--header-h)] z-20 -mx-[var(--gutter)] mb-6 flex flex-wrap items-center gap-3 border-y border-line bg-surface/95 px-[var(--gutter)] py-3 backdrop-blur-md lg:top-[calc(var(--header-h))]">
-        <div className="relative min-w-[10rem] flex-1 sm:max-w-xs">
+      <div className="sticky top-[var(--header-h)] z-20 -mx-[var(--gutter)] mb-6 flex flex-wrap items-center gap-x-4 gap-y-3 border-y border-line bg-surface/95 px-[var(--gutter)] py-3 backdrop-blur-md">
+        <Button variant="outline" size="sm" onClick={() => setSheet(true)} aria-haspopup="dialog">
+          <FilterIcon width={16} height={16} />
+          {t('filters')}{count > 0 ? ` (${count})` : ''}
+        </Button>
+        <p className="text-caption text-fg-muted" role="status" aria-live="polite">{t('results', { count: results.length })}</p>
+        <div className="relative ml-auto hidden max-w-[14rem] flex-1 md:block">
           <SearchIcon width={18} height={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-fg-subtle" />
           <label htmlFor="shop-q" className="sr-only">{t('search')}</label>
           <input id="shop-q" type="search" value={params.q} onChange={(e) => update({ q: e.target.value })} placeholder={t('search')} className="field !min-h-11 !pl-10" />
         </div>
-        <Button variant="outline" size="sm" onClick={() => setSheet(true)} className="lg:hidden" aria-haspopup="dialog">
-          <FilterIcon width={16} height={16} />
-          {t('filters')}{count > 0 ? ` (${count})` : ''}
-        </Button>
-        <p className="ml-auto text-caption text-fg-muted" role="status" aria-live="polite">{t('results', { count: results.length })}</p>
-        <label className="flex items-center gap-2">
+        <label className="ml-auto flex items-center gap-2 md:ml-0">
           <span className="label-micro hidden text-fg-subtle sm:inline">{t('sortBy')}</span>
           <select value={params.sort} onChange={(e) => update({ sort: e.target.value as ShopParams['sort'] })} className="field !min-h-11 !w-auto text-caption" aria-label={t('sortBy')}>
             {sortOptions.map((s) => <option key={s} value={s}>{t(`sort.${s}`)}</option>)}
@@ -183,15 +192,8 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
         </ul>
       )}
 
-      <div className="grid gap-12 lg:grid-cols-[15rem_1fr] xl:grid-cols-[17rem_1fr]">
-        <aside className="hidden lg:block" aria-label={t('filters')}>
-          <div className="sticky top-[calc(var(--header-h)+6rem)] max-h-[calc(100dvh-var(--header-h)-8rem)] overflow-y-auto pr-4" data-lenis-prevent="">
-            <FilterPanel params={params} facets={facets} labels={labels} update={update} />
-          </div>
-        </aside>
-
-        <div>
-          {results.length === 0 ? (
+      <div>
+        {results.length === 0 ? (
             <div className="grid place-items-center gap-5 py-24 text-center">
               <p className="font-display text-display-m">{t('emptyTitle')}</p>
               <p className="max-w-sm text-fg-muted">{t('emptyText')}</p>
@@ -206,11 +208,10 @@ export function ShopBrowser({ products, labels }: { products: CardData[]; labels
               ))}
             </ul>
           )}
-        </div>
       </div>
 
-      <Dialog open={sheet} onClose={() => setSheet(false)} side="bottom" label={t('filters')} lazyContent>
-        <div className="flex max-h-[90dvh] flex-col">
+      <Dialog open={sheet} onClose={() => setSheet(false)} side={wide ? 'left' : 'bottom'} label={t('filters')} lazyContent>
+        <div className="flex h-full max-h-[90dvh] flex-col lg:max-h-none">
           <div className="flex items-center justify-between border-b border-line px-6 py-4">
             <h2 className="font-display text-heading">{t('filters')}</h2>
             <button type="button" onClick={() => setSheet(false)} aria-label={t('close')} className="grid h-11 w-11 place-items-center"><CloseIcon /></button>

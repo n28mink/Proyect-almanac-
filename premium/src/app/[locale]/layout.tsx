@@ -15,7 +15,7 @@ import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { defaultCampaigns } from '@/content/campaigns';
 import { organizationJsonLd, websiteJsonLd } from '@/lib/seo';
-import { displayFont, sansFont } from '../fonts';
+import { brandFont, displayFont, sansFont } from '../fonts';
 import '@/styles/globals.css';
 
 export function generateStaticParams() {
@@ -58,7 +58,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const announcements = defaultCampaigns.announcements.map((a) => pick(a, locale));
 
   return (
-    <html lang={locale} className={`${displayFont.variable} ${sansFont.variable}`} suppressHydrationWarning>
+    <html lang={locale} className={`${displayFont.variable} ${sansFont.variable} ${brandFont.variable}`} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>

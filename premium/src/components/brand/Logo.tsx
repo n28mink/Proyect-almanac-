@@ -17,27 +17,27 @@ export function CloverGlyph({ className }: { className?: string }) {
   );
 }
 
-/** «Clover🍀»: nombre en serif + trébol como superíndice (texto accesible: «Clover»). */
+/** «CLOVER»: nombre en serif de alto contraste (Bodoni Moda) en mayúsculas + trébol dorado como superíndice (texto accesible: «Clover»). */
 export function Wordmark({ className }: { className?: string }) {
   return (
-    <span className={cn('inline-flex items-start font-display leading-none tracking-[0.005em] text-[var(--logo-fg,var(--accent))]', className)} translate="no">
+    <span className={cn('inline-flex items-start font-brand font-semibold uppercase leading-none tracking-[0.07em] text-[var(--logo-fg,var(--accent))]', className)} translate="no">
       <span>Clover</span>
-      <CloverGlyph className="ml-[0.05em] mt-[0.02em] h-[0.78em] w-[0.62em] text-gold" />
+      <CloverGlyph className="ml-[0.1em] -mt-[0.04em] h-[0.6em] w-[0.48em] text-[var(--logo-glyph,var(--color-gold))]" />
     </span>
   );
 }
 
 /**
- * Logotipo de Clover: wordmark serif con el trébol + subtítulo «Accesorios y Prendas».
+ * Logotipo de Clover: wordmark con el trébol + subtítulo «Accesorios y Prendas».
  * `stacked` (cabecera): subtítulo bajo el nombre, centrado. Por defecto va en línea.
  */
 export function Logo({ className, subtitle = true, stacked = false }: { className?: string; subtitle?: boolean; stacked?: boolean }) {
   const t = useTranslations('brand');
   return (
-    <span className={cn('inline-flex', stacked ? 'mt-1 flex-col items-center gap-1.5' : 'items-baseline gap-3', className)}>
-      <Wordmark className={stacked ? 'text-[1.85rem] md:text-[2.15rem]' : 'text-[2rem]'} />
+    <span className={cn('inline-flex', stacked ? 'mt-0.5 flex-col items-center gap-2' : 'items-baseline gap-3', className)}>
+      <Wordmark className={stacked ? 'text-[1.65rem] md:text-[2rem]' : 'text-[1.85rem]'} />
       {subtitle && (
-        <span className={cn('uppercase text-current opacity-75', stacked ? 'text-[0.625rem] tracking-[0.26em] md:text-[0.6875rem]' : 'text-[0.6875rem] tracking-[0.24em]')}>{t('subtitle')}</span>
+        <span className={cn('font-medium uppercase text-current', stacked ? 'text-[0.625rem] tracking-[0.3em] md:text-[0.6875rem]' : 'text-[0.6875rem] tracking-[0.26em]')}>{t('subtitle')}</span>
       )}
     </span>
   );

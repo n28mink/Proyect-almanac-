@@ -180,6 +180,7 @@ dialog.dlg[data-visible='true'] .menu-fade {
   z-index: var(--z-header);
   color: var(--header-fg, var(--fg));
   --logo-fg: var(--color-forest);
+  --logo-glyph: #8c6f2f;
   transition:
     transform 0.32s var(--ease-out),
     background-color 0.3s var(--ease-out),
@@ -195,8 +196,19 @@ dialog.dlg[data-visible='true'] .menu-fade {
   --header-fg: var(--color-ink);
 }
 .site-header[data-tone='light']:not([data-solid='true']) {
-  --header-fg: #f7f2e9;
-  --logo-fg: #f1e6c8;
+  --header-fg: #fffaf0;
+  --logo-fg: #fffaf0;
+  --logo-glyph: #ecd9a6;
+  /* Sobre vídeo o foto: sombra suave para que nombre y menú se lean con cualquier fondo. */
+  text-shadow: 0 1px 16px rgb(0 0 0 / 0.38);
+}
+.site-header[data-tone='light']:not([data-solid='true'])::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 -3.5rem 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgb(6 22 15 / 0.55), transparent);
 }
 .site-header[data-hidden='true'] {
   transform: translate3d(0, -100%, 0);
@@ -451,4 +463,26 @@ input[type='range'].range::-moz-range-thumb {
     top: 0.875rem;
     right: 0.875rem;
   }
+}
+
+/* ── Punto del acabado (tono del metal) en las tarjetas ─────────────────── */
+.finish-dot {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  flex: none;
+  border-radius: 9999px;
+  border: 1px solid rgb(20 26 22 / 0.18);
+}
+.finish-dot[data-finish='gold'] {
+  background: linear-gradient(135deg, #ecd79a, #b7985e);
+}
+.finish-dot[data-finish='silver'] {
+  background: linear-gradient(135deg, #f6f7f8, #b3babe);
+}
+.finish-dot[data-finish='rose'] {
+  background: linear-gradient(135deg, #f3d3c4, #c68b76);
+}
+.finish-dot[data-finish='mixed'] {
+  background: linear-gradient(90deg, #dcc283 50%, #c4c9cd 50%);
 }

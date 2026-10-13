@@ -16,7 +16,7 @@ export async function FeaturedCollection({ collection, cover, products, locale }
   return (
     <Section headerTone="dark">
       <div className="container-x grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
-        <ImageReveal className="relative aspect-[4/5] w-full">
+        <ImageReveal className="relative aspect-[4/5] w-full lg:aspect-[6/5]">
           <ParallaxMedia amount={7} className="h-full w-full">
             <Image src={cover.src} alt={cover.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" priority={false} placeholder="blur" blurDataURL={cover.blur} className="object-cover" />
           </ParallaxMedia>

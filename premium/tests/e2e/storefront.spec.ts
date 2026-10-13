@@ -163,12 +163,15 @@ test('forma de pago: iconos, preselección, texto de la elegida y resumen del pe
 test('camisas: filtro por color en la URL, sin tocar las tallas', async ({ page }) => {
   const errs = errors(page);
   await page.goto('/es/shop/shirts', { waitUntil: 'networkidle' });
+  // Los filtros viven en un panel (lateral en escritorio, hoja inferior en móvil).
+  await page.getByRole('button', { name: /^Filtros/ }).click();
   const group = page.getByRole('group', { name: 'Color de la prenda' }).first();
   await expect(group.getByRole('checkbox')).toHaveCount(4);
   // La casilla es controlada por la URL: se hace clic y se espera a que la URL cambie (check() exige el cambio al instante).
   await group.getByRole('checkbox', { name: /Coral/ }).click();
   await expect(page).toHaveURL(/color=coral/);
   await expect(group.getByRole('checkbox', { name: /Coral/ })).toBeChecked();
+  await page.getByRole('button', { name: /^Ver \d+ pieza/ }).click();
   await expect(page.locator('article.product-card')).toHaveCount(1);
   await expect(page.getByRole('heading', { name: 'Camisa Margaritas' })).toBeVisible();
   await page.getByRole('button', { name: /Quitar filtro Coral/ }).click();

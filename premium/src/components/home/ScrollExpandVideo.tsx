@@ -34,12 +34,12 @@ export function ScrollExpandVideo({ video, children, className, tone = 'ink' }: 
   );
 
   return (
-    <section ref={root} data-tone={tone} data-header-tone="light" className={cn('relative min-h-[80svh] overflow-hidden bg-surface text-fg md:min-h-[100svh]', className)}>
+    <section ref={root} data-tone={tone} data-header-tone="light" className={cn('relative min-h-[80svh] overflow-hidden bg-surface text-fg lg:min-h-[clamp(32rem,70svh,40rem)]', className)}>
       <div ref={frame} className="absolute inset-0">
         <LuxuryVideo video={video} fit="cover" aspectRatio="auto" className="h-full w-full" />
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/20 to-ink/30" />
       </div>
-      <div data-expand-copy="" className="container-x relative z-10 flex min-h-[80svh] flex-col justify-end pb-16 md:min-h-[100svh] md:pb-24">
+      <div data-expand-copy="" className="container-x relative z-10 flex min-h-[80svh] flex-col justify-end pb-16 md:pb-20 lg:min-h-[clamp(32rem,70svh,40rem)] lg:pb-14">
         {children}
       </div>
     </section>
