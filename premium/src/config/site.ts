@@ -1,7 +1,12 @@
 import type { Localized } from '@/domain/i18n';
 import { L } from '@/domain/i18n';
 
-const rawUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+/**
+ * Dirección pública (vista previa al compartir, sitemap, hreflang). Primero la que se configure a mano; si no, la de
+ * producción que Vercel entrega sola (`VERCEL_PROJECT_PRODUCTION_URL`, sin protocolo); en local, localhost.
+ */
+const vercelHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || (vercelHost ? `https://${vercelHost}` : 'http://localhost:3000');
 
 export const site = {
   name: 'Clover',
