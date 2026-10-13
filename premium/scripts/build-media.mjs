@@ -24,6 +24,7 @@ fs.mkdirSync(OUT, { recursive: true });
 
 const manifest = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8')) : {};
 // Las camisas tienen su propio paso (scripts/build-shirts.mjs): se conservan sus entradas.
+// Tras correr este script, `npm run media:watches` vuelve a poner el fondo de marca en la foto principal de los relojes.
 const shirtIds = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/shirts.json'), 'utf8')).items.map((s) => s.id);
 manifest.images = Object.fromEntries(Object.entries(manifest.images ?? {}).filter(([k]) => shirtIds.includes(k.replace(/-detail$/, ''))));
 

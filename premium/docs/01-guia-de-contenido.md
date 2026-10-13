@@ -32,6 +32,9 @@ Las camisas viven en `scripts/data/shirts.json` (precio único, tallas, stock in
 - **Fotos**: la foto maestra va en `assets-src/shirts/<id>.jpg` (1000 × 1250, la camisa recortada sobre el fondo salvia de la marca, sin el fondo original). `npm run media:shirts` genera la foto de tienda y el detalle del estampado; luego `npm run seed`.
 - **Añadir una camisa**: recortar la foto sobre el mismo fondo salvia (degradado `#ECF0E9` → `#DDE4DB`, sombra suave), guardarla como `assets-src/shirts/cmNN.jpg`, añadir su entrada en `shirts.json` y correr `npm run media:shirts && npm run seed`.
 
+## Relojes
+- **Fotos**: la foto principal de cada reloj va sobre un solo fondo, verde pálido `#edf4ef` (`--color-bone`) con un brillo central `#fafcf8` y sombra suave. Los recortes (reloj sin fondo, PNG) están en `assets-src/watches/<id>.png`; `npm run media:watches` los monta y actualiza la foto principal. Para un reloj nuevo, añadir su recorte con ese nombre y correr el comando. Las fotos secundarias no se modifican.
+
 ## Formas de pago
 
 `src/domain/commerce.ts → paymentMethods`: pago móvil (preseleccionado), transferencia bancaria y efectivo. El cliente elige en el checkout (tarjetas con icono y, debajo, en texto, qué pasa con la elegida); la elección aparece en el resumen del pedido, en la confirmación, en el mensaje de WhatsApp y en el panel de pedidos. No se cobra en línea: los datos de pago se envían por WhatsApp.

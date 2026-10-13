@@ -69,11 +69,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/rw01.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIG/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBSExEhMUYXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A1l51OnaVipYbkEg4/KqyJ8VAzFiuVJJzwaLVUkazZoWVZU3BPHuk0+Iw2MSE5OMk/d6KqP/Z",
-    "tone": "#ebe3de",
+    "src": "/media/products/rw01-bone.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHxABAAICAgIDAAAAAAAAAAAAAQIRAAMEMQUTFEGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A1PKHZD0xkxZFqLdZeHfxoklkxWKrfTg+UjseIz0pHbDpeq+zE8frdXC1RW2rf1vJpj//2Q==",
+    "tone": "#dfdbd4",
     "focal": {
      "x": 0.5233232289636114,
      "y": 0.5340319932616069
@@ -104,7 +104,7 @@
   "videos": [
    "reel.watches"
   ],
-  "thumbnail": "/media/products/rw01.jpg",
+  "thumbnail": "/media/products/rw01-bone.jpg",
   "hoverMedia": {
    "type": "image",
    "imageIndex": 1
@@ -289,11 +289,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/rw02.jpg",
-    "width": 1000,
-    "height": 1000,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EAB8QAAICAgEFAAAAAAAAAAAAAAECAAMREkEEISJCgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAAEH/2gAMAwEAAhEDEQA/AN3q7bWuShEIVx5OOI6wU2XbsDgZg4sYsysB64PEpFVVwB9MVUf/2Q==",
-    "tone": "#cdc2c4",
+    "src": "/media/products/rw02-bone.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EAB8QAAIBBAIDAAAAAAAAAAAAAAECAwAEETETQSEiUf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A0N/PLzpbRKQrj2kHVPsgwR1ZiwVsLneqC5t5JZQyOoBGPPVUxoIowi6H3uimP//Z",
+    "tone": "#dcd6d0",
     "focal": {
      "x": 0.46184115253149355,
      "y": 0.44354193367051103
@@ -340,7 +340,7 @@
   "videos": [
    "reel.watches"
   ],
-  "thumbnail": "/media/products/rw02.jpg",
+  "thumbnail": "/media/products/rw02-bone.jpg",
   "hoverMedia": {
    "type": "image",
    "imageIndex": 2
@@ -585,11 +585,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/rw03.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwb/xAAeEAACAgICAwAAAAAAAAAAAAABAgARBBIDITFRof/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAAEH/2gAMAwEAAhEDEQA/AK3PDNj6KdSxHf2Nxttxq3sXBz0L4zBTTAgg3VR1AVQB4AqTTH//2Q==",
-    "tone": "#f4f0e7",
+    "src": "/media/products/rw03-bone.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwb/xAAfEAEAAgEDBQAAAAAAAAAAAAABAAIDERIxBAU0QVH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAABB/9oADAMBAAIRAxEAPwCp62rfAUq7WzzFxu7FW30gdx8VR0RNE9R6BXHUOAJNI//Z",
+    "tone": "#e6e7da",
     "focal": {
      "x": 0.49390040002301283,
      "y": 0.4905869840604582
@@ -685,7 +685,7 @@
    "product.rw03",
    "reel.watches"
   ],
-  "thumbnail": "/media/products/rw03.jpg",
+  "thumbnail": "/media/products/rw03-bone.jpg",
   "hoverMedia": {
    "type": "video",
    "key": "product.rw03"
@@ -864,11 +864,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/rw04.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgMF/8QAIhAAAQMDAwUAAAAAAAAAAAAAAgEDEQAEBSFBURIiMVJx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAAMBAAAAAAAAAAAAAAAAAAAREiH/2gAMAwEAAhEDEQA/ADbY5blS1MOlO0p8rzHFC3xWWAiQHGjD2Nd60XXyBgTHRZ0+VVi8cGAWJUZXegejyz//2Q==",
-    "tone": "#a2846d",
+    "src": "/media/products/rw04-bone.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHhAAAgIDAAMBAAAAAAAAAAAAAQIDBAAREiExQXH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAABB/9oADAMBAAIRAxEAPwDVWZjEUCEdb2V+kYqOsiB19HAvr1TkYeGQdA/mWkWNKEtrrgb1k0j/2Q==",
+    "tone": "#e6e4da",
     "focal": {
      "x": 0.5014812455045148,
      "y": 0.47743598328822373
@@ -900,7 +900,7 @@
    "product.rw04",
    "reel.watches"
   ],
-  "thumbnail": "/media/products/rw04.jpg",
+  "thumbnail": "/media/products/rw04-bone.jpg",
   "hoverMedia": {
    "type": "video",
    "key": "product.rw04"
@@ -1092,11 +1092,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/rw05.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAfEAACAgEFAQEAAAAAAAAAAAABAgMEAAUREiExBkL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AtfSXmrJFGBHxbs8jlHTLBtUIpTx3I/PnXWH1yCGSsrywpIytsOQ83x1aJIK6RxIERR0B4MD/2Q==",
-    "tone": "#d5d5d5",
+    "src": "/media/products/rw05-bone.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAgICAgMAAAAAAAAAAAABAwIRAAQFEgYUIjFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCv5DunWipYC+svkexyhxux7WippqyKuP0awvOKTPWg1yosMZULH7jtVUEay1qiIxERQGEf/9k=",
+    "tone": "#c7cbc8",
     "focal": {
      "x": 0.47922048875747525,
      "y": 0.4937415253739929
@@ -1143,7 +1143,7 @@
   "videos": [
    "reel.watches"
   ],
-  "thumbnail": "/media/products/rw05.jpg",
+  "thumbnail": "/media/products/rw05-bone.jpg",
   "hoverMedia": {
    "type": "image",
    "imageIndex": 2
@@ -1308,11 +1308,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/rw06.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBv/EACAQAAIBBAIDAQAAAAAAAAAAAAECAwAEERIhMUFhgaH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM0NZpXZRqm3A6JFLcRLHKQhYKRkZPP2jFctbMTqrowwynyKizmVi7dn89UV/9k=",
-    "tone": "#282525",
+    "src": "/media/products/rw06-bone.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EACEQAAICAgIBBQAAAAAAAAAAAAECAwUEEQASYRMiMUGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AN+6tRVY6MI/Ukkbqqk6Hk8KSwlssV5po1TT9V19jXGtq1rKONFkVOpPYMuwwPyPHKcTGjw8ZIIh7VH7wD//2Q==",
+    "tone": "#c6c9c5",
     "focal": {
      "x": 0.49705007596979506,
      "y": 0.521151763331734
@@ -1343,7 +1343,7 @@
   "videos": [
    "reel.watches"
   ],
-  "thumbnail": "/media/products/rw06.jpg",
+  "thumbnail": "/media/products/rw06-bone.jpg",
   "hoverMedia": {
    "type": "image",
    "imageIndex": 1

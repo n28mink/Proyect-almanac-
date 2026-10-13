@@ -17,6 +17,7 @@
     "seed": "node scripts/build-seed.mjs",
     "media": "node scripts/build-media.mjs",
     "media:shirts": "node scripts/build-shirts.mjs",
+    "media:watches": "node scripts/build-watches.mjs",
     "check": "npm run typecheck && npm run lint && npm run test"
   },
   "dependencies": {
