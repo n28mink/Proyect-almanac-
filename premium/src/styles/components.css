@@ -178,39 +178,16 @@ dialog.dlg[data-visible='true'] .menu-fade {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: var(--z-header);
-  color: var(--header-fg, var(--fg));
-  --logo-fg: var(--color-forest);
-  --logo-glyph: #8c6f2f;
-  --header-rule: var(--line);
-  transition:
-    transform 0.32s var(--ease-out),
-    background-color 0.3s var(--ease-out),
-    color 0.3s var(--ease-out),
-    border-color 0.3s var(--ease-out);
-  border-bottom: 1px solid transparent;
+  /* Verde de marca sólido en toda la cabecera: marfil sobre verde (≈11:1) y trébol en dorado suave. */
+  background: var(--color-forest);
+  color: var(--color-ivory);
+  --logo-fg: var(--color-ivory);
+  --logo-glyph: var(--color-gold-soft);
+  --header-rule: rgb(214 195 151 / 0.28);
+  transition: transform 0.32s var(--ease-out);
 }
 .site-header[data-solid='true'] {
-  background: color-mix(in srgb, var(--color-ivory) 88%, transparent);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  border-bottom-color: var(--line);
-  --header-fg: var(--color-ink);
-}
-.site-header[data-tone='light']:not([data-solid='true']) {
-  --header-fg: #fffaf0;
-  --logo-fg: #fffaf0;
-  --logo-glyph: #ecd9a6;
-  --header-rule: rgb(255 255 255 / 0.28);
-  /* Sobre vídeo o foto: sombra suave para que nombre y menú se lean con cualquier fondo. */
-  text-shadow: 0 1px 16px rgb(0 0 0 / 0.38);
-}
-.site-header[data-tone='light']:not([data-solid='true'])::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 -3rem 0;
-  z-index: -1;
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgb(6 22 15 / 0.55), transparent);
+  box-shadow: 0 1px 0 rgb(0 0 0 / 0.18), 0 8px 24px -16px rgb(6 22 15 / 0.55);
 }
 .site-header-nav {
   border-top: 1px solid var(--header-rule);

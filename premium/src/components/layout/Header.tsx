@@ -39,7 +39,6 @@ export function Header({ primary }: HeaderProps) {
   const { registerAnchor } = useFlyToCart();
   const [solid, setSolid] = useState(false);
   const [hidden, setHidden] = useState(false);
-  const [tone, setTone] = useState<'light' | 'dark'>('dark');
   const cartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,7 +46,7 @@ export function Header({ primary }: HeaderProps) {
     return () => registerAnchor(null);
   }, [registerAnchor]);
 
-  // Cabecera transparente sobre el hero → sólida al hacer scroll; contraste según la sección que hay debajo; se oculta al bajar.
+  // Cabecera en verde de marca; gana sombra al hacer scroll y se oculta al bajar.
   useEffect(() => {
     let last = window.scrollY;
     let queued = false;
@@ -58,12 +57,6 @@ export function Header({ primary }: HeaderProps) {
       if (y > 560 && y > last + 6) setHidden(true);
       else if (y < last - 6 || y <= 560) setHidden(false);
       last = y;
-      let next: 'light' | 'dark' = 'dark';
-      document.querySelectorAll<HTMLElement>('[data-header-tone]').forEach((el) => {
-        const r = el.getBoundingClientRect();
-        if (r.top <= 48 && r.bottom > 48) next = el.dataset.headerTone === 'light' ? 'light' : 'dark';
-      });
-      setTone(next);
     };
     const onScroll = () => {
       if (!queued) {
@@ -101,7 +94,7 @@ export function Header({ primary }: HeaderProps) {
   );
 
   return (
-    <header className="site-header" data-solid={solid} data-hidden={hidden} data-tone={tone} style={{ height: 'auto' }}>
+    <header className="site-header" data-solid={solid} data-hidden={hidden} style={{ height: 'auto' }}>
       <div className="container-x grid h-[var(--header-row-h)] grid-cols-[1fr_auto_1fr] items-center">
         <div className="flex items-center">{menuButton('-ml-2 lg:hidden', true)}</div>
 

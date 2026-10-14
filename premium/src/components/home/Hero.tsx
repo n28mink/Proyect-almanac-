@@ -15,7 +15,7 @@ import type { Locale } from '@/i18n/routing';
 export async function Hero({ campaign, video, locale }: { campaign: CampaignBlock; video: VideoAsset | null; locale: Locale }) {
   const t = await getTranslations('home');
   return (
-    <section data-header-tone="light" data-tone="ink" className="relative isolate min-h-[100svh] overflow-hidden lg:min-h-[clamp(32rem,62svh,38rem)] bg-surface text-fg">
+    <section data-header-tone="light" data-tone="ink" className="relative isolate mt-[var(--header-h)] min-h-[calc(100svh-var(--header-h))] overflow-hidden lg:min-h-[clamp(28rem,56svh,34rem)] bg-surface text-fg">
       {video && (
         <div className="intro-fade absolute inset-0 -z-10">
           <LuxuryVideo video={video} priority fit="cover" aspectRatio="auto" className="h-full w-full" />
@@ -23,7 +23,7 @@ export async function Hero({ campaign, video, locale }: { campaign: CampaignBloc
       )}
       <div aria-hidden="true" className="absolute inset-0 -z-[5] bg-gradient-to-t from-ink/80 via-ink/25 to-ink/55" />
 
-      <div className="container-x flex min-h-[100svh] flex-col justify-end pb-16 pt-40 md:pb-20 lg:pt-36 lg:min-h-[clamp(32rem,62svh,38rem)] lg:pb-14">
+      <div className="container-x flex min-h-[calc(100svh-var(--header-h))] flex-col justify-end pb-16 pt-24 md:pb-20 lg:min-h-[clamp(28rem,56svh,34rem)] lg:pt-16 lg:pb-14">
         <p className="label-micro intro-rise mb-6 text-gold-soft" style={{ ['--i' as string]: 0 }}>{pick(campaign.eyebrow, locale)}</p>
         <h1 className="font-display text-display-xl max-w-[14ch] lg:text-display-l lg:max-w-[16ch]">
           <StaggerText text={pick(campaign.title, locale)} intro />
