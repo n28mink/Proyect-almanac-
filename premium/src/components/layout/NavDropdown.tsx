@@ -30,6 +30,7 @@ export function NavDropdown({ item }: { item: NavLink }) {
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== 'Escape') return;
+      window.clearTimeout(timer.current);
       setOpen(false);
       root.current?.querySelector<HTMLButtonElement>('button')?.focus();
     };
@@ -58,7 +59,11 @@ export function NavDropdown({ item }: { item: NavLink }) {
       </TransitionLink>
       {children.length > 0 && (
         <>
-          <button type="button" aria-expanded={open} aria-controls={id} aria-label={t('submenu', { name: item.label })} onClick={() => setOpen((v) => !v)} className="grid h-11 w-8 place-items-center transition-opacity duration-150 hover:opacity-70">
+          <button type="button" aria-expanded={open} aria-controls={id} aria-label={t('submenu', { name: item.label })} onClick={(e) => {
+              window.clearTimeout(timer.current);
+              // Con ratón el desplegable ya se abrió al pasar por encima: el clic lo mantiene abierto; con teclado (detail 0) alterna.
+              setOpen((v) => (e.detail === 0 ? !v : true));
+            }} className="grid h-11 w-8 place-items-center transition-opacity duration-150 hover:opacity-70">
             <ChevronDownIcon width={16} height={16} className={cn('transition-transform duration-200 ease-[var(--ease-out)]', open && 'rotate-180')} />
           </button>
           <div id={id} hidden={!open} className="products-menu absolute left-0 top-full z-10 w-max min-w-[15rem] pt-1">

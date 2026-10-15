@@ -64,7 +64,7 @@ const VARIANTS = {
 
 /** Pulseras con fotos reales (scripts/build-bracelets.mjs): en ángulo (principal), mano modelo, de frente y close-up; la foto anterior queda al final. */
 /** Juegos adicionales que van al final de la galería, y piezas cuya foto antigua se descarta por repetida. */
-const BRACELET_EXTRA = { pu06: 'pu06b' };
+const BRACELET_EXTRA = {};
 const BRACELET_DROP_OLD = new Set(['pu06']);
 const BRACELET_SETS = new Set(['pu03', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13']);
 
