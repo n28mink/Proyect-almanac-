@@ -14,7 +14,7 @@
     "retry": "Try again"
   },
   "header": {
-    "products": "Products",
+    "submenu": "Show {name} options",
     "menu": "Menu",
     "primaryNav": "Main navigation",
     "home": "Clover — home",

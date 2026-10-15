@@ -12,7 +12,7 @@ import { useCart } from '@/stores/cart-store';
 import { useUi } from '@/stores/ui-store';
 import { useWishlist } from '@/stores/wishlist-store';
 import type { NavLink } from './nav-data';
-import { ProductsMenu } from './ProductsMenu';
+import { NavDropdown } from './NavDropdown';
 
 interface HeaderProps {
   primary: NavLink[];
@@ -118,9 +118,11 @@ export function Header({ primary }: HeaderProps) {
       </div>
 
       {/* Escritorio: el menú y las secciones van en su propia fila, debajo de la marca. */}
-      <nav aria-label={t('primaryNav')} className="site-header-nav hidden h-[var(--header-nav-h)] items-center justify-center gap-10 lg:flex">
+      <nav aria-label={t('primaryNav')} className="site-header-nav hidden h-[var(--header-nav-h)] items-center justify-center gap-8 lg:flex xl:gap-10">
         {menuButton('', true)}
-        <ProductsMenu items={primary} />
+        {primary.map((l) => (
+          <NavDropdown key={l.href} item={l} />
+        ))}
       </nav>
     </header>
   );

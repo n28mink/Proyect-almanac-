@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { LuxuryVideo } from '@/components/media/LuxuryVideo';
-import { ParallaxMedia } from '@/components/motion/ParallaxMedia';
 import { FadeReveal, ImageReveal, StaggerText } from '@/components/motion/Reveal';
 import type { VideoAsset } from '@/content/media';
 import type { ProductView } from '@/lib/card-data';
@@ -9,19 +8,22 @@ import type { ProductView } from '@/lib/card-data';
 /** Storytelling de ficha: IMAGEN → DETALLE → MACRO → VÍDEO → RELATO → ESPECIFICACIONES. */
 export async function ProductStory({ p, video }: { p: ProductView; video: VideoAsset | null }) {
   const t = await getTranslations('product');
-  const macro = p.images[p.detailIndex]!;
+  const macro = p.detailIndex >= 0 ? p.images[p.detailIndex]! : null;
 
   return (
     <>
-      {/* MACRO */}
-      <section data-header-tone="dark" className="mt-24 md:mt-32">
-        <ImageReveal className="relative mx-auto aspect-[4/5] w-full max-w-[120rem] md:aspect-[21/9]">
-          <ParallaxMedia amount={9} className="h-full w-full">
-            <Image src={macro.src} alt={macro.alt} fill sizes="100vw" placeholder={macro.blur ? 'blur' : 'empty'} blurDataURL={macro.blur} className="object-cover" />
-          </ParallaxMedia>
-        </ImageReveal>
-        <p className="label-micro container-x mt-4 text-fg-subtle">{t('macroCaption')}</p>
-      </section>
+      {/* PRIMER PLANO: foto contenida junto a un texto breve (a todo el ancho se ampliaba hasta no distinguir la pieza). */}
+      {macro && (
+        <section data-header-tone="dark" className="container-x mt-24 grid items-center gap-8 md:mt-32 lg:grid-cols-[minmax(0,34rem)_1fr] lg:gap-20">
+          <ImageReveal className="relative aspect-square w-full max-w-[34rem] bg-surface-sunken">
+            <Image src={macro.src} alt={macro.alt} fill sizes="(min-width: 1024px) 34rem, 92vw" quality={80} placeholder={macro.blur ? 'blur' : 'empty'} blurDataURL={macro.blur} className="object-cover" />
+          </ImageReveal>
+          <FadeReveal delay={120} className="max-w-md">
+            <h2 className="font-display text-heading">{t('macroCaption')}</h2>
+            <p className="mt-4 text-lead text-fg-muted">{p.description}</p>
+          </FadeReveal>
+        </section>
+      )}
 
       {/* VÍDEO + RELATO */}
       <section data-header-tone="dark" className={video ? 'container-x mt-24 grid items-center gap-12 md:mt-32 lg:grid-cols-2 lg:gap-24' : 'container-x mt-24 max-w-4xl md:mt-32'}>

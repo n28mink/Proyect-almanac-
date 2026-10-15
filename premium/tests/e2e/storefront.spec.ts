@@ -247,6 +247,16 @@ test.describe('movimiento reducido por el sistema: se conservan los fundidos', (
   });
 });
 
+test('menú: cada categoría es un enlace propio con su desplegable', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  const nav = page.locator('header nav');
+  for (const name of ['Joyería', 'Relojes', 'Camisas', 'Colecciones', 'Regalos para ella']) await expect(nav.getByRole('link', { name, exact: true })).toBeVisible();
+  await nav.getByRole('button', { name: /opciones de Joyería/ }).click();
+  await expect(nav.getByRole('link', { name: 'Pulseras' })).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(nav.getByRole('link', { name: 'Pulseras' })).toBeHidden();
+});
+
 test('portada: el mosaico de joyería especial tiene sus 6 imágenes con altura', async ({ page }) => {
   await page.goto('/es', { waitUntil: 'networkidle' });
   const tiles = page.locator('section', { hasText: 'Las joyas que más lucen' }).locator('[data-image-reveal]');
@@ -256,11 +266,7 @@ test('portada: el mosaico de joyería especial tiene sus 6 imágenes con altura'
 
 test('teclado: activar un enlace con Enter navega al instante, sin cortina de transición', async ({ page }) => {
   await page.goto('/es', { waitUntil: 'networkidle' });
-  // Relojes vive en el menú Productos: se abre con el teclado y se llega al enlace con Tab.
-  await page.getByRole('button', { name: 'Productos' }).focus();
-  await page.keyboard.press('Enter');
   const link = page.locator('header nav a', { hasText: 'Relojes' }).first();
-  await expect(link).toBeVisible();
   await link.focus();
   await page.keyboard.press('Enter');
   await page.waitForURL(/\/es\/shop\/watches/, { timeout: 4000 });
