@@ -65,6 +65,8 @@ const VARIANTS = {
 /** Pulseras con fotos reales (scripts/build-bracelets.mjs): en ángulo (principal), mano modelo, de frente y close-up; la foto anterior queda al final. */
 /** Juegos adicionales que van al final de la galería, y piezas cuya foto antigua se descarta por repetida. */
 const BRACELET_EXTRA = {};
+/** Fotos reales sin comprimir + giro 360° (scripts/build-aretes.mjs): par, individual, puesta; el 360 va aparte. */
+const REAL_SETS = { ar11: { photos: ['par', 'individual', 'modelo'], spin: true } };
 const BRACELET_DROP_OLD = new Set(['pu06']);
 const BRACELET_SETS = new Set(['pu03', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13']);
 
@@ -183,6 +185,14 @@ for (const p of source) {
       ...(BRACELET_DROP_OLD.has(p.id) ? [] : names.map((n) => imgOf(n, 'main', L(p.nombre, t.name)))),
     ];
     detailIndex = 3;
+  } else if (REAL_SETS[p.id]) {
+    const keys = REAL_SETS[p.id].photos.map((k) => `${p.id}-${k}`);
+    images = [
+      imgOf(keys[0], 'main', L(p.nombre, t.name)),
+      imgOf(keys[1], 'main', L(`${p.nombre}, pieza individual`, `${t.name}, single piece`)),
+      imgOf(keys[2], 'detail', L(`${p.nombre}, puestos`, `${t.name}, worn`)),
+    ];
+    detailIndex = 2;
   } else {
     images = names.map((n, i) => {
       const worn = LIFESTYLE.has(p.id) && i === 0;
@@ -240,6 +250,7 @@ for (const p of source) {
     images,
     videos: [...(hasVideo ? [`product.${p.id}`] : []), ...(REELS.has(category) ? [`reel.${category}`] : [])],
     thumbnail: images[0].src,
+    spin: REAL_SETS[p.id]?.spin ? media.spin?.[p.id] : undefined,
     hoverMedia: hasVideo ? { type: 'video', key: `product.${p.id}` } : detailIndex !== undefined ? { type: 'image', imageIndex: detailIndex } : undefined,
     highlights,
     specifications: withDetails(p.id, buildSpecs(p, t, finish, esHighlights)),

@@ -65,7 +65,7 @@ export function ProductDetail({ p }: { p: ProductView }) {
         {view === '3d' && p.model3d ? (
           <Product3D model={p.model3d.model} posterSrc={img0.src} posterBlur={img0.blur} posterAlt={img0.alt} dials={p.model3d.dials} activeVariantId={variantId} />
         ) : (
-          <ProductGallery ref={gallery} images={p.images} index={index} onIndexChange={setIndex} name={p.name} />
+          <ProductGallery ref={gallery} images={p.images} spin={p.spin} index={index} onIndexChange={setIndex} name={p.name} />
         )}
       </div>
 
