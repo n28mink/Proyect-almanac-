@@ -105,7 +105,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       <FashionEditorial campaign={campaigns.fashion} video={getVideo(campaigns.fashion.videoKey)} locale={locale} />
 
-      <CollectionsStory tiles={tiles} title={t('storyTitle')} allLabel={t('allCollections')} />
+      <CollectionsStory tiles={tiles} title={t('storyTitle')} allLabel={t('allCollections')} prevLabel={t('previous')} nextLabel={t('next')} />
 
       <Craftsmanship campaign={campaigns.story} video={getVideo(campaigns.story.videoKey)} locale={locale} />
 

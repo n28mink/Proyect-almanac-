@@ -26,6 +26,19 @@ export function usePrefersReducedMotion(): boolean {
   const user = useMotionReducedByUser();
   return system || user;
 }
+
+/**
+ * Niveles de movimiento:
+ * - `full`: todo el movimiento.
+ * - `soft`: el sistema pide reducirlo → sin desplazamientos, recortes, parallax ni scroll fijado; se conservan los fundidos suaves.
+ * - `off`: la persona pulsó «Reducir movimiento» en el pie → todo queda estático.
+ */
+export type MotionLevel = 'full' | 'soft' | 'off';
+export function useMotionLevel(): MotionLevel {
+  const system = useMediaQuery('(prefers-reduced-motion: reduce)');
+  const user = useMotionReducedByUser();
+  return user ? 'off' : system ? 'soft' : 'full';
+}
 /** Dispositivo con puntero preciso y hover real (ratón/trackpad). */
 export const useFinePointer = () => useMediaQuery('(hover: hover) and (pointer: fine)');
 export const useIsDesktop = () => useMediaQuery('(min-width: 1024px)');

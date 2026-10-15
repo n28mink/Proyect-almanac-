@@ -110,3 +110,11 @@ Se pidió quitar el botón sobre los vídeos. Las guías (y WCAG 2.2.2) piden un
 - **Cabecera en verde de marca** (`--color-forest`, #0b3f2b) en las dos filas, siempre sólida: nombre en marfil, trébol en dorado suave (`--color-gold-soft`), filete dorado tenue entre filas. El hero arranca justo debajo de la cabecera (`mt-[var(--header-h)]`), de modo que el vídeo se ve completo. Se elimina la lógica de contraste claro/oscuro de la cabecera, que ya no hace falta.
 - **Categorías de la portada** («Seis mundos, un solo estilo»): en escritorio pasan de seis tiles iguales a una cuadrícula asimétrica de 12 columnas en dos filas (5·4·3 y 3·4·5) con altura fija de 20 rem; cada tile es un enlace completo con nombre, recuento de piezas y un botón circular con flecha que se rellena al pasar el cursor. Degradado inferior reforzado para que el texto se lea sobre fotos claras. Móvil: carril con snap, sin cambios. Idea tomada del componente «Condition Grid» de 21st.dev, adaptada a la paleta y a fotos propias (sin imágenes externas ni dependencias nuevas).
 - **Transición entre productos** (y categorías/lookbook): se mantiene el barrido verde con su forma (círculo desde el clic en `clip`, rombo en `mask`), pero más lento y con curva suave: cubrir 620 ms con `inOut`, pausa de 160 ms con el logo visible y revelar en 800 ms. Antes llenaba la pantalla en ~100 ms con la curva `curtain`, que se sentía como un golpe. Las cortinas de la portada (`curtain`, `ivory`, `direction`) no cambian. Medido con grabación de vídeo antes y después.
+
+## Niveles de movimiento (sexta pasada)
+
+La web parecía «estática» y sin el scroll horizontal de «Cinco historias» cuando el sistema pedía reducir movimiento (p. ej. «Mostrar animaciones» desactivado en Windows): se apagaba todo a la vez. Ahora hay tres niveles (`useMotionLevel`):
+
+- **Completo:** revelados, scroll fijado de «Cinco historias», transiciones verdes de página.
+- **Suave (el sistema pide menos movimiento):** solo fundidos de opacidad (revelados, titulares, entrada del hero y un fundido breve entre páginas); sin desplazamientos, recortes, parallax ni scroll fijado. «Cinco historias» pasa a una fila nativa con flechas.
+- **Apagado (interruptor «Reducir movimiento» del pie):** todo estático, como antes.

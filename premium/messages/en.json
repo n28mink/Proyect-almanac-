@@ -145,6 +145,8 @@
     "storyEyebrow": "Capsule collections",
     "allCollections": "All collections",
     "pieces": "{count, plural, one {# piece} other {# pieces}}",
+    "previous": "Previous",
+    "next": "Next",
     "storyTitle": "Five stories to wear",
     "house": {
       "place": "Valle Fresco, Turmero, Venezuela",

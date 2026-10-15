@@ -4,7 +4,8 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { TransitionLink } from '@/components/motion/TransitionLink';
 import { gsap, useGSAP } from '@/lib/gsap';
-import { useIsDesktop, usePrefersReducedMotion } from '@/lib/hooks';
+import { useIsDesktop, useMotionLevel } from '@/lib/hooks';
+import { ArrowLeftIcon, ArrowRightIcon } from '@/components/ui/Icon';
 import { cn } from '@/lib/cn';
 
 export interface CollectionTile {
@@ -22,12 +23,18 @@ export interface CollectionTile {
  * Storytelling de colecciones. En escritorio: sección fijada con scroll horizontal sutil (ScrollTrigger + pin).
  * En móvil/tablet o con reduced-motion: carril con snap nativo (sin secuestrar el scroll).
  */
-export function CollectionsStory({ tiles, title, allLabel }: { tiles: CollectionTile[]; title: string; allLabel: string }) {
+export function CollectionsStory({ tiles, title, allLabel, prevLabel, nextLabel }: { tiles: CollectionTile[]; title: string; allLabel: string; prevLabel: string; nextLabel: string }) {
   const root = useRef<HTMLElement>(null);
   const track = useRef<HTMLUListElement>(null);
   const desktop = useIsDesktop();
-  const reduced = usePrefersReducedMotion();
-  const pinned = desktop && !reduced;
+  const level = useMotionLevel();
+  const pinned = desktop && level === 'full';
+  // Sin scroll fijado (movimiento reducido), en escritorio la fila se recorre con flechas.
+  const arrows = desktop && !pinned;
+  const slide = (dir: 1 | -1) => {
+    const el = track.current;
+    if (el) el.scrollBy({ left: dir * Math.round(el.clientWidth * 0.7), behavior: level === 'full' ? 'smooth' : 'auto' });
+  };
 
   useGSAP(
     () => {
@@ -48,7 +55,18 @@ export function CollectionsStory({ tiles, title, allLabel }: { tiles: Collection
         <div>
           <h2 className="font-display text-display-l">{title}</h2>
         </div>
-        <TransitionLink href="/collections" className="label-micro link-underline">{allLabel}</TransitionLink>
+        <div className="flex items-center gap-6">
+          {arrows && (
+            <div className="flex gap-2">
+              {([[-1, prevLabel, ArrowLeftIcon], [1, nextLabel, ArrowRightIcon]] as const).map(([dir, label, Icon]) => (
+                <button key={dir} type="button" onClick={() => slide(dir)} aria-label={label} className="grid h-11 w-11 place-items-center rounded-full border border-line transition-[background-color,color,scale] duration-150 ease-[var(--ease-out)] hover:bg-fg hover:text-surface active:scale-95">
+                  <Icon width={18} height={18} />
+                </button>
+              ))}
+            </div>
+          )}
+          <TransitionLink href="/collections" className="label-micro link-underline">{allLabel}</TransitionLink>
+        </div>
       </div>
 
       <ul ref={track} className={cn(pinned ? 'flex w-max gap-8 px-[var(--gutter)]' : 'snap-row')}>

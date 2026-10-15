@@ -5,7 +5,7 @@ import { Wordmark } from '@/components/brand/Logo';
 import { gsapEase, pageTransition } from '@/config/motion';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { gsap } from '@/lib/gsap';
-import { usePrefersReducedMotion } from '@/lib/hooks';
+import { useMotionLevel } from '@/lib/hooks';
 import { useUi } from '@/stores/ui-store';
 
 export type TransitionVariant = 'curtain' | 'ivory' | 'clip' | 'mask' | 'direction';
@@ -61,12 +61,12 @@ function shapes(v: TransitionVariant, o: NavigateOptions): { from: string; full:
 /**
  * Transiciones de página reutilizables (App Router no puede animar la salida de la ruta vieja).
  * Máquina: idle → covering (cortina sube) → router.push → navigating (espera a que la ruta nueva monte) → revealing → idle.
- * Presupuesto: cortinas ~380 ms cubrir + ~520 ms revelar; enlaces con foto (`clip` círculo, `mask` rombo) en verde, más lentos: ~620 ms cubrir + pausa + ~800 ms revelar con curva suave. Con reduced-motion o al activar el enlace con el teclado la navegación es inmediata.
+ * Presupuesto: cortinas ~380 ms cubrir + ~520 ms revelar; enlaces con foto (`clip` círculo, `mask` rombo) en verde, más lentos: ~620 ms cubrir + pausa + ~800 ms revelar con curva suave. Con «Reducir movimiento» (pie) o al activar el enlace con el teclado la navegación es inmediata; si solo el sistema pide menos movimiento, se hace un fundido breve sin barrido.
  */
 export function PageTransitionProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
-  const reduced = usePrefersReducedMotion();
+  const level = useMotionLevel();
   const closePanel = useUi((s) => s.closePanel);
 
   const overlay = useRef<HTMLDivElement>(null);
@@ -87,7 +87,7 @@ export function PageTransitionProvider({ children }: { children: ReactNode }) {
   const navigate = useCallback<Api['navigate']>(
     (href, options = {}) => {
       const target = pathnameOf(href);
-      if (options.instant || reduced || state.current !== 'idle' || !overlay.current || !panel.current || target === pathRef.current) {
+      if (options.instant || level === 'off' || state.current !== 'idle' || !overlay.current || !panel.current || target === pathRef.current) {
         closePanel();
         router.push(href);
         if (options.focusMain) window.setTimeout(() => document.getElementById('main')?.focus({ preventScroll: true }), 60);
@@ -95,14 +95,16 @@ export function PageTransitionProvider({ children }: { children: ReactNode }) {
       }
       const el = overlay.current;
       const pan = panel.current;
-      const shape = shapes(options.variant ?? 'curtain', options);
-      const slow = Boolean(shape.slow);
+      const soft = level === 'soft';
+      const shape = shapes(soft ? 'ivory' : (options.variant ?? 'curtain'), options);
+      const slow = !soft && Boolean(shape.slow);
       const ease = gsapEase(slow ? 'inOut' : 'curtain');
       state.current = 'covering';
       closePanel();
       pan.dataset.tone = shape.tone;
-      gsap.set(el, { autoAlpha: 1, pointerEvents: 'auto' });
-      gsap.set(pan, { clipPath: shape.from });
+      // Fundido: la lámina cubre desde el inicio y solo cambia la opacidad del contenedor.
+      gsap.set(el, { autoAlpha: soft ? 0 : 1, pointerEvents: 'auto' });
+      gsap.set(pan, { clipPath: soft ? FULL : shape.from });
       gsap.set(mark.current, { autoAlpha: 0, y: 12 });
 
       const reveal = () => {
@@ -115,13 +117,15 @@ export function PageTransitionProvider({ children }: { children: ReactNode }) {
           },
         });
         out.to(mark.current, { autoAlpha: 0, duration: slow ? 0.35 : 0.2, ease: 'power1.out' }, 0);
-        out.to(pan, { clipPath: shape.out, duration: slow ? pageTransition.slowReveal : pageTransition.reveal, ease }, slow ? 0.1 : 0.05);
+        if (soft) out.to(el, { autoAlpha: 0, duration: 0.4, ease: 'power1.out' }, 0.05);
+        else out.to(pan, { clipPath: shape.out, duration: slow ? pageTransition.slowReveal : pageTransition.reveal, ease }, slow ? 0.1 : 0.05);
       };
 
-      const cover = slow ? pageTransition.slowCover : pageTransition.cover;
-      tl.current = gsap
-        .timeline()
-        .to(pan, { clipPath: shape.full, duration: cover, ease })
+      const cover = soft ? 0.24 : slow ? pageTransition.slowCover : pageTransition.cover;
+      const covering = gsap.timeline();
+      if (soft) covering.to(el, { autoAlpha: 1, duration: cover, ease: 'power1.out' });
+      else covering.to(pan, { clipPath: shape.full, duration: cover, ease });
+      tl.current = covering
         .to(mark.current, { autoAlpha: 1, y: 0, duration: 0.28, ease: 'power2.out' }, cover * (slow ? 0.5 : 0.45))
         .add(() => {
           state.current = 'navigating';
@@ -140,7 +144,7 @@ export function PageTransitionProvider({ children }: { children: ReactNode }) {
           window.setTimeout(finish, pageTransition.maxWait * 1000);
         });
     },
-    [closePanel, reduced, router],
+    [closePanel, level, router],
   );
 
   const api = useMemo<Api>(() => ({ navigate }), [navigate]);

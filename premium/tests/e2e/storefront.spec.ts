@@ -230,6 +230,22 @@ test('movimiento: el interruptor del pie detiene el movimiento y se recuerda', a
   await expect(page.locator('html')).not.toHaveAttribute('data-motion', /.+/);
 });
 
+test.describe('movimiento reducido por el sistema: se conservan los fundidos', () => {
+  test.use({ reducedMotion: 'reduce' });
+
+  test('los bloques aparecen con fundido y "Cinco historias" se recorre con flechas', async ({ page }) => {
+    await page.goto('/es', { waitUntil: 'networkidle' });
+    const block = page.locator('[data-reveal]', { hasText: 'Clover nació' }).first();
+    await expect(block).toHaveCSS('opacity', '0');
+    await block.scrollIntoViewIfNeeded();
+    await expect(block).toHaveCSS('opacity', '1');
+    const row = page.locator('section', { hasText: 'Cinco historias para llevar' }).locator('ul.snap-row');
+    await row.scrollIntoViewIfNeeded();
+    await page.getByRole('button', { name: 'Siguiente' }).click();
+    await expect.poll(() => row.evaluate((el) => el.scrollLeft)).toBeGreaterThan(0);
+  });
+});
+
 test('teclado: activar un enlace con Enter navega al instante, sin cortina de transición', async ({ page }) => {
   await page.goto('/es', { waitUntil: 'networkidle' });
   // Relojes vive en el menú Productos: se abre con el teclado y se llega al enlace con Tab.
