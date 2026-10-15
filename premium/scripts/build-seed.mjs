@@ -63,6 +63,9 @@ const VARIANTS = {
 };
 
 /** Pulseras con fotos reales (scripts/build-bracelets.mjs): en ángulo (principal), mano modelo, de frente y close-up; la foto anterior queda al final. */
+/** Juegos adicionales que van al final de la galería, y piezas cuya foto antigua se descarta por repetida. */
+const BRACELET_EXTRA = { pu06: 'pu06b' };
+const BRACELET_DROP_OLD = new Set(['pu06']);
 const BRACELET_SETS = new Set(['pu03', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13']);
 
 const AUTO_DETAIL = /^(rw|st)/;
@@ -176,7 +179,8 @@ for (const p of source) {
       imgOf(`${p.id}-hand`, 'lifestyle', L(`${p.nombre}, puesta`, `${t.name}, worn`)),
       imgOf(`${p.id}-front`, 'main', L(p.nombre, t.name)),
       imgOf(`${p.id}-close`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`)),
-      ...names.map((n) => imgOf(n, 'main', L(p.nombre, t.name))),
+      ...(BRACELET_EXTRA[p.id] ? [['ang', 'main', p.nombre, t.name], ['hand', 'lifestyle', `${p.nombre}, puesta`, `${t.name}, worn`], ['front', 'main', p.nombre, t.name], ['close', 'main', p.nombre, t.name]].map(([k, role, es, en]) => imgOf(`${BRACELET_EXTRA[p.id]}-${k}`, role, L(es, en))) : []),
+      ...(BRACELET_DROP_OLD.has(p.id) ? [] : names.map((n) => imgOf(n, 'main', L(p.nombre, t.name)))),
     ];
     detailIndex = 3;
   } else {

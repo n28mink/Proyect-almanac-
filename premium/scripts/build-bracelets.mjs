@@ -3,13 +3,14 @@
  * Fotos reales de las pulseras (4 por pieza), conservando el fondo crema original de las fotos.
  *   node scripts/build-bracelets.mjs
  *
- * Lee assets-src/bracelets/<id>-<rol>.<ext> con rol: a = en ángulo (principal), h = con mano modelo, f = de frente, c = close-up.
+ * Lee assets-src/bracelets/<id>-<rol>.<ext> (id con «b» = juego adicional, p. ej. pu06b) con rol: a = en ángulo (principal), h = con mano modelo, f = de frente, c = close-up.
  * Escribe public/media/products/<id>-ang|hand|front|close.jpg (hasta 1600², calidad 90 con nitidez suave) y actualiza sus metadatos en
  * src/content/media.generated.json. Las fotos no cuadradas se ajustan sin deformar: se amplía el fondo (pad) o se recorta (crop)
  * según CONFIG. Después: npm run seed.
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 
@@ -17,7 +18,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(root, 'assets-src/bracelets');
 const OUT = path.join(root, 'public/media/products');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');
-const MAX = 1600; // sin ampliar más allá de la resolución original
+const MAX = 2400; // sin ampliar más allá de la resolución original
 const NAME = { a: 'ang', h: 'hand', f: 'front', c: 'close' };
 
 /** Fotos que no son cuadradas: `pad` amplía el fondo arriba/abajo; `crop` recorta un cuadrado (x = posición horizontal 0–1). */
@@ -67,13 +68,16 @@ async function meta(buffer) {
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
 let n = 0;
 for (const f of fs.readdirSync(SRC).sort()) {
-  const m = /^(pu\d+)-([ahfc])\.\w+$/.exec(f);
+  const m = /^(pu\d+b?)-([ahfc])\.(\w+)$/.exec(f); // «b» = juego adicional del mismo producto
   if (!m) continue;
-  const [, id, role] = m;
-  const photo = await sharp(await square(path.join(SRC, f), `${id}-${role}`)).sharpen({ sigma: 0.6, m1: 0.6, m2: 1.6 }).jpeg({ quality: 90, mozjpeg: true, progressive: true }).toBuffer();
+  const [, id, role, ext] = m;
+  const photo = await sharp(await square(path.join(SRC, f), `${id}-${role}`)).sharpen(ext === 'png' ? undefined : { sigma: 0.6, m1: 0.6, m2: 1.6 }).jpeg({ quality: ext === 'png' ? 93 : 90, mozjpeg: true, progressive: true }).toBuffer(); // originales sin pérdida (png): sin nitidez añadida
   const key = `${id}-${NAME[role]}`;
-  fs.writeFileSync(path.join(OUT, `${key}.jpg`), photo);
-  manifest.images[key] = { src: `/media/products/${key}.jpg`, ...(await meta(photo)), focal: FOCAL[role] ?? { x: 0.5, y: 0.5 } };
+  // La huella del contenido va en el nombre: la caché de imágenes de Vercel guarda cada URL hasta 30 días, y así una foto nueva nunca se queda con la vieja.
+  const hash = crypto.createHash('sha1').update(photo).digest('hex').slice(0, 7);
+  for (const old of fs.readdirSync(OUT)) if (old.startsWith(`${key}.`) || old.startsWith(`${key}-`)) fs.rmSync(path.join(OUT, old));
+  fs.writeFileSync(path.join(OUT, `${key}-${hash}.jpg`), photo);
+  manifest.images[key] = { src: `/media/products/${key}-${hash}.jpg`, ...(await meta(photo)), focal: FOCAL[role] ?? { x: 0.5, y: 0.5 } };
   n++;
 }
 fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');

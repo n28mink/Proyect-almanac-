@@ -144,3 +144,7 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 
 ### Imágenes más compactas en móvil (duodécima pasada)
 En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (el escritorio no cambia): colección destacada 51 % → 32 % (cuadrada, máx. 16 rem); «Elegimos cada pieza» 51 % → 31 % (4:3); editorial «Puestas» 51 % → 35 % (máx. 14 rem); mosaico «Las joyas que más lucen» a 2 columnas iguales (54 % → 26 %); carril de colecciones 44 % → 36 %; vídeo de joyería 80 % → 60 % de alto; visor del reloj máx. 18 rem; Journal en filas compactas con miniatura de 6,5 rem.
+
+### Originales sin comprimir (decimotercera pasada)
+- Las tiendas suben los originales a `fotos/pulseras-originales/` (PNG sin pérdida) y se copian a `assets-src/bracelets/` con el nombre `<id>-<a|h|f|c>.png`. Con PNG de origen: JPG calidad 93 sin nitidez añadida (PSNR 43–45 dB frente al original; antes ~39 dB) y hasta 2400 px sin ampliar. Los archivos llevan una huella del contenido en el nombre (`pu06-ang-3e3518a.jpg`) para esquivar la caché de 30 días de Vercel.
+- Pulsera de corazones (pu06): sus fotos son las de corazones alargados (la subida «Pulsera 11 (corazones alargados)», que coincide con su foto original); las de corazones abultados quedan al final de la galería (juego `pu06b`).
