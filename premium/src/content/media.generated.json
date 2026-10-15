@@ -2869,22 +2869,32 @@
   "spin": {
     "ar11": {
       "frames": [
-        "/media/spin/ar11/f01-dfaa04f.webp",
-        "/media/spin/ar11/f02-dfaa04f.webp",
-        "/media/spin/ar11/f03-dfaa04f.webp",
-        "/media/spin/ar11/f04-dfaa04f.webp",
-        "/media/spin/ar11/f05-dfaa04f.webp",
-        "/media/spin/ar11/f06-dfaa04f.webp",
-        "/media/spin/ar11/f07-dfaa04f.webp",
-        "/media/spin/ar11/f08-dfaa04f.webp",
-        "/media/spin/ar11/f09-dfaa04f.webp",
-        "/media/spin/ar11/f10-dfaa04f.webp",
-        "/media/spin/ar11/f11-dfaa04f.webp",
-        "/media/spin/ar11/f12-dfaa04f.webp"
+        "/media/spin/ar11/f01-a884747.webp",
+        "/media/spin/ar11/f02-a884747.webp",
+        "/media/spin/ar11/f03-a884747.webp",
+        "/media/spin/ar11/f04-a884747.webp",
+        "/media/spin/ar11/f05-a884747.webp",
+        "/media/spin/ar11/f06-a884747.webp",
+        "/media/spin/ar11/f07-a884747.webp",
+        "/media/spin/ar11/f08-a884747.webp",
+        "/media/spin/ar11/f09-a884747.webp",
+        "/media/spin/ar11/f10-a884747.webp",
+        "/media/spin/ar11/f11-a884747.webp",
+        "/media/spin/ar11/f12-a884747.webp",
+        "/media/spin/ar11/f13-a884747.webp",
+        "/media/spin/ar11/f14-a884747.webp",
+        "/media/spin/ar11/f15-a884747.webp",
+        "/media/spin/ar11/f16-a884747.webp",
+        "/media/spin/ar11/f17-a884747.webp",
+        "/media/spin/ar11/f18-a884747.webp",
+        "/media/spin/ar11/f19-a884747.webp",
+        "/media/spin/ar11/f20-a884747.webp",
+        "/media/spin/ar11/f21-a884747.webp",
+        "/media/spin/ar11/f22-a884747.webp"
       ],
       "width": 1080,
       "height": 966,
-      "tone": "#f5ede3"
+      "tone": "#f6f0eb"
     }
   }
 }

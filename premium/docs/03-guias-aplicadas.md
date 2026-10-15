@@ -152,4 +152,4 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Aretes flor (ar11): originales + giro 360°
 - Fotos reales sin comprimir (par, individual, puestos) en `assets-src/aretes/`; `scripts/build-aretes.mjs` las lleva a 4:5 sin deformar (fondo liso con degradado largo; la de la oreja se recorta) y descompone `ar11-360.mp4` en fotogramas webp (`public/media/spin/ar11/`). Necesita ffmpeg (`FFMPEG=/ruta/ffmpeg`).
 - `spin` en el esquema de producto: diapositiva «360°» al final de la galería (`Spin360`): arrastrar o flechas, inercia, giro lento inicial (solo movimiento completo) y mezcla corta entre fotogramas. Los fotogramas solo se cargan al abrirla.
-- Límite: el vídeo trae 12 fotogramas (30° por paso). Con 24–36 fotogramas (giro de 360° grabado a 10–15°) la sensación sería la de Swarovski.
+- El 360 es ahora el vídeo de 24 fotogramas (`ar11-360.mp4`); el script descarta los 2 primeros (más pequeños) y quedan 22. Más fotogramas = giro más suave; la secuencia no es una rotación perfectamente uniforme (el vídeo hace dos barridos), por eso se nota algún salto de ángulo.

@@ -52,7 +52,7 @@ export function Spin360({ spin, name, active }: { spin: Spin; name: string; acti
     paint();
     const tick = () => {
       if (!drag.current) {
-        if (auto.current && level === 'full') vel.current = 0.045; // giro lento inicial
+        if (auto.current && level === 'full') vel.current = (n / 12) * 0.045; // giro lento inicial: ~4,5 s por vuelta sea cual sea el número de fotogramas
         else vel.current *= 0.94;
         if (Math.abs(vel.current) < 0.002 && !auto.current) vel.current = 0;
         pos.current += vel.current;
