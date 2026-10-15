@@ -124,3 +124,7 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 - Tirones: `scrub: true` en lugar de `0.8` (Lenis ya suaviza; el doble suavizado se sentía pastoso), `ScrollTrigger.config({ ignoreMobileResize: true })` (la barra de direcciones del móvil ya no recalcula todo), y parallax / recorte animado del vídeo solo en escritorio con movimiento completo.
 - Mosaico «Las joyas que más lucen»: estaba vacío (la imagen medía 0 de alto); ahora muestra la joya de mayor valor y la mejor de cada tipo.
 - Colección destacada: texto a la izquierda e imagen contenida (máx. 28 rem) a la derecha.
+
+### Fotos reales de pulseras y portadas de categoría (octava pasada)
+- 10 pulseras (pu03, pu05–pu13) pasan a 4 fotos reales cada una, en este orden: en ángulo (principal), con mano modelo, de frente y close-up; la foto anterior queda al final de la galería. Se conserva el fondo crema original de las fotos (`npm run media:bracelets`, originales en `assets-src/bracelets/`, nombres `<id>-a|h|f|c`; luego `npm run seed`). Las fotos no cuadradas (flores, estrellas, turquesa) se ajustan ampliando el fondo con degradado, sin deformar. pu01, pu02 y pu04 conservan sus fotos.
+- Portadas de categoría elegidas por representatividad: Joyería → pu10 (estrellas), Relojes → rw03 (frontal, limpio), Camisas → cm03 (prenda completa), Novedades → pu08; el resto se mantiene (Collares co11, Aretes ar06, Anillos an04, Pulseras pu06).

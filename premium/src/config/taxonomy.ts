@@ -16,17 +16,17 @@ export interface CategoryDef {
 
 /** Las categorías del negocio. Cada slug es una página dinámica real: /shop/<slug>. */
 export const categories: CategoryDef[] = [
-  { slug: 'jewelry', kind: 'group', name: L('Joyería', 'Jewelry'), blurb: L('Collares, aretes, anillos y pulseras.', 'Necklaces, earrings, rings and bracelets.'), coverProductId: 'an07', primaryNav: true },
-  { slug: 'watches', kind: 'type', name: L('Relojes', 'Watches'), blurb: L('Tiempo con carácter.', 'Time with character.'), coverProductId: 'rw04', primaryNav: true },
+  { slug: 'jewelry', kind: 'group', name: L('Joyería', 'Jewelry'), blurb: L('Collares, aretes, anillos y pulseras.', 'Necklaces, earrings, rings and bracelets.'), coverProductId: 'pu10', primaryNav: true },
+  { slug: 'watches', kind: 'type', name: L('Relojes', 'Watches'), blurb: L('Tiempo con carácter.', 'Time with character.'), coverProductId: 'rw03', primaryNav: true },
   { slug: 'necklaces', kind: 'type', name: L('Collares', 'Necklaces'), blurb: L('Cerca del corazón.', 'Close to the heart.'), coverProductId: 'co11' },
   { slug: 'earrings', kind: 'type', name: L('Aretes', 'Earrings'), blurb: L('El detalle que ilumina.', 'The detail that lights up.'), coverProductId: 'ar06' },
   { slug: 'rings', kind: 'type', name: L('Anillos', 'Rings'), blurb: L('Símbolos que perduran.', 'Symbols that last.'), coverProductId: 'an04' },
   { slug: 'bracelets', kind: 'type', name: L('Pulseras', 'Bracelets'), blurb: L('Movimiento delicado.', 'Delicate movement.'), coverProductId: 'pu06' },
-  { slug: 'shirts', kind: 'type', name: L('Camisas', 'T-shirts'), blurb: L('Poli-algodón, personalizables a pedido.', 'Poly-cotton, customizable on request.'), coverProductId: 'cm02', primaryNav: true },
+  { slug: 'shirts', kind: 'type', name: L('Camisas', 'T-shirts'), blurb: L('Poli-algodón, personalizables a pedido.', 'Poly-cotton, customizable on request.'), coverProductId: 'cm03', primaryNav: true },
   { slug: 'accessories', kind: 'type', name: L('Accesorios', 'Accessories'), blurb: L('Sets y piezas para completar el look.', 'Sets and pieces to complete the look.'), coverProductId: 'st01' },
   { slug: 'women', kind: 'audience', name: L('Mujer', 'Women'), blurb: L('Selección para ella.', 'A selection for her.'), coverProductId: 'ar11' },
   { slug: 'men', kind: 'audience', name: L('Hombre', 'Men'), blurb: L('Relojes de carácter.', 'Watches with character.'), coverProductId: 'rw06' },
-  { slug: 'new-arrivals', kind: 'merch', name: L('Novedades', 'New Arrivals'), blurb: L('Lo último en llegar.', 'The latest to arrive.'), coverProductId: 'an12', primaryNav: true },
+  { slug: 'new-arrivals', kind: 'merch', name: L('Novedades', 'New Arrivals'), blurb: L('Lo último en llegar.', 'The latest to arrive.'), coverProductId: 'pu08', primaryNav: true },
   { slug: 'gifts-for-her', kind: 'merch', name: L('Regalos para ella', 'Gifts for her'), blurb: L('Nuestra joyería más valiosa.', 'Our most valued piece.'), coverProductId: 'st01', primaryNav: true },
   { slug: 'gifts', kind: 'merch', name: L('Regalos', 'Gifts'), blurb: L('Piezas pensadas para regalar.', 'Pieces made for giving.'), coverProductId: 'co19', primaryNav: true },
 ];

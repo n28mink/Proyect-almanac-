@@ -10024,6 +10024,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu03-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAQb/xAAbEAEAAgMBAQAAAAAAAAAAAAABAhEAEiFBYf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCt3uVEVLpfDDYZMfTCcCXbYt3zCgb6v3CT/9k=",
+    "tone": "#ece6dc",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera plateada con nudo",
+     "en": "Silver-tone knot bangle"
+    }
+   },
+   {
+    "src": "/media/products/pu03-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAhEAACAgIBBAMAAAAAAAAAAAABAgMEABEFEiFBUWGRsf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAMAwEAAhEDEQA/AEbN25x/JzF2667kFFb1rvr15xyCZLEKSxnaOoYHJTRR2YHhmUMjjRBwPgb7VrFnjpyXELMVYfB0f3f3gPY//9k=",
+    "tone": "#ccbdb4",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera plateada con nudo, puesta",
+     "en": "Silver-tone knot bangle, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu03-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EABsQAAICAwEAAAAAAAAAAAAAAAERAAISITFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXsNPcGDwyDQ7wtiT6o61RbZkl/9k=",
+    "tone": "#f0ebe5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera plateada con nudo",
+     "en": "Silver-tone knot bangle"
+    }
+   },
+   {
+    "src": "/media/products/pu03-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgb/xAAfEAACAgICAwEAAAAAAAAAAAABAgMSABEhMRNBUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKyJJFt5JL7Oxx0PmF1lMtkkAXWqke/uCZXqKu3B6uRv9xJGxRbOxIHZOSX/2Q==",
+    "tone": "#e6e1da",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera plateada con nudo",
+     "en": "Close-up detail of Silver-tone knot bangle"
+    }
+   },
+   {
     "src": "/media/products/pu03.jpg",
     "width": 800,
     "height": 800,
@@ -10038,31 +10102,15 @@
      "es": "Pulsera plateada con nudo",
      "en": "Silver-tone knot bangle"
     }
-   },
-   {
-    "src": "/media/products/pu03-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIG/8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIAERIhAyJBUbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2sMLpqTaQDzQwtt1Tdnpj5KVApJXFYH/2Q==",
-    "tone": "#f4f2f2",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera plateada con nudo",
-     "en": "Close-up detail of Silver-tone knot bangle"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu03.jpg",
+  "thumbnail": "/media/products/pu03-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -10408,6 +10456,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu05-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EACAQAAICAgAHAAAAAAAAAAAAAAECAxEAEhMhMUFRUoH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANZszEhAAAaJbzklyrBZKJIsFcUkJZtkleM99ao/DhHHw+ZZnb2brWCk/9k=",
+    "tone": "#ebe1d3",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con piedras claras y turquesa",
+     "en": "Gold-tone bracelet with clear and turquoise stones"
+    }
+   },
+   {
+    "src": "/media/products/pu05-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAgEAABBAIBBQAAAAAAAAAAAAABAAIDBBEhBRMiMVGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAIRH/2gAMAwEAAhEDEQA/AGrV19bk4mnPTMex735SoIIyEbycTZabnkd8QL2n6r0pzNVjeRvGCjHZHTt//9k=",
+    "tone": "#dfccbc",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada con piedras claras y turquesa, puesta",
+     "en": "Gold-tone bracelet with clear and turquoise stones, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu05-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIG/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIAESExURL/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1pbNKpNbiGs1RB4ZLISbVyhO8XFV87JY9MJP/9k=",
+    "tone": "#f0e9e0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con piedras claras y turquesa",
+     "en": "Gold-tone bracelet with clear and turquoise stones"
+    }
+   },
+   {
+    "src": "/media/products/pu05-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDEQAEQQUSFCEx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDUedr0xMgAWrJ9fcrbkKsVZ6rnjDJ0/WkvuiFk4o9OCI2kaixWClH/2Q==",
+    "tone": "#e3dbce",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada con piedras claras y turquesa",
+     "en": "Close-up detail of Gold-tone bracelet with clear and turquoise stones"
+    }
+   },
+   {
     "src": "/media/products/pu05.jpg",
     "width": 960,
     "height": 960,
@@ -10422,31 +10534,15 @@
      "es": "Pulsera dorada con piedras claras y turquesa",
      "en": "Gold-tone bracelet with clear and turquoise stones"
     }
-   },
-   {
-    "src": "/media/products/pu05-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAfEAACAgIBBQAAAAAAAAAAAAABAgARAxIEFCFBQlH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aooj5NrxrqGtdvMZgSAHxAgfGiahXFe12IHNz9MisB3JqGIf/2Q==",
-    "tone": "#d3b08d",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con piedras claras y turquesa",
-     "en": "Close-up detail of Gold-tone bracelet with clear and turquoise stones"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu05.jpg",
+  "thumbnail": "/media/products/pu05-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -10602,6 +10698,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu06-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBv/EACAQAAMAAQMFAQAAAAAAAAAAAAECAwAhIjEREhMycbH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDUNaj0ZIKu32ZuPmTG6xlYKHA7gVOhGHxOzGkamZbVgR1BOPGIkzOWZ3blm/MnTj//2Q==",
+    "tone": "#e4d6c2",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada de corazones",
+     "en": "Gold-tone hearts bracelet"
+    }
+   },
+   {
+    "src": "/media/products/pu06-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAIBAAAgIBBAMBAAAAAAAAAAAAAQIDBAAFERIhMUFRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAABACEC/9oADAMBAAIRAxEAPwBu5qste2YUhVgo5Mdz0PubqtqK1HyiPftT5GUFQsW4ryI2J29YJqSnTrQeu7RrKD0vW30fmGqbKB1l/9k=",
+    "tone": "#dcc8ba",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada de corazones, puesta",
+     "en": "Gold-tone hearts bracelet, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu06-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBv/EABwQAAICAwEBAAAAAAAAAAAAAAECAxEAElEhMf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8A1jzRoaZwDzCkiSA6MGr7WTMBDs0UrJsbIqxeNFDo7Ozl3byzzBSj/9k=",
+    "tone": "#ece3d6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada de corazones",
+     "en": "Gold-tone hearts bracelet"
+    }
+   },
+   {
+    "src": "/media/products/pu06-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgEEAgIDAAAAAAAAAAAAAQIDAAQREhMxITIiYcH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAABAhESMf/aAAwDAQACEQMRAD8A30u55iyxrq3y8n168YoMrLytJdRTR7gY42yDgd4/aaljMs5RJtYA22o7P1VLSwMLHlcSIo1jUj1Gc1PmT6LaR//Z",
+    "tone": "#d1b994",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada de corazones",
+     "en": "Close-up detail of Gold-tone hearts bracelet"
+    }
+   },
+   {
     "src": "/media/products/pu06.jpg",
     "width": 1000,
     "height": 1000,
@@ -10616,29 +10776,13 @@
      "es": "Pulsera dorada de corazones",
      "en": "Gold-tone hearts bracelet"
     }
-   },
-   {
-    "src": "/media/products/pu06-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EAB8QAAEEAQUBAAAAAAAAAAAAAAEAAgMRIQQSEzFxMv/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACIf/aAAwDAQACEQMRAD8A2GwRiYO4hJNQtwHR9VdSMH0D6h0+0GQAHDs2nPIrItT5OTLf/9k=",
-    "tone": "#e4c7a9",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada de corazones",
-     "en": "Close-up detail of Gold-tone hearts bracelet"
-    }
    }
   ],
   "videos": [
    "product.pu06",
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu06.jpg",
+  "thumbnail": "/media/products/pu06-ang.jpg",
   "hoverMedia": {
    "type": "video",
    "key": "product.pu06"
@@ -10793,6 +10937,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu07-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAIBABAQACAQMFAAAAAAAAAAAAAQIDEQASEyEiMUFCof/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFREBAQAAAAAAAAAAAAAAAAAAADH/2gAMAwEAAhEDEQA/ANFGKYfUVdH1k5ViyFiAz0+ETWuF23qajJUb8poT94OTKw6lV+V93k4df//Z",
+    "tone": "#e4d8c6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada trenzada",
+     "en": "Braided gold-tone bracelet"
+    }
+   },
+   {
+    "src": "/media/products/pu07-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAcEAACAgIDAAAAAAAAAAAAAAABAgARBFEDI3H/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAEx/9oADAMBAAIRAxEAPwCky3KLx0as1FKbUHYhMw9AOmESrWo8gVG4f//Z",
+    "tone": "#eadcd0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada trenzada, puesta",
+     "en": "Braided gold-tone bracelet, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu07-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBv/EABwQAQACAwADAAAAAAAAAAAAAAECEQADIRJBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8A11gdaMPHJOtZshi36lG8fXDwHp34UYaT/9k=",
+    "tone": "#f0e9df",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada trenzada",
+     "en": "Braided gold-tone bracelet"
+    }
+   },
+   {
+    "src": "/media/products/pu07-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIG/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQREhNRFCIxcZL/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwDTzXYUYhBkbOO0Eihlu5owC8En0FFTD1RQJFsRKOATTJZKTquGMz8t4HoUNYkR/9k=",
+    "tone": "#e0ceb7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada trenzada",
+     "en": "Close-up detail of Braided gold-tone bracelet"
+    }
+   },
+   {
     "src": "/media/products/pu07.jpg",
     "width": 960,
     "height": 960,
@@ -10807,31 +11015,15 @@
      "es": "Pulsera dorada trenzada",
      "en": "Braided gold-tone bracelet"
     }
-   },
-   {
-    "src": "/media/products/pu07-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACAQAAIBBAIDAQAAAAAAAAAAAAECAwAEERIhMRRBcXL/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2Ymk1K26j9Me6fHPJko5ZHAzzgg/KlivFiOjqdh7Wg3PkMSAQF457oDP/9k=",
-    "tone": "#d5bca0",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada trenzada",
-     "en": "Close-up detail of Braided gold-tone bracelet"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu07.jpg",
+  "thumbnail": "/media/products/pu07-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -10988,6 +11180,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu08-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EABwQAAICAwEBAAAAAAAAAAAAAAERAhIAAzFRIf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAMf/aAAwDAQACEQMRAD8A02vXUuTJ6hlEZWfQvcCgkWe+vFbZUNY/A3ghV//Z",
+    "tone": "#ebe1d3",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con dijes de trébol",
+     "en": "Gold-tone bracelet with clover charms"
+    }
+   },
+   {
+    "src": "/media/products/pu08-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDAAQRQQUhEmFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQADAQAAAAAAAAAAAAAAAAEAESES/9oADAMBAAIRAxEAPwDfuLqaCRuxgaIprW+SdSHwjjRPR+UrxpKvjIgYexUNxx6KQYQANqxzRNmxTlyf/9k=",
+    "tone": "#e3cab9",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada con dijes de trébol, puesta",
+     "en": "Gold-tone bracelet with clover charms, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu08-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAGRABAQADAQAAAAAAAAAAAAAAAREAAiES/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANd6NTrMoiUaYfFbUZOOLXXycvW9wk//2Q==",
+    "tone": "#f3ece4",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con dijes de trébol",
+     "en": "Gold-tone bracelet with clover charms"
+    }
+   },
+   {
+    "src": "/media/products/pu08-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EAB8QAAICAgEFAAAAAAAAAAAAAAECABEDEyESIjEyof/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEREv/aAAwDAQACEQMRAD8A0Ku6O+iui/RgflRsLk5m397AUKHAErKqw5AMNV4k8ydv/9k=",
+    "tone": "#e9dac7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada con dijes de trébol",
+     "en": "Close-up detail of Gold-tone bracelet with clover charms"
+    }
+   },
+   {
     "src": "/media/products/pu08.jpg",
     "width": 1000,
     "height": 1000,
@@ -11002,31 +11258,15 @@
      "es": "Pulsera dorada con dijes de trébol",
      "en": "Gold-tone bracelet with clover charms"
     }
-   },
-   {
-    "src": "/media/products/pu08-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAG/8QAHxAAAgIBBAMAAAAAAAAAAAAAAQIAEQMhMUFREiJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANDjxBsrMyWxGp6+RuzL6WByD2IgjqxZWBvcGSLZ8nALbacCGR//2Q==",
-    "tone": "#e4d1c3",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con dijes de trébol",
-     "en": "Close-up detail of Gold-tone bracelet with clover charms"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu08.jpg",
+  "thumbnail": "/media/products/pu08-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -11189,6 +11429,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu09-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxESISJBUaH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDUAZgVSx+CKjaeJUg5snNLmwMlzVqG5FR12Ovb5JPsycOv/9k=",
+    "tone": "#ebdfcf",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con piedra verde",
+     "en": "Gold-tone bracelet with green stone"
+    }
+   },
+   {
+    "src": "/media/products/pu09-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMG/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQACEQMEMXETISL/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAEx/9oADAMBAAIRAxEAPwDS3dV1LjLTAcYKSMCUW8M2xEA9tztXa7w3QQVG4f/Z",
+    "tone": "#eaddd2",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada con piedra verde, puesta",
+     "en": "Gold-tone bracelet with green stone, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu09-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEhMQMSE2H/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANeWA2QIDOpJ05ep8nS7wXW44U3bEX8xBSf/2Q==",
+    "tone": "#f1eadd",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con piedra verde",
+     "en": "Gold-tone bracelet with green stone"
+    }
+   },
+   {
+    "src": "/media/products/pu09-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EAB8QAAICAgMAAwAAAAAAAAAAAAECAwQAEQUTMRIiUf/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIWH/2gAMAwEAAhEDEQA/ANDc5WKsyKo7S4+pVho4VfkBPXWVYmOyQQD5irHERTdaj4hY/BrzKalOOpD1oBrf5k9Yq3h//9k=",
+    "tone": "#cccdb7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada con piedra verde",
+     "en": "Close-up detail of Gold-tone bracelet with green stone"
+    }
+   },
+   {
     "src": "/media/products/pu09.jpg",
     "width": 800,
     "height": 800,
@@ -11203,31 +11507,15 @@
      "es": "Pulsera dorada con piedra verde",
      "en": "Gold-tone bracelet with green stone"
     }
-   },
-   {
-    "src": "/media/products/pu09-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAG/8QAIBAAAQQBBAMAAAAAAAAAAAAAAQACAxIhBBETUSNTcf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAAMAAAAAAAAAAAAAAAAAABEhUf/aAAwDAQACEQMRAD8A2PBFa1Bv2qjmDxux07IRdc/VsEfBJG0k53alUl9oHxqisMv/2Q==",
-    "tone": "#f2efe1",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con piedra verde",
-     "en": "Close-up detail of Gold-tone bracelet with green stone"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu09.jpg",
+  "thumbnail": "/media/products/pu09-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -11389,6 +11677,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu10-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAQb/xAAcEAACAgMBAQAAAAAAAAAAAAABAgARAxIxIVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/AK3ckkKhNeXwQDEtTLqe9uD4EyGzsD9ViIJjTHYQVZswUn//2Q==",
+    "tone": "#eee5d9",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con estrellas",
+     "en": "Gold-tone bracelet with stars"
+    }
+   },
+   {
+    "src": "/media/products/pu10-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAiEAACAQIFBQAAAAAAAAAAAAABAgMABAUREkFhEyJRobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAExMv/aAAwDAQACEQMRAD8Av31z0pUQEhjt559U2Fi8Ssd6DikKyWplyGuHuU/RSLSTXbIeMqNUR5P/2Q==",
+    "tone": "#e3cfbe",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada con estrellas, puesta",
+     "en": "Gold-tone bracelet with stars, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu10-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIG/8QAHBABAQACAwEBAAAAAAAAAAAAAQIAEQMScUFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANZ3VSYXX3ejGaVSpZfcm+NXcclx5pMeOOm1qrf2sJP/2Q==",
+    "tone": "#eee6db",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada con estrellas",
+     "en": "Gold-tone bracelet with stars"
+    }
+   },
+   {
+    "src": "/media/products/pu10-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECAxEABAUSFUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAACEi/9oADAMBAAIRAxEAPwDVrswspYSLQNXeKTagjIDyqCReTbj9YoVWPpf1TRw8/VoXCpoVeDRR/9k=",
+    "tone": "#e7dccf",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada con estrellas",
+     "en": "Close-up detail of Gold-tone bracelet with stars"
+    }
+   },
+   {
     "src": "/media/products/pu10.jpg",
     "width": 1080,
     "height": 1080,
@@ -11403,31 +11755,15 @@
      "es": "Pulsera dorada con estrellas",
      "en": "Gold-tone bracelet with stars"
     }
-   },
-   {
-    "src": "/media/products/pu10-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgAEBwEAAAAAAAAAAAAAAQIAAxESBBMUITFRYUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAABEhMf/aAAwDAQACEQMRAD8A0DhQ8wai6bUUKKKqv3fuEpnYUHToJiMa5dbbT2PPIUvAic9gqgkHmm0BlGbP/9k=",
-    "tone": "#d3b99e",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con estrellas",
-     "en": "Close-up detail of Gold-tone bracelet with stars"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu10.jpg",
+  "thumbnail": "/media/products/pu10-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -11583,6 +11919,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu11-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EACAQAQABAwQDAQAAAAAAAAAAAAECAAMREhMhMQRBUZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A01u3btySFtnI7fn7T7c9YvWHGPZUcJb09cVg9LF5flC55Ww6YCq5VeWgT//Z",
+    "tone": "#e4d9cc",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada doble cadena con corazón",
+     "en": "Gold-tone double-chain bracelet with heart"
+    }
+   },
+   {
+    "src": "/media/products/pu11-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACIQAAIBAwIHAAAAAAAAAAAAAAECBAADEQVREhMhMTJBgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIhMf/aAAwDAQACEQMRAD8A0uoSDFhvdXyyAPpxRQHLw7bMSxx1J90pqL86RYidlY8bHfaqKhbahUGFAwAKNaI6if/Z",
+    "tone": "#e4d3c5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada doble cadena con corazón, puesta",
+     "en": "Gold-tone double-chain bracelet with heart, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu11-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIG/8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERIh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdaxU2yERE0dJF6o90ccz02NK8j7qurCT//2Q==",
+    "tone": "#f2eae0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera dorada doble cadena con corazón",
+     "en": "Gold-tone double-chain bracelet with heart"
+    }
+   },
+   {
+    "src": "/media/products/pu11-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAIhAAAgICAQMFAAAAAAAAAAAAAQIDEQAEEiEiMkFRkaKx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/ANENjbTo8UbH35cf3KZdyTwSNPtj7EbSx0jBWBvuFj4xFHFFBN0Ks+uTmnX/2Q==",
+    "tone": "#e5d9c9",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera dorada doble cadena con corazón",
+     "en": "Close-up detail of Gold-tone double-chain bracelet with heart"
+    }
+   },
+   {
     "src": "/media/products/pu11.jpg",
     "width": 1080,
     "height": 1080,
@@ -11597,31 +11997,15 @@
      "es": "Pulsera dorada doble cadena con corazón",
      "en": "Gold-tone double-chain bracelet with heart"
     }
-   },
-   {
-    "src": "/media/products/pu11-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EACEQAAIBAwMFAAAAAAAAAAAAAAECEQADBBITMRQhIlFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAIRIf/aAAwDAQACEQMRAD8A0646BRqGo+yZob5awge1EEwVbj6Kn6/a8bikkdpB5pGVm7rqjLAjUINTtqhyIDs//9k=",
-    "tone": "#e3d5bb",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada doble cadena con corazón",
-     "en": "Close-up detail of Gold-tone double-chain bracelet with heart"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu11.jpg",
+  "thumbnail": "/media/products/pu11-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -11779,6 +12163,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu12-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHhABAAICAQUAAAAAAAAAAAAAAQIRADEDEiFBUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1jyNpGDKtvYMIrsr56wyOS1hML8SLyRGN9UmUnbrCT//2Q==",
+    "tone": "#e8e2d8",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera plateada con esferas de cristal",
+     "en": "Silver-tone bracelet with crystal spheres"
+    }
+   },
+   {
+    "src": "/media/products/pu12-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAiEAACAQQBBAMAAAAAAAAAAAABAgQABREhAwYTMUFRcfH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AXJuUq19QBJTM8TnOFz4AJ0R9GqQ6NDnwI9xj9qSmQNqw0VPyKneW7TrFKaFyukhVUMhbOh6/N0Sf/9k=",
+    "tone": "#bfb6b0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera plateada con esferas de cristal, puesta",
+     "en": "Silver-tone bracelet with crystal spheres, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu12-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAGxABAQEBAAMBAAAAAAAAAAAAAQIRABIyUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdVzPshyaKNHejNeSxQb9N5MorTq/mdJf/Z",
+    "tone": "#f0eae4",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera plateada con esferas de cristal",
+     "en": "Silver-tone bracelet with crystal spheres"
+    }
+   },
+   {
+    "src": "/media/products/pu12-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgb/xAAhEAACAgECBwAAAAAAAAAAAAABAgMRABJBExQhMlFhof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCr4ETdWGv2xvA5jhIAlKHx3fMXKw7JW1AkY0iRL0qBeBf/2Q==",
+    "tone": "#e8e2dd",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera plateada con esferas de cristal",
+     "en": "Close-up detail of Silver-tone bracelet with crystal spheres"
+    }
+   },
+   {
     "src": "/media/products/pu12.jpg",
     "width": 1080,
     "height": 1080,
@@ -11793,31 +12241,15 @@
      "es": "Pulsera plateada con esferas de cristal",
      "en": "Silver-tone bracelet with crystal spheres"
     }
-   },
-   {
-    "src": "/media/products/pu12-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIAAxESIzFBUXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDSGrccjH0pxDo9S4rOw8N2+ypaHUMAYTaXbWsDI65hX//Z",
-    "tone": "#d9d3d5",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera plateada con esferas de cristal",
-     "en": "Close-up detail of Silver-tone bracelet with crystal spheres"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu12.jpg",
+  "thumbnail": "/media/products/pu12-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {
@@ -11995,6 +12427,70 @@
   ],
   "images": [
    {
+    "src": "/media/products/pu13-ang.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBv/EAB0QAAMAAgMBAQAAAAAAAAAAAAECEQADEjFBYbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1nM9KvKfYMKOWJDKVI8tyLayaU2vrppkP7jooQdlj6zGk4Cf/9k=",
+    "tone": "#ece3d8",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera con esferas de cristal en dos tonos",
+     "en": "Two-tone crystal spheres bracelet"
+    }
+   },
+   {
+    "src": "/media/products/pu13-hand.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQMCBAAFEsEREyJBQv/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQADAQAAAAAAAAAAAAAAAAAAATEC/9oADAMBAAIRAxEAPwDc1VllXaYie2APkeDjq7S6stpABnEHoMnZAbVbA+4HD6S4spRB+Dt55w4xLk//2Q==",
+    "tone": "#e0ccbd",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera con esferas de cristal en dos tonos, puesta",
+     "en": "Two-tone crystal spheres bracelet, worn"
+    }
+   },
+   {
+    "src": "/media/products/pu13-front.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EAB0QAQACAgIDAAAAAAAAAAAAAAEAAhExEiEDUXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANeobQ+wHOpF/GrypYqvuox0pxz3ld9Ykl//2Q==",
+    "tone": "#f1ebe2",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Pulsera con esferas de cristal en dos tonos",
+     "en": "Two-tone crystal spheres bracelet"
+    }
+   },
+   {
+    "src": "/media/products/pu13-close.jpg",
+    "width": 1200,
+    "height": 1200,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAG/8QAJBAAAQMDAQkAAAAAAAAAAAAAAQIDEQAEEgUhIjEyUVNhkdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/ANQXVp5nmB4g/aE3wbByWy5BjdVEe6hpNsO5HTKnZtWbcENIAnjO2hCr/9k=",
+    "tone": "#ddd3c7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Pulsera con esferas de cristal en dos tonos",
+     "en": "Close-up detail of Two-tone crystal spheres bracelet"
+    }
+   },
+   {
     "src": "/media/products/pu13.jpg",
     "width": 1080,
     "height": 1080,
@@ -12009,31 +12505,15 @@
      "es": "Pulsera con esferas de cristal en dos tonos",
      "en": "Two-tone crystal spheres bracelet"
     }
-   },
-   {
-    "src": "/media/products/pu13-detail.jpg",
-    "width": 1200,
-    "height": 1200,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EAB0QAAICAwEBAQAAAAAAAAAAAAECAxEAEiHBQUL/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDcaUmSwODjL7gJgj6/mrB8y3iZjrYsdDfRjSCNwdr2Bom8OMSo/9k=",
-    "tone": "#d3c1b2",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera con esferas de cristal en dos tonos",
-     "en": "Close-up detail of Two-tone crystal spheres bracelet"
-    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu13.jpg",
+  "thumbnail": "/media/products/pu13-ang.jpg",
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 3
   },
   "highlights": [
    {

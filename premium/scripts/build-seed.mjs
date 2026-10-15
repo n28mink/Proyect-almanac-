@@ -62,6 +62,9 @@ const VARIANTS = {
   pu13: [[L('Tono plateado', 'Silver tone'), 0], [L('Tono dorado', 'Gold tone'), 0]],
 };
 
+/** Pulseras con fotos reales (scripts/build-bracelets.mjs): en ángulo (principal), mano modelo, de frente y close-up; la foto anterior queda al final. */
+const BRACELET_SETS = new Set(['pu03', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13']);
+
 const COLLECTION = {
   tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'st01'],
   corazon: ['ar04', 'co02', 'co06', 'co12', 'co19', 'pu04', 'pu06', 'pu11'],
@@ -156,23 +159,36 @@ for (const p of source) {
   if (esHighlights.length !== t.highlights.length) throw new Error(`Highlights desalineados en ${p.id}`);
   const highlights = esHighlights.map((es, i) => L(es, t.highlights[i]));
 
-  // Imágenes: originales + detalle macro al final.
+  // Imágenes: originales + detalle macro al final (las pulseras con fotos reales llevan su propio orden).
   const names = p.imagenes.map((r) => path.basename(r, path.extname(r)));
-  const images = names.map((n, i) => {
+  const imgOf = (n, role, alt) => {
     const m = media.images[n];
     if (!m) throw new Error(`Sin metadatos de imagen: ${n}`);
-    const worn = LIFESTYLE.has(p.id) && i === 0;
-    return {
-      src: m.src, width: m.width, height: m.height, blur: m.blur, tone: m.tone, focal: m.focal, role: worn ? 'lifestyle' : 'main',
-      alt: L(worn ? `${p.nombre}, usada` : p.nombre, worn ? `${t.name}, worn` : t.name),
-    };
-  });
-  const dm = media.images[`${p.id}-detail`];
-  images.push({
-    src: dm.src, width: dm.width, height: dm.height, blur: dm.blur, tone: dm.tone, focal: dm.focal, role: 'detail',
-    alt: L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`),
-  });
-  const detailIndex = images.length - 1;
+    return { src: m.src, width: m.width, height: m.height, blur: m.blur, tone: m.tone, focal: m.focal, role, alt };
+  };
+  let images;
+  let detailIndex;
+  if (BRACELET_SETS.has(p.id)) {
+    images = [
+      imgOf(`${p.id}-ang`, 'main', L(p.nombre, t.name)),
+      imgOf(`${p.id}-hand`, 'lifestyle', L(`${p.nombre}, puesta`, `${t.name}, worn`)),
+      imgOf(`${p.id}-front`, 'main', L(p.nombre, t.name)),
+      imgOf(`${p.id}-close`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`)),
+      ...names.map((n) => imgOf(n, 'main', L(p.nombre, t.name))),
+    ];
+    detailIndex = 3;
+  } else {
+    images = names.map((n, i) => {
+      const worn = LIFESTYLE.has(p.id) && i === 0;
+      return imgOf(n, worn ? 'lifestyle' : 'main', L(worn ? `${p.nombre}, usada` : p.nombre, worn ? `${t.name}, worn` : t.name));
+    });
+    const dm = media.images[`${p.id}-detail`];
+    images.push({
+      src: dm.src, width: dm.width, height: dm.height, blur: dm.blur, tone: dm.tone, focal: dm.focal, role: 'detail',
+      alt: L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`),
+    });
+    detailIndex = images.length - 1;
+  }
 
   // Variantes.
   const vdefs = VARIANTS[p.id];
