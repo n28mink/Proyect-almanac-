@@ -12,6 +12,7 @@ import { useCart } from '@/stores/cart-store';
 import { useUi } from '@/stores/ui-store';
 import { useWishlist } from '@/stores/wishlist-store';
 import type { NavLink } from './nav-data';
+import { ProductsMenu } from './ProductsMenu';
 
 interface HeaderProps {
   primary: NavLink[];
@@ -119,11 +120,7 @@ export function Header({ primary }: HeaderProps) {
       {/* Escritorio: el menú y las secciones van en su propia fila, debajo de la marca. */}
       <nav aria-label={t('primaryNav')} className="site-header-nav hidden h-[var(--header-nav-h)] items-center justify-center gap-10 lg:flex">
         {menuButton('', true)}
-        {primary.map((l) => (
-          <TransitionLink key={l.href} href={l.href} className="nav-link label-micro" aria-current={pathname === l.href ? 'page' : undefined}>
-            {l.label}
-          </TransitionLink>
-        ))}
+        <ProductsMenu items={primary} />
       </nav>
     </header>
   );

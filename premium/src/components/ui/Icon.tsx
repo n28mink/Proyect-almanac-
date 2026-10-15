@@ -91,3 +91,30 @@ export const WhatsAppIcon = (p: P) => (
     <path d="M9.3 8.7c.2-.4.6-.4.9-.2l.9 1.4c.1.3 0 .5-.2.8l-.4.5c.5 1 1.3 1.8 2.3 2.3l.5-.4c.3-.2.5-.3.8-.2l1.4.9c.3.2.3.6.1.9-.5.8-1.5 1.2-2.4.9-2.3-.7-4-2.4-4.7-4.7-.2-.9 0-1.6.8-2Z" />
   </svg>
 );
+
+/* Iconos de categoría del menú Productos. */
+export const GemIcon = (p: P) => (
+  <svg {...base(p)}><path d="M7 4h10l3.5 5L12 20 3.5 9 7 4Z" /><path d="M3.5 9h17M9.5 4 8 9l4 11 4-11-1.5-5" /></svg>
+);
+export const WatchIcon = (p: P) => (
+  <svg {...base(p)}><circle cx="12" cy="12" r="4.8" /><path d="M12 9.6V12l1.8 1.1M9.2 7.2 9.8 3h4.4l.6 4.2M9.2 16.8 9.8 21h4.4l.6-4.2" /></svg>
+);
+export const ShirtIcon = (p: P) => (
+  <svg {...base(p)}><path d="M8.5 4 3.5 6.5l2 4 2.5-1V20h8V9.5l2.5 1 2-4L15.5 4a3.6 3.6 0 0 1-7 0Z" /></svg>
+);
+export const CollectionIcon = (p: P) => (
+  <svg {...base(p)}><path d="m12 3.5 8.5 4.5-8.5 4.5L3.5 8 12 3.5Z" /><path d="m3.5 12 8.5 4.5 8.5-4.5M3.5 16l8.5 4.5 8.5-4.5" /></svg>
+);
+export const GiftIcon = (p: P) => (
+  <svg {...base(p)}><path d="M4 10h16v10H4V10ZM3 7h18v3H3V7ZM12 7v13" /><path d="M12 7c-2.2 0-3.8-.9-3.8-2.3 0-1.1.9-1.7 1.9-1.5C11.5 3.5 12 5.2 12 7Zm0 0c2.2 0 3.8-.9 3.8-2.3 0-1.1-.9-1.7-1.9-1.5C12.5 3.5 12 5.2 12 7Z" /></svg>
+);
+export const ChevronDownIcon = (p: P) => (
+  <svg {...base(p)}><path d="m6 9.5 6 6 6-6" /></svg>
+);
+
+const categoryIcons = { jewelry: GemIcon, watches: WatchIcon, shirts: ShirtIcon, collections: CollectionIcon, 'gifts-for-her': GiftIcon } as const;
+export type CategoryIconKey = keyof typeof categoryIcons;
+export function CategoryIcon({ slug, ...p }: P & { slug: string }) {
+  const Icon = categoryIcons[slug as CategoryIconKey];
+  return Icon ? <Icon {...p} /> : null;
+}

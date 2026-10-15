@@ -27,6 +27,7 @@ export const categories: CategoryDef[] = [
   { slug: 'women', kind: 'audience', name: L('Mujer', 'Women'), blurb: L('Selección para ella.', 'A selection for her.'), coverProductId: 'ar11' },
   { slug: 'men', kind: 'audience', name: L('Hombre', 'Men'), blurb: L('Relojes de carácter.', 'Watches with character.'), coverProductId: 'rw06' },
   { slug: 'new-arrivals', kind: 'merch', name: L('Novedades', 'New Arrivals'), blurb: L('Lo último en llegar.', 'The latest to arrive.'), coverProductId: 'an12', primaryNav: true },
+  { slug: 'gifts-for-her', kind: 'merch', name: L('Regalos para ella', 'Gifts for her'), blurb: L('Nuestra joyería más valiosa.', 'Our most valued piece.'), coverProductId: 'st01', primaryNav: true },
   { slug: 'gifts', kind: 'merch', name: L('Regalos', 'Gifts'), blurb: L('Piezas pensadas para regalar.', 'Pieces made for giving.'), coverProductId: 'co19', primaryNav: true },
 ];
 

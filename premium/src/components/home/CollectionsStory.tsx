@@ -52,12 +52,11 @@ export function CollectionsStory({ tiles, title, allLabel }: { tiles: Collection
       </div>
 
       <ul ref={track} className={cn(pinned ? 'flex w-max gap-8 px-[var(--gutter)]' : 'snap-row')}>
-        {tiles.map((c, i) => (
+        {tiles.map((c) => (
           <li key={c.slug} className={cn(pinned ? 'w-[22rem] shrink-0 xl:w-[26rem]' : 'w-[78vw] max-w-[24rem] sm:w-[52vw]')}>
             <TransitionLink href={`/collections/${c.slug}`} variant="mask" className="group block">
               <div className="relative aspect-[4/5] overflow-hidden bg-surface-sunken">
                 <Image src={c.image.src} alt="" fill sizes="(min-width: 1280px) 26rem, 80vw" placeholder="blur" blurDataURL={c.image.blur} className="object-cover transition-transform duration-500 ease-[var(--ease-expo)] group-hover:scale-[1.04]" />
-                <span className="label-micro absolute left-5 top-5 text-ivory mix-blend-difference">{String(i + 1).padStart(2, '0')}</span>
               </div>
               <div className="mt-5 flex items-end justify-between gap-6">
                 <div>

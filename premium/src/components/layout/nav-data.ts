@@ -7,6 +7,9 @@ import { baseCatalog } from '@/server/repositories/catalog';
 export interface NavLink {
   href: string;
   label: string;
+  /** Clave de categoría: elige el icono y el texto de apoyo en el menú Productos. */
+  slug?: string;
+  blurb?: string;
 }
 
 export interface NavData {
@@ -29,14 +32,14 @@ function nonEmpty(slug: string): boolean {
 }
 
 export function getNavData(locale: Locale): NavData {
-  const link = (slug: string): NavLink => ({ href: `/shop/${slug}`, label: pick(bySlug(slug).name, locale) });
+  const link = (slug: string): NavLink => ({ href: `/shop/${slug}`, label: pick(bySlug(slug).name, locale), slug, blurb: pick(bySlug(slug).blurb, locale) });
   const featuredProduct = baseCatalog().find((p) => p.id === 'co11')!;
   const featuredImage = featuredProduct.images[0]!;
-  const collectionsLink: NavLink = { href: '/collections', label: pick(collectionsNav.name, locale) };
+  const collectionsLink: NavLink = { href: '/collections', label: pick(collectionsNav.name, locale), slug: 'collections', blurb: locale === 'es' ? 'Cápsulas con una historia propia.' : 'Capsules with a story of their own.' };
 
   return {
-    primary: [link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts')],
-    menuMain: [link('new-arrivals'), link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts')],
+    primary: [link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts-for-her')],
+    menuMain: [link('new-arrivals'), link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts-for-her')],
     menuTypes: ['necklaces', 'earrings', 'rings', 'bracelets', 'accessories'].filter(nonEmpty).map(link),
     menuAudience: ['women', 'men'].filter(nonEmpty).map(link),
     featured: {

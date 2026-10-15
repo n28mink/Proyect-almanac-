@@ -60,7 +60,7 @@ test('la barra superior y el pie no mencionan precios en USD', async ({ page }) 
 });
 
 test('las categorías existen como páginas reales', async ({ request }) => {
-  for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'shirts', 'accessories', 'women', 'men', 'new-arrivals', 'gifts']) {
+  for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'shirts', 'accessories', 'women', 'men', 'new-arrivals', 'gifts', 'gifts-for-her']) {
     expect((await request.get(`/es/shop/${c}`)).status(), c).toBe(200);
   }
   expect((await request.get('/es/collections')).status()).toBe(200);
@@ -199,7 +199,7 @@ test('camisas: tallas S–XL a 12 USD y personalización cotizada por WhatsApp',
   await expect(page.getByText('Los colores pueden variar un poco entre la pantalla y la prenda impresa.')).toBeVisible();
   // Sin «Avísame»: las tallas se quedan como están.
   await expect(page.getByText(/avísame/i)).toHaveCount(0);
-  await expect(page.getByText('Poli-algodón').first()).toBeVisible();
+  await expect(page.locator('#main').getByText('Poli-algodón').first()).toBeVisible();
   expect(errs).toEqual([]);
 });
 
@@ -232,7 +232,11 @@ test('movimiento: el interruptor del pie detiene el movimiento y se recuerda', a
 
 test('teclado: activar un enlace con Enter navega al instante, sin cortina de transición', async ({ page }) => {
   await page.goto('/es', { waitUntil: 'networkidle' });
+  // Relojes vive en el menú Productos: se abre con el teclado y se llega al enlace con Tab.
+  await page.getByRole('button', { name: 'Productos' }).focus();
+  await page.keyboard.press('Enter');
   const link = page.locator('header nav a', { hasText: 'Relojes' }).first();
+  await expect(link).toBeVisible();
   await link.focus();
   await page.keyboard.press('Enter');
   await page.waitForURL(/\/es\/shop\/watches/, { timeout: 4000 });

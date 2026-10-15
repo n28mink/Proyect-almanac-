@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Logo } from '@/components/brand/Logo';
 import { TransitionLink } from '@/components/motion/TransitionLink';
-import { CloseIcon } from '@/components/ui/Icon';
+import { CategoryIcon, CloseIcon } from '@/components/ui/Icon';
 import { Dialog } from '@/components/ui/Dialog';
 import { useUi } from '@/stores/ui-store';
 import { LocaleSwitcher } from './Switchers';
@@ -33,7 +33,10 @@ export function MenuOverlay({ nav }: { nav: NavData }) {
               {nav.menuMain.map((l) => (
                 <li key={l.href} className="menu-item" style={{ ['--i' as string]: i++ }}>
                   <TransitionLink href={l.href} className="font-display text-display-m block py-1 transition-colors hover:text-accent" variant="curtain">
-                    {l.label}
+                    <span className="flex items-center gap-4">
+                      {l.slug && <CategoryIcon slug={l.slug} width={26} height={26} className="shrink-0 text-accent" />}
+                      {l.label}
+                    </span>
                   </TransitionLink>
                 </li>
               ))}
