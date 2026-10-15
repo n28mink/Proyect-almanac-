@@ -5,12 +5,22 @@ import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { ShopPage } from '@/components/shop/ShopPage';
 import { categories, getCategory } from '@/config/taxonomy';
+import type { Product } from '@/domain/catalog';
 import { pick } from '@/domain/i18n';
 import { routing } from '@/i18n/routing';
 import { breadcrumbJsonLd, buildMetadata } from '@/lib/seo';
 import { getCatalog } from '@/server/repositories/catalog';
 
 export const revalidate = 300;
+
+const GIFTS_FOR_HER = 'gifts-for-her';
+
+/** "Regalos para ella" no es una etiqueta de producto: reúne la joyería de mujer de mayor precio del catálogo vivo. */
+function topJewelry(catalog: Product[]): Product[] {
+  const pool = catalog.filter((p) => p.categories.includes('jewelry') && p.categories.includes('women'));
+  const top = Math.max(0, ...pool.map((p) => p.price));
+  return pool.filter((p) => p.price === top);
+}
 
 /** Cada categoría es una página real y estática por idioma (incluidas las vacías, que muestran su estado vacío). */
 export const dynamicParams = false;
@@ -34,7 +44,8 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   const t = await getTranslations('shop');
 
-  const products = (await getCatalog()).filter((p) => p.categories.includes(cat.slug));
+  const catalog = await getCatalog();
+  const products = cat.slug === GIFTS_FOR_HER ? topJewelry(catalog) : catalog.filter((p) => p.categories.includes(cat.slug));
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(locale, [{ name: t('breadcrumbShop'), path: '/shop' }, { name: pick(cat.name, locale), path: `/shop/${cat.slug}` }])} />

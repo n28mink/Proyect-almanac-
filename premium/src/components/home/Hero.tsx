@@ -39,9 +39,6 @@ export async function Hero({ campaign, video, locale }: { campaign: CampaignBloc
             {t('heroSecondary')}
           </ButtonLink>
         </div>
-        <p aria-hidden="true" className="label-micro intro-fade absolute bottom-6 right-[var(--gutter)] hidden text-fg/70 md:block" style={{ ['--i' as string]: 8 }}>
-          {t('scroll')}
-        </p>
       </div>
     </section>
   );

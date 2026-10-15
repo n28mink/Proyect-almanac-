@@ -36,7 +36,7 @@ export const defaultCampaigns: HomeCampaigns = {
   hero: {
     videoKey: 'hero.campaign',
     eyebrow: L('Colección 2026', 'Collection 2026'),
-    title: L('Detalles que hacen brillar.', 'Details that make you shine.'),
+    title: L('Brillo propio.', 'A shine of your own.'),
     text: L('Piezas elegidas una a una, para llevarse de verdad.', 'Pieces chosen one by one, made to be truly worn.'),
     cta: { label: L('Descubrir la colección', 'Discover the collection'), href: '/shop' },
   },

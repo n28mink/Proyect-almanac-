@@ -10,6 +10,7 @@ import { EditorialSplit } from '@/components/home/EditorialSplit';
 import { FashionEditorial } from '@/components/home/FashionEditorial';
 import { FeaturedCollection } from '@/components/home/FeaturedCollection';
 import { Hero } from '@/components/home/Hero';
+import { HouseStory } from '@/components/home/HouseStory';
 import { JournalTeaser } from '@/components/home/JournalTeaser';
 import { LookbookMosaic } from '@/components/home/LookbookMosaic';
 import { WhatsAppBand } from '@/components/home/WhatsAppBand';
@@ -99,6 +100,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <WatchShowcase campaign={campaigns.watches} video={getVideo(campaigns.watches.videoKey)} watch={watch} locale={locale} />
 
       <BestSellers products={bestsellers} />
+
+      <HouseStory />
 
       <FashionEditorial campaign={campaigns.fashion} video={getVideo(campaigns.fashion.videoKey)} locale={locale} />
 
