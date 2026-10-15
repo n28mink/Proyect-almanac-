@@ -69,7 +69,8 @@ for (const [name, mode] of [['par', 'pad'], ['individual', 'pad'], ['modelo', 'c
 // Giro 360°: fotogramas del vídeo (la resolución de origen; solo hay los que traiga el vídeo).
 const tmp = fs.mkdtempSync(path.join(root, 'node_modules/.spin-'));
 execFileSync(FFMPEG, ['-v', 'error', '-i', path.join(SRC, 'ar11-360.mp4'), '-vsync', '0', path.join(tmp, 'f%02d.png')]);
-const files = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort();
+// Los 2 primeros fotogramas del vídeo de 24 salen más pequeños que el resto (la cámara aún no se ha asentado): se descartan para que la vuelta cierre limpia.
+const files = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort().slice(2);
 const tag = crypto.createHash('sha1');
 const bufs = [];
 for (const f of files) {
