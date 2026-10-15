@@ -21,7 +21,7 @@ export function FashionEditorial({ campaign, video, locale }: { campaign: Campai
           </FadeReveal>
         </div>
         {video && (
-          <ImageReveal className="order-1 mx-auto w-full max-w-xl lg:order-2 lg:max-w-none">
+          <ImageReveal className="order-1 mx-auto w-full max-w-[14rem] sm:max-w-xs md:max-w-xl lg:order-2 lg:max-w-none">
             <LuxuryVideo video={video} aspectRatio="4 / 5" fit="cover" className="w-full" />
           </ImageReveal>
         )}

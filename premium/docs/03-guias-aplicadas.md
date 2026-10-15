@@ -141,3 +141,6 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 ### Scroll con inercia solo para ratón y trackpad (undécima pasada)
 - Lenis (ya integrado con ScrollTrigger mediante un único ticker de GSAP) se crea solo con puntero preciso (`(hover: hover) and (pointer: fine)`); en pantallas táctiles el scroll es el nativo. Ajustes en `smoothScroll` (src/config/motion.ts): `lerp: 0.2`, `wheelMultiplier: 1.1`.
 - Se apaga con «Reducir movimiento» (pie) y Lenis respeta prefers-reduced-motion del sistema. Los paneles modales lo detienen (`lenis.stop()`). Comprobado en 9 rutas.
+
+### Imágenes más compactas en móvil (duodécima pasada)
+En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (el escritorio no cambia): colección destacada 51 % → 32 % (cuadrada, máx. 16 rem); «Elegimos cada pieza» 51 % → 31 % (4:3); editorial «Puestas» 51 % → 35 % (máx. 14 rem); mosaico «Las joyas que más lucen» a 2 columnas iguales (54 % → 26 %); carril de colecciones 44 % → 36 %; vídeo de joyería 80 % → 60 % de alto; visor del reloj máx. 18 rem; Journal en filas compactas con miniatura de 6,5 rem.

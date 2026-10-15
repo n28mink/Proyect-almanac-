@@ -25,7 +25,7 @@ export async function FeaturedCollection({ collection, cover, products, count, l
             <div className="mt-8"><ButtonLink href={`/collections/${collection.slug}`} variant="outline" transition="clip">{t('discoverCollection')}</ButtonLink></div>
           </FadeReveal>
         </div>
-        <ImageReveal className="relative order-1 mx-auto aspect-[4/5] w-full max-w-[26rem] lg:order-2 lg:max-w-none">
+        <ImageReveal className="relative order-1 mx-auto aspect-square w-full max-w-[16rem] sm:aspect-[4/5] sm:max-w-[22rem] lg:order-2 lg:max-w-none">
           <ParallaxMedia amount={6} className="h-full w-full">
             <Image src={cover.src} alt={cover.alt} fill sizes="(min-width: 1024px) 28rem, 90vw" priority={false} placeholder="blur" blurDataURL={cover.blur} className="object-cover" />
           </ParallaxMedia>
