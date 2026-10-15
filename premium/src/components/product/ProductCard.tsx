@@ -88,6 +88,7 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
               alt={p.image.alt}
               fill
               sizes={sizes}
+              quality={80}
               priority={priority}
               placeholder={p.image.blur ? 'blur' : 'empty'}
               blurDataURL={p.image.blur}
@@ -95,7 +96,7 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
               style={focalStyle(p.image)}
             />
             {p.hoverImage && !p.hoverVideo && (
-              <Image data-hover-layer="" src={p.hoverImage.src} alt="" fill sizes={sizes} className="object-cover" style={focalStyle(p.hoverImage)} aria-hidden="true" />
+              <Image data-hover-layer="" src={p.hoverImage.src} alt="" fill sizes={sizes} quality={80} className="object-cover" style={focalStyle(p.hoverImage)} aria-hidden="true" />
             )}
             {p.hoverVideo && everHovered && <HoverVideo video={p.hoverVideo} active={hovered} />}
             {badgeText && p.badge === 'soldOut' && <span className="label-micro absolute left-3 top-3 bg-ink px-2.5 py-1.5 text-ivory">{badgeText}</span>}

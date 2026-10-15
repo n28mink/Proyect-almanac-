@@ -8,7 +8,7 @@ import { usePrefersReducedMotion } from '@/lib/hooks';
 import { useUi } from '@/stores/ui-store';
 
 /**
- * Scroll suave (Lenis) sincronizado con ScrollTrigger mediante un único ticker de GSAP.
+ * Scroll suave (Lenis con lerp 0,2: sigue el ritmo de la rueda y el trackpad sin reiniciar la curva en cada evento) sincronizado con ScrollTrigger mediante un único ticker de GSAP.
  * Se desactiva con prefers-reduced-motion; los paneles modales lo detienen (y bloquean el scroll nativo por CSS).
  * Marca <html data-ready> al hidratar: desactiva la red de seguridad CSS de los reveals.
  */
@@ -24,7 +24,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (reduced) return;
-    const lenis = new Lenis({ duration: 1.05, smoothWheel: true, syncTouch: false, anchors: true });
+    const lenis = new Lenis({ lerp: 0.2, wheelMultiplier: 1.1, smoothWheel: true, syncTouch: false, anchors: true });
     lenisRef.current = lenis;
     lenis.on('scroll', ScrollTrigger.update);
     const tick = (time: number) => lenis.raf(time * 1000);

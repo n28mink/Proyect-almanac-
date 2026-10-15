@@ -83,7 +83,7 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
               alt={i === index ? img.alt : ''}
               fill
               sizes="(min-width: 1280px) 46vw, 50vw"
-              quality={80}
+              quality={90}
               priority={i === 0}
               placeholder={img.blur ? 'blur' : 'empty'}
               blurDataURL={img.blur}
@@ -99,7 +99,7 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
           <ul ref={scroller} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none" aria-label={t('gallery')}>
             {images.map((img, i) => (
               <li key={img.src} className="relative aspect-[4/5] w-full shrink-0 snap-center bg-surface-sunken">
-                <Image src={img.src} alt={img.alt} fill sizes="100vw" quality={80} priority={i === 0} placeholder={img.blur ? 'blur' : 'empty'} blurDataURL={img.blur} className="object-cover" style={focal(img)} onClick={() => setBox(true)} />
+                <Image src={img.src} alt={img.alt} fill sizes="100vw" quality={90} priority={i === 0} placeholder={img.blur ? 'blur' : 'empty'} blurDataURL={img.blur} className="object-cover" style={focal(img)} onClick={() => setBox(true)} />
               </li>
             ))}
           </ul>
@@ -114,7 +114,7 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
       <Dialog open={box} onClose={() => setBox(false)} side="full" label={t('lightboxLabel', { name })} lazyContent>
         <div data-tone="ink" className="relative grid h-full place-items-center bg-surface">
           <div className="relative h-full w-full">
-            <Image src={images[index]!.src} alt={images[index]!.alt} fill sizes="100vw" quality={80} className="object-contain" />
+            <Image src={images[index]!.src} alt={images[index]!.alt} fill sizes="100vw" quality={90} className="object-contain" />
           </div>
           <button type="button" onClick={() => setBox(false)} aria-label={t('close')} className="absolute right-4 top-4 grid h-12 w-12 place-items-center bg-ink/60 text-ivory backdrop-blur-sm"><CloseIcon /></button>
           {images.length > 1 && (
