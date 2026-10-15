@@ -128,3 +128,8 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 ### Fotos reales de pulseras y portadas de categoría (octava pasada)
 - 10 pulseras (pu03, pu05–pu13) pasan a 4 fotos reales cada una, en este orden: en ángulo (principal), con mano modelo, de frente y close-up; la foto anterior queda al final de la galería. Se conserva el fondo crema original de las fotos (`npm run media:bracelets`, originales en `assets-src/bracelets/`, nombres `<id>-a|h|f|c`; luego `npm run seed`). Las fotos no cuadradas (flores, estrellas, turquesa) se ajustan ampliando el fondo con degradado, sin deformar. pu01, pu02 y pu04 conservan sus fotos.
 - Portadas de categoría elegidas por representatividad: Joyería → pu10 (estrellas), Relojes → rw03 (frontal, limpio), Camisas → cm03 (prenda completa), Novedades → pu08; el resto se mantiene (Collares co11, Aretes ar06, Anillos an04, Pulseras pu06).
+
+### Primer plano, nitidez y menú (novena pasada)
+- «Detalle en primer plano» ocupaba todo el ancho (21:9 con parallax) y ampliaba la foto hasta no distinguir la pieza: ahora es una foto cuadrada contenida (máx. 34 rem) junto a un texto breve. Los recortes automáticos de joyería (cortados o vacíos) se quitaron de galerías y del efecto hover; quedan los de relojes y sets y los close-ups reales de las pulseras. Zoom de la galería 1,9× → 1,5×.
+- Fotos de pulseras (con mano modelo incluidas) a hasta 1600 px, calidad 90 y nitidez suave; las imágenes de la galería se sirven a calidad 80.
+- Menú: cada categoría (Joyería, Relojes, Camisas, Colecciones, Regalos para ella) es de nuevo un enlace propio con su icono y su propio desplegable (tipos de joya, tonos de reloj, colores de camisa, las colecciones, regalos).

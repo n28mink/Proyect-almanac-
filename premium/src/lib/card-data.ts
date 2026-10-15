@@ -129,7 +129,8 @@ export function toProductView(p: Product, locale: Locale, collectionName?: strin
     description: pick(p.description, locale),
     story: pick(p.story, locale),
     images,
-    detailIndex: Math.max(0, p.images.findIndex((i) => i.role === 'detail')),
+    /** -1 si la pieza no tiene foto de primer plano. */
+    detailIndex: p.images.findIndex((i) => i.role === 'detail'),
     variants: p.variants.map((v) => ({ id: v.id, label: pick(optionOf(p, v), locale), stock: v.stock, imageIndex: v.imageIndex ?? 0 })),
     sized: card.sized,
     customizable: p.customizable ?? false,

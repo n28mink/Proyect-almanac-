@@ -4,7 +4,7 @@
  *   node scripts/build-bracelets.mjs
  *
  * Lee assets-src/bracelets/<id>-<rol>.<ext> con rol: a = en ángulo (principal), h = con mano modelo, f = de frente, c = close-up.
- * Escribe public/media/products/<id>-ang|hand|front|close.jpg (1200², mozjpeg) y actualiza sus metadatos en
+ * Escribe public/media/products/<id>-ang|hand|front|close.jpg (hasta 1600², calidad 90 con nitidez suave) y actualiza sus metadatos en
  * src/content/media.generated.json. Las fotos no cuadradas se ajustan sin deformar: se amplía el fondo (pad) o se recorta (crop)
  * según CONFIG. Después: npm run seed.
  */
@@ -17,7 +17,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(root, 'assets-src/bracelets');
 const OUT = path.join(root, 'public/media/products');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');
-const SIZE = 1200;
+const MAX = 1600; // sin ampliar más allá de la resolución original
 const NAME = { a: 'ang', h: 'hand', f: 'front', c: 'close' };
 
 /** Fotos que no son cuadradas: `pad` amplía el fondo arriba/abajo; `crop` recorta un cuadrado (x = posición horizontal 0–1). */
@@ -35,12 +35,14 @@ async function square(file, key) {
   const cfg = CONFIG[key];
   const img = sharp(file).rotate();
   const { width: w, height: h } = await img.metadata();
-  if (w === h || !cfg) return img.resize(SIZE, SIZE, { fit: 'cover', kernel: 'lanczos3' }).toBuffer();
+  if (w === h || !cfg) return img.resize(Math.min(MAX, w), Math.min(MAX, w), { fit: 'cover', kernel: 'lanczos3' }).toBuffer();
   if (cfg.fit === 'crop') {
     const side = Math.min(w, h);
     const left = Math.round((w - side) * (cfg.x ?? 0.5));
-    return img.extract({ left, top: 0, width: side, height: side }).resize(SIZE, SIZE, { kernel: 'lanczos3' }).toBuffer();
+    const out = Math.min(MAX, side);
+    return img.extract({ left, top: 0, width: side, height: side }).resize(out, out, { kernel: 'lanczos3' }).toBuffer();
   }
+  const SIZE = Math.min(MAX, w);
   const scaled = await img.resize(SIZE, undefined, { kernel: 'lanczos3' }).toBuffer();
   const sh = (await sharp(scaled).metadata()).height;
   const extra = SIZE - sh;
@@ -68,7 +70,7 @@ for (const f of fs.readdirSync(SRC).sort()) {
   const m = /^(pu\d+)-([ahfc])\.\w+$/.exec(f);
   if (!m) continue;
   const [, id, role] = m;
-  const photo = await sharp(await square(path.join(SRC, f), `${id}-${role}`)).jpeg({ quality: 84, mozjpeg: true, progressive: true }).toBuffer();
+  const photo = await sharp(await square(path.join(SRC, f), `${id}-${role}`)).sharpen({ sigma: 0.6, m1: 0.6, m2: 1.6 }).jpeg({ quality: 90, mozjpeg: true, progressive: true }).toBuffer();
   const key = `${id}-${NAME[role]}`;
   fs.writeFileSync(path.join(OUT, `${key}.jpg`), photo);
   manifest.images[key] = { src: `/media/products/${key}.jpg`, ...(await meta(photo)), focal: FOCAL[role] ?? { x: 0.5, y: 0.5 } };

@@ -65,6 +65,8 @@ const VARIANTS = {
 /** Pulseras con fotos reales (scripts/build-bracelets.mjs): en ángulo (principal), mano modelo, de frente y close-up; la foto anterior queda al final. */
 const BRACELET_SETS = new Set(['pu03', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13']);
 
+const AUTO_DETAIL = /^(rw|st)/;
+
 const COLLECTION = {
   tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'st01'],
   corazon: ['ar04', 'co02', 'co06', 'co12', 'co19', 'pu04', 'pu06', 'pu11'],
@@ -167,7 +169,7 @@ for (const p of source) {
     return { src: m.src, width: m.width, height: m.height, blur: m.blur, tone: m.tone, focal: m.focal, role, alt };
   };
   let images;
-  let detailIndex;
+  let detailIndex; // undefined = sin primer plano
   if (BRACELET_SETS.has(p.id)) {
     images = [
       imgOf(`${p.id}-ang`, 'main', L(p.nombre, t.name)),
@@ -182,12 +184,15 @@ for (const p of source) {
       const worn = LIFESTYLE.has(p.id) && i === 0;
       return imgOf(n, worn ? 'lifestyle' : 'main', L(worn ? `${p.nombre}, usada` : p.nombre, worn ? `${t.name}, worn` : t.name));
     });
-    const dm = media.images[`${p.id}-detail`];
-    images.push({
-      src: dm.src, width: dm.width, height: dm.height, blur: dm.blur, tone: dm.tone, focal: dm.focal, role: 'detail',
-      alt: L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`),
-    });
-    detailIndex = images.length - 1;
+    // Los recortes automáticos de joyería quedaban cortados o vacíos: solo se conservan los de relojes y sets (y los close-ups reales de las pulseras).
+    if (AUTO_DETAIL.test(p.id)) {
+      const dm = media.images[`${p.id}-detail`];
+      images.push({
+        src: dm.src, width: dm.width, height: dm.height, blur: dm.blur, tone: dm.tone, focal: dm.focal, role: 'detail',
+        alt: L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`),
+      });
+      detailIndex = images.length - 1;
+    }
   }
 
   // Variantes.
@@ -231,7 +236,7 @@ for (const p of source) {
     images,
     videos: [...(hasVideo ? [`product.${p.id}`] : []), ...(REELS.has(category) ? [`reel.${category}`] : [])],
     thumbnail: images[0].src,
-    hoverMedia: hasVideo ? { type: 'video', key: `product.${p.id}` } : { type: 'image', imageIndex: detailIndex },
+    hoverMedia: hasVideo ? { type: 'video', key: `product.${p.id}` } : detailIndex !== undefined ? { type: 'image', imageIndex: detailIndex } : undefined,
     highlights,
     specifications: withDetails(p.id, buildSpecs(p, t, finish, esHighlights)),
     stock: variants.reduce((s, v) => s + v.stock, 0),
