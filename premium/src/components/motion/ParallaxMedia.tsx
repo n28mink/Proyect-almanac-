@@ -2,7 +2,7 @@
 
 import { useRef, type ReactNode } from 'react';
 import { gsap, useGSAP } from '@/lib/gsap';
-import { usePrefersReducedMotion } from '@/lib/hooks';
+import { useIsDesktop, useMotionLevel } from '@/lib/hooks';
 import { cn } from '@/lib/cn';
 
 interface ParallaxMediaProps {
@@ -15,12 +15,14 @@ interface ParallaxMediaProps {
 
 /**
  * Parallax con scrub de ScrollTrigger. El contenedor recorta; el interior es `amount`% más alto y se desplaza.
- * Solo transform (GPU). Sin efecto con reduced-motion.
+ * Solo transform (GPU). Solo en escritorio y con movimiento completo: en móvil repintar imágenes altas en cada fotograma de scroll genera tirones.
  */
 export function ParallaxMedia({ children, amount = 8, className, innerClassName }: ParallaxMediaProps) {
   const root = useRef<HTMLDivElement>(null);
   const inner = useRef<HTMLDivElement>(null);
-  const reduced = usePrefersReducedMotion();
+  const level = useMotionLevel();
+  const desktop = useIsDesktop();
+  const reduced = level !== 'full' || !desktop;
 
   useGSAP(
     () => {

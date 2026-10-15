@@ -116,5 +116,11 @@ Se pidió quitar el botón sobre los vídeos. Las guías (y WCAG 2.2.2) piden un
 La web parecía «estática» y sin el scroll horizontal de «Cinco historias» cuando el sistema pedía reducir movimiento (p. ej. «Mostrar animaciones» desactivado en Windows): se apagaba todo a la vez. Ahora hay tres niveles (`useMotionLevel`):
 
 - **Completo:** revelados, scroll fijado de «Cinco historias», transiciones verdes de página.
-- **Suave (el sistema pide menos movimiento):** solo fundidos de opacidad (revelados, titulares, entrada del hero y un fundido breve entre páginas); sin desplazamientos, recortes, parallax ni scroll fijado. «Cinco historias» pasa a una fila nativa con flechas.
-- **Apagado (interruptor «Reducir movimiento» del pie):** todo estático, como antes.
+- **Suave (el sistema pide menos movimiento):** fundidos de opacidad (revelados, titulares, entrada del hero y un fundido breve entre páginas); sin parallax, recorte animado del vídeo ni vídeos automáticos. Las escenas que mueve la propia rueda (la fijada de «Cinco historias» y la de «Seis mundos») se mantienen.
+- **Apagado (interruptor «Reducir movimiento» del pie):** todo estático; «Cinco historias» pasa a una fila nativa con flechas.
+
+### Scroll fluido y escenas (séptima pasada)
+- «Cinco historias»: escena fijada con desplazamiento horizontal de las cinco colecciones y barra de progreso. «Seis mundos»: entrada ligada al scroll (cada tarjeta llega desde un lado, girada, y se asienta) sin fijar la pantalla; dos efectos distintos.
+- Tirones: `scrub: true` en lugar de `0.8` (Lenis ya suaviza; el doble suavizado se sentía pastoso), `ScrollTrigger.config({ ignoreMobileResize: true })` (la barra de direcciones del móvil ya no recalcula todo), y parallax / recorte animado del vídeo solo en escritorio con movimiento completo.
+- Mosaico «Las joyas que más lucen»: estaba vacío (la imagen medía 0 de alto); ahora muestra la joya de mayor valor y la mejor de cada tipo.
+- Colección destacada: texto a la izquierda e imagen contenida (máx. 28 rem) a la derecha.
