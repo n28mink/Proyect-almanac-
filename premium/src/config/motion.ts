@@ -88,10 +88,15 @@ export const reveal = {
   stagger: 0.06,
 } as const;
 
-/** Presupuesto de las transiciones de página (ms). */
+/** Presupuesto de las transiciones de página (s). */
 export const pageTransition = {
   cover: 0.38,
   reveal: 0.52,
+  /** Enlaces con foto (producto, categoría, lookbook): desvanecido suave en marfil, más lento y sin barrido de bordes duros. */
+  softCover: 0.46,
+  /** Pausa con la pantalla cubierta para que el logo se lea y no parpadee. */
+  softHold: 0.14,
+  softReveal: 0.72,
   /** Tiempo máximo esperando a que la ruta nueva monte antes de revelar igualmente. */
   maxWait: 1.6,
 } as const;
