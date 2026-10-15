@@ -133,3 +133,7 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 - «Detalle en primer plano» ocupaba todo el ancho (21:9 con parallax) y ampliaba la foto hasta no distinguir la pieza: ahora es una foto cuadrada contenida (máx. 34 rem) junto a un texto breve. Los recortes automáticos de joyería (cortados o vacíos) se quitaron de galerías y del efecto hover; quedan los de relojes y sets y los close-ups reales de las pulseras. Zoom de la galería 1,9× → 1,5×.
 - Fotos de pulseras (con mano modelo incluidas) a hasta 1600 px, calidad 90 y nitidez suave; las imágenes de la galería se sirven a calidad 80.
 - Menú: cada categoría (Joyería, Relojes, Camisas, Colecciones, Regalos para ella) es de nuevo un enlace propio con su icono y su propio desplegable (tipos de joya, tonos de reloj, colores de camisa, las colecciones, regalos).
+
+### Scroll más ágil y calidad de imagen (décima pasada)
+- Lenis: de `duration: 1.05` a `lerp: 0.2` y `wheelMultiplier: 1.1`. Medido con una muesca de rueda (100 px): 90 % del recorrido en 203 ms (antes 368 ms) y 99 % en 370 ms (antes 651 ms). Con `lerp` el trackpad no reinicia la curva en cada evento. Sin fotogramas largos durante el scroll (Long Animation Frames, CPU ×4).
+- Imágenes: `qualities` pasa a [72, 80, 90]; fichas y lightbox a 90, tarjetas a 80 (antes todo se servía a 72). Las fotos subidas por la tienda se conservan sin tocar en `assets-src/bracelets/`; el archivo del sitio mantiene ~40 dB de PSNR frente al original.

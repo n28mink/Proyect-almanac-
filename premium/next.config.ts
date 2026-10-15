@@ -29,7 +29,8 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [360, 480, 640, 768, 1024, 1280, 1600, 1920, 2560],
     imageSizes: [96, 160, 240, 320, 480],
-    qualities: [60, 72, 80],
+    // 90 para las fotos de ficha (joyería: brillos y texturas); 80 para tarjetas; 72 para miniaturas.
+    qualities: [72, 80, 90],
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
   experimental: {

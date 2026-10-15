@@ -16,7 +16,7 @@ export async function ProductStory({ p, video }: { p: ProductView; video: VideoA
       {macro && (
         <section data-header-tone="dark" className="container-x mt-24 grid items-center gap-8 md:mt-32 lg:grid-cols-[minmax(0,34rem)_1fr] lg:gap-20">
           <ImageReveal className="relative aspect-square w-full max-w-[34rem] bg-surface-sunken">
-            <Image src={macro.src} alt={macro.alt} fill sizes="(min-width: 1024px) 34rem, 92vw" quality={80} placeholder={macro.blur ? 'blur' : 'empty'} blurDataURL={macro.blur} className="object-cover" />
+            <Image src={macro.src} alt={macro.alt} fill sizes="(min-width: 1024px) 34rem, 92vw" quality={90} placeholder={macro.blur ? 'blur' : 'empty'} blurDataURL={macro.blur} className="object-cover" />
           </ImageReveal>
           <FadeReveal delay={120} className="max-w-md">
             <h2 className="font-display text-heading">{t('macroCaption')}</h2>
