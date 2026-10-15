@@ -207,8 +207,8 @@
   animation-play-state: paused;
 }
 
-/* Reduced motion global: ninguna animación decorativa; las transiciones de estado quedan instantáneas.
-   Se activa por preferencia del sistema o con el interruptor «Reducir movimiento» del pie (html[data-motion]). */
+/* «Reducir movimiento» (pie de página): ninguna animación decorativa; las transiciones de estado quedan instantáneas.
+   Se activa solo con ese interruptor (html[data-motion]); la preferencia del sistema deja fundidos suaves (ver abajo). */
 html[data-motion='reduced'] *,
 html[data-motion='reduced'] *::before,
 html[data-motion='reduced'] *::after {
@@ -230,15 +230,44 @@ html[data-motion='reduced'] [data-split] .split-inner {
 html[data-motion='reduced'] .marquee-track {
   animation: none !important;
 }
+/* Movimiento reducido por el sistema: sin desplazamientos, recortes ni bucles, pero se conservan los fundidos suaves
+   (opacidad) para que la página no se sienta estática. Solo el interruptor del pie («Reducir movimiento») lo apaga todo. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    animation-delay: 0ms !important;
-    transition-duration: 0.001ms !important;
-    transition-delay: 0ms !important;
-    scroll-behavior: auto !important;
+  html {
+    scroll-behavior: auto;
+  }
+  .skeleton {
+    animation: none;
+  }
+}
+@media (scripting: enabled) and (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  [data-image-reveal] {
+    transition: opacity 0.7s var(--ease-luxe) var(--reveal-delay, 0ms);
+  }
+  [data-reveal]:not([data-in]),
+  [data-image-reveal]:not([data-in]) {
+    opacity: 0;
+  }
+  [data-split] .split-inner {
+    transition: opacity 0.7s var(--ease-luxe) calc(var(--reveal-delay, 0ms) + var(--i, 0) * 40ms);
+  }
+  [data-split]:not([data-in]) .split-inner {
+    opacity: 0;
+  }
+  html:not([data-ready]) [data-reveal]:not([data-in]),
+  html:not([data-ready]) [data-image-reveal]:not([data-in]),
+  html:not([data-ready]) [data-split]:not([data-in]) .split-inner {
+    animation: reveal-failsafe 0.01s linear 3.5s forwards;
+  }
+  /* Entrada sobre el pliegue: solo fundido. */
+  .intro-rise,
+  .intro-fade,
+  .split-intro .split-inner {
+    animation: intro-fade 1s var(--ease-luxe) both;
+    animation-delay: calc(var(--i, 0) * 70ms + 120ms);
+  }
+  .split-intro[data-split] .split-inner {
+    transition: none;
   }
 }

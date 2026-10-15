@@ -145,6 +145,8 @@
     "storyEyebrow": "Colecciones cápsula",
     "allCollections": "Todas las colecciones",
     "pieces": "{count, plural, one {# pieza} other {# piezas}}",
+    "previous": "Anterior",
+    "next": "Siguiente",
     "storyTitle": "Cinco historias para llevar",
     "house": {
       "place": "Valle Fresco, Turmero, Venezuela",
