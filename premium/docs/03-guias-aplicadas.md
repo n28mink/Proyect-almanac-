@@ -147,4 +147,9 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 
 ### Originales sin comprimir (decimotercera pasada)
 - Las tiendas suben los originales a `fotos/pulseras-originales/` (PNG sin pérdida) y se copian a `assets-src/bracelets/` con el nombre `<id>-<a|h|f|c>.png`. Con PNG de origen: JPG calidad 93 sin nitidez añadida (PSNR 43–45 dB frente al original; antes ~39 dB) y hasta 2400 px sin ampliar. Los archivos llevan una huella del contenido en el nombre (`pu06-ang-3e3518a.jpg`) para esquivar la caché de 30 días de Vercel.
-- Pulsera de corazones (pu06): sus fotos son las de corazones alargados (la subida «Pulsera 11 (corazones alargados)», que coincide con su foto original); las de corazones abultados quedan al final de la galería (juego `pu06b`).
+- Pulsera de corazones (pu06): sus fotos son las de corazones alargados (la subida «Pulsera 11 (corazones alargados)», que coincide con su foto original); las de corazones abultados se retiraron de su galería (la foto antigua de pu06 se descarta por repetida).
+
+## Aretes flor (ar11): originales + giro 360°
+- Fotos reales sin comprimir (par, individual, puestos) en `assets-src/aretes/`; `scripts/build-aretes.mjs` las lleva a 4:5 sin deformar (fondo liso con degradado largo; la de la oreja se recorta) y descompone `ar11-360.mp4` en fotogramas webp (`public/media/spin/ar11/`). Necesita ffmpeg (`FFMPEG=/ruta/ffmpeg`).
+- `spin` en el esquema de producto: diapositiva «360°» al final de la galería (`Spin360`): arrastrar o flechas, inercia, giro lento inicial (solo movimiento completo) y mezcla corta entre fotogramas. Los fotogramas solo se cargan al abrirla.
+- Límite: el vídeo trae 12 fotogramas (30° por paso). Con 24–36 fotogramas (giro de 360° grabado a 10–15°) la sensación sería la de Swarovski.

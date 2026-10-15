@@ -57,6 +57,15 @@ export const hoverMediaSchema = z.discriminatedUnion('type', [
 ]);
 export type HoverMedia = z.infer<typeof hoverMediaSchema>;
 
+/** Giro 360°: fotogramas de un vídeo giratorio, en orden de rotación. */
+export const spinSchema = z.object({
+  frames: z.array(z.string()).min(4),
+  width: z.number().int().positive(),
+  height: z.number().int().positive(),
+  tone: z.string().optional(),
+});
+export type Spin = z.infer<typeof spinSchema>;
+
 export const finishKeySchema = z.enum(['yellow-gold', 'rose-gold', 'silver']);
 export type FinishKey = z.infer<typeof finishKeySchema>;
 
@@ -111,6 +120,8 @@ export const productSchema = z.object({
   newArrival: z.boolean(),
   bestseller: z.boolean(),
   model3d: model3dSchema.optional(),
+  /** Giro 360° de la pieza (se abre como una diapositiva más de la galería). */
+  spin: spinSchema.optional(),
   seo: z.object({ title: localizedSchema, description: localizedSchema }),
 });
 export type Product = z.infer<typeof productSchema>;

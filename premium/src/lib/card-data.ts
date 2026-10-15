@@ -112,6 +112,7 @@ export interface ProductView {
   badge?: CardData['badge'];
   material: string;
   videoKey?: string;
+  spin?: Product['spin'];
   model3d?: { model: NonNullable<Product['model3d']>; dials: Array<{ variantId: string; label: string; color: string }> };
 }
 
@@ -139,6 +140,7 @@ export function toProductView(p: Product, locale: Locale, collectionName?: strin
     badge: card.badge,
     material: card.material,
     videoKey: p.videos[0],
+    spin: p.spin,
     model3d: p.model3d
       ? { model: p.model3d, dials: p.model3d.dials.map((d) => ({ variantId: d.variantId, color: d.color, label: pick(p.variants.find((v) => v.id === d.variantId)!.options.color, locale) })) }
       : undefined,
