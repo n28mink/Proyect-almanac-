@@ -45,7 +45,7 @@ export async function WatchShowcase({ campaign, video, watch, locale }: { campai
         </div>
 
         {model && (
-          <FadeReveal variant="scale">
+          <FadeReveal variant="scale" className="mx-auto w-full max-w-[18rem] sm:max-w-sm lg:max-w-none">
             <Product3D model={model} posterSrc={img.src} posterBlur={img.blur} posterAlt={pick(img.alt, locale)} dials={dials} />
           </FadeReveal>
         )}

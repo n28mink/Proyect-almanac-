@@ -27,7 +27,7 @@ export async function LookbookMosaic({ tiles }: { tiles: LookTile[] }) {
       </div>
       <div className="container-x grid grid-cols-2 gap-3 md:grid-cols-12 md:gap-6">
         {tiles.slice(0, 6).map((tile, i) => (
-          <FadeReveal key={tile.slug} delay={(i % 3) * 90} className={cn('col-span-1', layouts[i], i === 0 && 'col-span-2')}>
+          <FadeReveal key={tile.slug} delay={(i % 3) * 90} className={cn('col-span-1', layouts[i])}>
             <TransitionLink href={`/product/${tile.slug}`} variant="clip" className="group block h-full">
               <ImageReveal className="relative aspect-[3/4] w-full md:aspect-auto md:h-full">
                 <ParallaxMedia amount={5} className="h-full w-full">

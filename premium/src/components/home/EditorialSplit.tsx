@@ -13,7 +13,7 @@ export async function EditorialSplit({ imageA, imageB }: { imageA: Img; imageB: 
     <Section tone="sunken" headerTone="dark">
       <div className="container-x grid gap-14 lg:grid-cols-2 lg:gap-24">
         <div className="lg:sticky lg:top-28 lg:h-[min(34rem,calc(100svh-9rem))] lg:self-start">
-          <ImageReveal className="relative aspect-[4/5] w-full lg:aspect-auto lg:h-full">
+          <ImageReveal className="relative aspect-[4/3] w-full md:aspect-[4/5] lg:aspect-auto lg:h-full">
             <Image src={imageA.src} alt={imageA.alt} fill sizes="(min-width: 1024px) 45vw, 100vw" placeholder="blur" blurDataURL={imageA.blur} className="object-cover" />
           </ImageReveal>
         </div>
