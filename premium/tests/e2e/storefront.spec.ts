@@ -257,6 +257,24 @@ test('menú: cada categoría es un enlace propio con su desplegable', async ({ p
   await expect(nav.getByRole('link', { name: 'Pulseras' })).toBeHidden();
 });
 
+test('scroll con inercia (Lenis): solo con ratón/trackpad y apagable desde el pie', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  const fine = await page.evaluate(() => matchMedia('(hover: hover) and (pointer: fine)').matches);
+  await expect.poll(() => page.evaluate(() => document.documentElement.classList.contains('lenis'))).toBe(fine);
+  if (fine) {
+    // La rueda no salta: a los 40 ms solo se ha recorrido parte de la muesca y luego termina de deslizar.
+    const y0 = await page.evaluate(() => scrollY);
+    await page.mouse.wheel(0, 120);
+    await page.waitForTimeout(40);
+    const early = (await page.evaluate(() => scrollY)) - y0;
+    await expect.poll(async () => (await page.evaluate(() => scrollY)) - y0).toBeGreaterThan(early + 20);
+    // «Reducir movimiento» lo desactiva.
+    await page.evaluate(() => localStorage.setItem('clover-motion', 'reduced'));
+    await page.reload({ waitUntil: 'networkidle' });
+    await expect.poll(() => page.evaluate(() => document.documentElement.classList.contains('lenis'))).toBe(false);
+  }
+});
+
 test('portada: el mosaico de joyería especial tiene sus 6 imágenes con altura', async ({ page }) => {
   await page.goto('/es', { waitUntil: 'networkidle' });
   const tiles = page.locator('section', { hasText: 'Las joyas que más lucen' }).locator('[data-image-reveal]');

@@ -137,3 +137,7 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 ### Scroll más ágil y calidad de imagen (décima pasada)
 - Lenis: de `duration: 1.05` a `lerp: 0.2` y `wheelMultiplier: 1.1`. Medido con una muesca de rueda (100 px): 90 % del recorrido en 203 ms (antes 368 ms) y 99 % en 370 ms (antes 651 ms). Con `lerp` el trackpad no reinicia la curva en cada evento. Sin fotogramas largos durante el scroll (Long Animation Frames, CPU ×4).
 - Imágenes: `qualities` pasa a [72, 80, 90]; fichas y lightbox a 90, tarjetas a 80 (antes todo se servía a 72). Las fotos subidas por la tienda se conservan sin tocar en `assets-src/bracelets/`; el archivo del sitio mantiene ~40 dB de PSNR frente al original.
+
+### Scroll con inercia solo para ratón y trackpad (undécima pasada)
+- Lenis (ya integrado con ScrollTrigger mediante un único ticker de GSAP) se crea solo con puntero preciso (`(hover: hover) and (pointer: fine)`); en pantallas táctiles el scroll es el nativo. Ajustes en `smoothScroll` (src/config/motion.ts): `lerp: 0.2`, `wheelMultiplier: 1.1`.
+- Se apaga con «Reducir movimiento» (pie) y Lenis respeta prefers-reduced-motion del sistema. Los paneles modales lo detienen (`lenis.stop()`). Comprobado en 9 rutas.

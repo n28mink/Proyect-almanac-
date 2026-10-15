@@ -100,3 +100,9 @@ export const pageTransition = {
   /** Tiempo máximo esperando a que la ruta nueva monte antes de revelar igualmente. */
   maxWait: 1.6,
 } as const;
+
+/**
+ * Scroll suave con inercia (Lenis), solo para ratón y trackpad. `lerp` es la fracción del recorrido pendiente que se avanza
+ * en cada fotograma: más alto = responde antes y desliza menos; más bajo = más inercia. 0,2 ≈ 90 % del recorrido de una muesca en ~200 ms.
+ */
+export const smoothScroll = { lerp: 0.2, wheelMultiplier: 1.1 } as const;
