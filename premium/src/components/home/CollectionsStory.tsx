@@ -28,8 +28,9 @@ export function CollectionsStory({ tiles, title, allLabel, prevLabel, nextLabel 
   const track = useRef<HTMLUListElement>(null);
   const desktop = useIsDesktop();
   const level = useMotionLevel();
-  const pinned = desktop && level === 'full';
-  // Sin scroll fijado (movimiento reducido), en escritorio la fila se recorre con flechas.
+  // El scroll fijado es una acción de la persona (lo mueve su rueda), así que sobrevive a la preferencia del sistema; solo el interruptor del pie lo apaga.
+  const pinned = desktop && level !== 'off';
+  // Sin scroll fijado (interruptor del pie), en escritorio la fila se recorre con flechas.
   const arrows = desktop && !pinned;
   const slide = (dir: 1 | -1) => {
     const el = track.current;
@@ -40,17 +41,18 @@ export function CollectionsStory({ tiles, title, allLabel, prevLabel, nextLabel 
     () => {
       if (!pinned || !track.current || !root.current) return;
       const distance = () => Math.max(0, track.current!.scrollWidth - window.innerWidth + 160);
+      gsap.fromTo('[data-story-progress]', { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: root.current, start: 'top top', end: () => `+=${distance()}`, scrub: true, invalidateOnRefresh: true } });
       gsap.to(track.current, {
         x: () => -distance(),
         ease: 'none',
-        scrollTrigger: { trigger: root.current, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: 0.8, invalidateOnRefresh: true, anticipatePin: 1 },
+        scrollTrigger: { trigger: root.current, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: true, invalidateOnRefresh: true, anticipatePin: 1 },
       });
     },
     { scope: root, dependencies: [pinned, tiles.length] },
   );
 
   return (
-    <section ref={root} data-tone="ink" data-header-tone="light" className="relative overflow-hidden bg-surface py-20 text-fg lg:py-24">
+    <section ref={root} data-tone="ink" data-header-tone="light" className="relative overflow-hidden bg-surface py-20 text-fg lg:py-24 lg:pt-[calc(var(--header-h)+1rem)]">
       <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-4 lg:mb-14">
         <div>
           <h2 className="font-display text-display-l">{title}</h2>
@@ -69,6 +71,11 @@ export function CollectionsStory({ tiles, title, allLabel, prevLabel, nextLabel 
         </div>
       </div>
 
+      {pinned && (
+        <div aria-hidden="true" className="container-x mb-8">
+          <div className="h-px w-full bg-line"><div data-story-progress="" className="h-px origin-left scale-x-0 bg-accent-decor" /></div>
+        </div>
+      )}
       <ul ref={track} className={cn(pinned ? 'flex w-max gap-8 px-[var(--gutter)]' : 'snap-row')}>
         {tiles.map((c) => (
           <li key={c.slug} className={cn(pinned ? 'w-[22rem] shrink-0 xl:w-[26rem]' : 'w-[78vw] max-w-[24rem] sm:w-[52vw]')}>

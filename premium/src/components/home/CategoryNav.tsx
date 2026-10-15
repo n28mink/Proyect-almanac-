@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { FadeReveal } from '@/components/motion/Reveal';
+import { ScrubIn } from '@/components/motion/ScrubIn';
 import { TransitionLink } from '@/components/motion/TransitionLink';
 import { ArrowRightIcon } from '@/components/ui/Icon';
 import { Section, SectionHeading } from '@/components/ui/Section';
@@ -22,16 +23,16 @@ export async function CategoryNav({ locale }: { locale: Locale }) {
     .map((c) => ({ c, product: catalog.find((p) => p.id === c.coverProductId)!, count: catalog.filter((p) => p.categories.includes(c.slug)).length }));
 
   return (
-    <Section headerTone="dark" className="!pb-0">
+    <Section headerTone="dark" className="overflow-x-clip !pb-0">
       <div className="container-x mb-12 flex flex-wrap items-end justify-between gap-6">
         <SectionHeading title={t('categoriesTitle')} size="m" />
         <TransitionLink href="/shop" className="label-micro link-underline">{t('viewAll')}</TransitionLink>
       </div>
-      <ul className="snap-row lg:container-x lg:grid lg:grid-cols-12 lg:gap-4 lg:overflow-visible lg:px-[var(--gutter)]">
+      <ScrubIn as="ul" className="snap-row lg:container-x lg:grid lg:grid-cols-12 lg:gap-4 lg:overflow-visible lg:px-[var(--gutter)]">
         {items.map(({ c, product, count }, i) => {
           const img = product.images[0]!;
           return (
-            <li key={c.slug} className={`w-[62vw] max-w-[20rem] sm:w-[36vw] lg:w-auto lg:max-w-none ${SPANS[i]}`}>
+            <li key={c.slug} data-scrub-item="" className={`w-[62vw] max-w-[20rem] sm:w-[36vw] lg:w-auto lg:max-w-none ${SPANS[i]}`}>
               <FadeReveal delay={i * 70}>
                 <TransitionLink href={`/shop/${c.slug}`} variant="mask" className="group block">
                   <div className="relative aspect-[3/4] overflow-hidden bg-surface-sunken lg:aspect-auto lg:h-[20rem]">
@@ -52,7 +53,7 @@ export async function CategoryNav({ locale }: { locale: Locale }) {
             </li>
           );
         })}
-      </ul>
+      </ScrubIn>
     </Section>
   );
 }

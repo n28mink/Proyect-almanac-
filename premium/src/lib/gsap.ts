@@ -9,6 +9,8 @@ let registered = false;
 export function registerGsap() {
   if (registered || typeof window === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger, useGSAP);
+  // La barra de direcciones del móvil cambia la altura al hacer scroll: sin esto cada cambio recalcula todos los ScrollTrigger y el scroll da tirones.
+  ScrollTrigger.config({ ignoreMobileResize: true });
   registered = true;
 }
 registerGsap();

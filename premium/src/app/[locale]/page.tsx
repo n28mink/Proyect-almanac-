@@ -7,10 +7,10 @@ import { CategoryNav } from '@/components/home/CategoryNav';
 import { CollectionsStory } from '@/components/home/CollectionsStory';
 import { Craftsmanship } from '@/components/home/Craftsmanship';
 import { EditorialSplit } from '@/components/home/EditorialSplit';
-import { FashionEditorial } from '@/components/home/FashionEditorial';
 import { FeaturedCollection } from '@/components/home/FeaturedCollection';
 import { Hero } from '@/components/home/Hero';
 import { HouseStory } from '@/components/home/HouseStory';
+import { FashionEditorial } from '@/components/home/FashionEditorial';
 import { JournalTeaser } from '@/components/home/JournalTeaser';
 import { LookbookMosaic } from '@/components/home/LookbookMosaic';
 import { WhatsAppBand } from '@/components/home/WhatsAppBand';
@@ -60,8 +60,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   const splitA = byId('ar11').images[0]!;
   const splitB = byId('an07').images[0]!;
-  const lookIds = ['ar10', 'co09', 'ar37', 'an06', 'pu05', 'co08'];
-  const looks = lookIds.map((id) => byId(id)).map((p) => ({ slug: p.slug, src: p.images[0]!.src, blur: p.images[0]!.blur, alt: pick(p.images[0]!.alt, locale), name: pick(p.name, locale) }));
+  // Joyería especial para el mosaico: la pieza de mayor valor del catálogo y, de cada tipo, la mejor (a igualdad de precio, la destacada).
+  const rank = (a: (typeof catalog)[number], b: (typeof catalog)[number]) => b.price - a.price || Number(b.featured) - Number(a.featured);
+  const jewelry = catalog.filter((p) => p.categories.includes('jewelry')).sort(rank);
+  const picked: typeof catalog = jewelry.slice(0, 1);
+  for (const slug of ['necklaces', 'earrings', 'rings', 'bracelets', 'earrings', 'bracelets']) {
+    const next = jewelry.find((p) => p.category === slug && !picked.includes(p));
+    if (next && picked.length < 6) picked.push(next);
+  }
+  const looks = picked.map((p) => ({ slug: p.slug, src: p.images[0]!.src, blur: p.images[0]!.blur, alt: pick(p.images[0]!.alt, locale), name: pick(p.name, locale) }));
 
   const tiles = collections.map((c) => {
     const p = byId(c.coverProductId);
@@ -79,6 +86,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         collection={lumiere}
         cover={{ src: cover.src, blur: cover.blur, alt: pick(cover.alt, locale) }}
         products={lumiereProducts.map((p) => toCardData(p, locale))}
+        count={catalog.filter((p) => p.collection === 'lumiere').length}
         locale={locale}
       />
 

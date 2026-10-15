@@ -233,17 +233,25 @@ test('movimiento: el interruptor del pie detiene el movimiento y se recuerda', a
 test.describe('movimiento reducido por el sistema: se conservan los fundidos', () => {
   test.use({ reducedMotion: 'reduce' });
 
-  test('los bloques aparecen con fundido y "Cinco historias" se recorre con flechas', async ({ page }) => {
+  test('los bloques aparecen con fundido y "Cinco historias" sigue desplazándose con el scroll', async ({ page }) => {
     await page.goto('/es', { waitUntil: 'networkidle' });
     const block = page.locator('[data-reveal]', { hasText: 'Clover nació' }).first();
     await expect(block).toHaveCSS('opacity', '0');
     await block.scrollIntoViewIfNeeded();
     await expect(block).toHaveCSS('opacity', '1');
-    const row = page.locator('section', { hasText: 'Cinco historias para llevar' }).locator('ul.snap-row');
-    await row.scrollIntoViewIfNeeded();
-    await page.getByRole('button', { name: 'Siguiente' }).click();
-    await expect.poll(() => row.evaluate((el) => el.scrollLeft)).toBeGreaterThan(0);
+    // «Cinco historias» sigue fijándose y desplazando sus tarjetas con la rueda (no depende de la preferencia del sistema).
+    const track = page.locator('section', { hasText: 'Cinco historias para llevar' }).locator('ul.flex');
+    await track.scrollIntoViewIfNeeded();
+    await page.evaluate(() => window.scrollBy(0, 900));
+    await expect.poll(() => track.evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).m41)).toBeLessThan(-100);
   });
+});
+
+test('portada: el mosaico de joyería especial tiene sus 6 imágenes con altura', async ({ page }) => {
+  await page.goto('/es', { waitUntil: 'networkidle' });
+  const tiles = page.locator('section', { hasText: 'Las joyas que más lucen' }).locator('[data-image-reveal]');
+  await expect(tiles).toHaveCount(6);
+  for (let i = 0; i < 6; i++) expect((await tiles.nth(i).boundingBox())!.height).toBeGreaterThan(100);
 });
 
 test('teclado: activar un enlace con Enter navega al instante, sin cortina de transición', async ({ page }) => {

@@ -4,7 +4,7 @@ import { useRef, type ReactNode } from 'react';
 import { LuxuryVideo } from '@/components/media/LuxuryVideo';
 import type { VideoAsset } from '@/content/media';
 import { gsap, useGSAP } from '@/lib/gsap';
-import { usePrefersReducedMotion } from '@/lib/hooks';
+import { useIsDesktop, useMotionLevel } from '@/lib/hooks';
 import { cn } from '@/lib/cn';
 
 /**
@@ -14,7 +14,10 @@ import { cn } from '@/lib/cn';
 export function ScrollExpandVideo({ video, children, className, tone = 'ink' }: { video: VideoAsset; children?: ReactNode; className?: string; tone?: 'ink' | 'evergreen' }) {
   const root = useRef<HTMLElement>(null);
   const frame = useRef<HTMLDivElement>(null);
-  const reduced = usePrefersReducedMotion();
+  const level = useMotionLevel();
+  const desktop = useIsDesktop();
+  // El recorte animado sobre un vídeo repinta en cada fotograma: solo en escritorio y con movimiento completo.
+  const reduced = level !== 'full' || !desktop;
 
   useGSAP(
     () => {
