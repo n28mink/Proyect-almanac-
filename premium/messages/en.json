@@ -126,7 +126,8 @@
     "showSpin": "View 360° spin",
     "spinHint": "Drag to rotate",
     "spinLabel": "360° view of {name}",
-    "spinLoading": "Loading 360°…"
+    "spinLoading": "Loading 360°…",
+    "spinOff": "Back to photos"
   },
   "home": {
     "heroSecondary": "View the lookbook",

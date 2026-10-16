@@ -168,3 +168,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - ar54 (concha con borde dentado) y ar55 (rosa pequeña con perla) son piezas nuevas: mismo precio y unidades que el resto de los aretes y sin material declarado.
 - ar46 (flor con perla) sigue sin publicar: es prácticamente la misma pieza que ar11.
 - Traducciones al inglés en `scripts/data/en.earrings-new.json`; fotos y 360° con `scripts/build-aretes.mjs` (tabla MAP).
+
+## Botón 360° en la foto principal
+- El giro se activa con un botón «360°» arriba a la izquierda de la foto (como en Swarovski): un clic abre el visor sobre la misma foto, otro clic o Escape vuelven a las fotos. En móvil ya no es una diapositiva del carrusel, así que arrastrar solo gira la pieza mientras el modo está activo. Los fotogramas se cargan al acercarse o enfocar el botón.
+- `scripts/lib/spin.mjs` y `scripts/build-spin.mjs <id> <vídeo>` generan el 360° de cualquier producto (pulseras incluidas) desde un vídeo de la pieza girando. Corregido el orden de los fotogramas en vídeos de más de 99 (ar08).
