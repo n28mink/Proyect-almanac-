@@ -11,10 +11,9 @@ import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
 
-const MAX_FRAMES = 24;
+const MAX_FRAMES = Number(process.env.SPIN_MAX_FRAMES ?? 24);
 const FRAME_SIDE = 1080;
 
-const hex = (stats) => `#${stats.channels.slice(0, 3).map((c) => Math.round(c.mean).toString(16).padStart(2, '0')).join('')}`;
 
 export async function buildSpin({ id, video, root, ffmpeg = process.env.FFMPEG ?? 'ffmpeg', skip = 0 }) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'spin-'));
@@ -37,9 +36,13 @@ export async function buildSpin({ id, video, root, ffmpeg = process.env.FFMPEG ?
     const name = (i) => `f${String(i + 1).padStart(2, '0')}-${hash}.webp`;
     bufs.forEach((b, i) => fs.writeFileSync(path.join(dir, name(i)), b));
     const first = await sharp(bufs[0]).metadata();
-    // Color de las bandas de la caja 4:5: el del borde del fotograma (esquina), no la media de toda la imagen.
-    const corner = await sharp(path.join(tmp, frames[0])).extract({ left: 0, top: 0, width: 24, height: 24 }).removeAlpha().raw().toBuffer();
-    const tone = hex(await sharp(corner, { raw: { width: 24, height: 24, channels: 3 } }).stats());
+    // Color de las bandas de la caja 4:5: el fondo real del fotograma (arriba y abajo en el centro, donde no hay pieza), no una esquina con viñeta.
+    const probe = async (top) => {
+      const raw = await sharp(bufs[0]).extract({ left: Math.floor(first.width / 2) - 12, top, width: 24, height: 24 }).removeAlpha().raw().toBuffer();
+      return (await sharp(raw, { raw: { width: 24, height: 24, channels: 3 } }).stats()).channels.slice(0, 3).map((c) => c.mean);
+    };
+    const [up, down] = [await probe(2), await probe(first.height - 26)];
+    const tone = `#${up.map((v, i) => Math.round((v + down[i]) / 2).toString(16).padStart(2, '0')).join('')}`;
     return { frames: bufs.map((_, i) => `/media/spin/${id}/${name(i)}`), width: first.width, height: first.height, tone, count: bufs.length, source: all.length };
   } finally {
     fs.rmSync(tmp, { recursive: true, force: true });

@@ -131,6 +131,7 @@ function buildSpecs(p, t, finish, highlightsEs) {
       label: L('Material', 'Material'),
       value: is304 ? L('Acero inoxidable 304 (según el proveedor)', '304 stainless steel (as stated by the supplier)')
         : /etiqueta/i.test(steel) ? L('Acero (según etiqueta visible)', 'Steel (as stated on the visible label)')
+        : /^acero$/i.test(steel.trim()) ? L('Acero', 'Steel')
         : L('Acero inoxidable (según el empaque)', 'Stainless steel (as stated on the packaging)'),
     });
   } else {
