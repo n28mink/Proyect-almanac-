@@ -12,7 +12,8 @@ export const CURATED_IDS = [
   'pu01', 'pu02', 'pu03', 'pu04', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13',
   // Collares
   'co01', 'co02', 'co03', 'co04', 'co05', 'co06', 'co07', 'co08', 'co09', 'co10', 'co11', 'co12', 'co13', 'co14', 'co15', 'co16', 'co17', 'co18', 'co19',
-  // Aretes (solo fotos limpias)
+  // Aretes (fotos limpias; los de empaque se publican con las fotos reales sin comprimir de fotos/aretes-originales)
+  'ar01', 'ar02', 'ar13', 'ar16', 'ar17', 'ar18', 'ar19', 'ar20', 'ar21', 'ar22', 'ar23', 'ar24', 'ar25', 'ar26', 'ar31', 'ar33', 'ar35', 'ar38', 'ar40', 'ar41', 'ar42', 'ar43', 'ar44', 'ar47', 'ar48', 'ar49', 'ar50', 'ar51', 'ar52', 'ar53', 'ar54', 'ar55',
   'ar03', 'ar04', 'ar05', 'ar06', 'ar07', 'ar08', 'ar09', 'ar10', 'ar11', 'ar12', 'ar14', 'ar15', 'ar27', 'ar28', 'ar29', 'ar30', 'ar32', 'ar34', 'ar36', 'ar37', 'ar39', 'ar45',
 ];
 

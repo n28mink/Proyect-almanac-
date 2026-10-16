@@ -28,7 +28,7 @@ const MAX_SIDE = 1600;
 const MAX_FRAMES = 24;
 const FRAME_SIDE = 1080;
 
-/** Producto del catálogo → diseño de la carpeta de originales, y dónde está el arete en la foto con modelo (0–1). */
+/** Producto del catálogo → diseño de la carpeta de originales (los 32 diseños nuevos: 30 son aretes que el catálogo original ya tenía, ar54 y ar55 son piezas nuevas), y dónde está el arete en la foto con modelo (0–1). */
 const MAP = {
   ar03: { slug: 'oval-trenzado-dorado', focal: { x: 0.56, y: 0.5 } },
   ar04: { slug: 'argolla-corazones-plateada', focal: { x: 0.45, y: 0.5 } },
@@ -52,6 +52,38 @@ const MAP = {
   ar37: { slug: 'ginkgo-perla', focal: { x: 0.39, y: 0.5 } },
   ar39: { slug: 'concha-perlas', focal: { x: 0.57, y: 0.55 } },
   ar45: { slug: 'nudo-dorado', focal: { x: 0.42, y: 0.5 } },
+  ar01: { slug: 'disco-ondulado-plateado', focal: { x: 0.45, y: 0.5 } },
+  ar02: { slug: 'doble-gota-dorada', focal: { x: 0.52, y: 0.5 } },
+  ar13: { slug: 'vieira-dorada', focal: { x: 0.41, y: 0.5 } },
+  ar16: { slug: 'estrella-mar', focal: { x: 0.47, y: 0.5 } },
+  ar17: { slug: 'ala-dorada', focal: { x: 0.56, y: 0.5 } },
+  ar18: { slug: 'rect-acanalado-dorado', focal: { x: 0.47, y: 0.5 } },
+  ar19: { slug: 'nautilo-perla-dorada', focal: { x: 0.34, y: 0.5 } },
+  ar20: { slug: 'cuad-acolchado-dorado', focal: { x: 0.41, y: 0.5 } },
+  ar21: { slug: 'flor-oscura', focal: { x: 0.5, y: 0.5 } },
+  ar22: { slug: 'nudo-plateado', focal: { x: 0.5, y: 0.5 } },
+  ar23: { slug: 'rect-banda-dorada', focal: { x: 0.42, y: 0.5 } },
+  ar24: { slug: 'disco-perla-dorada', focal: { x: 0.45, y: 0.5 } },
+  ar25: { slug: 'hoja-perla', focal: { x: 0.39, y: 0.5 } },
+  ar26: { slug: 'argolla-oval-dorada', focal: { x: 0.53, y: 0.5 } },
+  ar31: { slug: 'rect-borde-plateado', focal: { x: 0.55, y: 0.5 } },
+  ar33: { slug: 'abanico-plateado', focal: { x: 0.57, y: 0.5 } },
+  ar35: { slug: 'flor-plisada-dorada', focal: { x: 0.4, y: 0.5 } },
+  ar38: { slug: 'flor-mini-plateada', focal: { x: 0.43, y: 0.5 } },
+  ar40: { slug: 'argolla-chunky-plateada', focal: { x: 0.45, y: 0.5 } },
+  ar41: { slug: 'hex-dorado', focal: { x: 0.54, y: 0.5 } },
+  ar42: { slug: 'remolino-perla-dorada', focal: { x: 0.51, y: 0.5 } },
+  ar43: { slug: 'cono-dorado', focal: { x: 0.45, y: 0.5 } },
+  ar44: { slug: 'gota-plateada', focal: { x: 0.42, y: 0.5 } },
+  ar47: { slug: 'domo-plateado', focal: { x: 0.54, y: 0.5 } },
+  ar48: { slug: 'cuad-estriado-dorado', focal: { x: 0.47, y: 0.5 } },
+  ar49: { slug: 'corazon-dorado', focal: { x: 0.48, y: 0.5 } },
+  ar50: { slug: 'margarita-plateada', focal: { x: 0.51, y: 0.5 } },
+  ar51: { slug: 'cuad-plateado', focal: { x: 0.5, y: 0.5 } },
+  ar52: { slug: 'sol-perla-dorada', focal: { x: 0.44, y: 0.5 } },
+  ar53: { slug: 'flor-5petalos', focal: { x: 0.56, y: 0.5 } },
+  ar54: { slug: 'concha-dorada', focal: { x: 0.5, y: 0.5 } },
+  ar55: { slug: 'rosa-perla-dorada', focal: { x: 0.47, y: 0.5 } },
 };
 
 const file = (slug, kind, ext = 'png') => path.join(SRC, `arete-${slug}-${kind}.${ext}`);

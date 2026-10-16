@@ -13,6 +13,13 @@ import { CURATED_IDS, EXCLUDED_REASON, LIFESTYLE } from './lib/curation.mjs';
 const REELS = new Set(['watches', 'rings', 'necklaces', 'earrings', 'bracelets']);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const source = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/clover-source.json'), 'utf8'));
+// Ajustes y piezas nuevas sobre el catálogo original (scripts/data/source-extra.json).
+const { _note: _extraNote, ...extras } = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/source-extra.json'), 'utf8'));
+for (const [id, fields] of Object.entries(extras)) {
+  const at = source.findIndex((x) => x.id === id);
+  if (at >= 0) Object.assign(source[at], fields);
+  else source.push({ id, ...fields });
+}
 const media = JSON.parse(fs.readFileSync(path.join(root, 'src/content/media.generated.json'), 'utf8'));
 const en = {};
 for (const f of fs.readdirSync(path.join(root, 'scripts/data')).filter((n) => n.startsWith('en.'))) {
@@ -73,10 +80,10 @@ const AUTO_DETAIL = /^(rw|st)/;
 
 const COLLECTION = {
   tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'st01'],
-  corazon: ['ar04', 'co02', 'co06', 'co12', 'co19', 'pu04', 'pu06', 'pu11'],
-  lumiere: ['an03', 'an07', 'an09', 'ar11', 'ar15', 'ar37', 'ar39', 'co08', 'co09', 'co10', 'co11', 'pu10', 'pu12', 'pu13'],
-  jardin: ['an01', 'an06', 'an12', 'ar05', 'ar29', 'ar30', 'ar32', 'ar34', 'co03', 'co05', 'co13', 'co15', 'co17', 'co18', 'pu08'],
-  aurea: ['an02', 'an04', 'an05', 'an10', 'an11', 'ar03', 'ar06', 'ar07', 'ar08', 'ar09', 'ar10', 'ar12', 'ar14', 'ar27', 'ar28', 'ar36', 'ar45', 'pu01', 'pu02', 'pu03', 'pu05', 'pu07', 'pu09'],
+  corazon: ['ar04', 'ar49', 'co02', 'co06', 'co12', 'co19', 'pu04', 'pu06', 'pu11'],
+  lumiere: ['an03', 'an07', 'an09', 'ar11', 'ar15', 'ar19', 'ar24', 'ar25', 'ar37', 'ar39', 'ar42', 'ar44', 'ar52', 'ar55', 'co08', 'co09', 'co10', 'co11', 'pu10', 'pu12', 'pu13'],
+  jardin: ['an01', 'an06', 'an12', 'ar01', 'ar05', 'ar13', 'ar16', 'ar17', 'ar21', 'ar29', 'ar30', 'ar32', 'ar33', 'ar34', 'ar35', 'ar38', 'ar50', 'ar53', 'ar54', 'co03', 'co05', 'co13', 'co15', 'co17', 'co18', 'pu08'],
+  aurea: ['an02', 'an04', 'an05', 'an10', 'an11', 'ar02', 'ar03', 'ar06', 'ar07', 'ar08', 'ar09', 'ar10', 'ar12', 'ar14', 'ar18', 'ar20', 'ar22', 'ar23', 'ar26', 'ar27', 'ar28', 'ar31', 'ar36', 'ar40', 'ar41', 'ar43', 'ar45', 'ar47', 'ar48', 'ar51', 'pu01', 'pu02', 'pu03', 'pu05', 'pu07', 'pu09'],
 };
 const collectionOf = (id) => Object.entries(COLLECTION).find(([, ids]) => ids.includes(id))?.[0];
 
