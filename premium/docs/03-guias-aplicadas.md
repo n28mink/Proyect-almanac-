@@ -176,3 +176,8 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## 360°: zoom e inercia
 - `Spin360`: doble clic / doble toque / pellizco amplían (hasta 4x); con zoom, arrastrar mueve la foto; Escape quita el zoom y luego sale del giro; teclas + y -.
 - Inercia por tiempo (no por fotogramas por segundo) con lanzamiento suavizado, y el giro se asienta en el fotograma más cercano, así que nunca queda «mezclado».
+
+## Fotos con fondo blanco y 360° nuevos (aretes)
+- Los 54 diseños se regeneran desde `fotos/aretes-originales/` con las fotos en blanco (#F9F9F9) y los vídeos 360 nuevos (960×960, 5 s a 24 fps = 120 fotogramas): se guardan 24 por pieza, repartidos por igual (`SPIN_MAX_FRAMES` para cambiarlo; con 36 cada giro pesa ~1,1 MB frente a ~0,7 MB).
+- El color de las bandas del visor 360° sale del fondo real del fotograma (centro arriba y abajo), no de una esquina.
+- Pulsera pu05: se quita la aclaración «según etiqueta visible» de la descripción, la historia y los detalles (es/en); el material queda como «Acero».
