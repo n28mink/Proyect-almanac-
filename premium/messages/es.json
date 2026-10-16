@@ -124,7 +124,7 @@
     "customHint": "La personalización se cotiza por WhatsApp: se abre con la camisa y tu talla ya escritas.",
     "customColorNote": "Los colores pueden variar un poco entre la pantalla y la prenda impresa.",
     "showSpin": "Ver giro 360°",
-    "spinHint": "Arrastra para girar",
+    "spinHint": "Arrastra para girar · doble toque para ampliar",
     "spinLabel": "Giro 360° de {name}",
     "spinLoading": "Cargando 360°…",
     "spinOff": "Volver a las fotos"

@@ -172,3 +172,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Botón 360° en la foto principal
 - El giro se activa con un botón «360°» arriba a la izquierda de la foto (como en Swarovski): un clic abre el visor sobre la misma foto, otro clic o Escape vuelven a las fotos. En móvil ya no es una diapositiva del carrusel, así que arrastrar solo gira la pieza mientras el modo está activo. Los fotogramas se cargan al acercarse o enfocar el botón.
 - `scripts/lib/spin.mjs` y `scripts/build-spin.mjs <id> <vídeo>` generan el 360° de cualquier producto (pulseras incluidas) desde un vídeo de la pieza girando. Corregido el orden de los fotogramas en vídeos de más de 99 (ar08).
+
+## 360°: zoom e inercia
+- `Spin360`: doble clic / doble toque / pellizco amplían (hasta 4x); con zoom, arrastrar mueve la foto; Escape quita el zoom y luego sale del giro; teclas + y -.
+- Inercia por tiempo (no por fotogramas por segundo) con lanzamiento suavizado, y el giro se asienta en el fotograma más cercano, así que nunca queda «mezclado».
