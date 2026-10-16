@@ -1,0 +1,60 @@
+{
+  "_note": "Ajustes sobre clover-source.json (que no se toca). Si el id ya existe, estos campos sustituyen a los del original (las fotos nuevas de la pieza muestran otra forma o tono que el texto del proveedor). Si no existe, es una pieza nueva: precio y unidades iguales a los de todos los aretes de la tienda (18,50 USD · 10 unidades). Sin material declarado para las piezas nuevas.",
+  "ar18": {
+    "nombre": "Aretes dorados anchos acanalados",
+    "descripcion": "Aretes anchos de forma curva en tono dorado con relieve acanalado.",
+    "descripcionLarga": "Una pieza ancha y curva con relieve acanalado que multiplica el brillo. Presencia de sobra para los días en que quieres que tus aretes hablen por ti.",
+    "detalles": ["Forma ancha y curva", "Relieve acanalado", "Tono dorado", "Par incluido"]
+  },
+  "ar19": {
+    "nombre": "Aretes dorados de nautilo con perla",
+    "descripcion": "Aretes de botón en forma de nautilo en espiral, en tono dorado texturizado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Una espiral de nautilo dorada de superficie texturizada que abraza una perla blanca. Un diseño rico en detalles, de inspiración marina y muy favorecedor. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": ["Forma de nautilo en espiral texturizada", "Perla blanca central", "Tono dorado", "Acero inoxidable (según tarjeta del empaque)"]
+  },
+  "ar20": {
+    "nombre": "Aretes dorados de rombo acolchado",
+    "descripcion": "Aretes de botón en forma de rombo con cuatro facetas acanaladas en tono dorado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Cuatro facetas con líneas grabadas forman un rombo acolchado que juega con la luz. Ligeros y versátiles, van con todo. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": ["Diseño de botón en forma de rombo", "Cuatro facetas con líneas grabadas", "Tono dorado", "Acero inoxidable (según tarjeta del empaque)"]
+  },
+  "ar21": {
+    "nombre": "Aretes flor de 5 pétalos acanalados en dorado envejecido",
+    "descripcion": "Aretes de botón en forma de flor de 5 pétalos con líneas grabadas en tono dorado envejecido.",
+    "descripcionLarga": "Cinco pétalos con delicadas líneas grabadas y un acabado envejecido de aire vintage: una flor discreta con carácter que aporta calidez a cualquier conjunto.",
+    "detalles": ["Diseño de botón", "Flor de 5 pétalos con líneas grabadas", "Acabado dorado envejecido", "Par incluido"],
+    "colores": ["Dorado"]
+  },
+  "ar53": {
+    "nombre": "Aretes dorados flor de pétalos lisos",
+    "descripcion": "Aretes de botón en forma de flor de pétalos lisos y brillantes en tono dorado. Acero inoxidable según la tarjeta del empaque.",
+    "descripcionLarga": "Pétalos dorados lisos y brillantes alrededor de un centro marcado, en un diseño de botón alegre y versátil. Sencillos, luminosos y fáciles de combinar. Acero inoxidable según la tarjeta del empaque.",
+    "detalles": ["Diseño de botón", "Flor de pétalos lisos", "Tono dorado", "Acero inoxidable (según tarjeta del empaque)"]
+  },
+  "ar54": {
+    "nombre": "Aretes dorados de concha con borde dentado",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón en forma de concha marina con estrías radiantes y borde dentado en tono dorado.",
+    "descripcionLarga": "Una concha dorada de estrías marcadas y borde dentado, con el detalle de una pieza del mar. Playera y elegante a la vez.",
+    "detalles": ["Diseño de botón en forma de concha", "Estrías radiantes y borde dentado", "Tono dorado", "Par incluido"],
+    "tallas": ["Única"],
+    "colores": ["Dorado"],
+    "imagenes": []
+  },
+  "ar55": {
+    "nombre": "Aretes dorados rosa pequeña con perla",
+    "categoria": "Aretes",
+    "precio": 18.5,
+    "stock": 10,
+    "visible": true,
+    "descripcion": "Aretes de botón pequeños en forma de rosa en tono dorado con perla blanca al centro.",
+    "descripcionLarga": "Pétalos dorados enrollados que abrazan una perla blanca: una rosa diminuta, delicada y luminosa para el día a día.",
+    "detalles": ["Diseño de botón pequeño", "Pétalos enrollados en tono dorado", "Perla blanca central", "Par incluido"],
+    "tallas": ["Única"],
+    "colores": ["Dorado", "Blanco"],
+    "imagenes": []
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "ar01": {
+    "name": "Round ribbed silver-tone earrings",
+    "description": "Silver-tone stud earrings with a ribbed relief. Stainless steel as stated on the packaging card.",
+    "story": "A round, polished design with a ribbed texture that catches the light from every angle. Comfortable studs, the silver basic that lifts any outfit with no effort.",
+    "highlights": [
+      "Stud design",
+      "Silver tone with ribbed relief",
+      "Pair included",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar02": {
+    "name": "Gold-tone double-drop earrings",
+    "description": "Gold-tone stud earrings with a linked double drop. Stainless steel as stated on the packaging card.",
+    "story": "Two linked gold-tone drops in a fluid, feminine design. Their glossy finish makes them perfect for special occasions or for adding a golden touch to everyday looks.",
+    "highlights": [
+      "Stud design",
+      "Linked double drop in a gold tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar13": {
+    "name": "Gold-tone shell earrings",
+    "description": "Stud earrings shaped like a seashell in a gold tone. Stainless steel as stated on the packaging.",
+    "story": "A golden seashell with every detail: the chic beach accessory that also shines in the city. Stainless steel as stated on the product packaging.",
+    "highlights": [
+      "Shell-shaped stud design",
+      "Gold tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar16": {
+    "name": "Gold-tone starfish earrings",
+    "description": "Stud earrings shaped like a starfish in a gold tone. Stainless steel as stated on the packaging.",
+    "story": "A textured golden starfish that evokes the sea floor. Fun and summery, perfect for bringing your looks to life. Stainless steel as stated on the product packaging.",
+    "highlights": [
+      "Starfish-shaped stud design",
+      "Gold tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar17": {
+    "name": "Gold-tone leaf earrings",
+    "description": "Earrings shaped like a curved leaf or petal in a gold tone. Stainless steel as stated on the packaging.",
+    "story": "A curved, polished leaf in a gold tone with a natural inspiration. Elegant and light to the eye, they go with your whole wardrobe. Stainless steel as stated on the product packaging.",
+    "highlights": [
+      "Curved leaf or petal shape",
+      "Polished gold tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar18": {
+    "name": "Wide ribbed gold-tone earrings",
+    "description": "Wide, curved earrings in a gold tone with a ribbed relief.",
+    "story": "A wide, curved piece with a ribbed relief that multiplies the shine. Plenty of presence for the days you want your earrings to do the talking.",
+    "highlights": [
+      "Wide, curved shape",
+      "Ribbed relief",
+      "Gold tone",
+      "Pair included"
+    ]
+  },
+  "ar19": {
+    "name": "Gold-tone nautilus earrings with pearl",
+    "description": "Nautilus-shaped stud earrings in a textured gold tone with a white pearl at the center. Stainless steel as stated on the packaging card.",
+    "story": "A textured golden nautilus spiral that cradles a white pearl. A design rich in detail, with a sea-inspired look that flatters. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Textured nautilus spiral shape",
+      "White center pearl",
+      "Gold tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar20": {
+    "name": "Quilted diamond gold-tone earrings",
+    "description": "Stud earrings shaped like a diamond with four ribbed facets in a gold tone. Stainless steel as stated on the packaging card.",
+    "story": "Four facets with engraved lines form a quilted diamond that plays with the light. Light and versatile, they go with everything. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Diamond-shaped stud design",
+      "Four facets with engraved lines",
+      "Gold tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar21": {
+    "name": "Aged gold-tone 5-petal ribbed flower earrings",
+    "description": "Stud earrings shaped like a 5-petal flower with engraved lines in an aged gold tone.",
+    "story": "Five petals with delicate engraved lines and an aged finish with a vintage air: a discreet flower with character that adds warmth to any outfit.",
+    "highlights": [
+      "Stud design",
+      "5-petal flower with engraved lines",
+      "Aged gold finish",
+      "Pair included"
+    ]
+  },
+  "ar22": {
+    "name": "Silver-tone circular knot earrings",
+    "description": "Silver-tone stud earrings with a polished circular knot design. Stainless steel as stated on the packaging card.",
+    "story": "A polished circular knot in a silver tone: minimalism at its best. Effortlessly elegant, made for everyday wear. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Stud design",
+      "Polished circular knot",
+      "Silver tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar23": {
+    "name": "Rectangular gold-tone earrings with engraved lines",
+    "description": "Rectangular stud earrings in a gold tone with horizontal engraved lines. Stainless steel as stated on the packaging card.",
+    "story": "Gold-tone rectangles with horizontal engraved lines that create a subtle play of light. Geometric and modern, perfect for a polished style. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Rectangular stud design",
+      "Horizontal engraved lines",
+      "Gold tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar24": {
+    "name": "Round gold-tone earrings with relief and pearl",
+    "description": "Round stud earrings in a gold tone with a geometric relief and a pearl at the center. Stainless steel as stated on the packaging card.",
+    "story": "A round gold-tone stud with a geometric relief framing a white pearl: texture and softness in one piece. Sophisticated without excess. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Round stud design",
+      "Geometric relief in a gold tone",
+      "White center pearl",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar25": {
+    "name": "Hammered triangular gold-tone earrings with pearl",
+    "description": "Triangular stud earrings in a hammered gold tone with a pearl at the base. Stainless steel as stated on the packaging card.",
+    "story": "Gold-tone triangles with a hammered surface and a white pearl at the base: geometry with a soft touch. Original and elegant at once. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Triangular stud design",
+      "Hammered surface in a gold tone",
+      "White pearl at the base",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar26": {
+    "name": "Hollow oval gold-tone earrings",
+    "description": "Hollow oval earrings in a polished gold tone. Stainless steel as stated on the packaging card.",
+    "story": "Hollow ovals with great presence yet visually light, in a polished gold tone. The classic statement earring that flatters the face. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Hollow oval design",
+      "Polished finish in a gold tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar31": {
+    "name": "Rectangular silver-tone earrings with beaded border",
+    "description": "Smooth rectangular stud earrings in a silver tone with a beaded border. Stainless steel as stated on the packaging card.",
+    "story": "Smooth silver-tone rectangles framed by a delicate beaded border. Polished and elegant, ideal for an impeccable office look. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Rectangular stud design",
+      "Beaded border",
+      "Silver tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar33": {
+    "name": "Fan-shaped silver-tone earrings",
+    "description": "Stud earrings shaped like a fan or shell with radiating ridges in a silver tone. Stainless steel as stated on the packaging card.",
+    "story": "A silver-tone fan with radiating ridges that catch the light like a shell in the sun. Delicate, with a very chic marine air. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Fan-shaped stud design",
+      "Radiating ridges",
+      "Silver tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar35": {
+    "name": "Gold-tone shell-style flower earrings",
+    "description": "Stud earrings shaped like a rounded shell-style flower with radiating ridges in a gold tone. Stainless steel as stated on the packaging card.",
+    "story": "Rounded petals with radiating ridges in a gold tone, like a sea flower. Warm and luminous, they add a natural glow to the face. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Flower-shaped stud design",
+      "Shell-like radiating ridges",
+      "Gold tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar38": {
+    "name": "Silver-tone 5-petal flower earrings",
+    "description": "Stud earrings shaped like a 5-petal silver-tone flower.",
+    "story": "A five-petal silver-tone flower, simple and luminous. The floral basic that goes with everything and never goes out of style.",
+    "highlights": [
+      "Flower-shaped stud design",
+      "Five petals",
+      "Silver tone",
+      "Pair included"
+    ]
+  },
+  "ar40": {
+    "name": "Wide silver-tone hoops",
+    "description": "Wide hoops in a silver tone with a soft curve. Stainless steel as stated on the packaging card.",
+    "story": "Wide, smooth and with a soft, flattering curve: the definitive silver-tone hoop for a polished, contemporary look. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Wide hoop style",
+      "Soft curve",
+      "Silver tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar41": {
+    "name": "Octagonal gold-tone door-knocker earrings",
+    "description": "Octagonal earrings in a gold tone with a ribbed top, door-knocker style.",
+    "story": "Inspired by classic door knockers, these gold-tone octagons with a ribbed top have a vintage air that feels very current. With character and plenty of presence.",
+    "highlights": [
+      "Octagonal shape",
+      "Ribbed top detail",
+      "Gold tone",
+      "Pair included"
+    ]
+  },
+  "ar42": {
+    "name": "Round gold-tone spiral earrings with pearl",
+    "description": "Round stud earrings in a gold tone with a spiral and a white pearl at the center.",
+    "story": "A gold-tone spiral wrapping around a white pearl: a handcrafted-style design with a soft, luminous center. Original and very feminine.",
+    "highlights": [
+      "Round stud design",
+      "Spiral in a gold tone",
+      "White center pearl",
+      "Pair included"
+    ]
+  },
+  "ar43": {
+    "name": "Triangular gold-tone earrings",
+    "description": "Triangular stud earrings in a polished gold tone.",
+    "story": "Polished gold-tone triangles with clean lines: pure geometry for a modern, minimalist style. Small but with plenty of attitude.",
+    "highlights": [
+      "Triangular stud design",
+      "Polished finish",
+      "Gold tone",
+      "Pair included"
+    ]
+  },
+  "ar44": {
+    "name": "Silver-tone drop earrings",
+    "description": "Drop-shaped earrings in a polished silver tone. Stainless steel as stated on the packaging.",
+    "story": "A polished silver-tone drop with pure lines: simple elegance that flatters and brings light to the face. The basic that goes with absolutely everything. Stainless steel as stated on the packaging.",
+    "highlights": [
+      "Drop shape",
+      "Polished finish in a silver tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar47": {
+    "name": "Domed round silver-tone earrings",
+    "description": "Round domed stud earrings in a polished silver tone. Stainless steel as stated on the packaging.",
+    "story": "Round domed studs in a mirror-like silver tone: simple, shiny and perfect for every day. The classic that goes with your whole jewelry box. Stainless steel as stated on the packaging.",
+    "highlights": [
+      "Round domed stud design",
+      "Mirror finish in a silver tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar48": {
+    "name": "Ribbed square gold-tone earrings",
+    "description": "Square stud earrings in a gold tone with a ribbed relief.",
+    "story": "Gold-tone squares with a ribbed relief that plays with the light: geometry with texture for a modern, defined style.",
+    "highlights": [
+      "Square stud design",
+      "Ribbed relief",
+      "Gold tone",
+      "Pair included"
+    ]
+  },
+  "ar49": {
+    "name": "Hammered heart-shaped gold-tone earrings",
+    "description": "Heart-shaped earrings in a gold tone with a hammered texture. Stainless steel as stated on the packaging.",
+    "story": "Gold-tone hearts with a hammered texture that gives them a handcrafted, shiny finish. Romantic with character. Stainless steel as stated on the packaging.",
+    "highlights": [
+      "Heart shape",
+      "Hammered texture in a gold tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar50": {
+    "name": "Silver-tone daisy flower earrings",
+    "description": "Daisy-shaped earrings in a silver tone. Stainless steel as stated on the packaging.",
+    "story": "A silver-tone daisy with delicate petals: fresh, youthful and always cheerful. The perfect floral touch for everyday spring. Stainless steel as stated on the packaging.",
+    "highlights": [
+      "Daisy flower shape",
+      "Silver tone",
+      "Pair included",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar51": {
+    "name": "Square silver-tone earrings with relief",
+    "description": "Square stud earrings in a silver tone with a relief. Stainless steel as stated on the packaging.",
+    "story": "Silver-tone squares with a relief that adds depth and shine: an elegant geometric design for a contemporary style. Stainless steel as stated on the packaging.",
+    "highlights": [
+      "Square stud design",
+      "Surface with relief",
+      "Silver tone",
+      "Stainless steel (as stated on the packaging)"
+    ]
+  },
+  "ar52": {
+    "name": "Round ribbed gold-tone earrings with pearl",
+    "description": "Round ribbed stud earrings in a gold tone with a white pearl at the center. Stainless steel as stated on the packaging card.",
+    "story": "A ribbed golden sun with a white pearl at the center: radiant and elegant in equal parts. A piece that lights up any look. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Round ribbed stud design",
+      "White center pearl",
+      "Gold tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar53": {
+    "name": "Smooth-petal gold-tone flower earrings",
+    "description": "Stud earrings shaped like a flower with smooth, shiny petals in a gold tone. Stainless steel as stated on the packaging card.",
+    "story": "Smooth, shiny gold-tone petals around a defined center in a cheerful, versatile stud design. Simple, luminous and easy to pair. Stainless steel as stated on the packaging card.",
+    "highlights": [
+      "Stud design",
+      "Smooth-petal flower",
+      "Gold tone",
+      "Stainless steel (as stated on the packaging card)"
+    ]
+  },
+  "ar54": {
+    "name": "Gold-tone shell earrings with scalloped edge",
+    "description": "Stud earrings shaped like a seashell with radiating ridges and a scalloped edge in a gold tone.",
+    "story": "A golden shell with marked ridges and a scalloped edge, with the detail of a piece from the sea. Beachy and elegant at once.",
+    "highlights": [
+      "Shell-shaped stud design",
+      "Radiating ridges and scalloped edge",
+      "Gold tone",
+      "Pair included"
+    ]
+  },
+  "ar55": {
+    "name": "Small gold-tone rose earrings with pearl",
+    "description": "Small rose-shaped stud earrings in a gold tone with a white pearl at the center.",
+    "story": "Rolled gold-tone petals cradling a white pearl: a tiny, delicate, luminous rose for everyday wear.",
+    "highlights": [
+      "Small stud design",
+      "Rolled petals in a gold tone",
+      "White center pearl",
+      "Pair included"
+    ]
+  }
+}

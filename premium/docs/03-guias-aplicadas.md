@@ -162,3 +162,9 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Aretes (22 productos) con fotos reales y 360°
 - `scripts/build-aretes.mjs` lee `../fotos/aretes-originales/` y rehace las fotos de los 22 aretes del catálogo (tabla MAP: producto → diseño): base/par/individual a 4:5 sin deformar; macro y foto con modelo sin recorte (el punto focal decide qué se ve en 4:5); vídeo 360 → fotogramas webp (máx. 24, a 1080 px).
 - Galería: base, con modelo, macro y 360° (los diseños de par/individual: par, individual, con modelo y 360°). Los otros 32 diseños de la carpeta aún no tienen producto.
+
+## Aretes nuevos (32 diseños)
+- 30 de los 32 diseños son aretes que el catálogo original ya tenía (ar01–ar53, antes excluidos por foto con empaque): se publican con su nombre, precio (18,50 USD) y unidades (10) reales. Cinco textos se corrigieron porque la foto nueva muestra otra forma o tono (`scripts/data/source-extra.json`: ar18, ar19, ar20, ar21, ar53).
+- ar54 (concha con borde dentado) y ar55 (rosa pequeña con perla) son piezas nuevas: mismo precio y unidades que el resto de los aretes y sin material declarado.
+- ar46 (flor con perla) sigue sin publicar: es prácticamente la misma pieza que ar11.
+- Traducciones al inglés en `scripts/data/en.earrings-new.json`; fotos y 360° con `scripts/build-aretes.mjs` (tabla MAP).
