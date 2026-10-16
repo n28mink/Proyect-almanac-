@@ -158,3 +158,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - `assets-src/` (fotos originales sin comprimir, ~21 MB) vive ahora en la raíz del repositorio, fuera de `premium/`, para que no viaje con cada despliegue. Los scripts `build-*.mjs` lo leen en `../assets-src/`.
 - `premium/vercel.json` desactiva los despliegues de las ramas `claude/*`: solo `main` compila.
 - `ignoreCommand` en `vercel.json`: si el último commit no toca nada dentro de `premium/` (por ejemplo, subidas de fotos a `fotos/`), Vercel se salta la compilación.
+
+## Aretes (22 productos) con fotos reales y 360°
+- `scripts/build-aretes.mjs` lee `../fotos/aretes-originales/` y rehace las fotos de los 22 aretes del catálogo (tabla MAP: producto → diseño): base/par/individual a 4:5 sin deformar; macro y foto con modelo sin recorte (el punto focal decide qué se ve en 4:5); vídeo 360 → fotogramas webp (máx. 24, a 1080 px).
+- Galería: base, con modelo, macro y 360° (los diseños de par/individual: par, individual, con modelo y 360°). Los otros 32 diseños de la carpeta aún no tienen producto.
