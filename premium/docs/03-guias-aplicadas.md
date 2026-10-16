@@ -157,3 +157,4 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Ahorro en Vercel
 - `assets-src/` (fotos originales sin comprimir, ~21 MB) vive ahora en la raíz del repositorio, fuera de `premium/`, para que no viaje con cada despliegue. Los scripts `build-*.mjs` lo leen en `../assets-src/`.
 - `premium/vercel.json` desactiva los despliegues de las ramas `claude/*`: solo `main` compila.
+- `ignoreCommand` en `vercel.json`: si el último commit no toca nada dentro de `premium/` (por ejemplo, subidas de fotos a `fotos/`), Vercel se salta la compilación.
