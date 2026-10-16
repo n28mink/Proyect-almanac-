@@ -1,16 +1,19 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { forwardRef, useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { CloseIcon } from '@/components/ui/Icon';
 import type { Spin } from '@/domain/catalog';
+import { cn } from '@/lib/cn';
 import { useMotionLevel } from '@/lib/hooks';
 
 /**
  * Giro 360° al estilo de las fichas de joyería: se arrastra (o con flechas del teclado) para girar la pieza y, al soltar,
  * sigue con inercia. Con pocos fotogramas, el cambio entre dos vistas se funde para que el giro no «salte».
- * Los fotogramas se cargan al abrir la diapositiva; con movimiento reducido no hay giro automático ni inercia.
+ * Los fotogramas se cargan la primera vez que se pide (`active`, o `preload` al acercarse al botón); con movimiento reducido no hay giro automático ni inercia.
+ * Escape llama a `onExit`.
  */
-export function Spin360({ spin, name, active }: { spin: Spin; name: string; active: boolean }) {
+export function Spin360({ spin, name, active, preload = false, onExit }: { spin: Spin; name: string; active: boolean; preload?: boolean; onExit?: () => void }) {
   const t = useTranslations('product');
   const level = useMotionLevel();
   const n = spin.frames.length;
@@ -23,6 +26,8 @@ export function Spin360({ spin, name, active }: { spin: Spin; name: string; acti
   const auto = useRef(true);
   const [ready, setReady] = useState(0);
   const [hint, setHint] = useState(true);
+  const [started, setStarted] = useState(false); // una vez pedido, los fotogramas se quedan cargados
+  if ((active || preload) && !started) setStarted(true);
 
   const paint = useCallback(() => {
     const p = ((pos.current % n) + n) % n;
@@ -36,16 +41,16 @@ export function Spin360({ spin, name, active }: { spin: Spin; name: string; acti
     });
   }, [n]);
 
-  // Precarga al abrir la diapositiva y arranca el bucle solo cuando está a la vista.
+  // Precarga la primera vez que se pide y arranca el bucle solo mientras está a la vista.
   useEffect(() => {
-    if (!active) return;
+    if (!started) return;
     let done = 0;
     spin.frames.forEach((src) => {
       const im = new Image();
       im.onload = im.onerror = () => setReady(++done);
       im.src = src;
     });
-  }, [active, spin.frames]);
+  }, [started, spin.frames]);
 
   useEffect(() => {
     if (!active || ready < n) return;
@@ -95,6 +100,10 @@ export function Spin360({ spin, name, active }: { spin: Spin; name: string; acti
       onPointerUp={() => { drag.current = null; if (level !== 'full') vel.current = 0; }}
       onPointerCancel={() => { drag.current = null; }}
       onKeyDown={(e) => {
+        if (e.key === 'Escape') {
+          onExit?.();
+          return;
+        }
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
           e.preventDefault();
           stop();
@@ -106,11 +115,38 @@ export function Spin360({ spin, name, active }: { spin: Spin; name: string; acti
     >
       {spin.frames.map((src, i) => (
         // eslint-disable-next-line @next/next/no-img-element
-        <img key={src} ref={(el) => { layers.current[i] = el; }} src={active ? src : undefined} alt={i === 0 ? name : ''} draggable={false} width={spin.width} height={spin.height} className="pointer-events-none absolute inset-0 h-full w-full object-contain" style={{ opacity: i === 0 ? 1 : 0 }} />
+        <img key={src} ref={(el) => { layers.current[i] = el; }} src={started ? src : undefined} alt={i === 0 ? name : ''} draggable={false} width={spin.width} height={spin.height} className="pointer-events-none absolute inset-0 h-full w-full object-contain" style={{ opacity: i === 0 ? 1 : 0 }} />
       ))}
-      {ready < n && active && <div className="absolute inset-0 grid place-items-center text-sm text-mut" aria-live="polite">{t('spinLoading')}</div>}
-      <span className="pointer-events-none absolute left-4 top-4 rounded-full bg-ink/70 px-3 py-1 text-sm font-medium text-ivory backdrop-blur-sm">360°</span>
+      {ready < n && started && <div className="absolute inset-0 grid place-items-center text-sm text-mut" aria-live="polite">{t('spinLoading')}</div>}
       {hint && ready >= n && <span className="pointer-events-none absolute inset-x-0 bottom-10 mx-auto w-fit rounded-full bg-ink/70 px-4 py-1.5 text-sm text-ivory backdrop-blur-sm">{t('spinHint')}</span>}
     </div>
   );
 }
+
+/**
+ * Botón «360°» de la esquina superior izquierda de la foto principal (como en las fichas de Swarovski): un clic activa el giro sobre la misma foto
+ * y otro clic (o Escape) vuelve a las fotos. Al acercarse o enfocarlo ya se van cargando los fotogramas, así que al pulsar no hay espera.
+ */
+export const SpinToggle = forwardRef<HTMLButtonElement, { on: boolean; onToggle: () => void; onWarm: () => void }>(function SpinToggle({ on, onToggle, onWarm }, ref) {
+  const t = useTranslations('product');
+  return (
+    <button
+      ref={ref}
+      type="button"
+      aria-pressed={on}
+      aria-label={on ? t('spinOff') : t('showSpin')}
+      onClick={onToggle}
+      onPointerEnter={onWarm}
+      onFocus={onWarm}
+      onTouchStart={onWarm}
+      className={cn(
+        'absolute left-4 top-4 z-20 inline-flex h-11 items-center gap-1.5 rounded-full px-4 text-sm font-medium shadow-sm backdrop-blur-sm',
+        'transition-[transform,background-color,color] duration-150 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.97]',
+        on ? 'bg-ivory text-ink' : 'bg-ink/70 text-ivory',
+      )}
+    >
+      360°
+      {on && <CloseIcon className="h-4 w-4" />}
+    </button>
+  );
+});

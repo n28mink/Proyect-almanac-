@@ -11,12 +11,11 @@
  * src/content/media.generated.json (images.<id>-<tipo> y spin.<id>). Después: npm run seed.
  */
 import fs from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
+import { buildSpin } from './lib/spin.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(root, '../fotos/aretes-originales');
@@ -25,8 +24,6 @@ const MANIFEST = path.join(root, 'src/content/media.generated.json');
 const FFMPEG = process.env.FFMPEG ?? 'ffmpeg';
 const RATIO = 4 / 5;
 const MAX_SIDE = 1600;
-const MAX_FRAMES = 24;
-const FRAME_SIDE = 1080;
 
 /** Producto del catálogo → diseño de la carpeta de originales (los 32 diseños nuevos: 30 son aretes que el catálogo original ya tenía, ar54 y ar55 son piezas nuevas), y dónde está el arete en la foto con modelo (0–1). */
 const MAP = {
@@ -125,8 +122,6 @@ async function meta(buffer) {
   return { width, height, blur: `data:image/jpeg;base64,${blur.toString('base64')}`, tone: `#${[r, g, b].map((v) => v.toString(16).padStart(2, '0')).join('')}` };
 }
 
-const hex = (rgbStats) => `#${rgbStats.channels.slice(0, 3).map((c) => Math.round(c.mean).toString(16).padStart(2, '0')).join('')}`;
-
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
 manifest.spin ??= {};
 const only = process.argv.slice(2);
@@ -151,31 +146,10 @@ for (const id of ids) {
   delete manifest.images[id];
   delete manifest.images[`${id}-detail`];
 
-  // Giro 360°: todos los fotogramas del vídeo.
-  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'spin-'));
-  execFileSync(FFMPEG, ['-v', 'error', '-i', file(slug, '360-par', 'mp4'), '-vsync', '0', path.join(tmp, 'f%02d.png')]);
-  const all = fs.readdirSync(tmp).filter((f) => f.endsWith('.png')).sort();
-  // Vídeos con muchos fotogramas (30 fps): se reparten 24 por igual; los de 12 se usan enteros.
-  const frames = all.length > MAX_FRAMES ? Array.from({ length: MAX_FRAMES }, (_, i) => all[Math.floor((i * all.length) / MAX_FRAMES)]) : all;
-  const tag = crypto.createHash('sha1');
-  const bufs = [];
-  for (const f of frames) {
-    const b = await sharp(path.join(tmp, f)).resize(FRAME_SIDE, FRAME_SIDE, { fit: 'inside', withoutEnlargement: true }).webp({ quality: 84, effort: 5 }).toBuffer();
-    tag.update(b);
-    bufs.push(b);
-  }
-  const hash = tag.digest('hex').slice(0, 7);
-  const dir = path.join(root, 'public/media/spin', id);
-  fs.rmSync(dir, { recursive: true, force: true });
-  fs.mkdirSync(dir, { recursive: true });
-  bufs.forEach((b, i) => fs.writeFileSync(path.join(dir, `f${String(i + 1).padStart(2, '0')}-${hash}.webp`), b));
-  const first = await sharp(bufs[0]).metadata();
-  // Color de las bandas de la caja 4:5: el del borde del fotograma (esquina), no la media de toda la imagen.
-  const corner = await sharp(path.join(tmp, frames[0])).extract({ left: 0, top: 0, width: 24, height: 24 }).removeAlpha().raw().toBuffer();
-  const tone = hex(await sharp(corner, { raw: { width: 24, height: 24, channels: 3 } }).stats());
-  fs.rmSync(tmp, { recursive: true, force: true });
-  manifest.spin[id] = { frames: bufs.map((_, i) => `/media/spin/${id}/f${String(i + 1).padStart(2, '0')}-${hash}.webp`), width: first.width, height: first.height, tone };
-  console.log(`✔ ${id} (${slug}): ${kinds.length} fotos + ${frames.length} fotogramas ${first.width}×${first.height}`);
+  // Giro 360° (scripts/lib/spin.mjs): todos los fotogramas del vídeo, o 24 repartidos por igual si trae más.
+  const { count, source, ...spin } = await buildSpin({ id, video: file(slug, '360-par', 'mp4'), root, ffmpeg: FFMPEG });
+  manifest.spin[id] = spin;
+  console.log(`✔ ${id} (${slug}): ${kinds.length} fotos + ${count} fotogramas (de ${source}) ${spin.width}×${spin.height}`);
 }
 
 fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');

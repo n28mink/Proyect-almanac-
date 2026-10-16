@@ -126,7 +126,8 @@
     "showSpin": "Ver giro 360°",
     "spinHint": "Arrastra para girar",
     "spinLabel": "Giro 360° de {name}",
-    "spinLoading": "Cargando 360°…"
+    "spinLoading": "Cargando 360°…",
+    "spinOff": "Volver a las fotos"
   },
   "home": {
     "heroSecondary": "Ver el lookbook",

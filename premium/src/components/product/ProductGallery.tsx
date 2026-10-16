@@ -7,7 +7,7 @@ import { CloseIcon, ArrowLeftIcon, ArrowRightIcon } from '@/components/ui/Icon';
 import { Dialog } from '@/components/ui/Dialog';
 import type { CardImage } from '@/lib/card-data';
 import type { Spin } from '@/domain/catalog';
-import { Spin360 } from './Spin360';
+import { Spin360, SpinToggle } from './Spin360';
 import { cn } from '@/lib/cn';
 import { useFinePointer } from '@/lib/hooks';
 
@@ -16,7 +16,7 @@ interface GalleryProps {
   index: number;
   onIndexChange: (i: number) => void;
   name: string;
-  /** Giro 360°: diapositiva extra al final (índice = images.length). */
+  /** Giro 360°: se activa con el botón «360°» de la esquina superior izquierda de la foto. */
   spin?: Spin;
 }
 
@@ -32,9 +32,14 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
   const [zoom, setZoom] = useState<{ x: number; y: number } | null>(null);
   const [box, setBox] = useState(false);
   const scroller = useRef<HTMLUListElement>(null);
-  const total = images.length + (spin ? 1 : 0);
-  const onSpin = !!spin && index === images.length;
-  const lit = images[Math.min(index, images.length - 1)]!; // la diapositiva 360° no abre el lightbox
+  const toggle = useRef<HTMLButtonElement>(null);
+  // El giro se activa sobre la foto en la que está la galería: cambiar de foto (o de variante) lo apaga solo.
+  const [spinAt, setSpinAt] = useState<number | null>(null);
+  const [warm, setWarm] = useState(false);
+  const onSpin = !!spin && spinAt === index;
+  const lit = images[index]!;
+  const flip = () => setSpinAt(onSpin ? null : index);
+  const exit = () => { setSpinAt(null); toggle.current?.focus(); };
 
   // Móvil: sincroniza el índice con el scroll del carrusel.
   useEffect(() => {
@@ -67,7 +72,7 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
         ))}
         {spin && (
           <li>
-            <button type="button" onClick={() => goTo(images.length)} aria-label={t('showSpin')} aria-current={onSpin} className={cn('relative grid aspect-[4/5] w-full place-items-center overflow-hidden border text-sm font-medium transition-colors', onSpin ? 'border-fg' : 'border-transparent opacity-70 hover:opacity-100')} style={{ backgroundColor: spin.tone }}>
+            <button type="button" onClick={flip} onPointerEnter={() => setWarm(true)} aria-label={onSpin ? t('spinOff') : t('showSpin')} aria-pressed={onSpin} className={cn('relative grid aspect-[4/5] w-full place-items-center overflow-hidden border text-sm font-medium transition-colors', onSpin ? 'border-fg' : 'border-transparent opacity-70 hover:opacity-100')} style={{ backgroundColor: spin.tone }}>
               <Image src={spin.frames[0]!} alt="" fill sizes="88px" className="object-contain opacity-60" />
               <span className="relative rounded-full bg-ink/70 px-2 py-0.5 text-ivory">360°</span>
             </button>
@@ -76,63 +81,71 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
       </ul>
 
       <div className="order-1 lg:order-2">
-        {/* Escritorio: imagen activa con zoom */}
-        <div
-          className={cn('relative hidden aspect-[4/5] overflow-hidden bg-surface-sunken lg:block', fine && !onSpin ? 'cursor-zoom-in' : '')}
-          onPointerMove={(e) => {
-            if (!fine) return;
-            const r = e.currentTarget.getBoundingClientRect();
-            setZoom({ x: ((e.clientX - r.left) / r.width) * 100, y: ((e.clientY - r.top) / r.height) * 100 });
-          }}
-          onPointerLeave={() => setZoom(null)}
-          onClick={() => !onSpin && setBox(true)}
-          role={onSpin ? undefined : 'button'}
-          tabIndex={onSpin ? -1 : 0}
-          aria-label={onSpin ? undefined : t('openLightbox')}
-          onKeyDown={(e) => !onSpin && (e.key === 'Enter' || e.key === ' ') && setBox(true)}
-        >
-          {images.map((img, i) => (
-            <Image
-              key={img.src}
-              src={img.src}
-              alt={i === index ? img.alt : ''}
-              fill
-              sizes="(min-width: 1280px) 46vw, 50vw"
-              quality={90}
-              priority={i === 0}
-              placeholder={img.blur ? 'blur' : 'empty'}
-              blurDataURL={img.blur}
-              className={cn('object-cover transition-opacity duration-500', i === index ? 'opacity-100' : 'opacity-0')}
-              style={{ ...focal(img), transform: zoom && i === index ? 'scale(1.5)' : undefined, transformOrigin: zoom ? `${zoom.x}% ${zoom.y}%` : undefined, transition: 'opacity .5s, transform .35s var(--ease-luxe)' }}
-              aria-hidden={i !== index}
-            />
-          ))}
+        {/* Escritorio: imagen activa con zoom; el giro 360° y su botón van fuera del «botón» de la foto para no anidar controles */}
+        <div className="relative hidden lg:block">
+          <div
+            className={cn('relative aspect-[4/5] overflow-hidden bg-surface-sunken', fine && !onSpin ? 'cursor-zoom-in' : '')}
+            onPointerMove={(e) => {
+              if (!fine) return;
+              const r = e.currentTarget.getBoundingClientRect();
+              setZoom({ x: ((e.clientX - r.left) / r.width) * 100, y: ((e.clientY - r.top) / r.height) * 100 });
+            }}
+            onPointerLeave={() => setZoom(null)}
+            onClick={() => !onSpin && setBox(true)}
+            role={onSpin ? undefined : 'button'}
+            tabIndex={onSpin ? -1 : 0}
+            aria-label={onSpin ? undefined : t('openLightbox')}
+            onKeyDown={(e) => !onSpin && (e.key === 'Enter' || e.key === ' ') && setBox(true)}
+          >
+            {images.map((img, i) => (
+              <Image
+                key={img.src}
+                src={img.src}
+                alt={i === index ? img.alt : ''}
+                fill
+                sizes="(min-width: 1280px) 46vw, 50vw"
+                quality={90}
+                priority={i === 0}
+                placeholder={img.blur ? 'blur' : 'empty'}
+                blurDataURL={img.blur}
+                className={cn('object-cover transition-opacity duration-500', i === index ? 'opacity-100' : 'opacity-0')}
+                style={{ ...focal(img), transform: zoom && i === index ? 'scale(1.5)' : undefined, transformOrigin: zoom ? `${zoom.x}% ${zoom.y}%` : undefined, transition: 'opacity .5s, transform .35s var(--ease-luxe)' }}
+                aria-hidden={i !== index}
+              />
+            ))}
+          </div>
           {spin && (
-            <div className={cn('absolute inset-0 transition-opacity duration-500', onSpin ? 'opacity-100' : 'pointer-events-none opacity-0')} aria-hidden={!onSpin}>
-              <Spin360 spin={spin} name={name} active={onSpin} />
-            </div>
+            <>
+              <div className={cn('absolute inset-0 z-10 transition-opacity duration-200 ease-[cubic-bezier(0.23,1,0.32,1)]', onSpin ? 'opacity-100' : 'pointer-events-none opacity-0')} inert={!onSpin}>
+                <Spin360 spin={spin} name={name} active={onSpin} preload={warm} onExit={exit} />
+              </div>
+              <SpinToggle ref={toggle} on={onSpin} onToggle={flip} onWarm={() => setWarm(true)} />
+            </>
           )}
         </div>
 
         {/* Móvil/tablet: carrusel con snap */}
         <div className="relative lg:hidden">
-          <ul ref={scroller} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none" aria-label={t('gallery')}>
+          <ul ref={scroller} tabIndex={0} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none" aria-label={t('gallery')}>
             {images.map((img, i) => (
               <li key={img.src} className="relative aspect-[4/5] w-full shrink-0 snap-center bg-surface-sunken">
                 <Image src={img.src} alt={img.alt} fill sizes="100vw" quality={90} priority={i === 0} placeholder={img.blur ? 'blur' : 'empty'} blurDataURL={img.blur} className="object-cover" style={focal(img)} onClick={() => setBox(true)} />
               </li>
             ))}
-            {spin && (
-              <li className="relative aspect-[4/5] w-full shrink-0 snap-center">
-                <Spin360 spin={spin} name={name} active={onSpin} />
-              </li>
-            )}
           </ul>
-          <div className="pointer-events-none absolute inset-x-0 bottom-4 flex justify-center gap-2" aria-hidden="true">
-            {Array.from({ length: total }, (_, i) => (
-              <span key={i} className={cn('h-1.5 rounded-full bg-ivory/90 shadow transition-all duration-300', i === index ? 'w-6' : 'w-1.5 opacity-60')} />
+          <div className={cn('pointer-events-none absolute inset-x-0 bottom-4 flex justify-center gap-2 transition-opacity duration-200', onSpin && 'opacity-0')} aria-hidden="true">
+            {images.map((img, i) => (
+              <span key={img.src} className={cn('h-1.5 rounded-full bg-ivory/90 shadow transition-all duration-300', i === index ? 'w-6' : 'w-1.5 opacity-60')} />
             ))}
           </div>
+          {spin && (
+            <>
+              <div className={cn('absolute inset-0 z-10 transition-opacity duration-200 ease-[cubic-bezier(0.23,1,0.32,1)]', onSpin ? 'opacity-100' : 'pointer-events-none opacity-0')} inert={!onSpin}>
+                <Spin360 spin={spin} name={name} active={onSpin} preload={warm} onExit={exit} />
+              </div>
+              <SpinToggle on={onSpin} onToggle={flip} onWarm={() => setWarm(true)} />
+            </>
+          )}
         </div>
       </div>
 
