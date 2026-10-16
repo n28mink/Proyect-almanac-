@@ -124,7 +124,7 @@
     "customHint": "Customization is quoted on WhatsApp: it opens with the shirt and your size already filled in.",
     "customColorNote": "Colors may vary slightly between your screen and the printed garment.",
     "showSpin": "View 360° spin",
-    "spinHint": "Drag to rotate",
+    "spinHint": "Drag to rotate · double-tap to zoom",
     "spinLabel": "360° view of {name}",
     "spinLoading": "Loading 360°…",
     "spinOff": "Back to photos"
