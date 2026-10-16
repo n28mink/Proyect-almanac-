@@ -3,7 +3,7 @@
  * Fotos de las camisas.
  *   node scripts/build-shirts.mjs
  *
- * Lee las fotos maestras de assets-src/shirts/ (camisa recortada sobre el fondo salvia de la marca, formato 4:5):
+ * Lee las fotos maestras de ../assets-src/shirts/ (camisa recortada sobre el fondo salvia de la marca, formato 4:5):
  *   <id>.jpg          de frente (obligatoria; es la foto principal)
  *   <id>-back.jpg     de espalda (opcional)
  *   <id>-detail.jpg   acercamiento al estampado (opcional; si falta se recorta de la principal con `detail` de shirts.json)
@@ -16,7 +16,7 @@ import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SRC = path.join(root, 'assets-src/shirts');
+const SRC = path.join(root, '../assets-src/shirts');
 const OUT = path.join(root, 'public/media/products');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');
 const shirts = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/shirts.json'), 'utf8'));

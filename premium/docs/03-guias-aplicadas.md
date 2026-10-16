@@ -126,7 +126,7 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 - Colección destacada: texto a la izquierda e imagen contenida (máx. 28 rem) a la derecha.
 
 ### Fotos reales de pulseras y portadas de categoría (octava pasada)
-- 10 pulseras (pu03, pu05–pu13) pasan a 4 fotos reales cada una, en este orden: en ángulo (principal), con mano modelo, de frente y close-up; la foto anterior queda al final de la galería. Se conserva el fondo crema original de las fotos (`npm run media:bracelets`, originales en `assets-src/bracelets/`, nombres `<id>-a|h|f|c`; luego `npm run seed`). Las fotos no cuadradas (flores, estrellas, turquesa) se ajustan ampliando el fondo con degradado, sin deformar. pu01, pu02 y pu04 conservan sus fotos.
+- 10 pulseras (pu03, pu05–pu13) pasan a 4 fotos reales cada una, en este orden: en ángulo (principal), con mano modelo, de frente y close-up; la foto anterior queda al final de la galería. Se conserva el fondo crema original de las fotos (`npm run media:bracelets`, originales en `../assets-src/bracelets/`, nombres `<id>-a|h|f|c`; luego `npm run seed`). Las fotos no cuadradas (flores, estrellas, turquesa) se ajustan ampliando el fondo con degradado, sin deformar. pu01, pu02 y pu04 conservan sus fotos.
 - Portadas de categoría elegidas por representatividad: Joyería → pu10 (estrellas), Relojes → rw03 (frontal, limpio), Camisas → cm03 (prenda completa), Novedades → pu08; el resto se mantiene (Collares co11, Aretes ar06, Anillos an04, Pulseras pu06).
 
 ### Primer plano, nitidez y menú (novena pasada)
@@ -136,7 +136,7 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 
 ### Scroll más ágil y calidad de imagen (décima pasada)
 - Lenis: de `duration: 1.05` a `lerp: 0.2` y `wheelMultiplier: 1.1`. Medido con una muesca de rueda (100 px): 90 % del recorrido en 203 ms (antes 368 ms) y 99 % en 370 ms (antes 651 ms). Con `lerp` el trackpad no reinicia la curva en cada evento. Sin fotogramas largos durante el scroll (Long Animation Frames, CPU ×4).
-- Imágenes: `qualities` pasa a [72, 80, 90]; fichas y lightbox a 90, tarjetas a 80 (antes todo se servía a 72). Las fotos subidas por la tienda se conservan sin tocar en `assets-src/bracelets/`; el archivo del sitio mantiene ~40 dB de PSNR frente al original.
+- Imágenes: `qualities` pasa a [72, 80, 90]; fichas y lightbox a 90, tarjetas a 80 (antes todo se servía a 72). Las fotos subidas por la tienda se conservan sin tocar en `../assets-src/bracelets/`; el archivo del sitio mantiene ~40 dB de PSNR frente al original.
 
 ### Scroll con inercia solo para ratón y trackpad (undécima pasada)
 - Lenis (ya integrado con ScrollTrigger mediante un único ticker de GSAP) se crea solo con puntero preciso (`(hover: hover) and (pointer: fine)`); en pantallas táctiles el scroll es el nativo. Ajustes en `smoothScroll` (src/config/motion.ts): `lerp: 0.2`, `wheelMultiplier: 1.1`.
@@ -146,10 +146,14 @@ La web parecía «estática» y sin el scroll horizontal de «Cinco historias» 
 En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (el escritorio no cambia): colección destacada 51 % → 32 % (cuadrada, máx. 16 rem); «Elegimos cada pieza» 51 % → 31 % (4:3); editorial «Puestas» 51 % → 35 % (máx. 14 rem); mosaico «Las joyas que más lucen» a 2 columnas iguales (54 % → 26 %); carril de colecciones 44 % → 36 %; vídeo de joyería 80 % → 60 % de alto; visor del reloj máx. 18 rem; Journal en filas compactas con miniatura de 6,5 rem.
 
 ### Originales sin comprimir (decimotercera pasada)
-- Las tiendas suben los originales a `fotos/pulseras-originales/` (PNG sin pérdida) y se copian a `assets-src/bracelets/` con el nombre `<id>-<a|h|f|c>.png`. Con PNG de origen: JPG calidad 93 sin nitidez añadida (PSNR 43–45 dB frente al original; antes ~39 dB) y hasta 2400 px sin ampliar. Los archivos llevan una huella del contenido en el nombre (`pu06-ang-3e3518a.jpg`) para esquivar la caché de 30 días de Vercel.
+- Las tiendas suben los originales a `fotos/pulseras-originales/` (PNG sin pérdida) y se copian a `../assets-src/bracelets/` con el nombre `<id>-<a|h|f|c>.png`. Con PNG de origen: JPG calidad 93 sin nitidez añadida (PSNR 43–45 dB frente al original; antes ~39 dB) y hasta 2400 px sin ampliar. Los archivos llevan una huella del contenido en el nombre (`pu06-ang-3e3518a.jpg`) para esquivar la caché de 30 días de Vercel.
 - Pulsera de corazones (pu06): sus fotos son las de corazones alargados (la subida «Pulsera 11 (corazones alargados)», que coincide con su foto original); las de corazones abultados se retiraron de su galería (la foto antigua de pu06 se descarta por repetida).
 
 ## Aretes flor (ar11): originales + giro 360°
-- Fotos reales sin comprimir (par, individual, puestos) en `assets-src/aretes/`; `scripts/build-aretes.mjs` las lleva a 4:5 sin deformar (fondo liso con degradado largo; la de la oreja se recorta) y descompone `ar11-360.mp4` en fotogramas webp (`public/media/spin/ar11/`). Necesita ffmpeg (`FFMPEG=/ruta/ffmpeg`).
+- Fotos reales sin comprimir (par, individual, puestos) en `../assets-src/aretes/`; `scripts/build-aretes.mjs` las lleva a 4:5 sin deformar (fondo liso con degradado largo; la de la oreja se recorta) y descompone `ar11-360.mp4` en fotogramas webp (`public/media/spin/ar11/`). Necesita ffmpeg (`FFMPEG=/ruta/ffmpeg`).
 - `spin` en el esquema de producto: diapositiva «360°» al final de la galería (`Spin360`): arrastrar o flechas, inercia, giro lento inicial (solo movimiento completo) y mezcla corta entre fotogramas. Los fotogramas solo se cargan al abrirla.
 - El 360 es el vídeo original de 12 fotogramas (`ar11-360.mp4`), elegido tras probar las versiones de 24 y 36 (5 s): con más fotogramas el giro no mejoraba porque el encuadre y el tamaño varían entre fotogramas. Todos los fotogramas del vídeo se usan.
+
+## Ahorro en Vercel
+- `assets-src/` (fotos originales sin comprimir, ~21 MB) vive ahora en la raíz del repositorio, fuera de `premium/`, para que no viaje con cada despliegue. Los scripts `build-*.mjs` lo leen en `../assets-src/`.
+- `premium/vercel.json` desactiva los despliegues de las ramas `claude/*`: solo `main` compila.

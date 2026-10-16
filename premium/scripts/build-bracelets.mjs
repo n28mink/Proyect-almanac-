@@ -3,7 +3,7 @@
  * Fotos reales de las pulseras (4 por pieza), conservando el fondo crema original de las fotos.
  *   node scripts/build-bracelets.mjs
  *
- * Lee assets-src/bracelets/<id>-<rol>.<ext> (id con «b» = juego adicional, p. ej. pu06b) con rol: a = en ángulo (principal), h = con mano modelo, f = de frente, c = close-up.
+ * Lee ../assets-src/bracelets/<id>-<rol>.<ext> (id con «b» = juego adicional, p. ej. pu06b) con rol: a = en ángulo (principal), h = con mano modelo, f = de frente, c = close-up.
  * Escribe public/media/products/<id>-ang|hand|front|close.jpg (hasta 1600², calidad 90 con nitidez suave) y actualiza sus metadatos en
  * src/content/media.generated.json. Las fotos no cuadradas se ajustan sin deformar: se amplía el fondo (pad) o se recorta (crop)
  * según CONFIG. Después: npm run seed.
@@ -15,7 +15,7 @@ import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SRC = path.join(root, 'assets-src/bracelets');
+const SRC = path.join(root, '../assets-src/bracelets');
 const OUT = path.join(root, 'public/media/products');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');
 const MAX = 2400; // sin ampliar más allá de la resolución original
