@@ -3,7 +3,7 @@
  * Fotos reales de los aretes flor (ar11) y su giro 360°.
  *   FFMPEG=/ruta/ffmpeg node scripts/build-aretes.mjs
  *
- * Lee assets-src/aretes/ar11-par|individual|modelo.png y ar11-360.mp4. Las fotos se llevan a vertical 4:5 sin deformar
+ * Lee ../assets-src/aretes/ar11-par|individual|modelo.png y ar11-360.mp4. Las fotos se llevan a vertical 4:5 sin deformar
  * (par/individual: fondo ampliado y difuminado; modelo: recorte centrado en la oreja) y el vídeo se descompone en fotogramas webp.
  * Escribe public/media/products/ar11-*-<hash>.jpg, public/media/spin/ar11/f01…webp y actualiza src/content/media.generated.json
  * (images.ar11-par|individual|modelo y spin.ar11). Después: npm run seed.
@@ -16,7 +16,7 @@ import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SRC = path.join(root, 'assets-src/aretes');
+const SRC = path.join(root, '../assets-src/aretes');
 const OUT = path.join(root, 'public/media/products');
 const SPIN = path.join(root, 'public/media/spin/ar11');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');

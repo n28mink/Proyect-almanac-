@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 import { CROPS, CURATED_IDS } from './lib/curation.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SRC = process.env.SRC_PHOTOS ?? path.join(root, 'assets-src/photos');
+const SRC = process.env.SRC_PHOTOS ?? path.join(root, '../assets-src/photos');
 const OUT = path.join(root, 'public/media/products');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');
 const source = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/clover-source.json'), 'utf8'));

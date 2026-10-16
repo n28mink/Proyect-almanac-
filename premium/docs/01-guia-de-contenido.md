@@ -29,11 +29,11 @@ Las camisas viven en `scripts/data/shirts.json` (precio único, tallas, stock in
 - **Precio y tallas** (confirmados por la tienda): 12 USD; S, M, L y XL. Cada talla es una variante con su propio stock, editable en el panel. El stock inicial (5 por talla) es provisional.
 - **Material y estampado**: poli-algodón; sublimación de tinta o DTF según el color de la camisa.
 - **Personalización**: no pasa por el carrito ni tiene precio fijo. La ficha muestra «Personalízala» con un botón que abre WhatsApp con la camisa y la talla elegida ya escritas; la tienda envía la cotización.
-- **Fotos**: la foto maestra va en `assets-src/shirts/<id>.jpg` (1000 × 1250, la camisa recortada sobre el fondo salvia de la marca, sin el fondo original). `npm run media:shirts` genera la foto de tienda y el detalle del estampado; luego `npm run seed`.
-- **Añadir una camisa**: recortar la foto sobre el mismo fondo salvia (degradado `#ECF0E9` → `#DDE4DB`, sombra suave), guardarla como `assets-src/shirts/cmNN.jpg`, añadir su entrada en `shirts.json` y correr `npm run media:shirts && npm run seed`.
+- **Fotos**: la foto maestra va en `../assets-src/shirts/<id>.jpg` (1000 × 1250, la camisa recortada sobre el fondo salvia de la marca, sin el fondo original). `npm run media:shirts` genera la foto de tienda y el detalle del estampado; luego `npm run seed`.
+- **Añadir una camisa**: recortar la foto sobre el mismo fondo salvia (degradado `#ECF0E9` → `#DDE4DB`, sombra suave), guardarla como `../assets-src/shirts/cmNN.jpg`, añadir su entrada en `shirts.json` y correr `npm run media:shirts && npm run seed`.
 
 ## Relojes
-- **Fotos**: la foto principal de cada reloj va sobre un solo fondo, verde pálido `#edf4ef` (`--color-bone`) con un brillo central `#fafcf8` y sombra suave. Los recortes (reloj sin fondo, PNG) están en `assets-src/watches/<id>.png`; `npm run media:watches` los monta y actualiza la foto principal. Para un reloj nuevo, añadir su recorte con ese nombre y correr el comando. Las fotos secundarias no se modifican.
+- **Fotos**: la foto principal de cada reloj va sobre un solo fondo, verde pálido `#edf4ef` (`--color-bone`) con un brillo central `#fafcf8` y sombra suave. Los recortes (reloj sin fondo, PNG) están en `../assets-src/watches/<id>.png`; `npm run media:watches` los monta y actualiza la foto principal. Para un reloj nuevo, añadir su recorte con ese nombre y correr el comando. Las fotos secundarias no se modifican.
 
 ## Formas de pago
 

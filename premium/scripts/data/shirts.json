@@ -1,5 +1,5 @@
 {
-  "_note": "Camisas Clover. Fotos maestras en assets-src/shirts/<id>.jpg (1000×1250, ya recortadas sobre el fondo salvia de la marca). detail = recorte cuadrado [left, top, lado] en px de la foto maestra. Precio y tallas confirmados por la tienda; el stock por talla es inicial y se edita en el panel.",
+  "_note": "Camisas Clover. Fotos maestras en ../assets-src/shirts/<id>.jpg (1000×1250, ya recortadas sobre el fondo salvia de la marca). detail = recorte cuadrado [left, top, lado] en px de la foto maestra. Precio y tallas confirmados por la tienda; el stock por talla es inicial y se edita en el panel.",
   "price": 12,
   "sizes": ["S", "M", "L", "XL"],
   "stockPerSize": 5,

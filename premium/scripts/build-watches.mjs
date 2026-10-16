@@ -3,7 +3,7 @@
  * Foto principal de los relojes sobre el fondo de marca.
  *   node scripts/build-watches.mjs
  *
- * Lee los recortes de assets-src/watches/<id>.png (reloj sin fondo) y los monta sobre el mismo fondo en todos:
+ * Lee los recortes de ../assets-src/watches/<id>.png (reloj sin fondo) y los monta sobre el mismo fondo en todos:
  * verde pálido #edf4ef (--color-bone) con un brillo central #fafcf8 que se funde hacia los bordes, más una sombra
  * suave debajo. Escribe public/media/products/<id>-bone.jpg y actualiza sus metadatos en src/content/media.generated.json.
  * Las fotos secundarias (…-2, …-3, detalle) no se tocan.
@@ -14,7 +14,7 @@ import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SRC = path.join(root, 'assets-src/watches');
+const SRC = path.join(root, '../assets-src/watches');
 const OUT = path.join(root, 'public/media/products');
 const MANIFEST = path.join(root, 'src/content/media.generated.json');
 
