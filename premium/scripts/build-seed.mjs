@@ -9,6 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CURATED_IDS, EXCLUDED_REASON, LIFESTYLE } from './lib/curation.mjs';
+import { unhedge } from './lib/hedges.mjs';
 
 const REELS = new Set(['watches', 'rings', 'necklaces', 'earrings', 'bracelets']);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -129,10 +130,9 @@ function buildSpecs(p, t, finish, highlightsEs) {
     const is304 = /304/.test(steel);
     specs.push({
       label: L('Material', 'Material'),
-      value: is304 ? L('Acero inoxidable 304 (según el proveedor)', '304 stainless steel (as stated by the supplier)')
-        : /etiqueta/i.test(steel) ? L('Acero (según etiqueta visible)', 'Steel (as stated on the visible label)')
-        : /^acero$/i.test(steel.trim()) ? L('Acero', 'Steel')
-        : L('Acero inoxidable (según el empaque)', 'Stainless steel (as stated on the packaging)'),
+      value: is304 ? L('Acero inoxidable 304', '304 stainless steel')
+        : /inox/i.test(steel) ? L('Acero inoxidable', 'Stainless steel')
+        : L('Acero', 'Steel'),
     });
   } else {
     specs.push({ label: L('Material', 'Material'), value: L('Metal con acabado ' + FINISH_LABEL[finish].es.toLowerCase(), 'Metal with a ' + FINISH_LABEL[finish].en.toLowerCase() + ' finish') });
@@ -169,9 +169,9 @@ for (const p of source) {
   slugs.add(slug);
 
   // ES: original menos notas de foto, o override explícito.
-  const esHighlights = t.es?.highlights ?? p.detalles.filter((_, i) => !(t.esDrop ?? []).includes(i));
+  const esHighlights = (t.es?.highlights ?? p.detalles.filter((_, i) => !(t.esDrop ?? []).includes(i))).map(unhedge);
   if (esHighlights.length !== t.highlights.length) throw new Error(`Highlights desalineados en ${p.id}`);
-  const highlights = esHighlights.map((es, i) => L(es, t.highlights[i]));
+  const highlights = esHighlights.map((es, i) => L(es, unhedge(t.highlights[i])));
 
   // Imágenes: originales + detalle macro al final (las pulseras con fotos reales llevan su propio orden).
   const names = p.imagenes.map((r) => path.basename(r, path.extname(r)));
@@ -251,8 +251,8 @@ for (const p of source) {
     id: p.id,
     slug,
     name: L(p.nombre, t.name),
-    description: L(p.descripcion, t.description),
-    story: L(p.descripcionLarga, t.story),
+    description: L(unhedge(p.descripcion), unhedge(t.description)),
+    story: L(unhedge(p.descripcionLarga), unhedge(t.story)),
     category,
     categories,
     collection: collectionOf(p.id),
@@ -284,7 +284,7 @@ for (const p of source) {
     } : {}),
     seo: {
       title: L(`${p.nombre} | Clover`, `${t.name} | Clover`),
-      description: L(p.descripcion, t.description),
+      description: L(unhedge(p.descripcion), unhedge(t.description)),
     },
   });
 }
