@@ -181,3 +181,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - Los 54 diseños se regeneran desde `fotos/aretes-originales/` con las fotos en blanco (#F9F9F9) y los vídeos 360 nuevos (960×960, 5 s a 24 fps = 120 fotogramas): se guardan 24 por pieza, repartidos por igual (`SPIN_MAX_FRAMES` para cambiarlo; con 36 cada giro pesa ~1,1 MB frente a ~0,7 MB).
 - El color de las bandas del visor 360° sale del fondo real del fotograma (centro arriba y abajo), no de una esquina.
 - Pulsera pu05: se quita la aclaración «según etiqueta visible» de la descripción, la historia y los detalles (es/en); el material queda como «Acero».
+
+## Material sin aclaraciones de origen
+- La ficha ya no dice «según el empaque», «según la tarjeta del empaque», «según la imagen» ni «según el proveedor» (ni sus versiones en inglés): el material queda como «Acero inoxidable» (o «Acero inoxidable 304»). Afecta a 27 piezas (23 aretes y 4 collares).
+- `scripts/lib/hedges.mjs` (`unhedge`) lo quita al generar el catálogo: la frase suelta de la descripción se elimina (el material ya está en Especificaciones) y el paréntesis de los detalles desaparece. `clover-source.json` no se toca. «Según el color de la tela» en las camisas se mantiene: explica el método de estampado.

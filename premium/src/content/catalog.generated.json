@@ -1664,8 +1664,8 @@
    "en": "Round ribbed silver-tone earrings"
   },
   "description": {
-   "es": "Aretes de botón plateados con relieve acanalado. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Silver-tone stud earrings with a ribbed relief. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón plateados con relieve acanalado.",
+   "en": "Silver-tone stud earrings with a ribbed relief."
   },
   "story": {
    "es": "Un diseño redondo y pulido con textura acanalada que atrapa la luz desde todos los ángulos. Cómodos de botón, son el básico plateado que eleva cualquier conjunto sin esfuerzo.",
@@ -1687,8 +1687,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -1824,8 +1824,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -1835,8 +1835,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -1890,8 +1890,8 @@
     "en": "Round ribbed silver-tone earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón plateados con relieve acanalado. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Silver-tone stud earrings with a ribbed relief. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón plateados con relieve acanalado.",
+    "en": "Silver-tone stud earrings with a ribbed relief."
    }
   }
  },
@@ -1903,8 +1903,8 @@
    "en": "Gold-tone double-drop earrings"
   },
   "description": {
-   "es": "Aretes de botón dorados con doble gota enlazada. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Gold-tone stud earrings with a linked double drop. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón dorados con doble gota enlazada.",
+   "en": "Gold-tone stud earrings with a linked double drop."
   },
   "story": {
    "es": "Dos gotas doradas enlazadas en un diseño fluido y femenino. Su acabado brillante los hace perfectos para ocasiones especiales o para darle un toque dorado al día a día.",
@@ -1926,8 +1926,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -2063,8 +2063,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -2074,8 +2074,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -2129,8 +2129,8 @@
     "en": "Gold-tone double-drop earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón dorados con doble gota enlazada. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Gold-tone stud earrings with a linked double drop. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón dorados con doble gota enlazada.",
+    "en": "Gold-tone stud earrings with a linked double drop."
    }
   }
  },
@@ -4550,12 +4550,12 @@
    "en": "Gold-tone shell earrings"
   },
   "description": {
-   "es": "Aretes de botón en forma de concha marina en tono dorado. Acero inoxidable según el empaque.",
-   "en": "Stud earrings shaped like a seashell in a gold tone. Stainless steel as stated on the packaging."
+   "es": "Aretes de botón en forma de concha marina en tono dorado.",
+   "en": "Stud earrings shaped like a seashell in a gold tone."
   },
   "story": {
-   "es": "Una concha marina dorada con todos sus detalles: el accesorio playero chic que también brilla en la ciudad. Acero inoxidable según el empaque del producto.",
-   "en": "A golden seashell with every detail: the chic beach accessory that also shines in the city. Stainless steel as stated on the product packaging."
+   "es": "Una concha marina dorada con todos sus detalles: el accesorio playero chic que también brilla en la ciudad.",
+   "en": "A golden seashell with every detail: the chic beach accessory that also shines in the city."
   },
   "category": "earrings",
   "categories": [
@@ -4574,8 +4574,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -4711,8 +4711,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -4722,8 +4722,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -4777,8 +4777,8 @@
     "en": "Gold-tone shell earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de concha marina en tono dorado. Acero inoxidable según el empaque.",
-    "en": "Stud earrings shaped like a seashell in a gold tone. Stainless steel as stated on the packaging."
+    "es": "Aretes de botón en forma de concha marina en tono dorado.",
+    "en": "Stud earrings shaped like a seashell in a gold tone."
    }
   }
  },
@@ -5276,12 +5276,12 @@
    "en": "Gold-tone starfish earrings"
   },
   "description": {
-   "es": "Aretes de botón en forma de estrella de mar en tono dorado. Acero inoxidable según el empaque.",
-   "en": "Stud earrings shaped like a starfish in a gold tone. Stainless steel as stated on the packaging."
+   "es": "Aretes de botón en forma de estrella de mar en tono dorado.",
+   "en": "Stud earrings shaped like a starfish in a gold tone."
   },
   "story": {
-   "es": "Una estrella de mar dorada con textura que evoca el fondo del mar. Divertidos y con estilo veraniego, perfectos para darle vida a tus looks. Acero inoxidable según el empaque del producto.",
-   "en": "A textured golden starfish that evokes the sea floor. Fun and summery, perfect for bringing your looks to life. Stainless steel as stated on the product packaging."
+   "es": "Una estrella de mar dorada con textura que evoca el fondo del mar. Divertidos y con estilo veraniego, perfectos para darle vida a tus looks.",
+   "en": "A textured golden starfish that evokes the sea floor. Fun and summery, perfect for bringing your looks to life."
   },
   "category": "earrings",
   "categories": [
@@ -5302,8 +5302,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -5439,8 +5439,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -5450,8 +5450,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -5505,8 +5505,8 @@
     "en": "Gold-tone starfish earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de estrella de mar en tono dorado. Acero inoxidable según el empaque.",
-    "en": "Stud earrings shaped like a starfish in a gold tone. Stainless steel as stated on the packaging."
+    "es": "Aretes de botón en forma de estrella de mar en tono dorado.",
+    "en": "Stud earrings shaped like a starfish in a gold tone."
    }
   }
  },
@@ -5518,12 +5518,12 @@
    "en": "Gold-tone leaf earrings"
   },
   "description": {
-   "es": "Aretes en forma de hoja o pétalo curvo en tono dorado. Acero inoxidable según el empaque.",
-   "en": "Earrings shaped like a curved leaf or petal in a gold tone. Stainless steel as stated on the packaging."
+   "es": "Aretes en forma de hoja o pétalo curvo en tono dorado.",
+   "en": "Earrings shaped like a curved leaf or petal in a gold tone."
   },
   "story": {
-   "es": "Una hoja curva y pulida en tono dorado, de inspiración natural. Elegantes y ligeros a la vista, combinan con todo tu guardarropa. Acero inoxidable según el empaque del producto.",
-   "en": "A curved, polished leaf in a gold tone with a natural inspiration. Elegant and light to the eye, they go with your whole wardrobe. Stainless steel as stated on the product packaging."
+   "es": "Una hoja curva y pulida en tono dorado, de inspiración natural. Elegantes y ligeros a la vista, combinan con todo tu guardarropa.",
+   "en": "A curved, polished leaf in a gold tone with a natural inspiration. Elegant and light to the eye, they go with your whole wardrobe."
   },
   "category": "earrings",
   "categories": [
@@ -5541,8 +5541,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -5678,8 +5678,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -5689,8 +5689,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -5744,8 +5744,8 @@
     "en": "Gold-tone leaf earrings | Clover"
    },
    "description": {
-    "es": "Aretes en forma de hoja o pétalo curvo en tono dorado. Acero inoxidable según el empaque.",
-    "en": "Earrings shaped like a curved leaf or petal in a gold tone. Stainless steel as stated on the packaging."
+    "es": "Aretes en forma de hoja o pétalo curvo en tono dorado.",
+    "en": "Earrings shaped like a curved leaf or petal in a gold tone."
    }
   }
  },
@@ -5996,12 +5996,12 @@
    "en": "Gold-tone nautilus earrings with pearl"
   },
   "description": {
-   "es": "Aretes de botón en forma de nautilo en espiral, en tono dorado texturizado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Nautilus-shaped stud earrings in a textured gold tone with a white pearl at the center. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón en forma de nautilo en espiral, en tono dorado texturizado con perla blanca al centro.",
+   "en": "Nautilus-shaped stud earrings in a textured gold tone with a white pearl at the center."
   },
   "story": {
-   "es": "Una espiral de nautilo dorada de superficie texturizada que abraza una perla blanca. Un diseño rico en detalles, de inspiración marina y muy favorecedor. Acero inoxidable según la tarjeta del empaque.",
-   "en": "A textured golden nautilus spiral that cradles a white pearl. A design rich in detail, with a sea-inspired look that flatters. Stainless steel as stated on the packaging card."
+   "es": "Una espiral de nautilo dorada de superficie texturizada que abraza una perla blanca. Un diseño rico en detalles, de inspiración marina y muy favorecedor.",
+   "en": "A textured golden nautilus spiral that cradles a white pearl. A design rich in detail, with a sea-inspired look that flatters."
   },
   "category": "earrings",
   "categories": [
@@ -6022,8 +6022,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -6163,8 +6163,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -6174,8 +6174,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -6219,8 +6219,8 @@
     "en": "Gold-tone nautilus earrings with pearl | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de nautilo en espiral, en tono dorado texturizado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Nautilus-shaped stud earrings in a textured gold tone with a white pearl at the center. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón en forma de nautilo en espiral, en tono dorado texturizado con perla blanca al centro.",
+    "en": "Nautilus-shaped stud earrings in a textured gold tone with a white pearl at the center."
    }
   }
  },
@@ -6232,12 +6232,12 @@
    "en": "Quilted diamond gold-tone earrings"
   },
   "description": {
-   "es": "Aretes de botón en forma de rombo con cuatro facetas acanaladas en tono dorado. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Stud earrings shaped like a diamond with four ribbed facets in a gold tone. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón en forma de rombo con cuatro facetas acanaladas en tono dorado.",
+   "en": "Stud earrings shaped like a diamond with four ribbed facets in a gold tone."
   },
   "story": {
-   "es": "Cuatro facetas con líneas grabadas forman un rombo acolchado que juega con la luz. Ligeros y versátiles, van con todo. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Four facets with engraved lines form a quilted diamond that plays with the light. Light and versatile, they go with everything. Stainless steel as stated on the packaging card."
+   "es": "Cuatro facetas con líneas grabadas forman un rombo acolchado que juega con la luz. Ligeros y versátiles, van con todo.",
+   "en": "Four facets with engraved lines form a quilted diamond that plays with the light. Light and versatile, they go with everything."
   },
   "category": "earrings",
   "categories": [
@@ -6255,8 +6255,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -6392,8 +6392,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -6403,8 +6403,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -6448,8 +6448,8 @@
     "en": "Quilted diamond gold-tone earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de rombo con cuatro facetas acanaladas en tono dorado. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Stud earrings shaped like a diamond with four ribbed facets in a gold tone. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón en forma de rombo con cuatro facetas acanaladas en tono dorado.",
+    "en": "Stud earrings shaped like a diamond with four ribbed facets in a gold tone."
    }
   }
  },
@@ -6701,12 +6701,12 @@
    "en": "Silver-tone circular knot earrings"
   },
   "description": {
-   "es": "Aretes de botón plateados con diseño de nudo circular pulido. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Silver-tone stud earrings with a polished circular knot design. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón plateados con diseño de nudo circular pulido.",
+   "en": "Silver-tone stud earrings with a polished circular knot design."
   },
   "story": {
-   "es": "Un nudo circular pulido en tono plateado: el minimalismo en su mejor forma. Elegantes sin esfuerzo, para usar todos los días. Acero inoxidable según la tarjeta del empaque.",
-   "en": "A polished circular knot in a silver tone: minimalism at its best. Effortlessly elegant, made for everyday wear. Stainless steel as stated on the packaging card."
+   "es": "Un nudo circular pulido en tono plateado: el minimalismo en su mejor forma. Elegantes sin esfuerzo, para usar todos los días.",
+   "en": "A polished circular knot in a silver tone: minimalism at its best. Effortlessly elegant, made for everyday wear."
   },
   "category": "earrings",
   "categories": [
@@ -6725,8 +6725,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -6862,8 +6862,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -6873,8 +6873,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -6918,8 +6918,8 @@
     "en": "Silver-tone circular knot earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón plateados con diseño de nudo circular pulido. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Silver-tone stud earrings with a polished circular knot design. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón plateados con diseño de nudo circular pulido.",
+    "en": "Silver-tone stud earrings with a polished circular knot design."
    }
   }
  },
@@ -6931,12 +6931,12 @@
    "en": "Rectangular gold-tone earrings with engraved lines"
   },
   "description": {
-   "es": "Aretes de botón rectangulares en tono dorado con líneas horizontales grabadas. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Rectangular stud earrings in a gold tone with horizontal engraved lines. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón rectangulares en tono dorado con líneas horizontales grabadas.",
+   "en": "Rectangular stud earrings in a gold tone with horizontal engraved lines."
   },
   "story": {
-   "es": "Rectángulos dorados con líneas horizontales grabadas que crean un juego de luces sutil. Geométricos y modernos, perfectos para un estilo pulido. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Gold-tone rectangles with horizontal engraved lines that create a subtle play of light. Geometric and modern, perfect for a polished style. Stainless steel as stated on the packaging card."
+   "es": "Rectángulos dorados con líneas horizontales grabadas que crean un juego de luces sutil. Geométricos y modernos, perfectos para un estilo pulido.",
+   "en": "Gold-tone rectangles with horizontal engraved lines that create a subtle play of light. Geometric and modern, perfect for a polished style."
   },
   "category": "earrings",
   "categories": [
@@ -6954,8 +6954,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -7091,8 +7091,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -7102,8 +7102,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -7147,8 +7147,8 @@
     "en": "Rectangular gold-tone earrings with engraved lines | Clover"
    },
    "description": {
-    "es": "Aretes de botón rectangulares en tono dorado con líneas horizontales grabadas. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Rectangular stud earrings in a gold tone with horizontal engraved lines. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón rectangulares en tono dorado con líneas horizontales grabadas.",
+    "en": "Rectangular stud earrings in a gold tone with horizontal engraved lines."
    }
   }
  },
@@ -7160,12 +7160,12 @@
    "en": "Round gold-tone earrings with relief and pearl"
   },
   "description": {
-   "es": "Aretes de botón redondos en tono dorado con relieve geométrico y perla central. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Round stud earrings in a gold tone with a geometric relief and a pearl at the center. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón redondos en tono dorado con relieve geométrico y perla central.",
+   "en": "Round stud earrings in a gold tone with a geometric relief and a pearl at the center."
   },
   "story": {
-   "es": "Un botón redondo dorado con relieve geométrico que enmarca una perla blanca: textura y suavidad en una sola pieza. Sofisticados sin excesos. Acero inoxidable según la tarjeta del empaque.",
-   "en": "A round gold-tone stud with a geometric relief framing a white pearl: texture and softness in one piece. Sophisticated without excess. Stainless steel as stated on the packaging card."
+   "es": "Un botón redondo dorado con relieve geométrico que enmarca una perla blanca: textura y suavidad en una sola pieza. Sofisticados sin excesos.",
+   "en": "A round gold-tone stud with a geometric relief framing a white pearl: texture and softness in one piece. Sophisticated without excess."
   },
   "category": "earrings",
   "categories": [
@@ -7186,8 +7186,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -7327,8 +7327,8 @@
     "en": "White center pearl"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -7338,8 +7338,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -7383,8 +7383,8 @@
     "en": "Round gold-tone earrings with relief and pearl | Clover"
    },
    "description": {
-    "es": "Aretes de botón redondos en tono dorado con relieve geométrico y perla central. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Round stud earrings in a gold tone with a geometric relief and a pearl at the center. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón redondos en tono dorado con relieve geométrico y perla central.",
+    "en": "Round stud earrings in a gold tone with a geometric relief and a pearl at the center."
    }
   }
  },
@@ -7396,12 +7396,12 @@
    "en": "Hammered triangular gold-tone earrings with pearl"
   },
   "description": {
-   "es": "Aretes de botón triangulares en tono dorado martillado con perla en la base. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Triangular stud earrings in a hammered gold tone with a pearl at the base. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón triangulares en tono dorado martillado con perla en la base.",
+   "en": "Triangular stud earrings in a hammered gold tone with a pearl at the base."
   },
   "story": {
-   "es": "Triángulos dorados de superficie martillada con una perla blanca en la base: geometría con un toque suave. Originales y elegantes a la vez. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Gold-tone triangles with a hammered surface and a white pearl at the base: geometry with a soft touch. Original and elegant at once. Stainless steel as stated on the packaging card."
+   "es": "Triángulos dorados de superficie martillada con una perla blanca en la base: geometría con un toque suave. Originales y elegantes a la vez.",
+   "en": "Gold-tone triangles with a hammered surface and a white pearl at the base: geometry with a soft touch. Original and elegant at once."
   },
   "category": "earrings",
   "categories": [
@@ -7422,8 +7422,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -7563,8 +7563,8 @@
     "en": "White pearl at the base"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -7574,8 +7574,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -7619,8 +7619,8 @@
     "en": "Hammered triangular gold-tone earrings with pearl | Clover"
    },
    "description": {
-    "es": "Aretes de botón triangulares en tono dorado martillado con perla en la base. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Triangular stud earrings in a hammered gold tone with a pearl at the base. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón triangulares en tono dorado martillado con perla en la base.",
+    "en": "Triangular stud earrings in a hammered gold tone with a pearl at the base."
    }
   }
  },
@@ -7632,12 +7632,12 @@
    "en": "Hollow oval gold-tone earrings"
   },
   "description": {
-   "es": "Aretes ovalados huecos en tono dorado pulido. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Hollow oval earrings in a polished gold tone. Stainless steel as stated on the packaging card."
+   "es": "Aretes ovalados huecos en tono dorado pulido.",
+   "en": "Hollow oval earrings in a polished gold tone."
   },
   "story": {
-   "es": "Óvalos huecos de gran presencia pero visualmente ligeros, en dorado pulido. El clásico arete llamativo que estiliza el rostro. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Hollow ovals with great presence yet visually light, in a polished gold tone. The classic statement earring that flatters the face. Stainless steel as stated on the packaging card."
+   "es": "Óvalos huecos de gran presencia pero visualmente ligeros, en dorado pulido. El clásico arete llamativo que estiliza el rostro.",
+   "en": "Hollow ovals with great presence yet visually light, in a polished gold tone. The classic statement earring that flatters the face."
   },
   "category": "earrings",
   "categories": [
@@ -7653,8 +7653,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -7790,8 +7790,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -7801,8 +7801,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -7856,8 +7856,8 @@
     "en": "Hollow oval gold-tone earrings | Clover"
    },
    "description": {
-    "es": "Aretes ovalados huecos en tono dorado pulido. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Hollow oval earrings in a polished gold tone. Stainless steel as stated on the packaging card."
+    "es": "Aretes ovalados huecos en tono dorado pulido.",
+    "en": "Hollow oval earrings in a polished gold tone."
    }
   }
  },
@@ -8836,12 +8836,12 @@
    "en": "Rectangular silver-tone earrings with beaded border"
   },
   "description": {
-   "es": "Aretes de botón rectangulares lisos en tono plateado con borde de bolitas. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Smooth rectangular stud earrings in a silver tone with a beaded border. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón rectangulares lisos en tono plateado con borde de bolitas.",
+   "en": "Smooth rectangular stud earrings in a silver tone with a beaded border."
   },
   "story": {
-   "es": "Rectángulos plateados de superficie lisa enmarcados por un delicado borde de bolitas. Pulidos y elegantes, ideales para un look de oficina impecable. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Smooth silver-tone rectangles framed by a delicate beaded border. Polished and elegant, ideal for an impeccable office look. Stainless steel as stated on the packaging card."
+   "es": "Rectángulos plateados de superficie lisa enmarcados por un delicado borde de bolitas. Pulidos y elegantes, ideales para un look de oficina impecable.",
+   "en": "Smooth silver-tone rectangles framed by a delicate beaded border. Polished and elegant, ideal for an impeccable office look."
   },
   "category": "earrings",
   "categories": [
@@ -8859,8 +8859,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -8996,8 +8996,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -9007,8 +9007,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -9052,8 +9052,8 @@
     "en": "Rectangular silver-tone earrings with beaded border | Clover"
    },
    "description": {
-    "es": "Aretes de botón rectangulares lisos en tono plateado con borde de bolitas. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Smooth rectangular stud earrings in a silver tone with a beaded border. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón rectangulares lisos en tono plateado con borde de bolitas.",
+    "en": "Smooth rectangular stud earrings in a silver tone with a beaded border."
    }
   }
  },
@@ -9305,12 +9305,12 @@
    "en": "Fan-shaped silver-tone earrings"
   },
   "description": {
-   "es": "Aretes de botón en forma de abanico o concha con estrías radiantes en tono plateado. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Stud earrings shaped like a fan or shell with radiating ridges in a silver tone. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón en forma de abanico o concha con estrías radiantes en tono plateado.",
+   "en": "Stud earrings shaped like a fan or shell with radiating ridges in a silver tone."
   },
   "story": {
-   "es": "Un abanico plateado de estrías radiantes que capturan la luz como una concha al sol. Delicados y con un aire marino muy chic. Acero inoxidable según la tarjeta del empaque.",
-   "en": "A silver-tone fan with radiating ridges that catch the light like a shell in the sun. Delicate, with a very chic marine air. Stainless steel as stated on the packaging card."
+   "es": "Un abanico plateado de estrías radiantes que capturan la luz como una concha al sol. Delicados y con un aire marino muy chic.",
+   "en": "A silver-tone fan with radiating ridges that catch the light like a shell in the sun. Delicate, with a very chic marine air."
   },
   "category": "earrings",
   "categories": [
@@ -9329,8 +9329,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -9466,8 +9466,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -9477,8 +9477,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -9522,8 +9522,8 @@
     "en": "Fan-shaped silver-tone earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de abanico o concha con estrías radiantes en tono plateado. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Stud earrings shaped like a fan or shell with radiating ridges in a silver tone. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón en forma de abanico o concha con estrías radiantes en tono plateado.",
+    "en": "Stud earrings shaped like a fan or shell with radiating ridges in a silver tone."
    }
   }
  },
@@ -9774,12 +9774,12 @@
    "en": "Gold-tone shell-style flower earrings"
   },
   "description": {
-   "es": "Aretes de botón en forma de flor redondeada tipo concha con estrías radiantes en tono dorado. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Stud earrings shaped like a rounded shell-style flower with radiating ridges in a gold tone. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón en forma de flor redondeada tipo concha con estrías radiantes en tono dorado.",
+   "en": "Stud earrings shaped like a rounded shell-style flower with radiating ridges in a gold tone."
   },
   "story": {
-   "es": "Pétalos redondeados con estrías radiantes en tono dorado, como una flor marina. Cálidos y luminosos, aportan un brillo natural al rostro. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Rounded petals with radiating ridges in a gold tone, like a sea flower. Warm and luminous, they add a natural glow to the face. Stainless steel as stated on the packaging card."
+   "es": "Pétalos redondeados con estrías radiantes en tono dorado, como una flor marina. Cálidos y luminosos, aportan un brillo natural al rostro.",
+   "en": "Rounded petals with radiating ridges in a gold tone, like a sea flower. Warm and luminous, they add a natural glow to the face."
   },
   "category": "earrings",
   "categories": [
@@ -9799,8 +9799,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -9936,8 +9936,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -9947,8 +9947,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -9992,8 +9992,8 @@
     "en": "Gold-tone shell-style flower earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de flor redondeada tipo concha con estrías radiantes en tono dorado. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Stud earrings shaped like a rounded shell-style flower with radiating ridges in a gold tone. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón en forma de flor redondeada tipo concha con estrías radiantes en tono dorado.",
+    "en": "Stud earrings shaped like a rounded shell-style flower with radiating ridges in a gold tone."
    }
   }
  },
@@ -10976,12 +10976,12 @@
    "en": "Wide silver-tone hoops"
   },
   "description": {
-   "es": "Argollas anchas en tono plateado con curva suave. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Wide hoops in a silver tone with a soft curve. Stainless steel as stated on the packaging card."
+   "es": "Argollas anchas en tono plateado con curva suave.",
+   "en": "Wide hoops in a silver tone with a soft curve."
   },
   "story": {
-   "es": "Anchas, lisas y con una curva suave muy favorecedora: la argolla plateada definitiva para un look pulido y contemporáneo. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Wide, smooth and with a soft, flattering curve: the definitive silver-tone hoop for a polished, contemporary look. Stainless steel as stated on the packaging card."
+   "es": "Anchas, lisas y con una curva suave muy favorecedora: la argolla plateada definitiva para un look pulido y contemporáneo.",
+   "en": "Wide, smooth and with a soft, flattering curve: the definitive silver-tone hoop for a polished, contemporary look."
   },
   "category": "earrings",
   "categories": [
@@ -11000,8 +11000,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -11137,8 +11137,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -11148,8 +11148,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -11193,8 +11193,8 @@
     "en": "Wide silver-tone hoops | Clover"
    },
    "description": {
-    "es": "Argollas anchas en tono plateado con curva suave. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Wide hoops in a silver tone with a soft curve. Stainless steel as stated on the packaging card."
+    "es": "Argollas anchas en tono plateado con curva suave.",
+    "en": "Wide hoops in a silver tone with a soft curve."
    }
   }
  },
@@ -11928,12 +11928,12 @@
    "en": "Silver-tone drop earrings"
   },
   "description": {
-   "es": "Aretes en forma de gota en tono plateado pulido. Acero inoxidable según el empaque.",
-   "en": "Drop-shaped earrings in a polished silver tone. Stainless steel as stated on the packaging."
+   "es": "Aretes en forma de gota en tono plateado pulido.",
+   "en": "Drop-shaped earrings in a polished silver tone."
   },
   "story": {
-   "es": "Una gota plateada pulida de líneas puras: elegancia simple que estiliza y aporta luz al rostro. El básico que va con absolutamente todo. Acero inoxidable según el empaque.",
-   "en": "A polished silver-tone drop with pure lines: simple elegance that flatters and brings light to the face. The basic that goes with absolutely everything. Stainless steel as stated on the packaging."
+   "es": "Una gota plateada pulida de líneas puras: elegancia simple que estiliza y aporta luz al rostro. El básico que va con absolutamente todo.",
+   "en": "A polished silver-tone drop with pure lines: simple elegance that flatters and brings light to the face. The basic that goes with absolutely everything."
   },
   "category": "earrings",
   "categories": [
@@ -11949,8 +11949,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -12086,8 +12086,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -12097,8 +12097,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -12152,8 +12152,8 @@
     "en": "Silver-tone drop earrings | Clover"
    },
    "description": {
-    "es": "Aretes en forma de gota en tono plateado pulido. Acero inoxidable según el empaque.",
-    "en": "Drop-shaped earrings in a polished silver tone. Stainless steel as stated on the packaging."
+    "es": "Aretes en forma de gota en tono plateado pulido.",
+    "en": "Drop-shaped earrings in a polished silver tone."
    }
   }
  },
@@ -12402,12 +12402,12 @@
    "en": "Domed round silver-tone earrings"
   },
   "description": {
-   "es": "Aretes de botón redondos abombados en tono plateado pulido. Acero inoxidable según el empaque.",
-   "en": "Round domed stud earrings in a polished silver tone. Stainless steel as stated on the packaging."
+   "es": "Aretes de botón redondos abombados en tono plateado pulido.",
+   "en": "Round domed stud earrings in a polished silver tone."
   },
   "story": {
-   "es": "Botones redondos abombados en plateado espejo: simples, brillantes y perfectos para todos los días. El clásico que combina con todo tu joyero. Acero inoxidable según el empaque.",
-   "en": "Round domed studs in a mirror-like silver tone: simple, shiny and perfect for every day. The classic that goes with your whole jewelry box. Stainless steel as stated on the packaging."
+   "es": "Botones redondos abombados en plateado espejo: simples, brillantes y perfectos para todos los días. El clásico que combina con todo tu joyero.",
+   "en": "Round domed studs in a mirror-like silver tone: simple, shiny and perfect for every day. The classic that goes with your whole jewelry box."
   },
   "category": "earrings",
   "categories": [
@@ -12425,8 +12425,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -12562,8 +12562,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -12573,8 +12573,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -12628,8 +12628,8 @@
     "en": "Domed round silver-tone earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón redondos abombados en tono plateado pulido. Acero inoxidable según el empaque.",
-    "en": "Round domed stud earrings in a polished silver tone. Stainless steel as stated on the packaging."
+    "es": "Aretes de botón redondos abombados en tono plateado pulido.",
+    "en": "Round domed stud earrings in a polished silver tone."
    }
   }
  },
@@ -12880,12 +12880,12 @@
    "en": "Hammered heart-shaped gold-tone earrings"
   },
   "description": {
-   "es": "Aretes en forma de corazón en tono dorado con textura martillada. Acero inoxidable según el empaque.",
-   "en": "Heart-shaped earrings in a gold tone with a hammered texture. Stainless steel as stated on the packaging."
+   "es": "Aretes en forma de corazón en tono dorado con textura martillada.",
+   "en": "Heart-shaped earrings in a gold tone with a hammered texture."
   },
   "story": {
-   "es": "Corazones dorados con textura martillada que les da un acabado artesanal y lleno de brillo. Románticos con carácter. Acero inoxidable según el empaque.",
-   "en": "Gold-tone hearts with a hammered texture that gives them a handcrafted, shiny finish. Romantic with character. Stainless steel as stated on the packaging."
+   "es": "Corazones dorados con textura martillada que les da un acabado artesanal y lleno de brillo. Románticos con carácter.",
+   "en": "Gold-tone hearts with a hammered texture that gives them a handcrafted, shiny finish. Romantic with character."
   },
   "category": "earrings",
   "categories": [
@@ -12905,8 +12905,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -13042,8 +13042,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -13053,8 +13053,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -13108,8 +13108,8 @@
     "en": "Hammered heart-shaped gold-tone earrings | Clover"
    },
    "description": {
-    "es": "Aretes en forma de corazón en tono dorado con textura martillada. Acero inoxidable según el empaque.",
-    "en": "Heart-shaped earrings in a gold tone with a hammered texture. Stainless steel as stated on the packaging."
+    "es": "Aretes en forma de corazón en tono dorado con textura martillada.",
+    "en": "Heart-shaped earrings in a gold tone with a hammered texture."
    }
   }
  },
@@ -13121,12 +13121,12 @@
    "en": "Silver-tone daisy flower earrings"
   },
   "description": {
-   "es": "Aretes en forma de flor margarita en tono plateado. Acero inoxidable según el empaque.",
-   "en": "Daisy-shaped earrings in a silver tone. Stainless steel as stated on the packaging."
+   "es": "Aretes en forma de flor margarita en tono plateado.",
+   "en": "Daisy-shaped earrings in a silver tone."
   },
   "story": {
-   "es": "Una margarita plateada de pétalos delicados: fresca, juvenil y siempre alegre. El toque floral perfecto para la primavera de todos los días. Acero inoxidable según el empaque.",
-   "en": "A silver-tone daisy with delicate petals: fresh, youthful and always cheerful. The perfect floral touch for everyday spring. Stainless steel as stated on the packaging."
+   "es": "Una margarita plateada de pétalos delicados: fresca, juvenil y siempre alegre. El toque floral perfecto para la primavera de todos los días.",
+   "en": "A silver-tone daisy with delicate petals: fresh, youthful and always cheerful. The perfect floral touch for everyday spring."
   },
   "category": "earrings",
   "categories": [
@@ -13144,8 +13144,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -13281,8 +13281,8 @@
     "en": "Pair included"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -13292,8 +13292,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -13347,8 +13347,8 @@
     "en": "Silver-tone daisy flower earrings | Clover"
    },
    "description": {
-    "es": "Aretes en forma de flor margarita en tono plateado. Acero inoxidable según el empaque.",
-    "en": "Daisy-shaped earrings in a silver tone. Stainless steel as stated on the packaging."
+    "es": "Aretes en forma de flor margarita en tono plateado.",
+    "en": "Daisy-shaped earrings in a silver tone."
    }
   }
  },
@@ -13360,12 +13360,12 @@
    "en": "Square silver-tone earrings with relief"
   },
   "description": {
-   "es": "Aretes de botón cuadrados en tono plateado con relieve. Acero inoxidable según el empaque.",
-   "en": "Square stud earrings in a silver tone with a relief. Stainless steel as stated on the packaging."
+   "es": "Aretes de botón cuadrados en tono plateado con relieve.",
+   "en": "Square stud earrings in a silver tone with a relief."
   },
   "story": {
-   "es": "Cuadrados plateados con relieve que aporta profundidad y brillo: un diseño geométrico elegante para un estilo contemporáneo. Acero inoxidable según el empaque.",
-   "en": "Silver-tone squares with a relief that adds depth and shine: an elegant geometric design for a contemporary style. Stainless steel as stated on the packaging."
+   "es": "Cuadrados plateados con relieve que aporta profundidad y brillo: un diseño geométrico elegante para un estilo contemporáneo.",
+   "en": "Silver-tone squares with a relief that adds depth and shine: an elegant geometric design for a contemporary style."
   },
   "category": "earrings",
   "categories": [
@@ -13383,8 +13383,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -13520,8 +13520,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable (según empaque)",
-    "en": "Stainless steel (as stated on the packaging)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -13531,8 +13531,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -13576,8 +13576,8 @@
     "en": "Square silver-tone earrings with relief | Clover"
    },
    "description": {
-    "es": "Aretes de botón cuadrados en tono plateado con relieve. Acero inoxidable según el empaque.",
-    "en": "Square stud earrings in a silver tone with a relief. Stainless steel as stated on the packaging."
+    "es": "Aretes de botón cuadrados en tono plateado con relieve.",
+    "en": "Square stud earrings in a silver tone with a relief."
    }
   }
  },
@@ -13589,12 +13589,12 @@
    "en": "Round ribbed gold-tone earrings with pearl"
   },
   "description": {
-   "es": "Aretes de botón redondos acanalados en tono dorado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Round ribbed stud earrings in a gold tone with a white pearl at the center. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón redondos acanalados en tono dorado con perla blanca al centro.",
+   "en": "Round ribbed stud earrings in a gold tone with a white pearl at the center."
   },
   "story": {
-   "es": "Un sol dorado acanalado con una perla blanca en el centro: radiante y elegante a partes iguales. Una pieza que ilumina cualquier look. Acero inoxidable según la tarjeta del empaque.",
-   "en": "A ribbed golden sun with a white pearl at the center: radiant and elegant in equal parts. A piece that lights up any look. Stainless steel as stated on the packaging card."
+   "es": "Un sol dorado acanalado con una perla blanca en el centro: radiante y elegante a partes iguales. Una pieza que ilumina cualquier look.",
+   "en": "A ribbed golden sun with a white pearl at the center: radiant and elegant in equal parts. A piece that lights up any look."
   },
   "category": "earrings",
   "categories": [
@@ -13615,8 +13615,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -13756,8 +13756,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -13767,8 +13767,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -13812,8 +13812,8 @@
     "en": "Round ribbed gold-tone earrings with pearl | Clover"
    },
    "description": {
-    "es": "Aretes de botón redondos acanalados en tono dorado con perla blanca al centro. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Round ribbed stud earrings in a gold tone with a white pearl at the center. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón redondos acanalados en tono dorado con perla blanca al centro.",
+    "en": "Round ribbed stud earrings in a gold tone with a white pearl at the center."
    }
   }
  },
@@ -13825,12 +13825,12 @@
    "en": "Smooth-petal gold-tone flower earrings"
   },
   "description": {
-   "es": "Aretes de botón en forma de flor de pétalos lisos y brillantes en tono dorado. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Stud earrings shaped like a flower with smooth, shiny petals in a gold tone. Stainless steel as stated on the packaging card."
+   "es": "Aretes de botón en forma de flor de pétalos lisos y brillantes en tono dorado.",
+   "en": "Stud earrings shaped like a flower with smooth, shiny petals in a gold tone."
   },
   "story": {
-   "es": "Pétalos dorados lisos y brillantes alrededor de un centro marcado, en un diseño de botón alegre y versátil. Sencillos, luminosos y fáciles de combinar. Acero inoxidable según la tarjeta del empaque.",
-   "en": "Smooth, shiny gold-tone petals around a defined center in a cheerful, versatile stud design. Simple, luminous and easy to pair. Stainless steel as stated on the packaging card."
+   "es": "Pétalos dorados lisos y brillantes alrededor de un centro marcado, en un diseño de botón alegre y versátil. Sencillos, luminosos y fáciles de combinar.",
+   "en": "Smooth, shiny gold-tone petals around a defined center in a cheerful, versatile stud design. Simple, luminous and easy to pair."
   },
   "category": "earrings",
   "categories": [
@@ -13849,8 +13849,8 @@
   "price": 1850,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable (según el empaque)",
-   "en": "Stainless steel (as stated on the packaging)"
+   "es": "Acero inoxidable",
+   "en": "Stainless steel"
   },
   "color": [
    {
@@ -13986,8 +13986,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable (según tarjeta del empaque)",
-    "en": "Stainless steel (as stated on the packaging card)"
+    "es": "Acero inoxidable",
+    "en": "Stainless steel"
    }
   ],
   "specifications": [
@@ -13997,8 +13997,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable (según el empaque)",
-     "en": "Stainless steel (as stated on the packaging)"
+     "es": "Acero inoxidable",
+     "en": "Stainless steel"
     }
    },
    {
@@ -14042,8 +14042,8 @@
     "en": "Smooth-petal gold-tone flower earrings | Clover"
    },
    "description": {
-    "es": "Aretes de botón en forma de flor de pétalos lisos y brillantes en tono dorado. Acero inoxidable según la tarjeta del empaque.",
-    "en": "Stud earrings shaped like a flower with smooth, shiny petals in a gold tone. Stainless steel as stated on the packaging card."
+    "es": "Aretes de botón en forma de flor de pétalos lisos y brillantes en tono dorado.",
+    "en": "Stud earrings shaped like a flower with smooth, shiny petals in a gold tone."
    }
   }
  },
@@ -16168,12 +16168,12 @@
    "en": "Silver-tone necklace with hollow butterfly"
   },
   "description": {
-   "es": "Collar plateado con dije de mariposa hueca sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-   "en": "Silver-tone necklace with a hollow butterfly pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+   "es": "Collar plateado con dije de mariposa hueca sobre cadena de eslabones con bolitas.",
+   "en": "Silver-tone necklace with a hollow butterfly pendant on a bead-link chain."
   },
   "story": {
-   "es": "Una mariposa hueca de líneas fluidas en tono plateado, sobre una cadena de eslabones con bolitas. Ligera a la vista y llena de movimiento. Acero inoxidable 304 según la imagen del producto.",
-   "en": "A hollow butterfly of flowing lines in a silver tone, on a chain of links with beads. Light to the eye and full of movement. 304 stainless steel as stated by the supplier."
+   "es": "Una mariposa hueca de líneas fluidas en tono plateado, sobre una cadena de eslabones con bolitas. Ligera a la vista y llena de movimiento.",
+   "en": "A hollow butterfly of flowing lines in a silver tone, on a chain of links with beads. Light to the eye and full of movement."
   },
   "category": "necklaces",
   "categories": [
@@ -16193,8 +16193,8 @@
   "price": 2490,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable 304 (según el proveedor)",
-   "en": "304 stainless steel (as stated by the supplier)"
+   "es": "Acero inoxidable 304",
+   "en": "304 stainless steel"
   },
   "color": [
    {
@@ -16263,8 +16263,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable 304 (según imagen del producto)",
-    "en": "304 stainless steel (as stated by the supplier)"
+    "es": "Acero inoxidable 304",
+    "en": "304 stainless steel"
    }
   ],
   "specifications": [
@@ -16274,8 +16274,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable 304 (según el proveedor)",
-     "en": "304 stainless steel (as stated by the supplier)"
+     "es": "Acero inoxidable 304",
+     "en": "304 stainless steel"
     }
    },
    {
@@ -16319,8 +16319,8 @@
     "en": "Silver-tone necklace with hollow butterfly | Clover"
    },
    "description": {
-    "es": "Collar plateado con dije de mariposa hueca sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-    "en": "Silver-tone necklace with a hollow butterfly pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+    "es": "Collar plateado con dije de mariposa hueca sobre cadena de eslabones con bolitas.",
+    "en": "Silver-tone necklace with a hollow butterfly pendant on a bead-link chain."
    }
   }
  },
@@ -16501,12 +16501,12 @@
    "en": "Gold-tone necklace with hollow butterfly"
   },
   "description": {
-   "es": "Collar dorado con dije de mariposa hueca sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-   "en": "Gold-tone necklace with a hollow butterfly pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+   "es": "Collar dorado con dije de mariposa hueca sobre cadena de eslabones con bolitas.",
+   "en": "Gold-tone necklace with a hollow butterfly pendant on a bead-link chain."
   },
   "story": {
-   "es": "La versión dorada de la mariposa hueca: líneas fluidas y brillo cálido sobre una cadena de eslabones con bolitas. Un diseño ligero con mucha personalidad. Acero inoxidable 304 según la imagen del producto.",
-   "en": "The gold-tone version of the hollow butterfly: flowing lines and warm shine on a chain of links with beads. A light design with plenty of personality. 304 stainless steel as stated by the supplier."
+   "es": "La versión dorada de la mariposa hueca: líneas fluidas y brillo cálido sobre una cadena de eslabones con bolitas. Un diseño ligero con mucha personalidad.",
+   "en": "The gold-tone version of the hollow butterfly: flowing lines and warm shine on a chain of links with beads. A light design with plenty of personality."
   },
   "category": "necklaces",
   "categories": [
@@ -16527,8 +16527,8 @@
   "price": 2490,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable 304 (según el proveedor)",
-   "en": "304 stainless steel (as stated by the supplier)"
+   "es": "Acero inoxidable 304",
+   "en": "304 stainless steel"
   },
   "color": [
    {
@@ -16597,8 +16597,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable 304 (según imagen del producto)",
-    "en": "304 stainless steel (as stated by the supplier)"
+    "es": "Acero inoxidable 304",
+    "en": "304 stainless steel"
    }
   ],
   "specifications": [
@@ -16608,8 +16608,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable 304 (según el proveedor)",
-     "en": "304 stainless steel (as stated by the supplier)"
+     "es": "Acero inoxidable 304",
+     "en": "304 stainless steel"
     }
    },
    {
@@ -16653,8 +16653,8 @@
     "en": "Gold-tone necklace with hollow butterfly | Clover"
    },
    "description": {
-    "es": "Collar dorado con dije de mariposa hueca sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-    "en": "Gold-tone necklace with a hollow butterfly pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+    "es": "Collar dorado con dije de mariposa hueca sobre cadena de eslabones con bolitas.",
+    "en": "Gold-tone necklace with a hollow butterfly pendant on a bead-link chain."
    }
   }
  },
@@ -16837,12 +16837,12 @@
    "en": "Gold-tone necklace with flower pendant"
   },
   "description": {
-   "es": "Collar dorado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-   "en": "Gold-tone necklace with a 5-petal flower pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+   "es": "Collar dorado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas.",
+   "en": "Gold-tone necklace with a 5-petal flower pendant on a bead-link chain."
   },
   "story": {
-   "es": "Una flor dorada de cinco pétalos sobre una cadena de eslabones con bolitas: dulce y luminosa, con un aire primaveral que alegra cualquier conjunto. Acero inoxidable 304 según la imagen del producto.",
-   "en": "A gold-tone five-petal flower on a chain of links with beads: sweet and luminous, with a springtime air that brightens any outfit. 304 stainless steel as stated by the supplier."
+   "es": "Una flor dorada de cinco pétalos sobre una cadena de eslabones con bolitas: dulce y luminosa, con un aire primaveral que alegra cualquier conjunto.",
+   "en": "A gold-tone five-petal flower on a chain of links with beads: sweet and luminous, with a springtime air that brightens any outfit."
   },
   "category": "necklaces",
   "categories": [
@@ -16861,8 +16861,8 @@
   "price": 2490,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable 304 (según el proveedor)",
-   "en": "304 stainless steel (as stated by the supplier)"
+   "es": "Acero inoxidable 304",
+   "en": "304 stainless steel"
   },
   "color": [
    {
@@ -16931,8 +16931,8 @@
     "en": "Gold tone"
    },
    {
-    "es": "Acero inoxidable 304 (según imagen del producto)",
-    "en": "304 stainless steel (as stated by the supplier)"
+    "es": "Acero inoxidable 304",
+    "en": "304 stainless steel"
    }
   ],
   "specifications": [
@@ -16942,8 +16942,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable 304 (según el proveedor)",
-     "en": "304 stainless steel (as stated by the supplier)"
+     "es": "Acero inoxidable 304",
+     "en": "304 stainless steel"
     }
    },
    {
@@ -16987,8 +16987,8 @@
     "en": "Gold-tone necklace with flower pendant | Clover"
    },
    "description": {
-    "es": "Collar dorado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-    "en": "Gold-tone necklace with a 5-petal flower pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+    "es": "Collar dorado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas.",
+    "en": "Gold-tone necklace with a 5-petal flower pendant on a bead-link chain."
    }
   }
  },
@@ -17000,12 +17000,12 @@
    "en": "Silver-tone necklace with flower pendant"
   },
   "description": {
-   "es": "Collar plateado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-   "en": "Silver-tone necklace with a 5-petal flower pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+   "es": "Collar plateado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas.",
+   "en": "Silver-tone necklace with a 5-petal flower pendant on a bead-link chain."
   },
   "story": {
-   "es": "La versión plateada de la flor de cinco pétalos: fresca y delicada sobre una cadena de eslabones con bolitas. Un clásico floral con acabado moderno. Acero inoxidable 304 según la imagen del producto.",
-   "en": "The silver-tone version of the five-petal flower: fresh and delicate on a chain of links with beads. A floral classic with a modern finish. 304 stainless steel as stated by the supplier."
+   "es": "La versión plateada de la flor de cinco pétalos: fresca y delicada sobre una cadena de eslabones con bolitas. Un clásico floral con acabado moderno.",
+   "en": "The silver-tone version of the five-petal flower: fresh and delicate on a chain of links with beads. A floral classic with a modern finish."
   },
   "category": "necklaces",
   "categories": [
@@ -17023,8 +17023,8 @@
   "price": 2490,
   "currency": "USD",
   "material": {
-   "es": "Acero inoxidable 304 (según el proveedor)",
-   "en": "304 stainless steel (as stated by the supplier)"
+   "es": "Acero inoxidable 304",
+   "en": "304 stainless steel"
   },
   "color": [
    {
@@ -17093,8 +17093,8 @@
     "en": "Silver tone"
    },
    {
-    "es": "Acero inoxidable 304 (según imagen del producto)",
-    "en": "304 stainless steel (as stated by the supplier)"
+    "es": "Acero inoxidable 304",
+    "en": "304 stainless steel"
    }
   ],
   "specifications": [
@@ -17104,8 +17104,8 @@
      "en": "Material"
     },
     "value": {
-     "es": "Acero inoxidable 304 (según el proveedor)",
-     "en": "304 stainless steel (as stated by the supplier)"
+     "es": "Acero inoxidable 304",
+     "en": "304 stainless steel"
     }
    },
    {
@@ -17149,8 +17149,8 @@
     "en": "Silver-tone necklace with flower pendant | Clover"
    },
    "description": {
-    "es": "Collar plateado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas. Acero inoxidable 304 según la imagen.",
-    "en": "Silver-tone necklace with a 5-petal flower pendant on a bead-link chain. 304 stainless steel as stated by the supplier."
+    "es": "Collar plateado con dije de flor de 5 pétalos sobre cadena de eslabones con bolitas.",
+    "en": "Silver-tone necklace with a 5-petal flower pendant on a bead-link chain."
    }
   }
  },
