@@ -34,10 +34,10 @@ export function Wordmark({ className }: { className?: string }) {
 export function Logo({ className, subtitle = true, stacked = false }: { className?: string; subtitle?: boolean; stacked?: boolean }) {
   const t = useTranslations('brand');
   return (
-    <span className={cn('inline-flex', stacked ? 'mt-0.5 flex-col items-center gap-2' : 'items-baseline gap-3', className)}>
-      <Wordmark className={stacked ? 'text-[1.75rem] md:text-[2.1rem] lg:text-[2.75rem]' : 'text-[1.85rem]'} />
+    <span className={cn('inline-flex', stacked ? 'mt-0.5 flex-col items-center gap-2' : 'flex-wrap items-baseline gap-x-3 gap-y-1', className)}>
+      <Wordmark className={stacked ? 'text-[1.75rem] max-[359px]:text-[1.375rem] md:text-[2.1rem] lg:text-[2.75rem]' : 'text-[1.85rem]'} />
       {subtitle && (
-        <span className={cn('whitespace-nowrap font-medium uppercase text-current', stacked ? 'text-[0.5625rem] tracking-[0.2em] sm:text-[0.625rem] sm:tracking-[0.28em] md:text-[0.6875rem] lg:text-[0.75rem] lg:tracking-[0.36em]' : 'text-[0.6875rem] tracking-[0.26em]')}>{t('subtitle')}</span>
+        <span className={cn('whitespace-nowrap font-medium uppercase text-current', stacked ? 'text-[0.5625rem] tracking-[0.2em] max-[359px]:tracking-[0.06em] sm:text-[0.625rem] sm:tracking-[0.28em] md:text-[0.6875rem] lg:text-[0.75rem] lg:tracking-[0.36em]' : 'text-[0.6875rem] tracking-[0.26em]')}>{t('subtitle')}</span>
       )}
     </span>
   );

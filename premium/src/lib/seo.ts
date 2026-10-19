@@ -4,6 +4,29 @@ import { variantPrice, type Product } from '@/domain/catalog';
 import { pick } from '@/domain/i18n';
 import { locales, type Locale } from '@/i18n/routing';
 
+const DESC_MIN = 120;
+const DESC_MAX = 160;
+const DESC_TAILS: Record<Locale, string[]> = {
+  es: ['Pedidos por WhatsApp en Venezuela.', 'Clover, accesorios y prendas elegidos uno a uno.', 'Atención personal y entrega en Venezuela.'],
+  en: ['Orders via WhatsApp in Venezuela.', 'Clover, accessories and apparel chosen one by one.', 'Personal service and delivery in Venezuela.'],
+};
+
+/** Deja la metadescripción entre 120 y 160 caracteres: recorta en una palabra o completa con datos de la tienda. */
+export function fitDescription(text: string, locale: Locale): string {
+  let d = text.replace(/\s+/g, ' ').trim();
+  if (d.length > DESC_MAX) {
+    d = d.slice(0, DESC_MAX - 1).replace(/\s+\S*$/, '').replace(/[\s,;:.\-–—]+$/, '') + '…';
+    return d;
+  }
+  if (d.length >= DESC_MIN) return d;
+  if (!/[.!?…]$/.test(d)) d += '.';
+  const tails = DESC_TAILS[locale];
+  const combos = [[0], [1], [2], [0, 1], [0, 2], [1, 2], [0, 1, 2]]
+    .map((c) => `${d} ${c.map((i) => tails[i]).join(' ')}`)
+    .sort((a, b) => a.length - b.length);
+  return combos.find((c) => c.length >= DESC_MIN && c.length <= DESC_MAX) ?? combos[combos.length - 1] ?? d;
+}
+
 const url = (locale: Locale, path: string) => `${site.url}/${locale}${path === '/' ? '' : path}`;
 
 interface MetaInput {
@@ -18,7 +41,8 @@ interface MetaInput {
 }
 
 /** Metadata dinámica: canonical, hreflang (+x-default), Open Graph y Twitter por idioma. */
-export function buildMetadata({ locale, path, title, description, image = '/og-default.jpg', noindex, type = 'website' }: MetaInput): Metadata {
+export function buildMetadata({ locale, path, title, description: rawDescription, image = '/og-default.jpg', noindex, type = 'website' }: MetaInput): Metadata {
+  const description = fitDescription(rawDescription, locale);
   const languages = Object.fromEntries(locales.map((l) => [l, url(l, path)]));
   const og = image.startsWith('http') ? image : `${site.url}${image}`;
   return {

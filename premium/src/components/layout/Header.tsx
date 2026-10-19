@@ -96,7 +96,7 @@ export function Header({ primary }: HeaderProps) {
 
   return (
     <header className="site-header" data-solid={solid} data-hidden={hidden} style={{ height: 'auto' }}>
-      <div className="container-x grid h-[var(--header-row-h)] grid-cols-[1fr_auto_1fr] items-center">
+      <div className="container-x grid h-[var(--header-row-h)] grid-cols-[1fr_auto_1fr] items-center max-[359px]:grid-cols-[auto_1fr_auto]">
         <div className="flex items-center">{menuButton('-ml-2 lg:hidden', true)}</div>
 
         <TransitionLink href="/" aria-label={t('home')} className="flex justify-self-center" variant="ivory">

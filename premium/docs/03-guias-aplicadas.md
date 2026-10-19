@@ -185,3 +185,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Material sin aclaraciones de origen
 - La ficha ya no dice «según el empaque», «según la tarjeta del empaque», «según la imagen» ni «según el proveedor» (ni sus versiones en inglés): el material queda como «Acero inoxidable» (o «Acero inoxidable 304»). Afecta a 27 piezas (23 aretes y 4 collares).
 - `scripts/lib/hedges.mjs` (`unhedge`) lo quita al generar el catálogo: la frase suelta de la descripción se elimina (el material ya está en Especificaciones) y el paréntesis de los detalles desaparece. `clover-source.json` no se toca. «Según el color de la tela» en las camisas se mantiene: explica el método de estampado.
+
+## Metadescripciones y pantallas de 320 px
+- `fitDescription` (`src/lib/seo.ts`) deja todas las metadescripciones entre 120 y 160 caracteres: recorta en una palabra o completa con datos de la tienda (WhatsApp, Venezuela). Antes, 131 de 141 páginas en español quedaban cortas.
+- A 320 px la página se salía 35 px por el logo del pie (nombre y subtítulo en una línea) y por la cabecera: el logo del pie se parte en dos líneas y la cabecera usa un grid asimétrico y un nombre y subtítulo algo más compactos por debajo de 360 px.
