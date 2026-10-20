@@ -14117,26 +14117,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co01.jpg",
-    "width": 720,
-    "height": 960,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAATAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EACUQAAEDBAECBwAAAAAAAAAAAAECAwQABREhEgZBExYiQlFh0f/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwCnc7nHt8tTBZcXgAnBGN9qUb6lhk8VNPpIHcD9rVzs0ibOckx3WnUuexWQU6x81P8AK89R9RQPvdTkK3zUleUkg08XV+Eg8tmiipL/2Q==",
-    "tone": "#a19d93",
+    "src": "/media/products/co01-base-5402891.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAHBABAQACAgMAAAAAAAAAAAAAAQASIQIxEUFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANkO2eXJPVOTiZAvwqa77YLJIP/Z",
+    "tone": "#f6f5f4",
     "focal": {
-     "x": 0.4579540774790689,
-     "y": 0.4500847130107477
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con dije redondo de piedra clara",
      "en": "Gold-tone necklace with round clear-stone pendant"
     }
+   },
+   {
+    "src": "/media/products/co01-modelo-d3d0260.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQL/xAAhEAACAQMEAwEAAAAAAAAAAAABAgQAAyEREhNRBUFhsf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAIRIf/aAAwDAQACEQMRAD8AkDhYWC6MWG5ipyM/tL+Ljx4UbjsBdDkk5JPZoZreyU49s+DSqg2EVQde/poKvY9zQn//2Q==",
+    "tone": "#a8856e",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con dije redondo de piedra clara, puestos",
+     "en": "Gold-tone necklace with round clear-stone pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co01.jpg",
+  "thumbnail": "/media/products/co01-base-5402891.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co01/f01-94fc6a9.webp",
+    "/media/spin/co01/f02-94fc6a9.webp",
+    "/media/spin/co01/f03-94fc6a9.webp",
+    "/media/spin/co01/f04-94fc6a9.webp",
+    "/media/spin/co01/f05-94fc6a9.webp",
+    "/media/spin/co01/f06-94fc6a9.webp",
+    "/media/spin/co01/f07-94fc6a9.webp",
+    "/media/spin/co01/f08-94fc6a9.webp",
+    "/media/spin/co01/f09-94fc6a9.webp",
+    "/media/spin/co01/f10-94fc6a9.webp",
+    "/media/spin/co01/f11-94fc6a9.webp",
+    "/media/spin/co01/f12-94fc6a9.webp",
+    "/media/spin/co01/f13-94fc6a9.webp",
+    "/media/spin/co01/f14-94fc6a9.webp",
+    "/media/spin/co01/f15-94fc6a9.webp",
+    "/media/spin/co01/f16-94fc6a9.webp",
+    "/media/spin/co01/f17-94fc6a9.webp",
+    "/media/spin/co01/f18-94fc6a9.webp",
+    "/media/spin/co01/f19-94fc6a9.webp",
+    "/media/spin/co01/f20-94fc6a9.webp",
+    "/media/spin/co01/f21-94fc6a9.webp",
+    "/media/spin/co01/f22-94fc6a9.webp",
+    "/media/spin/co01/f23-94fc6a9.webp",
+    "/media/spin/co01/f24-94fc6a9.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije redondo de piedra clara",
@@ -14291,26 +14342,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co02.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgICAQQDAAAAAAAAAAAAAQIDBAAFEgYRISIxQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAERL/2gAMAwEAAhEDEQA/ALaOlTm1FaV6sDOV9mKAknM7q+vFFUrNDFHH7kHgoH1+YfW9SR6/XR1mgeR07+QwA8nD7XeHaQrGa6xqrcgeXc/GTB62amX/2Q==",
-    "tone": "#8a7c64",
+    "src": "/media/products/co02-base-b1fd3e3.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EABkQAAMBAQEAAAAAAAAAAAAAAAABEUECEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDstgTtM9OL1G5iKlEBQAB//9k=",
+    "tone": "#f5f5f5",
     "focal": {
-     "x": 0.5329396426720534,
-     "y": 0.465446434594454
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con dije de corazón",
      "en": "Silver-tone necklace with heart pendant"
     }
+   },
+   {
+    "src": "/media/products/co02-modelo-5ec6993.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQRBRIiMUFhcYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAADEB/9oADAMBAAIRAxEAPwBEyRXLTQAOI2G0Z7eqDo0c2mXciXLMAycSoyGwa1UiGSfOftUtV3QlXAJDdaGGuP/Z",
+    "tone": "#a58875",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con dije de corazón, puestos",
+     "en": "Silver-tone necklace with heart pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co02.jpg",
+  "thumbnail": "/media/products/co02-base-b1fd3e3.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co02/f01-f8a86b2.webp",
+    "/media/spin/co02/f02-f8a86b2.webp",
+    "/media/spin/co02/f03-f8a86b2.webp",
+    "/media/spin/co02/f04-f8a86b2.webp",
+    "/media/spin/co02/f05-f8a86b2.webp",
+    "/media/spin/co02/f06-f8a86b2.webp",
+    "/media/spin/co02/f07-f8a86b2.webp",
+    "/media/spin/co02/f08-f8a86b2.webp",
+    "/media/spin/co02/f09-f8a86b2.webp",
+    "/media/spin/co02/f10-f8a86b2.webp",
+    "/media/spin/co02/f11-f8a86b2.webp",
+    "/media/spin/co02/f12-f8a86b2.webp",
+    "/media/spin/co02/f13-f8a86b2.webp",
+    "/media/spin/co02/f14-f8a86b2.webp",
+    "/media/spin/co02/f15-f8a86b2.webp",
+    "/media/spin/co02/f16-f8a86b2.webp",
+    "/media/spin/co02/f17-f8a86b2.webp",
+    "/media/spin/co02/f18-f8a86b2.webp",
+    "/media/spin/co02/f19-f8a86b2.webp",
+    "/media/spin/co02/f20-f8a86b2.webp",
+    "/media/spin/co02/f21-f8a86b2.webp",
+    "/media/spin/co02/f22-f8a86b2.webp",
+    "/media/spin/co02/f23-f8a86b2.webp",
+    "/media/spin/co02/f24-f8a86b2.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de corazón pulido",
@@ -14465,26 +14567,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co03.jpg",
-    "width": 670,
-    "height": 893,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAATAA4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIBBAUG/8QAIxAAAgEDAwQDAAAAAAAAAAAAAQIABBEhAxMiBRJBgTGRof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDoNfqlPTnb7tzUGAqZ+/AmZV9RqwRtOqXN7JyPsxdoIvFFIHgC0ZWCryGb4zbECol2b5Yn3JXTUgEj9hCIf//Z",
-    "tone": "#a5a39f",
+    "src": "/media/products/co03-base-678cf12.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAECESFBUSIxYf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2Kd2tBOrfhJtx5Ri5PSyWKor95IKACj/2Q==",
+    "tone": "#f5f4f1",
     "focal": {
-     "x": 0.5157836484353295,
-     "y": 0.43347308500021714
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con dije de mariposa",
      "en": "Gold-tone necklace with butterfly pendant"
     }
+   },
+   {
+    "src": "/media/products/co03-modelo-c0e4df4.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAoEAABAgMGBgMAAAAAAAAAAAABAgMABBEFEiEiMWEGEyNBUXGR0fH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwAfE7Tbc2060es4nOAfGh9/UWLCuy1n1cWHFuqvm4a0w77xInpdKZsOHMl3NQ67w6x0jluLGFSB8fsHSzH/2Q==",
+    "tone": "#846d60",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con dije de mariposa, puestos",
+     "en": "Gold-tone necklace with butterfly pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co03.jpg",
+  "thumbnail": "/media/products/co03-base-678cf12.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co03/f01-0e06080.webp",
+    "/media/spin/co03/f02-0e06080.webp",
+    "/media/spin/co03/f03-0e06080.webp",
+    "/media/spin/co03/f04-0e06080.webp",
+    "/media/spin/co03/f05-0e06080.webp",
+    "/media/spin/co03/f06-0e06080.webp",
+    "/media/spin/co03/f07-0e06080.webp",
+    "/media/spin/co03/f08-0e06080.webp",
+    "/media/spin/co03/f09-0e06080.webp",
+    "/media/spin/co03/f10-0e06080.webp",
+    "/media/spin/co03/f11-0e06080.webp",
+    "/media/spin/co03/f12-0e06080.webp",
+    "/media/spin/co03/f13-0e06080.webp",
+    "/media/spin/co03/f14-0e06080.webp",
+    "/media/spin/co03/f15-0e06080.webp",
+    "/media/spin/co03/f16-0e06080.webp",
+    "/media/spin/co03/f17-0e06080.webp",
+    "/media/spin/co03/f18-0e06080.webp",
+    "/media/spin/co03/f19-0e06080.webp",
+    "/media/spin/co03/f20-0e06080.webp",
+    "/media/spin/co03/f21-0e06080.webp",
+    "/media/spin/co03/f22-0e06080.webp",
+    "/media/spin/co03/f23-0e06080.webp",
+    "/media/spin/co03/f24-0e06080.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#fafafa"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de mariposa con alas texturizadas",
@@ -14640,26 +14793,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co04.jpg",
-    "width": 720,
-    "height": 960,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAATAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMGBf/EACIQAAEEAgEEAwAAAAAAAAAAAAEAAgMEERIFBiEiQTFRcf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKGZ1Kt4T2o45R3Ic7CVWmhsAtrzMnLANtDnH6sLqHj+Ql5WWVkYdE/Gh29ABO6frWKVmd0w1Y5oAIPz3+lkqSs4ugaXHJTPaEIT/9k=",
-    "tone": "#b0aba2",
+    "src": "/media/products/co04-base-991550a.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAERAhIhMUFRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDYzmPAnueyVO1XJTHCKlCzsCgAD//Z",
+    "tone": "#f5f5f5",
     "focal": {
-     "x": 0.49638264653741415,
-     "y": 0.4999056455397665
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con dije redondo de piedra clara",
      "en": "Silver-tone necklace with round clear-stone pendant"
     }
+   },
+   {
+    "src": "/media/products/co04-modelo-82db477.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGBP/EACIQAQABBAEDBQAAAAAAAAAAAAECAAMEERIFIUEGFVGRsf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAgMAAAAAAAAAAAAAAAAAACEBAkH/2gAMAwEAAhEDEQA/AE/Q8+6XTGuT1ZDx2fuqTCMfDnfuqjkSJL8aNaqX6GR53FDsa3reqo8W0XhZLxP2pSrItDqzD6fx7XtZKUCTcXktPcciQ0RAPBRRS0GH/9k=",
+    "tone": "#7f6655",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con dije redondo de piedra clara, puestos",
+     "en": "Silver-tone necklace with round clear-stone pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co04.jpg",
+  "thumbnail": "/media/products/co04-base-991550a.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co04/f01-5bf35c3.webp",
+    "/media/spin/co04/f02-5bf35c3.webp",
+    "/media/spin/co04/f03-5bf35c3.webp",
+    "/media/spin/co04/f04-5bf35c3.webp",
+    "/media/spin/co04/f05-5bf35c3.webp",
+    "/media/spin/co04/f06-5bf35c3.webp",
+    "/media/spin/co04/f07-5bf35c3.webp",
+    "/media/spin/co04/f08-5bf35c3.webp",
+    "/media/spin/co04/f09-5bf35c3.webp",
+    "/media/spin/co04/f10-5bf35c3.webp",
+    "/media/spin/co04/f11-5bf35c3.webp",
+    "/media/spin/co04/f12-5bf35c3.webp",
+    "/media/spin/co04/f13-5bf35c3.webp",
+    "/media/spin/co04/f14-5bf35c3.webp",
+    "/media/spin/co04/f15-5bf35c3.webp",
+    "/media/spin/co04/f16-5bf35c3.webp",
+    "/media/spin/co04/f17-5bf35c3.webp",
+    "/media/spin/co04/f18-5bf35c3.webp",
+    "/media/spin/co04/f19-5bf35c3.webp",
+    "/media/spin/co04/f20-5bf35c3.webp",
+    "/media/spin/co04/f21-5bf35c3.webp",
+    "/media/spin/co04/f22-5bf35c3.webp",
+    "/media/spin/co04/f23-5bf35c3.webp",
+    "/media/spin/co04/f24-5bf35c3.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f9f9f9"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije redondo de piedra clara",
@@ -14818,26 +15022,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co05.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EAB8QAQACAQQDAQAAAAAAAAAAAAECEQADEjFBISJhcf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oADAMBAAIRAxEAPwDU6emwhsg0dtcuVGTB2tPdmKpl7ZAfnnB9Pq8rgSg9P//Z",
-    "tone": "#eee1d6",
+    "src": "/media/products/co05-base-893350a.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EAB0QAAMAAQUBAAAAAAAAAAAAAAABESECEiIxUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOxr3RfSp3vDRHxdjafg03LeKQaABR//2Q==",
+    "tone": "#f6f5f2",
     "focal": {
-     "x": 0.5022585715813417,
-     "y": 0.48214794746964396
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con mariposa esmaltada",
      "en": "Gold-tone necklace with enamel butterfly"
     }
+   },
+   {
+    "src": "/media/products/co05-modelo-1e54478.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQREhMhBTFBYYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEBAQEBAAAAAAAAAAAAAAAAAREAEv/aAAwDAQACEQMRAD8Alf2Vsl+xshpZ8s/OVDVv9LjSGLVvB2IAPjHrFENqrybi8Z7gilQxBV0/aIW3MzmG/9k=",
+    "tone": "#b2937f",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con mariposa esmaltada, puestos",
+     "en": "Gold-tone necklace with enamel butterfly, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co05.jpg",
+  "thumbnail": "/media/products/co05-base-893350a.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co05/f01-183de52.webp",
+    "/media/spin/co05/f02-183de52.webp",
+    "/media/spin/co05/f03-183de52.webp",
+    "/media/spin/co05/f04-183de52.webp",
+    "/media/spin/co05/f05-183de52.webp",
+    "/media/spin/co05/f06-183de52.webp",
+    "/media/spin/co05/f07-183de52.webp",
+    "/media/spin/co05/f08-183de52.webp",
+    "/media/spin/co05/f09-183de52.webp",
+    "/media/spin/co05/f10-183de52.webp",
+    "/media/spin/co05/f11-183de52.webp",
+    "/media/spin/co05/f12-183de52.webp",
+    "/media/spin/co05/f13-183de52.webp",
+    "/media/spin/co05/f14-183de52.webp",
+    "/media/spin/co05/f15-183de52.webp",
+    "/media/spin/co05/f16-183de52.webp",
+    "/media/spin/co05/f17-183de52.webp",
+    "/media/spin/co05/f18-183de52.webp",
+    "/media/spin/co05/f19-183de52.webp",
+    "/media/spin/co05/f20-183de52.webp",
+    "/media/spin/co05/f21-183de52.webp",
+    "/media/spin/co05/f22-183de52.webp",
+    "/media/spin/co05/f23-183de52.webp",
+    "/media/spin/co05/f24-183de52.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de mariposa en esmalte blanco",
@@ -14992,26 +15247,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co06.jpg",
-    "width": 900,
-    "height": 900,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAgEAACAgIBBQEAAAAAAAAAAAABAgMEABEhBQYSMUFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJ9RZLjFK67bW/wD7iWunWKbAuqHy9MhBwe3rjQyywqiMZBvbjY4y0LU4JBSEj4NHjAv/9k=",
-    "tone": "#6c6963",
+    "src": "/media/products/co06-base-cb01457.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABwQAAMBAAIDAAAAAAAAAAAAAAABAhEiMVFhgf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsZe1Xp4E+bXhaTeztz9RsTmtvW+wKAAH/2Q==",
+    "tone": "#f2f2f2",
     "focal": {
-     "x": 0.49958335249600055,
-     "y": 0.5099098100867592
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado de capas con relicario de corazón",
      "en": "Silver-tone layered necklace with heart locket"
     }
+   },
+   {
+    "src": "/media/products/co06-modelo-58f891f.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAgEEAwEAAAAAAAAAAAABAgMRAAQSIVExQVJx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAAMBAAAAAAAAAAAAAAAAAAABMQL/2gAMAwEAAhEDEQA/AFLs082zerGQnj56vG6WKPToxWQkO10fWT2QCVm7N/mLjtEDX54wVRtQ/9k=",
+    "tone": "#b89985",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado de capas con relicario de corazón, puestos",
+     "en": "Silver-tone layered necklace with heart locket, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co06.jpg",
+  "thumbnail": "/media/products/co06-base-cb01457.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co06/f01-527be5b.webp",
+    "/media/spin/co06/f02-527be5b.webp",
+    "/media/spin/co06/f03-527be5b.webp",
+    "/media/spin/co06/f04-527be5b.webp",
+    "/media/spin/co06/f05-527be5b.webp",
+    "/media/spin/co06/f06-527be5b.webp",
+    "/media/spin/co06/f07-527be5b.webp",
+    "/media/spin/co06/f08-527be5b.webp",
+    "/media/spin/co06/f09-527be5b.webp",
+    "/media/spin/co06/f10-527be5b.webp",
+    "/media/spin/co06/f11-527be5b.webp",
+    "/media/spin/co06/f12-527be5b.webp",
+    "/media/spin/co06/f13-527be5b.webp",
+    "/media/spin/co06/f14-527be5b.webp",
+    "/media/spin/co06/f15-527be5b.webp",
+    "/media/spin/co06/f16-527be5b.webp",
+    "/media/spin/co06/f17-527be5b.webp",
+    "/media/spin/co06/f18-527be5b.webp",
+    "/media/spin/co06/f19-527be5b.webp",
+    "/media/spin/co06/f20-527be5b.webp",
+    "/media/spin/co06/f21-527be5b.webp",
+    "/media/spin/co06/f22-527be5b.webp",
+    "/media/spin/co06/f23-527be5b.webp",
+    "/media/spin/co06/f24-527be5b.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f5f5f5"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Diseño de doble capa",
@@ -15161,26 +15467,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co07.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EACIQAQAABQIHAAAAAAAAAAAAAAEAAgMREgQFISIxQWFxkf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/ANfaNRRraKmUpagynMopl34vWL8fD8hsS1gD0QXYImXW/9k=",
-    "tone": "#e7cab9",
+    "src": "/media/products/co07-base-82b678a.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAGhAAAwEAAwAAAAAAAAAAAAAAAAERAiExUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZei8wm6k3nsJQCgAD/9k=",
+    "tone": "#f6f6f6",
     "focal": {
-     "x": 0.25,
-     "y": 0.36149305003464416
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con dije de cruz",
      "en": "Silver-tone necklace with cross pendant"
     }
+   },
+   {
+    "src": "/media/products/co07-modelo-8cd0d19.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMG/8QAIRAAAQMDBAMAAAAAAAAAAAAAAQIDEgAEEQUTQVEhIlL/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERISL/2gAMAwEAAhEDEQA/ABXNltam+pu4Lu4qWfk9VotPbFsymBLq1J9skeKAECchz3VkESJA4xQzY7WT/9k=",
+    "tone": "#a1816d",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con dije de cruz, puestos",
+     "en": "Silver-tone necklace with cross pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co07.jpg",
+  "thumbnail": "/media/products/co07-base-82b678a.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co07/f01-d0c7b3a.webp",
+    "/media/spin/co07/f02-d0c7b3a.webp",
+    "/media/spin/co07/f03-d0c7b3a.webp",
+    "/media/spin/co07/f04-d0c7b3a.webp",
+    "/media/spin/co07/f05-d0c7b3a.webp",
+    "/media/spin/co07/f06-d0c7b3a.webp",
+    "/media/spin/co07/f07-d0c7b3a.webp",
+    "/media/spin/co07/f08-d0c7b3a.webp",
+    "/media/spin/co07/f09-d0c7b3a.webp",
+    "/media/spin/co07/f10-d0c7b3a.webp",
+    "/media/spin/co07/f11-d0c7b3a.webp",
+    "/media/spin/co07/f12-d0c7b3a.webp",
+    "/media/spin/co07/f13-d0c7b3a.webp",
+    "/media/spin/co07/f14-d0c7b3a.webp",
+    "/media/spin/co07/f15-d0c7b3a.webp",
+    "/media/spin/co07/f16-d0c7b3a.webp",
+    "/media/spin/co07/f17-d0c7b3a.webp",
+    "/media/spin/co07/f18-d0c7b3a.webp",
+    "/media/spin/co07/f19-d0c7b3a.webp",
+    "/media/spin/co07/f20-d0c7b3a.webp",
+    "/media/spin/co07/f21-d0c7b3a.webp",
+    "/media/spin/co07/f22-d0c7b3a.webp",
+    "/media/spin/co07/f23-d0c7b3a.webp",
+    "/media/spin/co07/f24-d0c7b3a.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f8f8f8"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de cruz hueca",
@@ -15339,18 +15696,34 @@
   ],
   "images": [
    {
-    "src": "/media/products/co08.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAiEAACAQQBBAMAAAAAAAAAAAABAgMABAURIQYSIjFRsfD/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8Aj9PIxlldlILKNEj3zzqnXGMgMplJdXPHh8U+fMW6YWGSOF1EqhEXQ0p/CouSvSLaGfyV5OR2nXaCPX1R2jqh/9k=",
-    "tone": "#756860",
+    "src": "/media/products/co08-base-77da96b.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERAiFRMf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZJ+i7I3HY4+DHasavQKAAP//Z",
+    "tone": "#f5f5f5",
     "focal": {
-     "x": 0.46157950949562854,
-     "y": 0.6493975280221332
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Collar plateado con perlas",
+     "en": "Silver-tone necklace with pearls"
+    }
+   },
+   {
+    "src": "/media/products/co08-modelo-6d9c635.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAED/8QAIxAAAQMDAgcAAAAAAAAAAAAAAwABAgQRIQVRIiMyM1Jxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQADAAAAAAAAAAAAAAAAAAAAATH/2gAMAwEAAhEDEQA/ANoDk1QcVuURnz432SNGASlp5iNbEuF45u26rdyPpIj1/ESorh//2Q==",
+    "tone": "#a78f7d",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Collar plateado con perlas, usada",
+     "es": "Collar plateado con perlas, puestos",
      "en": "Silver-tone necklace with pearls, worn"
     }
    }
@@ -15358,7 +15731,42 @@
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co08.jpg",
+  "thumbnail": "/media/products/co08-base-77da96b.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co08/f01-9b432e2.webp",
+    "/media/spin/co08/f02-9b432e2.webp",
+    "/media/spin/co08/f03-9b432e2.webp",
+    "/media/spin/co08/f04-9b432e2.webp",
+    "/media/spin/co08/f05-9b432e2.webp",
+    "/media/spin/co08/f06-9b432e2.webp",
+    "/media/spin/co08/f07-9b432e2.webp",
+    "/media/spin/co08/f08-9b432e2.webp",
+    "/media/spin/co08/f09-9b432e2.webp",
+    "/media/spin/co08/f10-9b432e2.webp",
+    "/media/spin/co08/f11-9b432e2.webp",
+    "/media/spin/co08/f12-9b432e2.webp",
+    "/media/spin/co08/f13-9b432e2.webp",
+    "/media/spin/co08/f14-9b432e2.webp",
+    "/media/spin/co08/f15-9b432e2.webp",
+    "/media/spin/co08/f16-9b432e2.webp",
+    "/media/spin/co08/f17-9b432e2.webp",
+    "/media/spin/co08/f18-9b432e2.webp",
+    "/media/spin/co08/f19-9b432e2.webp",
+    "/media/spin/co08/f20-9b432e2.webp",
+    "/media/spin/co08/f21-9b432e2.webp",
+    "/media/spin/co08/f22-9b432e2.webp",
+    "/media/spin/co08/f23-9b432e2.webp",
+    "/media/spin/co08/f24-9b432e2.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Perlas blancas al frente",
@@ -15517,18 +15925,34 @@
   ],
   "images": [
    {
-    "src": "/media/products/co09.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAjEAACAQMDBAMAAAAAAAAAAAABAgMABBETIUEFEhQiMVFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AQngGu+sJGEbCWNm3Ab6/N/ijr/oXkTd7M/tkgoOKbvnCxFMsWcEA8DNSu5mhtolBJOACQcZ2o4JWz//Z",
-    "tone": "#b8a497",
+    "src": "/media/products/co09-base-1cf37a1.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABwQAQACAgMBAAAAAAAAAAAAAAEAEQJBEiJhMf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDshu/IvtXkleOXxR2TcLbUS9MCoiIH/9k=",
+    "tone": "#f5f4f3",
     "focal": {
-     "x": 0.4866797694859606,
-     "y": 0.42795809349954067
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Collar dorado con perlas",
+     "en": "Gold-tone necklace with pearls"
+    }
+   },
+   {
+    "src": "/media/products/co09-modelo-6581918.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUCBP/EACEQAAICAgEEAwAAAAAAAAAAAAECAwQAETESISJxEyNB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAYEQADAQEAAAAAAAAAAAAAAAAAASERMf/aAAwDAQACEQMRAD8Ak369mtfsGwu1kkMidOvIb5zspx2bcSCNH6ACVY7Gxm7cUk9tvmb7B474A9ZRpTmGKOCTaqqnRHvjI9ZepCeFbCCU+LDn93irXDMxZuw7AAaxjHKGw//Z",
+    "tone": "#8b6a58",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Collar dorado con perlas, usada",
+     "es": "Collar dorado con perlas, puestos",
      "en": "Gold-tone necklace with pearls, worn"
     }
    }
@@ -15536,7 +15960,42 @@
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co09.jpg",
+  "thumbnail": "/media/products/co09-base-1cf37a1.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co09/f01-278f1e0.webp",
+    "/media/spin/co09/f02-278f1e0.webp",
+    "/media/spin/co09/f03-278f1e0.webp",
+    "/media/spin/co09/f04-278f1e0.webp",
+    "/media/spin/co09/f05-278f1e0.webp",
+    "/media/spin/co09/f06-278f1e0.webp",
+    "/media/spin/co09/f07-278f1e0.webp",
+    "/media/spin/co09/f08-278f1e0.webp",
+    "/media/spin/co09/f09-278f1e0.webp",
+    "/media/spin/co09/f10-278f1e0.webp",
+    "/media/spin/co09/f11-278f1e0.webp",
+    "/media/spin/co09/f12-278f1e0.webp",
+    "/media/spin/co09/f13-278f1e0.webp",
+    "/media/spin/co09/f14-278f1e0.webp",
+    "/media/spin/co09/f15-278f1e0.webp",
+    "/media/spin/co09/f16-278f1e0.webp",
+    "/media/spin/co09/f17-278f1e0.webp",
+    "/media/spin/co09/f18-278f1e0.webp",
+    "/media/spin/co09/f19-278f1e0.webp",
+    "/media/spin/co09/f20-278f1e0.webp",
+    "/media/spin/co09/f21-278f1e0.webp",
+    "/media/spin/co09/f22-278f1e0.webp",
+    "/media/spin/co09/f23-278f1e0.webp",
+    "/media/spin/co09/f24-278f1e0.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Perlas blancas con cuentas doradas",
@@ -15697,26 +16156,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co10.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EACAQAAEDAwUBAAAAAAAAAAAAAAEAAgMEERIFEyFBUZH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAAMBAQAAAAAAAAAAAAAAAAABERIC/9oADAMBAAIRAxEAPwDbi0uHba9ziAOffqNTTNjwwviR0rskOx50bJoXB0YxuGjgBT45kQ+naz//2Q==",
-    "tone": "#e3c7a9",
+    "src": "/media/products/co10-base-e43e78a.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAECQQMRMVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2SsWRkbjFyittV6WuAAAB//Z",
+    "tone": "#f5f5f5",
     "focal": {
-     "x": 0.5129577740511313,
-     "y": 0.41665547332991615
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con luna y piedra brillante",
      "en": "Silver-tone necklace with moon and sparkling stone"
     }
+   },
+   {
+    "src": "/media/products/co10-modelo-46c03bb.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxEEIRJBBSKh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAMBAQAAAAAAAAAAAAAAAAABESEi/9oADAMBAAIRAxEAPwAZGDXk5Z4pXF0tHidhpC2Mb0YObgXkC66U8ItwPZB+aSktzaaa2Siu0VrmH//Z",
+    "tone": "#ab9282",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con luna y piedra brillante, puestos",
+     "en": "Silver-tone necklace with moon and sparkling stone, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co10.jpg",
+  "thumbnail": "/media/products/co10-base-e43e78a.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co10/f01-d4304a0.webp",
+    "/media/spin/co10/f02-d4304a0.webp",
+    "/media/spin/co10/f03-d4304a0.webp",
+    "/media/spin/co10/f04-d4304a0.webp",
+    "/media/spin/co10/f05-d4304a0.webp",
+    "/media/spin/co10/f06-d4304a0.webp",
+    "/media/spin/co10/f07-d4304a0.webp",
+    "/media/spin/co10/f08-d4304a0.webp",
+    "/media/spin/co10/f09-d4304a0.webp",
+    "/media/spin/co10/f10-d4304a0.webp",
+    "/media/spin/co10/f11-d4304a0.webp",
+    "/media/spin/co10/f12-d4304a0.webp",
+    "/media/spin/co10/f13-d4304a0.webp",
+    "/media/spin/co10/f14-d4304a0.webp",
+    "/media/spin/co10/f15-d4304a0.webp",
+    "/media/spin/co10/f16-d4304a0.webp",
+    "/media/spin/co10/f17-d4304a0.webp",
+    "/media/spin/co10/f18-d4304a0.webp",
+    "/media/spin/co10/f19-d4304a0.webp",
+    "/media/spin/co10/f20-d4304a0.webp",
+    "/media/spin/co10/f21-d4304a0.webp",
+    "/media/spin/co10/f22-d4304a0.webp",
+    "/media/spin/co10/f23-d4304a0.webp",
+    "/media/spin/co10/f24-d4304a0.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f9f9f9"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de luna creciente",
@@ -15876,30 +16386,76 @@
   ],
   "images": [
    {
-    "src": "/media/products/co11.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQMF/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIDEQAEBSESJDFBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAwADAAAAAAAAAAAAAAAAAAERAhIx/9oADAMBAAIRAxEAPwDfj22BQHYtQH3gYamBUZSgPSR6OVMnb2bArmsYHDxArYXwBk+uMiGr6z//2Q==",
-    "tone": "#e7ccad",
+    "src": "/media/products/co11-base-d1f1b08.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABwQAAICAgMAAAAAAAAAAAAAAAABAhFBUQMSMf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDss0Nk8jcY9oq2sbKXgGgAD//Z",
+    "tone": "#f6f5f4",
     "focal": {
-     "x": 0.5023743061089303,
-     "y": 0.4188806616111769
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con luna y piedra brillante",
      "en": "Gold-tone necklace with moon and sparkling stone"
     }
+   },
+   {
+    "src": "/media/products/co11-modelo-fed2ff0.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYDBAX/xAAhEAACAgEEAgMAAAAAAAAAAAABAgADEQQSITEFUWGR0f/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/xAAYEQADAQEAAAAAAAAAAAAAAAAAARFBAv/aAAwDAQACEQMRAD8AX/H1szh6xyD0R3GLxzi57EtoYmvK8Nx9StotIunJwMFcnBmrQprvZkO0uMtt9/shazQ1OSGoByrEfBhp7Wbcx7BxCEWhh//Z",
+    "tone": "#916a51",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con luna y piedra brillante, puestos",
+     "en": "Gold-tone necklace with moon and sparkling stone, worn"
+    }
    }
   ],
   "videos": [
-   "product.co11",
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co11.jpg",
+  "thumbnail": "/media/products/co11-base-d1f1b08.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co11/f01-568e73b.webp",
+    "/media/spin/co11/f02-568e73b.webp",
+    "/media/spin/co11/f03-568e73b.webp",
+    "/media/spin/co11/f04-568e73b.webp",
+    "/media/spin/co11/f05-568e73b.webp",
+    "/media/spin/co11/f06-568e73b.webp",
+    "/media/spin/co11/f07-568e73b.webp",
+    "/media/spin/co11/f08-568e73b.webp",
+    "/media/spin/co11/f09-568e73b.webp",
+    "/media/spin/co11/f10-568e73b.webp",
+    "/media/spin/co11/f11-568e73b.webp",
+    "/media/spin/co11/f12-568e73b.webp",
+    "/media/spin/co11/f13-568e73b.webp",
+    "/media/spin/co11/f14-568e73b.webp",
+    "/media/spin/co11/f15-568e73b.webp",
+    "/media/spin/co11/f16-568e73b.webp",
+    "/media/spin/co11/f17-568e73b.webp",
+    "/media/spin/co11/f18-568e73b.webp",
+    "/media/spin/co11/f19-568e73b.webp",
+    "/media/spin/co11/f20-568e73b.webp",
+    "/media/spin/co11/f21-568e73b.webp",
+    "/media/spin/co11/f22-568e73b.webp",
+    "/media/spin/co11/f23-568e73b.webp",
+    "/media/spin/co11/f24-568e73b.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
-   "type": "video",
-   "key": "product.co11"
+   "type": "image",
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -16055,26 +16611,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co12.jpg",
-    "width": 1000,
-    "height": 1000,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAC/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIDABETQQQhUTH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERISL/2gAMAwEAAhEDEQA/ABTzplGOJVFuhcmpZDNeRr9+UHmSlJFG7arfFlbBplJ+N7RWuRt2H//Z",
-    "tone": "#824429",
+    "src": "/media/products/co12-base-41e4344.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAGhABAQEAAwEAAAAAAAAAAAAAAQARAiExUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZDs3vKcl49hp8Kg+vsFkkH//Z",
+    "tone": "#f6f6f6",
     "focal": {
-     "x": 0.5032468410726645,
-     "y": 0.41483648588281846
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con corazones entrelazados",
      "en": "Silver-tone necklace with interlaced hearts"
     }
+   },
+   {
+    "src": "/media/products/co12-modelo-56efbc6.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACEQAAEDBAEFAAAAAAAAAAAAAAEAAgMEESFBMQUSEyJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAAMBAAAAAAAAAAAAAAAAAAABAiH/2gAMAwEAAhEDEQA/AHpJvM+WGQDsGG2wCEOl0c1FPKx9zHb0cNhWgYG8aPO1ry1oIPxEhqWH/9k=",
+    "tone": "#a48674",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con corazones entrelazados, puestos",
+     "en": "Silver-tone necklace with interlaced hearts, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co12.jpg",
+  "thumbnail": "/media/products/co12-base-41e4344.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co12/f01-4d4d1c7.webp",
+    "/media/spin/co12/f02-4d4d1c7.webp",
+    "/media/spin/co12/f03-4d4d1c7.webp",
+    "/media/spin/co12/f04-4d4d1c7.webp",
+    "/media/spin/co12/f05-4d4d1c7.webp",
+    "/media/spin/co12/f06-4d4d1c7.webp",
+    "/media/spin/co12/f07-4d4d1c7.webp",
+    "/media/spin/co12/f08-4d4d1c7.webp",
+    "/media/spin/co12/f09-4d4d1c7.webp",
+    "/media/spin/co12/f10-4d4d1c7.webp",
+    "/media/spin/co12/f11-4d4d1c7.webp",
+    "/media/spin/co12/f12-4d4d1c7.webp",
+    "/media/spin/co12/f13-4d4d1c7.webp",
+    "/media/spin/co12/f14-4d4d1c7.webp",
+    "/media/spin/co12/f15-4d4d1c7.webp",
+    "/media/spin/co12/f16-4d4d1c7.webp",
+    "/media/spin/co12/f17-4d4d1c7.webp",
+    "/media/spin/co12/f18-4d4d1c7.webp",
+    "/media/spin/co12/f19-4d4d1c7.webp",
+    "/media/spin/co12/f20-4d4d1c7.webp",
+    "/media/spin/co12/f21-4d4d1c7.webp",
+    "/media/spin/co12/f22-4d4d1c7.webp",
+    "/media/spin/co12/f23-4d4d1c7.webp",
+    "/media/spin/co12/f24-4d4d1c7.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de corazones entrelazados",
@@ -16229,26 +16836,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co13.jpg",
-    "width": 864,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAIxAAAQQCAQMFAAAAAAAAAAAAAQACAxEEITESIlEjMkJhgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/AG8fFy43EZE1Bx5oa+rWq2Jpja0kHXu8qMT5HNLJIjXnj8KoyZWwUGyFt8i9BUiVOymoXkaPSVzmN6kzzJ3mvltCEH//2Q==",
-    "tone": "#a7c0ca",
+    "src": "/media/products/co13-base-8dc8d63.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABwQAAICAgMAAAAAAAAAAAAAAAABAkERMRIhYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDslYvBM24dqPLw2OdvboCgAB//2Q==",
+    "tone": "#f5f5f5",
     "focal": {
-     "x": 0.4082108241757588,
-     "y": 0.5187057901043328
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con mariposa hueca",
      "en": "Silver-tone necklace with hollow butterfly"
     }
+   },
+   {
+    "src": "/media/products/co13-modelo-0159254.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwb/xAAiEAACAQIFBQAAAAAAAAAAAAABAgMABAUREiEiFCQxceH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQEA/9oADAMBAAIRAxEAPwCdwlH6zjxI8k71SYfKLG9nuLpgRIAiaM22FFHbrJGk0SqoZMitPiFn2EZzGsPufY+ULVzkC7//2Q==",
+    "tone": "#7b5c4a",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con mariposa hueca, puestos",
+     "en": "Silver-tone necklace with hollow butterfly, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co13.jpg",
+  "thumbnail": "/media/products/co13-base-8dc8d63.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co13/f01-c31fbb1.webp",
+    "/media/spin/co13/f02-c31fbb1.webp",
+    "/media/spin/co13/f03-c31fbb1.webp",
+    "/media/spin/co13/f04-c31fbb1.webp",
+    "/media/spin/co13/f05-c31fbb1.webp",
+    "/media/spin/co13/f06-c31fbb1.webp",
+    "/media/spin/co13/f07-c31fbb1.webp",
+    "/media/spin/co13/f08-c31fbb1.webp",
+    "/media/spin/co13/f09-c31fbb1.webp",
+    "/media/spin/co13/f10-c31fbb1.webp",
+    "/media/spin/co13/f11-c31fbb1.webp",
+    "/media/spin/co13/f12-c31fbb1.webp",
+    "/media/spin/co13/f13-c31fbb1.webp",
+    "/media/spin/co13/f14-c31fbb1.webp",
+    "/media/spin/co13/f15-c31fbb1.webp",
+    "/media/spin/co13/f16-c31fbb1.webp",
+    "/media/spin/co13/f17-c31fbb1.webp",
+    "/media/spin/co13/f18-c31fbb1.webp",
+    "/media/spin/co13/f19-c31fbb1.webp",
+    "/media/spin/co13/f20-c31fbb1.webp",
+    "/media/spin/co13/f21-c31fbb1.webp",
+    "/media/spin/co13/f22-c31fbb1.webp",
+    "/media/spin/co13/f23-c31fbb1.webp",
+    "/media/spin/co13/f24-c31fbb1.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de mariposa hueca",
@@ -16388,26 +17046,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co14.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEE/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIAAwQFETFxEyFBUfD/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAMAwEAAhEDEQA/ANmNxFzboWuKSMhOpok6/cRDpA90JT2reIkwDbylQdwDzBJU/9k=",
-    "tone": "#d0c8bc",
+    "src": "/media/products/co14-base-5b42259.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAGhABAQADAQEAAAAAAAAAAAAAAQARIUECMf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZD9nafTjYLzBUagSSD//Z",
+    "tone": "#f5f5f5",
     "focal": {
-     "x": 0.3799190541399978,
-     "y": 0.35665105895288235
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con dije de gota",
      "en": "Silver-tone necklace with drop pendant"
     }
+   },
+   {
+    "src": "/media/products/co14-modelo-3f4975b.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACIQAAIBAgUFAAAAAAAAAAAAAAEDAgARBAUSIUEiMUJRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8AF2XKVmLmLbJhbuQfE+r81rrw4wyYdUpyPcEAgUuEBr1Dc8X4qkbGPwWoqaP/2Q==",
+    "tone": "#b49988",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con dije de gota, puestos",
+     "en": "Silver-tone necklace with drop pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co14.jpg",
+  "thumbnail": "/media/products/co14-base-5b42259.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co14/f01-df218fe.webp",
+    "/media/spin/co14/f02-df218fe.webp",
+    "/media/spin/co14/f03-df218fe.webp",
+    "/media/spin/co14/f04-df218fe.webp",
+    "/media/spin/co14/f05-df218fe.webp",
+    "/media/spin/co14/f06-df218fe.webp",
+    "/media/spin/co14/f07-df218fe.webp",
+    "/media/spin/co14/f08-df218fe.webp",
+    "/media/spin/co14/f09-df218fe.webp",
+    "/media/spin/co14/f10-df218fe.webp",
+    "/media/spin/co14/f11-df218fe.webp",
+    "/media/spin/co14/f12-df218fe.webp",
+    "/media/spin/co14/f13-df218fe.webp",
+    "/media/spin/co14/f14-df218fe.webp",
+    "/media/spin/co14/f15-df218fe.webp",
+    "/media/spin/co14/f16-df218fe.webp",
+    "/media/spin/co14/f17-df218fe.webp",
+    "/media/spin/co14/f18-df218fe.webp",
+    "/media/spin/co14/f19-df218fe.webp",
+    "/media/spin/co14/f20-df218fe.webp",
+    "/media/spin/co14/f21-df218fe.webp",
+    "/media/spin/co14/f22-df218fe.webp",
+    "/media/spin/co14/f23-df218fe.webp",
+    "/media/spin/co14/f24-df218fe.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f8f8f8"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije en forma de gota pulida",
@@ -16563,26 +17272,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co15.jpg",
-    "width": 864,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAgT/xAAgEAACAQQCAwEAAAAAAAAAAAABAgADBBEhEjFBUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAaEQADAAMBAAAAAAAAAAAAAAAAAQIDERIh/9oADAMBAAIRAxEAPwB+lqKduUBAc7yeoqq3Dq55EjGip3gxtQrmoz4pnnnvwB+/PUpeWIuSrZCONcl7I+yG8av1FUVy9M2yIQjhH//Z",
-    "tone": "#e4bf8d",
+    "src": "/media/products/co15-base-04ed5d8.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EAB4QAAICAQUBAAAAAAAAAAAAAAABAhESAyEiMWFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsU7vxi+VeE6spQWUI5Ppo2F1clTe7XwgoAFH/2Q==",
+    "tone": "#f4f2ef",
     "focal": {
-     "x": 0.48666928936062787,
-     "y": 0.4968397619146037
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con mariposa hueca",
      "en": "Gold-tone necklace with hollow butterfly"
     }
+   },
+   {
+    "src": "/media/products/co15-modelo-f54ae77.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDAAQFERIhE1Fx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQADAAAAAAAAAAAAAAAAAAAREiH/2gAMAwEAAhEDEQA/ACsvZ21vkGjspDxbtgDsIfQrTYpIIMfGsMgLEAuGOyDRE9qqy+VNaY9iqrFAOTADXQ18oZNXH//Z",
+    "tone": "#886b5a",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con mariposa hueca, puestos",
+     "en": "Gold-tone necklace with hollow butterfly, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co15.jpg",
+  "thumbnail": "/media/products/co15-base-04ed5d8.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co15/f01-eb3ad49.webp",
+    "/media/spin/co15/f02-eb3ad49.webp",
+    "/media/spin/co15/f03-eb3ad49.webp",
+    "/media/spin/co15/f04-eb3ad49.webp",
+    "/media/spin/co15/f05-eb3ad49.webp",
+    "/media/spin/co15/f06-eb3ad49.webp",
+    "/media/spin/co15/f07-eb3ad49.webp",
+    "/media/spin/co15/f08-eb3ad49.webp",
+    "/media/spin/co15/f09-eb3ad49.webp",
+    "/media/spin/co15/f10-eb3ad49.webp",
+    "/media/spin/co15/f11-eb3ad49.webp",
+    "/media/spin/co15/f12-eb3ad49.webp",
+    "/media/spin/co15/f13-eb3ad49.webp",
+    "/media/spin/co15/f14-eb3ad49.webp",
+    "/media/spin/co15/f15-eb3ad49.webp",
+    "/media/spin/co15/f16-eb3ad49.webp",
+    "/media/spin/co15/f17-eb3ad49.webp",
+    "/media/spin/co15/f18-eb3ad49.webp",
+    "/media/spin/co15/f19-eb3ad49.webp",
+    "/media/spin/co15/f20-eb3ad49.webp",
+    "/media/spin/co15/f21-eb3ad49.webp",
+    "/media/spin/co15/f22-eb3ad49.webp",
+    "/media/spin/co15/f23-eb3ad49.webp",
+    "/media/spin/co15/f24-eb3ad49.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#fafafa"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de mariposa hueca",
@@ -16724,26 +17484,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co16.jpg",
-    "width": 720,
-    "height": 960,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAATAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgX/xAAiEAADAAIBAgcAAAAAAAAAAAABAgMABBEhMRIiMkFRYrH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDUSOtNSwD3A9/SuVTa2CWEZiac9BNf05GrWAkRsWUbCkgpXoO/xj893wABJM4A78cc4RCsZT2Xc3QUP2HOL3JRzNPKi9lHQDDDMT//2Q==",
-    "tone": "#c1ad99",
+    "src": "/media/products/co16-base-ccc8950.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EAB0QAAICAgMBAAAAAAAAAAAAAAABAhESISIxQVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7FPbF7ZM5YcsZS8qKtlR6v6BoAA//9k=",
+    "tone": "#f4f4f4",
     "focal": {
-     "x": 0.4427984713765939,
-     "y": 0.5217071938082839
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con nudo",
      "en": "Silver-tone necklace with knot"
     }
+   },
+   {
+    "src": "/media/products/co16-modelo-03358be.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGA//EACUQAAICAQIEBwAAAAAAAAAAAAECAxEABAUSExQhIjEyUmJxsf/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQACIRH/2gAMAwEAAhEDEQA/AJ4ydZvcsiWBJKzfQyi26DUyM0YVRwj1XV5jpNug0oConivuzHvj4DBaV2UfE+eR0+tfIhI6eZnklv3D8xzmNVYYYhyF7f/Z",
+    "tone": "#896a56",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con nudo, puestos",
+     "en": "Silver-tone necklace with knot, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co16.jpg",
+  "thumbnail": "/media/products/co16-base-ccc8950.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co16/f01-b125a12.webp",
+    "/media/spin/co16/f02-b125a12.webp",
+    "/media/spin/co16/f03-b125a12.webp",
+    "/media/spin/co16/f04-b125a12.webp",
+    "/media/spin/co16/f05-b125a12.webp",
+    "/media/spin/co16/f06-b125a12.webp",
+    "/media/spin/co16/f07-b125a12.webp",
+    "/media/spin/co16/f08-b125a12.webp",
+    "/media/spin/co16/f09-b125a12.webp",
+    "/media/spin/co16/f10-b125a12.webp",
+    "/media/spin/co16/f11-b125a12.webp",
+    "/media/spin/co16/f12-b125a12.webp",
+    "/media/spin/co16/f13-b125a12.webp",
+    "/media/spin/co16/f14-b125a12.webp",
+    "/media/spin/co16/f15-b125a12.webp",
+    "/media/spin/co16/f16-b125a12.webp",
+    "/media/spin/co16/f17-b125a12.webp",
+    "/media/spin/co16/f18-b125a12.webp",
+    "/media/spin/co16/f19-b125a12.webp",
+    "/media/spin/co16/f20-b125a12.webp",
+    "/media/spin/co16/f21-b125a12.webp",
+    "/media/spin/co16/f22-b125a12.webp",
+    "/media/spin/co16/f23-b125a12.webp",
+    "/media/spin/co16/f24-b125a12.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de nudo entrelazado",
@@ -16897,26 +17708,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co17.jpg",
-    "width": 864,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAiEAACAQQBBAMAAAAAAAAAAAABAhEAAwQxEgUTIUFRodH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAACMf/aAAwDAQACEQMRAD8A0b46JYNu3xU75N8+qXnJ5AWXleG1mDP5TCw5uAutppYmGaNeqjzMG1lKveQArpgwn7qGqrw3SDqDsch5YmD4k0UUrCX/2Q==",
-    "tone": "#dec9ac",
+    "src": "/media/products/co17-base-4a15cb8.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABsQAQADAQEBAQAAAAAAAAAAAAEAAhFRMQMi/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsR1TjG/rOEn6LWrepqHnZVTDq+yDYiJR//9k=",
+    "tone": "#f5f3f1",
     "focal": {
-     "x": 0.49934779429116943,
-     "y": 0.46955861938492044
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con dije de flor",
      "en": "Gold-tone necklace with flower pendant"
     }
+   },
+   {
+    "src": "/media/products/co17-modelo-9510462.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAjEAABAwIFBQAAAAAAAAAAAAABAgMRABIEBQYhkRMiMYGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQEAAwAAAAAAAAAAAAAAAAABAAIR/9oADAMBAAIRAxEAPwAGXZfY3avcpnmnaXaW268cSVdUpHddMiY+QeaWGglcJgJO8VfCspucdHlZE+hQVXZRYMn/2Q==",
+    "tone": "#957057",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con dije de flor, puestos",
+     "en": "Gold-tone necklace with flower pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co17.jpg",
+  "thumbnail": "/media/products/co17-base-4a15cb8.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co17/f01-3f085ca.webp",
+    "/media/spin/co17/f02-3f085ca.webp",
+    "/media/spin/co17/f03-3f085ca.webp",
+    "/media/spin/co17/f04-3f085ca.webp",
+    "/media/spin/co17/f05-3f085ca.webp",
+    "/media/spin/co17/f06-3f085ca.webp",
+    "/media/spin/co17/f07-3f085ca.webp",
+    "/media/spin/co17/f08-3f085ca.webp",
+    "/media/spin/co17/f09-3f085ca.webp",
+    "/media/spin/co17/f10-3f085ca.webp",
+    "/media/spin/co17/f11-3f085ca.webp",
+    "/media/spin/co17/f12-3f085ca.webp",
+    "/media/spin/co17/f13-3f085ca.webp",
+    "/media/spin/co17/f14-3f085ca.webp",
+    "/media/spin/co17/f15-3f085ca.webp",
+    "/media/spin/co17/f16-3f085ca.webp",
+    "/media/spin/co17/f17-3f085ca.webp",
+    "/media/spin/co17/f18-3f085ca.webp",
+    "/media/spin/co17/f19-3f085ca.webp",
+    "/media/spin/co17/f20-3f085ca.webp",
+    "/media/spin/co17/f21-3f085ca.webp",
+    "/media/spin/co17/f22-3f085ca.webp",
+    "/media/spin/co17/f23-3f085ca.webp",
+    "/media/spin/co17/f24-3f085ca.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f5f5f5"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de flor de 5 pétalos",
@@ -17059,26 +17921,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co18.jpg",
-    "width": 864,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAf/EACIQAAIBAwQCAwAAAAAAAAAAAAECEQADBBITIXEFMRVBYf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/AKAxb3kGXdJS2vr6jqqdlbdsEKQf2ZNJtlshJg20MQDweorLuUMVyG2yDwqz6HVNIsO3xStqOrQOZ5qXjgPdfWA3fNFFKDX/2Q==",
-    "tone": "#abc3cd",
+    "src": "/media/products/co18-base-f2bfe70.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABwQAAICAgMAAAAAAAAAAAAAAAABAhEDIRIxQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsr3QT7IyScY8kra8KWkBoAA//2Q==",
+    "tone": "#f4f4f4",
     "focal": {
-     "x": 0.47762605617634185,
-     "y": 0.502971279326459
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar plateado con dije de flor",
      "en": "Silver-tone necklace with flower pendant"
     }
+   },
+   {
+    "src": "/media/products/co18-modelo-456fa30.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAABf/EACEQAAIABwACAwAAAAAAAAAAAAECAAMEBRESISIxUXGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQADAQAAAAAAAAAAAAAAAAEAAiER/9oADAMBAAIRAxEAPwAy6utVealj1pZWWuvoKB39hO2W7aQGapKuc5QKcj49QfSStp9VPyO1BXBhmg855VfHVSPvogV2OHK5P//Z",
+    "tone": "#7e604d",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar plateado con dije de flor, puestos",
+     "en": "Silver-tone necklace with flower pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co18.jpg",
+  "thumbnail": "/media/products/co18-base-f2bfe70.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co18/f01-d31496b.webp",
+    "/media/spin/co18/f02-d31496b.webp",
+    "/media/spin/co18/f03-d31496b.webp",
+    "/media/spin/co18/f04-d31496b.webp",
+    "/media/spin/co18/f05-d31496b.webp",
+    "/media/spin/co18/f06-d31496b.webp",
+    "/media/spin/co18/f07-d31496b.webp",
+    "/media/spin/co18/f08-d31496b.webp",
+    "/media/spin/co18/f09-d31496b.webp",
+    "/media/spin/co18/f10-d31496b.webp",
+    "/media/spin/co18/f11-d31496b.webp",
+    "/media/spin/co18/f12-d31496b.webp",
+    "/media/spin/co18/f13-d31496b.webp",
+    "/media/spin/co18/f14-d31496b.webp",
+    "/media/spin/co18/f15-d31496b.webp",
+    "/media/spin/co18/f16-d31496b.webp",
+    "/media/spin/co18/f17-d31496b.webp",
+    "/media/spin/co18/f18-d31496b.webp",
+    "/media/spin/co18/f19-d31496b.webp",
+    "/media/spin/co18/f20-d31496b.webp",
+    "/media/spin/co18/f21-d31496b.webp",
+    "/media/spin/co18/f22-d31496b.webp",
+    "/media/spin/co18/f23-d31496b.webp",
+    "/media/spin/co18/f24-d31496b.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f2f2f2"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de flor de 5 pétalos",
@@ -17223,26 +18136,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/co19.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EAB0QAQACAgIDAAAAAAAAAAAAAAEAAgMREhMiUXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/ANvGcLeA/ZY0m70V9kW+amg4sPegBUIcI//Z",
-    "tone": "#d7c7b5",
+    "src": "/media/products/co19-base-0911e88.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAGhABAQEAAwEAAAAAAAAAAAAAAQACEiFBYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZD2z2na5ORl18KiBJIP/Z",
+    "tone": "#f6f5f3",
     "focal": {
-     "x": 0.49144437284786646,
-     "y": 0.5742075847877542
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Collar dorado con dije de corazón",
      "en": "Gold-tone necklace with heart pendant"
     }
+   },
+   {
+    "src": "/media/products/co19-modelo-9956b4e.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAhEAABAwQBBQAAAAAAAAAAAAABAAIEAxESITETFCJBYf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAXEQEBAQEAAAAAAAAAAAAAAAARAAEh/9oADAMBAAIRAxEAPwBE6BHozT2vjk0XaOAQr4cWQY7XVCwtPAuQdLBHaKhLm2IPpUAvp2xN9bCgu9tAZyY1vUAfwbLqhSx245E/EIRJHS//2Q==",
+    "tone": "#ae8971",
+    "focal": {
+     "x": 0.5,
+     "y": 0.62
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Collar dorado con dije de corazón, puestos",
+     "en": "Gold-tone necklace with heart pendant, worn"
+    }
    }
   ],
   "videos": [
    "reel.necklaces"
   ],
-  "thumbnail": "/media/products/co19.jpg",
+  "thumbnail": "/media/products/co19-base-0911e88.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/co19/f01-f92ec99.webp",
+    "/media/spin/co19/f02-f92ec99.webp",
+    "/media/spin/co19/f03-f92ec99.webp",
+    "/media/spin/co19/f04-f92ec99.webp",
+    "/media/spin/co19/f05-f92ec99.webp",
+    "/media/spin/co19/f06-f92ec99.webp",
+    "/media/spin/co19/f07-f92ec99.webp",
+    "/media/spin/co19/f08-f92ec99.webp",
+    "/media/spin/co19/f09-f92ec99.webp",
+    "/media/spin/co19/f10-f92ec99.webp",
+    "/media/spin/co19/f11-f92ec99.webp",
+    "/media/spin/co19/f12-f92ec99.webp",
+    "/media/spin/co19/f13-f92ec99.webp",
+    "/media/spin/co19/f14-f92ec99.webp",
+    "/media/spin/co19/f15-f92ec99.webp",
+    "/media/spin/co19/f16-f92ec99.webp",
+    "/media/spin/co19/f17-f92ec99.webp",
+    "/media/spin/co19/f18-f92ec99.webp",
+    "/media/spin/co19/f19-f92ec99.webp",
+    "/media/spin/co19/f20-f92ec99.webp",
+    "/media/spin/co19/f21-f92ec99.webp",
+    "/media/spin/co19/f22-f92ec99.webp",
+    "/media/spin/co19/f23-f92ec99.webp",
+    "/media/spin/co19/f24-f92ec99.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#fafafa"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Dije de corazón de volumen suave",
