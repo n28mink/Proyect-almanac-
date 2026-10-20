@@ -15,6 +15,12 @@ export const revalidate = 300;
 
 const GIFTS_FOR_HER = 'gifts-for-her';
 
+/** Categorías con portada de foto con modelo: pieza cuya foto se usa y encuadre (position = object-position; flip voltea la foto). */
+const HEROES: Record<string, { id: string; position: string; flip?: boolean }> = {
+  necklaces: { id: 'co09', position: '50% 70%' },
+  earrings: { id: 'ar13', position: '50% 38%', flip: true },
+};
+
 /** "Regalos para ella" no es una etiqueta de producto: reúne la joyería de mujer de mayor precio del catálogo vivo. */
 function topJewelry(catalog: Product[]): Product[] {
   const pool = catalog.filter((p) => p.categories.includes('jewelry') && p.categories.includes('women'));
@@ -46,10 +52,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
 
   const catalog = await getCatalog();
   const products = cat.slug === GIFTS_FOR_HER ? topJewelry(catalog) : catalog.filter((p) => p.categories.includes(cat.slug));
-  // Portada con foto de modelo: la de los collares usa la foto con modelo de uno de ellos.
-  const heroProduct = cat.slug === 'necklaces' ? products.find((p) => p.id === 'co09') : undefined;
+  // Portada con foto de modelo: la categoría usa la foto con modelo de una de sus piezas.
+  const heroSpec = HEROES[cat.slug];
+  const heroProduct = heroSpec ? products.find((p) => p.id === heroSpec.id) : undefined;
   const heroImage = heroProduct?.images.find((i) => i.role === 'lifestyle');
-  const hero = heroProduct && heroImage ? { src: heroImage.src, blur: heroImage.blur, alt: pick(heroImage.alt, locale), position: '50% 70%' } : undefined;
+  const hero = heroSpec && heroProduct && heroImage ? { src: heroImage.src, blur: heroImage.blur, alt: pick(heroImage.alt, locale), position: heroSpec.position, flip: heroSpec.flip } : undefined;
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(locale, [{ name: t('breadcrumbShop'), path: '/shop' }, { name: pick(cat.name, locale), path: `/shop/${cat.slug}` }])} />
