@@ -52,6 +52,8 @@ function withDetails(id, specs) {
 }
 
 const CATEGORY = { rw: 'watches', st: 'accessories', an: 'rings', pu: 'bracelets', co: 'necklaces', ar: 'earrings' };
+/** Piezas cuyo id no coincide con su categoría: pu01 es un anillo ancho. */
+const CATEGORY_OF = { pu01: 'rings' };
 
 const COLOR_EN = {
   'Oro rosa': 'Rose gold', Blanco: 'White', Negro: 'Black', Dorado: 'Gold tone', Verde: 'Green', Azul: 'Blue', Gris: 'Slate gray',
@@ -70,12 +72,7 @@ const VARIANTS = {
   pu13: [[L('Tono plateado', 'Silver tone'), 0], [L('Tono dorado', 'Gold tone'), 0]],
 };
 
-/** Pulseras con fotos reales (scripts/build-bracelets.mjs): en ángulo (principal), mano modelo, de frente y close-up; la foto anterior queda al final. */
-/** Juegos adicionales que van al final de la galería, y piezas cuya foto antigua se descarta por repetida. */
-const BRACELET_EXTRA = {};
-/** Aretes con fotos reales sin comprimir + giro 360° (scripts/build-aretes.mjs): se detectan por tener `spin` en el manifiesto. */
-const BRACELET_DROP_OLD = new Set(['pu06']);
-const BRACELET_SETS = new Set(['pu03', 'pu05', 'pu06', 'pu07', 'pu08', 'pu09', 'pu10', 'pu11', 'pu12', 'pu13']);
+/** Piezas con foto en blanco, foto con modelo y giro 360° (scripts/build-aretes.mjs y build-set.mjs): se detectan por tener `spin` en el manifiesto. */
 
 const AUTO_DETAIL = /^(rw|st)/;
 
@@ -92,7 +89,7 @@ const FEATURED = ['rw04', 'an04', 'co11', 'pu06', 'ar06', 'rw03', 'an07', 'pu01'
 const NEW_ARRIVAL = ['an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
 const BESTSELLER = ['rw01', 'co11', 'ar04', 'pu06', 'an02', 'co09', 'ar11', 'pu04', 'co19', 'ar07', 'rw04', 'st01'];
 const GIFT_TAGS = new Set(['heart', 'pearl', 'set', 'moon', 'butterfly', 'star', 'clover']);
-const HOVER_VIDEO = new Set(['rw04', 'an04', 'pu06', 'ar06', 'rw03']);
+const HOVER_VIDEO = new Set(['rw04', 'rw03']);
 
 const WATCH_3D = {
   rw01: { caseShape: 'round', strap: 'mesh', finish: 'rose-gold', dials: ['#f4f1ea'] },
@@ -161,7 +158,7 @@ for (const p of source) {
   const t = en[p.id];
   if (!t) throw new Error(`Falta traducción para ${p.id}`);
   const prefix = p.id.slice(0, 2);
-  const category = CATEGORY[prefix];
+  const category = CATEGORY_OF[p.id] ?? CATEGORY[prefix];
   const finish = finishOf(p.colores, p.id);
 
   let slug = slugify(t.name);
@@ -182,27 +179,17 @@ for (const p of source) {
   };
   let images;
   let detailIndex; // undefined = sin primer plano
-  if (BRACELET_SETS.has(p.id)) {
-    images = [
-      imgOf(`${p.id}-ang`, 'main', L(p.nombre, t.name)),
-      imgOf(`${p.id}-hand`, 'lifestyle', L(`${p.nombre}, puesta`, `${t.name}, worn`)),
-      imgOf(`${p.id}-front`, 'main', L(p.nombre, t.name)),
-      imgOf(`${p.id}-close`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`)),
-      ...(BRACELET_EXTRA[p.id] ? [['ang', 'main', p.nombre, t.name], ['hand', 'lifestyle', `${p.nombre}, puesta`, `${t.name}, worn`], ['front', 'main', p.nombre, t.name], ['close', 'main', p.nombre, t.name]].map(([k, role, es, en]) => imgOf(`${BRACELET_EXTRA[p.id]}-${k}`, role, L(es, en))) : []),
-      ...(BRACELET_DROP_OLD.has(p.id) ? [] : names.map((n) => imgOf(n, 'main', L(p.nombre, t.name)))),
-    ];
-    detailIndex = 3;
-  } else if (media.spin?.[p.id]) {
+  if (media.spin?.[p.id]) {
     const has = (k) => media.images[`${p.id}-${k}`];
     if (has('base')) {
       // Foto base (principal), con modelo y macro (primer plano).
       images = [
         imgOf(`${p.id}-base`, 'main', L(p.nombre, t.name)),
-        imgOf(`${p.id}-modelo`, 'lifestyle', L(`${p.nombre}, puestos`, `${t.name}, worn`)),
-        // El macro es opcional (los collares traen solo foto en blanco y con modelo).
+        // La foto con modelo y el macro son opcionales (collares, pulseras y anillos traen foto en blanco y con modelo; pu01 solo la foto en blanco).
+        ...(has('modelo') ? [imgOf(`${p.id}-modelo`, 'lifestyle', L(`${p.nombre}, puestos`, `${t.name}, worn`))] : []),
         ...(has('macro') ? [imgOf(`${p.id}-macro`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`))] : []),
       ];
-      detailIndex = images.length - 1;
+      detailIndex = images.length > 1 ? images.length - 1 : undefined;
     } else {
       // Primeros diseños: par, pieza individual y puestos (la de modelo hace de primer plano).
       images = [

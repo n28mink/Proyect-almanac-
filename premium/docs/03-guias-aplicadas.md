@@ -191,5 +191,11 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - A 320 px la página se salía 35 px por el logo del pie (nombre y subtítulo en una línea) y por la cabecera: el logo del pie se parte en dos líneas y la cabecera usa un grid asimétrico y un nombre y subtítulo algo más compactos por debajo de 360 px.
 
 ## Collares (19) con fotos en blanco y 360°
-- `scripts/build-collares.mjs` lee `../fotos/collares-originales/collar-coNN-{blanco|modelo}.webp` y `collar-coNN-360.mp4` (el diseño coincide con el id del producto): foto en blanco a 4:5 sin deformar, foto con modelo sin recorte y 24 fotogramas de giro por pieza. Las utilidades de foto compartidas con los aretes están en `scripts/lib/photos.mjs`.
+- `scripts/build-set.mjs collares` (ahora genérico) lee `../fotos/collares-originales/collar-coNN-{blanco|modelo}.webp` y `collar-coNN-360.mp4` (el diseño coincide con el id del producto): foto en blanco a 4:5 sin deformar, foto con modelo sin recorte y 24 fotogramas de giro por pieza. Las utilidades de foto compartidas con los aretes están en `scripts/lib/photos.mjs`.
 - Galería: foto en blanco, con modelo y 360° (los collares no traen macro; el macro es opcional en el generador). Al pasar el ratón sale la foto con modelo; `co11` ya no usa su vídeo antiguo.
+
+## Pulseras (12) y anillos (13) con fotos en blanco y 360°; portadas con modelo en las cuatro categorías
+- `node scripts/build-set.mjs <collares|pulseras|anillos>` genera foto en blanco (4:5), foto con modelo y 24 fotogramas de giro desde `fotos/<juego>-originales/`; retira las fotos anteriores de cada pieza (incluidos los juegos `-ang/-hand/-front/-close` de las pulseras, cuyo tratamiento especial en `build-seed.mjs` desaparece). Los vídeos al pasar el ratón de `an04`, `pu06` y `ar06` se retiran: ya no coinciden con las fotos.
+- `pu01` (calado estilo coral) es un anillo ancho: pasa de Pulseras a Anillos (`CATEGORY_OF` en `build-seed.mjs`, nombre y textos en `source-extra.json` y `en.bracelets.json`). Solo lleva foto en blanco y 360°: la foto con modelo del set de pulseras lo mostraba en la muñeca y no se publica (`sinModelo`).
+- Portadas con foto de modelo por categoría en `HEROES` (`src/app/[locale]/shop/[category]/page.tsx`): collares `co09`, aretes `ar13` (volteada), pulseras `pu06`, anillos `an03`.
+- En móvil la foto de la portada se difumina por arriba y por la izquierda (`MOBILE_FADE`), como el degradado lateral de escritorio.
