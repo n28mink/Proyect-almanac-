@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Suspense } from 'react';
 import { getTranslations } from 'next-intl/server';
 import { StaggerText } from '@/components/motion/Reveal';
@@ -14,7 +15,15 @@ import { itemListJsonLd } from '@/lib/seo';
 import { ShopBrowser } from './ShopBrowser';
 
 /** Estructura común de /shop y /shop/[category]. La lista base se renderiza en servidor (SEO); los filtros actúan en cliente. */
-export async function ShopPage({ locale, products, title, blurb, eyebrow, category, parent }: { locale: Locale; products: Product[]; title: string; blurb?: string; eyebrow?: string; category?: string; parent?: { label: string; href: string } }) {
+export interface ShopHero {
+  src: string;
+  alt: string;
+  blur?: string;
+  /** object-position CSS de la foto (el collar queda a la vista al encuadrar). */
+  position?: string;
+}
+
+export async function ShopPage({ locale, products, title, blurb, eyebrow, category, parent, hero }: { locale: Locale; products: Product[]; title: string; blurb?: string; eyebrow?: string; category?: string; parent?: { label: string; href: string }; hero?: ShopHero }) {
   const t = await getTranslations('shop');
   const tp = await getTranslations('product');
   const cards = products.map((p, i) => ({ ...toCardData(p, locale), order: i }));
@@ -31,7 +40,13 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow, catego
   return (
     <div className="pt-[calc(var(--header-h)+var(--announcement-h)+1.5rem)]" data-header-tone="dark">
       <JsonLd data={itemListJsonLd(locale, products)} />
-      <header className="container-x pb-8 md:pb-10">
+      <header className={hero ? 'relative isolate overflow-hidden pb-8 md:min-h-[27rem] md:pb-12' : undefined}>
+        {hero && (
+          <div className="absolute inset-y-0 right-0 -z-10 hidden w-[58%] md:block lg:w-[50%]" aria-hidden="true" style={{ maskImage: 'linear-gradient(to right, transparent, #000 38%)', WebkitMaskImage: 'linear-gradient(to right, transparent, #000 38%)' }}>
+            <Image src={hero.src} alt="" fill priority sizes="(min-width: 1024px) 50vw, 58vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%' }} />
+          </div>
+        )}
+        <div className="container-x pb-8 md:pb-10">
         <nav aria-label={tp('breadcrumb')} className="label-micro mb-8 text-fg-subtle">
           <ol className="flex flex-wrap items-center gap-2">
             <li><TransitionLink href="/" className="hover:text-fg">{tp('home')}</TransitionLink></li>
@@ -54,6 +69,14 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow, catego
             {blurb && <p className="mt-3 max-w-md text-fg-muted">{blurb}</p>}
           </div>
         </div>
+        </div>
+        {hero && (
+          <div className="container-x md:hidden">
+            <div className="relative mt-2 aspect-[5/3] overflow-hidden bg-surface-sunken">
+              <Image src={hero.src} alt={hero.alt} fill priority sizes="100vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%' }} />
+            </div>
+          </div>
+        )}
       </header>
       <Suspense
         fallback={
