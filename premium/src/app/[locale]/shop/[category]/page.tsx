@@ -46,10 +46,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
 
   const catalog = await getCatalog();
   const products = cat.slug === GIFTS_FOR_HER ? topJewelry(catalog) : catalog.filter((p) => p.categories.includes(cat.slug));
+  // Portada con foto de modelo: la de los collares usa la foto con modelo de uno de ellos.
+  const heroProduct = cat.slug === 'necklaces' ? products.find((p) => p.id === 'co09') : undefined;
+  const heroImage = heroProduct?.images.find((i) => i.role === 'lifestyle');
+  const hero = heroProduct && heroImage ? { src: heroImage.src, blur: heroImage.blur, alt: pick(heroImage.alt, locale), position: '50% 70%' } : undefined;
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(locale, [{ name: t('breadcrumbShop'), path: '/shop' }, { name: pick(cat.name, locale), path: `/shop/${cat.slug}` }])} />
-      <ShopPage locale={locale} products={products} title={pick(cat.name, locale)} blurb={pick(cat.blurb, locale)} category={cat.slug} />
+      <ShopPage locale={locale} products={products} title={pick(cat.name, locale)} blurb={pick(cat.blurb, locale)} category={cat.slug} hero={hero} />
     </>
   );
 }
