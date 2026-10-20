@@ -1,5 +1,5 @@
 {
-  "_note": "Ajustes sobre clover-source.json (que no se toca). Si el id ya existe, estos campos sustituyen a los del original (las fotos nuevas de la pieza muestran otra forma o tono que el texto del proveedor). Si no existe, es una pieza nueva: precio y unidades iguales a los de todos los aretes de la tienda (18,50 USD · 10 unidades). Sin material declarado para las piezas nuevas. pu05: se quita la aclaración «según etiqueta visible» de la descripción y de los detalles.",
+  "_note": "Ajustes sobre clover-source.json (que no se toca). Si el id ya existe, estos campos sustituyen a los del original (las fotos nuevas de la pieza muestran otra forma o tono que el texto del proveedor). Si no existe, es una pieza nueva: precio y unidades iguales a los de todos los aretes de la tienda (18,50 USD · 10 unidades). Sin material declarado para las piezas nuevas. pu05: se quita la aclaración «según etiqueta visible» de la descripción y de los detalles. pu01: es un anillo (no una pulsera): nombre, categoría y textos corregidos.",
   "ar18": {
     "nombre": "Aretes dorados anchos acanalados",
     "descripcion": "Aretes anchos de forma curva en tono dorado con relieve acanalado.",
@@ -111,6 +111,18 @@
       "Dos piedras claras y una turquesa engastadas",
       "Cierre de mosquetón con extensor",
       "Acero"
+    ]
+  },
+  "pu01": {
+    "nombre": "Anillo dorado calado estilo coral",
+    "categoria": "Anillos",
+    "descripcion": "Anillo ancho dorado con diseño calado de ramas estilo coral.",
+    "descripcionLarga": "Un anillo ancho dorado con calado de ramas orgánicas estilo coral: una pieza escultórica y llamativa que se convierte en el centro de todas las miradas.",
+    "detalles": [
+      "Anillo ancho",
+      "Diseño calado de ramas estilo coral",
+      "Tono dorado",
+      "Pieza de gran presencia"
     ]
   }
 }

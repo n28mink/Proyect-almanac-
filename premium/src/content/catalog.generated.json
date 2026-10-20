@@ -2978,7 +2978,6 @@
    }
   ],
   "videos": [
-   "product.ar06",
    "reel.earrings"
   ],
   "thumbnail": "/media/products/ar06-base-3aaac3d.jpg",
@@ -3014,8 +3013,8 @@
    "tone": "#f8faf5"
   },
   "hoverMedia": {
-   "type": "video",
-   "key": "product.ar06"
+   "type": "image",
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -18280,22 +18279,22 @@
  },
  {
   "id": "pu01",
-  "slug": "gold-tone-openwork-coral-style-bangle",
+  "slug": "gold-tone-openwork-coral-style-ring",
   "name": {
-   "es": "Pulsera dorada calada estilo coral",
-   "en": "Gold-tone openwork coral-style bangle"
+   "es": "Anillo dorado calado estilo coral",
+   "en": "Gold-tone openwork coral-style ring"
   },
   "description": {
-   "es": "Pulsera rígida dorada con diseño calado de ramas estilo coral.",
-   "en": "Rigid gold-tone bangle with an openwork coral-style branch design."
+   "es": "Anillo ancho dorado con diseño calado de ramas estilo coral.",
+   "en": "Wide gold-tone ring with an openwork coral-style branch design."
   },
   "story": {
-   "es": "Un brazalete rígido dorado con calado de ramas orgánicas estilo coral: una pieza escultórica y llamativa que se convierte en el centro de todas las miradas.",
-   "en": "A rigid gold-tone bangle with an organic, coral-style branch openwork: a sculptural, eye-catching piece that becomes the center of every glance."
+   "es": "Un anillo ancho dorado con calado de ramas orgánicas estilo coral: una pieza escultórica y llamativa que se convierte en el centro de todas las miradas.",
+   "en": "A wide gold-tone ring with an organic, coral-style branch openwork: a sculptural, eye-catching piece that becomes the center of every glance."
   },
-  "category": "bracelets",
+  "category": "rings",
   "categories": [
-   "bracelets",
+   "rings",
    "jewelry",
    "women"
   ],
@@ -18345,30 +18344,61 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu01.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAiEAADAAECBgMAAAAAAAAAAAABAgMABBIFERMhMUFCUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAyEx/9oADAMBAAIRAxEAPwCLhktLabNU79QvkUYnt9gYD06N3lQ918E+xkJekKbkco5Hx9DHhpuY30YsT+4SB2NjbLqf/9k=",
-    "tone": "#5d4437",
+    "src": "/media/products/pu01-base-fb6bdcd.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwb/xAAcEAACAwADAQAAAAAAAAAAAAABAgADERIhQTH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwDXWXBG4hWds3BGrsFgOaCOiD9ERxYtpZAGDDsHyTSLNZrM1vB5DaVsIQiH/9k=",
+    "tone": "#f0ede7",
     "focal": {
-     "x": 0.4812261125335136,
-     "y": 0.39584112303276026
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
-     "es": "Pulsera dorada calada estilo coral",
-     "en": "Gold-tone openwork coral-style bangle"
+     "es": "Anillo dorado calado estilo coral",
+     "en": "Gold-tone openwork coral-style ring"
     }
    }
   ],
   "videos": [
-   "reel.bracelets"
+   "reel.rings"
   ],
-  "thumbnail": "/media/products/pu01.jpg",
+  "thumbnail": "/media/products/pu01-base-fb6bdcd.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu01/f01-31edd09.webp",
+    "/media/spin/pu01/f02-31edd09.webp",
+    "/media/spin/pu01/f03-31edd09.webp",
+    "/media/spin/pu01/f04-31edd09.webp",
+    "/media/spin/pu01/f05-31edd09.webp",
+    "/media/spin/pu01/f06-31edd09.webp",
+    "/media/spin/pu01/f07-31edd09.webp",
+    "/media/spin/pu01/f08-31edd09.webp",
+    "/media/spin/pu01/f09-31edd09.webp",
+    "/media/spin/pu01/f10-31edd09.webp",
+    "/media/spin/pu01/f11-31edd09.webp",
+    "/media/spin/pu01/f12-31edd09.webp",
+    "/media/spin/pu01/f13-31edd09.webp",
+    "/media/spin/pu01/f14-31edd09.webp",
+    "/media/spin/pu01/f15-31edd09.webp",
+    "/media/spin/pu01/f16-31edd09.webp",
+    "/media/spin/pu01/f17-31edd09.webp",
+    "/media/spin/pu01/f18-31edd09.webp",
+    "/media/spin/pu01/f19-31edd09.webp",
+    "/media/spin/pu01/f20-31edd09.webp",
+    "/media/spin/pu01/f21-31edd09.webp",
+    "/media/spin/pu01/f22-31edd09.webp",
+    "/media/spin/pu01/f23-31edd09.webp",
+    "/media/spin/pu01/f24-31edd09.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
   "highlights": [
    {
-    "es": "Tipo brazalete rígido",
-    "en": "Rigid bangle style"
+    "es": "Anillo ancho",
+    "en": "Wide ring style"
    },
    {
     "es": "Diseño calado de ramas estilo coral",
@@ -18431,12 +18461,12 @@
   "bestseller": false,
   "seo": {
    "title": {
-    "es": "Pulsera dorada calada estilo coral | Clover",
-    "en": "Gold-tone openwork coral-style bangle | Clover"
+    "es": "Anillo dorado calado estilo coral | Clover",
+    "en": "Gold-tone openwork coral-style ring | Clover"
    },
    "description": {
-    "es": "Pulsera rígida dorada con diseño calado de ramas estilo coral.",
-    "en": "Rigid gold-tone bangle with an openwork coral-style branch design."
+    "es": "Anillo ancho dorado con diseño calado de ramas estilo coral.",
+    "en": "Wide gold-tone ring with an openwork coral-style branch design."
    }
   }
  },
@@ -18527,26 +18557,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu02.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAHRABAAICAwEBAAAAAAAAAAAAAQIRAAMEEjETcf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDf+lbOp4eq5dW1VjIqVXheXBlu6xQKtsvFa+OBcWn8rAv/2Q==",
-    "tone": "#c5c3bf",
+    "src": "/media/products/pu02-base-8f9a8f1.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAERIhAzETYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANjkMguyfQ6hWDdX8IoyH8qWeNFezdFqlLkWyYAaqgbkFxESj//Z",
+    "tone": "#f3f2ef",
     "focal": {
-     "x": 0.4985238662413321,
-     "y": 0.5387353745839175
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Pulsera rígida con nudo central",
      "en": "Rigid bangle with central knot"
     }
+   },
+   {
+    "src": "/media/products/pu02-modelo-c4cb19e.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAHRABAAIDAAMBAAAAAAAAAAAAAQIRAAMEEiFBMf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A3dm55eGUqp8gMTi2ryjOTbJbfuRUdBrgLGEasfd/MfbvlpCESJE/CsOkj//Z",
+    "tone": "#cfbeb0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.7
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera rígida con nudo central, puestos",
+     "en": "Rigid bangle with central knot, worn"
+    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu02.jpg",
+  "thumbnail": "/media/products/pu02-base-8f9a8f1.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu02/f01-6a081ec.webp",
+    "/media/spin/pu02/f02-6a081ec.webp",
+    "/media/spin/pu02/f03-6a081ec.webp",
+    "/media/spin/pu02/f04-6a081ec.webp",
+    "/media/spin/pu02/f05-6a081ec.webp",
+    "/media/spin/pu02/f06-6a081ec.webp",
+    "/media/spin/pu02/f07-6a081ec.webp",
+    "/media/spin/pu02/f08-6a081ec.webp",
+    "/media/spin/pu02/f09-6a081ec.webp",
+    "/media/spin/pu02/f10-6a081ec.webp",
+    "/media/spin/pu02/f11-6a081ec.webp",
+    "/media/spin/pu02/f12-6a081ec.webp",
+    "/media/spin/pu02/f13-6a081ec.webp",
+    "/media/spin/pu02/f14-6a081ec.webp",
+    "/media/spin/pu02/f15-6a081ec.webp",
+    "/media/spin/pu02/f16-6a081ec.webp",
+    "/media/spin/pu02/f17-6a081ec.webp",
+    "/media/spin/pu02/f18-6a081ec.webp",
+    "/media/spin/pu02/f19-6a081ec.webp",
+    "/media/spin/pu02/f20-6a081ec.webp",
+    "/media/spin/pu02/f21-6a081ec.webp",
+    "/media/spin/pu02/f22-6a081ec.webp",
+    "/media/spin/pu02/f23-6a081ec.webp",
+    "/media/spin/pu02/f24-6a081ec.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Tipo brazalete rígido abierto",
@@ -18689,11 +18770,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu03-ang-9cb7c1e.jpg",
+    "src": "/media/products/pu03-base-e84bd34.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAQb/xAAcEAEAAgIDAQAAAAAAAAAAAAABAhEAIRIiQWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8ArefaiKl0vhhyGTH0wnAlu2Ld6woG9r9wk//Z",
-    "tone": "#ece6dd",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EAB0QAAICAgMBAAAAAAAAAAAAAAERAAISUSExYXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7J8pH7AsyQiCNybZh4CtvCVNqD3ZPQgVERA//9k=",
+    "tone": "#f5f5f5",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -18705,77 +18786,60 @@
     }
    },
    {
-    "src": "/media/products/pu03-hand-665a0fa.jpg",
+    "src": "/media/products/pu03-modelo-a95f0f8.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAgEAACAgMAAQUAAAAAAAAAAAABAgMEAAURURIhYZGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABIf/aAAwDAQACEQMRAD8ARs3bmv2cxkb113IZFbxz354xyCZJ4UljPUdQwOSmijswPDMoZHHCDgehvtWsWddOS4hZirD4PD+9+8B3Y//Z",
-    "tone": "#ccbdb4",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIRAAAQMEAgMBAAAAAAAAAAAAAQIDEQAEBSESIjFRYbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/ANOSyLrGSs2WuSZ3rwqTFPr4pPaB9miLu1Nwu3UohKmnOaVDZj1+Va+cU7AHUDZoDNv/2Q==",
+    "tone": "#bdb2a8",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera plateada con nudo, puesta",
+     "es": "Pulsera plateada con nudo, puestos",
      "en": "Silver-tone knot bangle, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu03-front-fc34f18.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EABsQAAICAwEAAAAAAAAAAAAAAAERAAISITFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXsNPcGDyQaHeFsSfVHWqLbMkv/9k=",
-    "tone": "#f0ebe5",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera plateada con nudo",
-     "en": "Silver-tone knot bangle"
-    }
-   },
-   {
-    "src": "/media/products/pu03-close-3a3a1c9.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgb/xAAeEAACAgIDAQEAAAAAAAAAAAABAgMSABEhMVETQf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8ArIkkW30e+zscdDzC6ymSySALrVSP33BMr1FWbg9XI3iSNii2diQOyckv/9k=",
-    "tone": "#e6e1da",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera plateada con nudo",
-     "en": "Close-up detail of Silver-tone knot bangle"
-    }
-   },
-   {
-    "src": "/media/products/pu03.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHRAAAgIBBQAAAAAAAAAAAAAAAREAAgQSIUFhof/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDaAtyaltZPqBa3K9h0yaBgVIgf/9k=",
-    "tone": "#f4f2f4",
-    "focal": {
-     "x": 0.5233973501547856,
-     "y": 0.5523090193653728
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera plateada con nudo",
-     "en": "Silver-tone knot bangle"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu03-ang-9cb7c1e.jpg",
+  "thumbnail": "/media/products/pu03-base-e84bd34.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu03/f01-633cdca.webp",
+    "/media/spin/pu03/f02-633cdca.webp",
+    "/media/spin/pu03/f03-633cdca.webp",
+    "/media/spin/pu03/f04-633cdca.webp",
+    "/media/spin/pu03/f05-633cdca.webp",
+    "/media/spin/pu03/f06-633cdca.webp",
+    "/media/spin/pu03/f07-633cdca.webp",
+    "/media/spin/pu03/f08-633cdca.webp",
+    "/media/spin/pu03/f09-633cdca.webp",
+    "/media/spin/pu03/f10-633cdca.webp",
+    "/media/spin/pu03/f11-633cdca.webp",
+    "/media/spin/pu03/f12-633cdca.webp",
+    "/media/spin/pu03/f13-633cdca.webp",
+    "/media/spin/pu03/f14-633cdca.webp",
+    "/media/spin/pu03/f15-633cdca.webp",
+    "/media/spin/pu03/f16-633cdca.webp",
+    "/media/spin/pu03/f17-633cdca.webp",
+    "/media/spin/pu03/f18-633cdca.webp",
+    "/media/spin/pu03/f19-633cdca.webp",
+    "/media/spin/pu03/f20-633cdca.webp",
+    "/media/spin/pu03/f21-633cdca.webp",
+    "/media/spin/pu03/f22-633cdca.webp",
+    "/media/spin/pu03/f23-633cdca.webp",
+    "/media/spin/pu03/f24-633cdca.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f9f9f9"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -18921,26 +18985,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu04.jpg",
-    "width": 960,
-    "height": 960,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAdEAACAwACAwAAAAAAAAAAAAABAgADESExBBJx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwCtXU9rYhwfN2UPHqFHsLMLccwKlapAyPmnojYbOxYksST2TCF//9k=",
-    "tone": "#c6c3bd",
+    "src": "/media/products/pu04-base-2f41bcd.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EABwQAQADAAMBAQAAAAAAAAAAAAEAAhEhMUEDEv/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXtrLlK7nauR0VUTEk7b58Ff0Lxj1LqOrbNfDyBOEIRD//2Q==",
+    "tone": "#f4f1ec",
     "focal": {
-     "x": 0.5285752248674379,
-     "y": 0.4832618199414826
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Pulsera dorada de bolitas con dije de corazón",
      "en": "Gold-tone bead bracelet with heart charm"
     }
+   },
+   {
+    "src": "/media/products/pu04-modelo-f157097.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAgEAABBAIBBQAAAAAAAAAAAAABAAIDEQQSIQUxYXGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQADAAAAAAAAAAAAAAAAAAARIUH/2gAMAwEAAhEDEQA/ALPUZHxQxlhIBdRI+JMidjWsdIa2F1SPI2liou4cRQrshyQ6WbUniMa+/KObJj//2Q==",
+    "tone": "#cabaaa",
+    "focal": {
+     "x": 0.5,
+     "y": 0.7
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Pulsera dorada de bolitas con dije de corazón, puestos",
+     "en": "Gold-tone bead bracelet with heart charm, worn"
+    }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu04.jpg",
+  "thumbnail": "/media/products/pu04-base-2f41bcd.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu04/f01-c319c80.webp",
+    "/media/spin/pu04/f02-c319c80.webp",
+    "/media/spin/pu04/f03-c319c80.webp",
+    "/media/spin/pu04/f04-c319c80.webp",
+    "/media/spin/pu04/f05-c319c80.webp",
+    "/media/spin/pu04/f06-c319c80.webp",
+    "/media/spin/pu04/f07-c319c80.webp",
+    "/media/spin/pu04/f08-c319c80.webp",
+    "/media/spin/pu04/f09-c319c80.webp",
+    "/media/spin/pu04/f10-c319c80.webp",
+    "/media/spin/pu04/f11-c319c80.webp",
+    "/media/spin/pu04/f12-c319c80.webp",
+    "/media/spin/pu04/f13-c319c80.webp",
+    "/media/spin/pu04/f14-c319c80.webp",
+    "/media/spin/pu04/f15-c319c80.webp",
+    "/media/spin/pu04/f16-c319c80.webp",
+    "/media/spin/pu04/f17-c319c80.webp",
+    "/media/spin/pu04/f18-c319c80.webp",
+    "/media/spin/pu04/f19-c319c80.webp",
+    "/media/spin/pu04/f20-c319c80.webp",
+    "/media/spin/pu04/f21-c319c80.webp",
+    "/media/spin/pu04/f22-c319c80.webp",
+    "/media/spin/pu04/f23-c319c80.webp",
+    "/media/spin/pu04/f24-c319c80.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f5f5f3"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Cadena de bolitas en tono dorado",
@@ -19101,11 +19216,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu05-ang-9c49a06.jpg",
+    "src": "/media/products/pu05-base-8109403.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EACAQAAICAgAHAAAAAAAAAAAAAAECAxEAEhMhMUFRUoH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANZszEhAAAaJbzklyrBZKJIsFcUkJZtkleM99ao/DhHHw+ZZnb2brWCk/9k=",
-    "tone": "#ebe1d4",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwb/xAAfEAACAgIBBQAAAAAAAAAAAAABAgADETFBBBIhUfH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1vU2vVUTVWbbOEHMsVgy5HyK2UctgsCBoakoDlmPjuOvUCeEIRD/2Q==",
+    "tone": "#f2f0ec",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -19117,77 +19232,60 @@
     }
    },
    {
-    "src": "/media/products/pu05-hand-84f6073.jpg",
+    "src": "/media/products/pu05-modelo-9f76d83.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAfEAABAwUAAwAAAAAAAAAAAAABAgMEAAURIVETIjH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAhEf/aAAwDAQACEQMRAD8AalTVxrk0k58Zb2O7+0qCCMijbm0l2GpZHu0CtJ52rwny9FbWRvGDRjsjp2//2Q==",
-    "tone": "#dfccbc",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAHhAAAgEFAQEBAAAAAAAAAAAAAQIDAAQRITESYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAwDAQACEQMRAD8A0pZ2huoTvwwxgc+0px5bFFlJmt2GgerrhqL2V1WFQdsuc/lTMZul/9k=",
+    "tone": "#bfafa1",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada con piedras claras y turquesa, puesta",
+     "es": "Pulsera dorada con piedras claras y turquesa, puestos",
      "en": "Gold-tone bracelet with clear and turquoise stones, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu05-front-08d92e7.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIG/8QAGxABAQEBAAMBAAAAAAAAAAAAAQIRABIxUSH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANa07kyuczWuYj8emoV2bYX3+bzM+Ptafr0l/9k=",
-    "tone": "#efe9e0",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con piedras claras y turquesa",
-     "en": "Gold-tone bracelet with clear and turquoise stones"
-    }
-   },
-   {
-    "src": "/media/products/pu05-close-86966bf.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxEEEiFBBRQx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDUe9j6ucZAA2rJ4+quzIWuIL6rvpGTx+NJe0Qsm0o8OCI2yNo4pClH/9k=",
-    "tone": "#e3dbce",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con piedras claras y turquesa",
-     "en": "Close-up detail of Gold-tone bracelet with clear and turquoise stones"
-    }
-   },
-   {
-    "src": "/media/products/pu05.jpg",
-    "width": 960,
-    "height": 960,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBf/EAB0QAAIDAAIDAAAAAAAAAAAAAAERAAIDEiExQWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1BncbE9MhktP5E1x0Ohtkq2PkSywJXFMH3BSpDNkyWVDEP/Z",
-    "tone": "#d2b090",
-    "focal": {
-     "x": 0.47324180524251086,
-     "y": 0.4245523490954281
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con piedras claras y turquesa",
-     "en": "Gold-tone bracelet with clear and turquoise stones"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu05-ang-9c49a06.jpg",
+  "thumbnail": "/media/products/pu05-base-8109403.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu05/f01-2bebbc8.webp",
+    "/media/spin/pu05/f02-2bebbc8.webp",
+    "/media/spin/pu05/f03-2bebbc8.webp",
+    "/media/spin/pu05/f04-2bebbc8.webp",
+    "/media/spin/pu05/f05-2bebbc8.webp",
+    "/media/spin/pu05/f06-2bebbc8.webp",
+    "/media/spin/pu05/f07-2bebbc8.webp",
+    "/media/spin/pu05/f08-2bebbc8.webp",
+    "/media/spin/pu05/f09-2bebbc8.webp",
+    "/media/spin/pu05/f10-2bebbc8.webp",
+    "/media/spin/pu05/f11-2bebbc8.webp",
+    "/media/spin/pu05/f12-2bebbc8.webp",
+    "/media/spin/pu05/f13-2bebbc8.webp",
+    "/media/spin/pu05/f14-2bebbc8.webp",
+    "/media/spin/pu05/f15-2bebbc8.webp",
+    "/media/spin/pu05/f16-2bebbc8.webp",
+    "/media/spin/pu05/f17-2bebbc8.webp",
+    "/media/spin/pu05/f18-2bebbc8.webp",
+    "/media/spin/pu05/f19-2bebbc8.webp",
+    "/media/spin/pu05/f20-2bebbc8.webp",
+    "/media/spin/pu05/f21-2bebbc8.webp",
+    "/media/spin/pu05/f22-2bebbc8.webp",
+    "/media/spin/pu05/f23-2bebbc8.webp",
+    "/media/spin/pu05/f24-2bebbc8.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -19343,11 +19441,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu06-ang-3e3518a.jpg",
+    "src": "/media/products/pu06-base-66371a2.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAQb/xAAcEAACAgMBAQAAAAAAAAAAAAABAgARAxIxscH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwCrLs2QogoDrH5HGxLMrdXyDY22LI1E9sXHGmlktsx6ZOlH/9k=",
-    "tone": "#efe4d4",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECABEDIRIxQVGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/AOuy5GUFcQDZKsA6H0y1YNYHY0R6kUUyMQpYNvXjU3HyLM7DjdULk3aVxESg/9k=",
+    "tone": "#f3eee7",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -19359,62 +19457,60 @@
     }
    },
    {
-    "src": "/media/products/pu06-hand-f7c7004.jpg",
+    "src": "/media/products/pu06-modelo-8342165.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIhAAAQMDAwUAAAAAAAAAAAAAAQIEEQADBRITMTJBUZGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAMTL/2gAMAwEAAhEDEQA/ANFlXKmrLUjlSgifE1dmVqaW1XOoiaPytzcutm3ZatR9wPtKSAAAIA4ozZHkv//Z",
-    "tone": "#e3d0c3",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAIRAAAgICAgEFAAAAAAAAAAAAAQIDBAAREhMhIjFBQnH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwDavWGrUJpkA5Kvp/SdZdHsNKJpDtiN+ffWDtI1iPoHEcHVmJ+w+MTPMyEBQBhUkx//2Q==",
+    "tone": "#c8b6a4",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada de corazones, puesta",
+     "es": "Pulsera dorada de corazones, puestos",
      "en": "Gold-tone hearts bracelet, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu06-front-6b8b10c.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAQb/xAAdEAEBAAIDAAMAAAAAAAAAAAACAQAREiExA7HB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAAhEf/aAAwDAQACEQMRAD8Aq6knQZqT1X8xCtqK7s+sF8d5VBcbfet7xA4btVSvtwXSj//Z",
-    "tone": "#efe4d6",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada de corazones",
-     "en": "Gold-tone hearts bracelet"
-    }
-   },
-   {
-    "src": "/media/products/pu06-close-f05ba69.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQhERIiQjGR0f/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAVEQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEQMRAD8A0oaW4aQI5iQY8ctflHO7W3JwJd2B1NI9u25ngkMbuQW1yPVRrQSuTcESr1UjC0KMol//2Q==",
-    "tone": "#e6d0b7",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada de corazones",
-     "en": "Close-up detail of Gold-tone hearts bracelet"
     }
    }
   ],
   "videos": [
-   "product.pu06",
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu06-ang-3e3518a.jpg",
+  "thumbnail": "/media/products/pu06-base-66371a2.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu06/f01-21aac7a.webp",
+    "/media/spin/pu06/f02-21aac7a.webp",
+    "/media/spin/pu06/f03-21aac7a.webp",
+    "/media/spin/pu06/f04-21aac7a.webp",
+    "/media/spin/pu06/f05-21aac7a.webp",
+    "/media/spin/pu06/f06-21aac7a.webp",
+    "/media/spin/pu06/f07-21aac7a.webp",
+    "/media/spin/pu06/f08-21aac7a.webp",
+    "/media/spin/pu06/f09-21aac7a.webp",
+    "/media/spin/pu06/f10-21aac7a.webp",
+    "/media/spin/pu06/f11-21aac7a.webp",
+    "/media/spin/pu06/f12-21aac7a.webp",
+    "/media/spin/pu06/f13-21aac7a.webp",
+    "/media/spin/pu06/f14-21aac7a.webp",
+    "/media/spin/pu06/f15-21aac7a.webp",
+    "/media/spin/pu06/f16-21aac7a.webp",
+    "/media/spin/pu06/f17-21aac7a.webp",
+    "/media/spin/pu06/f18-21aac7a.webp",
+    "/media/spin/pu06/f19-21aac7a.webp",
+    "/media/spin/pu06/f20-21aac7a.webp",
+    "/media/spin/pu06/f21-21aac7a.webp",
+    "/media/spin/pu06/f22-21aac7a.webp",
+    "/media/spin/pu06/f23-21aac7a.webp",
+    "/media/spin/pu06/f24-21aac7a.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
-   "type": "video",
-   "key": "product.pu06"
+   "type": "image",
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -19566,11 +19662,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu07-ang-aa0d8cf.jpg",
+    "src": "/media/products/pu07-base-3ed78ee.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAIBABAQABBAEFAAAAAAAAAAAAAQIDABESIRMiMUFCof/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFREBAQAAAAAAAAAAAAAAAAAAADH/2gAMAwEAAhEDEQA/ANFGKYfUVdH1k1ViyFiAzx6R620XjeTUZKjftNhP3Q5MrDtKr8r7upw6/9k=",
-    "tone": "#e4d8c7",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EAB4QAQADAAEFAQAAAAAAAAAAAAEAAhEDISIxUWGB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOv5OQodfPqVVLVEz8dkd9btqhYfuJKoJqgK7hAtiIiH/9k=",
+    "tone": "#f3f0ed",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -19582,77 +19678,60 @@
     }
    },
    {
-    "src": "/media/products/pu07-hand-f22234c.jpg",
+    "src": "/media/products/pu07-modelo-8e2b497.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAcEAEAAwACAwAAAAAAAAAAAAABAAIRBFEDI3H/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAEx/9oADAMBAAIRAxEAPwCk5d2h48U1yKq7UeyE5j6B6sRNXanyBUbh/9k=",
-    "tone": "#eadcd0",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDEQAEEkEFEyFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oADAMBAAIRAxEAPwB3YlaOCLjYBaj+5tDj1qWIFjvDdl0Gqa5WzCr6yfkpmMcKKxHy7ydg9R//2Q==",
+    "tone": "#d5c7ba",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada trenzada, puesta",
+     "es": "Pulsera dorada trenzada, puestos",
      "en": "Braided gold-tone bracelet, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu07-front-ad1d07a.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB0QAQACAgIDAAAAAAAAAAAAAAECEQAhAxIxQVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A19gbaw0+Mk8azZDFv1KN4/HDoOzfwowk/9k=",
-    "tone": "#f0e9df",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada trenzada",
-     "en": "Braided gold-tone bracelet"
-    }
-   },
-   {
-    "src": "/media/products/pu07-close-86973df.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIG/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQREhNRFCIxcZL/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwDTzXYUYhBkbOO0ZFDLdzRgF4JPoKKmHqigSLYiUcAmmSyUnVcMZn5bwPQoaxIj/9k=",
-    "tone": "#e0ceb7",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada trenzada",
-     "en": "Close-up detail of Braided gold-tone bracelet"
-    }
-   },
-   {
-    "src": "/media/products/pu07.jpg",
-    "width": 960,
-    "height": 960,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxEiBDFRUnH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/ANqm20nGBZvUHAPsS/V8Bq4QczxD2Ka+dTldHbNk1ozjWbSYMM//2Q==",
-    "tone": "#d7bea5",
-    "focal": {
-     "x": 0.49842071352912565,
-     "y": 0.4789997090120484
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada trenzada",
-     "en": "Braided gold-tone bracelet"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu07-ang-aa0d8cf.jpg",
+  "thumbnail": "/media/products/pu07-base-3ed78ee.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu07/f01-6fb80f0.webp",
+    "/media/spin/pu07/f02-6fb80f0.webp",
+    "/media/spin/pu07/f03-6fb80f0.webp",
+    "/media/spin/pu07/f04-6fb80f0.webp",
+    "/media/spin/pu07/f05-6fb80f0.webp",
+    "/media/spin/pu07/f06-6fb80f0.webp",
+    "/media/spin/pu07/f07-6fb80f0.webp",
+    "/media/spin/pu07/f08-6fb80f0.webp",
+    "/media/spin/pu07/f09-6fb80f0.webp",
+    "/media/spin/pu07/f10-6fb80f0.webp",
+    "/media/spin/pu07/f11-6fb80f0.webp",
+    "/media/spin/pu07/f12-6fb80f0.webp",
+    "/media/spin/pu07/f13-6fb80f0.webp",
+    "/media/spin/pu07/f14-6fb80f0.webp",
+    "/media/spin/pu07/f15-6fb80f0.webp",
+    "/media/spin/pu07/f16-6fb80f0.webp",
+    "/media/spin/pu07/f17-6fb80f0.webp",
+    "/media/spin/pu07/f18-6fb80f0.webp",
+    "/media/spin/pu07/f19-6fb80f0.webp",
+    "/media/spin/pu07/f20-6fb80f0.webp",
+    "/media/spin/pu07/f21-6fb80f0.webp",
+    "/media/spin/pu07/f22-6fb80f0.webp",
+    "/media/spin/pu07/f23-6fb80f0.webp",
+    "/media/spin/pu07/f24-6fb80f0.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -19809,11 +19888,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu08-ang-0d5e589.jpg",
-    "width": 1824,
-    "height": 1824,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EABwQAAEEAwEAAAAAAAAAAAAAAAEAAhESAyExUf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAMf/aAAwDAQACEQMRAD8A02PHUy6SRuAqGutPRHqCgJk99lKyuoat0OoQq//Z",
-    "tone": "#ebe1d3",
+    "src": "/media/products/pu08-base-3e4d997.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EABwQAQADAAIDAAAAAAAAAAAAAAEAAhESIQNBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7Dy3aU2teVvR9lCIJJuWHlXtDMZtKtTt1XZBUREo/9k=",
+    "tone": "#f5f3f0",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -19825,77 +19904,60 @@
     }
    },
    {
-    "src": "/media/products/pu08-hand-02aa526.jpg",
-    "width": 1376,
-    "height": 1376,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDAAQRQQUhEmFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQADAQAAAAAAAAAAAAAAAAEAESES/9oADAMBAAIRAxEAPwDfuLqaCRuxgaIprW+SdSHwjjRPR+UrxpKvjIgYexUNxx6LgwgAbVjmibNinLk//9k=",
-    "tone": "#e3cab9",
+    "src": "/media/products/pu08-modelo-a60e16f.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDBAARISMxQVGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAAMAAAAAAAAAAAAAAAAAAAARIf/aAAwDAQACEQMRAD8A3LMxgpF1PI8+sWs5lqxOy6LKDrIZupUZdkKB9xbVkoqaHfDdEUP/2Q==",
+    "tone": "#cebcad",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada con dijes de trébol, puesta",
+     "es": "Pulsera dorada con dijes de trébol, puestos",
      "en": "Gold-tone bracelet with clover charms, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu08-front-5762866.jpg",
-    "width": 1824,
-    "height": 1824,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAGRABAAMBAQAAAAAAAAAAAAAAAQACESEx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXNip1yURNHSFpruo5nGKtSpzfd7JL/9k=",
-    "tone": "#f2ece4",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con dijes de trébol",
-     "en": "Gold-tone bracelet with clover charms"
-    }
-   },
-   {
-    "src": "/media/products/pu08-close-cf51d16.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EAB8QAAMAAQMFAAAAAAAAAAAAAAECEQADEhMhIjEyof/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERElH/2gAMAwEAAhEDEQA/ANCrujvwTZfRgfkxtFydZufvYCCDoBlZVWEIBwyeMnV6OT//2Q==",
-    "tone": "#e9dac7",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con dijes de trébol",
-     "en": "Close-up detail of Gold-tone bracelet with clover charms"
-    }
-   },
-   {
-    "src": "/media/products/pu08.jpg",
-    "width": 1000,
-    "height": 1000,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EAB4QAQEAAQMFAAAAAAAAAAAAAAECAAMRQRIxUYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDSG9WdFJIfcVr1VVsKBwPOUMnvyO2FiaATtgUf/9k=",
-    "tone": "#e4d3c8",
-    "focal": {
-     "x": 0.4727079943476272,
-     "y": 0.47026055655814986
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con dijes de trébol",
-     "en": "Gold-tone bracelet with clover charms"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu08-ang-0d5e589.jpg",
+  "thumbnail": "/media/products/pu08-base-3e4d997.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu08/f01-29da4e4.webp",
+    "/media/spin/pu08/f02-29da4e4.webp",
+    "/media/spin/pu08/f03-29da4e4.webp",
+    "/media/spin/pu08/f04-29da4e4.webp",
+    "/media/spin/pu08/f05-29da4e4.webp",
+    "/media/spin/pu08/f06-29da4e4.webp",
+    "/media/spin/pu08/f07-29da4e4.webp",
+    "/media/spin/pu08/f08-29da4e4.webp",
+    "/media/spin/pu08/f09-29da4e4.webp",
+    "/media/spin/pu08/f10-29da4e4.webp",
+    "/media/spin/pu08/f11-29da4e4.webp",
+    "/media/spin/pu08/f12-29da4e4.webp",
+    "/media/spin/pu08/f13-29da4e4.webp",
+    "/media/spin/pu08/f14-29da4e4.webp",
+    "/media/spin/pu08/f15-29da4e4.webp",
+    "/media/spin/pu08/f16-29da4e4.webp",
+    "/media/spin/pu08/f17-29da4e4.webp",
+    "/media/spin/pu08/f18-29da4e4.webp",
+    "/media/spin/pu08/f19-29da4e4.webp",
+    "/media/spin/pu08/f20-29da4e4.webp",
+    "/media/spin/pu08/f21-29da4e4.webp",
+    "/media/spin/pu08/f22-29da4e4.webp",
+    "/media/spin/pu08/f23-29da4e4.webp",
+    "/media/spin/pu08/f24-29da4e4.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -20058,11 +20120,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu09-ang-8189deb.jpg",
+    "src": "/media/products/pu09-base-ea65463.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxESISJBUaH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDUAZgVSx+CKjaeJUqc2TmlzYGS5q1Dcio67HXt8kn2ZOG//9k=",
-    "tone": "#ebdfcf",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBv/EAB0QAAIDAAIDAAAAAAAAAAAAAAECAAMREiETMVL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDrrbCinghsb5EsEH1M7XtrQmurynegGyWAWYMw4nM6OyaVRESg/9k=",
+    "tone": "#f3f0e9",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -20074,77 +20136,60 @@
     }
    },
    {
-    "src": "/media/products/pu09-hand-8812884.jpg",
-    "width": 1600,
+    "src": "/media/products/pu09-modelo-da36387.jpg",
+    "width": 1067,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMG/8QAHxAAAQMEAwEAAAAAAAAAAAAAAQACEQMEITETImFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAAMAAAAAAAAAAAAAAAAAAAABMf/aAAwDAQACEQMRAD8A0t3VdS4y0wHGClDQnKJeGbYiAcjf1Xa7o0+BBUbh/9k=",
-    "tone": "#eaddd2",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EACUQAAIBBAEBCQAAAAAAAAAAAAECAwAEERIhBRMiMUFCUWFxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAf/EABgRAQADAQAAAAAAAAAAAAAAAAABERIh/9oADAMBAAIRAxEAPwCnezvbQgRNq0nqzyMU6kjSRrJFyPA/fnU3qoWSGI57yuMD4NNIHitkjXY45JAor6WoyyKrNcdlINlQ5H6KYe4eM6g5A96KKmS//9k=",
+    "tone": "#c6af9c",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada con piedra verde, puesta",
+     "es": "Pulsera dorada con piedra verde, puestos",
      "en": "Gold-tone bracelet with green stone, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu09-front-74fc60a.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB4QAAICAQUBAAAAAAAAAAAAAAECABEhAxITMUFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDXlgOyBAGxiSdNXaeJkvwutxwpu2Iv5iCk/9k=",
-    "tone": "#f1eadd",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con piedra verde",
-     "en": "Gold-tone bracelet with green stone"
-    }
-   },
-   {
-    "src": "/media/products/pu09-close-fd3c67e.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECAwQAEQUTMSL/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABgRAAMBAQAAAAAAAAAAAAAAAAABESFh/9oADAMBAAIRAxEAPwDQ3OVirMiqO0uPkqw0cKvyAnrrKsTHZIIB8xVjiIputQFCx+AjzKqlOOpD1oBre/MnrFW8P//Z",
-    "tone": "#cccdb7",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con piedra verde",
-     "en": "Close-up detail of Gold-tone bracelet with green stone"
-    }
-   },
-   {
-    "src": "/media/products/pu09.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDABESQSFRMkJx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8A2RzbxIUX3uqHscX4PfdCWEuhVJXjvtdUxGPYlvtTS//Z",
-    "tone": "#f9f6ed",
-    "focal": {
-     "x": 0.5332932654851552,
-     "y": 0.5381229430339477
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con piedra verde",
-     "en": "Gold-tone bracelet with green stone"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu09-ang-8189deb.jpg",
+  "thumbnail": "/media/products/pu09-base-ea65463.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu09/f01-5c20d8d.webp",
+    "/media/spin/pu09/f02-5c20d8d.webp",
+    "/media/spin/pu09/f03-5c20d8d.webp",
+    "/media/spin/pu09/f04-5c20d8d.webp",
+    "/media/spin/pu09/f05-5c20d8d.webp",
+    "/media/spin/pu09/f06-5c20d8d.webp",
+    "/media/spin/pu09/f07-5c20d8d.webp",
+    "/media/spin/pu09/f08-5c20d8d.webp",
+    "/media/spin/pu09/f09-5c20d8d.webp",
+    "/media/spin/pu09/f10-5c20d8d.webp",
+    "/media/spin/pu09/f11-5c20d8d.webp",
+    "/media/spin/pu09/f12-5c20d8d.webp",
+    "/media/spin/pu09/f13-5c20d8d.webp",
+    "/media/spin/pu09/f14-5c20d8d.webp",
+    "/media/spin/pu09/f15-5c20d8d.webp",
+    "/media/spin/pu09/f16-5c20d8d.webp",
+    "/media/spin/pu09/f17-5c20d8d.webp",
+    "/media/spin/pu09/f18-5c20d8d.webp",
+    "/media/spin/pu09/f19-5c20d8d.webp",
+    "/media/spin/pu09/f20-5c20d8d.webp",
+    "/media/spin/pu09/f21-5c20d8d.webp",
+    "/media/spin/pu09/f22-5c20d8d.webp",
+    "/media/spin/pu09/f23-5c20d8d.webp",
+    "/media/spin/pu09/f24-5c20d8d.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f9f9f9"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -20306,11 +20351,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu10-ang-f7f81ab.jpg",
-    "width": 1920,
-    "height": 1920,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAG/8QAHRAAAgIDAAMAAAAAAAAAAAAAAQIAEQMSMSFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8A1u5JIVCa8XwQDEtTLqe9uD4EyGzsD9ViJLjXHYQVZs+7gpP/2Q==",
-    "tone": "#eee5d9",
+    "src": "/media/products/pu10-base-07c88df.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwb/xAAcEAACAwADAQAAAAAAAAAAAAABAgADERIhQTH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAAEH/2gAMAwEAAhEDEQA/ANdfaakJStrG8VfplikMNEQllLELyB8B7koG5FmwbmCFJ4QhEP/Z",
+    "tone": "#f4f1ec",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -20322,77 +20367,60 @@
     }
    },
    {
-    "src": "/media/products/pu10-hand-18977ea.jpg",
+    "src": "/media/products/pu10-modelo-00e2a2f.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAhEAACAgEDBQEAAAAAAAAAAAABAgMEABFhoQUSEyJBsf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQADAQAAAAAAAAAAAAAAAAAAATEy/9oADAMBAAIRAxEAPwC/es+KVEBKsed+MbCxeJWP3A9UhWSqZdAHh9lP6MTUk76sZ20w1RHk/9k=",
-    "tone": "#e3cfbe",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQD/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABBEFEhMUMVFxof/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAMAwEAAhEDEQA/AEtdnlgtIXiyo5Rux8pOGfqLWGUjaXUMR4ozUQbm34M7Q2GJIz2NVxclm4lUKkeF9nFGyDl//9k=",
+    "tone": "#c6b5a8",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada con estrellas, puesta",
+     "es": "Pulsera dorada con estrellas, puestos",
      "en": "Gold-tone bracelet with stars, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu10-front-5fcd7a3.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EABwQAQEAAgMBAQAAAAAAAAAAAAECABEDEnFBUf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDW91UmF193owmlUqWX3JviV3HJUeaTHxx02tVb+1hJ/9k=",
-    "tone": "#eee6dc",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con estrellas",
-     "en": "Gold-tone bracelet with stars"
-    }
-   },
-   {
-    "src": "/media/products/pu10-close-38421eb.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECAxEABAUSFUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANWuzCylhItA1d4pNuCIgPKoJF5NuP1ihVY+l/VNHDz9WhcKmhVnBSj/2Q==",
-    "tone": "#e7dccf",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada con estrellas",
-     "en": "Close-up detail of Gold-tone bracelet with stars"
-    }
-   },
-   {
-    "src": "/media/products/pu10.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEE/8QAIRAAAgIBBAIDAAAAAAAAAAAAAQIDBAAREiFhBUEiMoH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAADH/2gAMAwEAAhEDEQA/AElovKgE6qQTygPGnZ95qE7VFCNE8sYGi7Bqy9HrvJUsG1VEp+LglWAHBI9jDbvlzXmMcabnH2ZuB+YENX//2Q==",
-    "tone": "#cdb398",
-    "focal": {
-     "x": 0.5137090016629138,
-     "y": 0.36519044372961806
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada con estrellas",
-     "en": "Gold-tone bracelet with stars"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu10-ang-f7f81ab.jpg",
+  "thumbnail": "/media/products/pu10-base-07c88df.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu10/f01-35b71fe.webp",
+    "/media/spin/pu10/f02-35b71fe.webp",
+    "/media/spin/pu10/f03-35b71fe.webp",
+    "/media/spin/pu10/f04-35b71fe.webp",
+    "/media/spin/pu10/f05-35b71fe.webp",
+    "/media/spin/pu10/f06-35b71fe.webp",
+    "/media/spin/pu10/f07-35b71fe.webp",
+    "/media/spin/pu10/f08-35b71fe.webp",
+    "/media/spin/pu10/f09-35b71fe.webp",
+    "/media/spin/pu10/f10-35b71fe.webp",
+    "/media/spin/pu10/f11-35b71fe.webp",
+    "/media/spin/pu10/f12-35b71fe.webp",
+    "/media/spin/pu10/f13-35b71fe.webp",
+    "/media/spin/pu10/f14-35b71fe.webp",
+    "/media/spin/pu10/f15-35b71fe.webp",
+    "/media/spin/pu10/f16-35b71fe.webp",
+    "/media/spin/pu10/f17-35b71fe.webp",
+    "/media/spin/pu10/f18-35b71fe.webp",
+    "/media/spin/pu10/f19-35b71fe.webp",
+    "/media/spin/pu10/f20-35b71fe.webp",
+    "/media/spin/pu10/f21-35b71fe.webp",
+    "/media/spin/pu10/f22-35b71fe.webp",
+    "/media/spin/pu10/f23-35b71fe.webp",
+    "/media/spin/pu10/f24-35b71fe.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -20548,11 +20576,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu11-ang-e45f056.jpg",
+    "src": "/media/products/pu11-base-8f34b3c.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EACAQAQABAwQDAQAAAAAAAAAAAAECAAMREhMhMQRBUZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A01u3btySFtnI7fn7T7c9YvWHGPZUcJb09cVg4wsXl+ULnlbDpgKrlZPLQJ//2Q==",
-    "tone": "#e3d9cc",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAG/8QAHhAAAgEFAAMAAAAAAAAAAAAAAQIAAxESMUEhIlH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAAEH/2gAMAwEAAhEDEQA/ANfUdh60xk+7RI2Qv3RHyCoWpkuq5AgXXsSKRcttjfxyFJylKIf/2Q==",
+    "tone": "#f3f0ea",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -20564,77 +20592,60 @@
     }
    },
    {
-    "src": "/media/products/pu11-hand-9407347.jpg",
+    "src": "/media/products/pu11-modelo-2ff58ef.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACEQAAIBAwMFAAAAAAAAAAAAAAECBAADEQUTUSExMkGB/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAABAiEx/9oADAMBAAIRAxEAPwDS6hIMWE91fIEAfTiigOXh22YljjqT7pTUX3pFiJ2ViGY88VRULbUKgwoGABRrRHUT/9k=",
-    "tone": "#e4d3c5",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAgIABwAAAAAAAAAAAAABAgMEABESISQyQVGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABACEx/9oADAMBAAIRAxEAPwC7ZtGnTeZBxEMB9xNJpDSiaTZYjzgH6xo4yxCqwJGu44uV35FDoesmOzeX/9k=",
+    "tone": "#d6c6b7",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera dorada doble cadena con corazón, puesta",
+     "es": "Pulsera dorada doble cadena con corazón, puestos",
      "en": "Gold-tone double-chain bracelet with heart, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu11-front-da7756e.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIG/8QAGRABAQEBAQEAAAAAAAAAAAAAARECABIh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdrRkqzkRKNOjeUfeGMn0vOM+R+1WrxJ//Z",
-    "tone": "#f2eae0",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada doble cadena con corazón",
-     "en": "Gold-tone double-chain bracelet with heart"
-    }
-   },
-   {
-    "src": "/media/products/pu11-close-00ee16d.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAIRAAAgEEAQUBAAAAAAAAAAAAAQIDAAQRElEhIjKRorH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A0Qnu06PFGx521/aplvJPBI0+qe4jaWPVGCkHPcMj1SKNUVSc4GM81Oadf//Z",
-    "tone": "#e5d9ca",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera dorada doble cadena con corazón",
-     "en": "Close-up detail of Gold-tone double-chain bracelet with heart"
-    }
-   },
-   {
-    "src": "/media/products/pu11.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQMG/8QAHRABAAEEAwEAAAAAAAAAAAAAAQIAAxESITFBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A01llMwSTTA/aZW2dx1nrLAqelT1dlhJgvePabJOE7jK4z2eMnJUjf//Z",
-    "tone": "#e2d5be",
-    "focal": {
-     "x": 0.5288896832302662,
-     "y": 0.4800024388550559
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera dorada doble cadena con corazón",
-     "en": "Gold-tone double-chain bracelet with heart"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu11-ang-e45f056.jpg",
+  "thumbnail": "/media/products/pu11-base-8f34b3c.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu11/f01-e69b072.webp",
+    "/media/spin/pu11/f02-e69b072.webp",
+    "/media/spin/pu11/f03-e69b072.webp",
+    "/media/spin/pu11/f04-e69b072.webp",
+    "/media/spin/pu11/f05-e69b072.webp",
+    "/media/spin/pu11/f06-e69b072.webp",
+    "/media/spin/pu11/f07-e69b072.webp",
+    "/media/spin/pu11/f08-e69b072.webp",
+    "/media/spin/pu11/f09-e69b072.webp",
+    "/media/spin/pu11/f10-e69b072.webp",
+    "/media/spin/pu11/f11-e69b072.webp",
+    "/media/spin/pu11/f12-e69b072.webp",
+    "/media/spin/pu11/f13-e69b072.webp",
+    "/media/spin/pu11/f14-e69b072.webp",
+    "/media/spin/pu11/f15-e69b072.webp",
+    "/media/spin/pu11/f16-e69b072.webp",
+    "/media/spin/pu11/f17-e69b072.webp",
+    "/media/spin/pu11/f18-e69b072.webp",
+    "/media/spin/pu11/f19-e69b072.webp",
+    "/media/spin/pu11/f20-e69b072.webp",
+    "/media/spin/pu11/f21-e69b072.webp",
+    "/media/spin/pu11/f22-e69b072.webp",
+    "/media/spin/pu11/f23-e69b072.webp",
+    "/media/spin/pu11/f24-e69b072.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -20792,11 +20803,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu12-ang-a50a281.jpg",
+    "src": "/media/products/pu12-base-436a703.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHRABAAICAgMAAAAAAAAAAAAAAQIRADEDEkFRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDWPI2kYMq23RhFdlfPWGRyWsJhfiReSIxvtJlJ26wk/9k=",
-    "tone": "#e8e2d8",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBv/EAB8QAAICAQQDAAAAAAAAAAAAAAECAAMRBCExQRJRkf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDrdRcaayVRrG6VeZaOHUEfPUlmNbk+DMG7XfE1MklypXONjzAuIiB//9k=",
+    "tone": "#efefee",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -20808,77 +20819,60 @@
     }
    },
    {
-    "src": "/media/products/pu12-hand-a6e85b7.jpg",
-    "width": 1600,
+    "src": "/media/products/pu12-modelo-7ef3ae7.jpg",
+    "width": 1067,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAjEAACAQMCBwEAAAAAAAAAAAABAgQABSEDEQYTIjFBUXHx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AFyLlKtfEASUzPE1z079gCcEfDVIcGhz4Ee4x+VJXcDKsMFT7FTurdp1ilNC1WSQqqGQtvgePzNEn//Z",
-    "tone": "#bfb6b0",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EACYQAAIBAwMCBwEAAAAAAAAAAAECAwAEEQUSIRPRFCIxMkFRUoH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAMAwEAAhEDEQA/ANWo6m1jeW8ae1RucfoGrHUWW3jkTlWGRUfXrESWcdyCDJCcEj5UnvTRPt0y1RAchRkD1GOKJzDLhV8G0bAlW8p5+6RPEo6KwgRrsPA/neiisT//2Q==",
+    "tone": "#b1a49c",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera plateada con esferas de cristal, puesta",
+     "es": "Pulsera plateada con esferas de cristal, puestos",
      "en": "Silver-tone bracelet with crystal spheres, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu12-front-d9de8cc.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAGxABAQEBAAMBAAAAAAAAAAAAAQIRABIyUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANdVTPshyaKNHejNeSxQb9OTKK06v5nSX//Z",
-    "tone": "#f0eae4",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera plateada con esferas de cristal",
-     "en": "Silver-tone bracelet with crystal spheres"
-    }
-   },
-   {
-    "src": "/media/products/pu12-close-599e170.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMAERITUWEUITJBof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCr0Im7kZ8sb0HMcJAEpQ7eXyl0sPpLDYEimkSJfFAL8UF//9k=",
-    "tone": "#e7e2dd",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera plateada con esferas de cristal",
-     "en": "Close-up detail of Silver-tone bracelet with crystal spheres"
-    }
-   },
-   {
-    "src": "/media/products/pu12.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEG/8QAHhABAQABAwUAAAAAAAAAAAAAAQIAESEyAzFBYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANLTVbQ6aeXLC8a5B9wJYr02dHuVikTeka9YV//Z",
-    "tone": "#dad4d6",
-    "focal": {
-     "x": 0.5207695566033402,
-     "y": 0.5122253121852535
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera plateada con esferas de cristal",
-     "en": "Silver-tone bracelet with crystal spheres"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu12-ang-a50a281.jpg",
+  "thumbnail": "/media/products/pu12-base-436a703.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu12/f01-9a1f1fa.webp",
+    "/media/spin/pu12/f02-9a1f1fa.webp",
+    "/media/spin/pu12/f03-9a1f1fa.webp",
+    "/media/spin/pu12/f04-9a1f1fa.webp",
+    "/media/spin/pu12/f05-9a1f1fa.webp",
+    "/media/spin/pu12/f06-9a1f1fa.webp",
+    "/media/spin/pu12/f07-9a1f1fa.webp",
+    "/media/spin/pu12/f08-9a1f1fa.webp",
+    "/media/spin/pu12/f09-9a1f1fa.webp",
+    "/media/spin/pu12/f10-9a1f1fa.webp",
+    "/media/spin/pu12/f11-9a1f1fa.webp",
+    "/media/spin/pu12/f12-9a1f1fa.webp",
+    "/media/spin/pu12/f13-9a1f1fa.webp",
+    "/media/spin/pu12/f14-9a1f1fa.webp",
+    "/media/spin/pu12/f15-9a1f1fa.webp",
+    "/media/spin/pu12/f16-9a1f1fa.webp",
+    "/media/spin/pu12/f17-9a1f1fa.webp",
+    "/media/spin/pu12/f18-9a1f1fa.webp",
+    "/media/spin/pu12/f19-9a1f1fa.webp",
+    "/media/spin/pu12/f20-9a1f1fa.webp",
+    "/media/spin/pu12/f21-9a1f1fa.webp",
+    "/media/spin/pu12/f22-9a1f1fa.webp",
+    "/media/spin/pu12/f23-9a1f1fa.webp",
+    "/media/spin/pu12/f24-9a1f1fa.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -21056,11 +21050,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/pu13-ang-94a17f1.jpg",
+    "src": "/media/products/pu13-base-a8916bc.jpg",
     "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHRAAAgIDAAMAAAAAAAAAAAAAAQIAEQMxQRJhsf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDWeZ0qlq90JUYsSGUqRzcFsZNlMr47NmqP2IihBssesxsmAn//2Q==",
-    "tone": "#ece3d8",
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAG/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIAEQMSE0L/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANflyaKdVLsPIiVgwsQN0UnmFYE3RNRIGvZ6DEVQkClKUo//2Q==",
+    "tone": "#f2f0ee",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -21072,77 +21066,60 @@
     }
    },
    {
-    "src": "/media/products/pu13-hand-ea59f38.jpg",
+    "src": "/media/products/pu13-modelo-63d6936.jpg",
     "width": 1600,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIBABAAEDBAMBAAAAAAAAAAAAAQMAAgQFEhPBESEiQv/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQADAQAAAAAAAAAAAAAAAAAAATEC/9oADAMBAAIRAxEAPwDc1WTJi4pIL9tg/T007Gl5saOVAb7R8FTyQkxZbU9NjR9JmZMIH8O3vujjEuT/2Q==",
-    "tone": "#e0ccbd",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEF/8QAIhAAAQQBAgcAAAAAAAAAAAAAAQACAxETBBIhIzFBcZHw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAARACH/2gAMAwEAAhEDEQA/AN7Uz4dHmZx3UAfKgfcbC49QgHOOEGmxvsjsfrSzTUQNo9KbszC//9k=",
+    "tone": "#cfc0b3",
     "focal": {
      "x": 0.5,
-     "y": 0.62
+     "y": 0.7
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Pulsera con esferas de cristal en dos tonos, puesta",
+     "es": "Pulsera con esferas de cristal en dos tonos, puestos",
      "en": "Two-tone crystal spheres bracelet, worn"
-    }
-   },
-   {
-    "src": "/media/products/pu13-front-9264e00.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EABwQAQACAgMBAAAAAAAAAAAAAAECEQAxAxIhUf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A16htDAb1kT41bhIiv2I44Q637a78rJL/2Q==",
-    "tone": "#f1ebe2",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera con esferas de cristal en dos tonos",
-     "en": "Two-tone crystal spheres bracelet"
-    }
-   },
-   {
-    "src": "/media/products/pu13-close-0e87ebf.jpg",
-    "width": 1280,
-    "height": 1280,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAG/8QAJBAAAQQBAAsAAAAAAAAAAAAAAQACAxEEBRIhIjEyQ4GRktH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/ANQZXt5poB2P1Cc4Rg6z4ZKNbrqryoaKxgep7J4cWHHBETAL43tQhV//2Q==",
-    "tone": "#ddd3c7",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Pulsera con esferas de cristal en dos tonos",
-     "en": "Close-up detail of Two-tone crystal spheres bracelet"
-    }
-   },
-   {
-    "src": "/media/products/pu13.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQMG/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIRMQADIUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A0T7QvBcwcE3TI6SL5lH1q9yJuPcUQJWGOiw//9k=",
-    "tone": "#dacfc7",
-    "focal": {
-     "x": 0.5348258768343022,
-     "y": 0.5085379169208926
-    },
-    "role": "main",
-    "alt": {
-     "es": "Pulsera con esferas de cristal en dos tonos",
-     "en": "Two-tone crystal spheres bracelet"
     }
    }
   ],
   "videos": [
    "reel.bracelets"
   ],
-  "thumbnail": "/media/products/pu13-ang-94a17f1.jpg",
+  "thumbnail": "/media/products/pu13-base-a8916bc.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/pu13/f01-5513e49.webp",
+    "/media/spin/pu13/f02-5513e49.webp",
+    "/media/spin/pu13/f03-5513e49.webp",
+    "/media/spin/pu13/f04-5513e49.webp",
+    "/media/spin/pu13/f05-5513e49.webp",
+    "/media/spin/pu13/f06-5513e49.webp",
+    "/media/spin/pu13/f07-5513e49.webp",
+    "/media/spin/pu13/f08-5513e49.webp",
+    "/media/spin/pu13/f09-5513e49.webp",
+    "/media/spin/pu13/f10-5513e49.webp",
+    "/media/spin/pu13/f11-5513e49.webp",
+    "/media/spin/pu13/f12-5513e49.webp",
+    "/media/spin/pu13/f13-5513e49.webp",
+    "/media/spin/pu13/f14-5513e49.webp",
+    "/media/spin/pu13/f15-5513e49.webp",
+    "/media/spin/pu13/f16-5513e49.webp",
+    "/media/spin/pu13/f17-5513e49.webp",
+    "/media/spin/pu13/f18-5513e49.webp",
+    "/media/spin/pu13/f19-5513e49.webp",
+    "/media/spin/pu13/f20-5513e49.webp",
+    "/media/spin/pu13/f21-5513e49.webp",
+    "/media/spin/pu13/f22-5513e49.webp",
+    "/media/spin/pu13/f23-5513e49.webp",
+    "/media/spin/pu13/f24-5513e49.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 3
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -21282,26 +21259,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an01.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAIhAAAgECBQUAAAAAAAAAAAAAAQIAAxMEEhQhIkFRYZHw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIR/9oADAMBAAIRAxEAPwDX0uMTk4phfvMfRovkG49xFkdWYy2lHeTU4N1p/9k=",
-    "tone": "#e3d2c2",
+    "src": "/media/products/an01-base-0dc3ef5.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEhMQMSIoH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7B+RUIBu20ANyqwZbF/ZG7BrVQcVk1CAhfWzk1AtSxEQ/9k=",
+    "tone": "#f5f3ef",
     "focal": {
-     "x": 0.39929408272433176,
-     "y": 0.371985347445191
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado abierto con dos flores",
      "en": "Open gold-tone ring with two flowers"
     }
+   },
+   {
+    "src": "/media/products/an01-modelo-7dc5d74.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDAAQxERIhMjRCcXKx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQEAAwAAAAAAAAAAAAAAAAEAAhEh/9oADAMBAAIRAxEAPwCSTXKkSy7g7EnPAGtFZTtPaI782CdM0b2D3PykrXp08UIdmydl/9k=",
+    "tone": "#b4917c",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado abierto con dos flores, puestos",
+     "en": "Open gold-tone ring with two flowers, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an01.jpg",
+  "thumbnail": "/media/products/an01-base-0dc3ef5.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an01/f01-9651a69.webp",
+    "/media/spin/an01/f02-9651a69.webp",
+    "/media/spin/an01/f03-9651a69.webp",
+    "/media/spin/an01/f04-9651a69.webp",
+    "/media/spin/an01/f05-9651a69.webp",
+    "/media/spin/an01/f06-9651a69.webp",
+    "/media/spin/an01/f07-9651a69.webp",
+    "/media/spin/an01/f08-9651a69.webp",
+    "/media/spin/an01/f09-9651a69.webp",
+    "/media/spin/an01/f10-9651a69.webp",
+    "/media/spin/an01/f11-9651a69.webp",
+    "/media/spin/an01/f12-9651a69.webp",
+    "/media/spin/an01/f13-9651a69.webp",
+    "/media/spin/an01/f14-9651a69.webp",
+    "/media/spin/an01/f15-9651a69.webp",
+    "/media/spin/an01/f16-9651a69.webp",
+    "/media/spin/an01/f17-9651a69.webp",
+    "/media/spin/an01/f18-9651a69.webp",
+    "/media/spin/an01/f19-9651a69.webp",
+    "/media/spin/an01/f20-9651a69.webp",
+    "/media/spin/an01/f21-9651a69.webp",
+    "/media/spin/an01/f22-9651a69.webp",
+    "/media/spin/an01/f23-9651a69.webp",
+    "/media/spin/an01/f24-9651a69.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Diseño abierto ajustable",
@@ -21444,26 +21472,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an02.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIG/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxEhEhQxUZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEQMRAD8A0l9llSAoqWNvC7kVCGVXA6WI5HqN26eNb7KFSgYNkzKTUv/Z",
-    "tone": "#eedfce",
+    "src": "/media/products/an02-base-e692cbf.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBv/EAB0QAAICAgMBAAAAAAAAAAAAAAIDAAEREgQTMYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABkRAQACAwAAAAAAAAAAAAAAAAABERIhYf/aAAwDAQACEQMRAD8A7BrRUOxZ+TQKjATHwqzUhz0m5Q0odios421lUB1pAL9GsSbnLh1SkREoP//Z",
+    "tone": "#f2ede5",
     "focal": {
-     "x": 0.45257448549299367,
-     "y": 0.40334518321661894
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado de banda ancha texturizada",
      "en": "Wide textured gold-tone band ring"
     }
+   },
+   {
+    "src": "/media/products/an02-modelo-295ba08.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAJBAAAQIFAgcAAAAAAAAAAAAAAgEDAAQFESESMRMiQUJxkfD/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwDTXamrDosM2QsajXtXe3mBznp95xbPOGo4uMNvU4agATLxaVUOYR2X7HqJcFuVbQQTGy36rBFyR//Z",
+    "tone": "#998072",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado de banda ancha texturizada, puestos",
+     "en": "Wide textured gold-tone band ring, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an02.jpg",
+  "thumbnail": "/media/products/an02-base-e692cbf.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an02/f01-925ad9d.webp",
+    "/media/spin/an02/f02-925ad9d.webp",
+    "/media/spin/an02/f03-925ad9d.webp",
+    "/media/spin/an02/f04-925ad9d.webp",
+    "/media/spin/an02/f05-925ad9d.webp",
+    "/media/spin/an02/f06-925ad9d.webp",
+    "/media/spin/an02/f07-925ad9d.webp",
+    "/media/spin/an02/f08-925ad9d.webp",
+    "/media/spin/an02/f09-925ad9d.webp",
+    "/media/spin/an02/f10-925ad9d.webp",
+    "/media/spin/an02/f11-925ad9d.webp",
+    "/media/spin/an02/f12-925ad9d.webp",
+    "/media/spin/an02/f13-925ad9d.webp",
+    "/media/spin/an02/f14-925ad9d.webp",
+    "/media/spin/an02/f15-925ad9d.webp",
+    "/media/spin/an02/f16-925ad9d.webp",
+    "/media/spin/an02/f17-925ad9d.webp",
+    "/media/spin/an02/f18-925ad9d.webp",
+    "/media/spin/an02/f19-925ad9d.webp",
+    "/media/spin/an02/f20-925ad9d.webp",
+    "/media/spin/an02/f21-925ad9d.webp",
+    "/media/spin/an02/f22-925ad9d.webp",
+    "/media/spin/an02/f23-925ad9d.webp",
+    "/media/spin/an02/f24-925ad9d.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f8f8f8"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Banda ancha",
@@ -21614,26 +21693,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an03.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQED/8QAIRAAAQMCBwEAAAAAAAAAAAAAAQACAwQREhMhMUFhgZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABAhH/2gAMAwEAAhEDEQA/AGRS1ENjNJHY9JCOI4dXN+rUwMO9z6rlsHBU1ODdaf/Z",
-    "tone": "#e5d5c4",
+    "src": "/media/products/an03-base-a1632cb.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB8QAAIDAAEFAQAAAAAAAAAAAAERAAIDEhMhMVFhwf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAQEBAAAAAAAAAAAAAAAAABEBIf/aAAwDAQACEQMRAD8A2Gmlc6uxX7GFhYMFiR3y52FuPNBJqNhTp5CqXfx6+SbtPIrCEJQf/9k=",
+    "tone": "#f3efe8",
     "focal": {
-     "x": 0.39480138760076505,
-     "y": 0.4062679346666769
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado estrella de mar con perla",
      "en": "Gold-tone starfish ring with pearl"
     }
+   },
+   {
+    "src": "/media/products/an03-modelo-6c0deab.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAlEAACAAQDCQAAAAAAAAAAAAABAgADBBEFEjITITE0YXGBsdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAExMv/aAAwDAQACEQMRAD8ATVVrJO2cosimzWO4k9IVRqzSczWNzpJ4RPxbTT9/kUcP5VPPuCVGeT//2Q==",
+    "tone": "#b49783",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado estrella de mar con perla, puestos",
+     "en": "Gold-tone starfish ring with pearl, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an03.jpg",
+  "thumbnail": "/media/products/an03-base-a1632cb.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an03/f01-c1207d9.webp",
+    "/media/spin/an03/f02-c1207d9.webp",
+    "/media/spin/an03/f03-c1207d9.webp",
+    "/media/spin/an03/f04-c1207d9.webp",
+    "/media/spin/an03/f05-c1207d9.webp",
+    "/media/spin/an03/f06-c1207d9.webp",
+    "/media/spin/an03/f07-c1207d9.webp",
+    "/media/spin/an03/f08-c1207d9.webp",
+    "/media/spin/an03/f09-c1207d9.webp",
+    "/media/spin/an03/f10-c1207d9.webp",
+    "/media/spin/an03/f11-c1207d9.webp",
+    "/media/spin/an03/f12-c1207d9.webp",
+    "/media/spin/an03/f13-c1207d9.webp",
+    "/media/spin/an03/f14-c1207d9.webp",
+    "/media/spin/an03/f15-c1207d9.webp",
+    "/media/spin/an03/f16-c1207d9.webp",
+    "/media/spin/an03/f17-c1207d9.webp",
+    "/media/spin/an03/f18-c1207d9.webp",
+    "/media/spin/an03/f19-c1207d9.webp",
+    "/media/spin/an03/f20-c1207d9.webp",
+    "/media/spin/an03/f21-c1207d9.webp",
+    "/media/spin/an03/f22-c1207d9.webp",
+    "/media/spin/an03/f23-c1207d9.webp",
+    "/media/spin/an03/f24-c1207d9.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Motivo de estrella de mar",
@@ -21776,30 +21906,76 @@
   ],
   "images": [
    {
-    "src": "/media/products/an04.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEG/8QAHxABAAEDBAMAAAAAAAAAAAAAAQIAETEDEhMiQVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQEBAAMAAAAAAAAAAAAAAAABAAIRYf/aAAwDAQACEQMRAD8A0F3T2sySLinQ1o8cZHWLi9DZcskQ+uakp7reALB6qATLkrsv/9k=",
-    "tone": "#dcd7c4",
+    "src": "/media/products/an04-base-fa0f92d.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgb/xAAbEAACAwADAAAAAAAAAAAAAAABAgADEQQyUf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGREAAwADAAAAAAAAAAAAAAAAAAEREiFB/9oADAMBAAIRAxEAPwDYPYtfc5JVgw1ToiuVQ14GEDPZelDXWFJ3JKbynB1BkIQlAf/Z",
+    "tone": "#f4f0e6",
     "focal": {
-     "x": 0.43850736663852274,
-     "y": 0.5295414082120539
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado de banda ancha con óvalo",
      "en": "Wide gold-tone ring with oval medallion"
     }
+   },
+   {
+    "src": "/media/products/an04-modelo-38625ed.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEE/8QAIRAAAgEEAAcAAAAAAAAAAAAAAQIAAwQREgUTITRBgeH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A38Su2Wvy0OuowT5PyBZV6yVWRgxQrtknoDLed4PUeDNozeQ//9k=",
+    "tone": "#b3937d",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado de banda ancha con óvalo, puestos",
+     "en": "Wide gold-tone ring with oval medallion, worn"
+    }
    }
   ],
   "videos": [
-   "product.an04",
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an04.jpg",
+  "thumbnail": "/media/products/an04-base-fa0f92d.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an04/f01-96f2756.webp",
+    "/media/spin/an04/f02-96f2756.webp",
+    "/media/spin/an04/f03-96f2756.webp",
+    "/media/spin/an04/f04-96f2756.webp",
+    "/media/spin/an04/f05-96f2756.webp",
+    "/media/spin/an04/f06-96f2756.webp",
+    "/media/spin/an04/f07-96f2756.webp",
+    "/media/spin/an04/f08-96f2756.webp",
+    "/media/spin/an04/f09-96f2756.webp",
+    "/media/spin/an04/f10-96f2756.webp",
+    "/media/spin/an04/f11-96f2756.webp",
+    "/media/spin/an04/f12-96f2756.webp",
+    "/media/spin/an04/f13-96f2756.webp",
+    "/media/spin/an04/f14-96f2756.webp",
+    "/media/spin/an04/f15-96f2756.webp",
+    "/media/spin/an04/f16-96f2756.webp",
+    "/media/spin/an04/f17-96f2756.webp",
+    "/media/spin/an04/f18-96f2756.webp",
+    "/media/spin/an04/f19-96f2756.webp",
+    "/media/spin/an04/f20-96f2756.webp",
+    "/media/spin/an04/f21-96f2756.webp",
+    "/media/spin/an04/f22-96f2756.webp",
+    "/media/spin/an04/f23-96f2756.webp",
+    "/media/spin/an04/f24-96f2756.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
   "hoverMedia": {
-   "type": "video",
-   "key": "product.an04"
+   "type": "image",
+   "imageIndex": 1
   },
   "highlights": [
    {
@@ -21942,26 +22118,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an05.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EABsQAAMAAwEBAAAAAAAAAAAAAAECAwAEESFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAAMAAAAAAAAAAAAAAAAAAAARIf/aAAwDAQACEQMRAD8A266+wq9NCB8UcwV0p0QMzsSfp7l1ZreZRx4cQrCYEyOgDzAVGcP/2Q==",
-    "tone": "#dec2a7",
+    "src": "/media/products/an05-base-2d19bba.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAwQREiExYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAwDAQACEQMRAD8A2Fli1gFie/UVGDqGU7BlfNxjkIOIXkOtkkdH5J6lKVqp8gak7TkOhCEoP//Z",
+    "tone": "#f2ede6",
     "focal": {
-     "x": 0.5104733247114465,
-     "y": 0.4284975222428593
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado de bandas onduladas",
      "en": "Gold-tone wavy bands ring"
     }
+   },
+   {
+    "src": "/media/products/an05-modelo-5e8de73.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAIhAAAQQBAgcAAAAAAAAAAAAAAgABAwQxBRESITIzcXPB/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFh/9oADAMBAAIRAxEAPwCWSzYktNFxSvHgQD4tfSrz2JTCUncgFtydsc8eUNN64kI+9Y9rotFbqD//2Q==",
+    "tone": "#957866",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado de bandas onduladas, puestos",
+     "en": "Gold-tone wavy bands ring, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an05.jpg",
+  "thumbnail": "/media/products/an05-base-2d19bba.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an05/f01-e332539.webp",
+    "/media/spin/an05/f02-e332539.webp",
+    "/media/spin/an05/f03-e332539.webp",
+    "/media/spin/an05/f04-e332539.webp",
+    "/media/spin/an05/f05-e332539.webp",
+    "/media/spin/an05/f06-e332539.webp",
+    "/media/spin/an05/f07-e332539.webp",
+    "/media/spin/an05/f08-e332539.webp",
+    "/media/spin/an05/f09-e332539.webp",
+    "/media/spin/an05/f10-e332539.webp",
+    "/media/spin/an05/f11-e332539.webp",
+    "/media/spin/an05/f12-e332539.webp",
+    "/media/spin/an05/f13-e332539.webp",
+    "/media/spin/an05/f14-e332539.webp",
+    "/media/spin/an05/f15-e332539.webp",
+    "/media/spin/an05/f16-e332539.webp",
+    "/media/spin/an05/f17-e332539.webp",
+    "/media/spin/an05/f18-e332539.webp",
+    "/media/spin/an05/f19-e332539.webp",
+    "/media/spin/an05/f20-e332539.webp",
+    "/media/spin/an05/f21-e332539.webp",
+    "/media/spin/an05/f22-e332539.webp",
+    "/media/spin/an05/f23-e332539.webp",
+    "/media/spin/an05/f24-e332539.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Bandas onduladas entrelazadas",
@@ -22105,26 +22332,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an06.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAHRAAAgICAwEAAAAAAAAAAAAAAQIAEgMRITFBwf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/ANLlZnFm4HhPyDjT22xKlJZab65BhCpUVBXUmgzL/9k=",
-    "tone": "#e1d3c3",
+    "src": "/media/products/an06-base-61c583b.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDMQQSEzL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2D5FT6jVgy2NSfKw+uKhfYaINSqgKoAFAQHCEIH/2Q==",
+    "tone": "#f2f2f2",
     "focal": {
-     "x": 0.4823265181411015,
-     "y": 0.569323307916674
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo plateado con relieve de hoja",
      "en": "Silver-tone ring with leaf relief"
     }
+   },
+   {
+    "src": "/media/products/an06-modelo-c4b559f.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgQF/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDIQAEchESMzVB/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAABESEx/9oADAMBAAIRAxEAPwChtlF2O12UVV2T8zV1ZGEQMjEjpRbDj+0g4HEY8UXDDWiN1B//2Q==",
+    "tone": "#b6a091",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo plateado con relieve de hoja, puestos",
+     "en": "Silver-tone ring with leaf relief, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an06.jpg",
+  "thumbnail": "/media/products/an06-base-61c583b.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an06/f01-dc4feb9.webp",
+    "/media/spin/an06/f02-dc4feb9.webp",
+    "/media/spin/an06/f03-dc4feb9.webp",
+    "/media/spin/an06/f04-dc4feb9.webp",
+    "/media/spin/an06/f05-dc4feb9.webp",
+    "/media/spin/an06/f06-dc4feb9.webp",
+    "/media/spin/an06/f07-dc4feb9.webp",
+    "/media/spin/an06/f08-dc4feb9.webp",
+    "/media/spin/an06/f09-dc4feb9.webp",
+    "/media/spin/an06/f10-dc4feb9.webp",
+    "/media/spin/an06/f11-dc4feb9.webp",
+    "/media/spin/an06/f12-dc4feb9.webp",
+    "/media/spin/an06/f13-dc4feb9.webp",
+    "/media/spin/an06/f14-dc4feb9.webp",
+    "/media/spin/an06/f15-dc4feb9.webp",
+    "/media/spin/an06/f16-dc4feb9.webp",
+    "/media/spin/an06/f17-dc4feb9.webp",
+    "/media/spin/an06/f18-dc4feb9.webp",
+    "/media/spin/an06/f19-dc4feb9.webp",
+    "/media/spin/an06/f20-dc4feb9.webp",
+    "/media/spin/an06/f21-dc4feb9.webp",
+    "/media/spin/an06/f22-dc4feb9.webp",
+    "/media/spin/an06/f23-dc4feb9.webp",
+    "/media/spin/an06/f24-dc4feb9.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f8f8f8"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Banda ancha",
@@ -22274,26 +22552,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an07.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAESFhIjFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAABADH/2gAMAwEAAhEDEQA/ANQ2VtmoahKqjko7lAoHJ9xEoNWxcmgzy//Z",
-    "tone": "#e4d7c7",
+    "src": "/media/products/an07-base-e5d4fef.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBv/EAB0QAQADAAEFAAAAAAAAAAAAAAEAAhEDITEyQVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2Fr1r5OdNjEQR0ZPILiVLesY+KhShUCp8OxAqEIQP//Z",
+    "tone": "#f2f3f3",
     "focal": {
-     "x": 0.48219665479181417,
-     "y": 0.5361496961049621
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo plateado abierto de concha con perla",
      "en": "Open silver-tone shell ring with pearl"
     }
+   },
+   {
+    "src": "/media/products/an07-modelo-0dc2492.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDAAQREkFxMzRh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAwDAQACEQMRAD8AmSSdrt5dm1U4BB4xStoTeQBp9soSoZee/tYI/GOqXh9Re6MJVy//2Q==",
+    "tone": "#a88c7c",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo plateado abierto de concha con perla, puestos",
+     "en": "Open silver-tone shell ring with pearl, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an07.jpg",
+  "thumbnail": "/media/products/an07-base-e5d4fef.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an07/f01-06eb565.webp",
+    "/media/spin/an07/f02-06eb565.webp",
+    "/media/spin/an07/f03-06eb565.webp",
+    "/media/spin/an07/f04-06eb565.webp",
+    "/media/spin/an07/f05-06eb565.webp",
+    "/media/spin/an07/f06-06eb565.webp",
+    "/media/spin/an07/f07-06eb565.webp",
+    "/media/spin/an07/f08-06eb565.webp",
+    "/media/spin/an07/f09-06eb565.webp",
+    "/media/spin/an07/f10-06eb565.webp",
+    "/media/spin/an07/f11-06eb565.webp",
+    "/media/spin/an07/f12-06eb565.webp",
+    "/media/spin/an07/f13-06eb565.webp",
+    "/media/spin/an07/f14-06eb565.webp",
+    "/media/spin/an07/f15-06eb565.webp",
+    "/media/spin/an07/f16-06eb565.webp",
+    "/media/spin/an07/f17-06eb565.webp",
+    "/media/spin/an07/f18-06eb565.webp",
+    "/media/spin/an07/f19-06eb565.webp",
+    "/media/spin/an07/f20-06eb565.webp",
+    "/media/spin/an07/f21-06eb565.webp",
+    "/media/spin/an07/f22-06eb565.webp",
+    "/media/spin/an07/f23-06eb565.webp",
+    "/media/spin/an07/f24-06eb565.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#fafafa"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Concha estriada en un extremo",
@@ -22433,26 +22762,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an08.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAxEAEiJxMTJR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhEDEQA/ANTNIjRcgSauhkugPKiL++cW8qMKZdu8NWeT1CjvJdDIN//Z",
-    "tone": "#d2cfca",
+    "src": "/media/products/an08-base-8ebc28b.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwb/xAAfEAACAgIBBQAAAAAAAAAAAAABAgARAxIhBBMiMVL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A175Fx67X5GhUZHDoGX0eRK+oVyEbGuzI1gXV8VGwp28KJ8gCA8mEIH//2Q==",
+    "tone": "#efefef",
     "focal": {
-     "x": 0.45952013146316745,
-     "y": 0.5010461441174612
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo plateado abierto con extremos ovalados",
      "en": "Open silver-tone ring with oval ends"
     }
+   },
+   {
+    "src": "/media/products/an08-modelo-00d5651.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACIQAAIBAwMFAQAAAAAAAAAAAAECAwAREgQFMzFBYXGC0f/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8AnztrndpHaUoHIXEmwPa3itFs0jz6HOcZSBrF+mVDt/EvoU6nB9ftA7X/2Q==",
+    "tone": "#8d7d72",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo plateado abierto con extremos ovalados, puestos",
+     "en": "Open silver-tone ring with oval ends, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an08.jpg",
+  "thumbnail": "/media/products/an08-base-8ebc28b.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an08/f01-75d002d.webp",
+    "/media/spin/an08/f02-75d002d.webp",
+    "/media/spin/an08/f03-75d002d.webp",
+    "/media/spin/an08/f04-75d002d.webp",
+    "/media/spin/an08/f05-75d002d.webp",
+    "/media/spin/an08/f06-75d002d.webp",
+    "/media/spin/an08/f07-75d002d.webp",
+    "/media/spin/an08/f08-75d002d.webp",
+    "/media/spin/an08/f09-75d002d.webp",
+    "/media/spin/an08/f10-75d002d.webp",
+    "/media/spin/an08/f11-75d002d.webp",
+    "/media/spin/an08/f12-75d002d.webp",
+    "/media/spin/an08/f13-75d002d.webp",
+    "/media/spin/an08/f14-75d002d.webp",
+    "/media/spin/an08/f15-75d002d.webp",
+    "/media/spin/an08/f16-75d002d.webp",
+    "/media/spin/an08/f17-75d002d.webp",
+    "/media/spin/an08/f18-75d002d.webp",
+    "/media/spin/an08/f19-75d002d.webp",
+    "/media/spin/an08/f20-75d002d.webp",
+    "/media/spin/an08/f21-75d002d.webp",
+    "/media/spin/an08/f22-75d002d.webp",
+    "/media/spin/an08/f23-75d002d.webp",
+    "/media/spin/an08/f24-75d002d.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Banda acanalada",
@@ -22602,26 +22982,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an09.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EABoQAAIDAQEAAAAAAAAAAAAAAAECAAMRITH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANS1opRR0xD2l20HkNhDKSw3PJPucEGkf//Z",
-    "tone": "#e1d3bb",
+    "src": "/media/products/an09-base-9c6d49a.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB0QAQACAgIDAAAAAAAAAAAAAAEAAgMREkEEITH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFxEBAAMAAAAAAAAAAAAAAAAAABEhQf/aAAwDAQACEQMRAD8A1+XKYq8rCm9eiPV5VE7NyXkVtahwHe+nTKYxMdRNIfIXJw0IQiH/2Q==",
+    "tone": "#f4f1eb",
     "focal": {
-     "x": 0.46876859979751595,
-     "y": 0.5069276743730099
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado con perlas y espiral trenzada",
      "en": "Gold-tone ring with pearls and braided spiral"
     }
+   },
+   {
+    "src": "/media/products/an09-modelo-e286fd9.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAiEAACAQQCAQUAAAAAAAAAAAABAhEAAwQSMUEhBRNRkaH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAhEhMf/aAAwDAQACEQMRAD8AktXGtXAVZRDbAHsjn8809x8lctSVGrKfsdGsrj3G9y4Jh1bdZPxyKc4JhtrBLjWIA4EyKnHTU5Y7KhdwrZ9SvSW1ENA8c08wNUs6KoUDoUUUh7EvL//Z",
+    "tone": "#b18a73",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado con perlas y espiral trenzada, puestos",
+     "en": "Gold-tone ring with pearls and braided spiral, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an09.jpg",
+  "thumbnail": "/media/products/an09-base-9c6d49a.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an09/f01-e6d447b.webp",
+    "/media/spin/an09/f02-e6d447b.webp",
+    "/media/spin/an09/f03-e6d447b.webp",
+    "/media/spin/an09/f04-e6d447b.webp",
+    "/media/spin/an09/f05-e6d447b.webp",
+    "/media/spin/an09/f06-e6d447b.webp",
+    "/media/spin/an09/f07-e6d447b.webp",
+    "/media/spin/an09/f08-e6d447b.webp",
+    "/media/spin/an09/f09-e6d447b.webp",
+    "/media/spin/an09/f10-e6d447b.webp",
+    "/media/spin/an09/f11-e6d447b.webp",
+    "/media/spin/an09/f12-e6d447b.webp",
+    "/media/spin/an09/f13-e6d447b.webp",
+    "/media/spin/an09/f14-e6d447b.webp",
+    "/media/spin/an09/f15-e6d447b.webp",
+    "/media/spin/an09/f16-e6d447b.webp",
+    "/media/spin/an09/f17-e6d447b.webp",
+    "/media/spin/an09/f18-e6d447b.webp",
+    "/media/spin/an09/f19-e6d447b.webp",
+    "/media/spin/an09/f20-e6d447b.webp",
+    "/media/spin/an09/f21-e6d447b.webp",
+    "/media/spin/an09/f22-e6d447b.webp",
+    "/media/spin/an09/f23-e6d447b.webp",
+    "/media/spin/an09/f24-e6d447b.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f6f6f6"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Espiral de textura trenzada",
@@ -22764,26 +23195,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an10.jpg",
-    "width": 1024,
-    "height": 1024,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAxEABBMxQVGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEiH/2gAMAwEAAhEDEQA/ANbsSSBqjIFd3j12mYtygV4ofMJtdpHDowB9EZWNSqUxs5BLLfo3If/Z",
-    "tone": "#f8ebc6",
+    "src": "/media/products/an10-base-a4defa9.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgb/xAAfEAABBAEFAQAAAAAAAAAAAAABAAIDERIEEyFBUSL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABkRAAMAAwAAAAAAAAAAAAAAAAABEQISMf/aAAwDAQACEQMRAD8A1004iq2k34pik3ATi5tGuUrVNkya6Npd0QE6HLD6BB8PSmnls7wTkLoQhUCf/9k=",
+    "tone": "#f4ecd9",
     "focal": {
-     "x": 0.5169698099260821,
-     "y": 0.4907070176891609
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado de óvalos entrelazados",
      "en": "Gold-tone interlaced ovals ring"
     }
+   },
+   {
+    "src": "/media/products/an10-modelo-de9db46.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAQQBAwUAAAAAAAAAAAAAAQACAxEEEyExNFFygbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A1M+Z+u1gFADvyoY8ro5Xtk2joEG7slOm6keBQm8eh8QtaNch/9k=",
+    "tone": "#c0a38c",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado de óvalos entrelazados, puestos",
+     "en": "Gold-tone interlaced ovals ring, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an10.jpg",
+  "thumbnail": "/media/products/an10-base-a4defa9.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an10/f01-d4af0f3.webp",
+    "/media/spin/an10/f02-d4af0f3.webp",
+    "/media/spin/an10/f03-d4af0f3.webp",
+    "/media/spin/an10/f04-d4af0f3.webp",
+    "/media/spin/an10/f05-d4af0f3.webp",
+    "/media/spin/an10/f06-d4af0f3.webp",
+    "/media/spin/an10/f07-d4af0f3.webp",
+    "/media/spin/an10/f08-d4af0f3.webp",
+    "/media/spin/an10/f09-d4af0f3.webp",
+    "/media/spin/an10/f10-d4af0f3.webp",
+    "/media/spin/an10/f11-d4af0f3.webp",
+    "/media/spin/an10/f12-d4af0f3.webp",
+    "/media/spin/an10/f13-d4af0f3.webp",
+    "/media/spin/an10/f14-d4af0f3.webp",
+    "/media/spin/an10/f15-d4af0f3.webp",
+    "/media/spin/an10/f16-d4af0f3.webp",
+    "/media/spin/an10/f17-d4af0f3.webp",
+    "/media/spin/an10/f18-d4af0f3.webp",
+    "/media/spin/an10/f19-d4af0f3.webp",
+    "/media/spin/an10/f20-d4af0f3.webp",
+    "/media/spin/an10/f21-d4af0f3.webp",
+    "/media/spin/an10/f22-d4af0f3.webp",
+    "/media/spin/an10/f23-d4af0f3.webp",
+    "/media/spin/an10/f24-d4af0f3.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f7f7f7"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Banda ancha",
@@ -22924,26 +23406,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an11.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDEQASMUFRYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAQADAQAAAAAAAAAAAAAAAAEAAhES/9oADAMBAAIRAxEAPwDWTPIdihoKaIHOJE77lHAJAux19ySQbSCRKDd33iIgUezyfORK26jUyf/Z",
-    "tone": "#f9eece",
+    "src": "/media/products/an11-base-02649de.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMRITEEEjJRof/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAhL/2gAMAwEAAhEDEQA/ANbLyOhw0kXRcdJophJjR3R9KUrXNkxbo3GyK0VZjT2L3eR+KSeuhOQdCEKoT//Z",
+    "tone": "#f4ebd6",
     "focal": {
-     "x": 0.47721900581133514,
-     "y": 0.4705017776827599
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado trenzado abierto",
      "en": "Open braided gold-tone ring"
     }
+   },
+   {
+    "src": "/media/products/an11-modelo-11d298a.jpg",
+    "width": 1067,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQb/xAAjEAACAgIBAgcAAAAAAAAAAAABAgMRAAQhBVESEyIxkdHh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECISL/2gAMAwEAAhEDEQA/AGt/qRV1hiko+KmIFm7H7j/T5229QSmmt2FjteZaedhtutHhjz8/eXnQJ3lDR8hVW+3OEno1TyQ6mhrbUYklj9bclgSDj+lox6ZfyyzF65PuB2wwyoy3h//Z",
+    "tone": "#a08472",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado trenzado abierto, puestos",
+     "en": "Open braided gold-tone ring, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an11.jpg",
+  "thumbnail": "/media/products/an11-base-02649de.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an11/f01-e838d5f.webp",
+    "/media/spin/an11/f02-e838d5f.webp",
+    "/media/spin/an11/f03-e838d5f.webp",
+    "/media/spin/an11/f04-e838d5f.webp",
+    "/media/spin/an11/f05-e838d5f.webp",
+    "/media/spin/an11/f06-e838d5f.webp",
+    "/media/spin/an11/f07-e838d5f.webp",
+    "/media/spin/an11/f08-e838d5f.webp",
+    "/media/spin/an11/f09-e838d5f.webp",
+    "/media/spin/an11/f10-e838d5f.webp",
+    "/media/spin/an11/f11-e838d5f.webp",
+    "/media/spin/an11/f12-e838d5f.webp",
+    "/media/spin/an11/f13-e838d5f.webp",
+    "/media/spin/an11/f14-e838d5f.webp",
+    "/media/spin/an11/f15-e838d5f.webp",
+    "/media/spin/an11/f16-e838d5f.webp",
+    "/media/spin/an11/f17-e838d5f.webp",
+    "/media/spin/an11/f18-e838d5f.webp",
+    "/media/spin/an11/f19-e838d5f.webp",
+    "/media/spin/an11/f20-e838d5f.webp",
+    "/media/spin/an11/f21-e838d5f.webp",
+    "/media/spin/an11/f22-e838d5f.webp",
+    "/media/spin/an11/f23-e838d5f.webp",
+    "/media/spin/an11/f24-e838d5f.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f8f8f8"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Banda de efecto trenzado",
@@ -23088,26 +23621,77 @@
   ],
   "images": [
    {
-    "src": "/media/products/an12.jpg",
-    "width": 1080,
-    "height": 1080,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgMG/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIRAAMSIRMxM0Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQADAQEAAAAAAAAAAAAAAAAAAREhAv/aAAwDAQACEQMRAD8A1TXOABJyuMJk+6YzZQwhGPYO6nlyWw2shoGJin4l7Lfahcu68GqH/9k=",
-    "tone": "#ebe6d5",
+    "src": "/media/products/an12-base-3b38db0.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAHBAAAgMAAwEAAAAAAAAAAAAAAQIAAxESITFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEAAgMAAAAAAAAAAAAAAAAAARIRIWH/2gAMAwEAAhEDEQA/ANhZatecj2fBFVq3Vh6zqmTbWHKsU5Z17kqpAiYqhfvQkxa3DrC4iJQf/9k=",
+    "tone": "#f5f1e7",
     "focal": {
-     "x": 0.4966596858412685,
-     "y": 0.5252831232575337
+     "x": 0.5,
+     "y": 0.5
     },
     "role": "main",
     "alt": {
      "es": "Anillo dorado de hoja martillada",
      "en": "Gold-tone hammered leaf ring"
     }
+   },
+   {
+    "src": "/media/products/an12-modelo-18427a5.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIRAAAgEEAgIDAAAAAAAAAAAAAQIDAAQRMRITMkFRgaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACESH/2gAMAwEAAhEDEQA/AJrcytM3a2ck+WhjX1WgtrtJYAyrxJ8lxo0QLISxrOjcWY6IyM0naxm0TqOGbbH59D8oTjNlpL//2Q==",
+    "tone": "#af8f7b",
+    "focal": {
+     "x": 0.5,
+     "y": 0.6
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Anillo dorado de hoja martillada, puestos",
+     "en": "Gold-tone hammered leaf ring, worn"
+    }
    }
   ],
   "videos": [
    "reel.rings"
   ],
-  "thumbnail": "/media/products/an12.jpg",
+  "thumbnail": "/media/products/an12-base-3b38db0.jpg",
+  "spin": {
+   "frames": [
+    "/media/spin/an12/f01-2b88e3a.webp",
+    "/media/spin/an12/f02-2b88e3a.webp",
+    "/media/spin/an12/f03-2b88e3a.webp",
+    "/media/spin/an12/f04-2b88e3a.webp",
+    "/media/spin/an12/f05-2b88e3a.webp",
+    "/media/spin/an12/f06-2b88e3a.webp",
+    "/media/spin/an12/f07-2b88e3a.webp",
+    "/media/spin/an12/f08-2b88e3a.webp",
+    "/media/spin/an12/f09-2b88e3a.webp",
+    "/media/spin/an12/f10-2b88e3a.webp",
+    "/media/spin/an12/f11-2b88e3a.webp",
+    "/media/spin/an12/f12-2b88e3a.webp",
+    "/media/spin/an12/f13-2b88e3a.webp",
+    "/media/spin/an12/f14-2b88e3a.webp",
+    "/media/spin/an12/f15-2b88e3a.webp",
+    "/media/spin/an12/f16-2b88e3a.webp",
+    "/media/spin/an12/f17-2b88e3a.webp",
+    "/media/spin/an12/f18-2b88e3a.webp",
+    "/media/spin/an12/f19-2b88e3a.webp",
+    "/media/spin/an12/f20-2b88e3a.webp",
+    "/media/spin/an12/f21-2b88e3a.webp",
+    "/media/spin/an12/f22-2b88e3a.webp",
+    "/media/spin/an12/f23-2b88e3a.webp",
+    "/media/spin/an12/f24-2b88e3a.webp"
+   ],
+   "width": 960,
+   "height": 960,
+   "tone": "#f8f8f8"
+  },
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
   "highlights": [
    {
     "es": "Gran hoja como protagonista",

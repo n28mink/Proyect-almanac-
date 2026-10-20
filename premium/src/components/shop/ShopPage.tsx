@@ -15,6 +15,14 @@ import { itemListJsonLd } from '@/lib/seo';
 import { ShopBrowser } from './ShopBrowser';
 
 /** Estructura común de /shop y /shop/[category]. La lista base se renderiza en servidor (SEO); los filtros actúan en cliente. */
+/** Difuminado de la foto en móvil: se funde con el fondo por arriba y por la izquierda, como el de escritorio. */
+const MOBILE_FADE = {
+  maskImage: 'linear-gradient(to right, transparent, #000 34%), linear-gradient(to bottom, transparent, #000 38%)',
+  maskComposite: 'intersect',
+  WebkitMaskImage: 'linear-gradient(to right, transparent, #000 34%), linear-gradient(to bottom, transparent, #000 38%)',
+  WebkitMaskComposite: 'source-in',
+} as const;
+
 export interface ShopHero {
   src: string;
   alt: string;
@@ -74,7 +82,7 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow, catego
         </div>
         {hero && (
           <div className="container-x md:hidden">
-            <div className="relative mt-2 aspect-[5/3] overflow-hidden bg-surface-sunken">
+            <div className="relative mt-2 aspect-[5/3] overflow-hidden" style={MOBILE_FADE}>
               <Image src={hero.src} alt={hero.alt} fill priority sizes="100vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%', transform: hero.flip ? 'scaleX(-1)' : undefined }} />
             </div>
           </div>

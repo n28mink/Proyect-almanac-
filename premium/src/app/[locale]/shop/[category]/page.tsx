@@ -19,6 +19,8 @@ const GIFTS_FOR_HER = 'gifts-for-her';
 const HEROES: Record<string, { id: string; position: string; flip?: boolean }> = {
   necklaces: { id: 'co09', position: '50% 70%' },
   earrings: { id: 'ar13', position: '50% 38%', flip: true },
+  bracelets: { id: 'pu06', position: '50% 78%' },
+  rings: { id: 'an03', position: '50% 55%' },
 };
 
 /** "Regalos para ella" no es una etiqueta de producto: reúne la joyería de mujer de mayor precio del catálogo vivo. */
