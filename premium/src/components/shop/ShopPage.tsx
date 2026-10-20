@@ -21,6 +21,8 @@ export interface ShopHero {
   blur?: string;
   /** object-position CSS de la foto (el collar queda a la vista al encuadrar). */
   position?: string;
+  /** Voltea la foto en horizontal (para que la pieza quede del lado visible del degradado). */
+  flip?: boolean;
 }
 
 export async function ShopPage({ locale, products, title, blurb, eyebrow, category, parent, hero }: { locale: Locale; products: Product[]; title: string; blurb?: string; eyebrow?: string; category?: string; parent?: { label: string; href: string }; hero?: ShopHero }) {
@@ -43,7 +45,7 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow, catego
       <header className={hero ? 'relative isolate overflow-hidden pb-8 md:min-h-[27rem] md:pb-12' : undefined}>
         {hero && (
           <div className="absolute inset-y-0 right-0 -z-10 hidden w-[58%] md:block lg:w-[50%]" aria-hidden="true" style={{ maskImage: 'linear-gradient(to right, transparent, #000 38%)', WebkitMaskImage: 'linear-gradient(to right, transparent, #000 38%)' }}>
-            <Image src={hero.src} alt="" fill priority sizes="(min-width: 1024px) 50vw, 58vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%' }} />
+            <Image src={hero.src} alt="" fill priority sizes="(min-width: 1024px) 50vw, 58vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%', transform: hero.flip ? 'scaleX(-1)' : undefined }} />
           </div>
         )}
         <div className="container-x pb-8 md:pb-10">
@@ -73,7 +75,7 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow, catego
         {hero && (
           <div className="container-x md:hidden">
             <div className="relative mt-2 aspect-[5/3] overflow-hidden bg-surface-sunken">
-              <Image src={hero.src} alt={hero.alt} fill priority sizes="100vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%' }} />
+              <Image src={hero.src} alt={hero.alt} fill priority sizes="100vw" quality={80} placeholder={hero.blur ? 'blur' : 'empty'} blurDataURL={hero.blur} className="object-cover" style={{ objectPosition: hero.position ?? '50% 60%', transform: hero.flip ? 'scaleX(-1)' : undefined }} />
             </div>
           </div>
         )}
