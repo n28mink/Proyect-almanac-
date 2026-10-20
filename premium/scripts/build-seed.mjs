@@ -92,7 +92,7 @@ const FEATURED = ['rw04', 'an04', 'co11', 'pu06', 'ar06', 'rw03', 'an07', 'pu01'
 const NEW_ARRIVAL = ['an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
 const BESTSELLER = ['rw01', 'co11', 'ar04', 'pu06', 'an02', 'co09', 'ar11', 'pu04', 'co19', 'ar07', 'rw04', 'st01'];
 const GIFT_TAGS = new Set(['heart', 'pearl', 'set', 'moon', 'butterfly', 'star', 'clover']);
-const HOVER_VIDEO = new Set(['rw04', 'an04', 'co11', 'pu06', 'ar06', 'rw03']);
+const HOVER_VIDEO = new Set(['rw04', 'an04', 'pu06', 'ar06', 'rw03']);
 
 const WATCH_3D = {
   rw01: { caseShape: 'round', strap: 'mesh', finish: 'rose-gold', dials: ['#f4f1ea'] },
@@ -199,9 +199,10 @@ for (const p of source) {
       images = [
         imgOf(`${p.id}-base`, 'main', L(p.nombre, t.name)),
         imgOf(`${p.id}-modelo`, 'lifestyle', L(`${p.nombre}, puestos`, `${t.name}, worn`)),
-        imgOf(`${p.id}-macro`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`)),
+        // El macro es opcional (los collares traen solo foto en blanco y con modelo).
+        ...(has('macro') ? [imgOf(`${p.id}-macro`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`))] : []),
       ];
-      detailIndex = 2;
+      detailIndex = images.length - 1;
     } else {
       // Primeros diseños: par, pieza individual y puestos (la de modelo hace de primer plano).
       images = [

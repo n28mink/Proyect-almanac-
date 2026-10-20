@@ -189,3 +189,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Metadescripciones y pantallas de 320 px
 - `fitDescription` (`src/lib/seo.ts`) deja todas las metadescripciones entre 120 y 160 caracteres: recorta en una palabra o completa con datos de la tienda (WhatsApp, Venezuela). Antes, 131 de 141 páginas en español quedaban cortas.
 - A 320 px la página se salía 35 px por el logo del pie (nombre y subtítulo en una línea) y por la cabecera: el logo del pie se parte en dos líneas y la cabecera usa un grid asimétrico y un nombre y subtítulo algo más compactos por debajo de 360 px.
+
+## Collares (19) con fotos en blanco y 360°
+- `scripts/build-collares.mjs` lee `../fotos/collares-originales/collar-coNN-{blanco|modelo}.webp` y `collar-coNN-360.mp4` (el diseño coincide con el id del producto): foto en blanco a 4:5 sin deformar, foto con modelo sin recorte y 24 fotogramas de giro por pieza. Las utilidades de foto compartidas con los aretes están en `scripts/lib/photos.mjs`.
+- Galería: foto en blanco, con modelo y 360° (los collares no traen macro; el macro es opcional en el generador). Al pasar el ratón sale la foto con modelo; `co11` ya no usa su vídeo antiguo.
