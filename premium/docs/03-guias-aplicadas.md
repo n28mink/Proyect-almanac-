@@ -199,3 +199,8 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - `pu01` (calado estilo coral) es un anillo ancho: pasa de Pulseras a Anillos (`CATEGORY_OF` en `build-seed.mjs`, nombre y textos en `source-extra.json` y `en.bracelets.json`). Solo lleva foto en blanco y 360°: la foto con modelo del set de pulseras lo mostraba en la muñeca y no se publica (`sinModelo`).
 - Portadas con foto de modelo por categoría en `HEROES` (`src/app/[locale]/shop/[category]/page.tsx`): collares `co09`, aretes `ar13` (volteada), pulseras `pu06`, anillos `an03`.
 - En móvil la foto de la portada se difumina por arriba y por la izquierda (`MOBILE_FADE`), como el degradado lateral de escritorio.
+
+## Anillos: foto con modelo más cerca y close-up real
+- Auditoría de los 12 anillos (foto principal frente a foto con modelo): coinciden en forma. Los más dudosos: `an07` (la concha y la perla quedan en dedos distintos) y `an12` (la principal es una cúpula martillada y en la mano parece una banda).
+- La foto con modelo se recorta a 4:5 centrada en el anillo (`centro` y `zoom` de `anillos` en `scripts/build-set.mjs`), sin ampliar; antes el anillo era pequeño en el encuadre.
+- El close-up (tercera foto y la que sale al pasar el ratón) es la foto real del proveedor `fotos/anNN.jpg`, con la pieza grande.
