@@ -204,3 +204,9 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - Auditoría de los 12 anillos (foto principal frente a foto con modelo): coinciden en forma. Los más dudosos: `an07` (la concha y la perla quedan en dedos distintos) y `an12` (la principal es una cúpula martillada y en la mano parece una banda).
 - La foto con modelo se recorta a 4:5 centrada en el anillo (`centro` y `zoom` de `anillos` en `scripts/build-set.mjs`), sin ampliar; antes el anillo era pequeño en el encuadre.
 - El close-up (tercera foto y la que sale al pasar el ratón) es la foto real del proveedor `fotos/anNN.jpg`, con la pieza grande.
+
+## Relojes: 14 diseños con 4 vistas
+- `node scripts/build-relojes.mjs` lee `fotos/relojes-premium/relojNN-0{1-frontal|2-45|3-macro|4-posterior}.webp` (ya en 4:5) y escribe las 4 vistas de cada reloj: frontal, de lado (45°), macro y posterior. La galería sigue ese orden y el macro es la foto del hover.
+- `reloj10`, `reloj11` y `reloj13` reemplazan las fotos de `rw01`, `rw02` y `rw06` (son los mismos relojes). `rw02` conserva su foto anterior, que es la de la variante de esfera negra (la nueva es la de esfera blanca).
+- `reloj09, 12, 14–22` son relojes nuevos (`rw07`–`rw17`): 42 USD y 10 unidades como los demás relojes, sin material declarado; textos (es/en) en `source-extra.json` y `en.watches.json`, que describen solo lo que muestran las fotos. `rw07`, `rw10`, `rw15` y `rw16` salen como novedades. `rw03`, `rw04` y `rw05` no cambian.
+- Los relojes no tienen foto con modelo ni 360°, así que su categoría no lleva portada con modelo.

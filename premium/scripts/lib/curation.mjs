@@ -5,7 +5,7 @@
 
 export const CURATED_IDS = [
   // Relojes + set
-  'rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'st01',
+  'rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'rw07', 'rw08', 'rw09', 'rw10', 'rw11', 'rw12', 'rw13', 'rw14', 'rw15', 'rw16', 'rw17', 'st01',
   // Anillos
   'an01', 'an02', 'an03', 'an04', 'an05', 'an06', 'an07', 'an08', 'an09', 'an10', 'an11', 'an12',
   // Pulseras

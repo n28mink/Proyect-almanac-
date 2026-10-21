@@ -3,45 +3,204 @@
     "name": "Round rose-gold watch with mesh strap",
     "description": "Round-cased watch in a rose-gold tone with a mesh-style strap and a white dial with large numerals. Elegant and comfortable for everyday wear.",
     "story": "The round rose-gold case and mesh strap give it a modern, feminine air. The white dial with clear numerals makes the time readable at a glance. A versatile piece that works as well with casual looks as it does at the office.",
-    "highlights": ["Round case in a rose-gold tone", "Adjustable mesh-style strap", "White dial with large numerals", "Classic, versatile design"]
+    "highlights": [
+      "Round case in a rose-gold tone",
+      "Adjustable mesh-style strap",
+      "White dial with large numerals",
+      "Classic, versatile design"
+    ]
   },
   "rw02": {
     "name": "Square rose-gold watch with link bracelet",
     "description": "Square-cased watch in a rose-gold tone with a link bracelet. Available with a dark or white dial, so you can choose your style.",
     "story": "The square case and link bracelet give it a sophisticated character. It comes in two dial versions: dark, for dramatic contrast, or white, for a classic and luminous look. The same design, two personalities.",
-    "highlights": ["Square case in a rose-gold tone", "Metal link bracelet", "Two dial options: dark or white"],
-    "esDrop": [3]
+    "highlights": [
+      "Square case in a rose-gold tone",
+      "Metal link bracelet",
+      "Two dial options: dark or white"
+    ],
+    "esDrop": [
+      3
+    ]
   },
   "rw03": {
     "name": "Gold-tone rectangular watch, choice of dial colors",
     "description": "Gold-tone rectangular watch with a link bracelet. Choose from five dial colors: white, green, blue, slate gray or black.",
     "story": "A classic gold-tone rectangular watch with a link bracelet that never goes out of style. Best of all, you can choose the dial that suits you most — from a sober white to a bolder blue or green. Each photo shows an available variant of the same model.",
-    "highlights": ["Rectangular case in a gold tone", "Metal link bracelet", "Five dial colors: white, green, blue, slate gray and black"],
-    "esDrop": [3]
+    "highlights": [
+      "Rectangular case in a gold tone",
+      "Metal link bracelet",
+      "Five dial colors: white, green, blue, slate gray and black"
+    ],
+    "esDrop": [
+      3
+    ]
   },
   "rw04": {
     "name": "Round gold-tone watch with white dial",
     "description": "Round gold-tone watch with a white dial and large numerals. Gold-tone link bracelet.",
     "story": "With clean classic lines and a bright gold-tone finish, this round watch bets on the essentials: a clear white dial and large, easy-to-read numerals. A timeless piece that goes with everything.",
-    "highlights": ["Round case in a gold tone", "White dial with large numerals", "Gold-tone link bracelet", "Classic, versatile design"]
+    "highlights": [
+      "Round case in a gold tone",
+      "White dial with large numerals",
+      "Gold-tone link bracelet",
+      "Classic, versatile design"
+    ]
   },
   "rw05": {
     "name": "Two-tone square-case watch",
     "description": "Square-cased watch with a date window: a silver version with a black dial, or a gold version with a silver dial.",
     "story": "The same square design in two color combinations: the silver version with a black dial, sober and modern, or the gold version with a silver dial, warm and luminous. Both have bar markers and a date window. Choose the one that best matches your accessories.",
-    "highlights": ["Square case with date window", "Two versions: silver with black dial / gold with silver dial", "Bar markers"],
-    "esDrop": [3]
+    "highlights": [
+      "Square case with date window",
+      "Two versions: silver with black dial / gold with silver dial",
+      "Bar markers"
+    ],
+    "esDrop": [
+      3
+    ]
   },
   "rw06": {
     "name": "Digital sport watch",
     "description": "Digital sport watch in black and silver, with time display, alarm and timer.",
     "story": "Sporty in spirit with an octagonal case, this digital watch pairs black and silver with a metal link strap. The display shows the time in large figures, with alarm and timer functions in plain view. Ideal for the more active day-to-day.",
-    "highlights": ["Digital display with clear time", "Alarm and timer functions", "Octagonal case in black and silver", "Metal link strap"]
+    "highlights": [
+      "Digital display with clear time",
+      "Alarm and timer functions",
+      "Octagonal case in black and silver",
+      "Metal link strap"
+    ]
   },
   "st01": {
     "name": "Silver-tone jewelry set with watch (5 pieces)",
     "description": "A complete set in a silver tone: rectangular-cased watch, bracelet, pendant necklace, ring and earrings. Available with a white or green dial.",
     "story": "Everything you need in a single set: an elegant silver-tone rectangular watch together with a matching bracelet, pendant necklace, ring and earrings. Available with a white or green dial. The perfect gift, ready to wear.",
-    "highlights": ["Includes 5 pieces: watch, bracelet, pendant necklace, ring and earrings", "Coordinated silver tone", "Two watch dial options: white or green", "Display box not included"]
+    "highlights": [
+      "Includes 5 pieces: watch, bracelet, pendant necklace, ring and earrings",
+      "Coordinated silver tone",
+      "Two watch dial options: white or green",
+      "Display box not included"
+    ]
+  },
+  "rw07": {
+    "name": "Silver-tone square watch with blue dial and date",
+    "description": "Square watch with rounded corners in a silver tone, with a blue dial, date window and link bracelet.",
+    "story": "A square case with soft corners and a blue dial with a satin sheen, on a silver-tone link bracelet. Understated, easy to read and with the date in view: it works as well with an office look as with a casual one.",
+    "highlights": [
+      "Square case with rounded corners",
+      "Blue dial with date window",
+      "Silver-tone link bracelet",
+      "Understated, versatile design"
+    ]
+  },
+  "rw08": {
+    "name": "Gold-tone square watch with silver dial and date",
+    "description": "Square watch with rounded corners in a gold tone, with a silver dial, date window and gold-tone link bracelet.",
+    "story": "A bright gold-tone case frames a satin-finish silver dial with slim hour markers and a date window. The gold-tone link bracelet completes a luminous piece that is easy to style.",
+    "highlights": [
+      "Square case with rounded corners",
+      "Silver dial with date window",
+      "Gold-tone link bracelet",
+      "Classic, luminous design"
+    ]
+  },
+  "rw09": {
+    "name": "Silver-tone square watch with gray dial and date",
+    "description": "Square watch with rounded corners in a silver tone, with a dark gray dial, date window and link bracelet.",
+    "story": "A dark gray satin-finish dial on a silver-tone case with soft corners, with slim hour markers and a date window. Discreet and elegant, made to be worn every day.",
+    "highlights": [
+      "Square case with rounded corners",
+      "Dark gray dial with date window",
+      "Silver-tone link bracelet",
+      "Discreet, versatile design"
+    ]
+  },
+  "rw10": {
+    "name": "Gold-tone oval bangle watch with Roman numerals",
+    "description": "Oval-cased watch in a gold tone on an open rigid bangle, with a cream dial and Roman numerals.",
+    "story": "An oval gold-tone case that seems to float on an open rigid bangle. The cream dial with Roman numerals gives it an antique-watch air, halfway between a watch and a piece of jewelry.",
+    "highlights": [
+      "Oval case in a gold tone",
+      "Open rigid bangle",
+      "Cream dial with Roman numerals",
+      "Vintage air, between watch and jewelry"
+    ]
+  },
+  "rw11": {
+    "name": "Gold-tone oval watch with dark gray dial",
+    "description": "Oval-cased watch in a gold tone, with a dark gray dial with gold hands and a flat-link bracelet.",
+    "story": "The gold-tone oval case and the dark gray dial with gold hands make a soft, elegant contrast. The flat-link bracelet keeps it light and comfortable for everyday wear.",
+    "highlights": [
+      "Oval case in a gold tone",
+      "Dark gray dial with gold hands",
+      "Flat-link bracelet",
+      "Light, elegant design"
+    ]
+  },
+  "rw12": {
+    "name": "Silver-tone oval watch with fine-link bracelet",
+    "description": "Oval-cased watch in a silver tone, with a light silver dial and a fine-link bracelet.",
+    "story": "A silver-tone oval case and a light dial with slim hour markers, on a fine-link bracelet that sits softly on the wrist. Delicate and easy to style.",
+    "highlights": [
+      "Oval case in a silver tone",
+      "Light silver dial with slim markers",
+      "Fine-link bracelet",
+      "Delicate, versatile design"
+    ]
+  },
+  "rw13": {
+    "name": "Silver-tone oval watch with thick bezel",
+    "description": "Oval-cased watch in a silver tone with a bold bezel, a light silver dial and a link bracelet.",
+    "story": "The thick bezel gives presence to the silver-tone oval case, which frames a clean, light dial. A simple piece with more character than a slim watch.",
+    "highlights": [
+      "Oval case in a silver tone",
+      "Bold, thick bezel",
+      "Light silver dial",
+      "Silver-tone link bracelet"
+    ]
+  },
+  "rw14": {
+    "name": "Gold-tone oval watch with silver dial",
+    "description": "Oval-cased watch in a gold tone, with a silver dial with gold hands and a gold-tone link bracelet.",
+    "story": "The gold tone of the oval case and bracelet surrounds a light silver dial with gold hands. Warm, luminous and easy to wear by day and by night.",
+    "highlights": [
+      "Oval case in a gold tone",
+      "Silver dial with gold hands",
+      "Gold-tone link bracelet",
+      "Warm, luminous design"
+    ]
+  },
+  "rw15": {
+    "name": "Gold-tone rectangular watch with blue dial and numerals",
+    "description": "Rectangular watch with beveled corners in a gold tone, with a blue dial, gold numerals and a link bracelet.",
+    "story": "A gold-tone rectangular case with beveled corners and a deep blue dial with clear gold numerals. The gold-tone link bracelet completes a classic-looking watch with plenty of color.",
+    "highlights": [
+      "Rectangular case with beveled corners",
+      "Blue dial with gold numerals",
+      "Gold-tone link bracelet",
+      "Classic design with color"
+    ]
+  },
+  "rw16": {
+    "name": "Silver-tone rectangular watch with sage-green dial",
+    "description": "Rectangular watch in a silver tone, with a sage-green dial, slim hour markers and a link bracelet.",
+    "story": "A soft sage-green dial on a silver-tone rectangular case with a defined bezel. A discreet touch of color on a clean-lined watch.",
+    "highlights": [
+      "Rectangular case in a silver tone",
+      "Sage-green dial with slim markers",
+      "Silver-tone link bracelet",
+      "Clean-lined design"
+    ]
+  },
+  "rw17": {
+    "name": "Silver-tone rectangular watch with white dial",
+    "description": "Rectangular watch in a silver tone, with a white dial with slim hour markers and a link bracelet.",
+    "story": "A clean white dial with slim hour markers inside a silver-tone rectangular case with a defined bezel. Essential, light and easy to style with anything.",
+    "highlights": [
+      "Rectangular case in a silver tone",
+      "White dial with slim markers",
+      "Silver-tone link bracelet",
+      "Essential design"
+    ]
   }
 }
