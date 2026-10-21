@@ -57,14 +57,15 @@ const CATEGORY_OF = { pu01: 'rings' };
 
 const COLOR_EN = {
   'Oro rosa': 'Rose gold', Blanco: 'White', Negro: 'Black', Dorado: 'Gold tone', Verde: 'Green', Azul: 'Blue', Gris: 'Slate gray',
-  Plateado: 'Silver tone', Turquesa: 'Turquoise',
+  Plateado: 'Silver tone', Turquesa: 'Turquoise', Crema: 'Cream',
 };
 const COLOR_ES = { Dorado: 'Tono dorado', Plateado: 'Tono plateado' };
 
 const ONE_SIZE = L('Talla única', 'One size');
 
 const VARIANTS = {
-  rw02: [[L('Esfera negra', 'Black dial'), 0], [L('Esfera blanca', 'White dial'), 1]],
+  // rw02: la foto nueva es la de esfera blanca (0); la de esfera negra es la foto anterior, al final de la galería (4).
+  rw02: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera negra', 'Black dial'), 4]],
   rw03: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 1], [L('Esfera azul', 'Blue dial'), 2], [L('Esfera gris pizarra', 'Slate gray dial'), 3], [L('Esfera negra', 'Black dial'), 4]],
   rw05: [[L('Plateado · esfera negra', 'Silver · black dial'), 0], [L('Dorado · esfera plateada', 'Gold · silver dial'), 1]],
   st01: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 1]],
@@ -77,7 +78,7 @@ const VARIANTS = {
 const AUTO_DETAIL = /^(rw|st)/;
 
 const COLLECTION = {
-  tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'st01'],
+  tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'rw07', 'rw08', 'rw09', 'rw10', 'rw11', 'rw12', 'rw13', 'rw14', 'rw15', 'rw16', 'rw17', 'st01'],
   corazon: ['ar04', 'ar49', 'co02', 'co06', 'co12', 'co19', 'pu04', 'pu06', 'pu11'],
   lumiere: ['an03', 'an07', 'an09', 'ar11', 'ar15', 'ar19', 'ar24', 'ar25', 'ar37', 'ar39', 'ar42', 'ar44', 'ar52', 'ar55', 'co08', 'co09', 'co10', 'co11', 'pu10', 'pu12', 'pu13'],
   jardin: ['an01', 'an06', 'an12', 'ar01', 'ar05', 'ar13', 'ar16', 'ar17', 'ar21', 'ar29', 'ar30', 'ar32', 'ar33', 'ar34', 'ar35', 'ar38', 'ar50', 'ar53', 'ar54', 'co03', 'co05', 'co13', 'co15', 'co17', 'co18', 'pu08'],
@@ -86,7 +87,7 @@ const COLLECTION = {
 const collectionOf = (id) => Object.entries(COLLECTION).find(([, ids]) => ids.includes(id))?.[0];
 
 const FEATURED = ['rw04', 'an04', 'co11', 'pu06', 'ar06', 'rw03', 'an07', 'pu01'];
-const NEW_ARRIVAL = ['an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
+const NEW_ARRIVAL = ['rw07', 'rw10', 'rw15', 'rw16', 'an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
 const BESTSELLER = ['rw01', 'co11', 'ar04', 'pu06', 'an02', 'co09', 'ar11', 'pu04', 'co19', 'ar07', 'rw04', 'st01'];
 const GIFT_TAGS = new Set(['heart', 'pearl', 'set', 'moon', 'butterfly', 'star', 'clover']);
 const HOVER_VIDEO = new Set(['rw04', 'rw03']);
@@ -199,6 +200,17 @@ for (const p of source) {
       ];
       detailIndex = 2;
     }
+  } else if (media.images[`${p.id}-frontal`]) {
+    // Relojes con las 4 vistas de fotos/relojes-premium (scripts/build-relojes.mjs): frontal, 45°, macro y posterior.
+    images = [
+      imgOf(`${p.id}-frontal`, 'main', L(p.nombre, t.name)),
+      imgOf(`${p.id}-45`, 'main', L(`${p.nombre}, de lado`, `${t.name}, angled view`)),
+      imgOf(`${p.id}-macro`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`)),
+      imgOf(`${p.id}-posterior`, 'main', L(`${p.nombre}, vista posterior`, `${t.name}, back view`)),
+      // rw02 conserva su foto anterior (esfera negra) para su otra variante.
+      ...(p.id === 'rw02' ? [imgOf('rw02', 'main', L(`${p.nombre}, esfera negra`, `${t.name}, black dial`))] : []),
+    ];
+    detailIndex = 2;
   } else {
     images = names.map((n, i) => {
       const worn = LIFESTYLE.has(p.id) && i === 0;
