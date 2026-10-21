@@ -21275,19 +21275,35 @@
     }
    },
    {
-    "src": "/media/products/an01-modelo-7dc5d74.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDAAQxERIhMjRCcXKx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQEAAwAAAAAAAAAAAAAAAAEAAhEh/9oADAMBAAIRAxEAPwCSTXKkSy7g7EnPAGtFZTtPaI782CdM0b2D3PykrXp08UIdmydl/9k=",
-    "tone": "#b4917c",
+    "src": "/media/products/an01-modelo-7e5be3f.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQID/8QAIRAAAgECBgMAAAAAAAAAAAAAAQIDAAQFETEyUWESIdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERL/2gAMAwEAAhEDEQA/AJiuZWILyMfHaSdp+UzYYgsqssgKuuuQoeazdWQxg5NoDxwejW9pZyO2RSSNVBAI1HvaeejRzYynnIv/2Q==",
+    "tone": "#ad7f66",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado abierto con dos flores, puestos",
      "en": "Open gold-tone ring with two flowers, worn"
+    }
+   },
+   {
+    "src": "/media/products/an01-macro-1f9ad30.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAIhAAAgECBQUAAAAAAAAAAAAAAQIAAxMEEhQhIkFRYZHw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIR/9oADAMBAAIRAxEAPwDX0uMTk4phfvMfRovkG49xFkdWYy2lHeTU4N1p/9k=",
+    "tone": "#e3d2c2",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado abierto con dos flores",
+     "en": "Close-up detail of Open gold-tone ring with two flowers"
     }
    }
   ],
@@ -21328,7 +21344,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -21488,19 +21504,35 @@
     }
    },
    {
-    "src": "/media/products/an02-modelo-295ba08.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAJBAAAQIFAgcAAAAAAAAAAAAAAgEDAAQFESESMRMiQUJxkfD/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwDTXamrDosM2QsajXtXe3mBznp95xbPOGo4uMNvU4agATLxaVUOYR2X7HqJcFuVbQQTGy36rBFyR//Z",
-    "tone": "#998072",
+    "src": "/media/products/an02-modelo-0ee8d12.jpg",
+    "width": 928,
+    "height": 1160,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAB/8QAIRAAAQMEAwADAAAAAAAAAAAAAQIDEQAEEiEFIjFhYnH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAH/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAQIR/9oADAMBAAIRAxEAPwA1zyr1y5m0VIQNJw0SaE5e3BOK7hxUfYxWIK2lpcZXgr0yNIT8/tKtuOLyc3BE+CiPeQzBMvdRu7g69A8p7gAUIEdaqqozT//Z",
+    "tone": "#745242",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado de banda ancha texturizada, puestos",
      "en": "Wide textured gold-tone band ring, worn"
+    }
+   },
+   {
+    "src": "/media/products/an02-macro-1ebc159.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIG/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxEhEhQxUZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEQMRAD8A0l9llSAoqWNvC7kVCHVXA6WI5HqN26eNb7KFSgYNkzKTUv/Z",
+    "tone": "#eedfce",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado de banda ancha texturizada",
+     "en": "Close-up detail of Wide textured gold-tone band ring"
     }
    }
   ],
@@ -21541,7 +21573,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -21709,19 +21741,35 @@
     }
    },
    {
-    "src": "/media/products/an03-modelo-6c0deab.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAlEAACAAQDCQAAAAAAAAAAAAABAgADBBEFEjITITE0YXGBsdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAExMv/aAAwDAQACEQMRAD8ATVVrJO2cosimzWO4k9IVRqzSczWNzpJ4RPxbTT9/kUcP5VPPuCVGeT//2Q==",
-    "tone": "#b49783",
+    "src": "/media/products/an03-modelo-6a89788.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIDABEhMQUSYQT/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAMAwEAAhEDEQA/ANsnIu5VI8hTobapiZmuezFicqTqj2LQymP6Fsw0w2PRSXHgB36IJXtlmOvKDq1OAX//2Q==",
+    "tone": "#ab836b",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado estrella de mar con perla, puestos",
      "en": "Gold-tone starfish ring with pearl, worn"
+    }
+   },
+   {
+    "src": "/media/products/an03-macro-9ac45f6.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQED/8QAIRAAAQMCBwEAAAAAAAAAAAAAAQACAwQREhMhMUFhgZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABAhH/2gAMAwEAAhEDEQA/AGRS1ENjNJHY9JCOI4dXN+rUwMO9z6rlsHBU1ODdaf/Z",
+    "tone": "#e5d5c4",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado estrella de mar con perla",
+     "en": "Close-up detail of Gold-tone starfish ring with pearl"
     }
    }
   ],
@@ -21762,7 +21810,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -21922,19 +21970,35 @@
     }
    },
    {
-    "src": "/media/products/an04-modelo-38625ed.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEE/8QAIRAAAgEEAAcAAAAAAAAAAAAAAQIAAwQREgUTITRBgeH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A38Su2Wvy0OuowT5PyBZV6yVWRgxQrtknoDLed4PUeDNozeQ//9k=",
-    "tone": "#b3937d",
+    "src": "/media/products/an04-modelo-33d2e02.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAIxAAAgAFAwUBAAAAAAAAAAAAAQIAAwQRITJBYRIiMVFScf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AFtXu1xJ6lVj22OWPs8QdKuoRiZc0kHe2DzGah5p0FWOq3i2w/IqbQNMULfA+cQfFkqF/9k=",
+    "tone": "#a98065",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado de banda ancha con óvalo, puestos",
      "en": "Wide gold-tone ring with oval medallion, worn"
+    }
+   },
+   {
+    "src": "/media/products/an04-macro-d5d9338.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEG/8QAHxABAAEDBAMAAAAAAAAAAAAAAQIAETEDEhMiQVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQEBAAMAAAAAAAAAAAAAAAABAAIRYf/aAAwDAQACEQMRAD8A0F3T2sySLinQ1o8cZHWLi9DZcskQ+uakp7reALB6qATLkrsv/9k=",
+    "tone": "#dcd7c4",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado de banda ancha con óvalo",
+     "en": "Close-up detail of Wide gold-tone ring with oval medallion"
     }
    }
   ],
@@ -21975,7 +22039,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -22134,19 +22198,35 @@
     }
    },
    {
-    "src": "/media/products/an05-modelo-5e8de73.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAIhAAAQQBAgcAAAAAAAAAAAAAAgABAwQxBRESITIzcXPB/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFh/9oADAMBAAIRAxEAPwCWSzYktNFxSvHgQD4tfSrz2JTCUncgFtydsc8eUNN64kI+9Y9rotFbqD//2Q==",
-    "tone": "#957866",
+    "src": "/media/products/an05-modelo-4aa4609.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAIhAAAQMEAQUBAAAAAAAAAAAAAQIDBAAFEiERMTNxgbHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQEAAwAAAAAAAAAAAAAAAAAAISIx/9oADAMBAAIRAxEAPwDMm4yZailThy51jrnwB+0pFuqw3i+nNadEg790TGtUlx5Ke2SSCs/KqU3KiSVMtBnpkkqHGQoZUVx//9k=",
+    "tone": "#8f6c58",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado de bandas onduladas, puestos",
      "en": "Gold-tone wavy bands ring, worn"
+    }
+   },
+   {
+    "src": "/media/products/an05-macro-85a49ad.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EABsQAAMAAwEBAAAAAAAAAAAAAAECAwAEESFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAAMAAAAAAAAAAAAAAAAAAAARIf/aAAwDAQACEQMRAD8A266+wq9NCB8UcwV0p0QOzsSfp7l1ZreZRx4cQjCQEyOgDzAVGcP/2Q==",
+    "tone": "#dec2a7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado de bandas onduladas",
+     "en": "Close-up detail of Gold-tone wavy bands ring"
     }
    }
   ],
@@ -22187,7 +22267,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -22348,19 +22428,35 @@
     }
    },
    {
-    "src": "/media/products/an06-modelo-c4b559f.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgQF/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIDIQAEchESMzVB/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAABESEx/9oADAMBAAIRAxEAPwChtlF2O12UVV2T8zV1ZGEQMjEjpRbDj+0g4HEY8UXDDWiN1B//2Q==",
-    "tone": "#b6a091",
+    "src": "/media/products/an06-modelo-4590835.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAhEAACAgEDBQEAAAAAAAAAAAABAgMRAAQhIhITMUFRkf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAMAwEAAhEDEQA/AHRuQhnQBWY1yugPGNgnnljFpG1fHrImi1TzJwicIhI6g1HLaQL21aTf0L3P7hYzaF//2Q==",
+    "tone": "#ba9e8e",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo plateado con relieve de hoja, puestos",
      "en": "Silver-tone ring with leaf relief, worn"
+    }
+   },
+   {
+    "src": "/media/products/an06-macro-e2567f0.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAHRAAAgICAwEAAAAAAAAAAAAAAQIAEgMRITFBwf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhEDEQA/ANLlZnFm4HhPyDjT22xKlJZab65BhCpUVBXUmgzL/9k=",
+    "tone": "#e1d3c3",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo plateado con relieve de hoja",
+     "en": "Close-up detail of Silver-tone ring with leaf relief"
     }
    }
   ],
@@ -22401,7 +22497,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -22568,19 +22664,35 @@
     }
    },
    {
-    "src": "/media/products/an07-modelo-0dc2492.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDAAQREkFxMzRh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAwDAQACEQMRAD8AmSSdrt5dm1U4BB4xStoTeQBp9soSoZee/tYI/GOqXh9Re6MJVy//2Q==",
-    "tone": "#a88c7c",
+    "src": "/media/products/an07-modelo-8bef2c7.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAJBAAAgEDAgYDAAAAAAAAAAAAAQIDAAQREmEFExQhQVEigdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oADAMBAAIRAxEAPwCVrdyRSPIJCpdvkd/bbU1a8QDl4ZFCyxnDYPY7iiunCZMQddS6WXz9flabOw5jMssGYwPBwQdj6oTSdxv/2Q==",
+    "tone": "#a4816e",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo plateado abierto de concha con perla, puestos",
      "en": "Open silver-tone shell ring with pearl, worn"
+    }
+   },
+   {
+    "src": "/media/products/an07-macro-38c20c6.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHRAAAgICAwEAAAAAAAAAAAAAAQIAESFhIjEyUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAx/9oADAMBAAIRAxEAPwDUN5tmoahKqjko7lAoHJ+4iUGrYuTQZ5f/2Q==",
+    "tone": "#e4d7c7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo plateado abierto de concha con perla",
+     "en": "Close-up detail of Open silver-tone shell ring with pearl"
     }
    }
   ],
@@ -22621,7 +22733,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -22778,19 +22890,35 @@
     }
    },
    {
-    "src": "/media/products/an08-modelo-00d5651.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACIQAAIBAwMFAQAAAAAAAAAAAAECAwAREgQFMzFBYXGC0f/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8AnztrndpHaUoHIXEmwPa3itFs0jz6HOcZSBrF+mVDt/EvoU6nB9ftA7X/2Q==",
-    "tone": "#8d7d72",
+    "src": "/media/products/an08-modelo-2784cd1.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBf/EACIQAAIBAwQCAwAAAAAAAAAAAAECAwAEIQUREkETYSNRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAMAwEAAhEDEQA/AMx9TvbuRI3lLMCCo2Az+1Vaa7NbBo5fkHTE5Ho040QvbJwYGUDvAb1Qj0i9i4qg8Z44cjfH0du6MmV//9k=",
+    "tone": "#756056",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo plateado abierto con extremos ovalados, puestos",
      "en": "Open silver-tone ring with oval ends, worn"
+    }
+   },
+   {
+    "src": "/media/products/an08-macro-3034b04.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAxEAEiJxMTJR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhEDEQA/ANTNIjRcgSauhkugPKiL++cW8qMKZdu8NWeT1CjvJdDIN//Z",
+    "tone": "#d2cfca",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo plateado abierto con extremos ovalados",
+     "en": "Close-up detail of Open silver-tone ring with oval ends"
     }
    }
   ],
@@ -22831,7 +22959,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -22998,19 +23126,35 @@
     }
    },
    {
-    "src": "/media/products/an09-modelo-e286fd9.jpg",
-    "width": 1067,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAb/xAAiEAACAQQCAQUAAAAAAAAAAAABAhEAAwQSMUEhBRNRkaH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAhEhMf/aAAwDAQACEQMRAD8AktXGtXAVZRDbAHsjn8809x8lctSVGrKfsdGsrj3G9y4Jh1bdZPxyKc4JhtrBLjWIA4EyKnHTU5Y7KhdwrZ9SvSW1ENA8c08wNUs6KoUDoUUUh7EvL//Z",
-    "tone": "#b18a73",
+    "src": "/media/products/an09-modelo-e61e68a.jpg",
+    "width": 742,
+    "height": 928,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EACIQAAIBAwQCAwAAAAAAAAAAAAECAwAEERITITEiQQVCof/EABUBAQEAAAAAAAAAAAAAAAAAAAAE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDS7IkktywCONyNj9T6/aYiubggSW4YuBodeqniQi2inRvKJsE4zweqoROYZmlyGjmXVqHWfdS6sIfFcwOD1tinrPmwXPPkaKKUf//Z",
+    "tone": "#ae795a",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado con perlas y espiral trenzada, puestos",
      "en": "Gold-tone ring with pearls and braided spiral, worn"
+    }
+   },
+   {
+    "src": "/media/products/an09-macro-7ce5068.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EABoQAAIDAQEAAAAAAAAAAAAAAAECAAMRITH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANS1opRRhMQ9pdtB5DYQyksNzyT7nBBpH//Z",
+    "tone": "#e0d3bb",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado con perlas y espiral trenzada",
+     "en": "Close-up detail of Gold-tone ring with pearls and braided spiral"
     }
    }
   ],
@@ -23051,7 +23195,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -23211,19 +23355,35 @@
     }
    },
    {
-    "src": "/media/products/an10-modelo-de9db46.jpg",
-    "width": 1600,
-    "height": 1067,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAQQBAwUAAAAAAAAAAAAAAQACAxEEEyExNFFygbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A1M+Z+u1gFADvyoY8ro5Xtk2joEG7slOm6keBQm8eh8QtaNch/9k=",
-    "tone": "#c0a38c",
+    "src": "/media/products/an10-modelo-818d4f6.jpg",
+    "width": 1114,
+    "height": 1280,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAQAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBf/EACEQAAICAQQCAwAAAAAAAAAAAAECAxEABBIhMRMUIqHx/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAMAwEAAhEDEQA/ANKfU79Q3jJsccZM8tfJpiAeLLVeP6zGZwsdhT31f7glhjeEpKofbIfrD4snQOX/2Q==",
+    "tone": "#be977c",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado de óvalos entrelazados, puestos",
      "en": "Gold-tone interlaced ovals ring, worn"
+    }
+   },
+   {
+    "src": "/media/products/an10-macro-0b2948b.jpg",
+    "width": 1024,
+    "height": 1024,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAxEABBMxQVGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEiH/2gAMAwEAAhEDEQA/ANbsSSBqjIFd3j12mZm5QK8UPmE2u0jh0YA+iMrGpVKY2cgllv0bkP/Z",
+    "tone": "#f8ecc6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado de óvalos entrelazados",
+     "en": "Close-up detail of Gold-tone interlaced ovals ring"
     }
    }
   ],
@@ -23264,7 +23424,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -23422,19 +23582,35 @@
     }
    },
    {
-    "src": "/media/products/an11-modelo-11d298a.jpg",
-    "width": 1067,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAVAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQb/xAAjEAACAgIBAgcAAAAAAAAAAAABAgMRAAQhBVESEyIxkdHh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECISL/2gAMAwEAAhEDEQA/AGt/qRV1hiko+KmIFm7H7j/T5229QSmmt2FjteZaedhtutHhjz8/eXnQJ3lDR8hVW+3OEno1TyQ6mhrbUYklj9bclgSDj+lox6ZfyyzF65PuB2wwyoy3h//Z",
-    "tone": "#a08472",
+    "src": "/media/products/an11-modelo-78e1c57.jpg",
+    "width": 742,
+    "height": 928,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGBf/EACUQAAEDBAECBwAAAAAAAAAAAAEAAhEDBBIhBRMxI0FCYYGxwf/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhH/2gAMAwEAAhEDEQA/AFWXOJuDgSxtItafiP1UHCQ/i6WMgSe6mW1vDDoByfEey2LXkBbUmtcYaB2B8ySo5eNo3lSm2E9E79SfG6Unex9IQizL/9k=",
+    "tone": "#956e58",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado trenzado abierto, puestos",
      "en": "Open braided gold-tone ring, worn"
+    }
+   },
+   {
+    "src": "/media/products/an11-macro-27717c5.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDEQASMUFRYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAQADAQAAAAAAAAAAAAAAAAEAAhES/9oADAMBAAIRAxEAPwDWTPIdihoKaIHOJE77lJACQLsdfckkG0gkSg3d94iIFHs8nzkStuo1Mn//2Q==",
+    "tone": "#f9eecf",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado trenzado abierto",
+     "en": "Close-up detail of Open braided gold-tone ring"
     }
    }
   ],
@@ -23475,7 +23651,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {
@@ -23637,19 +23813,35 @@
     }
    },
    {
-    "src": "/media/products/an12-modelo-18427a5.jpg",
-    "width": 1600,
-    "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIRAAAgEEAgIDAAAAAAAAAAAAAQIDAAQRMRITMkFRgaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACESH/2gAMAwEAAhEDEQA/AJrcytM3a2ck+WhjX1WgtrtJYAyrxJ8lxo0QLISxrOjcWY6IyM0naxm0TqOGbbH59D8oTjNlpL//2Q==",
-    "tone": "#af8f7b",
+    "src": "/media/products/an12-modelo-fa34ef7.jpg",
+    "width": 928,
+    "height": 1160,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgb/xAAiEAACAgIBAwUAAAAAAAAAAAABAgMRAAQhEhNRBRRBQnH/xAAVAQEBAAAAAAAAAAAAAAAAAAABBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAMAwEAAhEDEQA/AM683UDHQLBeqMVYNfH7l7UmTd1kePpBrkHObhsOnaJUtZjPg+MZh2faDvEELJYZV+rZOOVSbJNwrVxRGVvSEWTZ2hIoYWpphfNYYYnYeX//2Q==",
+    "tone": "#a6795f",
     "focal": {
      "x": 0.5,
-     "y": 0.6
+     "y": 0.5
     },
     "role": "lifestyle",
     "alt": {
      "es": "Anillo dorado de hoja martillada, puestos",
      "en": "Gold-tone hammered leaf ring, worn"
+    }
+   },
+   {
+    "src": "/media/products/an12-macro-93c01f4.jpg",
+    "width": 1080,
+    "height": 1080,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgMG/8QAHhAAAgEFAQEBAAAAAAAAAAAAAQIRAAMSEyExQXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAAMBAQAAAAAAAAAAAAAAAAABESEC/9oADAMBAAIRAxEAPwDVNc0AJOVxhMn7TGbKGEIx9B7U8tlsNzIcBiYpzqX0t+1C5d14NUP/2Q==",
+    "tone": "#ebe6d5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de Anillo dorado de hoja martillada",
+     "en": "Close-up detail of Gold-tone hammered leaf ring"
     }
    }
   ],
@@ -23690,7 +23882,7 @@
   },
   "hoverMedia": {
    "type": "image",
-   "imageIndex": 1
+   "imageIndex": 2
   },
   "highlights": [
    {

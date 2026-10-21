@@ -29,8 +29,29 @@ const SETS = {
   collares: { dir: 'collares-originales', prefix: 'collar', ids: range('co', 19), focal: { x: 0.5, y: 0.62 } },
   // pu01 es un anillo ancho (la foto con modelo lo muestra en la muñeca): solo foto en blanco y 360°.
   pulseras: { dir: 'pulseras-originales', prefix: 'pulsera', ids: range('pu', 13), focal: { x: 0.5, y: 0.7 }, sinModelo: ['pu01'] },
-  anillos: { dir: 'anillos-originales', prefix: 'anillo', ids: range('an', 12), focal: { x: 0.5, y: 0.6 } },
+  // Anillos: la foto con modelo se encuadra más cerca del anillo (centro aproximado de cada uno en la foto, 0–1) y el close-up es la foto real
+  // del proveedor (../fotos/<id>.jpg, con la pieza grande y el fondo original).
+  anillos: {
+    dir: 'anillos-originales', prefix: 'anillo', ids: range('an', 12), focal: { x: 0.5, y: 0.5 }, closeup: true,
+    zoom: 0.58,
+    centro: {
+      an01: { x: 0.46, y: 0.38 }, an02: { x: 0.59, y: 0.45 }, an03: { x: 0.5, y: 0.5 }, an04: { x: 0.55, y: 0.47 },
+      an05: { x: 0.5, y: 0.47 }, an06: { x: 0.58, y: 0.52 }, an07: { x: 0.52, y: 0.46 }, an08: { x: 0.42, y: 0.45 },
+      an09: { x: 0.48, y: 0.42 }, an10: { x: 0.48, y: 0.46 }, an11: { x: 0.61, y: 0.41 }, an12: { x: 0.49, y: 0.41 },
+    },
+  },
 };
+
+/** Recorta la foto con modelo a 4:5 centrada en la joya (ancho = zoom del lado), sin ampliar. */
+async function acercar(f, c, zoom) {
+  const img = sharp(f).rotate();
+  const { width: W, height: H } = await img.metadata();
+  const w = Math.round(W * zoom);
+  const h = Math.min(H, Math.round(w * 1.25));
+  const left = Math.max(0, Math.min(W - w, Math.round(c.x * W - w / 2)));
+  const top = Math.max(0, Math.min(H - h, Math.round(c.y * H - h / 2)));
+  return img.extract({ left, top, width: w, height: h }).toBuffer();
+}
 
 const [setName, ...only] = process.argv.slice(2);
 const set = SETS[setName];
@@ -51,9 +72,11 @@ for (const id of set.ids.filter((i) => !only.length || only.includes(i))) {
   delete manifest.images[id];
   for (const key of Object.keys(manifest.images)) if (mine.test(`${key}.`)) delete manifest.images[key];
 
-  const kinds = [['blanco', 'base'], ...(set.sinModelo?.includes(id) ? [] : [['modelo', 'modelo']])];
+  const kinds = [['blanco', 'base'], ...(set.sinModelo?.includes(id) ? [] : [['modelo', 'modelo']]), ...(set.closeup ? [['closeup', 'macro']] : [])];
   for (const [kind, name] of kinds) {
-    const raw = name === 'modelo' ? await plain(file(id, kind)) : await pad45(file(id, kind));
+    const raw = kind === 'closeup' ? await plain(path.join(root, '../fotos', `${id}.jpg`))
+      : name === 'modelo' ? (set.centro ? await acercar(file(id, kind), set.centro[id], set.zoom) : await plain(file(id, kind)))
+      : await pad45(file(id, kind));
     const photo = await sharp(raw).jpeg({ quality: 91, mozjpeg: true, progressive: true }).toBuffer();
     const key = `${id}-${name}`;
     const hash = crypto.createHash('sha1').update(photo).digest('hex').slice(0, 7);
