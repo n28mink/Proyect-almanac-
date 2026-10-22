@@ -66,14 +66,24 @@ const ONE_SIZE = L('Talla única', 'One size');
 const VARIANTS = {
   // rw02: la foto nueva es la de esfera blanca (0); la de esfera negra es la foto anterior, al final de la galería (4).
   rw02: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera negra', 'Black dial'), 4]],
-  rw03: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 1], [L('Esfera azul', 'Blue dial'), 2], [L('Esfera gris pizarra', 'Slate gray dial'), 3], [L('Esfera negra', 'Black dial'), 4]],
-  rw05: [[L('Plateado · esfera negra', 'Silver · black dial'), 0], [L('Dorado · esfera plateada', 'Gold · silver dial'), 1]],
-  st01: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 1]],
+  // rw03: la foto nueva es la de esfera blanca (0); las otras esferas conservan sus fotos anteriores, a continuación de las 4 vistas nuevas.
+  rw03: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 4], [L('Esfera azul', 'Blue dial'), 5], [L('Esfera gris pizarra', 'Slate gray dial'), 6], [L('Esfera negra', 'Black dial'), 7]],
+  rw05: [[L('Plateado · esfera negra', 'Silver · black dial'), 0], [L('Dorado · esfera plateada', 'Gold · silver dial'), 4]],
+  // st01: 4 vistas nuevas del reloj (esfera blanca) y, a continuación, las fotos anteriores del set completo (4) y del set con esfera verde (5).
+  st01: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 5]],
   pu02: [[L('Tono dorado', 'Gold tone'), 0], [L('Tono plateado', 'Silver tone'), 0]],
   pu13: [[L('Tono plateado', 'Silver tone'), 0], [L('Tono dorado', 'Gold tone'), 0]],
 };
 
 /** Piezas con foto en blanco, foto con modelo y giro 360° (scripts/build-aretes.mjs y build-set.mjs): se detectan por tener `spin` en el manifiesto. */
+
+/** Fotos que van a continuación de las 4 vistas de un reloj: [clave, rol, texto ES, texto EN]. Fotos anteriores de otras variantes y la segunda variante de rw05. */
+const WATCH_EXTRA = {
+  rw02: [['rw02', 'main', 'esfera negra', 'black dial']],
+  rw03: [['rw03-2', 'main', 'esfera verde', 'green dial'], ['rw03-3', 'main', 'esfera azul', 'blue dial'], ['rw03-4', 'main', 'esfera gris pizarra', 'slate gray dial'], ['rw03-5', 'main', 'esfera negra', 'black dial']],
+  rw05: [['rw05b-frontal', 'main', 'variante dorada', 'gold variant'], ['rw05b-45', 'main', 'variante dorada, de lado', 'gold variant, angled view'], ['rw05b-macro', 'detail', 'variante dorada, detalle', 'gold variant, close-up'], ['rw05b-posterior', 'main', 'variante dorada, vista posterior', 'gold variant, back view']],
+  st01: [['st01', 'lifestyle', 'set completo', 'full set'], ['st01-2', 'main', 'set con esfera verde', 'set with green dial']],
+};
 
 const AUTO_DETAIL = /^(rw|st)/;
 
@@ -90,7 +100,7 @@ const FEATURED = ['rw04', 'an04', 'co11', 'pu06', 'ar06', 'rw03', 'an07', 'pu01'
 const NEW_ARRIVAL = ['rw07', 'rw10', 'rw15', 'rw16', 'an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
 const BESTSELLER = ['rw01', 'co11', 'ar04', 'pu06', 'an02', 'co09', 'ar11', 'pu04', 'co19', 'ar07', 'rw04', 'st01'];
 const GIFT_TAGS = new Set(['heart', 'pearl', 'set', 'moon', 'butterfly', 'star', 'clover']);
-const HOVER_VIDEO = new Set(['rw04', 'rw03']);
+const HOVER_VIDEO = new Set();
 
 const WATCH_3D = {
   rw01: { caseShape: 'round', strap: 'mesh', finish: 'rose-gold', dials: ['#f4f1ea'] },
@@ -207,8 +217,8 @@ for (const p of source) {
       imgOf(`${p.id}-45`, 'main', L(`${p.nombre}, de lado`, `${t.name}, angled view`)),
       imgOf(`${p.id}-macro`, 'detail', L(`Detalle de ${p.nombre}`, `Close-up detail of ${t.name}`)),
       imgOf(`${p.id}-posterior`, 'main', L(`${p.nombre}, vista posterior`, `${t.name}, back view`)),
-      // rw02 conserva su foto anterior (esfera negra) para su otra variante.
-      ...(p.id === 'rw02' ? [imgOf('rw02', 'main', L(`${p.nombre}, esfera negra`, `${t.name}, black dial`))] : []),
+      // Fotos anteriores de otras variantes (rw02, rw03, st01) y la segunda variante de rw05.
+      ...(WATCH_EXTRA[p.id] ?? []).map(([key, role, es, en]) => imgOf(key, role, L(`${p.nombre}, ${es}`, `${t.name}, ${en}`))),
     ];
     detailIndex = 2;
   } else {
@@ -292,24 +302,24 @@ for (const p of source) {
 // Camisas (scripts/data/shirts.json): precio y tallas confirmados por la tienda; stock inicial editable en el panel.
 const shirts = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/shirts.json'), 'utf8'));
 const NECK = { crew: L('Redondo', 'Crew neck'), v: L('En V', 'V-neck') };
-const SHIRT_VIEWS = { back: L('vista de espalda', 'back view') };
 const SHIRT_STORY = L(
   'Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.',
   'Clover T-shirts are poly-cotton, printed by ink sublimation or DTF depending on the fabric color. If you want a different phrase, another image or your own design, we customize it on request: message us on WhatsApp and we will send you a quote.',
 );
 for (const s of shirts.items) {
-  const m = media.images[s.id];
-  const dm = media.images[`${s.id}-detail`];
-  if (!m || !dm) throw new Error(`Sin metadatos de imagen: ${s.id} (npm run media:shirts)`);
   const img = (x, role, alt) => ({ src: x.src, width: x.width, height: x.height, blur: x.blur, tone: x.tone, focal: x.focal, role, alt });
-  // Galería: de frente, las vistas extra que existan (espalda) y el acercamiento al estampado.
+  // Galería (scripts/build-camisas.mjs): en el cuerpo, plana, close-up del estampado, otro ángulo y posterior.
+  const view = (key, role, es, en) => {
+    const m = media.images[`${s.id}-${key}`];
+    if (!m) throw new Error(`Sin metadatos de imagen: ${s.id}-${key} (node scripts/build-camisas.mjs)`);
+    return img(m, role, L(es, en));
+  };
   const images = [
-    img(m, s.id === 'cm03' || media.images[`${s.id}-back`] ? 'main' : 'lifestyle', s.alt),
-    ...Object.entries(SHIRT_VIEWS).flatMap(([view, label]) => {
-      const v = media.images[`${s.id}-${view}`];
-      return v ? [img(v, 'main', L(`${s.name.es}, ${label.es}`, `${s.name.en}, ${label.en}`))] : [];
-    }),
-    img(dm, 'detail', L(`Detalle del estampado de la ${s.name.es}`, `Close-up of the ${s.name.en} print`)),
+    view('cuerpo', 'lifestyle', s.alt.es, s.alt.en),
+    view('flatlay', 'main', `${s.name.es}, vista frontal`, `${s.name.en}, front view`),
+    view('closeup', 'detail', `Detalle del estampado de la ${s.name.es}`, `Close-up of the ${s.name.en} print`),
+    view('otro', 'lifestyle', `${s.name.es}, otro ángulo`, `${s.name.en}, another angle`),
+    view('posterior', 'main', `${s.name.es}, vista de espalda`, `${s.name.en}, back view`),
   ];
   const variants = shirts.sizes.map((size) => ({
     id: `${s.id}-${size.toLowerCase()}`,
@@ -349,7 +359,7 @@ for (const s of shirts.items) {
     images,
     videos: [],
     thumbnail: images[0].src,
-    // Al pasar el ratón: la segunda foto (espalda si existe; si no, el detalle).
+    // Al pasar el ratón: la camisa plana.
     hoverMedia: { type: 'image', imageIndex: 1 },
     highlights: [
       L('Poli-algodón', 'Poly-cotton'),
