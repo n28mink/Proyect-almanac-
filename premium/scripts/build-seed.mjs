@@ -66,11 +66,11 @@ const ONE_SIZE = L('Talla única', 'One size');
 const VARIANTS = {
   // rw02: la foto nueva es la de esfera blanca (0); la de esfera negra es la foto anterior, al final de la galería (4).
   rw02: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera negra', 'Black dial'), 4]],
-  // rw03: la foto nueva es la de esfera blanca (0); las otras esferas conservan sus fotos anteriores, a continuación de las 4 vistas nuevas.
-  rw03: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 4], [L('Esfera azul', 'Blue dial'), 5], [L('Esfera gris pizarra', 'Slate gray dial'), 6], [L('Esfera negra', 'Black dial'), 7]],
+  // rw03: 4 vistas nuevas de la esfera blanca (0) y de la azul (4, reloj20); verde, gris pizarra y negra conservan sus fotos anteriores (8–10).
+  rw03: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera azul', 'Blue dial'), 4], [L('Esfera verde', 'Green dial'), 8], [L('Esfera gris pizarra', 'Slate gray dial'), 9], [L('Esfera negra', 'Black dial'), 10]],
   rw05: [[L('Plateado · esfera negra', 'Silver · black dial'), 0], [L('Dorado · esfera plateada', 'Gold · silver dial'), 4]],
-  // st01: 4 vistas nuevas del reloj (esfera blanca) y, a continuación, las fotos anteriores del set completo (4) y del set con esfera verde (5).
-  st01: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 5]],
+  // st01: 4 vistas nuevas del reloj con esfera blanca (0) y con esfera verde (4, reloj21); después, las fotos anteriores del set completo y del set con esfera verde.
+  st01: [[L('Esfera blanca', 'White dial'), 0], [L('Esfera verde', 'Green dial'), 4]],
   pu02: [[L('Tono dorado', 'Gold tone'), 0], [L('Tono plateado', 'Silver tone'), 0]],
   pu13: [[L('Tono plateado', 'Silver tone'), 0], [L('Tono dorado', 'Gold tone'), 0]],
 };
@@ -80,15 +80,15 @@ const VARIANTS = {
 /** Fotos que van a continuación de las 4 vistas de un reloj: [clave, rol, texto ES, texto EN]. Fotos anteriores de otras variantes y la segunda variante de rw05. */
 const WATCH_EXTRA = {
   rw02: [['rw02', 'main', 'esfera negra', 'black dial']],
-  rw03: [['rw03-2', 'main', 'esfera verde', 'green dial'], ['rw03-3', 'main', 'esfera azul', 'blue dial'], ['rw03-4', 'main', 'esfera gris pizarra', 'slate gray dial'], ['rw03-5', 'main', 'esfera negra', 'black dial']],
+  rw03: [['rw15-frontal', 'main', 'esfera azul', 'blue dial'], ['rw15-45', 'main', 'esfera azul, de lado', 'blue dial, angled view'], ['rw15-macro', 'detail', 'esfera azul, detalle', 'blue dial, close-up'], ['rw15-posterior', 'main', 'esfera azul, vista posterior', 'blue dial, back view'], ['rw03-2', 'main', 'esfera verde', 'green dial'], ['rw03-4', 'main', 'esfera gris pizarra', 'slate gray dial'], ['rw03-5', 'main', 'esfera negra', 'black dial']],
   rw05: [['rw05b-frontal', 'main', 'variante dorada', 'gold variant'], ['rw05b-45', 'main', 'variante dorada, de lado', 'gold variant, angled view'], ['rw05b-macro', 'detail', 'variante dorada, detalle', 'gold variant, close-up'], ['rw05b-posterior', 'main', 'variante dorada, vista posterior', 'gold variant, back view']],
-  st01: [['st01', 'lifestyle', 'set completo', 'full set'], ['st01-2', 'main', 'set con esfera verde', 'set with green dial']],
+  st01: [['rw16-frontal', 'main', 'esfera verde', 'green dial'], ['rw16-45', 'main', 'esfera verde, de lado', 'green dial, angled view'], ['rw16-macro', 'detail', 'esfera verde, detalle', 'green dial, close-up'], ['rw16-posterior', 'main', 'esfera verde, vista posterior', 'green dial, back view'], ['st01', 'lifestyle', 'set completo', 'full set'], ['st01-2', 'main', 'set con esfera verde', 'set with green dial']],
 };
 
 const AUTO_DETAIL = /^(rw|st)/;
 
 const COLLECTION = {
-  tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'rw07', 'rw08', 'rw09', 'rw10', 'rw11', 'rw12', 'rw13', 'rw14', 'rw15', 'rw16', 'rw17', 'st01'],
+  tiempo: ['rw01', 'rw02', 'rw03', 'rw04', 'rw05', 'rw06', 'rw07', 'rw10', 'rw11', 'rw12', 'rw13', 'rw14', 'st01'],
   corazon: ['ar04', 'ar49', 'co02', 'co06', 'co12', 'co19', 'pu04', 'pu06', 'pu11'],
   lumiere: ['an03', 'an07', 'an09', 'ar11', 'ar15', 'ar19', 'ar24', 'ar25', 'ar37', 'ar39', 'ar42', 'ar44', 'ar52', 'ar55', 'co08', 'co09', 'co10', 'co11', 'pu10', 'pu12', 'pu13'],
   jardin: ['an01', 'an06', 'an12', 'ar01', 'ar05', 'ar13', 'ar16', 'ar17', 'ar21', 'ar29', 'ar30', 'ar32', 'ar33', 'ar34', 'ar35', 'ar38', 'ar50', 'ar53', 'ar54', 'co03', 'co05', 'co13', 'co15', 'co17', 'co18', 'pu08'],
@@ -97,7 +97,7 @@ const COLLECTION = {
 const collectionOf = (id) => Object.entries(COLLECTION).find(([, ids]) => ids.includes(id))?.[0];
 
 const FEATURED = ['rw04', 'an04', 'co11', 'pu06', 'ar06', 'rw03', 'an07', 'pu01'];
-const NEW_ARRIVAL = ['rw07', 'rw10', 'rw15', 'rw16', 'an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
+const NEW_ARRIVAL = ['rw07', 'rw10', 'an12', 'pu08', 'co10', 'ar37', 'an09', 'pu09', 'rw05', 'co15', 'ar30', 'an05', 'pu10', 'co17'];
 const BESTSELLER = ['rw01', 'co11', 'ar04', 'pu06', 'an02', 'co09', 'ar11', 'pu04', 'co19', 'ar07', 'rw04', 'st01'];
 const GIFT_TAGS = new Set(['heart', 'pearl', 'set', 'moon', 'butterfly', 'star', 'clover']);
 const HOVER_VIDEO = new Set();

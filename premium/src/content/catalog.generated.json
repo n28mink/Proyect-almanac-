@@ -587,8 +587,8 @@
     "sku": "CLV-RW03-2",
     "options": {
      "color": {
-      "es": "Esfera verde",
-      "en": "Green dial"
+      "es": "Esfera azul",
+      "en": "Blue dial"
      },
      "size": {
       "es": "Talla única",
@@ -603,15 +603,15 @@
     "sku": "CLV-RW03-3",
     "options": {
      "color": {
-      "es": "Esfera azul",
-      "en": "Blue dial"
+      "es": "Esfera verde",
+      "en": "Green dial"
      },
      "size": {
       "es": "Talla única",
       "en": "One size"
      }
     },
-    "imageIndex": 5,
+    "imageIndex": 8,
     "stock": 10
    },
    {
@@ -627,7 +627,7 @@
       "en": "One size"
      }
     },
-    "imageIndex": 6,
+    "imageIndex": 9,
     "stock": 10
    },
    {
@@ -643,7 +643,7 @@
       "en": "One size"
      }
     },
-    "imageIndex": 7,
+    "imageIndex": 10,
     "stock": 10
    }
   ],
@@ -713,6 +713,70 @@
     }
    },
    {
+    "src": "/media/products/rw15-frontal-7b270ad.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwb/xAAfEAACAgICAwEAAAAAAAAAAAABAgMEABEFEiIycbH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAQREh/9oADAMBAAIRAxEAPwDScvbjq1lMpZQ7aBUb/MZqzLYrRypvq6gjeJ83UiuVlWVm0jdtKdHG6UArU4oVJIRQATmeaYi2itF5KD9GXL6j5hhjVH//2Q==",
+    "tone": "#dfdad3",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Reloj dorado de caja rectangular, esfera en varios colores, esfera azul",
+     "en": "Gold-tone rectangular watch, choice of dial colors, blue dial"
+    }
+   },
+   {
+    "src": "/media/products/rw15-45-22dc174.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EACEQAAIBAwQDAQAAAAAAAAAAAAECAwAEEQUSITEiI0Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIRITFB/9oADAMBAAIRAxEAPwDRalqkdnKkDbt8gyCozjnFNsXkNxNC7llUKRnscdVLqFlavqUdxPwyqDuJ+D5iqdOTymn59p4/Km3clQ6wMvVVkTcAfIdiqcY4HVFFJbDw/9k=",
+    "tone": "#dacdbd",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Reloj dorado de caja rectangular, esfera en varios colores, esfera azul, de lado",
+     "en": "Gold-tone rectangular watch, choice of dial colors, blue dial, angled view"
+    }
+   },
+   {
+    "src": "/media/products/rw15-macro-f286ec3.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQADBP/EACIQAAICAgICAgMAAAAAAAAAAAECAwQAEQUhBhIxQVFx8f/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAERITICMf/aAAwDAQACEQMRAD8Aa5bkq8FkQ2BIpA2pUbBzq4i7HdrkwhvRToFvk4F5JXtT8kDWi9wqaJIGt9/nEPF45Yq0kcysjht6+u/5hjn2bFcCdpFOiVBPXes0rqqxAKAP0MssC2yvJ//Z",
+    "tone": "#b8afa6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Reloj dorado de caja rectangular, esfera en varios colores, esfera azul, detalle",
+     "en": "Gold-tone rectangular watch, choice of dial colors, blue dial, close-up"
+    }
+   },
+   {
+    "src": "/media/products/rw15-posterior-5e76b2e.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAG/8QAIBABAAEDAwUAAAAAAAAAAAAAAQACBBEDEkExNFGBsf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABURAQEAAAAAAAAAAAAAAAAAAABB/9oADAMBAAIRAxEAPwDWXaFvVnnHEYcgnRIF8LbLS4RGNp07NOmnwBM0wV72tfr7HJSjVH//2Q==",
+    "tone": "#f2ede6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Reloj dorado de caja rectangular, esfera en varios colores, esfera azul, vista posterior",
+     "en": "Gold-tone rectangular watch, choice of dial colors, blue dial, back view"
+    }
+   },
+   {
     "src": "/media/products/rw03-2.jpg",
     "width": 1080,
     "height": 1080,
@@ -726,22 +790,6 @@
     "alt": {
      "es": "Reloj dorado de caja rectangular, esfera en varios colores, esfera verde",
      "en": "Gold-tone rectangular watch, choice of dial colors, green dial"
-    }
-   },
-   {
-    "src": "/media/products/rw03-3.jpg",
-    "width": 800,
-    "height": 800,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUG/8QAIBAAAgICAQUBAAAAAAAAAAAAAQIEEQADEgUGEzJhcf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A0PcE1YMJXdOSs4HtX3KEfZ5o+vZVc1DV+jD9UVDFtlDUwqxeL1qERVUAACgBhTH/2Q==",
-    "tone": "#e8e4de",
-    "focal": {
-     "x": 0.4768615318425064,
-     "y": 0.4790631273418736
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj dorado de caja rectangular, esfera en varios colores, esfera azul",
-     "en": "Gold-tone rectangular watch, choice of dial colors, blue dial"
     }
    },
    {
@@ -1749,7 +1797,7 @@
       "en": "One size"
      }
     },
-    "imageIndex": 5,
+    "imageIndex": 4,
     "stock": 10
    }
   ],
@@ -1816,6 +1864,70 @@
     "alt": {
      "es": "Set de joyería plateada con reloj (5 piezas), vista posterior",
      "en": "Silver-tone jewelry set with watch (5 pieces), back view"
+    }
+   },
+   {
+    "src": "/media/products/rw16-frontal-383ac5a.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAwb/xAAcEAEBAAMBAAMAAAAAAAAAAAABAgADEQQFMVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6v3bHV5lm2K6AmbTRUFD0TuTfJkvkW3hKOUapJ1RJ9AGA6mblmgo/E7jwwwP/9k=",
+    "tone": "#eaeae9",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Set de joyería plateada con reloj (5 piezas), esfera verde",
+     "en": "Silver-tone jewelry set with watch (5 pieces), green dial"
+    }
+   },
+   {
+    "src": "/media/products/rw16-45-e8c5f18.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgb/xAAgEAACAgICAgMAAAAAAAAAAAABAgMRAAQSIQVhIkFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOp3dsawUAW73Xr3i0tl5jMkoHKJuNgVfWT8g8cU8Usy/AKe/wBP0M3oBkjZ3R7kbl2KwL7ChlHIA0QRePDDA//Z",
+    "tone": "#dbdbda",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Set de joyería plateada con reloj (5 piezas), esfera verde, de lado",
+     "en": "Silver-tone jewelry set with watch (5 pieces), green dial, angled view"
+    }
+   },
+   {
+    "src": "/media/products/rw16-macro-770396f.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EACIQAAIBAwQCAwAAAAAAAAAAAAECEQADBAUSITETQRRR0f/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwDvZ+Vc+UbKorIgDGT7rXSrvkDAIFDS3H31UGWpbPus4aOBABqzS7SksQXAVY4MdmfyptDVXa3k42xmXdvDQYkQO6swwBiW4HqlKo//2Q==",
+    "tone": "#c1c2bc",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Set de joyería plateada con reloj (5 piezas), esfera verde, detalle",
+     "en": "Silver-tone jewelry set with watch (5 pieces), green dial, close-up"
+    }
+   },
+   {
+    "src": "/media/products/rw16-posterior-5787dc7.jpg",
+    "width": 1408,
+    "height": 1760,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAhEAEAAgEEAQUAAAAAAAAAAAABAAIRAwQSMQUUIUFhcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDWbu3HbXRR+v2OHJmV/IZ9FqcbNbAYT494+pxqB0GIENxWt9C9bBYTpMxh0QhA/9k=",
+    "tone": "#ececec",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Set de joyería plateada con reloj (5 piezas), esfera verde, vista posterior",
+     "en": "Silver-tone jewelry set with watch (5 pieces), green dial, back view"
     }
    },
    {
@@ -24948,436 +25060,6 @@
   }
  },
  {
-  "id": "rw08",
-  "slug": "gold-tone-square-watch-with-silver-dial-and-date",
-  "name": {
-   "es": "Reloj cuadrado dorado con esfera plateada y fecha",
-   "en": "Gold-tone square watch with silver dial and date"
-  },
-  "description": {
-   "es": "Reloj de caja cuadrada de esquinas redondeadas en tono dorado, con esfera plateada, ventana de fecha y correa de eslabones dorados.",
-   "en": "Square watch with rounded corners in a gold tone, with a silver dial, date window and gold-tone link bracelet."
-  },
-  "story": {
-   "es": "El brillo del tono dorado enmarca una esfera plateada de acabado satinado con índices finos y fecha. La correa de eslabones dorados cierra una pieza luminosa y fácil de combinar.",
-   "en": "A bright gold-tone case frames a satin-finish silver dial with slim hour markers and a date window. The gold-tone link bracelet completes a luminous piece that is easy to style."
-  },
-  "category": "watches",
-  "categories": [
-   "watches",
-   "women"
-  ],
-  "collection": "tiempo",
-  "audience": [
-   "women"
-  ],
-  "tags": [],
-  "price": 4200,
-  "currency": "USD",
-  "material": {
-   "es": "Metal con acabado tono dorado",
-   "en": "Metal with a gold tone finish"
-  },
-  "color": [
-   {
-    "es": "Tono dorado",
-    "en": "Gold tone"
-   },
-   {
-    "es": "Blanco",
-    "en": "White"
-   }
-  ],
-  "finish": "gold",
-  "sizes": [
-   {
-    "es": "Talla única",
-    "en": "One size"
-   }
-  ],
-  "variants": [
-   {
-    "id": "rw08-1",
-    "sku": "CLV-RW08-1",
-    "options": {
-     "color": {
-      "es": "Tono dorado",
-      "en": "Gold tone"
-     },
-     "size": {
-      "es": "Talla única",
-      "en": "One size"
-     }
-    },
-    "imageIndex": 0,
-    "stock": 10
-   }
-  ],
-  "images": [
-   {
-    "src": "/media/products/rw08-frontal-886613c.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAfEAACAgICAwEAAAAAAAAAAAABAgARAwQSIQUiQTH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAQQEy/9oADAMBAAIRAxEAPwDT7+RgoRAw+lgaqP13LYhyFMOj3K3kgVQOMhVT6kR2mvDALfmW7Jmc6MR3kV8VOoYX+EXG4FC4wAABXyEI1R//2Q==",
-    "tone": "#e4ded2",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj cuadrado dorado con esfera plateada y fecha",
-     "en": "Gold-tone square watch with silver dial and date"
-    }
-   },
-   {
-    "src": "/media/products/rw08-45-cf47d77.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBv/EACAQAAICAgICAwAAAAAAAAAAAAECAAMEESFRBTETQWH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAQADAAAAAAAAAAAAAAAAAAARIkH/2gAMAwEAAhEDEQA/ANRlXuCUrGgOC2+e+Inj77LLb6bWLFCCpI+jEzAK8pSzlEt9t13DxaD5cjIXerG4H5JTY4qozUV6gHUMN+iNyhQAoAAA6EISmjj/2Q==",
-    "tone": "#dfd0bb",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj cuadrado dorado con esfera plateada y fecha, de lado",
-     "en": "Gold-tone square watch with silver dial and date, angled view"
-    }
-   },
-   {
-    "src": "/media/products/rw08-macro-eb1b9ae.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EACUQAAEEAQMCBwAAAAAAAAAAAAEAAgMRBBIxQQUhEzIzUWFxsf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABoRAAICAwAAAAAAAAAAAAAAAAABETICMUH/2gAMAwEAAhEDEQA/AO9mTOllrTTG9hfPyq8GRxb4bwAQLBGxCiyZZG6ojHRDibI4vcLfAdJPI4yNIYB5r59lmomelPQ6j2eCN6H6VVi+iPsoiMbsXU//2Q==",
-    "tone": "#d5cab7",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Reloj cuadrado dorado con esfera plateada y fecha",
-     "en": "Close-up detail of Gold-tone square watch with silver dial and date"
-    }
-   },
-   {
-    "src": "/media/products/rw08-posterior-53fd75e.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwAEBv/EACIQAAICAQEJAAAAAAAAAAAAAAECABEEsQUSITE0QWFxwf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABURAQEAAAAAAAAAAAAAAAAAAABB/9oADAMBAAIRAxEAPwDrcvp2HE3XL3GBsXM20LGKzqaKkEafY6LuIqjsKmaYPMF4r341jSlGqP/Z",
-    "tone": "#f2ede5",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj cuadrado dorado con esfera plateada y fecha, vista posterior",
-     "en": "Gold-tone square watch with silver dial and date, back view"
-    }
-   }
-  ],
-  "videos": [
-   "reel.watches"
-  ],
-  "thumbnail": "/media/products/rw08-frontal-886613c.jpg",
-  "hoverMedia": {
-   "type": "image",
-   "imageIndex": 2
-  },
-  "highlights": [
-   {
-    "es": "Caja cuadrada de esquinas redondeadas",
-    "en": "Square case with rounded corners"
-   },
-   {
-    "es": "Esfera plateada con ventana de fecha",
-    "en": "Silver dial with date window"
-   },
-   {
-    "es": "Correa de eslabones en tono dorado",
-    "en": "Gold-tone link bracelet"
-   },
-   {
-    "es": "Diseño clásico y luminoso",
-    "en": "Classic, luminous design"
-   }
-  ],
-  "specifications": [
-   {
-    "label": {
-     "es": "Material",
-     "en": "Material"
-    },
-    "value": {
-     "es": "Metal con acabado tono dorado",
-     "en": "Metal with a gold tone finish"
-    }
-   },
-   {
-    "label": {
-     "es": "Acabado",
-     "en": "Finish"
-    },
-    "value": {
-     "es": "Tono dorado",
-     "en": "Gold tone"
-    }
-   },
-   {
-    "label": {
-     "es": "Talla",
-     "en": "Size"
-    },
-    "value": {
-     "es": "Talla única",
-     "en": "One size"
-    }
-   },
-   {
-    "label": {
-     "es": "Cuidado",
-     "en": "Care"
-    },
-    "value": {
-     "es": "Limpiar con paño suave y seco; guardar por separado.",
-     "en": "Wipe with a soft, dry cloth; store separately."
-    }
-   }
-  ],
-  "stock": 10,
-  "featured": false,
-  "newArrival": false,
-  "bestseller": false,
-  "seo": {
-   "title": {
-    "es": "Reloj cuadrado dorado con esfera plateada y fecha | Clover",
-    "en": "Gold-tone square watch with silver dial and date | Clover"
-   },
-   "description": {
-    "es": "Reloj de caja cuadrada de esquinas redondeadas en tono dorado, con esfera plateada, ventana de fecha y correa de eslabones dorados.",
-    "en": "Square watch with rounded corners in a gold tone, with a silver dial, date window and gold-tone link bracelet."
-   }
-  }
- },
- {
-  "id": "rw09",
-  "slug": "silver-tone-square-watch-with-gray-dial-and-date",
-  "name": {
-   "es": "Reloj cuadrado plateado con esfera gris y fecha",
-   "en": "Silver-tone square watch with gray dial and date"
-  },
-  "description": {
-   "es": "Reloj de caja cuadrada de esquinas redondeadas en tono plateado, con esfera gris oscura, ventana de fecha y correa de eslabones.",
-   "en": "Square watch with rounded corners in a silver tone, with a dark gray dial, date window and link bracelet."
-  },
-  "story": {
-   "es": "Una esfera gris oscura de acabado satinado sobre una caja plateada de esquinas suaves, con índices finos y fecha. Discreto y elegante, pensado para llevarse todos los días.",
-   "en": "A dark gray satin-finish dial on a silver-tone case with soft corners, with slim hour markers and a date window. Discreet and elegant, made to be worn every day."
-  },
-  "category": "watches",
-  "categories": [
-   "watches",
-   "women"
-  ],
-  "collection": "tiempo",
-  "audience": [
-   "women"
-  ],
-  "tags": [],
-  "price": 4200,
-  "currency": "USD",
-  "material": {
-   "es": "Metal con acabado tono plateado",
-   "en": "Metal with a silver tone finish"
-  },
-  "color": [
-   {
-    "es": "Tono plateado",
-    "en": "Silver tone"
-   },
-   {
-    "es": "Gris",
-    "en": "Slate gray"
-   }
-  ],
-  "finish": "silver",
-  "sizes": [
-   {
-    "es": "Talla única",
-    "en": "One size"
-   }
-  ],
-  "variants": [
-   {
-    "id": "rw09-1",
-    "sku": "CLV-RW09-1",
-    "options": {
-     "color": {
-      "es": "Tono plateado",
-      "en": "Silver tone"
-     },
-     "size": {
-      "es": "Talla única",
-      "en": "One size"
-     }
-    },
-    "imageIndex": 0,
-    "stock": 10
-   }
-  ],
-  "images": [
-   {
-    "src": "/media/products/rw09-frontal-f49f3d9.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAJBAAAgICAQIHAQAAAAAAAAAAAQIDBAARBSFBBhITIjFCUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6DmeQFKNEHqBn67TsMbo2BaqpKAQT0IPzsZn+IaKWoo5HneIL7SF77x3iqq06EcSyGT7eY994F8yJImnVWH4RvJqAFAAAH8wwwP/2Q==",
-    "tone": "#d1d1d1",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj cuadrado plateado con esfera gris y fecha",
-     "en": "Silver-tone square watch with gray dial and date"
-    }
-   },
-   {
-    "src": "/media/products/rw09-45-d33dea2.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EACEQAAIBBAICAwAAAAAAAAAAAAECAwAEESEFEjFRE0Hx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AL/L8qbEiONOzlcnewPGqY4tvks1kJkPfeHOcVO5rjYbm/hkZ2jlYABgda/asW0awwJEjduowT7Pugw5NFa2yyg4OsjxTEACwoAANfVFFB//2Q==",
-    "tone": "#cdcdcd",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj cuadrado plateado con esfera gris y fecha, de lado",
-     "en": "Silver-tone square watch with gray dial and date, angled view"
-    }
-   },
-   {
-    "src": "/media/products/rw09-macro-3f578ef.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EACAQAQABBAICAwAAAAAAAAAAAAECAAMEEQUhEkEGFJH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ab5Xl7v25xLcSEVjHe1de/wBqpwmZcyISt3YAxPKKexrPcrjciZV2MbT4+aiJ2Lsqp8Zxsob08yGoaCKva0DnNLC2SgsZbDZ0+6oY4Fo0B20UUH//2Q==",
-    "tone": "#9c9c9c",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Reloj cuadrado plateado con esfera gris y fecha",
-     "en": "Close-up detail of Silver-tone square watch with gray dial and date"
-    }
-   },
-   {
-    "src": "/media/products/rw09-posterior-a429af7.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EACIQAAICAQIHAQAAAAAAAAAAAAECABEEA7EFEhMhMTRxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDWZprFervtVfY4EEAjwRJeKFlwmdDTKQRtKNJOnpIl3ygCArP9PU/N4+EIH//Z",
-    "tone": "#eaeaea",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj cuadrado plateado con esfera gris y fecha, vista posterior",
-     "en": "Silver-tone square watch with gray dial and date, back view"
-    }
-   }
-  ],
-  "videos": [
-   "reel.watches"
-  ],
-  "thumbnail": "/media/products/rw09-frontal-f49f3d9.jpg",
-  "hoverMedia": {
-   "type": "image",
-   "imageIndex": 2
-  },
-  "highlights": [
-   {
-    "es": "Caja cuadrada de esquinas redondeadas",
-    "en": "Square case with rounded corners"
-   },
-   {
-    "es": "Esfera gris oscura con ventana de fecha",
-    "en": "Dark gray dial with date window"
-   },
-   {
-    "es": "Correa de eslabones en tono plateado",
-    "en": "Silver-tone link bracelet"
-   },
-   {
-    "es": "Diseño discreto y versátil",
-    "en": "Discreet, versatile design"
-   }
-  ],
-  "specifications": [
-   {
-    "label": {
-     "es": "Material",
-     "en": "Material"
-    },
-    "value": {
-     "es": "Metal con acabado tono plateado",
-     "en": "Metal with a silver tone finish"
-    }
-   },
-   {
-    "label": {
-     "es": "Acabado",
-     "en": "Finish"
-    },
-    "value": {
-     "es": "Tono plateado",
-     "en": "Silver tone"
-    }
-   },
-   {
-    "label": {
-     "es": "Talla",
-     "en": "Size"
-    },
-    "value": {
-     "es": "Talla única",
-     "en": "One size"
-    }
-   },
-   {
-    "label": {
-     "es": "Cuidado",
-     "en": "Care"
-    },
-    "value": {
-     "es": "Limpiar con paño suave y seco; guardar por separado.",
-     "en": "Wipe with a soft, dry cloth; store separately."
-    }
-   }
-  ],
-  "stock": 10,
-  "featured": false,
-  "newArrival": false,
-  "bestseller": false,
-  "seo": {
-   "title": {
-    "es": "Reloj cuadrado plateado con esfera gris y fecha | Clover",
-    "en": "Silver-tone square watch with gray dial and date | Clover"
-   },
-   "description": {
-    "es": "Reloj de caja cuadrada de esquinas redondeadas en tono plateado, con esfera gris oscura, ventana de fecha y correa de eslabones.",
-    "en": "Square watch with rounded corners in a silver tone, with a dark gray dial, date window and link bracelet."
-   }
-  }
- },
- {
   "id": "rw10",
   "slug": "gold-tone-oval-bangle-watch-with-roman-numerals",
   "name": {
@@ -26454,653 +26136,6 @@
   }
  },
  {
-  "id": "rw15",
-  "slug": "gold-tone-rectangular-watch-with-blue-dial-and-numerals",
-  "name": {
-   "es": "Reloj rectangular dorado con esfera azul y números",
-   "en": "Gold-tone rectangular watch with blue dial and numerals"
-  },
-  "description": {
-   "es": "Reloj de caja rectangular de esquinas biseladas en tono dorado, con esfera azul, numeración dorada y correa de eslabones.",
-   "en": "Rectangular watch with beveled corners in a gold tone, with a blue dial, gold numerals and a link bracelet."
-  },
-  "story": {
-   "es": "Una caja rectangular de esquinas biseladas en tono dorado y una esfera azul profundo con números dorados bien marcados. La correa de eslabones dorados completa un reloj de aire clásico y mucho color.",
-   "en": "A gold-tone rectangular case with beveled corners and a deep blue dial with clear gold numerals. The gold-tone link bracelet completes a classic-looking watch with plenty of color."
-  },
-  "category": "watches",
-  "categories": [
-   "watches",
-   "women",
-   "new-arrivals"
-  ],
-  "collection": "tiempo",
-  "audience": [
-   "women"
-  ],
-  "tags": [],
-  "price": 4200,
-  "currency": "USD",
-  "material": {
-   "es": "Metal con acabado tono dorado",
-   "en": "Metal with a gold tone finish"
-  },
-  "color": [
-   {
-    "es": "Tono dorado",
-    "en": "Gold tone"
-   },
-   {
-    "es": "Azul",
-    "en": "Blue"
-   }
-  ],
-  "finish": "gold",
-  "sizes": [
-   {
-    "es": "Talla única",
-    "en": "One size"
-   }
-  ],
-  "variants": [
-   {
-    "id": "rw15-1",
-    "sku": "CLV-RW15-1",
-    "options": {
-     "color": {
-      "es": "Tono dorado",
-      "en": "Gold tone"
-     },
-     "size": {
-      "es": "Talla única",
-      "en": "One size"
-     }
-    },
-    "imageIndex": 0,
-    "stock": 10
-   }
-  ],
-  "images": [
-   {
-    "src": "/media/products/rw15-frontal-7b270ad.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwb/xAAfEAACAgICAwEAAAAAAAAAAAABAgMEABEFEiIycbH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAQREh/9oADAMBAAIRAxEAPwDScvbjq1lMpZQ7aBUb/MZqzLYrRypvq6gjeJ83UiuVlWVm0jdtKdHG6UArU4oVJIRQATmeaYi2itF5KD9GXL6j5hhjVH//2Q==",
-    "tone": "#dfdad3",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular dorado con esfera azul y números",
-     "en": "Gold-tone rectangular watch with blue dial and numerals"
-    }
-   },
-   {
-    "src": "/media/products/rw15-45-22dc174.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EACEQAAIBAwQDAQAAAAAAAAAAAAECAwAEEQUSITEiI0Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIRITFB/9oADAMBAAIRAxEAPwDRalqkdnKkDbt8gyCozjnFNsXkNxNC7llUKRnscdVLqFlavqUdxPwyqDuJ+D5iqdOTymn59p4/Km3clQ6wMvVVkTcAfIdiqcY4HVFFJbDw/9k=",
-    "tone": "#dacdbd",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular dorado con esfera azul y números, de lado",
-     "en": "Gold-tone rectangular watch with blue dial and numerals, angled view"
-    }
-   },
-   {
-    "src": "/media/products/rw15-macro-f286ec3.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQADBP/EACIQAAICAgICAgMAAAAAAAAAAAECAwQAEQUhBhIxQVFx8f/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAERITICMf/aAAwDAQACEQMRAD8Aa5bkq8FkQ2BIpA2pUbBzq4i7HdrkwhvRToFvk4F5JXtT8kDWi9wqaJIGt9/nEPF45Yq0kcysjht6+u/5hjn2bFcCdpFOiVBPXes0rqqxAKAP0MssC2yvJ//Z",
-    "tone": "#b8afa6",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Reloj rectangular dorado con esfera azul y números",
-     "en": "Close-up detail of Gold-tone rectangular watch with blue dial and numerals"
-    }
-   },
-   {
-    "src": "/media/products/rw15-posterior-5e76b2e.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAG/8QAIBABAAEDAwUAAAAAAAAAAAAAAQACBBEDEkExNFGBsf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABURAQEAAAAAAAAAAAAAAAAAAABB/9oADAMBAAIRAxEAPwDWXaFvVnnHEYcgnRIF8LbLS4RGNp07NOmnwBM0wV72tfr7HJSjVH//2Q==",
-    "tone": "#f2ede6",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular dorado con esfera azul y números, vista posterior",
-     "en": "Gold-tone rectangular watch with blue dial and numerals, back view"
-    }
-   }
-  ],
-  "videos": [
-   "reel.watches"
-  ],
-  "thumbnail": "/media/products/rw15-frontal-7b270ad.jpg",
-  "hoverMedia": {
-   "type": "image",
-   "imageIndex": 2
-  },
-  "highlights": [
-   {
-    "es": "Caja rectangular de esquinas biseladas",
-    "en": "Rectangular case with beveled corners"
-   },
-   {
-    "es": "Esfera azul con numeración dorada",
-    "en": "Blue dial with gold numerals"
-   },
-   {
-    "es": "Correa de eslabones en tono dorado",
-    "en": "Gold-tone link bracelet"
-   },
-   {
-    "es": "Diseño clásico con color",
-    "en": "Classic design with color"
-   }
-  ],
-  "specifications": [
-   {
-    "label": {
-     "es": "Material",
-     "en": "Material"
-    },
-    "value": {
-     "es": "Metal con acabado tono dorado",
-     "en": "Metal with a gold tone finish"
-    }
-   },
-   {
-    "label": {
-     "es": "Acabado",
-     "en": "Finish"
-    },
-    "value": {
-     "es": "Tono dorado",
-     "en": "Gold tone"
-    }
-   },
-   {
-    "label": {
-     "es": "Talla",
-     "en": "Size"
-    },
-    "value": {
-     "es": "Talla única",
-     "en": "One size"
-    }
-   },
-   {
-    "label": {
-     "es": "Cuidado",
-     "en": "Care"
-    },
-    "value": {
-     "es": "Limpiar con paño suave y seco; guardar por separado.",
-     "en": "Wipe with a soft, dry cloth; store separately."
-    }
-   }
-  ],
-  "stock": 10,
-  "featured": false,
-  "newArrival": true,
-  "bestseller": false,
-  "seo": {
-   "title": {
-    "es": "Reloj rectangular dorado con esfera azul y números | Clover",
-    "en": "Gold-tone rectangular watch with blue dial and numerals | Clover"
-   },
-   "description": {
-    "es": "Reloj de caja rectangular de esquinas biseladas en tono dorado, con esfera azul, numeración dorada y correa de eslabones.",
-    "en": "Rectangular watch with beveled corners in a gold tone, with a blue dial, gold numerals and a link bracelet."
-   }
-  }
- },
- {
-  "id": "rw16",
-  "slug": "silver-tone-rectangular-watch-with-sage-green-dial",
-  "name": {
-   "es": "Reloj rectangular plateado con esfera verde salvia",
-   "en": "Silver-tone rectangular watch with sage-green dial"
-  },
-  "description": {
-   "es": "Reloj de caja rectangular en tono plateado, con esfera verde salvia, índices finos y correa de eslabones.",
-   "en": "Rectangular watch in a silver tone, with a sage-green dial, slim hour markers and a link bracelet."
-  },
-  "story": {
-   "es": "Una esfera verde salvia suave sobre una caja rectangular plateada de bisel marcado. Un toque de color discreto en un reloj de líneas limpias.",
-   "en": "A soft sage-green dial on a silver-tone rectangular case with a defined bezel. A discreet touch of color on a clean-lined watch."
-  },
-  "category": "watches",
-  "categories": [
-   "watches",
-   "women",
-   "new-arrivals"
-  ],
-  "collection": "tiempo",
-  "audience": [
-   "women"
-  ],
-  "tags": [],
-  "price": 4200,
-  "currency": "USD",
-  "material": {
-   "es": "Metal con acabado tono plateado",
-   "en": "Metal with a silver tone finish"
-  },
-  "color": [
-   {
-    "es": "Tono plateado",
-    "en": "Silver tone"
-   },
-   {
-    "es": "Verde",
-    "en": "Green"
-   }
-  ],
-  "finish": "silver",
-  "sizes": [
-   {
-    "es": "Talla única",
-    "en": "One size"
-   }
-  ],
-  "variants": [
-   {
-    "id": "rw16-1",
-    "sku": "CLV-RW16-1",
-    "options": {
-     "color": {
-      "es": "Tono plateado",
-      "en": "Silver tone"
-     },
-     "size": {
-      "es": "Talla única",
-      "en": "One size"
-     }
-    },
-    "imageIndex": 0,
-    "stock": 10
-   }
-  ],
-  "images": [
-   {
-    "src": "/media/products/rw16-frontal-383ac5a.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAwb/xAAcEAEBAAMBAAMAAAAAAAAAAAABAgADEQQFMVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6v3bHV5lm2K6AmbTRUFD0TuTfJkvkW3hKOUapJ1RJ9AGA6mblmgo/E7jwwwP/9k=",
-    "tone": "#eaeae9",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular plateado con esfera verde salvia",
-     "en": "Silver-tone rectangular watch with sage-green dial"
-    }
-   },
-   {
-    "src": "/media/products/rw16-45-e8c5f18.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgb/xAAgEAACAgICAgMAAAAAAAAAAAABAgMRAAQSIQVhIkFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOp3dsawUAW73Xr3i0tl5jMkoHKJuNgVfWT8g8cU8Usy/AKe/wBP0M3oBkjZ3R7kbl2KwL7ChlHIA0QRePDDA//Z",
-    "tone": "#dbdbda",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular plateado con esfera verde salvia, de lado",
-     "en": "Silver-tone rectangular watch with sage-green dial, angled view"
-    }
-   },
-   {
-    "src": "/media/products/rw16-macro-770396f.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EACIQAAIBAwQCAwAAAAAAAAAAAAECEQADBAUSITETQRRR0f/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwDvZ+Vc+UbKorIgDGT7rXSrvkDAIFDS3H31UGWpbPus4aOBABqzS7SksQXAVY4MdmfyptDVXa3k42xmXdvDQYkQO6swwBiW4HqlKo//2Q==",
-    "tone": "#c1c2bc",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Reloj rectangular plateado con esfera verde salvia",
-     "en": "Close-up detail of Silver-tone rectangular watch with sage-green dial"
-    }
-   },
-   {
-    "src": "/media/products/rw16-posterior-5787dc7.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAhEAEAAgEEAQUAAAAAAAAAAAABAAIRAwQSMQUUIUFhcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDWbu3HbXRR+v2OHJmV/IZ9FqcbNbAYT494+pxqB0GIENxWt9C9bBYTpMxh0QhA/9k=",
-    "tone": "#ececec",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular plateado con esfera verde salvia, vista posterior",
-     "en": "Silver-tone rectangular watch with sage-green dial, back view"
-    }
-   }
-  ],
-  "videos": [
-   "reel.watches"
-  ],
-  "thumbnail": "/media/products/rw16-frontal-383ac5a.jpg",
-  "hoverMedia": {
-   "type": "image",
-   "imageIndex": 2
-  },
-  "highlights": [
-   {
-    "es": "Caja rectangular en tono plateado",
-    "en": "Rectangular case in a silver tone"
-   },
-   {
-    "es": "Esfera verde salvia con índices finos",
-    "en": "Sage-green dial with slim markers"
-   },
-   {
-    "es": "Correa de eslabones en tono plateado",
-    "en": "Silver-tone link bracelet"
-   },
-   {
-    "es": "Diseño de líneas limpias",
-    "en": "Clean-lined design"
-   }
-  ],
-  "specifications": [
-   {
-    "label": {
-     "es": "Material",
-     "en": "Material"
-    },
-    "value": {
-     "es": "Metal con acabado tono plateado",
-     "en": "Metal with a silver tone finish"
-    }
-   },
-   {
-    "label": {
-     "es": "Acabado",
-     "en": "Finish"
-    },
-    "value": {
-     "es": "Tono plateado",
-     "en": "Silver tone"
-    }
-   },
-   {
-    "label": {
-     "es": "Talla",
-     "en": "Size"
-    },
-    "value": {
-     "es": "Talla única",
-     "en": "One size"
-    }
-   },
-   {
-    "label": {
-     "es": "Cuidado",
-     "en": "Care"
-    },
-    "value": {
-     "es": "Limpiar con paño suave y seco; guardar por separado.",
-     "en": "Wipe with a soft, dry cloth; store separately."
-    }
-   }
-  ],
-  "stock": 10,
-  "featured": false,
-  "newArrival": true,
-  "bestseller": false,
-  "seo": {
-   "title": {
-    "es": "Reloj rectangular plateado con esfera verde salvia | Clover",
-    "en": "Silver-tone rectangular watch with sage-green dial | Clover"
-   },
-   "description": {
-    "es": "Reloj de caja rectangular en tono plateado, con esfera verde salvia, índices finos y correa de eslabones.",
-    "en": "Rectangular watch in a silver tone, with a sage-green dial, slim hour markers and a link bracelet."
-   }
-  }
- },
- {
-  "id": "rw17",
-  "slug": "silver-tone-rectangular-watch-with-white-dial",
-  "name": {
-   "es": "Reloj rectangular plateado con esfera blanca",
-   "en": "Silver-tone rectangular watch with white dial"
-  },
-  "description": {
-   "es": "Reloj de caja rectangular en tono plateado, con esfera blanca de índices finos y correa de eslabones.",
-   "en": "Rectangular watch in a silver tone, with a white dial with slim hour markers and a link bracelet."
-  },
-  "story": {
-   "es": "Una esfera blanca limpia de índices finos dentro de una caja rectangular plateada de bisel marcado. Esencial, ligero y fácil de combinar con todo.",
-   "en": "A clean white dial with slim hour markers inside a silver-tone rectangular case with a defined bezel. Essential, light and easy to style with anything."
-  },
-  "category": "watches",
-  "categories": [
-   "watches",
-   "women"
-  ],
-  "collection": "tiempo",
-  "audience": [
-   "women"
-  ],
-  "tags": [],
-  "price": 4200,
-  "currency": "USD",
-  "material": {
-   "es": "Metal con acabado tono plateado",
-   "en": "Metal with a silver tone finish"
-  },
-  "color": [
-   {
-    "es": "Tono plateado",
-    "en": "Silver tone"
-   },
-   {
-    "es": "Blanco",
-    "en": "White"
-   }
-  ],
-  "finish": "silver",
-  "sizes": [
-   {
-    "es": "Talla única",
-    "en": "One size"
-   }
-  ],
-  "variants": [
-   {
-    "id": "rw17-1",
-    "sku": "CLV-RW17-1",
-    "options": {
-     "color": {
-      "es": "Tono plateado",
-      "en": "Silver tone"
-     },
-     "size": {
-      "es": "Talla única",
-      "en": "One size"
-     }
-    },
-    "imageIndex": 0,
-    "stock": 10
-   }
-  ],
-  "images": [
-   {
-    "src": "/media/products/rw17-frontal-55820e7.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQG/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIAAwQREhMxUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6y8dkoEo2rkgA4zGo2yK3ozM9+/Hb8m2up7xHW4IoJnyBZwCpBGR9kjqEIH/2Q==",
-    "tone": "#eaeaea",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular plateado con esfera blanca",
-     "en": "Silver-tone rectangular watch with white dial"
-    }
-   },
-   {
-    "src": "/media/products/rw17-45-7c6baad.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQb/xAAgEAACAwABBAMAAAAAAAAAAAABAgADEQQSEyExQWGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOt5FjIuIB1EE6fj7kuFfZa91duE1kYwGaCIvOdara3s0IQQxH5N4A1Htxh3D1eRniBe9VdcZQw30RHX1CED/9k=",
-    "tone": "#dedede",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular plateado con esfera blanca, de lado",
-     "en": "Silver-tone rectangular watch with white dial, angled view"
-    }
-   },
-   {
-    "src": "/media/products/rw17-macro-969a383.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAb/xAAfEAACAQQDAQEAAAAAAAAAAAABAgMABBEhBRIxE1H/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A0EySzXDkSBepwNbptkrwyNGXDLjOv2kyXMEUkyznALeEVMHxvpTruvXI9FArmnaOeFo2KEqclTjNWuI3YhjtixyT6aKKD//Z",
-    "tone": "#cbcbcb",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "detail",
-    "alt": {
-     "es": "Detalle de Reloj rectangular plateado con esfera blanca",
-     "en": "Close-up detail of Silver-tone rectangular watch with white dial"
-    }
-   },
-   {
-    "src": "/media/products/rw17-posterior-b0520dc.jpg",
-    "width": 1408,
-    "height": 1760,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAb/xAAeEAABAwUBAQAAAAAAAAAAAAABAAIRAwQhUYEUQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDrbpxbbvIMEfeqyz30+OpBg4z1XiMaQLVAdTcCARop0IQf/9k=",
-    "tone": "#efefef",
-    "focal": {
-     "x": 0.5,
-     "y": 0.5
-    },
-    "role": "main",
-    "alt": {
-     "es": "Reloj rectangular plateado con esfera blanca, vista posterior",
-     "en": "Silver-tone rectangular watch with white dial, back view"
-    }
-   }
-  ],
-  "videos": [
-   "reel.watches"
-  ],
-  "thumbnail": "/media/products/rw17-frontal-55820e7.jpg",
-  "hoverMedia": {
-   "type": "image",
-   "imageIndex": 2
-  },
-  "highlights": [
-   {
-    "es": "Caja rectangular en tono plateado",
-    "en": "Rectangular case in a silver tone"
-   },
-   {
-    "es": "Esfera blanca con índices finos",
-    "en": "White dial with slim markers"
-   },
-   {
-    "es": "Correa de eslabones en tono plateado",
-    "en": "Silver-tone link bracelet"
-   },
-   {
-    "es": "Diseño esencial",
-    "en": "Essential design"
-   }
-  ],
-  "specifications": [
-   {
-    "label": {
-     "es": "Material",
-     "en": "Material"
-    },
-    "value": {
-     "es": "Metal con acabado tono plateado",
-     "en": "Metal with a silver tone finish"
-    }
-   },
-   {
-    "label": {
-     "es": "Acabado",
-     "en": "Finish"
-    },
-    "value": {
-     "es": "Tono plateado",
-     "en": "Silver tone"
-    }
-   },
-   {
-    "label": {
-     "es": "Talla",
-     "en": "Size"
-    },
-    "value": {
-     "es": "Talla única",
-     "en": "One size"
-    }
-   },
-   {
-    "label": {
-     "es": "Cuidado",
-     "en": "Care"
-    },
-    "value": {
-     "es": "Limpiar con paño suave y seco; guardar por separado.",
-     "en": "Wipe with a soft, dry cloth; store separately."
-    }
-   }
-  ],
-  "stock": 10,
-  "featured": false,
-  "newArrival": false,
-  "bestseller": false,
-  "seo": {
-   "title": {
-    "es": "Reloj rectangular plateado con esfera blanca | Clover",
-    "en": "Silver-tone rectangular watch with white dial | Clover"
-   },
-   "description": {
-    "es": "Reloj de caja rectangular en tono plateado, con esfera blanca de índices finos y correa de eslabones.",
-    "en": "Rectangular watch in a silver tone, with a white dial with slim hour markers and a link bracelet."
-   }
-  }
- },
- {
   "id": "cm01",
   "slug": "gods-child-t-shirt",
   "name": {
@@ -27108,8 +26143,8 @@
    "en": "God's Child T-shirt"
   },
   "description": {
-   "es": "Camisa celeste de poli-algodón con el estampado «God's Child» y una cita de 2 Corintios.",
-   "en": "Light-blue poly-cotton T-shirt with a “God's Child” print and a verse from 2 Corinthians."
+   "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda.",
+   "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back."
   },
   "story": {
    "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
@@ -27404,8 +26439,8 @@
     "en": "God's Child T-shirt | Clover"
    },
    "description": {
-    "es": "Camisa celeste de poli-algodón con el estampado «God's Child» y una cita de 2 Corintios.",
-    "en": "Light-blue poly-cotton T-shirt with a “God's Child” print and a verse from 2 Corinthians."
+    "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda.",
+    "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back."
    }
   }
  },

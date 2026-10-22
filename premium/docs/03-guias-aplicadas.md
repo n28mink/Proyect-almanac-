@@ -220,3 +220,8 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - `scripts/build-relojes.mjs` pasa a una lista de trabajos (`JOBS`) y también procesa `rw03`, `rw04`, `rw05` (dos variantes: `rw05a` plateada/esfera negra y `rw05b` dorada/esfera plateada) y `st01` (solo el reloj). Las fotos cuadradas (1:1) se llevan a 4:5 ampliando el fondo; las más estrechas (`st01`, 0,61) se recortan desde el centro.
 - Variantes que no tienen foto nueva conservan la anterior a continuación de las 4 vistas (`WATCH_EXTRA` en `build-seed.mjs`): `rw03` esferas verde, azul, gris pizarra y negra; `rw02` esfera negra; `st01` el set completo y el set con esfera verde.
 - Se retiran los vídeos al pasar el ratón de `rw03` y `rw04` (ya no coinciden con las fotos).
+
+## Relojes repetidos: variantes en vez de productos aparte
+- `rw08`/`rw09` eran las dos variantes de `rw05`; `rw16`/`rw17`, las de `st01`; y `rw15`, la variante azul de `rw03`. Se retiran como productos (el catálogo pasa de 121 a 116) y sus fotos pasan a ser variantes: `rw03` gana la esfera azul con 4 vistas nuevas (`reloj20`, sustituye a la foto anterior) y `st01` gana la esfera verde con 4 vistas nuevas (`reloj21`). `reloj12`, `reloj14` y `reloj22` ya estaban cubiertos por las fotos de `rw05` y `st01`.
+- Relojes con fotos propias que se quedan: `rw01`–`rw07` y `rw10`–`rw14`.
+- `cm01`: la descripción refleja las fotos (margarita y «God is good» al frente, «God's Child» en la espalda).
