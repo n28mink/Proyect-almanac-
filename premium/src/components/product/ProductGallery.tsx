@@ -126,7 +126,8 @@ export const ProductGallery = forwardRef<HTMLDivElement, GalleryProps>(function 
 
         {/* Móvil/tablet: carrusel con snap */}
         <div className="relative lg:hidden">
-          <ul ref={scroller} tabIndex={0} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none" aria-label={t('gallery')}>
+          {/* El recorte de 0,5 px a la derecha oculta el borde de la foto siguiente: con anchos fraccionarios (p. ej. 356,6 px) el navegador redondea el ancho visible hacia arriba y asoma una raya de 1 píxel. */}
+          <ul ref={scroller} tabIndex={0} className="flex snap-x snap-mandatory overflow-x-auto scrollbar-none [clip-path:inset(0_0.5px_0_0)]" aria-label={t('gallery')}>
             {images.map((img, i) => (
               <li key={img.src} className="relative aspect-[4/5] w-full shrink-0 snap-center bg-surface-sunken">
                 <Image src={img.src} alt={img.alt} fill sizes="100vw" quality={90} priority={i === 0} placeholder={img.blur ? 'blur' : 'empty'} blurDataURL={img.blur} className="object-cover" style={focal(img)} onClick={() => setBox(true)} />

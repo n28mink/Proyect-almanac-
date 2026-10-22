@@ -210,3 +210,7 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - `reloj10`, `reloj11` y `reloj13` reemplazan las fotos de `rw01`, `rw02` y `rw06` (son los mismos relojes). `rw02` conserva su foto anterior, que es la de la variante de esfera negra (la nueva es la de esfera blanca).
 - `reloj09, 12, 14–22` son relojes nuevos (`rw07`–`rw17`): 42 USD y 10 unidades como los demás relojes, sin material declarado; textos (es/en) en `source-extra.json` y `en.watches.json`, que describen solo lo que muestran las fotos. `rw07`, `rw10`, `rw15` y `rw16` salen como novedades. `rw03`, `rw04` y `rw05` no cambian.
 - Los relojes no tienen foto con modelo ni 360°, así que su categoría no lleva portada con modelo.
+
+## Galería móvil: sin raya en el borde derecho
+- En anchos fraccionarios (393, 412, 427 o 384 px con densidades 2,6–2,8) el navegador redondeaba hacia arriba el ancho visible del carrusel de la ficha y asomaba 1 píxel de la foto siguiente (una raya oscura en el borde derecho). El carrusel recorta 0,5 px a la derecha (`clip-path: inset(0 0.5px 0 0)`).
+- Comprobado con capturas a 8 combinaciones de ancho y densidad, y un barrido de 10 páginas a 3 tamaños sin rayas en el borde derecho.
