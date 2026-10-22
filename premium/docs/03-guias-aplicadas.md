@@ -214,3 +214,9 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 ## Galería móvil: sin raya en el borde derecho
 - En anchos fraccionarios (393, 412, 427 o 384 px con densidades 2,6–2,8) el navegador redondeaba hacia arriba el ancho visible del carrusel de la ficha y asomaba 1 píxel de la foto siguiente (una raya oscura en el borde derecho). El carrusel recorta 0,5 px a la derecha (`clip-path: inset(0 0.5px 0 0)`).
 - Comprobado con capturas a 8 combinaciones de ancho y densidad, y un barrido de 10 páginas a 3 tamaños sin rayas en el borde derecho.
+
+## Camisas (5 fotos) y relojes rw03, rw04, rw05 y st01 con las 4 vistas nuevas
+- `node scripts/build-camisas.mjs` lee `fotos/camisas-originales/cmNN-0{1-cuerpo|2-flatlay|3-closeup|4-otro-angulo|5-posterior}.webp` (4:5) y deja 5 fotos por camisa: en el cuerpo, plana (la del hover), close-up del estampado, otro ángulo y posterior. Sustituyen a las fotos maestras anteriores (`<id>`, `<id>-back`, `<id>-detail`).
+- `scripts/build-relojes.mjs` pasa a una lista de trabajos (`JOBS`) y también procesa `rw03`, `rw04`, `rw05` (dos variantes: `rw05a` plateada/esfera negra y `rw05b` dorada/esfera plateada) y `st01` (solo el reloj). Las fotos cuadradas (1:1) se llevan a 4:5 ampliando el fondo; las más estrechas (`st01`, 0,61) se recortan desde el centro.
+- Variantes que no tienen foto nueva conservan la anterior a continuación de las 4 vistas (`WATCH_EXTRA` en `build-seed.mjs`): `rw03` esferas verde, azul, gris pizarra y negra; `rw02` esfera negra; `st01` el set completo y el set con esfera verde.
+- Se retiran los vídeos al pasar el ratón de `rw03` y `rw04` (ya no coinciden con las fotos).
