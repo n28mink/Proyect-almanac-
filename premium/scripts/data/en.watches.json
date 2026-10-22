@@ -93,28 +93,6 @@
       "Understated, versatile design"
     ]
   },
-  "rw08": {
-    "name": "Gold-tone square watch with silver dial and date",
-    "description": "Square watch with rounded corners in a gold tone, with a silver dial, date window and gold-tone link bracelet.",
-    "story": "A bright gold-tone case frames a satin-finish silver dial with slim hour markers and a date window. The gold-tone link bracelet completes a luminous piece that is easy to style.",
-    "highlights": [
-      "Square case with rounded corners",
-      "Silver dial with date window",
-      "Gold-tone link bracelet",
-      "Classic, luminous design"
-    ]
-  },
-  "rw09": {
-    "name": "Silver-tone square watch with gray dial and date",
-    "description": "Square watch with rounded corners in a silver tone, with a dark gray dial, date window and link bracelet.",
-    "story": "A dark gray satin-finish dial on a silver-tone case with soft corners, with slim hour markers and a date window. Discreet and elegant, made to be worn every day.",
-    "highlights": [
-      "Square case with rounded corners",
-      "Dark gray dial with date window",
-      "Silver-tone link bracelet",
-      "Discreet, versatile design"
-    ]
-  },
   "rw10": {
     "name": "Gold-tone oval bangle watch with Roman numerals",
     "description": "Oval-cased watch in a gold tone on an open rigid bangle, with a cream dial and Roman numerals.",
@@ -168,39 +146,6 @@
       "Silver dial with gold hands",
       "Gold-tone link bracelet",
       "Warm, luminous design"
-    ]
-  },
-  "rw15": {
-    "name": "Gold-tone rectangular watch with blue dial and numerals",
-    "description": "Rectangular watch with beveled corners in a gold tone, with a blue dial, gold numerals and a link bracelet.",
-    "story": "A gold-tone rectangular case with beveled corners and a deep blue dial with clear gold numerals. The gold-tone link bracelet completes a classic-looking watch with plenty of color.",
-    "highlights": [
-      "Rectangular case with beveled corners",
-      "Blue dial with gold numerals",
-      "Gold-tone link bracelet",
-      "Classic design with color"
-    ]
-  },
-  "rw16": {
-    "name": "Silver-tone rectangular watch with sage-green dial",
-    "description": "Rectangular watch in a silver tone, with a sage-green dial, slim hour markers and a link bracelet.",
-    "story": "A soft sage-green dial on a silver-tone rectangular case with a defined bezel. A discreet touch of color on a clean-lined watch.",
-    "highlights": [
-      "Rectangular case in a silver tone",
-      "Sage-green dial with slim markers",
-      "Silver-tone link bracelet",
-      "Clean-lined design"
-    ]
-  },
-  "rw17": {
-    "name": "Silver-tone rectangular watch with white dial",
-    "description": "Rectangular watch in a silver tone, with a white dial with slim hour markers and a link bracelet.",
-    "story": "A clean white dial with slim hour markers inside a silver-tone rectangular case with a defined bezel. Essential, light and easy to style with anything.",
-    "highlights": [
-      "Rectangular case in a silver tone",
-      "White dial with slim markers",
-      "Silver-tone link bracelet",
-      "Essential design"
     ]
   }
 }

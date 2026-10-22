@@ -1,5 +1,5 @@
 {
-  "_note": "Ajustes sobre clover-source.json (que no se toca). Si el id ya existe, estos campos sustituyen a los del original (las fotos nuevas de la pieza muestran otra forma o tono que el texto del proveedor). Si no existe, es una pieza nueva: precio y unidades iguales a los de todos los aretes de la tienda (18,50 USD · 10 unidades). Sin material declarado para las piezas nuevas. pu05: se quita la aclaración «según etiqueta visible» de la descripción y de los detalles. pu01: es un anillo (no una pulsera): nombre, categoría y textos corregidos. rw07–rw17: relojes nuevos (fotos en fotos/relojes-premium), mismo precio y unidades que los demás relojes (42 USD · 10 unidades), sin material declarado.",
+  "_note": "Ajustes sobre clover-source.json (que no se toca). Si el id ya existe, estos campos sustituyen a los del original (las fotos nuevas de la pieza muestran otra forma o tono que el texto del proveedor). Si no existe, es una pieza nueva: precio y unidades iguales a los de todos los aretes de la tienda (18,50 USD · 10 unidades). Sin material declarado para las piezas nuevas. pu05: se quita la aclaración «según etiqueta visible» de la descripción y de los detalles. pu01: es un anillo (no una pulsera): nombre, categoría y textos corregidos. rw07 y rw10–rw14: relojes nuevos (fotos en fotos/relojes-premium), mismo precio y unidades que los demás relojes (42 USD · 10 unidades), sin material declarado.",
   "ar18": {
     "nombre": "Aretes dorados anchos acanalados",
     "descripcion": "Aretes anchos de forma curva en tono dorado con relieve acanalado.",
@@ -148,52 +148,6 @@
     ],
     "imagenes": []
   },
-  "rw08": {
-    "nombre": "Reloj cuadrado dorado con esfera plateada y fecha",
-    "categoria": "Relojes",
-    "precio": 42,
-    "stock": 10,
-    "visible": true,
-    "descripcion": "Reloj de caja cuadrada de esquinas redondeadas en tono dorado, con esfera plateada, ventana de fecha y correa de eslabones dorados.",
-    "descripcionLarga": "El brillo del tono dorado enmarca una esfera plateada de acabado satinado con índices finos y fecha. La correa de eslabones dorados cierra una pieza luminosa y fácil de combinar.",
-    "detalles": [
-      "Caja cuadrada de esquinas redondeadas",
-      "Esfera plateada con ventana de fecha",
-      "Correa de eslabones en tono dorado",
-      "Diseño clásico y luminoso"
-    ],
-    "tallas": [
-      "Única"
-    ],
-    "colores": [
-      "Dorado",
-      "Blanco"
-    ],
-    "imagenes": []
-  },
-  "rw09": {
-    "nombre": "Reloj cuadrado plateado con esfera gris y fecha",
-    "categoria": "Relojes",
-    "precio": 42,
-    "stock": 10,
-    "visible": true,
-    "descripcion": "Reloj de caja cuadrada de esquinas redondeadas en tono plateado, con esfera gris oscura, ventana de fecha y correa de eslabones.",
-    "descripcionLarga": "Una esfera gris oscura de acabado satinado sobre una caja plateada de esquinas suaves, con índices finos y fecha. Discreto y elegante, pensado para llevarse todos los días.",
-    "detalles": [
-      "Caja cuadrada de esquinas redondeadas",
-      "Esfera gris oscura con ventana de fecha",
-      "Correa de eslabones en tono plateado",
-      "Diseño discreto y versátil"
-    ],
-    "tallas": [
-      "Única"
-    ],
-    "colores": [
-      "Plateado",
-      "Gris"
-    ],
-    "imagenes": []
-  },
   "rw10": {
     "nombre": "Reloj brazalete ovalado dorado con números romanos",
     "categoria": "Relojes",
@@ -305,75 +259,6 @@
     ],
     "colores": [
       "Dorado",
-      "Blanco"
-    ],
-    "imagenes": []
-  },
-  "rw15": {
-    "nombre": "Reloj rectangular dorado con esfera azul y números",
-    "categoria": "Relojes",
-    "precio": 42,
-    "stock": 10,
-    "visible": true,
-    "descripcion": "Reloj de caja rectangular de esquinas biseladas en tono dorado, con esfera azul, numeración dorada y correa de eslabones.",
-    "descripcionLarga": "Una caja rectangular de esquinas biseladas en tono dorado y una esfera azul profundo con números dorados bien marcados. La correa de eslabones dorados completa un reloj de aire clásico y mucho color.",
-    "detalles": [
-      "Caja rectangular de esquinas biseladas",
-      "Esfera azul con numeración dorada",
-      "Correa de eslabones en tono dorado",
-      "Diseño clásico con color"
-    ],
-    "tallas": [
-      "Única"
-    ],
-    "colores": [
-      "Dorado",
-      "Azul"
-    ],
-    "imagenes": []
-  },
-  "rw16": {
-    "nombre": "Reloj rectangular plateado con esfera verde salvia",
-    "categoria": "Relojes",
-    "precio": 42,
-    "stock": 10,
-    "visible": true,
-    "descripcion": "Reloj de caja rectangular en tono plateado, con esfera verde salvia, índices finos y correa de eslabones.",
-    "descripcionLarga": "Una esfera verde salvia suave sobre una caja rectangular plateada de bisel marcado. Un toque de color discreto en un reloj de líneas limpias.",
-    "detalles": [
-      "Caja rectangular en tono plateado",
-      "Esfera verde salvia con índices finos",
-      "Correa de eslabones en tono plateado",
-      "Diseño de líneas limpias"
-    ],
-    "tallas": [
-      "Única"
-    ],
-    "colores": [
-      "Plateado",
-      "Verde"
-    ],
-    "imagenes": []
-  },
-  "rw17": {
-    "nombre": "Reloj rectangular plateado con esfera blanca",
-    "categoria": "Relojes",
-    "precio": 42,
-    "stock": 10,
-    "visible": true,
-    "descripcion": "Reloj de caja rectangular en tono plateado, con esfera blanca de índices finos y correa de eslabones.",
-    "descripcionLarga": "Una esfera blanca limpia de índices finos dentro de una caja rectangular plateada de bisel marcado. Esencial, ligero y fácil de combinar con todo.",
-    "detalles": [
-      "Caja rectangular en tono plateado",
-      "Esfera blanca con índices finos",
-      "Correa de eslabones en tono plateado",
-      "Diseño esencial"
-    ],
-    "tallas": [
-      "Única"
-    ],
-    "colores": [
-      "Plateado",
       "Blanco"
     ],
     "imagenes": []

@@ -23,13 +23,15 @@ const MANIFEST = path.join(root, 'src/content/media.generated.json');
 /**
  * Cada trabajo: producto (id), prefijo del archivo de origen (src), clave de las fotos nuevas (key, por defecto el id),
  * limpiar las fotos anteriores del producto (clean) y las claves anteriores que se conservan (keep: fotos de otras variantes).
- * rw01, rw02 y rw06 → reloj10, reloj11 y reloj13; rw07–rw17 son los demás diseños reloj09–reloj22; rw03, rw04, rw05 (dos variantes) y st01 traen su propio prefijo.
+ * rw01, rw02 y rw06 → reloj10, reloj11 y reloj13; rw07 y rw10–rw14 son diseños nuevos (reloj09, reloj15–reloj19); rw03, rw04, rw05 (dos variantes) y st01 traen su propio prefijo.
  */
 const JOBS = [
   { id: 'rw01', src: 'reloj10' }, { id: 'rw02', src: 'reloj11', keep: ['rw02'] }, { id: 'rw06', src: 'reloj13' },
-  { id: 'rw07', src: 'reloj09' }, { id: 'rw08', src: 'reloj12' }, { id: 'rw09', src: 'reloj14' }, { id: 'rw10', src: 'reloj15' }, { id: 'rw11', src: 'reloj16' },
-  { id: 'rw12', src: 'reloj17' }, { id: 'rw13', src: 'reloj18' }, { id: 'rw14', src: 'reloj19' }, { id: 'rw15', src: 'reloj20' }, { id: 'rw16', src: 'reloj21' }, { id: 'rw17', src: 'reloj22' },
-  { id: 'rw03', src: 'rw03', keep: ['rw03-2', 'rw03-3', 'rw03-4', 'rw03-5'] },
+  { id: 'rw07', src: 'reloj09' }, { id: 'rw10', src: 'reloj15' }, { id: 'rw11', src: 'reloj16' },
+  { id: 'rw12', src: 'reloj17' }, { id: 'rw13', src: 'reloj18' }, { id: 'rw14', src: 'reloj19' },
+  // reloj20 y reloj21 no son productos aparte: son la variante azul de rw03 y la verde de st01 (sus fotos se usan como variantes en build-seed.mjs).
+  { id: 'rw15', src: 'reloj20' }, { id: 'rw16', src: 'reloj21' },
+  { id: 'rw03', src: 'rw03', keep: ['rw03-2', 'rw03-4', 'rw03-5'] },
   { id: 'rw04', src: 'rw04' },
   { id: 'rw05', src: 'rw05a' },
   { id: 'rw05', src: 'rw05b', key: 'rw05b', clean: false },
@@ -42,10 +44,16 @@ async function recortar45(file) {
   const h = Math.min(height, Math.round(width * 1.25));
   return sharp(base).extract({ left: 0, top: Math.floor((height - h) / 2), width, height: h }).toBuffer();
 }
+/** Diseños que eran el mismo reloj que rw05 (reloj12, reloj14) y que el de st01 con esfera blanca (reloj22): se retiran sus fotos. */
+const RETIRED = ['rw08', 'rw09', 'rw17'];
 const VIEWS = [['01-frontal', 'frontal'], ['02-45', '45'], ['03-macro', 'macro'], ['04-posterior', 'posterior']];
 
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
 const only = process.argv.slice(2);
+for (const id of RETIRED) {
+  for (const old of fs.readdirSync(OUT)) if (old.startsWith(`${id}-`)) fs.rmSync(path.join(OUT, old));
+  for (const key of Object.keys(manifest.images)) if (key.startsWith(`${id}-`)) delete manifest.images[key];
+}
 for (const { id, src, key: base = id, clean = true, keep = [] } of JOBS.filter((j) => !only.length || only.includes(j.id))) {
   if (clean) {
     // Se retiran las fotos anteriores de la pieza y su recorte automático, salvo las de otras variantes (keep).
