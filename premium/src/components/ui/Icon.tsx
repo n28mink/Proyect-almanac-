@@ -99,6 +99,9 @@ export const GemIcon = (p: P) => (
 export const WatchIcon = (p: P) => (
   <svg {...base(p)}><circle cx="12" cy="12" r="4.8" /><path d="M12 9.6V12l1.8 1.1M9.2 7.2 9.8 3h4.4l.6 4.2M9.2 16.8 9.8 21h4.4l.6-4.2" /></svg>
 );
+export const SunglassesIcon = (p: P) => (
+  <svg {...base(p)}><path d="M2.8 9.2h7.7v3.6a3.9 3.9 0 0 1-3.9 3.9h0a3.9 3.9 0 0 1-3.8-3.9V9.2ZM13.5 9.2h7.7v3.6a3.9 3.9 0 0 1-3.8 3.9h0a3.9 3.9 0 0 1-3.9-3.9V9.2Z" /><path d="M10.5 10.6a1.5 1.5 0 0 1 3 0M2.8 9.2 2 6.6M21.2 9.2l.8-2.6" /></svg>
+);
 export const ShirtIcon = (p: P) => (
   <svg {...base(p)}><path d="M8.5 4 3.5 6.5l2 4 2.5-1V20h8V9.5l2.5 1 2-4L15.5 4a3.6 3.6 0 0 1-7 0Z" /></svg>
 );
@@ -112,7 +115,7 @@ export const ChevronDownIcon = (p: P) => (
   <svg {...base(p)}><path d="m6 9.5 6 6 6-6" /></svg>
 );
 
-const categoryIcons = { jewelry: GemIcon, watches: WatchIcon, shirts: ShirtIcon, collections: CollectionIcon, gifts: GiftIcon } as const;
+const categoryIcons = { jewelry: GemIcon, watches: WatchIcon, shirts: ShirtIcon, sunglasses: SunglassesIcon, collections: CollectionIcon, gifts: GiftIcon } as const;
 export type CategoryIconKey = keyof typeof categoryIcons;
 export function CategoryIcon({ slug, ...p }: P & { slug: string }) {
   const Icon = categoryIcons[slug as CategoryIconKey];
