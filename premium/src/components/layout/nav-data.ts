@@ -60,11 +60,11 @@ export function getNavData(locale: Locale): NavData {
   for (const x of catalog.filter((c) => c.category === 'shirts')) for (const g of toCardData(x, locale).garmentColors) colors.set(g.key, g.label);
   const shirts: NavLink = { ...link('shirts'), children: [...colors].map(([key, label]) => ({ href: `/shop/shirts?color=${key}`, label })) };
   const collectionsMenu: NavLink = { ...collectionsLink, children: collections.map((c) => ({ href: `/collections/${c.slug}`, label: pick(c.name, locale) })) };
-  const gifts: NavLink = { ...link('gifts-for-her'), children: [{ href: '/shop/gifts', label: es ? 'Todos los regalos' : 'All gifts' }, { href: '/shop/new-arrivals', label: pick(bySlug('new-arrivals').name, locale) }] };
+  const gifts: NavLink = { ...link('gifts'), children: [{ href: '/shop/gifts-for-her', label: es ? 'Para ella' : 'For her' }, { href: '/shop/gifts-for-him', label: es ? 'Para él' : 'For him' }] };
 
   return {
-    primary: [jewelry, watches, shirts, collectionsMenu, gifts],
-    menuMain: [link('new-arrivals'), link('jewelry'), link('watches'), link('shirts'), collectionsLink, link('gifts-for-her')],
+    primary: [jewelry, watches, link('sunglasses'), shirts, collectionsMenu, gifts],
+    menuMain: [link('new-arrivals'), link('jewelry'), link('watches'), link('sunglasses'), link('shirts'), collectionsLink, link('gifts')],
     menuTypes: ['necklaces', 'earrings', 'rings', 'bracelets', 'accessories'].filter(nonEmpty).map(link),
     menuAudience: ['women', 'men'].filter(nonEmpty).map(link),
     featured: {

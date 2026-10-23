@@ -1,0 +1,127 @@
+{
+  "_note": "Lentes de sol Clover (le01–le10). Fotos en ../fotos/lentes-originales (node scripts/build-lentes.mjs). Los textos describen solo lo que se ve en las fotos. El precio y el stock son iniciales: se editan en el panel.",
+  "price": 14,
+  "stock": 10,
+  "items": [
+    {
+      "id": "le01",
+      "name": { "es": "Lentes ovalados dorados con patillas caladas", "en": "Gold oval sunglasses with openwork arms" },
+      "color": { "es": "Dorado con lente gris", "en": "Gold with gray lens" },
+      "lens": { "es": "Gris oscuro", "en": "Dark gray" },
+      "shape": { "es": "Ovalada", "en": "Oval" },
+      "temples": { "es": "Calada dorada con punta negra", "en": "Gold openwork with black tips" },
+      "description": {
+        "es": "Lentes de sol ovalados con montura dorada, lentes gris oscuro y patillas caladas en dorado con la punta negra.",
+        "en": "Oval sunglasses with a gold frame, dark gray lenses and gold openwork arms with black tips."
+      }
+    },
+    {
+      "id": "le02",
+      "name": { "es": "Lentes hexagonales dorados con patillas negras", "en": "Gold hexagonal sunglasses with black arms" },
+      "color": { "es": "Dorado con lente gris", "en": "Gold with gray lens" },
+      "lens": { "es": "Gris oscuro", "en": "Dark gray" },
+      "shape": { "es": "Hexagonal", "en": "Hexagonal" },
+      "temples": { "es": "Negras con letras doradas", "en": "Black with gold lettering" },
+      "description": {
+        "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras con letras doradas junto a la bisagra.",
+        "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and black arms with gold lettering by the hinge."
+      }
+    },
+    {
+      "id": "le03",
+      "name": { "es": "Lentes hexagonales dorados con patillas carey", "en": "Gold hexagonal sunglasses with tortoiseshell arms" },
+      "color": { "es": "Dorado con lente marrón", "en": "Gold with brown lens" },
+      "lens": { "es": "Marrón", "en": "Brown" },
+      "shape": { "es": "Hexagonal", "en": "Hexagonal" },
+      "temples": { "es": "Carey con detalle dorado", "en": "Tortoiseshell with a gold detail" },
+      "description": {
+        "es": "Lentes de sol hexagonales con montura dorada, lentes marrón y patillas color carey con un detalle dorado en la bisagra.",
+        "en": "Hexagonal sunglasses with a gold frame, brown lenses and tortoiseshell arms with a gold detail at the hinge."
+      }
+    },
+    {
+      "id": "le04",
+      "name": { "es": "Lentes ovalados dorados carey con patillas caladas", "en": "Gold oval sunglasses with tortoiseshell tips and openwork arms" },
+      "color": { "es": "Dorado con lente marrón", "en": "Gold with brown lens" },
+      "lens": { "es": "Marrón", "en": "Brown" },
+      "shape": { "es": "Ovalada", "en": "Oval" },
+      "temples": { "es": "Calada dorada con punta carey", "en": "Gold openwork with tortoiseshell tips" },
+      "description": {
+        "es": "Lentes de sol ovalados con montura dorada, lentes marrón y patillas caladas en dorado con la punta color carey.",
+        "en": "Oval sunglasses with a gold frame, brown lenses and gold openwork arms with tortoiseshell tips."
+      }
+    },
+    {
+      "id": "le05",
+      "name": { "es": "Lentes hexagonales dorados con lente gris", "en": "Gold hexagonal sunglasses with gray lenses" },
+      "color": { "es": "Dorado con lente gris", "en": "Gold with gray lens" },
+      "lens": { "es": "Gris oscuro", "en": "Dark gray" },
+      "shape": { "es": "Hexagonal", "en": "Hexagonal" },
+      "temples": { "es": "Negras lisas", "en": "Plain black" },
+      "description": {
+        "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras lisas.",
+        "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and plain black arms."
+      }
+    },
+    {
+      "id": "le06",
+      "name": { "es": "Lentes rectangulares dorados con lente degradado", "en": "Gold rectangular sunglasses with gradient lenses" },
+      "color": { "es": "Dorado con lente degradado", "en": "Gold with gradient lens" },
+      "lens": { "es": "Marrón degradado", "en": "Brown gradient" },
+      "shape": { "es": "Rectangular angulada", "en": "Angular rectangle" },
+      "temples": { "es": "Carey con letras doradas", "en": "Tortoiseshell with gold lettering" },
+      "description": {
+        "es": "Lentes de sol de forma rectangular angulada con montura dorada, lentes marrón degradado y patillas color carey con letras doradas.",
+        "en": "Angular rectangular sunglasses with a gold frame, brown gradient lenses and tortoiseshell arms with gold lettering."
+      }
+    },
+    {
+      "id": "le07",
+      "name": { "es": "Lentes hexagonales alargados dorados con lente marrón", "en": "Elongated gold hexagonal sunglasses with brown lenses" },
+      "color": { "es": "Dorado con lente marrón", "en": "Gold with brown lens" },
+      "lens": { "es": "Marrón", "en": "Brown" },
+      "shape": { "es": "Hexagonal alargada", "en": "Elongated hexagon" },
+      "temples": { "es": "Carey", "en": "Tortoiseshell" },
+      "description": {
+        "es": "Lentes de sol hexagonales alargados con montura dorada, lentes marrón y patillas color carey.",
+        "en": "Elongated hexagonal sunglasses with a gold frame, brown lenses and tortoiseshell arms."
+      }
+    },
+    {
+      "id": "le08",
+      "name": { "es": "Lentes hexagonales dorados con lente degradado", "en": "Gold hexagonal sunglasses with gradient lenses" },
+      "color": { "es": "Dorado con lente degradado", "en": "Gold with gradient lens" },
+      "lens": { "es": "Marrón degradado", "en": "Brown gradient" },
+      "shape": { "es": "Hexagonal", "en": "Hexagonal" },
+      "temples": { "es": "Carey con letras doradas", "en": "Tortoiseshell with gold lettering" },
+      "description": {
+        "es": "Lentes de sol hexagonales con montura dorada, lentes marrón degradado y patillas color carey con letras doradas.",
+        "en": "Hexagonal sunglasses with a gold frame, brown gradient lenses and tortoiseshell arms with gold lettering."
+      }
+    },
+    {
+      "id": "le09",
+      "name": { "es": "Lentes rectangulares dorados con patillas negras", "en": "Gold rectangular sunglasses with black arms" },
+      "color": { "es": "Dorado con lente gris", "en": "Gold with gray lens" },
+      "lens": { "es": "Gris oscuro", "en": "Dark gray" },
+      "shape": { "es": "Rectangular angulada", "en": "Angular rectangle" },
+      "temples": { "es": "Negras con letras doradas", "en": "Black with gold lettering" },
+      "description": {
+        "es": "Lentes de sol de forma rectangular angulada con montura dorada, lentes gris oscuro y patillas negras con letras doradas.",
+        "en": "Angular rectangular sunglasses with a gold frame, dark gray lenses and black arms with gold lettering."
+      }
+    },
+    {
+      "id": "le10",
+      "name": { "es": "Lentes hexagonales dorados con bisagra en punta", "en": "Gold hexagonal sunglasses with pointed hinges" },
+      "color": { "es": "Dorado con lente gris", "en": "Gold with gray lens" },
+      "lens": { "es": "Gris oscuro", "en": "Dark gray" },
+      "shape": { "es": "Hexagonal", "en": "Hexagonal" },
+      "temples": { "es": "Negras con bisagra dorada en punta", "en": "Black with a pointed gold hinge" },
+      "description": {
+        "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras que nacen de una bisagra dorada en punta.",
+        "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and black arms that start from a pointed gold hinge."
+      }
+    }
+  ]
+}

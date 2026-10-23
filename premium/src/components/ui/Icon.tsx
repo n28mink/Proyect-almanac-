@@ -112,7 +112,7 @@ export const ChevronDownIcon = (p: P) => (
   <svg {...base(p)}><path d="m6 9.5 6 6 6-6" /></svg>
 );
 
-const categoryIcons = { jewelry: GemIcon, watches: WatchIcon, shirts: ShirtIcon, collections: CollectionIcon, 'gifts-for-her': GiftIcon } as const;
+const categoryIcons = { jewelry: GemIcon, watches: WatchIcon, shirts: ShirtIcon, collections: CollectionIcon, gifts: GiftIcon } as const;
 export type CategoryIconKey = keyof typeof categoryIcons;
 export function CategoryIcon({ slug, ...p }: P & { slug: string }) {
   const Icon = categoryIcons[slug as CategoryIconKey];

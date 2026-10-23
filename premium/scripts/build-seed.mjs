@@ -376,6 +376,71 @@ for (const s of shirts.items) {
   });
 }
 
+// Lentes de sol (scripts/data/sunglasses.json, fotos con scripts/build-lentes.mjs): frente, perfil, detalle de la bisagra y modelo.
+const sunglasses = JSON.parse(fs.readFileSync(path.join(root, 'scripts/data/sunglasses.json'), 'utf8'));
+const SUN_STORY = L(
+  'Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.',
+  'Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn.',
+);
+for (const s of sunglasses.items) {
+  const view = (key, role, es, en) => {
+    const m = media.images[`${s.id}-${key}`];
+    if (!m) throw new Error(`Sin metadatos de imagen: ${s.id}-${key} (node scripts/build-lentes.mjs)`);
+    return { src: m.src, width: m.width, height: m.height, blur: m.blur, tone: m.tone, focal: m.focal, role, alt: L(es, en) };
+  };
+  const images = [
+    view('frente', 'main', `${s.name.es}, vista de tres cuartos`, `${s.name.en}, three-quarter view`),
+    view('modelo', 'lifestyle', `${s.name.es}, puestos`, `${s.name.en}, worn`),
+    view('perfil', 'main', `${s.name.es}, vista de perfil`, `${s.name.en}, side view`),
+    view('macro', 'detail', `Detalle de la bisagra de los ${s.name.es.toLowerCase()}`, `Hinge detail of the ${s.name.en.toLowerCase()}`),
+  ];
+  const variants = [{ id: `${s.id}-1`, sku: `CLV-${s.id.toUpperCase()}-1`, options: { color: s.color, size: ONE_SIZE }, imageIndex: 0, stock: sunglasses.stock }];
+  const specifications = [
+    { label: L('Montura', 'Frame'), value: L('Dorada', 'Gold') },
+    { label: L('Forma', 'Shape'), value: s.shape },
+    { label: L('Lente', 'Lens'), value: s.lens },
+    { label: L('Patillas', 'Arms'), value: s.temples },
+    { label: L('Talla', 'Size'), value: ONE_SIZE },
+  ];
+  let slug = slugify(s.name.en);
+  if (slugs.has(slug)) slug += `-${s.id}`;
+  slugs.add(slug);
+  catalog.push({
+    id: s.id,
+    slug,
+    name: s.name,
+    description: s.description,
+    story: SUN_STORY,
+    category: 'sunglasses',
+    categories: ['sunglasses', 'women', 'gifts', 'new-arrivals'],
+    audience: ['women'],
+    tags: ['sunglasses', 'gift'],
+    price: cents(sunglasses.price),
+    currency: 'USD',
+    material: L('Montura metálica dorada', 'Gold-tone metal frame'),
+    color: [s.color],
+    finish: 'gold',
+    sizes: [ONE_SIZE],
+    variants,
+    images,
+    videos: [],
+    thumbnail: images[0].src,
+    // Al pasar el ratón: el modelo con los lentes puestos.
+    hoverMedia: { type: 'image', imageIndex: 1 },
+    highlights: [
+      L(`Forma ${s.shape.es.toLowerCase()}`, `${s.shape.en} shape`),
+      L(`Lente ${s.lens.es.toLowerCase()}`, `${s.lens.en} lens`),
+      L(`Patillas: ${s.temples.es.toLowerCase()}`, `Arms: ${s.temples.en.toLowerCase()}`),
+    ],
+    specifications: withDetails(s.id, specifications),
+    stock: sunglasses.stock,
+    featured: false,
+    newArrival: true,
+    bestseller: false,
+    seo: { title: L(`${s.name.es} | Clover`, `${s.name.en} | Clover`), description: s.description },
+  });
+}
+
 for (const id of Object.keys(details)) if (!usedDetails.has(id)) throw new Error(`product-details.json: el id «${id}» no existe en el catálogo`);
 
 fs.writeFileSync(path.join(root, 'src/content/catalog.generated.json'), JSON.stringify(catalog, null, 1) + '\n');

@@ -228,3 +228,8 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 
 ## Macros corregidos de rw10 y rw14
 - Se aplican los macros nuevos de `reloj15` (rw10, números romanos) y `reloj19` (rw14, esfera «CMK»). Se regeneran con `node scripts/build-relojes.mjs rw10 rw14`: el nombre del JPG lleva el hash del contenido, así que la caché de 30 días de Vercel no sirve la foto anterior.
+
+## Lentes de sol (le01–le10) y Regalos con desglose
+- `node scripts/build-lentes.mjs` lee `fotos/lentes-originales/leNN-{frente|perfil|detalle|modelo}.webp` y deja 4 fotos por modelo: tres cuartos (cuadrada llevada a 4:5), modelo puesto (la del hover), perfil y detalle de la bisagra (sin recorte, foco a la derecha). Los 10 modelos salen de `scripts/data/sunglasses.json`: textos solo con lo que se ve; **el precio (14 USD) y el stock (10) son provisionales** y se editan en el panel.
+- Categoría nueva `sunglasses` («Lentes») con portada de modelo (`le01`) y entrada propia en la cabecera y el menú. Los lentes también cuentan como regalo para ella.
+- «Regalos» es ahora la categoría de primer nivel (`/shop/gifts`, junto con sus dos ramas): «Para ella» (`gifts-for-her`, la joyería más valiosa) y «Para él» (`gifts-for-him`, las piezas de hombre). El desplegable de la cabecera y los botones bajo el título de cada página las enlazan; en las ramas, la ruta de migas vuelve a «Regalos».
