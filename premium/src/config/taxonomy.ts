@@ -23,12 +23,14 @@ export const categories: CategoryDef[] = [
   { slug: 'rings', kind: 'type', name: L('Anillos', 'Rings'), blurb: L('Símbolos que perduran.', 'Symbols that last.'), coverProductId: 'an04' },
   { slug: 'bracelets', kind: 'type', name: L('Pulseras', 'Bracelets'), blurb: L('Movimiento delicado.', 'Delicate movement.'), coverProductId: 'pu06' },
   { slug: 'shirts', kind: 'type', name: L('Camisas', 'T-shirts'), blurb: L('Poli-algodón, personalizables a pedido.', 'Poly-cotton, customizable on request.'), coverProductId: 'cm03', primaryNav: true },
+  { slug: 'sunglasses', kind: 'type', name: L('Lentes', 'Sunglasses'), blurb: L('Monturas doradas de líneas geométricas.', 'Gold frames with geometric lines.'), coverProductId: 'le01' },
   { slug: 'accessories', kind: 'type', name: L('Accesorios', 'Accessories'), blurb: L('Sets y piezas para completar el look.', 'Sets and pieces to complete the look.'), coverProductId: 'st01' },
   { slug: 'women', kind: 'audience', name: L('Mujer', 'Women'), blurb: L('Selección para ella.', 'A selection for her.'), coverProductId: 'ar11' },
   { slug: 'men', kind: 'audience', name: L('Hombre', 'Men'), blurb: L('Relojes de carácter.', 'Watches with character.'), coverProductId: 'rw06' },
   { slug: 'new-arrivals', kind: 'merch', name: L('Novedades', 'New Arrivals'), blurb: L('Lo último en llegar.', 'The latest to arrive.'), coverProductId: 'pu08', primaryNav: true },
-  { slug: 'gifts-for-her', kind: 'merch', name: L('Regalos para ella', 'Gifts for her'), blurb: L('Nuestra joyería más valiosa.', 'Our most valued piece.'), coverProductId: 'st01', primaryNav: true },
-  { slug: 'gifts', kind: 'merch', name: L('Regalos', 'Gifts'), blurb: L('Piezas pensadas para regalar.', 'Pieces made for giving.'), coverProductId: 'co19', primaryNav: true },
+  { slug: 'gifts', kind: 'merch', name: L('Regalos', 'Gifts'), blurb: L('Piezas pensadas para regalar, para ella y para él.', 'Pieces made for giving, for her and for him.'), coverProductId: 'co19', primaryNav: true },
+  { slug: 'gifts-for-her', kind: 'merch', name: L('Regalos para ella', 'Gifts for her'), blurb: L('Nuestra joyería más valiosa.', 'Our most valued piece.'), coverProductId: 'st01' },
+  { slug: 'gifts-for-him', kind: 'merch', name: L('Regalos para él', 'Gifts for him'), blurb: L('Relojes de carácter para regalar.', 'Watches with character, made for giving.'), coverProductId: 'rw06' },
 ];
 
 /** `collections` no es un filtro: es un índice propio (/collections). */

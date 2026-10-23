@@ -60,7 +60,7 @@ test('la barra superior y el pie no mencionan precios en USD', async ({ page }) 
 });
 
 test('las categorías existen como páginas reales', async ({ request }) => {
-  for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'shirts', 'accessories', 'women', 'men', 'new-arrivals', 'gifts', 'gifts-for-her']) {
+  for (const c of ['jewelry', 'watches', 'necklaces', 'earrings', 'rings', 'bracelets', 'shirts', 'accessories', 'women', 'men', 'new-arrivals', 'gifts', 'gifts-for-her', 'gifts-for-him', 'sunglasses']) {
     expect((await request.get(`/es/shop/${c}`)).status(), c).toBe(200);
   }
   expect((await request.get('/es/collections')).status()).toBe(200);
@@ -250,7 +250,7 @@ test.describe('movimiento reducido por el sistema: se conservan los fundidos', (
 test('menú: cada categoría es un enlace propio con su desplegable', async ({ page }) => {
   await page.goto('/es', { waitUntil: 'networkidle' });
   const nav = page.locator('header nav');
-  for (const name of ['Joyería', 'Relojes', 'Camisas', 'Colecciones', 'Regalos para ella']) await expect(nav.getByRole('link', { name, exact: true })).toBeVisible();
+  for (const name of ['Joyería', 'Relojes', 'Lentes', 'Camisas', 'Colecciones', 'Regalos']) await expect(nav.getByRole('link', { name, exact: true })).toBeVisible();
   await nav.getByRole('button', { name: /opciones de Joyería/ }).click();
   await expect(nav.getByRole('link', { name: 'Pulseras' })).toBeVisible();
   await page.keyboard.press('Escape');

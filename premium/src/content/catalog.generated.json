@@ -27680,5 +27680,2195 @@
     "en": "White poly-cotton T-shirt with a French bulldog in a headscarf and sunglasses, and the phrase “Llegué tarde porque no quería venir” (I arrived late because I didn't want to come)."
    }
   }
+ },
+ {
+  "id": "le01",
+  "slug": "gold-oval-sunglasses-with-openwork-arms",
+  "name": {
+   "es": "Lentes ovalados dorados con patillas caladas",
+   "en": "Gold oval sunglasses with openwork arms"
+  },
+  "description": {
+   "es": "Lentes de sol ovalados con montura dorada, lentes gris oscuro y patillas caladas en dorado con la punta negra.",
+   "en": "Oval sunglasses with a gold frame, dark gray lenses and gold openwork arms with black tips."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente gris",
+    "en": "Gold with gray lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le01-1",
+    "sku": "CLV-LE01-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente gris",
+      "en": "Gold with gray lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le01-frente-5648bb7.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCBQb/xAAeEAACAgICAwAAAAAAAAAAAAACAwABBBESMQUUIf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXk9YHwIxou9XJytZ4uuOV6+Q1RPui7+Ve4ynGoVLF5k4xHXMoDEIQgf/Z",
+    "tone": "#e5e5e5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes ovalados dorados con patillas caladas, vista de tres cuartos",
+     "en": "Gold oval sunglasses with openwork arms, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le01-modelo-5d036f9.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwb/xAAnEAACAQMCAwkAAAAAAAAAAAACAwEABREEIQYSIjNBUWFygZHh8P/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAYEQACAwAAAAAAAAAAAAAAAAAAARESMf/aAAwDAQACEQMRAD8AsvZTcbq7TsSxi0kKxwWICZjMlj4pzhF7BHUW5xQRImCDfPTOf2POs5qLo13ET2JOCW1nJnbcY2jHhSyri3S3LUP0ZSHPMx7Z+qCmw3FRBPbD6oqKe+iiktC8P//Z",
+    "tone": "#6d5c53",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes ovalados dorados con patillas caladas, puestos",
+     "en": "Gold oval sunglasses with openwork arms, worn"
+    }
+   },
+   {
+    "src": "/media/products/le01-perfil-be2a3e4.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgb/xAAeEAABBAIDAQAAAAAAAAAAAAACAAEDEQQSISMxUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZKUsWLEYyMTF2XtT1dquLhx4dDAUjR61oROTX958QNIQhB//Z",
+    "tone": "#edeceb",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes ovalados dorados con patillas caladas, vista de perfil",
+     "en": "Gold oval sunglasses with openwork arms, side view"
+    }
+   },
+   {
+    "src": "/media/products/le01-macro-8ca1b52.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDBAAxBRIhMuH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDTQgiSWSvX6tKQWYnwSNHArpyUa97NhZZW3GigKv3Kh1hR+uSD/9k=",
+    "tone": "#dad6d2",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes ovalados dorados con patillas caladas",
+     "en": "Hinge detail of the gold oval sunglasses with openwork arms"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le01-frente-5648bb7.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma ovalada",
+    "en": "Oval shape"
+   },
+   {
+    "es": "Lente gris oscuro",
+    "en": "Dark gray lens"
+   },
+   {
+    "es": "Patillas: calada dorada con punta negra",
+    "en": "Arms: gold openwork with black tips"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Ovalada",
+     "en": "Oval"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Gris oscuro",
+     "en": "Dark gray"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Calada dorada con punta negra",
+     "en": "Gold openwork with black tips"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes ovalados dorados con patillas caladas | Clover",
+    "en": "Gold oval sunglasses with openwork arms | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol ovalados con montura dorada, lentes gris oscuro y patillas caladas en dorado con la punta negra.",
+    "en": "Oval sunglasses with a gold frame, dark gray lenses and gold openwork arms with black tips."
+   }
+  }
+ },
+ {
+  "id": "le02",
+  "slug": "gold-hexagonal-sunglasses-with-black-arms",
+  "name": {
+   "es": "Lentes hexagonales dorados con patillas negras",
+   "en": "Gold hexagonal sunglasses with black arms"
+  },
+  "description": {
+   "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras con letras doradas junto a la bisagra.",
+   "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and black arms with gold lettering by the hinge."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente gris",
+    "en": "Gold with gray lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le02-1",
+    "sku": "CLV-LE02-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente gris",
+      "en": "Gold with gray lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le02-frente-4ed12c2.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAIDBAUG/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIAAxESMWEFE1Fxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDYtfUjaXtRW8FhmOSrfp1WXNT2VF7O42k78epKWqpXZsMWbclifnAgLhCED//Z",
+    "tone": "#e9e9ea",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con patillas negras, vista de tres cuartos",
+     "en": "Gold hexagonal sunglasses with black arms, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le02-modelo-8fad0fd.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EACQQAAEDBAEDBQAAAAAAAAAAAAECAxEABAUSEyFBkQYVIlFh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//EABgRAAMBAQAAAAAAAAAAAAAAAAABERJC/9oADAMBAAIRAxEAPwBc83ZXWbdLwcWqUNfEGEmKr6MYuLXJXTXXhUiRP2FQDHmmzeYsH7ls2LvO+RqrQHWOxn8quOzNniipq7SULdG/KlM7doI7VFeoaNLNMhjSRkrcgkHenzRPuTvU9IA8UUUdC4P/2Q==",
+    "tone": "#887368",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes hexagonales dorados con patillas negras, puestos",
+     "en": "Gold hexagonal sunglasses with black arms, worn"
+    }
+   },
+   {
+    "src": "/media/products/le02-perfil-8c97bb2.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwb/xAAhEAABBAIABwAAAAAAAAAAAAABAAIEEQMSBRMyQVFxsf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZWPIUpGTwmFLycyRg3dd9RHwq2PDxRXE4NmNIos2tvuj3QMIQhB//2Q==",
+    "tone": "#eaeae9",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con patillas negras, vista de perfil",
+     "en": "Gold hexagonal sunglasses with black arms, side view"
+    }
+   },
+   {
+    "src": "/media/products/le02-macro-64009cd.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIRAAAQMEAQUAAAAAAAAAAAAAAQIDBAAFERIxITRRcdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8ActsmU7atm0h1xOQnbpnHFZUwL064XjMYiLWkbhCASSPOPtLQ+zR6qzPBoL//2Q==",
+    "tone": "#c1bdb9",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes hexagonales dorados con patillas negras",
+     "en": "Hinge detail of the gold hexagonal sunglasses with black arms"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le02-frente-4ed12c2.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma hexagonal",
+    "en": "Hexagonal shape"
+   },
+   {
+    "es": "Lente gris oscuro",
+    "en": "Dark gray lens"
+   },
+   {
+    "es": "Patillas: negras con letras doradas",
+    "en": "Arms: black with gold lettering"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Hexagonal",
+     "en": "Hexagonal"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Gris oscuro",
+     "en": "Dark gray"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Negras con letras doradas",
+     "en": "Black with gold lettering"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes hexagonales dorados con patillas negras | Clover",
+    "en": "Gold hexagonal sunglasses with black arms | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras con letras doradas junto a la bisagra.",
+    "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and black arms with gold lettering by the hinge."
+   }
+  }
+ },
+ {
+  "id": "le03",
+  "slug": "gold-hexagonal-sunglasses-with-tortoiseshell-arms",
+  "name": {
+   "es": "Lentes hexagonales dorados con patillas carey",
+   "en": "Gold hexagonal sunglasses with tortoiseshell arms"
+  },
+  "description": {
+   "es": "Lentes de sol hexagonales con montura dorada, lentes marrón y patillas color carey con un detalle dorado en la bisagra.",
+   "en": "Hexagonal sunglasses with a gold frame, brown lenses and tortoiseshell arms with a gold detail at the hinge."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente marrón",
+    "en": "Gold with brown lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le03-1",
+    "sku": "CLV-LE03-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente marrón",
+      "en": "Gold with brown lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le03-frente-cc1553a.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUCBv/EACMQAAICAQEJAQAAAAAAAAAAAAECABEDIQQFEhMUIjJBYXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A685sYLDisr5ULr9m7kl93OiP0e1ZMLNl5h10+iUOyyxFk+zAkREQ/9k=",
+    "tone": "#e5e3e1",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con patillas carey, vista de tres cuartos",
+     "en": "Gold hexagonal sunglasses with tortoiseshell arms, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le03-modelo-4ea910a.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgT/xAAnEAABBAECBAcBAAAAAAAAAAABAgMEEQAFIQYSMUETIiMyYYGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMC/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECITEi/9oADAMBAAIRAxEAPwDHEMx+VrjjAddTFiJBUlskFRqzXzvlBoEwyG3meZ1QZKeVTvuKVCxZ71vkw21JVq8uUryeKtSkpu9r/mMeF9VaU5MMj03VKTSeoCQKyFKxHHk53tnWiOu4v6OKtO21aSO1H9GGGGsYj1H/2Q==",
+    "tone": "#8d776b",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes hexagonales dorados con patillas carey, puestos",
+     "en": "Gold hexagonal sunglasses with tortoiseshell arms, worn"
+    }
+   },
+   {
+    "src": "/media/products/le03-perfil-4350c8b.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAcEAACAgMBAQAAAAAAAAAAAAAAAQMRAgQSMbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7UGPPXjlxan7kb9fTXwlBFFr5XFjyqqrbAsAAH//2Q==",
+    "tone": "#f1f0ef",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con patillas carey, vista de perfil",
+     "en": "Gold hexagonal sunglasses with tortoiseshell arms, side view"
+    }
+   },
+   {
+    "src": "/media/products/le03-macro-613970f.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQT/xAAgEAABAwQCAwAAAAAAAAAAAAABAgMEAAUREjFxQZGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAAMBAAAAAAAAAAAAAAAAAAABEUH/2gAMAwEAAhEDEQA/AFYNyanFSGkmG+E5CgcpPY80k/LdSEmNEckE84IQPtRWiymBKU8t0OHXVIAx7pnUnk46oq6Jw//Z",
+    "tone": "#d2c8c1",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes hexagonales dorados con patillas carey",
+     "en": "Hinge detail of the gold hexagonal sunglasses with tortoiseshell arms"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le03-frente-cc1553a.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma hexagonal",
+    "en": "Hexagonal shape"
+   },
+   {
+    "es": "Lente marrón",
+    "en": "Brown lens"
+   },
+   {
+    "es": "Patillas: carey con detalle dorado",
+    "en": "Arms: tortoiseshell with a gold detail"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Hexagonal",
+     "en": "Hexagonal"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Marrón",
+     "en": "Brown"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Carey con detalle dorado",
+     "en": "Tortoiseshell with a gold detail"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes hexagonales dorados con patillas carey | Clover",
+    "en": "Gold hexagonal sunglasses with tortoiseshell arms | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol hexagonales con montura dorada, lentes marrón y patillas color carey con un detalle dorado en la bisagra.",
+    "en": "Hexagonal sunglasses with a gold frame, brown lenses and tortoiseshell arms with a gold detail at the hinge."
+   }
+  }
+ },
+ {
+  "id": "le04",
+  "slug": "gold-oval-sunglasses-with-tortoiseshell-tips-and-openwork-arms",
+  "name": {
+   "es": "Lentes ovalados dorados carey con patillas caladas",
+   "en": "Gold oval sunglasses with tortoiseshell tips and openwork arms"
+  },
+  "description": {
+   "es": "Lentes de sol ovalados con montura dorada, lentes marrón y patillas caladas en dorado con la punta color carey.",
+   "en": "Oval sunglasses with a gold frame, brown lenses and gold openwork arms with tortoiseshell tips."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente marrón",
+    "en": "Gold with brown lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le04-1",
+    "sku": "CLV-LE04-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente marrón",
+      "en": "Gold with brown lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le04-frente-4a2d5d0.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIEBQb/xAAdEAACAgIDAQAAAAAAAAAAAAABAgADERIFEzFB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDXtdUrBWsUE/CY8r7eLodWCGyvazsOjemSzXXttrlsYyfcQph4QhEP/9k=",
+    "tone": "#ebe8e5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes ovalados dorados carey con patillas caladas, vista de tres cuartos",
+     "en": "Gold oval sunglasses with tortoiseshell tips and openwork arms, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le04-modelo-0f71912.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGA//EACgQAAECBQMBCQAAAAAAAAAAAAECAwAEBREhBhJBEyIyQlNxobLB4f/EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/EABgRAQEAAwAAAAAAAAAAAAAAAAEAAhEx/9oADAMBAAIRAxEAPwDKvVB+frplGnXG2WDtO02yO8Yf6fnQ+p2XS664hCEOILw7QB4J5yPeJCluKmaw46t4F1SlKBPjPpFJpKbcnXpt1e1OEjp3uRa/7GBdyJrGmKZipyZ56g+4daMxUZi3ln5QQRHZc+N//9k=",
+    "tone": "#856d65",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes ovalados dorados carey con patillas caladas, puestos",
+     "en": "Gold oval sunglasses with tortoiseshell tips and openwork arms, worn"
+    }
+   },
+   {
+    "src": "/media/products/le04-perfil-6009a18.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEDBAb/xAAfEAACAQQCAwAAAAAAAAAAAAAAARICAwQREyEUMWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7LaBRViWquSVG+RuXfvZGPhW8Vrx5W6I6hJtfH2BpAAH/9k=",
+    "tone": "#f0eeec",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes ovalados dorados carey con patillas caladas, vista de perfil",
+     "en": "Gold oval sunglasses with tortoiseshell tips and openwork arms, side view"
+    }
+   },
+   {
+    "src": "/media/products/le04-macro-b823206.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgIF/8QAIBAAAgICAgIDAAAAAAAAAAAAAQMCEQAEEiEFMTJBcf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oADAMBAAIRAxEAPwBRB2trppURBY+oxoZgN8ujeeJo0dkN4nkVz4yIvq694jCVLHxv9N5KIQTDhrpWuA6odYcXshC//9k=",
+    "tone": "#d8ccc4",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes ovalados dorados carey con patillas caladas",
+     "en": "Hinge detail of the gold oval sunglasses with tortoiseshell tips and openwork arms"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le04-frente-4a2d5d0.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma ovalada",
+    "en": "Oval shape"
+   },
+   {
+    "es": "Lente marrón",
+    "en": "Brown lens"
+   },
+   {
+    "es": "Patillas: calada dorada con punta carey",
+    "en": "Arms: gold openwork with tortoiseshell tips"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Ovalada",
+     "en": "Oval"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Marrón",
+     "en": "Brown"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Calada dorada con punta carey",
+     "en": "Gold openwork with tortoiseshell tips"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes ovalados dorados carey con patillas caladas | Clover",
+    "en": "Gold oval sunglasses with tortoiseshell tips and openwork arms | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol ovalados con montura dorada, lentes marrón y patillas caladas en dorado con la punta color carey.",
+    "en": "Oval sunglasses with a gold frame, brown lenses and gold openwork arms with tortoiseshell tips."
+   }
+  }
+ },
+ {
+  "id": "le05",
+  "slug": "gold-hexagonal-sunglasses-with-gray-lenses",
+  "name": {
+   "es": "Lentes hexagonales dorados con lente gris",
+   "en": "Gold hexagonal sunglasses with gray lenses"
+  },
+  "description": {
+   "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras lisas.",
+   "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and plain black arms."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente gris",
+    "en": "Gold with gray lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le05-1",
+    "sku": "CLV-LE05-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente gris",
+      "en": "Gold with gray lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le05-frente-984cb0b.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAEDBAUG/8QAHhAAAgICAwEBAAAAAAAAAAAAAQIAAxFBBBJhMlH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1xvQFgMsV+uoJxHM+yts4Tqtp4fIsoeywWHa52MeyWg6sWYl2OzrwfkBYQhA/9k=",
+    "tone": "#e5e5e5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con lente gris, vista de tres cuartos",
+     "en": "Gold hexagonal sunglasses with gray lenses, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le05-modelo-46fe5f7.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQYA/8QAJBAAAQQBAwQDAQAAAAAAAAAAAQIDBBEABRJBBiExsRMiYbL/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQAxERL/2gAMAwEAAhEDEQA/ADRqsjVZzjsyW6zHR9trSiAkcVXvKvpya5IRJjPOl4x17Uuq8qTxf7kfoSHWkPvJTexPdB8kZU9JKL6JUsivkXQF3QHGEXs0PJBRO2pMVyFfycc6RFR5AHYbgfebNjdYGF//2Q==",
+    "tone": "#7a6c66",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes hexagonales dorados con lente gris, puestos",
+     "en": "Gold hexagonal sunglasses with gray lenses, worn"
+    }
+   },
+   {
+    "src": "/media/products/le05-perfil-111bd78.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIEBv/EAB0QAAIDAAIDAAAAAAAAAAAAAAECAAMRBBIxcaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7XYmRuPW1rWFT2bzjsPgMtAa3JUthGdS2j3AqIiB/9k=",
+    "tone": "#f3f3f2",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con lente gris, vista de perfil",
+     "en": "Gold hexagonal sunglasses with gray lenses, side view"
+    }
+   },
+   {
+    "src": "/media/products/le05-macro-6c2d7fa.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgICAQQDAAAAAAAAAAAAAQMCBAARBgUxNEJygcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFREBAQAAAAAAAAAAAAAAAAAAAEH/2gAMAwEAAhEDEQA/AH8cax9d6GabAaAhMbABxEKfW7W5WL8KcfVaIAn7OT4l4jvn+ZuM7DFH/9k=",
+    "tone": "#b1b0ae",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes hexagonales dorados con lente gris",
+     "en": "Hinge detail of the gold hexagonal sunglasses with gray lenses"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le05-frente-984cb0b.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma hexagonal",
+    "en": "Hexagonal shape"
+   },
+   {
+    "es": "Lente gris oscuro",
+    "en": "Dark gray lens"
+   },
+   {
+    "es": "Patillas: negras lisas",
+    "en": "Arms: plain black"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Hexagonal",
+     "en": "Hexagonal"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Gris oscuro",
+     "en": "Dark gray"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Negras lisas",
+     "en": "Plain black"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes hexagonales dorados con lente gris | Clover",
+    "en": "Gold hexagonal sunglasses with gray lenses | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras lisas.",
+    "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and plain black arms."
+   }
+  }
+ },
+ {
+  "id": "le06",
+  "slug": "gold-rectangular-sunglasses-with-gradient-lenses",
+  "name": {
+   "es": "Lentes rectangulares dorados con lente degradado",
+   "en": "Gold rectangular sunglasses with gradient lenses"
+  },
+  "description": {
+   "es": "Lentes de sol de forma rectangular angulada con montura dorada, lentes marrón degradado y patillas color carey con letras doradas.",
+   "en": "Angular rectangular sunglasses with a gold frame, brown gradient lenses and tortoiseshell arms with gold lettering."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente degradado",
+    "en": "Gold with gradient lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le06-1",
+    "sku": "CLV-LE06-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente degradado",
+      "en": "Gold with gradient lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le06-frente-6cf76c5.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBv/EABwQAAIDAAMBAAAAAAAAAAAAAAECAAMSBBExUf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AOvN1atlrEB+FhKTBZwOM28hkLtpsnrsy61UqxbJLH0kkmE03FIiIh//2Q==",
+    "tone": "#ece8e5",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes rectangulares dorados con lente degradado, vista de tres cuartos",
+     "en": "Gold rectangular sunglasses with gradient lenses, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le06-modelo-2423161.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQX/xAAmEAABAwIFAwUAAAAAAAAAAAACAQMEABEFBhIhsRMxMjNRYXGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQADAAMAAAAAAAAAAAAAAAAAARECEiH/2gAMAwEAAhEDEQA/AKMwSHpU92IBSRba0CnRWyai3uXuibbVTlGe8+0/CkmRPR12Uluuntyn7XLxyS+zmYxBwCEgHUlvAbc0jDX34WISJUNWz6qWVHF+b96ix9LaWovHd8zS/oeErIfquUUUZAf/2Q==",
+    "tone": "#84766b",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes rectangulares dorados con lente degradado, puestos",
+     "en": "Gold rectangular sunglasses with gradient lenses, worn"
+    }
+   },
+   {
+    "src": "/media/products/le06-perfil-5f753f7.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAb/xAAgEAABAwQCAwAAAAAAAAAAAAABAAIDBBESIQVRQZGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwDZZDse1KoT8dS1EpkmgDnk3vkR8TYKdlM4mEFrSNsyu2/e/KKYchCEh//Z",
+    "tone": "#ece8e6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes rectangulares dorados con lente degradado, vista de perfil",
+     "en": "Gold rectangular sunglasses with gradient lenses, side view"
+    }
+   },
+   {
+    "src": "/media/products/le06-macro-af1d312.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQRBTFxEiJBQ1L/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAIhAf/aAAwDAQACEQMRAD8A07CJxazq9qksijKADpYnH1vVoBrjxKCbeDA9vex5xTbDd+BSfNBcg2an/9k=",
+    "tone": "#cab6a9",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes rectangulares dorados con lente degradado",
+     "en": "Hinge detail of the gold rectangular sunglasses with gradient lenses"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le06-frente-6cf76c5.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma rectangular angulada",
+    "en": "Angular rectangle shape"
+   },
+   {
+    "es": "Lente marrón degradado",
+    "en": "Brown gradient lens"
+   },
+   {
+    "es": "Patillas: carey con letras doradas",
+    "en": "Arms: tortoiseshell with gold lettering"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Rectangular angulada",
+     "en": "Angular rectangle"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Marrón degradado",
+     "en": "Brown gradient"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Carey con letras doradas",
+     "en": "Tortoiseshell with gold lettering"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes rectangulares dorados con lente degradado | Clover",
+    "en": "Gold rectangular sunglasses with gradient lenses | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol de forma rectangular angulada con montura dorada, lentes marrón degradado y patillas color carey con letras doradas.",
+    "en": "Angular rectangular sunglasses with a gold frame, brown gradient lenses and tortoiseshell arms with gold lettering."
+   }
+  }
+ },
+ {
+  "id": "le07",
+  "slug": "elongated-gold-hexagonal-sunglasses-with-brown-lenses",
+  "name": {
+   "es": "Lentes hexagonales alargados dorados con lente marrón",
+   "en": "Elongated gold hexagonal sunglasses with brown lenses"
+  },
+  "description": {
+   "es": "Lentes de sol hexagonales alargados con montura dorada, lentes marrón y patillas color carey.",
+   "en": "Elongated hexagonal sunglasses with a gold frame, brown lenses and tortoiseshell arms."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente marrón",
+    "en": "Gold with brown lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le07-1",
+    "sku": "CLV-LE07-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente marrón",
+      "en": "Gold with brown lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le07-frente-a4a4ffc.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMEBQb/xAAfEAEAAgICAgMAAAAAAAAAAAABAgMABBEhEhNxkeH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANcXRlJIEp8PCxOQcYpHtQ+XK2eh4GzLVtsqsuR6eh/cfRTIqgbU/dYHCp19YUxIwwwxD//Z",
+    "tone": "#e7e2df",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales alargados dorados con lente marrón, vista de tres cuartos",
+     "en": "Elongated gold hexagonal sunglasses with brown lenses, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le07-modelo-427ff98.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgADBf/EACYQAAIBAwMDBAMAAAAAAAAAAAEDAgAEEQUScQYhQRMiIyRRYbH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAMBAQEAAAAAAAAAAAAAAAABAhExMv/aAAwDAQACEQMRAD8Ax1HWbjUdXapTnrs05G1BxKeOPJpF0/dsfC4QybGBM8Qmwe4xIyM0WsLHZqbmJduXIy9OQGM8ik3TbYSS2Ej9gneztgfjt+qNVtCuGp3Azp5OYcn+iunpJMb+eCR8fjkVVUK6VV5P/9k=",
+    "tone": "#9a7a6c",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes hexagonales alargados dorados con lente marrón, puestos",
+     "en": "Elongated gold hexagonal sunglasses with brown lenses, worn"
+    }
+   },
+   {
+    "src": "/media/products/le07-perfil-6eb4899.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAeEAACAgICAwAAAAAAAAAAAAAAAQMEAhESITFRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsgZ86kcrbl5SN+8mtfFolXrRVm3Djx357bAuAAH//2Q==",
+    "tone": "#f0eeed",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales alargados dorados con lente marrón, vista de perfil",
+     "en": "Elongated gold hexagonal sunglasses with brown lenses, side view"
+    }
+   },
+   {
+    "src": "/media/products/le07-macro-9c80b48.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQID/8QAIhAAAgAFAwUAAAAAAAAAAAAAAQIAAwQFERIhcRQVI0Ph/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAAMBAAAAAAAAAAAAAAAAAAACESH/2gAMAwEAAhEDEQA/AHbXduqQpPXDoM6lGzfYz7nX1hJttD4h7J50huBFWaiSmltNdi8wjBGNhxCYZnGQdIgLZo2lw//Z",
+    "tone": "#d3c4ba",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes hexagonales alargados dorados con lente marrón",
+     "en": "Hinge detail of the elongated gold hexagonal sunglasses with brown lenses"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le07-frente-a4a4ffc.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma hexagonal alargada",
+    "en": "Elongated hexagon shape"
+   },
+   {
+    "es": "Lente marrón",
+    "en": "Brown lens"
+   },
+   {
+    "es": "Patillas: carey",
+    "en": "Arms: tortoiseshell"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Hexagonal alargada",
+     "en": "Elongated hexagon"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Marrón",
+     "en": "Brown"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Carey",
+     "en": "Tortoiseshell"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes hexagonales alargados dorados con lente marrón | Clover",
+    "en": "Elongated gold hexagonal sunglasses with brown lenses | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol hexagonales alargados con montura dorada, lentes marrón y patillas color carey.",
+    "en": "Elongated hexagonal sunglasses with a gold frame, brown lenses and tortoiseshell arms."
+   }
+  }
+ },
+ {
+  "id": "le08",
+  "slug": "gold-hexagonal-sunglasses-with-gradient-lenses",
+  "name": {
+   "es": "Lentes hexagonales dorados con lente degradado",
+   "en": "Gold hexagonal sunglasses with gradient lenses"
+  },
+  "description": {
+   "es": "Lentes de sol hexagonales con montura dorada, lentes marrón degradado y patillas color carey con letras doradas.",
+   "en": "Hexagonal sunglasses with a gold frame, brown gradient lenses and tortoiseshell arms with gold lettering."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente degradado",
+    "en": "Gold with gradient lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le08-1",
+    "sku": "CLV-LE08-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente degradado",
+      "en": "Gold with gradient lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le08-frente-69ad54f.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAeEAACAQQDAQAAAAAAAAAAAAABAgADBBESMUFRIf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/ANe1ygYqoZyvOi5xGZlI0dCWt6jUiz7MOQffkYqgMWcl2PZ6HgEKYlCEJSX/2Q==",
+    "tone": "#eae8e6",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con lente degradado, vista de tres cuartos",
+     "en": "Gold hexagonal sunglasses with gradient lenses, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le08-modelo-ec7a114.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgADB//EACIQAAIBBAEEAwAAAAAAAAAAAAECAwAEBREhBhIxQRNi0f/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEBAAMBAAAAAAAAAAAAAAAAAAESIQL/2gAMAwEAAhEDEQA/AMc3kLi56gltxPJHBAdBUYjwNk8e6Q9PZAXcLw98khjAZWkB2VPjZoY8pny11cxyKC8jOgPvn8pziLVrVZFdw7MFYlfHujtjyrn54j2OD3DmnXTTM2LgLEk/GBsn7NVVTlDh/9k=",
+    "tone": "#8a7e76",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes hexagonales dorados con lente degradado, puestos",
+     "en": "Gold hexagonal sunglasses with gradient lenses, worn"
+    }
+   },
+   {
+    "src": "/media/products/le08-perfil-c31a4e1.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAxESBCExUYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2Q78RZWbiVM5YmwEnJ0sZQfgMelQrbKWWa4xqzbDPvvuBLCEIH//2Q==",
+    "tone": "#f1efed",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con lente degradado, vista de perfil",
+     "en": "Gold hexagonal sunglasses with gradient lenses, side view"
+    }
+   },
+   {
+    "src": "/media/products/le08-macro-3ea5fbd.jpg",
+    "width": 1600,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAOAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIhAAAQIFBAMAAAAAAAAAAAAAAgEDAAQFERITISIxFkFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhL/2gAMAwEAAhEDEQA/ANGTqDcueri803bmwCZBf0o36+QvySmb6jpt2XHm2qbwuVlgBleAkhWuixM6fTzcUjk2lJd1XHuAdTXK3//Z",
+    "tone": "#d0beb1",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes hexagonales dorados con lente degradado",
+     "en": "Hinge detail of the gold hexagonal sunglasses with gradient lenses"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le08-frente-69ad54f.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma hexagonal",
+    "en": "Hexagonal shape"
+   },
+   {
+    "es": "Lente marrón degradado",
+    "en": "Brown gradient lens"
+   },
+   {
+    "es": "Patillas: carey con letras doradas",
+    "en": "Arms: tortoiseshell with gold lettering"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Hexagonal",
+     "en": "Hexagonal"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Marrón degradado",
+     "en": "Brown gradient"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Carey con letras doradas",
+     "en": "Tortoiseshell with gold lettering"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes hexagonales dorados con lente degradado | Clover",
+    "en": "Gold hexagonal sunglasses with gradient lenses | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol hexagonales con montura dorada, lentes marrón degradado y patillas color carey con letras doradas.",
+    "en": "Hexagonal sunglasses with a gold frame, brown gradient lenses and tortoiseshell arms with gold lettering."
+   }
+  }
+ },
+ {
+  "id": "le09",
+  "slug": "gold-rectangular-sunglasses-with-black-arms",
+  "name": {
+   "es": "Lentes rectangulares dorados con patillas negras",
+   "en": "Gold rectangular sunglasses with black arms"
+  },
+  "description": {
+   "es": "Lentes de sol de forma rectangular angulada con montura dorada, lentes gris oscuro y patillas negras con letras doradas.",
+   "en": "Angular rectangular sunglasses with a gold frame, dark gray lenses and black arms with gold lettering."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente gris",
+    "en": "Gold with gray lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le09-1",
+    "sku": "CLV-LE09-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente gris",
+      "en": "Gold with gray lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le09-frente-e8aa1a7.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBv/EAB8QAAICAgMAAwAAAAAAAAAAAAECAAMEERIhUTFhgf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDYO4rXkQT9AbMWvIrtYqCQ6/KsNEfhkd9eQK7FxLijPrXLsL7qNRirVeb3d7LWQISx668ECiEIQP/Z",
+    "tone": "#e0e0e0",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes rectangulares dorados con patillas negras, vista de tres cuartos",
+     "en": "Gold rectangular sunglasses with black arms, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le09-modelo-778fd76.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQAEBv/EACYQAAIBAwIEBwAAAAAAAAAAAAECAwAFEQQSBiExYRMiQXFyscH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAIDAAAAAAAAAAAAAAAAAAABERJC/9oADAMBAAIRAxEAPwA27amS7X5wW8iOUQA8go9f2neHNZBDqGjh8VYJIt+x8nDBsEj3rmrOjSalnVsFBk56c+1N2W9wDUyzaiQQjZsCuCwznOanLsVhVBLESLtGASAVbPflWNurfNvuqqnsGD//2Q==",
+    "tone": "#6c5548",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes rectangulares dorados con patillas negras, puestos",
+     "en": "Gold rectangular sunglasses with black arms, worn"
+    }
+   },
+   {
+    "src": "/media/products/le09-perfil-b9c3ec5.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwb/xAAgEAACAgICAgMAAAAAAAAAAAABAgADBBEhUQUTMWGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANg1iKdM6g9FgJIEEbBBH1EcnxeHlW+y+tmbe+GI/JZj4dWLYWoaxFZdFCxZSe+fgwGYQhA//9k=",
+    "tone": "#e7e7e7",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes rectangulares dorados con patillas negras, vista de perfil",
+     "en": "Gold rectangular sunglasses with black arms, side view"
+    }
+   },
+   {
+    "src": "/media/products/le09-macro-f7e3e2c.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAjEAACAQMCBwEAAAAAAAAAAAABAgMABBEFEhQiMTRicXKh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AG6aRxU1pJZR71ViNuQ+R5E/tUkGrNyg20CKMKZMyu3vGBSD3w+DSk6UH//Z",
+    "tone": "#bbbaba",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes rectangulares dorados con patillas negras",
+     "en": "Hinge detail of the gold rectangular sunglasses with black arms"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le09-frente-e8aa1a7.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma rectangular angulada",
+    "en": "Angular rectangle shape"
+   },
+   {
+    "es": "Lente gris oscuro",
+    "en": "Dark gray lens"
+   },
+   {
+    "es": "Patillas: negras con letras doradas",
+    "en": "Arms: black with gold lettering"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Rectangular angulada",
+     "en": "Angular rectangle"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Gris oscuro",
+     "en": "Dark gray"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Negras con letras doradas",
+     "en": "Black with gold lettering"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes rectangulares dorados con patillas negras | Clover",
+    "en": "Gold rectangular sunglasses with black arms | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol de forma rectangular angulada con montura dorada, lentes gris oscuro y patillas negras con letras doradas.",
+    "en": "Angular rectangular sunglasses with a gold frame, dark gray lenses and black arms with gold lettering."
+   }
+  }
+ },
+ {
+  "id": "le10",
+  "slug": "gold-hexagonal-sunglasses-with-pointed-hinges",
+  "name": {
+   "es": "Lentes hexagonales dorados con bisagra en punta",
+   "en": "Gold hexagonal sunglasses with pointed hinges"
+  },
+  "description": {
+   "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras que nacen de una bisagra dorada en punta.",
+   "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and black arms that start from a pointed gold hinge."
+  },
+  "story": {
+   "es": "Monturas doradas de líneas geométricas, ovaladas, hexagonales o rectangulares, con lentes en gris oscuro o en marrón. Cada modelo se ve en cuatro fotos: de frente, de perfil, el detalle de la bisagra y puesto.",
+   "en": "Gold frames with geometric lines (oval, hexagonal or rectangular) and dark gray or brown lenses. Every model comes in four photos: front, profile, hinge detail and worn."
+  },
+  "category": "sunglasses",
+  "categories": [
+   "sunglasses",
+   "women",
+   "gifts",
+   "new-arrivals"
+  ],
+  "audience": [
+   "women"
+  ],
+  "tags": [
+   "sunglasses",
+   "gift"
+  ],
+  "price": 1400,
+  "currency": "USD",
+  "material": {
+   "es": "Montura metálica dorada",
+   "en": "Gold-tone metal frame"
+  },
+  "color": [
+   {
+    "es": "Dorado con lente gris",
+    "en": "Gold with gray lens"
+   }
+  ],
+  "finish": "gold",
+  "sizes": [
+   {
+    "es": "Talla única",
+    "en": "One size"
+   }
+  ],
+  "variants": [
+   {
+    "id": "le10-1",
+    "sku": "CLV-LE10-1",
+    "options": {
+     "color": {
+      "es": "Dorado con lente gris",
+      "en": "Gold with gray lens"
+     },
+     "size": {
+      "es": "Talla única",
+      "en": "One size"
+     }
+    },
+    "imageIndex": 0,
+    "stock": 10
+   }
+  ],
+  "images": [
+   {
+    "src": "/media/products/le10-frente-7bc0e4e.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIEBQb/xAAeEAACAgICAwAAAAAAAAAAAAABAwARAhIFMUFRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDYFmANHPEH1ceVjONWSSpjF20sNeb7HyTdV7E6m+ruA0IQgf/Z",
+    "tone": "#e8e8e8",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con bisagra en punta, vista de tres cuartos",
+     "en": "Gold hexagonal sunglasses with pointed hinges, three-quarter view"
+    }
+   },
+   {
+    "src": "/media/products/le10-modelo-163b1bc.jpg",
+    "width": 1280,
+    "height": 1600,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgADBf/EACYQAAIBAwMDBAMAAAAAAAAAAAEDAgAEEQUGEiFBYTEyQnGBseH/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/EABoRAQABBQAAAAAAAAAAAAAAAAARAQIhIjH/2gAMAwEAAhEDEQA/AN9x6tcjV1afaOYmMY8myX7jnrgfj911dBvJvDrdk2sK+MoTaMSMSO/kHIovqjFndTLgOlJImBKcficYx5ANI9siUoXT2s5MLOEocccOPb+1Mycag6Dlhz1z6+aYbNJlYPMiSTMZJ+qqqdSu4//Z",
+    "tone": "#938382",
+    "focal": {
+     "x": 0.5,
+     "y": 0.4
+    },
+    "role": "lifestyle",
+    "alt": {
+     "es": "Lentes hexagonales dorados con bisagra en punta, puestos",
+     "en": "Gold hexagonal sunglasses with pointed hinges, worn"
+    }
+   },
+   {
+    "src": "/media/products/le10-perfil-6dbe07f.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQG/8QAHxAAAQQCAgMAAAAAAAAAAAAAAQACAxEEEiFBQnGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANjsB5D6lVaTDx5bMkexLtuxynMhZE/aIvaCKLbse+e0EqEIQf/Z",
+    "tone": "#ededec",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "main",
+    "alt": {
+     "es": "Lentes hexagonales dorados con bisagra en punta, vista de perfil",
+     "en": "Gold hexagonal sunglasses with pointed hinges, side view"
+    }
+   },
+   {
+    "src": "/media/products/le10-macro-ecdabdf.jpg",
+    "width": 1600,
+    "height": 1067,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAJAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EACAQAAIBBAEFAAAAAAAAAAAAAAECAwAEBREiNXFykcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A0GPDT2sc4Ers42S851vtTEXICR+duIt8A5ZmHrVGL6ZB4/asSg//2Q==",
+    "tone": "#d5d3d1",
+    "focal": {
+     "x": 0.72,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle de la bisagra de los lentes hexagonales dorados con bisagra en punta",
+     "en": "Hinge detail of the gold hexagonal sunglasses with pointed hinges"
+    }
+   }
+  ],
+  "videos": [],
+  "thumbnail": "/media/products/le10-frente-7bc0e4e.jpg",
+  "hoverMedia": {
+   "type": "image",
+   "imageIndex": 1
+  },
+  "highlights": [
+   {
+    "es": "Forma hexagonal",
+    "en": "Hexagonal shape"
+   },
+   {
+    "es": "Lente gris oscuro",
+    "en": "Dark gray lens"
+   },
+   {
+    "es": "Patillas: negras con bisagra dorada en punta",
+    "en": "Arms: black with a pointed gold hinge"
+   }
+  ],
+  "specifications": [
+   {
+    "label": {
+     "es": "Montura",
+     "en": "Frame"
+    },
+    "value": {
+     "es": "Dorada",
+     "en": "Gold"
+    }
+   },
+   {
+    "label": {
+     "es": "Forma",
+     "en": "Shape"
+    },
+    "value": {
+     "es": "Hexagonal",
+     "en": "Hexagonal"
+    }
+   },
+   {
+    "label": {
+     "es": "Lente",
+     "en": "Lens"
+    },
+    "value": {
+     "es": "Gris oscuro",
+     "en": "Dark gray"
+    }
+   },
+   {
+    "label": {
+     "es": "Patillas",
+     "en": "Arms"
+    },
+    "value": {
+     "es": "Negras con bisagra dorada en punta",
+     "en": "Black with a pointed gold hinge"
+    }
+   },
+   {
+    "label": {
+     "es": "Talla",
+     "en": "Size"
+    },
+    "value": {
+     "es": "Talla única",
+     "en": "One size"
+    }
+   }
+  ],
+  "stock": 10,
+  "featured": false,
+  "newArrival": true,
+  "bestseller": false,
+  "seo": {
+   "title": {
+    "es": "Lentes hexagonales dorados con bisagra en punta | Clover",
+    "en": "Gold hexagonal sunglasses with pointed hinges | Clover"
+   },
+   "description": {
+    "es": "Lentes de sol hexagonales con montura dorada, lentes gris oscuro y patillas negras que nacen de una bisagra dorada en punta.",
+    "en": "Hexagonal sunglasses with a gold frame, dark gray lenses and black arms that start from a pointed gold hinge."
+   }
+  }
  }
 ]

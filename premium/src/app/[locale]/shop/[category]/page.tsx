@@ -14,6 +14,9 @@ import { getCatalog } from '@/server/repositories/catalog';
 export const revalidate = 300;
 
 const GIFTS_FOR_HER = 'gifts-for-her';
+const GIFTS_FOR_HIM = 'gifts-for-him';
+/** Dentro de «Regalos» se elige para quién: la página base enlaza a las dos ramas y cada rama enlaza a la otra. */
+const GIFT_BRANCHES = ['gifts', GIFTS_FOR_HER, GIFTS_FOR_HIM];
 
 /** Categorías con portada de foto con modelo: pieza cuya foto se usa y encuadre (position = object-position; flip voltea la foto). */
 const HEROES: Record<string, { id: string; position: string; flip?: boolean }> = {
@@ -21,6 +24,7 @@ const HEROES: Record<string, { id: string; position: string; flip?: boolean }> =
   earrings: { id: 'ar13', position: '50% 38%', flip: true },
   bracelets: { id: 'pu06', position: '50% 78%' },
   rings: { id: 'an03', position: '50% 55%' },
+  sunglasses: { id: 'le01', position: '50% 30%' },
 };
 
 /** "Regalos para ella" no es una etiqueta de producto: reúne la joyería de mujer de mayor precio del catálogo vivo. */
@@ -28,6 +32,11 @@ function topJewelry(catalog: Product[]): Product[] {
   const pool = catalog.filter((p) => p.categories.includes('jewelry') && p.categories.includes('women'));
   const top = Math.max(0, ...pool.map((p) => p.price));
   return pool.filter((p) => p.price === top);
+}
+
+/** «Regalos para él»: las piezas de hombre del catálogo vivo. */
+function giftsForHim(catalog: Product[]): Product[] {
+  return catalog.filter((p) => p.categories.includes('men'));
 }
 
 /** Cada categoría es una página real y estática por idioma (incluidas las vacías, que muestran su estado vacío). */
@@ -53,7 +62,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
   const t = await getTranslations('shop');
 
   const catalog = await getCatalog();
-  const products = cat.slug === GIFTS_FOR_HER ? topJewelry(catalog) : catalog.filter((p) => p.categories.includes(cat.slug));
+  const products = cat.slug === GIFTS_FOR_HER ? topJewelry(catalog) : cat.slug === GIFTS_FOR_HIM ? giftsForHim(catalog) : cat.slug === 'gifts' ? [...catalog.filter((p) => p.categories.includes('gifts')), ...giftsForHim(catalog).filter((p) => !p.categories.includes('gifts'))] : catalog.filter((p) => p.categories.includes(cat.slug));
+  const parent = cat.slug === GIFTS_FOR_HER || cat.slug === GIFTS_FOR_HIM ? { label: pick(getCategory('gifts')!.name, locale), href: '/shop/gifts' } : undefined;
+  const branches = GIFT_BRANCHES.includes(cat.slug)
+    ? GIFT_BRANCHES.map((slug) => getCategory(slug)!).map((c) => ({ label: c.slug === 'gifts' ? t('allGifts') : t(c.slug === GIFTS_FOR_HER ? 'forHer' : 'forHim'), href: `/shop/${c.slug}`, current: c.slug === cat.slug }))
+    : undefined;
   // Portada con foto de modelo: la categoría usa la foto con modelo de una de sus piezas.
   const heroSpec = HEROES[cat.slug];
   const heroProduct = heroSpec ? products.find((p) => p.id === heroSpec.id) : undefined;
@@ -62,7 +75,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(locale, [{ name: t('breadcrumbShop'), path: '/shop' }, { name: pick(cat.name, locale), path: `/shop/${cat.slug}` }])} />
-      <ShopPage locale={locale} products={products} title={pick(cat.name, locale)} blurb={pick(cat.blurb, locale)} category={cat.slug} hero={hero} />
+      <ShopPage locale={locale} products={products} title={pick(cat.name, locale)} blurb={pick(cat.blurb, locale)} category={cat.slug} parent={parent} branches={branches} hero={hero} />
     </>
   );
 }

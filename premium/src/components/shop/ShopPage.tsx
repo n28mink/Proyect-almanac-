@@ -33,7 +33,7 @@ export interface ShopHero {
   flip?: boolean;
 }
 
-export async function ShopPage({ locale, products, title, blurb, eyebrow, category, parent, hero }: { locale: Locale; products: Product[]; title: string; blurb?: string; eyebrow?: string; category?: string; parent?: { label: string; href: string }; hero?: ShopHero }) {
+export async function ShopPage({ locale, products, title, blurb, eyebrow, category, parent, branches, hero }: { locale: Locale; products: Product[]; title: string; blurb?: string; eyebrow?: string; category?: string; parent?: { label: string; href: string }; /** Ramas de una categoría con desglose (Regalos → para ella / para él). */ branches?: { label: string; href: string; current: boolean }[]; hero?: ShopHero }) {
   const t = await getTranslations('shop');
   const tp = await getTranslations('product');
   const cards = products.map((p, i) => ({ ...toCardData(p, locale), order: i }));
@@ -77,6 +77,15 @@ export async function ShopPage({ locale, products, title, blurb, eyebrow, catego
             <StaggerText as="h1" text={title} className="font-display text-display-m" intro />
             {eyebrow && <p className="mt-4 max-w-md text-lead text-fg">{eyebrow}</p>}
             {blurb && <p className="mt-3 max-w-md text-fg-muted">{blurb}</p>}
+            {branches && (
+              <ul className="mt-6 flex flex-wrap gap-2" aria-label={t('giftBranches')}>
+                {branches.map((b) => (
+                  <li key={b.href}>
+                    <TransitionLink href={b.href} aria-current={b.current ? 'page' : undefined} className={`inline-flex min-h-11 items-center border px-5 text-sm transition-colors ${b.current ? 'border-accent bg-accent text-surface' : 'border-line-strong text-fg hover:bg-fg/5'}`}>{b.label}</TransitionLink>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
         </div>

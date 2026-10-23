@@ -233,9 +233,13 @@
       "textile": "Poli-algodón"
     },
     "allTitle": "La colección",
-    "allText": "Aretes, collares, anillos, pulseras, relojes y camisas, elegidos pieza por pieza.",
+    "allText": "Aretes, collares, anillos, pulseras, relojes, lentes y camisas, elegidos pieza por pieza.",
     "eyebrow": "Tienda",
-    "breadcrumbShop": "Tienda"
+    "breadcrumbShop": "Tienda",
+    "allGifts": "Todos los regalos",
+    "forHer": "Para ella",
+    "forHim": "Para él",
+    "giftBranches": "Regalos según para quién"
   },
   "collections": {
     "title": "Colecciones",

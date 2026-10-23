@@ -4,7 +4,7 @@ import { localizedSchema, type Localized } from './i18n';
 /** Importes en céntimos enteros (moneda base USD). Nunca floats. */
 export const cents = z.number().int().nonnegative();
 
-export const categorySlugs = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'accessories', 'shirts'] as const;
+export const categorySlugs = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'accessories', 'shirts', 'sunglasses'] as const;
 export const categorySlugSchema = z.enum(categorySlugs);
 export type CategorySlug = z.infer<typeof categorySlugSchema>;
 
