@@ -225,3 +225,6 @@ En 360×800 varias imágenes ocupaban 50–60 % de la pantalla. Solo en móvil (
 - `rw08`/`rw09` eran las dos variantes de `rw05`; `rw16`/`rw17`, las de `st01`; y `rw15`, la variante azul de `rw03`. Se retiran como productos (el catálogo pasa de 121 a 116) y sus fotos pasan a ser variantes: `rw03` gana la esfera azul con 4 vistas nuevas (`reloj20`, sustituye a la foto anterior) y `st01` gana la esfera verde con 4 vistas nuevas (`reloj21`). `reloj12`, `reloj14` y `reloj22` ya estaban cubiertos por las fotos de `rw05` y `st01`.
 - Relojes con fotos propias que se quedan: `rw01`–`rw07` y `rw10`–`rw14`.
 - `cm01`: la descripción refleja las fotos (margarita y «God is good» al frente, «God's Child» en la espalda).
+
+## Macros corregidos de rw10 y rw14
+- Se aplican los macros nuevos de `reloj15` (rw10, números romanos) y `reloj19` (rw14, esfera «CMK»). Se regeneran con `node scripts/build-relojes.mjs rw10 rw14`: el nombre del JPG lleva el hash del contenido, así que la caché de 30 días de Vercel no sirve la foto anterior.
