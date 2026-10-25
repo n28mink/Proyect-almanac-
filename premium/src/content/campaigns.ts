@@ -64,7 +64,7 @@ export const defaultCampaigns: HomeCampaigns = {
   story: {
     videoKey: 'story.craft',
     eyebrow: L('Nuestra forma de elegir', 'How we choose'),
-    title: L('La atención está en el detalle.', 'Attention lives in the detail.'),
+    title: L('Atención al detalle.', 'Care in every detail.'),
     text: L('Texturas, acabados y cierres: revisamos cada pieza de cerca antes de que llegue a ti.', 'Textures, finishes and clasps: we look at every piece up close before it reaches you.'),
     cta: { label: L('Conocer Clover', 'Get to know Clover'), href: '/about' },
   },

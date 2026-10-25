@@ -20,7 +20,7 @@ export async function EditorialSplit({ imageA, imageB }: { imageA: Img; imageB: 
 
         <div className="flex flex-col justify-center gap-16 lg:py-24">
           <div>
-            <StaggerText as="p" text={t('philosophyQuote')} className="font-display text-display-m" />
+            <StaggerText as="p" text={t('philosophyQuote')} className="font-display text-[clamp(1.5rem,1.1rem+1.6vw,2.25rem)] leading-[1.15]" />
           </div>
           <FadeReveal className="max-w-md space-y-5 text-lead text-fg-muted">
             <p>{t('philosophyP1')}</p>
