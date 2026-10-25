@@ -1,0 +1,23 @@
+{
+  "projectId": "7915335e-ee39-4a2b-8f78-5dde656db35a",
+  "shape": "package",
+  "pkg": "@clover/ui",
+  "globalName": "Clover",
+  "buildCmd": "node .design-sync/pkg/build.mjs",
+  "cssEntry": ".design-sync/pkg/dist/style.css",
+  "srcDir": ".design-sync/pkg/src",
+  "overrides": {
+    "Dialog": {
+      "cardMode": "single",
+      "viewport": "640x420"
+    },
+    "PageShell": {
+      "cardMode": "single",
+      "viewport": "900x420"
+    },
+    "Field": {
+      "cardMode": "column"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
