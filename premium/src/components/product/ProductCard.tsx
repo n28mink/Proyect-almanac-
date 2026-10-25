@@ -132,7 +132,10 @@ export function ProductCard({ p, priority = false, sizes = '(min-width: 1280px) 
 
       <div className={cn('pt-4', layout === 'list' && 'pt-0')}>
         <div className="flex min-h-[1.25rem] flex-wrap items-center justify-between gap-x-3 gap-y-1">
-          {p.finish ? (
+          {p.tags.includes('sunglasses') ? (
+            // Todos los lentes son dorados: la línea distingue el color del lente.
+            <p className="text-caption text-fg-subtle">{p.color[0]}</p>
+          ) : p.finish ? (
             <p className="text-caption text-fg-subtle">{ts(`finish.${p.finish}`)}</p>
           ) : (
             <p className="text-caption text-fg-subtle">{p.categoryLabel}</p>
