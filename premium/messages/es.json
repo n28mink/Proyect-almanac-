@@ -132,7 +132,7 @@
   "home": {
     "heroSecondary": "Ver el lookbook",
     "categoriesEyebrow": "Comprar por categoría",
-    "categoriesTitle": "Seis mundos, un solo estilo",
+    "categoriesTitle": "Siete mundos, un solo estilo",
     "viewAll": "Ver todo",
     "featuredEyebrow": "Colección destacada",
     "discoverCollection": "Descubrir la colección",
@@ -155,7 +155,7 @@
     "storyTitle": "Cinco historias para llevar",
     "house": {
       "place": "Valle Fresco, Turmero, Venezuela",
-      "title": "Desde Turmero, el brillo de cada detalle.",
+      "title": "Desde Turmero, con brillo.",
       "p1": "Clover nació en Valle Fresco con un gusto sencillo: los detalles que cambian un día cualquiera. Unos aretes que iluminan, un collar que acompaña, un reloj con presencia.",
       "p2": "Hoy seguimos eligiendo cada pieza una a una. Atendemos cada pedido de forma personal por WhatsApp y entregamos en Turmero y Maracay, con el cuidado de quien prepara un regalo.",
       "cta": "Conocer nuestra historia"
@@ -453,7 +453,7 @@
   },
   "contact": {
     "eyebrow": "Pedidos por WhatsApp",
-    "title": "Escríbenos y te ayudamos a elegir",
+    "title": "Te ayudamos a elegir",
     "text": "Cada pedido lo atendemos de forma personal, como se atienden las cosas hechas en casa.",
     "cta": "Escribir por WhatsApp"
   }

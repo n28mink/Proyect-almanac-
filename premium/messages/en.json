@@ -132,7 +132,7 @@
   "home": {
     "heroSecondary": "View the lookbook",
     "categoriesEyebrow": "Shop by category",
-    "categoriesTitle": "Six worlds, one style",
+    "categoriesTitle": "Seven worlds, one style",
     "viewAll": "View all",
     "featuredEyebrow": "Featured collection",
     "discoverCollection": "Discover the collection",
@@ -155,7 +155,7 @@
     "storyTitle": "Five stories to wear",
     "house": {
       "place": "Valle Fresco, Turmero, Venezuela",
-      "title": "From Turmero, the shine of every detail.",
+      "title": "From Turmero, with shine.",
       "p1": "Clover began in Valle Fresco with a simple taste: the details that change an ordinary day. Earrings that light up a face, a necklace that keeps you company, a watch with presence.",
       "p2": "Today we still choose every piece one by one. We look after each order personally on WhatsApp and deliver in Turmero and Maracay, with the care of someone wrapping a gift.",
       "cta": "Read our story"
@@ -453,7 +453,7 @@
   },
   "contact": {
     "eyebrow": "Orders on WhatsApp",
-    "title": "Write to us and we will help you choose",
+    "title": "We help you choose",
     "text": "We handle every order personally, the way things made at home are looked after.",
     "cta": "Message us on WhatsApp"
   }

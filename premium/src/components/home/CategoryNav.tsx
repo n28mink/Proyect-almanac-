@@ -10,10 +10,10 @@ import { pick } from '@/domain/i18n';
 import type { Locale } from '@/i18n/routing';
 import { baseCatalog } from '@/server/repositories/catalog';
 
-const HOME_CATEGORIES = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'shirts'];
+const HOME_CATEGORIES = ['earrings', 'necklaces', 'rings', 'bracelets', 'watches', 'sunglasses', 'shirts'];
 
-/** Escritorio: 12 columnas en dos filas asimétricas (5·4·3 y 3·4·5); cada tile mantiene la misma altura. */
-const SPANS = ['lg:col-span-5', 'lg:col-span-4', 'lg:col-span-3', 'lg:col-span-3', 'lg:col-span-4', 'lg:col-span-5'];
+/** Escritorio: 12 columnas en dos filas (5·4·3 y cuatro de 3); cada tile mantiene la misma altura. */
+const SPANS = ['lg:col-span-5', 'lg:col-span-4', 'lg:col-span-3', 'lg:col-span-3', 'lg:col-span-3', 'lg:col-span-3', 'lg:col-span-3'];
 
 /** Navegación por categoría: fila con snap en móvil; en escritorio, cuadrícula asimétrica con el nombre y una flecha sobre cada foto. */
 export async function CategoryNav({ locale }: { locale: Locale }) {
