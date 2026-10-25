@@ -24,8 +24,8 @@
         "faith"
       ],
       "description": {
-        "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda.",
-        "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back."
+        "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda con la cita de 2 Corintios 6:18.",
+        "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back with the 2 Corinthians 6:18 reference."
       },
       "alt": {
         "es": "Camisa celeste God's Child, usada con jeans",
@@ -84,13 +84,17 @@
         "en": "White V-neck poly-cotton T-shirt with the phrase “Me encanta el sonido de nadie hablando” (I love the sound of no one talking)."
       },
       "alt": {
-        "es": "Camisa blanca cuello en V con la frase Me encanta el sonido de nadie hablando, en gancho",
-        "en": "White V-neck T-shirt with a Spanish phrase, on a hanger"
+        "es": "Camisa blanca cuello en V con la frase Me encanta el sonido de nadie hablando, usada por un modelo",
+        "en": "White V-neck T-shirt with a Spanish phrase, worn by a model"
       },
       "detail": [
         130,
         300,
         640
+      ],
+      "audience": [
+        "women",
+        "men"
       ]
     },
     {
