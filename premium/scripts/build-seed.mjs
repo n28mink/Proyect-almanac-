@@ -320,6 +320,8 @@ for (const s of shirts.items) {
     view('closeup', 'detail', `Detalle del estampado de la ${s.name.es}`, `Close-up of the ${s.name.en} print`),
     view('otro', 'lifestyle', `${s.name.es}, otro ángulo`, `${s.name.en}, another angle`),
     view('posterior', 'main', `${s.name.es}, vista de espalda`, `${s.name.en}, back view`),
+    // Foto opcional: detalle del estampado de la espalda (scripts/build-camisas.mjs).
+    ...(media.images[`${s.id}-closeup-posterior`] ? [view('closeup-posterior', 'detail', `Detalle del estampado de la espalda de la ${s.name.es}`, `Close-up of the back print on the ${s.name.en}`)] : []),
   ];
   const variants = shirts.sizes.map((size) => ({
     id: `${s.id}-${size.toLowerCase()}`,
@@ -346,8 +348,8 @@ for (const s of shirts.items) {
     description: s.description,
     story: SHIRT_STORY,
     category: 'shirts',
-    categories: ['shirts', 'women', 'new-arrivals'],
-    audience: ['women'],
+    categories: ['shirts', ...(s.audience ?? ['women']), 'new-arrivals'],
+    audience: s.audience ?? ['women'],
     tags: ['shirt', 'customizable', ...s.tags],
     price: cents(shirts.price),
     currency: 'USD',

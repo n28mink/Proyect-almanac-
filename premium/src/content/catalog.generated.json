@@ -26143,8 +26143,8 @@
    "en": "God's Child T-shirt"
   },
   "description": {
-   "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda.",
-   "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back."
+   "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda con la cita de 2 Corintios 6:18.",
+   "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back with the 2 Corinthians 6:18 reference."
   },
   "story": {
    "es": "Las camisas de Clover son de poli-algodón y se estampan con sublimación de tinta o DTF, según el color de la tela. Si quieres otra frase, otra imagen o tu propio diseño, la personalizamos a pedido: escríbenos por WhatsApp y te enviamos la cotización.",
@@ -26341,6 +26341,22 @@
      "es": "Camisa God's Child, vista de espalda",
      "en": "God's Child T-shirt, back view"
     }
+   },
+   {
+    "src": "/media/products/cm01-closeup-posterior-0bf5431.jpg",
+    "width": 1266,
+    "height": 1520,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAARAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBv/EACEQAQACAQIHAQAAAAAAAAAAAAEAAgMEESExMjNBUXGB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERMUH/2gAMAwEAAhEDEQA/AOmtlB2BWKZK33OSeGZqY8qG/EjFWuS1rJ6jFDNI1Pd/JWk6bfSIi8Lp/9k=",
+    "tone": "#ced6db",
+    "focal": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "role": "detail",
+    "alt": {
+     "es": "Detalle del estampado de la espalda de la Camisa God's Child",
+     "en": "Close-up of the back print on the God's Child T-shirt"
+    }
    }
   ],
   "videos": [],
@@ -26439,8 +26455,8 @@
     "en": "God's Child T-shirt | Clover"
    },
    "description": {
-    "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda.",
-    "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back."
+    "es": "Camisa celeste de poli-algodón con una margarita y «God is good» al frente, y «God's Child» grande en la espalda con la cita de 2 Corintios 6:18.",
+    "en": "Light-blue poly-cotton T-shirt with a daisy and “God is good” on the front, and a large “God's Child” on the back with the 2 Corinthians 6:18 reference."
    }
   }
  },
@@ -26772,10 +26788,12 @@
   "categories": [
    "shirts",
    "women",
+   "men",
    "new-arrivals"
   ],
   "audience": [
-   "women"
+   "women",
+   "men"
   ],
   "tags": [
    "shirt",
@@ -26881,27 +26899,27 @@
   ],
   "images": [
    {
-    "src": "/media/products/cm03-cuerpo-b3804e5.jpg",
+    "src": "/media/products/cm03-cuerpo-82cf99d.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EACAQAAIBBAIDAQAAAAAAAAAAAAECAwAREiEEMRMiUfH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAMAwEAAhEDEQA/AL4IVnKxFmUt1j3rdPZFucTcX0azZMpPFGkjxsxPshsRr8qvjSZ8WJrm5UXv9rMxaYgG9CmqBiNUUUH/2Q==",
-    "tone": "#a6a198",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAfEAACAQQCAwAAAAAAAAAAAAABAgADEiFRBBETMkH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A3WprVTxFmW/AKno7lrKInyarLRFnd92CPkb9VA1iCEABoScISY//2Q==",
+    "tone": "#ccc6bb",
     "focal": {
      "x": 0.5,
      "y": 0.35
     },
     "role": "lifestyle",
     "alt": {
-     "es": "Camisa blanca cuello en V con la frase Me encanta el sonido de nadie hablando, en gancho",
-     "en": "White V-neck T-shirt with a Spanish phrase, on a hanger"
+     "es": "Camisa blanca cuello en V con la frase Me encanta el sonido de nadie hablando, usada por un modelo",
+     "en": "White V-neck T-shirt with a Spanish phrase, worn by a model"
     }
    },
    {
-    "src": "/media/products/cm03-flatlay-a2ac11e.jpg",
+    "src": "/media/products/cm03-flatlay-30d2796.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAb/xAAeEAACAgICAwAAAAAAAAAAAAABAgARAwQSITFRUv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1OTcCkhUuvZqTi3FyGipDeeuxE7qk5hWMsCPm43RUribkhU31YqUWIQhIP/Z",
-    "tone": "#dedee1",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwb/xAAaEAACAwEBAAAAAAAAAAAAAAABAgADESEx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANc1ueDZK2A+8MS9Fc4yBh70RqQFXAMA4OQLIQhA/9k=",
+    "tone": "#edecee",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -26929,11 +26947,11 @@
     }
    },
    {
-    "src": "/media/products/cm03-otro-92d4f54.jpg",
+    "src": "/media/products/cm03-otro-0b1e010.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAfEAACAQUAAwEAAAAAAAAAAAABAgADERIhMQQFI8H/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8Adsi1MKWTqWIIK90bzTplBHDsRX7QO3gfMuHDrjgbG51+xkgK00VjsAA2hQlQAGtDsuHIQmJ//9k=",
-    "tone": "#d0c0ab",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EACMQAQACAgAEBwAAAAAAAAAAAAECAwARBAUxQRIhIjJxgfD/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAwDAQACEQMRAD8AtW1lsY1+OcFkPodLrtjCD0dmT+YTtr4UsosYWRloQ31/GPQ2VQJe7Rv575ExVY2RFiIJs8vvGsMMD//Z",
+    "tone": "#c7bfb3",
     "focal": {
      "x": 0.5,
      "y": 0.35
@@ -26945,11 +26963,11 @@
     }
    },
    {
-    "src": "/media/products/cm03-posterior-49ed59b.jpg",
+    "src": "/media/products/cm03-posterior-e2fb734.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAIRAAAgICAQQDAAAAAAAAAAAAAQIAEQMhEgQFE0ExUWL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAMAwEAAhEDEQA/AGqi5sidMXdDkvaGjr1caCpFqbHomYPcnbjj8bsjA3anY1NbC9YUH5EzMI6qvNDQu/qJb5MpQT//2Q==",
-    "tone": "#a09c94",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIAAxEhBBOBEiMxUXH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8A7lSmtenss7puYDU2s2M4PE3NjkG49xLUE7SlXKMGwQbHwY0h7afBMxU9IIyAeJcwhA//2Q==",
+    "tone": "#c9c5bc",
     "focal": {
      "x": 0.5,
      "y": 0.5
@@ -26962,7 +26980,7 @@
    }
   ],
   "videos": [],
-  "thumbnail": "/media/products/cm03-cuerpo-b3804e5.jpg",
+  "thumbnail": "/media/products/cm03-cuerpo-82cf99d.jpg",
   "hoverMedia": {
    "type": "image",
    "imageIndex": 1
@@ -27190,11 +27208,11 @@
   ],
   "images": [
    {
-    "src": "/media/products/cm04-cuerpo-793ce3f.jpg",
+    "src": "/media/products/cm04-cuerpo-e2098d6.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAiEAADAAEDAwUAAAAAAAAAAAABAhEAAwQFEiFxFDFBYfD/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABoRAQACAwEAAAAAAAAAAAAAAAEAAhESMSH/2gAMAwEAAhEDEQA/AOHxu1TcuS5gWwEUEz58ZDWTpbpI7gw5my3D6TiGI1Unz+GK72V7O2UqOVYbNdQD2MCfSMKYNRTPuHLcqipyOuqKFUN2AEHthhjOybyf/9k=",
-    "tone": "#2b3144",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EACEQAAIBBAICAwAAAAAAAAAAAAECAAMEESESMQVBUWGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAISQSH/2gAMAwEAAhEDEQA/AOF462p3TsHbAUfH0ZlcU1RyoOce5FjXajWYKTltDHeYqni7K5wwJBBHRlQdljk46AHtdrqrkaPFvwyKu3JOyTsxEfaXL//Z",
+    "tone": "#2a3145",
     "focal": {
      "x": 0.5,
      "y": 0.35
@@ -27271,7 +27289,7 @@
    }
   ],
   "videos": [],
-  "thumbnail": "/media/products/cm04-cuerpo-793ce3f.jpg",
+  "thumbnail": "/media/products/cm04-cuerpo-e2098d6.jpg",
   "hoverMedia": {
    "type": "image",
    "imageIndex": 1
@@ -27548,11 +27566,11 @@
     }
    },
    {
-    "src": "/media/products/cm05-otro-75fc6f6.jpg",
+    "src": "/media/products/cm05-otro-b051b08.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABBv/EAB4QAAMAAgIDAQAAAAAAAAAAAAECAwARBCESMUEy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQEAAwEAAAAAAAAAAAAAAAAAAQIhEf/aAAwDAQACEQMRAD8AfzDa1EWV1hObB6sW0SPgx3kD9BznrDlK9q0nJlooUhSToDvH8a9Tx0ZgF2Ngb31k5rnVItrV/OGn1RwOgPQyywP/2Q==",
-    "tone": "#a8958b",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQP/xAAiEAACAQMDBQEAAAAAAAAAAAABAgADBBEFIUESEyIxM4H/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAXEQADAQAAAAAAAAAAAAAAAAAAARES/9oADAMBAAIRAxEAPwChUe7fUKS0OlbZPqxx5HgCPEiQbm4dXqnsVKiOwbY+iOcfk7WuqtdkotNg6jJwMwZqqHpJw2nzF7sBGDqArHYkbGEJGH//2Q==",
+    "tone": "#a3978c",
     "focal": {
      "x": 0.5,
      "y": 0.35
@@ -27564,11 +27582,11 @@
     }
    },
    {
-    "src": "/media/products/cm05-posterior-9a03c3f.jpg",
+    "src": "/media/products/cm05-posterior-8f417e3.jpg",
     "width": 1280,
     "height": 1600,
-    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQL/xAAfEAEBAAEDBQEAAAAAAAAAAAABAgADBBEFEiExcRT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/EABURAQEAAAAAAAAAAAAAAAAAAABB/9oADAMBAAIRAxEAPwC/1k3F9NvT2amvaEdrw+xfPzH5oqCh55PeTOsNfiGLrTqbOKl4Tw4/tvG10RVeyeV+YRNZmgKkfpnfGGGBf//Z",
-    "tone": "#d6d5d1",
+    "blur": "data:image/jpeg;base64,/9j/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAASAA4DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EACEQAAICAgEEAwAAAAAAAAAAAAECAAMEESEFEiNxMUGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAQf/aAAwDAQACEQMRAD8Ap9TqyL8FqcJgt7kBSW7eAdnmPjTIp2Dx8j7k7qD2JjBqbGrcMNMP2O0nwV7JJ7QST6kRVDKCvIB9zXUIQP/Z",
+    "tone": "#c2b9af",
     "focal": {
      "x": 0.5,
      "y": 0.5
